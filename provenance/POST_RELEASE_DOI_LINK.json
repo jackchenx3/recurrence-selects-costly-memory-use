@@ -1,0 +1,7 @@
+{
+  "record": "PHASE2-MUTABLE-MEMORY-001-POST-RELEASE-DOI-LINK",
+  "status": "PASS",
+  "doi": "10.5281/zenodo.23085659",
+  "repository": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use",
+  "scope": "Administrative DOI and availability links only; no scientific value, claim, estimate, interval, decision, figure, data, or executable source changed."
+}

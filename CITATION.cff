@@ -8,6 +8,7 @@ authors:
 version: 1.0.0
 date-released: '2026-10-01'
 repository-code: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use"
+doi: 10.5281/zenodo.23085659
 license: MIT
 preferred-citation:
   type: unpublished
@@ -17,5 +18,6 @@ preferred-citation:
       given-names: Jack
   year: 2026
   version: 1.0.0
+  doi: 10.5281/zenodo.23085659
   url: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/blob/main/paper/MANUSCRIPT.md"
   notes: "Research preprint; not externally peer reviewed. Manuscript and data are CC BY 4.0."

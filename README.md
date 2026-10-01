@@ -50,7 +50,8 @@ The accepted release build used Python 3.9.6, matplotlib 3.9.4 and reportlab 5.0
 ## Availability and citation
 
 Repository: https://github.com/jackchenx3/recurrence-selects-costly-memory-use  
-The version DOI and complete-outcomes archive are listed on the GitHub release page and in the archival record.
+Zenodo DOI: https://doi.org/10.5281/zenodo.23085659  
+The complete-outcomes archive is available from the GitHub release and Zenodo record.
 
 See `CITATION.cff`. Internal AI-assisted checks are documented in `docs/AI_ASSISTANCE.md`; they are not external peer review or independent scientific replication.
 

@@ -2,14 +2,14 @@
 
 ## Status
 
-The public reproducibility package is maintained at <https://github.com/jackchenx3/recurrence-selects-costly-memory-use>. The repository release links the archival record and its complete-outcomes archive.
+The public reproducibility package is maintained at <https://github.com/jackchenx3/recurrence-selects-costly-memory-use>. The archival record is <https://doi.org/10.5281/zenodo.23085659>. The complete-outcomes archive is included with both records.
 
-## Licenses for the future public package
+## Licenses
 
 - Manuscript text, figures and data: Creative Commons Attribution 4.0 International (CC BY 4.0).
 - Original code: MIT License.
 
-## Planned contents
+## Contents
 
 - Frozen specification PHASE2-MUTABLE-MEMORY-001 revision 1, with its literature boundary.
 - Prospective timing records: the terminal design-review record and receipt, the production execution authority, the production job submission and the acceptance record (hashes and times below).
