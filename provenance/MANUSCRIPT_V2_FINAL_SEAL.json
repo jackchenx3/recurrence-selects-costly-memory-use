@@ -1,0 +1,12 @@
+{
+  "record": "PHASE2-MUTABLE-MEMORY-001-MANUSCRIPT-V2-FINAL-SEAL",
+  "status": "PASS",
+  "sealed_at_utc": "2026-10-01T14:45:08.025861+00:00",
+  "source_authentication_sha256": "bab904f684b812c2e4d83429e9134eef22f86c4f836fa3422535f34f6e79ab09",
+  "build_receipt_sha256": "454145a674da107ac5f063fa7b3f7fa02c5ca15308299729a2f0485f13d9bb56",
+  "visual_qa_sha256": "233f937940f6b2f78c9ed2a3f3a5cc90e3e79692c59913217a9c41a219fd993c",
+  "statistics_check_sha256": "49e8134f757d1a536d4d21dd9bacb8062a5c841dbc33245f59c625029a22d82b",
+  "manuscript_pdf_sha256": "14bb960b4ad38688ce01b40fe825369182668e6cba7f43d7f68adcaa589c3f1e",
+  "supplement_pdf_sha256": "7cc3b6f6c8c0d9a6be265ccff1b19f8666c0c1dc91592816e9f5e226e2ed5aad",
+  "decision": "PUBLICATION_PACKAGE_GO"
+}

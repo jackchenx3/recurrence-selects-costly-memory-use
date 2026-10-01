@@ -1,0 +1,15 @@
+{
+  "attempt_root": "production-stage/attempt1",
+  "authenticated_regular_bytes_excluding_receipt": 3299917726,
+  "authenticated_regular_files_excluding_receipt": 124,
+  "authentication_snapshots_identical": true,
+  "binary_hashes_passed": 3,
+  "command_records_passed": 3,
+  "identity_failure_counts": 0,
+  "manifest_output_bytes": 3299274752,
+  "manifest_outputs": 97,
+  "record": "PHASE2-MUTABLE-MEMORY-001-PRODUCTION-INVENTORY-AUDIT-1",
+  "runner_receipt_sha256": "771337a3a2ea36bf1d5dc5f95b47ecf30ff87803d085e655af034d9908ce0c94",
+  "scientific_estimates_computed": false,
+  "status": "PASS"
+}

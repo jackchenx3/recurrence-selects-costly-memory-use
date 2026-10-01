@@ -1,0 +1,79 @@
+{
+  "record": "PHASE2-MUTABLE-MEMORY-001-MANUSCRIPT-V2-FINAL-SOURCE-AUTHENTICATION",
+  "status": "PASS",
+  "created_at_utc": "2026-10-01T14:45:08.025861+00:00",
+  "source_file_count": 13,
+  "same_file_set_as_v1": true,
+  "changed_file_count_vs_v1": 11,
+  "changed_paths_vs_v1": [
+    "README.md",
+    "docs/AI_ASSISTANCE.md",
+    "docs/DATA_AVAILABILITY.md",
+    "paper/MANUSCRIPT.md",
+    "paper/SUPPLEMENT.md",
+    "provenance/CLAIM_EVIDENCE.json",
+    "provenance/FIGURE_BINDINGS.json",
+    "provenance/QUOTED_STATISTICS.json",
+    "provenance/SOURCE_PLAN.json",
+    "scripts/check_statistics.py",
+    "scripts/make_figures.py"
+  ],
+  "files": {
+    "CONSTRUCTION_NOT_RUN.json": {
+      "bytes": 1503,
+      "sha256": "49c6e591e983baf5205a6a9f8550f6f2f83ad68c7b02ff504e549b580e0bbf13"
+    },
+    "README.md": {
+      "bytes": 4415,
+      "sha256": "1b12d012d8a6398308494e5c995da6ab410d427eb0223a10b390bec9f04748f1"
+    },
+    "docs/AI_ASSISTANCE.md": {
+      "bytes": 2595,
+      "sha256": "16e1722b36eb4d6eba7c8aa95cfe6f75ff701ecfb3ed56693fd18e334d9e14d0"
+    },
+    "docs/DATA_AVAILABILITY.md": {
+      "bytes": 4528,
+      "sha256": "963ddb27ffa89a099e1403b4b736b25d2bc75df1ac2c4eb7710aebbf7a5a6676"
+    },
+    "paper/MANUSCRIPT.md": {
+      "bytes": 44173,
+      "sha256": "3078bfcde14d4fd96d648fa5aa7ef8c1d1590d587f22ff381c7734b471f3407d"
+    },
+    "paper/SUPPLEMENT.md": {
+      "bytes": 27047,
+      "sha256": "44f6a63cc46bc41437881f18fb70ba516f872225e01e731a3d8424318a645850"
+    },
+    "provenance/CLAIM_EVIDENCE.json": {
+      "bytes": 16692,
+      "sha256": "814fb546d338c8a14b39207495f0504bf25a6783843758270766a1085ca01771"
+    },
+    "provenance/FIGURE_BINDINGS.json": {
+      "bytes": 5518,
+      "sha256": "bf716d7387e3c7e502b4906cabd5f8b246f3c31bc08e1fc455e9a8b970ac0c87"
+    },
+    "provenance/QUOTED_STATISTICS.json": {
+      "bytes": 36999,
+      "sha256": "fa3c92c93c80004bc44d59a7a66a633293ab17a4e2bac367cf42bc8c3c489ffc"
+    },
+    "provenance/SOURCE_PLAN.json": {
+      "bytes": 6027,
+      "sha256": "fb9fa6a3d20ad514a4dc566884b46f66b7c1500cbce1796869e8743b514a2f2b"
+    },
+    "scripts/build_pdfs.py": {
+      "bytes": 8401,
+      "sha256": "256a0b779ba5a76cba2b67c0583c2c46ae08aad4c82433fccdd676d4da83a6e5"
+    },
+    "scripts/check_statistics.py": {
+      "bytes": 25658,
+      "sha256": "582890d630370045cf06b7920006610923fada4301fb6dfad8eeafb64c162a6c"
+    },
+    "scripts/make_figures.py": {
+      "bytes": 17263,
+      "sha256": "82669e35891721b794e0828d4e43d33c7f04f64162c3e7cb6e036a48fcceb0cb"
+    }
+  },
+  "claude_019_source_authentication_sha256": "2df967887d6eeb469354f70b5bf7ed54bdcf3920ebd356a0e82d4dab376e5fc7",
+  "qwen_012_patch_acceptance_sha256": "91813c6619605e028e5a637e0dfccd0483bdb4e4811df261cf0aab7f77f51a37",
+  "historical_construction_record_unchanged": true,
+  "note": "The final source is the authenticated CLAUDE-019 post-audit snapshot plus the accepted QWEN-012 one-line figure-label placement patch."
+}

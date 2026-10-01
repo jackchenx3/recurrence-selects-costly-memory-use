@@ -1,0 +1,1432 @@
+{
+  "hitCount": 38,
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 100,
+    "queryString": "\"phenotypic memory\" evolution fluctuating environment",
+    "resultType": "lite",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "authorString": "Pollack D, Nozoe T, Kussell E.",
+        "bookOrReportDetails": {
+          "publisher": "bioRxiv",
+          "yearOfPublication": 2025
+        },
+        "citedByCount": 0,
+        "doi": "10.1101/2025.06.23.661119",
+        "firstIndexDate": "2025-06-26",
+        "firstPublicationDate": "2025-06-23",
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "N",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PPR1041312",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "isOpenAccess": "N",
+        "pubType": "preprint",
+        "pubYear": "2025",
+        "source": "PPR",
+        "title": "Gene regulation, phenotypic memory, and selection in fluctuating environments"
+      },
+      {
+        "authorString": "Sadhu G, Jain P, George JT, Jolly MK.",
+        "citedByCount": 2,
+        "doi": "10.1007/s11538-025-01591-2",
+        "firstIndexDate": "2026-01-14",
+        "firstPublicationDate": "2026-01-14",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12804273"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41533050",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "2",
+        "journalIssn": "0092-8240; 1522-9602; ",
+        "journalTitle": "Bull Math Biol",
+        "journalVolume": "88",
+        "pageInfo": "23",
+        "pmcid": "PMC12804273",
+        "pmid": "41533050",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "A Phenotype-Structured PDE Framework for Investigating the Role of Hypoxic Memory on Tumor Invasion under Cyclic Hypoxia.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Ostovar G, Boedicker JQ.",
+        "citedByCount": 10,
+        "doi": "10.1371/journal.pcbi.1011696",
+        "firstIndexDate": "2024-07-08",
+        "firstPublicationDate": "2024-07-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11257393"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "38976753",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "7",
+        "journalIssn": "1553-734x; 1553-7358; ",
+        "journalTitle": "PLoS Comput Biol",
+        "journalVolume": "20",
+        "pageInfo": "e1011696",
+        "pmcid": "PMC11257393",
+        "pmid": "38976753",
+        "pubType": "research-article; journal article; research support, n.i.h., extramural",
+        "pubYear": "2024",
+        "source": "MED",
+        "title": "Phenotypic memory in quorum sensing."
+      },
+      {
+        "authorString": "Cai C, Yu J, Zhang X, Zhou T, Chen Q.",
+        "citedByCount": 5,
+        "doi": "10.1038/s41556-025-01736-4",
+        "firstIndexDate": "2025-08-22",
+        "firstPublicationDate": "2025-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12414476"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40836039",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "9",
+        "journalIssn": "1465-7392; 1476-4679; ",
+        "journalTitle": "Nat Cell Biol",
+        "journalVolume": "27",
+        "pageInfo": "1381-1386",
+        "pmcid": "PMC12414476",
+        "pmid": "40836039",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "A model for propagation of RNA structural memory through biomolecular condensates."
+      },
+      {
+        "authorString": "Kronholm I.",
+        "citedByCount": 12,
+        "doi": "10.1093/eep/dvac007",
+        "firstIndexDate": "2022-04-28",
+        "firstPublicationDate": "2022-04-22",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC9031056"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "35475265",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2058-5888",
+        "journalTitle": "Environ Epigenet",
+        "journalVolume": "8",
+        "pageInfo": "dvac007",
+        "pmcid": "PMC9031056",
+        "pmid": "35475265",
+        "pubType": "research-article; journal article",
+        "pubYear": "2022",
+        "source": "MED",
+        "title": "Evolution of anticipatory effects mediated by epigenetic changes."
+      },
+      {
+        "authorString": "George JT.",
+        "citedByCount": 9,
+        "doi": "10.1016/j.bpj.2023.10.019",
+        "firstIndexDate": "2023-10-25",
+        "firstPublicationDate": "2023-10-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10698328"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "37876159",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "22",
+        "journalIssn": "0006-3495; 1542-0086; ",
+        "journalTitle": "Biophys J",
+        "journalVolume": "122",
+        "pageInfo": "4414-4424",
+        "pmcid": "PMC10698328",
+        "pmid": "37876159",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article; research support, n.i.h., extramural",
+        "pubYear": "2023",
+        "source": "MED",
+        "title": "Optimal phenotypic adaptation in fluctuating environments."
+      },
+      {
+        "authorString": "El Meouche I, Jain P, Jolly MK, Capp JP.",
+        "citedByCount": 14,
+        "doi": "10.1016/j.tranon.2024.102069",
+        "firstIndexDate": "2024-08-11",
+        "firstPublicationDate": "2024-08-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11364053"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "39121829",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1936-5233",
+        "journalTitle": "Transl Oncol",
+        "journalVolume": "49",
+        "pageInfo": "102069",
+        "pmcid": "PMC11364053",
+        "pmid": "39121829",
+        "pubType": "brief-report; journal article",
+        "pubYear": "2024",
+        "source": "MED",
+        "title": "Drug tolerance and persistence in bacteria, fungi and cancer cells: Role of non-genetic heterogeneity.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Vermeersch L, Cool L, Gorkovskiy A, Voordeckers K, Wenseleers T, Verstrepen KJ.",
+        "citedByCount": 27,
+        "doi": "10.3389/fmicb.2022.1004488",
+        "firstIndexDate": "2022-10-28",
+        "firstPublicationDate": "2022-10-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC9589428"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "36299722",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-302x",
+        "journalTitle": "Front Microbiol",
+        "journalVolume": "13",
+        "pageInfo": "1004488",
+        "pmcid": "PMC9589428",
+        "pmid": "36299722",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2022",
+        "source": "MED",
+        "title": "Do microbes have a memory? History-dependent behavior in the adaptation to variable environments."
+      },
+      {
+        "authorString": "Kuijper B, Johnstone RA.",
+        "citedByCount": 4,
+        "doi": "10.1098/rstb.2020.0128",
+        "firstIndexDate": "2021-04-20",
+        "firstPublicationDate": "2021-04-19",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8059634"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "33866808",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "1826",
+        "journalIssn": "0962-8436; 1471-2970; ",
+        "journalTitle": "Philos Trans R Soc Lond B Biol Sci",
+        "journalVolume": "376",
+        "pageInfo": "20200128",
+        "pmcid": "PMC8059634",
+        "pmid": "33866808",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2021",
+        "source": "MED",
+        "title": "Evolution of epigenetic transmission when selection acts on fecundity versus viability.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Rescan M, Grulois D, Aboud EO, de Villemereuil P, Chevin LM.",
+        "citedByCount": 11,
+        "doi": "10.1371/journal.pgen.1009611",
+        "firstIndexDate": "2021-06-24",
+        "firstPublicationDate": "2021-06-23",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8259966"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "34161327",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "6",
+        "journalIssn": "1553-7390; 1553-7404; ",
+        "journalTitle": "PLoS Genet",
+        "journalVolume": "17",
+        "pageInfo": "e1009611",
+        "pmcid": "PMC8259966",
+        "pmid": "34161327",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2021",
+        "source": "MED",
+        "title": "Predicting population genetic change in an autocorrelated random environment: Insights from a large automated experiment.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Law L, Xue B.",
+        "citedByCount": 0,
+        "doi": "10.1098/rspb.2023.0096",
+        "firstIndexDate": "2023-04-20",
+        "firstPublicationDate": "2023-04-19",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10113029"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "37072039",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1997",
+        "journalIssn": "0962-8452; 1471-2954; ",
+        "journalTitle": "Proc Biol Sci",
+        "journalVolume": "290",
+        "pageInfo": "20230096",
+        "pmcid": "PMC10113029",
+        "pmid": "37072039",
+        "pubType": "research-article; journal article",
+        "pubYear": "2023",
+        "source": "MED",
+        "title": "Internal cues for optimizing reproduction in a varying environment.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Ugolini GS, Wang M, Secchi E, Pioli R, Ackermann M, Stocker R.",
+        "citedByCount": 39,
+        "doi": "10.1039/d3lc00784g",
+        "firstIndexDate": "2024-02-12",
+        "firstPublicationDate": "2024-02-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10898419"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "N",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "38344937",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "1473-0197; 1473-0189; ",
+        "journalTitle": "Lab Chip",
+        "journalVolume": "24",
+        "pageInfo": "1394-1418",
+        "pmcid": "PMC10898419",
+        "pmid": "38344937",
+        "pubType": "research support, non-u.s. gov't; review-article; review; journal article",
+        "pubYear": "2024",
+        "source": "MED",
+        "title": "Microfluidic approaches in microbial ecology.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Landmann S, Holmes CM, Tikhonov M.",
+        "citedByCount": 6,
+        "doi": "10.7554/elife.67455",
+        "firstIndexDate": "2021-09-08",
+        "firstPublicationDate": "2021-09-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8423446"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "34490844",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2050-084x",
+        "journalTitle": "Elife",
+        "journalVolume": "10",
+        "pageInfo": "e67455",
+        "pmcid": "PMC8423446",
+        "pmid": "34490844",
+        "pubType": "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article",
+        "pubYear": "2021",
+        "source": "MED",
+        "title": "A simple regulatory architecture allows learning the statistical structure of a changing environment.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Gokhale CS, Giaimo S, Remigi P.",
+        "citedByCount": 12,
+        "doi": "10.1371/journal.pcbi.1009431",
+        "firstIndexDate": "2021-10-02",
+        "firstPublicationDate": "2021-10-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8513827"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "34597291",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "10",
+        "journalIssn": "1553-734x; 1553-7358; ",
+        "journalTitle": "PLoS Comput Biol",
+        "journalVolume": "17",
+        "pageInfo": "e1009431",
+        "pmcid": "PMC8513827",
+        "pmid": "34597291",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2021",
+        "source": "MED",
+        "title": "Memory shapes microbial populations."
+      },
+      {
+        "authorString": "Carja O, Plotkin JB.",
+        "citedByCount": 28,
+        "doi": "10.1534/genetics.118.301758",
+        "firstIndexDate": "2019-02-01",
+        "firstPublicationDate": "2019-01-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6404248"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "30696715",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "0016-6731; 1943-2631; ",
+        "journalTitle": "Genetics",
+        "journalVolume": "211",
+        "pageInfo": "977-988",
+        "pmcid": "PMC6404248",
+        "pmid": "30696715",
+        "pubType": "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article",
+        "pubYear": "2019",
+        "source": "MED",
+        "title": "Evolutionary Rescue Through Partly Heritable Phenotypic Variability.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Rescan M, Grulois D, Ortega-Aboud E, Chevin LM.",
+        "citedByCount": 32,
+        "doi": "10.1038/s41559-019-1089-6",
+        "firstIndexDate": "2020-01-29",
+        "firstPublicationDate": "2020-01-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC7025894"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "31988445",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "2",
+        "journalIssn": "2397-334x",
+        "journalTitle": "Nat Ecol Evol",
+        "journalVolume": "4",
+        "pageInfo": "193-201",
+        "pmcid": "PMC7025894",
+        "pmid": "31988445",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2020",
+        "source": "MED",
+        "title": "Phenotypic memory drives population growth and extinction risk in a noisy environment.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Carja O, Plotkin JB.",
+        "citedByCount": 28,
+        "doi": "10.1038/s41598-017-05214-2",
+        "firstIndexDate": "2017-07-13",
+        "firstPublicationDate": "2017-07-11",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC5505965"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "28698577",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "7",
+        "pageInfo": "5090",
+        "pmcid": "PMC5505965",
+        "pmid": "28698577",
+        "pubType": "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article",
+        "pubYear": "2017",
+        "source": "MED",
+        "title": "The evolutionary advantage of heritable phenotypic heterogeneity."
+      },
+      {
+        "authorString": "Foo J, Basanta D, Rockne RC, Strelez C, Shah C, Ghaffarian K, Mumenthaler SM, Mitchell K, Lathia JD, Frankhouser D, Branciamore S, Kuo YH, Marcucci G, Velde RV, Marusyk A, Huang S, Hari K, Jolly MK, Hatzikirou H, Poels KE, Spilker ME, Shtylla B, Robertson-Tessi M, Anderson ARA.",
+        "citedByCount": 16,
+        "doi": "10.1088/1478-3975/ac4ee2",
+        "firstIndexDate": "2022-01-26",
+        "firstPublicationDate": "2022-04-18",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC9190291"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "35078159",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "1478-3967; 1478-3975; ",
+        "journalTitle": "Phys Biol",
+        "journalVolume": "19",
+        "pmcid": "PMC9190291",
+        "pmid": "35078159",
+        "pubType": "research-article; review; journal article",
+        "pubYear": "2022",
+        "source": "MED",
+        "title": "Roadmap on plasticity and epigenetics in cancer.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Skanata A, Kussell E.",
+        "citedByCount": 21,
+        "doi": "10.1103/physrevlett.117.038104",
+        "firstIndexDate": "2016-07-30",
+        "firstPublicationDate": "2016-07-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC5697730"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "27472146",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "3",
+        "journalIssn": "0031-9007; 1079-7114; ",
+        "journalTitle": "Phys Rev Lett",
+        "journalVolume": "117",
+        "pageInfo": "038104",
+        "pmcid": "PMC5697730",
+        "pmid": "27472146",
+        "pubType": "research-article; journal article",
+        "pubYear": "2016",
+        "source": "MED",
+        "title": "Evolutionary Phase Transitions in Random Environments."
+      },
+      {
+        "authorString": "Murugan A, Husain K, Rust MJ, Hepler C, Bass J, Pietsch JMJ, Swain PS, Jena SG, Toettcher JE, Chakraborty AK, Sprenger KG, Mora T, Walczak AM, Rivoire O, Wang S, Wood KB, Skanata A, Kussell E, Ranganathan R, Shih HY, Goldenfeld N.",
+        "citedByCount": 27,
+        "doi": "10.1088/1478-3975/abde8d",
+        "firstIndexDate": "2021-01-22",
+        "firstPublicationDate": "2021-05-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8652373"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "33477124",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "1478-3967; 1478-3975; ",
+        "journalTitle": "Phys Biol",
+        "journalVolume": "18",
+        "pmcid": "PMC8652373",
+        "pmid": "33477124",
+        "pubType": "research support, non-u.s. gov't; research-article; review; journal article; research support, n.i.h., extramural",
+        "pubYear": "2021",
+        "source": "MED",
+        "title": "Roadmap on biology in time varying environments.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "pdb"
+          ]
+        }
+      },
+      {
+        "authorString": "Silva WTAF, Otto SP, Immler S.",
+        "citedByCount": 11,
+        "doi": "10.1371/journal.pgen.1009581",
+        "firstIndexDate": "2021-05-28",
+        "firstPublicationDate": "2021-05-26",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8186813"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "34038409",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "1553-7390; 1553-7404; ",
+        "journalTitle": "PLoS Genet",
+        "journalVolume": "17",
+        "pageInfo": "e1009581",
+        "pmcid": "PMC8186813",
+        "pmid": "34038409",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2021",
+        "source": "MED",
+        "title": "Evolution of plasticity in production and transgenerational inheritance of small RNAs under dynamic environmental conditions."
+      },
+      {
+        "authorString": "Ray JC.",
+        "citedByCount": 6,
+        "doi": "10.1021/acssynbio.5b00229",
+        "firstIndexDate": "2016-02-26",
+        "firstPublicationDate": "2016-03-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4994061"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "26910476",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "8",
+        "journalIssn": "2161-5063",
+        "journalTitle": "ACS Synth Biol",
+        "journalVolume": "5",
+        "pageInfo": "810-816",
+        "pmcid": "PMC4994061",
+        "pmid": "26910476",
+        "pubType": "rapid-communication; journal article; research support, n.i.h., extramural",
+        "pubYear": "2016",
+        "source": "MED",
+        "title": "Survival of Phenotypic Information during Cellular Growth Transitions.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Lambert G, Kussell E.",
+        "citedByCount": 196,
+        "doi": "10.1371/journal.pgen.1004556",
+        "firstIndexDate": "2014-09-26",
+        "firstPublicationDate": "2014-09-25",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4177670"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "25255314",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "9",
+        "journalIssn": "1553-7390; 1553-7404; ",
+        "journalTitle": "PLoS Genet",
+        "journalVolume": "10",
+        "pageInfo": "e1004556",
+        "pmcid": "PMC4177670",
+        "pmid": "25255314",
+        "pubType": "research-article; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural",
+        "pubYear": "2014",
+        "source": "MED",
+        "title": "Memory and fitness optimization of bacteria under fluctuating environments."
+      },
+      {
+        "authorString": "Desponds J, Mora T, Walczak AM.",
+        "citedByCount": 66,
+        "doi": "10.1073/pnas.1512977112",
+        "firstIndexDate": "2015-12-30",
+        "firstPublicationDate": "2015-12-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4720353"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "26711994",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "2",
+        "journalIssn": "0027-8424; 1091-6490; ",
+        "journalTitle": "Proc Natl Acad Sci U S A",
+        "journalVolume": "113",
+        "pageInfo": "274-279",
+        "pmcid": "PMC4720353",
+        "pmid": "26711994",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2016",
+        "source": "MED",
+        "title": "Fluctuating fitness shapes the clone-size distribution of immune repertoires."
+      },
+      {
+        "authorString": "Anzia EL, Rabajante JF.",
+        "citedByCount": 2,
+        "doi": "10.1098/rsos.180693",
+        "firstIndexDate": "2019-03-07",
+        "firstPublicationDate": "2018-09-12",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6170573"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "30839730",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "9",
+        "journalIssn": "2054-5703",
+        "journalTitle": "R Soc Open Sci",
+        "journalVolume": "5",
+        "pageInfo": "180693",
+        "pmcid": "PMC6170573",
+        "pmid": "30839730",
+        "pubType": "research-article; journal article",
+        "pubYear": "2018",
+        "source": "MED",
+        "title": "Antibiotic-driven escape of host in a parasite-induced Red Queen dynamics.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Xue B, Leibler S.",
+        "citedByCount": 22,
+        "doi": "10.1073/pnas.1608756113",
+        "firstIndexDate": "2016-09-21",
+        "firstPublicationDate": "2016-09-19",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC5056115"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "27647895",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "40",
+        "journalIssn": "0027-8424; 1091-6490; ",
+        "journalTitle": "Proc Natl Acad Sci U S A",
+        "journalVolume": "113",
+        "pageInfo": "11266-11271",
+        "pmcid": "PMC5056115",
+        "pmid": "27647895",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2016",
+        "source": "MED",
+        "title": "Evolutionary learning of adaptation to varying environments through a transgenerational feedback."
+      },
+      {
+        "authorString": "Mutlu A, Trauth S, Ziesack M, Nagler K, Bergeest JP, Rohr K, Becker N, H\u00f6fer T, Bischofs IB.",
+        "citedByCount": 81,
+        "doi": "10.1038/s41467-017-02477-1",
+        "firstIndexDate": "2018-01-06",
+        "firstPublicationDate": "2018-01-04",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC5754360"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "29302032",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2041-1723",
+        "journalTitle": "Nat Commun",
+        "journalVolume": "9",
+        "pageInfo": "69",
+        "pmcid": "PMC5754360",
+        "pmid": "29302032",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2018",
+        "source": "MED",
+        "title": "Phenotypic memory in Bacillus subtilis links dormancy entry and exit by a spore quantity-quality tradeoff.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Dey S, Proulx SR, Teot\u00f3nio H.",
+        "citedByCount": 85,
+        "doi": "10.1371/journal.pbio.1002388",
+        "firstIndexDate": "2016-02-26",
+        "firstPublicationDate": "2016-02-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4766184"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "26910440",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "2",
+        "journalIssn": "1544-9173; 1545-7885; ",
+        "journalTitle": "PLoS Biol",
+        "journalVolume": "14",
+        "pageInfo": "e1002388",
+        "pmcid": "PMC4766184",
+        "pmid": "26910440",
+        "pubType": "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article",
+        "pubYear": "2016",
+        "source": "MED",
+        "title": "Adaptation to Temporally Fluctuating Environments by the Evolution of Maternal Effects.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Nichol D, Robertson-Tessi M, Anderson ARA, Jeavons P.",
+        "citedByCount": 21,
+        "doi": "10.1098/rsif.2019.0332",
+        "firstIndexDate": "2019-11-07",
+        "firstPublicationDate": "2019-11-06",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6893500"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "31690233",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "160",
+        "journalIssn": "1742-5689; 1742-5662; ",
+        "journalTitle": "J R Soc Interface",
+        "journalVolume": "16",
+        "pageInfo": "20190332",
+        "pmcid": "PMC6893500",
+        "pmid": "31690233",
+        "pubType": "research support, non-u.s. gov't; review-article; journal article; research support, n.i.h., extramural",
+        "pubYear": "2019",
+        "source": "MED",
+        "title": "Model genotype-phenotype mappings and the algorithmic structure of evolution.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Andersson SG.",
+        "citedByCount": 4,
+        "doi": "10.1073/pnas.1603151113",
+        "firstIndexDate": "2016-04-02",
+        "firstPublicationDate": "2016-03-31",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4839438"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "27036005",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "15",
+        "journalIssn": "0027-8424; 1091-6490; ",
+        "journalTitle": "Proc Natl Acad Sci U S A",
+        "journalVolume": "113",
+        "pageInfo": "3921-3923",
+        "pmcid": "PMC4839438",
+        "pmid": "27036005",
+        "pubType": "article-commentary; comment; research support, non-u.s. gov't; editorial",
+        "pubYear": "2016",
+        "source": "MED",
+        "title": "Stress management strategies in single bacterial cells."
+      },
+      {
+        "authorString": "Libby E, Driscoll WW, Ratcliff WC.",
+        "citedByCount": 3,
+        "doi": "10.1038/s41598-017-18687-y",
+        "firstIndexDate": "2018-01-20",
+        "firstPublicationDate": "2018-01-18",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC5773525"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "29348455",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "8",
+        "pageInfo": "1120",
+        "pmcid": "PMC5773525",
+        "pmid": "29348455",
+        "pubType": "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article",
+        "pubYear": "2018",
+        "source": "MED",
+        "title": "Programmed cell death can increase the efficacy of microbial bet -hedging."
+      },
+      {
+        "authorString": "Nichol D, Robertson-Tessi M, Jeavons P, Anderson AR.",
+        "citedByCount": 35,
+        "doi": "10.1534/genetics.116.193474",
+        "firstIndexDate": "2016-10-27",
+        "firstPublicationDate": "2016-10-21",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC5161283"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "27770034",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "0016-6731; 1943-2631; ",
+        "journalTitle": "Genetics",
+        "journalVolume": "204",
+        "pageInfo": "1523-1539",
+        "pmcid": "PMC5161283",
+        "pmid": "27770034",
+        "pubType": "research-article; journal article",
+        "pubYear": "2016",
+        "source": "MED",
+        "title": "Stochasticity in the Genotype-Phenotype Map: Implications for the Robustness and Persistence of Bet-Hedging."
+      },
+      {
+        "authorString": "Lambert G, Chew J, Rust MJ.",
+        "citedByCount": 28,
+        "doi": "10.1016/j.bpj.2016.07.008",
+        "firstIndexDate": "2016-09-03",
+        "firstPublicationDate": "2016-08-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC5002072"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "27558731",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "4",
+        "journalIssn": "0006-3495; 1542-0086; ",
+        "journalTitle": "Biophys J",
+        "journalVolume": "111",
+        "pageInfo": "883-891",
+        "pmcid": "PMC5002072",
+        "pmid": "27558731",
+        "pubType": "research-article; journal article",
+        "pubYear": "2016",
+        "source": "MED",
+        "title": "Costs of Clock-Environment Misalignment in Individual Cyanobacterial Cells.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Hafer N, Ebil S, Uller T, Pike N.",
+        "citedByCount": 36,
+        "doi": "10.1098/rsbl.2011.0139",
+        "firstIndexDate": "2011-03-18",
+        "firstPublicationDate": "2011-03-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC3169046"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "21411448",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "5",
+        "journalIssn": "1744-9561; 1744-957x; ",
+        "journalTitle": "Biol Lett",
+        "journalVolume": "7",
+        "pageInfo": "755-758",
+        "pmcid": "PMC3169046",
+        "pmid": "21411448",
+        "pubType": "research-article; journal article",
+        "pubYear": "2011",
+        "source": "MED",
+        "title": "Transgenerational effects of food availability on age at maturity and reproductive output in an asexual collembolan species."
+      },
+      {
+        "authorString": "Le Roy A, Loughland I, Seebacher F.",
+        "citedByCount": 36,
+        "doi": "10.1038/s41598-017-03300-z",
+        "firstIndexDate": "2017-06-29",
+        "firstPublicationDate": "2017-06-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC5489511"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "28659598",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "7",
+        "pageInfo": "4313",
+        "pmcid": "PMC5489511",
+        "pmid": "28659598",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2017",
+        "source": "MED",
+        "title": "Differential effects of developmental thermal plasticity across three generations of guppies (Poecilia reticulata): canalization and anticipatory matching."
+      },
+      {
+        "authorString": "Gallie J, Libby E, Bertels F, Remigi P, Jendresen CB, Ferguson GC, Desprat N, Buffing MF, Sauer U, Beaumont HJ, Martinussen J, Kilstrup M, Rainey PB.",
+        "citedByCount": 52,
+        "dbCrossReferenceList": {
+          "dbName": [
+            "EMBL"
+          ]
+        },
+        "doi": "10.1371/journal.pbio.1002109",
+        "firstIndexDate": "2015-03-13",
+        "firstPublicationDate": "2015-03-12",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4357382"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "Y",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "25763575",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "1544-9173; 1545-7885; ",
+        "journalTitle": "PLoS Biol",
+        "journalVolume": "13",
+        "pageInfo": "e1002109",
+        "pmcid": "PMC4357382",
+        "pmid": "25763575",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2015",
+        "source": "MED",
+        "title": "Bistability in a metabolic network underpins the de novo evolution of colony switching in Pseudomonas fluorescens.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "geo"
+          ]
+        }
+      },
+      {
+        "authorString": "Pasquier C, Cl\u00e9ment M, Dombrovsky A, Penaud S, Da Rocha M, Rancurel C, Ledger N, Capovilla M, Robichon A.",
+        "citedByCount": 14,
+        "doi": "10.1371/journal.pone.0115022",
+        "firstIndexDate": "2015-01-02",
+        "firstPublicationDate": "2014-12-31",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4281257"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "25551225",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "12",
+        "journalIssn": "1932-6203",
+        "journalTitle": "PLoS One",
+        "journalVolume": "9",
+        "pageInfo": "e115022",
+        "pmcid": "PMC4281257",
+        "pmid": "25551225",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2014",
+        "source": "MED",
+        "title": "Environmentally selected aphid variants in clonality context display differential patterns of methylation in the genome.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen",
+            "go",
+            "doi"
+          ]
+        }
+      },
+      {
+        "citedByCount": 0,
+        "firstIndexDate": "2020-03-26",
+        "firstPublicationDate": "2017-01-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC7090633"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PMC7090633",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "suppl 1",
+        "journalIssn": "0947-0867; 1868-6249; ",
+        "journalTitle": "Biospektrum (Heidelb)",
+        "journalVolume": "23",
+        "pageInfo": "1-377",
+        "pmcid": "PMC7090633",
+        "pubType": "abstract",
+        "pubYear": "2017",
+        "source": "PMC",
+        "title": "Abstractbook of the Joint Conference 2017 of the DGHM & VAAM: Microbiology and Infection"
+      }
+    ]
+  },
+  "version": "6.9"
+}

@@ -1,0 +1,35 @@
+{
+  "record": "PHASE2-MUTABLE-MEMORY-001-PROSPECTIVE-TIMING-BINDINGS-1",
+  "purpose": "Bind the frozen design and terminal GO review to times before the sole production submission.",
+  "design": {
+    "path": "design/PHASE2-MUTABLE-MEMORY-001-REV1.md",
+    "revision": 1,
+    "sha256": "c17a3a1e9ac9cf2260f6743eaf08e4c2808080a767af16d2f9e9d2b9ad3e821d"
+  },
+  "terminal_design_review": {
+    "worker": "CLAUDE-003",
+    "verdict": "GO",
+    "completed_at_utc": "2026-10-01T01:55:25Z",
+    "review_path": "results/claude_003/terminal_design_review.md",
+    "review_sha256": "787cf32a20312f2682c761243f3dec04c5eb8036d14d6efc444e9830db37960a",
+    "receipt_path": "results/claude_003/terminal_design_review.receipt.json",
+    "receipt_sha256": "6277757f9ab3dfa611515c161776c17b561738eba6fa478ae0f8634e13c03176"
+  },
+  "production_authority": {
+    "path": "PRODUCTION_EXECUTION_AUTHORITY.json",
+    "issued_at_utc": "2026-10-01T12:53:04Z",
+    "sha256": "ee3cb68bed5d212e6ea10ece542e2e90c32cb9cea07d85fceda10fc56b375b1d"
+  },
+  "production_submission": {
+    "path": "PRODUCTION_JOB_SUBMISSION.json",
+    "submitted_at_utc": "2026-10-01T12:55:19Z",
+    "job_id": "53530597",
+    "automatic_retry": false,
+    "parameter_changes": false
+  },
+  "accepted_result": {
+    "path": "PHASE2_STUDY_001_ACCEPTED.json",
+    "sha256": "2eb3aaf5d754f4570a75522aa9e1f38358715c06c674d5a267732a1357926e6f"
+  },
+  "interpretation": "The frozen design and its terminal GO review precede the sole production authorization and submission. This timing record establishes prospective design provenance; it does not add or modify any scientific outcome."
+}

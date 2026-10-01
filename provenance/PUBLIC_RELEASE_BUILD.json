@@ -1,0 +1,71 @@
+{
+  "record": "PHASE2-MUTABLE-MEMORY-001-PUBLIC-RELEASE-BUILD",
+  "status": "PASS",
+  "built_at_utc": "2026-10-01T15:02:16.026205+00:00",
+  "publication_metadata_patch_sha256": "3715f5d2ff41e9979ce6474f7b118e57b2499a68066de03377ef8c1401214247",
+  "public_export_transformations_sha256": "a15ed152e007116c2ea69556874727c8a9ebcd060291330891883ecd98590e01",
+  "statistics_check": {
+    "status": "PASS",
+    "checks_passed": 870,
+    "checks_failed": 0,
+    "sha256": "d0d0ee3f858c00c52ec3d0237beb65c475eca44f444fc92c7bd20112b3620492"
+  },
+  "environment": {
+    "python": "3.9.6",
+    "matplotlib": "3.9.4",
+    "reportlab": "5.0.1"
+  },
+  "manuscript_pdf": {
+    "path": "paper/MANUSCRIPT.pdf",
+    "sha256": "f514d45e18a80b356a8442f7744298ed942b27e0b2b55ef74184a3448633d603",
+    "bytes": 927879,
+    "pages": 14,
+    "page_size": "A4"
+  },
+  "supplement_pdf": {
+    "path": "paper/SUPPLEMENT.pdf",
+    "sha256": "edef1d290624399dab2869d630d4bdaf9e13503bf7f9b71ff000c2731b63d1d2",
+    "bytes": 70332,
+    "pages": 10,
+    "page_size": "A4"
+  },
+  "figures": {
+    "figure1_design.pdf": {
+      "sha256": "add0de7498bcfd9957b131d30cf415275d1ba16e412398795579f9b84e190ae9",
+      "bytes": 37312
+    },
+    "figure1_design.png": {
+      "sha256": "992bdd7e3f07f55bd6659efbd40ce83647907af1743ccf39aa4368ef824da2c0",
+      "bytes": 518571
+    },
+    "figure1_design.svg": {
+      "sha256": "94babd045273a0c5acc99a012b10e71d74946e762d6d9a4b674bd4f094fa067d",
+      "bytes": 149431
+    },
+    "figure2_allele.pdf": {
+      "sha256": "b3d1f8a86902fa42ff443059e81864dc59fa1eac872947df2d769f86b1e77313",
+      "bytes": 34744
+    },
+    "figure2_allele.png": {
+      "sha256": "69f6ae17f25b9cb9beeefa8cb8b5898328e384e7cb6d34ff80b1f9e318bf098e",
+      "bytes": 215252
+    },
+    "figure2_allele.svg": {
+      "sha256": "d65a98fa24041f045ea521a45398cec3c49a9647a25ea0c83e9a864a7c9873ac",
+      "bytes": 93271
+    },
+    "figure3_accuracy.pdf": {
+      "sha256": "bbbe04e09cdf4f362a5414b30224d164ccb11726dc87e02ea8bfbd124a40df2b",
+      "bytes": 31031
+    },
+    "figure3_accuracy.png": {
+      "sha256": "4e8012bb76a0e62085fe80c8834b49277b9f357a0953cce28aeaa5e780454ad3",
+      "bytes": 175481
+    },
+    "figure3_accuracy.svg": {
+      "sha256": "ce14dbcd3fe952471c2f5b3ca025cc7d54391e5a284772626f8d83adbb684e2b",
+      "bytes": 74900
+    }
+  },
+  "scientific_execution_performed": false
+}

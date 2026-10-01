@@ -1,0 +1,95 @@
+{
+  "record": "PHASE2-MUTABLE-MEMORY-001-AUDITOR-CONSTRUCTION-CLAUDE-010",
+  "status": "SOURCE_ONLY_NOT_RUN",
+  "compilation_performed": false,
+  "execution_performed": false,
+  "tests_run": false,
+  "benchmark_performed": false,
+  "simulation_performed": false,
+  "scheduler_job_submitted": false,
+  "scientific_outcome_inspected": false,
+  "inputs_read_by_worker": [
+    "PHASE2-MUTABLE-MEMORY-001-REV1.md (supplied text)",
+    "AUDITOR_ARCHITECTURE_DECISION.md (supplied text)",
+    "FIXTURE_STAGE_ACCEPTED.json (supplied text)",
+    "frozen_config.json (supplied text)",
+    "OUTPUT_FORMATS.md (supplied text)",
+    "binary_records.json (supplied text)",
+    "FIXTURE_STAGE_RECEIPT.json (supplied text)"
+  ],
+  "producer_source_read_or_copied": false,
+  "claims_any_test_passed": false,
+  "created_files": [
+    "AUDITOR_NOT_RUN.json",
+    "Makefile",
+    "README.md",
+    "docs/INPUT_CONTRACT.md",
+    "python/mmem_record_verifier.py",
+    "src/main.cpp",
+    "src/philox.hpp",
+    "src/records.hpp",
+    "src/replay.hpp",
+    "src/sha256.hpp",
+    "tests/fixture_gate.py"
+  ],
+  "corrections": [
+    {
+      "record": "PHASE2-MUTABLE-MEMORY-001-AUDITOR-CORRECTION-CLAUDE-012",
+      "kind": "SOURCE_ONLY_CORRECTION",
+      "statement": "Source-only correction after the CLAUDE-011 review (FIX_BEFORE_AUDITOR_FIXTURES). Heuristic JSON discovery was replaced by exact parsing of run_manifest.json, estimates_22.json and decision.json at the paths, keys, types, labels and precision-60 Decimal encoding of PRODUCER_OUTPUT_INTERFACE_CONTRACT.json; all C++ and Python mismatch diagnostics were redacted to category, coordinates or record index, and field name; C++ usage errors now exit 2 without a receipt; the fixture gate now uses the exact analysis schemas, checks each INVALID diagnostic and writes a FAIL receipt on unexpected exceptions. Replay algorithms, scientific constants, record layouts, fixed counts, namespace isolation and component independence are unchanged.",
+      "inputs_read_by_worker": [
+        "auditor_source_review.md (supplied text)",
+        "PRODUCER_OUTPUT_INTERFACE_CONTRACT.json (supplied text)",
+        "PRODUCER_OUTPUT_INTERFACE_CONTRACT.md (supplied text)",
+        "AUDITOR_ARCHITECTURE_DECISION.md (supplied text)",
+        "the eleven package files in phase2_mutable_memory_auditor_v1_fix1"
+      ],
+      "changed_files": [
+        "AUDITOR_NOT_RUN.json",
+        "README.md",
+        "docs/INPUT_CONTRACT.md",
+        "python/mmem_record_verifier.py",
+        "src/main.cpp",
+        "src/records.hpp",
+        "tests/fixture_gate.py"
+      ],
+      "files_added_or_removed": false,
+      "compilation_performed": false,
+      "execution_performed": false,
+      "tests_run": false,
+      "timing_measured": false,
+      "producer_source_read_or_copied": false,
+      "scientific_outcome_inspected": false,
+      "claims_any_test_passed": false,
+      "result_exists": false
+    },
+    {
+      "record": "PHASE2-MUTABLE-MEMORY-001-AUDITOR-CORRECTION-CLAUDE-013",
+      "kind": "SOURCE_ONLY_CORRECTION",
+      "statement": "Source-only completion of the bounded auditor interface correction against PRODUCER_OUTPUT_INTERFACE_CONTRACT_R2.json (revision 2, supersedes revision 1). The Python verifier now enforces the six exact interpretation labels in order, the exact 24-key run_manifest.json root, exact integer range lengths 1,2,2,2,2,4, records 1-4 family_decision equal to the recomputed primary decision, records 5-6 classification and relation_to_allele_enrichment_descriptive equal to their recomputed values and cannot_alter_primary_decision true, and '%d/%d' exact fractions including denominator 1; it reproduces the revision-2 Decimal order (precision-60 dec(Fraction), then the precision-60 half-width via inner, then precision-60 lower/upper). A NONSCIENTIFIC manifest-interface mode checks only manifest schema, entry uniqueness, byte counts and hashes over placeholder files of at most 4096 bytes and never parses a record, simulates or derives a key; production mode is unchanged. The fixture gate adds a 97-file manifest-interface control (PASS) and a single outputs[37].sha256 corruption (INVALID) with diagnostic and receipt redaction checks. C++ sources, replay algorithms, scientific constants, binary layouts, fixed counts, namespace rules and component independence are unchanged.",
+      "inputs_read_by_worker": [
+        "mechanical_patch.md (CLAUDE-012 report, supplied text)",
+        "PRODUCER_OUTPUT_INTERFACE_CONTRACT_R2.json (supplied text)",
+        "PRODUCER_OUTPUT_INTERFACE_CONTRACT_R2.md (supplied text)",
+        "authenticated baseline inventory (supplied text)",
+        "python/mmem_record_verifier.py, tests/fixture_gate.py, README.md, docs/INPUT_CONTRACT.md and AUDITOR_NOT_RUN.json in phase2_mutable_memory_auditor_v1_fix1"
+      ],
+      "changed_files": [
+        "AUDITOR_NOT_RUN.json",
+        "README.md",
+        "docs/INPUT_CONTRACT.md",
+        "python/mmem_record_verifier.py",
+        "tests/fixture_gate.py"
+      ],
+      "files_added_or_removed": false,
+      "compilation_performed": false,
+      "execution_performed": false,
+      "tests_run": false,
+      "timing_measured": false,
+      "producer_source_read_or_copied": false,
+      "scientific_outcome_inspected": false,
+      "claims_any_test_passed": false,
+      "result_exists": false
+    }
+  ]
+}

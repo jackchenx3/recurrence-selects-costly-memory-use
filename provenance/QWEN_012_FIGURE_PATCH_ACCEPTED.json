@@ -1,0 +1,15 @@
+{
+  "record": "QWEN-012-FIGURE2-LABEL-PATCH-ACCEPTED",
+  "status": "PASS",
+  "accepted_at_utc": "2026-10-01T14:45:08.025861+00:00",
+  "scope": "One presentation-only change to the numerical-label offset in cell_panel; no data, value, precision, axis, panel, caption, or scientific decision changed.",
+  "assignment_sha256": "aeb00323dbc9c293ce9246c1b7408ad39c7ddd2a7184fb0801fbcbf31e9525ad",
+  "worker_response_sha256": "b2fa4135bdd9ee8eb28c824156d97edd8e1ae2086f11a562a6bdfd900e2e6339",
+  "worker_receipt_sha256": "c9d20fb920f56c7c56f357471fd3250767d6655bfa7d6876a2e8dd4121ad4a6b",
+  "source_before_sha256": "d255517d57eaa72a6ebcde5d827d75254bceef4e960a773d8871aa5c895abbb6",
+  "source_after_sha256": "82669e35891721b794e0828d4e43d33c7f04f64162c3e7cb6e036a48fcceb0cb",
+  "changed_source_paths": [
+    "scripts/make_figures.py"
+  ],
+  "visual_result": "PASS: ALL_F labels remain above points and ALL_M labels are placed below points; all four near-neutral labels are readable in the final 7.4-inch Figure 2."
+}

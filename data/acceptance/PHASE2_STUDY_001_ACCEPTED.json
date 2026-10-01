@@ -1,0 +1,53 @@
+{
+  "record": "PHASE2-MUTABLE-MEMORY-001-ACCEPTANCE-1",
+  "study_id": "PHASE2-MUTABLE-MEMORY-001",
+  "accepted_at_utc": "2026-10-01T13:33:13Z",
+  "status": "ACCEPTED_PAPER_LEVEL_RESULT",
+  "primary_decision": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT",
+  "secondary_decisions": {
+    "P_abs": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+    "P_rec": "UNRESOLVED"
+  },
+  "production_job": {
+    "job_id": "53530597",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:01:10",
+    "batch_max_rss": "3297476K"
+  },
+  "analysis_job": {
+    "job_id": "53530688",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:02:59",
+    "batch_max_rss": "3265432K"
+  },
+  "independent_audit_job": {
+    "job_id": "53530689",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:02:15",
+    "batch_max_rss": "149224K",
+    "replay_status": "PASS",
+    "replay_mismatches": 0,
+    "record_estimate_status": "PASS",
+    "record_estimate_mismatches": 0
+  },
+  "authenticated_outputs": {
+    "decision_json_sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0",
+    "estimates_22_json_sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0",
+    "diagnostics_json_sha256": "51554620a5e302416edf8de8a073c6962abbc2c8967da80b91b83e4c3d5b685c",
+    "independent_replay_receipt_sha256": "9b40322d0d09b90f0a6862533c1efdc7aff21bd699a882b9b9555c5f7c4b4857",
+    "independent_record_receipt_sha256": "afd96dc0a5b190401c035fc66c8af8fd4d4603e7185d05bff73fb05e698cff5a",
+    "production_inventory_audit_sha256": "622fa9e01a40c44ba545926e54b06e102d20b7fcf9e9c8e645ddaf9f7212e09c"
+  },
+  "scope": {
+    "blocks": 41600,
+    "cells_per_block": 8,
+    "paths": 332800,
+    "saved_estimates": 22,
+    "post_outcome_changes": 0
+  },
+  "publication_decision": "A standalone manuscript and reproducibility package are warranted; no additional numerical variant is required before drafting.",
+  "claim_limit": "The result concerns selection on use of a supplied private cache under one prospectively aligned recurrent law and one fixed opportunity cost; meaningful population benefit was not demonstrated."
+}

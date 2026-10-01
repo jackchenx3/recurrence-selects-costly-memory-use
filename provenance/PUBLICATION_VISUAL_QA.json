@@ -1,0 +1,11 @@
+{
+  "record": "PHASE2-MUTABLE-MEMORY-001-PUBLICATION-VISUAL-QA",
+  "status": "PASS",
+  "inspected_at_utc": "2026-10-01T15:02:16.026205+00:00",
+  "public_release_build_sha256": "f95f43bfcb2341bc3fc0feb7d5f123d7a9235049b400d21c3cef84c1dda98298",
+  "manuscript_pages_inspected": 14,
+  "supplement_pages_inspected": 10,
+  "rendering": "Poppler at 120 dpi; all 24 final pages inspected in seven 2x2 contact sheets.",
+  "findings": "No clipping, overlap, broken glyphs, black artifacts, unintended blank pages or illegible figure labels. Figure 2 near-neutral cell labels remain separated; the public availability paragraph is readable on manuscript page 13.",
+  "remaining_material_visual_defects": []
+}

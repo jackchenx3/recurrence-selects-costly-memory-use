@@ -1,0 +1,3893 @@
+{
+  "hitCount": 13584,
+  "nextCursorMark": "AoIIQD9rxig1NTM5MDc0Ng==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=environmental+memory+allele+selection&cursorMark=AoIIQD9rxig1NTM5MDc0Ng%3D%3D&resultType=lite&pageSize=100&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 100,
+    "queryString": "environmental memory allele selection",
+    "resultType": "lite",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "authorString": "Andrade R, McNerney MW, Kraybill EP, Padula CB, Durazzo TC.",
+        "citedByCount": 0,
+        "doi": "10.1111/acer.70385",
+        "firstIndexDate": "2026-08-03",
+        "firstPublicationDate": "2026-08-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13429951"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42543683",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "8",
+        "journalIssn": "2993-7175",
+        "journalTitle": "Alcohol Clin Exp Res (Hoboken)",
+        "journalVolume": "50",
+        "pageInfo": "e70385",
+        "pmcid": "PMC13429951",
+        "pmid": "42543683",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "The OPRM1 A118G G Allele Is Associated With Poorer Auditory-Verbal Learning and Memory, Executive Functions, and Working Memory in Veterans Undergoing Residential Treatment for Alcohol Use Disorder.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "nct",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Chitikineni A, Jan F, Saini DK, Rathore M, Bennett D, Chen ZH, Harper R, Xin L, Varshney RK, Mir RR, Mir RR.",
+        "citedByCount": 0,
+        "doi": "10.1093/jxb/erag226",
+        "firstIndexDate": "2026-05-19",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13529342"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42150811",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "16",
+        "journalIssn": "0022-0957; 1460-2431; ",
+        "journalTitle": "J Exp Bot",
+        "journalVolume": "77",
+        "pageInfo": "4934-4955",
+        "pmcid": "PMC13529342",
+        "pmid": "42150811",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Harnessing genomics approaches for heat stress resilience in wheat: from discovery to deployment.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen"
+          ]
+        }
+      },
+      {
+        "authorString": "Lopez JA, Page RB, Teufel AI.",
+        "citedByCount": 0,
+        "doi": "10.1002/ece3.74240",
+        "firstIndexDate": "2026-09-17",
+        "firstPublicationDate": "2026-09-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13577703"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42746656",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "9",
+        "journalIssn": "2045-7758",
+        "journalTitle": "Ecol Evol",
+        "journalVolume": "16",
+        "pageInfo": "e74240",
+        "pmcid": "PMC13577703",
+        "pmid": "42746656",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "ACERT: Agent-Based Model of Complex Life Cycle Evolution-R Tools."
+      },
+      {
+        "authorString": "Niyazbekova Z, Gao CY, Makhanbetuly N, Kassen K, Xu Y, Baimirzayev B, Zhang H, Muslimova Z, Orynkhanov K, Ussenbekov Y, Bai F, Wang J, Baneh H, Serikov Y, Liu P, Jiang Y.",
+        "citedByCount": 0,
+        "doi": "10.3390/ani16172793",
+        "firstIndexDate": "2026-09-15",
+        "firstPublicationDate": "2026-09-05",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13564503"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42738582",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "17",
+        "journalIssn": "2076-2615",
+        "journalTitle": "Animals (Basel)",
+        "journalVolume": "16",
+        "pageInfo": "2793",
+        "pmcid": "PMC13564503",
+        "pmid": "42738582",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Whole-Genome Sequencing Reveals Population Structure, Genetic Diversity, and Selection Signatures in Kazakh Dromedary and Bactrian Camels.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Calm B, Hinojosa-Calleja A, Garc\u00eda-Guti\u00e9rrez F, Blazquez-Folch J, Alegret M, Fern\u00e1ndez MV, De Rojas I, Garc\u00eda-Gonz\u00e1lez P, Oliv\u00e9 C, Valenzuela-Seba A, Bay\u00f3n-Buj\u00e1n P, Cano A, Puerta R, Capdevila-Bayo M, Mu\u00f1oz-Morales \u00c1, Miguel A, Solivar A, Montrreal L, Sanz-Cartagena P, Rosende-Roca M, Cantero-Fortiz Y, Gurruchaga MJ, T\u00e1rraga L, Boada M, Marqui\u00e9 M, Ruiz A, Valero S, Alzheimer\u2019s Disease Neuroimaging Initiative.",
+        "citedByCount": 0,
+        "doi": "10.1016/j.tjpad.2026.100658",
+        "firstIndexDate": "2026-08-15",
+        "firstPublicationDate": "2026-08-13",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13499134"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42594416",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "9",
+        "journalIssn": "2426-0266; 2274-5807; ",
+        "journalTitle": "J Prev Alzheimers Dis",
+        "journalVolume": "13",
+        "pageInfo": "100658",
+        "pmcid": "PMC13499134",
+        "pmid": "42594416",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Predictive value of the Alzheimer polygenic risk score on cognitive decline in patients with mild cognitive impairment and Alzheimer's disease dementia.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Aung KZ, Nelson PT, Ning X, Wu X, Tsuchiya I, Karanth S, Abner EL, Fardo DW, Katsumata Y.",
+        "citedByCount": 0,
+        "doi": "10.1093/jnen/nlag051",
+        "firstIndexDate": "2026-05-22",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13314055"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42168777",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "9",
+        "journalIssn": "0022-3069; 1554-6578; ",
+        "journalTitle": "J Neuropathol Exp Neurol",
+        "journalVolume": "85",
+        "pageInfo": "1003-1019",
+        "pmcid": "PMC13314055",
+        "pmid": "42168777",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "GRN rs5848 variant associates with TDP-43 pathology and cancer in opposite directions.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp"
+          ]
+        }
+      },
+      {
+        "authorString": "Rana P, Chaudhary C, Pruthi R, Sharma M, Singh B, Kondi RKR, Bulle M, Subudhi PK.",
+        "citedByCount": 1,
+        "doi": "10.1002/tpg2.70281",
+        "firstIndexDate": "2026-07-18",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13377552"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42464962",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "1940-3372",
+        "journalTitle": "Plant Genome",
+        "journalVolume": "19",
+        "pageInfo": "e70281",
+        "pmcid": "PMC13377552",
+        "pmid": "42464962",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Molecular insights and translational opportunities to enhance heat tolerance in rice.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Tolosa-Tort P, Okorie M, Chatterjee A, Boeriu AI, Sharma RU, Andrews SJ.",
+        "citedByCount": 0,
+        "doi": "10.1038/s44400-026-00087-7",
+        "firstIndexDate": "2026-08-16",
+        "firstPublicationDate": "2026-08-12",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13468128"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42597443",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "3005-1940",
+        "journalTitle": "NPJ Dement",
+        "journalVolume": "2",
+        "pageInfo": "70",
+        "pmcid": "PMC13468128",
+        "pmid": "42597443",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Toward personalized medicine in AD/ADRD through genetic-exposome dementia risk assessments.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Cheng S, Xu S.",
+        "citedByCount": 1,
+        "doi": "10.1093/molbev/msag160",
+        "firstIndexDate": "2026-07-03",
+        "firstPublicationDate": "2026-07-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13381286"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42390000",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "7",
+        "journalIssn": "0737-4038; 1537-1719; ",
+        "journalTitle": "Mol Biol Evol",
+        "journalVolume": "43",
+        "pageInfo": "msag160",
+        "pmcid": "PMC13381286",
+        "pmid": "42390000",
+        "pubType": "research support, non-u.s. gov't; review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Population epigenetics: deciphering DNA methylation diversity and its implications for health, disease, and evolution.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Liu Y, Capellan De La Rosa K, Lu T, Ning X, Maharjan N, Best J, Johnson H, Choi YJ.",
+        "citedByCount": 0,
+        "doi": "10.1515/reveh-2026-0022",
+        "firstIndexDate": "2026-09-11",
+        "firstPublicationDate": "2026-09-11",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13604001"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42723532",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalIssn": "0048-7554; 2191-0308; ",
+        "journalTitle": "Rev Environ Health",
+        "pmcid": "PMC13604001",
+        "pmid": "42723532",
+        "pubType": "research-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Air pollution and cognitive outcomes in older adults: a systematic review.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "pdb"
+          ]
+        }
+      },
+      {
+        "authorString": "Grady ST, Andrews RM, Peters JL, Adar SD, Levy JI, Beck T, Dhana K, Desai P, Haupt BJ, Kaufman JD, Szpiro AA, Wilson RS, Rajan KB, Weuve J.",
+        "citedByCount": 0,
+        "doi": "10.1097/ee9.0000000000000518",
+        "firstIndexDate": "2026-08-13",
+        "firstPublicationDate": "2026-08-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13461035"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42583594",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "2474-7882",
+        "journalTitle": "Environ Epidemiol",
+        "journalVolume": "10",
+        "pageInfo": "e518",
+        "pmcid": "PMC13461035",
+        "pmid": "42583594",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Residential aircraft and road noise exposure, cognition, and Alzheimer's dementia in a US cohort of older adults.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Chu HD, Nguyen TQ, Nguyen LV, Chuong NN, Ha QT, Thao NTP, Anik TR, Sulieman S, Li W, Tran LP.",
+        "citedByCount": 0,
+        "doi": "10.3390/genes17080900",
+        "firstIndexDate": "2026-08-30",
+        "firstPublicationDate": "2026-07-30",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13511847"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42650093",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "8",
+        "journalIssn": "2073-4425",
+        "journalTitle": "Genes (Basel)",
+        "journalVolume": "17",
+        "pageInfo": "900",
+        "pmcid": "PMC13511847",
+        "pmid": "42650093",
+        "pubType": "research support, non-u.s. gov't; review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Genomic Selection Integrated with High-Throughput Phenotyping and Speed Breeding for Smart and Greener Rice (&lt;i&gt;Oryza sativa&lt;/i&gt;) Improvement.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Chan JE, Mohsin A, Krijgsman J, Lindelauf C, Mu Q, Cavalla B, Ji X, Streett SE, van Unen V, Davis MM.",
+        "citedByCount": 0,
+        "doi": "10.1172/jci.insight.195354",
+        "firstIndexDate": "2026-06-10",
+        "firstPublicationDate": "2026-06-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13463618"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42262895",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "15",
+        "journalIssn": "2379-3708",
+        "journalTitle": "JCI Insight",
+        "journalVolume": "11",
+        "pageInfo": "e195354",
+        "pmcid": "PMC13463618",
+        "pmid": "42262895",
+        "pubType": "research-article; journal article; research support, n.i.h., extramural",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Shared CD4+ T cell receptor specificity groups in Crohn's disease and ulcerative colitis.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "geo",
+            "gen",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Baxevanis CN, Stokidis S, Fortis SP, Goulielmaki M, Tsitsilonis OE, Gritzapis AD.",
+        "citedByCount": 0,
+        "doi": "10.3892/ijo.2026.5917",
+        "firstIndexDate": "2026-07-17",
+        "firstPublicationDate": "2026-07-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13387129"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42464652",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "1019-6439; 1791-2423; ",
+        "journalTitle": "Int J Oncol",
+        "journalVolume": "69",
+        "pageInfo": "104",
+        "pmcid": "PMC13387129",
+        "pmid": "42464652",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Immunoediting and precision biomarkers in prostate cancer: The emerging role of liquid biopsy, immune contexture and HLA genotype (Review).",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Mallal S, Asiaee A.",
+        "citedByCount": 1,
+        "doi": "10.20411/pai.v11i2.1011",
+        "firstIndexDate": "2026-08-16",
+        "firstPublicationDate": "2026-08-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13471027"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42598440",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "2",
+        "journalIssn": "2469-2964",
+        "journalTitle": "Pathog Immun",
+        "journalVolume": "11",
+        "pageInfo": "39-65",
+        "pmcid": "PMC13471027",
+        "pmid": "42598440",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Keystone Epitope Theory: An Ecological Perspective on RNA Viruses, Tumor Immunoediting, and Vaccine Design.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Akku\u015f E, Eyip\u0131nar CD, Buzdagli Y.",
+        "citedByCount": 0,
+        "doi": "10.3390/genes17040435",
+        "firstIndexDate": "2026-05-13",
+        "firstPublicationDate": "2026-04-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13116807"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42074552",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "2073-4425",
+        "journalTitle": "Genes (Basel)",
+        "journalVolume": "17",
+        "pageInfo": "435",
+        "pmcid": "PMC13116807",
+        "pmid": "42074552",
+        "pubType": "meta-analysis; review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Association of Cognition-Related Genetic Polymorphisms with Elite Athlete Status: A Meta-Analysis.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Pursell T, Reers A, Mikelov A, Kotagiri P, Lam B, Ellison JA, Boyd SD, Frank HK.",
+        "citedByCount": 1,
+        "doi": "10.1126/sciadv.aeb6714",
+        "firstIndexDate": "2026-07-30",
+        "firstPublicationDate": "2026-07-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13418733"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42525754",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "31",
+        "journalIssn": "2375-2548",
+        "journalTitle": "Sci Adv",
+        "journalVolume": "12",
+        "pageInfo": "eaeb6714",
+        "pmcid": "PMC13418733",
+        "pmid": "42525754",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Immunoglobulin heavy chain locus duplication in bats.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "bioproject",
+            "gen",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Albalaa C, Pezous M, Klatzmann D, Mariotti-Ferrandiz E.",
+        "citedByCount": 0,
+        "doi": "10.1111/imr.70174",
+        "firstIndexDate": "2026-09-05",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13543334"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42695455",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "0105-2896; 1600-065x; ",
+        "journalTitle": "Immunol Rev",
+        "journalVolume": "342",
+        "pageInfo": "e70174",
+        "pmcid": "PMC13543334",
+        "pmid": "42695455",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Mapping the Altered Landscape of TCR Repertoire in Autoimmune Diseases.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct",
+            "pdb",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Gangwar P, Xu Q, Seangmany J, Katte P, Turakhia Y.",
+        "citedByCount": 0,
+        "doi": "10.1093/nargab/lqag080",
+        "firstIndexDate": "2026-07-23",
+        "firstPublicationDate": "2026-07-22",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13389305"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42488460",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "2631-9268",
+        "journalTitle": "NAR Genom Bioinform",
+        "journalVolume": "8",
+        "pageInfo": "lqag080",
+        "pmcid": "PMC13389305",
+        "pmid": "42488460",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "metaWEPP: leveraging biobank-scale intra-species phylogenies for near-haplotype resolution in metagenomic analysis.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Wang D, Zheng J, Shang H, Liu JN, Gao LZ, Ye J, Sarsaiya S, Zhang J.",
+        "citedByCount": 3,
+        "doi": "10.1016/j.xplc.2026.101822",
+        "firstIndexDate": "2026-03-20",
+        "firstPublicationDate": "2026-03-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13174239"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41852031",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "2590-3462",
+        "journalTitle": "Plant Commun",
+        "journalVolume": "7",
+        "pageInfo": "101822",
+        "pmcid": "PMC13174239",
+        "pmid": "41852031",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Leveraging AI and integrated genomic-enviromic prediction for intelligent sugarcane breeding.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Lee S, Hong SH, Nam YJ, Cho YH, Son SJ, Hong CH.",
+        "citedByCount": 0,
+        "doi": "10.3390/brainsci16080834",
+        "firstIndexDate": "2026-08-30",
+        "firstPublicationDate": "2026-08-06",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13510488"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42651144",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "8",
+        "journalIssn": "2076-3425",
+        "journalTitle": "Brain Sci",
+        "journalVolume": "16",
+        "pageInfo": "834",
+        "pmcid": "PMC13510488",
+        "pmid": "42651144",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "An Integrated Model Based on Gut Microbiota and APOE Genotype for Predicting Dementia Risk.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Tarr\u00e9s J, Hern\u00e1ndez-Banqu\u00e9 C, Ganges L, Jov\u00e9-Junc\u00e0 T, Gonz\u00e1lez-Rodr\u00edguez O, Coronado L, Sordo-Puga Y, Gol S, Reixach J, Quintanilla R, Ballester M.",
+        "citedByCount": 0,
+        "doi": "10.3389/fcimb.2026.1803004",
+        "firstIndexDate": "2026-08-27",
+        "firstPublicationDate": "2026-08-11",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13503205"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42643321",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2235-2988",
+        "journalTitle": "Front Cell Infect Microbiol",
+        "journalVolume": "16",
+        "pageInfo": "1803004",
+        "pmcid": "PMC13503205",
+        "pmid": "42643321",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Porcine genetic markers of immunocompetence shape the immune response to a classical swine fever virus subunit vaccine.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Olayinka O, Farrell JJ, Zhu C, Khurshid Z, Alzheimer's Disease Sequencing Project, Martin ER, Bush WS, Pericak-Vance MA, Wang LS, Schellenberg GD, Haines JL, Lunetta KL, Zhang X, Farrer LA.",
+        "citedByCount": 1,
+        "doi": "10.1002/alz.71710",
+        "firstIndexDate": "2026-08-07",
+        "firstPublicationDate": "2026-08-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13444717"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42557982",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "8",
+        "journalIssn": "1552-5260; 1552-5279; ",
+        "journalTitle": "Alzheimers Dement",
+        "journalVolume": "22",
+        "pageInfo": "e71710",
+        "pmcid": "PMC13444717",
+        "pmid": "42557982",
+        "pubType": "research-article; journal article; observational study",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Stratification by a polygenic risk score of common variation aids in Alzheimer's disease rare variant discovery.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Yang X, Jia ZC, Liu Y, Wang X, Chen JJ, Liu YG, Chen MX.",
+        "citedByCount": 1,
+        "doi": "10.3390/ijms27052497",
+        "firstIndexDate": "2026-03-14",
+        "firstPublicationDate": "2026-03-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12986518"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41828711",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "1422-0067",
+        "journalTitle": "Int J Mol Sci",
+        "journalVolume": "27",
+        "pageInfo": "2497",
+        "pmcid": "PMC12986518",
+        "pmid": "41828711",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "From Shared Mechanisms to Precision Breeding: Engineering Cold and Drought Cross-Tolerance in Crops."
+      },
+      {
+        "authorString": "Majchrzak N, Humi\u0144ska-Lisowska K, Leo\u0144ska-Duniec A.",
+        "citedByCount": 0,
+        "doi": "10.3390/genes17020144",
+        "firstIndexDate": "2026-02-27",
+        "firstPublicationDate": "2026-01-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12940530"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41751528",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "2",
+        "journalIssn": "2073-4425",
+        "journalTitle": "Genes (Basel)",
+        "journalVolume": "17",
+        "pageInfo": "144",
+        "pmcid": "PMC12940530",
+        "pmid": "41751528",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Driven by Dopamine: Genetic Insights into Motivation and Performance in Sports and Esports.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Brady DJ, Sandrelli F.",
+        "citedByCount": 0,
+        "doi": "10.3389/fphys.2026.1953101",
+        "firstIndexDate": "2026-09-24",
+        "firstPublicationDate": "2026-09-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13595340"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42775179",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-042x",
+        "journalTitle": "Front Physiol",
+        "journalVolume": "17",
+        "pageInfo": "1953101",
+        "pmcid": "PMC13595340",
+        "pmid": "42775179",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Cryptochrome-mediated integration of circadian rhythms into seasonal cycles in the silkworm &lt;i&gt;Bombyx mori&lt;/i&gt;."
+      },
+      {
+        "authorString": "Telles AFC, Menezes Junior BS, Dos Santos CA, Sena LOC, Alves MRM, Moraes MLAM, Cipolotti R.",
+        "citedByCount": 0,
+        "doi": "10.3389/fcimb.2026.1731318",
+        "firstIndexDate": "2026-07-02",
+        "firstPublicationDate": "2026-06-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13311128"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42376321",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2235-2988",
+        "journalTitle": "Front Cell Infect Microbiol",
+        "journalVolume": "16",
+        "pageInfo": "1731318",
+        "pmcid": "PMC13311128",
+        "pmid": "42376321",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Genetic association between LONG COVID and TMPRSS2 polymorphisms (rs12329760 and rs2070788) in Brazilian healthcare professionals.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Rose MA, Robinson AC, Payton A.",
+        "citedByCount": 0,
+        "doi": "10.1371/journal.pone.0353790",
+        "firstIndexDate": "2026-07-18",
+        "firstPublicationDate": "2026-07-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13379125"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42467707",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "7",
+        "journalIssn": "1932-6203",
+        "journalTitle": "PLoS One",
+        "journalVolume": "21",
+        "pageInfo": "e0353790",
+        "pmcid": "PMC13379125",
+        "pmid": "42467707",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Do common dopaminergic variants modulate processing speed in cognitive aging? A longitudinal candidate gene study.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Vo-Eckerle TT, Gillespie NA, Christensen K, Finkel D, Kremen WS, Nygaard M, Sachdev PS, Thalamuthu A, Reynolds CA, IGEMS consortium.",
+        "citedByCount": 0,
+        "doi": "10.1093/sleep/zsag119",
+        "firstIndexDate": "2026-04-30",
+        "firstPublicationDate": "2026-08-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13472895"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42059651",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "8",
+        "journalIssn": "0161-8105; 1550-9109; ",
+        "journalTitle": "Sleep",
+        "journalVolume": "49",
+        "pageInfo": "zsag119",
+        "pmcid": "PMC13472895",
+        "pmid": "42059651",
+        "pubType": "twin study; research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Subjective sleep traits and cognition across mid- to late-adulthood: a cross-sectional study of gene-environment interplay."
+      },
+      {
+        "authorString": "Yu H, Zhang F, Luo X, Geng H, Chen J, Yu S, Pan T, Feng Z, Cao J, Yan M.",
+        "citedByCount": 0,
+        "doi": "10.3390/plants15182881",
+        "firstIndexDate": "2026-09-28",
+        "firstPublicationDate": "2026-09-21",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13611536"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42796912",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "18",
+        "journalIssn": "2223-7747",
+        "journalTitle": "Plants (Basel)",
+        "journalVolume": "15",
+        "pageInfo": "2881",
+        "pmcid": "PMC13611536",
+        "pmid": "42796912",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Cotton Seed Germination Under the Main Abiotic Stress: Physiological Mechanisms, Molecular Responses, and Agronomic Strategies."
+      },
+      {
+        "authorString": "Sato DX, Makino T, Katahira K, Yu Z, Tomita H, Mugikura S, Kinoshita K, Kawata M.",
+        "bookOrReportDetails": {
+          "publisher": "bioRxiv",
+          "yearOfPublication": 2026
+        },
+        "citedByCount": 0,
+        "doi": "10.64898/2026.01.29.702665",
+        "firstIndexDate": "2026-05-19",
+        "firstPublicationDate": "2026-02-02",
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "N",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PPR1226955",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "isOpenAccess": "N",
+        "pubType": "preprint",
+        "pubYear": "2026",
+        "source": "PPR",
+        "title": "Monoaminergic variation, cortical structure, and disaster trauma interact to shape emotional vulnerability"
+      },
+      {
+        "authorString": "Thangamani L, Lian T.",
+        "citedByCount": 0,
+        "doi": "10.3390/ijms27187977",
+        "firstIndexDate": "2026-09-28",
+        "firstPublicationDate": "2026-09-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13606761"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42794409",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "18",
+        "journalIssn": "1422-0067",
+        "journalTitle": "Int J Mol Sci",
+        "journalVolume": "27",
+        "pageInfo": "7977",
+        "pmcid": "PMC13606761",
+        "pmid": "42794409",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Proteome-Wide Reverse Vaccinology and Immunoinformatics-Guided Design of a Multi-Epitope Vaccine Against &lt;i&gt;Legionella pneumophila&lt;/i&gt;.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "pdb",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Kumar SN, Gondane R, Mahindrakar S, Vyawahare S, Krishna R, Subramaniam S, Nair BG, Kumar GB, Madhavan A, M N, Babu P.",
+        "citedByCount": 0,
+        "doi": "10.3389/fcimb.2026.1870890",
+        "firstIndexDate": "2026-07-30",
+        "firstPublicationDate": "2026-07-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13414852"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42528707",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2235-2988",
+        "journalTitle": "Front Cell Infect Microbiol",
+        "journalVolume": "16",
+        "pageInfo": "1870890",
+        "pmcid": "PMC13414852",
+        "pmid": "42528707",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Artificial intelligence in vaccine development: applications, implementation, and future directions.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Moreno A, Brinkmeyer-Langford C.",
+        "citedByCount": 0,
+        "doi": "10.3389/fnins.2026.1873345",
+        "firstIndexDate": "2026-09-17",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13576149"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42746195",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1662-4548; 1662-453x; ",
+        "journalTitle": "Front Neurosci",
+        "journalVolume": "20",
+        "pageInfo": "1873345",
+        "pmcid": "PMC13576149",
+        "pmid": "42746195",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Inuit HLA variation and neuroimmune disease."
+      },
+      {
+        "authorString": "Xiao J, Tu XL, Yuan WH, Song YW, Guo ZF, Li J, Li JX, Luo J, Zhang YP, Li Y.",
+        "citedByCount": 0,
+        "doi": "10.24272/j.issn.2095-8137.2025.270",
+        "firstIndexDate": "2026-04-15",
+        "firstPublicationDate": "2026-03-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13425384"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41983442",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "2",
+        "journalIssn": "2095-8137",
+        "journalTitle": "Zool Res",
+        "journalVolume": "47",
+        "pageInfo": "444-458",
+        "pmcid": "PMC13425384",
+        "pmid": "41983442",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "&lt;i&gt;NOCT&lt;/i&gt;, a potential domestication gene impacting circadian regulation and behavioral adaptation during dog domestication.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "geo",
+            "ensembl",
+            "gca",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Hutten CG, Beck T, Evans D, Rajan KB.",
+        "citedByCount": 0,
+        "doi": "10.1002/alz.71712",
+        "firstIndexDate": "2026-08-05",
+        "firstPublicationDate": "2026-08-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13438189"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42552753",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "8",
+        "journalIssn": "1552-5260; 1552-5279; ",
+        "journalTitle": "Alzheimers Dement",
+        "journalVolume": "22",
+        "pageInfo": "e71712",
+        "pmcid": "PMC13438189",
+        "pmid": "42552753",
+        "pubType": "research-article; journal article; observational study",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "The role of polygenic risk in Alzheimer's disease prediction for African Americans.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Cardona PJ.",
+        "citedByCount": 0,
+        "doi": "10.3389/fimmu.2026.1845279",
+        "firstIndexDate": "2026-07-02",
+        "firstPublicationDate": "2026-06-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13314518"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42382739",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-3224",
+        "journalTitle": "Front Immunol",
+        "journalVolume": "17",
+        "pageInfo": "1845279",
+        "pmcid": "PMC13314518",
+        "pmid": "42382739",
+        "pubType": "brief-report; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Rethinking TYK2 P1104A: a flawed evolutionary trade-off in tuberculosis?",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp"
+          ]
+        }
+      },
+      {
+        "authorString": "Kalia V, Manz KE, Benavides J, Song S, Vollmer BL, Yan B, Goldsmith J, Pennell KD, Stern Y, Kioumourtzoglou MA, Miller GW, Habeck C, Gu Y.",
+        "citedByCount": 2,
+        "doi": "10.1002/alz.71399",
+        "firstIndexDate": "2026-04-20",
+        "firstPublicationDate": "2026-04-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13092418"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42002796",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "1552-5260; 1552-5279; ",
+        "journalTitle": "Alzheimers Dement",
+        "journalVolume": "22",
+        "pageInfo": "e71399",
+        "pmcid": "PMC13092418",
+        "pmid": "42002796",
+        "pubType": "clinical trial; research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Mixture of organic pollutants is associated with cognitive aging."
+      },
+      {
+        "authorString": "Pointer MD, Nash WJ, Gage MJG, Chapman T, Maklakov AA, Richardson DS.",
+        "citedByCount": 0,
+        "doi": "10.1073/pnas.2608675123",
+        "firstIndexDate": "2026-09-09",
+        "firstPublicationDate": "2026-09-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13578823"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42709809",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "37",
+        "journalIssn": "0027-8424; 1091-6490; ",
+        "journalTitle": "Proc Natl Acad Sci U S A",
+        "journalVolume": "123",
+        "pageInfo": "e2608675123",
+        "pmcid": "PMC13578823",
+        "pmid": "42709809",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Sexual selection purges mutation load, but not overall genetic diversity, decreasing vulnerability to extinction.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Mirchandani C, Omarjee A, Achaz G, Enbody ED, Thomas GWC, Sackton TB.",
+        "citedByCount": 0,
+        "doi": "10.1093/molbev/msag220",
+        "firstIndexDate": "2026-08-27",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13590228"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42647746",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "9",
+        "journalIssn": "0737-4038; 1537-1719; ",
+        "journalTitle": "Mol Biol Evol",
+        "journalVolume": "43",
+        "pageInfo": "msag220",
+        "pmcid": "PMC13590228",
+        "pmid": "42647746",
+        "pubType": "review-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Variant calling in nonmodel organisms with snpArcher.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Ward EL, Nelson PT, Katsumata Y, Fardo DW, Jicha GA, the Alzheimer\u2019s Disease Neuroimaging Initiative, Miller JB.",
+        "bookOrReportDetails": {
+          "publisher": "medRxiv",
+          "yearOfPublication": 2026
+        },
+        "citedByCount": 1,
+        "doi": "10.64898/2026.09.02.26362060",
+        "firstIndexDate": "2026-09-09",
+        "firstPublicationDate": "2026-09-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PPR1315131"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "N",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PPR1315131",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "isOpenAccess": "Y",
+        "pubType": "preprint",
+        "pubYear": "2026",
+        "source": "PPR",
+        "title": "Alzheimer\u2019s Polygenic Risk Scores Are Not Interchangeable: Evidence from 1,752 Models"
+      },
+      {
+        "authorString": "Borta SM, Cri\u0219an AS, Pope\u021biu RO, Vulciu PA, \u0218tirbu O, Avram CR, Goldi\u0219 D, Rus LA, Roman DR, Chioreanu A, Bugari RA, Zdrem\u021ban D, Firu CG, Donath-Miklos I.",
+        "citedByCount": 0,
+        "doi": "10.3390/biom16081114",
+        "firstIndexDate": "2026-08-30",
+        "firstPublicationDate": "2026-07-30",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13511015"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42650782",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "8",
+        "journalIssn": "2218-273x",
+        "journalTitle": "Biomolecules",
+        "journalVolume": "16",
+        "pageInfo": "1114",
+        "pmcid": "PMC13511015",
+        "pmid": "42650782",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "From Airway Inflammation to Molecular Remodeling: Integrating YKL-40, MBL and Epigenetic Biomarkers in Asthma and COPD.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Zhu M, Zheng Z, Liu W, Han Y, Mou W, Yin T, Dai X, Wu H, Yang Y, Zan Y, Liu J.",
+        "citedByCount": 0,
+        "doi": "10.1093/hr/uhag035",
+        "firstIndexDate": "2026-05-13",
+        "firstPublicationDate": "2026-03-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13150855"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42111488",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "2662-6810; 2052-7276; ",
+        "journalTitle": "Hortic Res",
+        "journalVolume": "13",
+        "pageInfo": "uhag035",
+        "pmcid": "PMC13150855",
+        "pmid": "42111488",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "MMGS: a novel genomic prediction framework to integrate genotype, environment and their interactions for multi-environment breeding trials."
+      },
+      {
+        "authorString": "Zhang Z, Jia W, Gomes Viana JP, Hsieh PH, Yoshikuni Y, Hudson M.",
+        "citedByCount": 0,
+        "doi": "10.1186/s12859-026-06430-2",
+        "firstIndexDate": "2026-04-07",
+        "firstPublicationDate": "2026-04-06",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13192189"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41942900",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "1471-2105",
+        "journalTitle": "BMC Bioinformatics",
+        "journalVolume": "27",
+        "pageInfo": "112",
+        "pmcid": "PMC13192189",
+        "pmid": "41942900",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "pyFLANK, a graph neural network based null distribution inference model for F&lt;sub&gt;ST&lt;/sub&gt; outlier detection."
+      },
+      {
+        "authorString": "Perez-Diaz-Del-Campo N, Lopez-Moreno M, de Cuevillas B, Martinez-Urbistondo D, Mart\u00ednez JA, Ramos-Lopez O.",
+        "citedByCount": 0,
+        "doi": "10.3390/ijms27188106",
+        "firstIndexDate": "2026-09-28",
+        "firstPublicationDate": "2026-09-11",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13607498"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42794535",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "18",
+        "journalIssn": "1422-0067",
+        "journalTitle": "Int J Mol Sci",
+        "journalVolume": "27",
+        "pageInfo": "8106",
+        "pmcid": "PMC13607498",
+        "pmid": "42794535",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Nutriomic Technologies for Characterizing, Diagnosing, Clustering and Managing Chronic Liver Diseases: Precision Nutrition Implications.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Wang Y, Cai M, Ma Y, Tellier A, Wei K.",
+        "citedByCount": 0,
+        "doi": "10.1186/s12864-026-13274-w",
+        "firstIndexDate": "2026-08-22",
+        "firstPublicationDate": "2026-08-22",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13499299"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42629596",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "1471-2164",
+        "journalTitle": "BMC Genomics",
+        "journalVolume": "27",
+        "pageInfo": "701",
+        "pmcid": "PMC13499299",
+        "pmid": "42629596",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Integrating deep learning and pangenomics to recover missing heritability from wild structural variations.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Patani A, Patel B, Pandit R, Bagatharia S, Patel A.",
+        "citedByCount": 0,
+        "doi": "10.3389/fspor.2026.1906206",
+        "firstIndexDate": "2026-09-20",
+        "firstPublicationDate": "2026-09-04",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13587237"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42761794",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2624-9367",
+        "journalTitle": "Front Sports Act Living",
+        "journalVolume": "8",
+        "pageInfo": "1906206",
+        "pmcid": "PMC13587237",
+        "pmid": "42761794",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Artificial intelligence and sports genomics: advancing precision sports science and athletic performance.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Fan W, Zheng C.",
+        "citedByCount": 0,
+        "doi": "10.3389/fonc.2026.1907210",
+        "firstIndexDate": "2026-09-13",
+        "firstPublicationDate": "2026-08-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13563159"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42729528",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2234-943x",
+        "journalTitle": "Front Oncol",
+        "journalVolume": "16",
+        "pageInfo": "1907210",
+        "pmcid": "PMC13563159",
+        "pmid": "42729528",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Clonal evolution in gastrointestinal cancers: multi-omics insights into tumor heterogeneity, microenvironmental selection, and translational biomarkers.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Pravosudov VV, Sonnenberg BR, Branch CL, Heinen VK, Welklin JF, Semenov GA, Taylor SA.",
+        "citedByCount": 7,
+        "doi": "10.1098/rstb.2024.0120",
+        "firstIndexDate": "2025-06-26",
+        "firstPublicationDate": "2025-06-26",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12198898"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40566916",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "1929",
+        "journalIssn": "0962-8436; 1471-2970; ",
+        "journalTitle": "Philos Trans R Soc Lond B Biol Sci",
+        "journalVolume": "380",
+        "pageInfo": "20240120",
+        "pmcid": "PMC12198898",
+        "pmid": "40566916",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Living on the edge: the evolution of spatial cognition in food-caching chickadees."
+      },
+      {
+        "authorString": "Boyanova S, Katsouri L, Krupic J, Hair K, Wang SH, Wiseman FK.",
+        "citedByCount": 0,
+        "doi": "10.1016/j.xpro.2026.104633",
+        "firstIndexDate": "2026-06-18",
+        "firstPublicationDate": "2026-06-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13284463"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42301821",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "2666-1667",
+        "journalTitle": "STAR Protoc",
+        "journalVolume": "7",
+        "pageInfo": "104633",
+        "pmcid": "PMC13284463",
+        "pmid": "42301821",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Considerations for the selection and phenotyping of mouse models for the study of Alzheimer's disease.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Issah AK, Wang Y, Azupio S, Zhang H, Chu J, Sayibu W, Xie Q, Jiang X.",
+        "citedByCount": 0,
+        "doi": "10.3389/fpls.2026.1747177",
+        "firstIndexDate": "2026-03-25",
+        "firstPublicationDate": "2026-03-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13006509"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41877970",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-462x",
+        "journalTitle": "Front Plant Sci",
+        "journalVolume": "17",
+        "pageInfo": "1747177",
+        "pmcid": "PMC13006509",
+        "pmid": "41877970",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Natural genetic variation in calcium sensor genes as a novel resource for abiotic stress tolerance in crops.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Zhao J, Wang W, Kamalibieke J, Mu Y, Luo J.",
+        "citedByCount": 0,
+        "doi": "10.3390/ani16152426",
+        "firstIndexDate": "2026-08-15",
+        "firstPublicationDate": "2026-08-05",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13465462"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42589064",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "15",
+        "journalIssn": "2076-2615",
+        "journalTitle": "Animals (Basel)",
+        "journalVolume": "16",
+        "pageInfo": "2426",
+        "pmcid": "PMC13465462",
+        "pmid": "42589064",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Genomic Selection for Milk Yield and Milk Composition Traits in Dairy Goats Using Machine Learning and Prior-Information Models."
+      },
+      {
+        "authorString": "Manivannan SN, Ogbunugafor CB.",
+        "citedByCount": 0,
+        "doi": "10.1093/g3journal/jkag166",
+        "firstIndexDate": "2026-06-27",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13535436"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42361316",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "9",
+        "journalIssn": "2160-1836",
+        "journalTitle": "G3 (Bethesda)",
+        "journalVolume": "16",
+        "pageInfo": "jkag166",
+        "pmcid": "PMC13535436",
+        "pmid": "42361316",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Deconstructing empirical fitness seascapes across scales of granularity."
+      },
+      {
+        "authorString": "Alshehri AA.",
+        "citedByCount": 0,
+        "doi": "10.3389/fmicb.2026.1849165",
+        "firstIndexDate": "2026-09-30",
+        "firstPublicationDate": "2026-09-14",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13617433"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42807760",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-302x",
+        "journalTitle": "Front Microbiol",
+        "journalVolume": "17",
+        "pageInfo": "1849165",
+        "pmcid": "PMC13617433",
+        "pmid": "42807760",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Interpreting antimicrobial resistance from bacterial whole-genome sequencing: prediction tools, database fragmentation, analytical trade-offs, and harmonized reporting."
+      },
+      {
+        "authorString": "Imai A, Izumi H, Ito N, Ogiso H, Kitajima Y, Kawase S, Sendo M, Azechi K, Tabata T, Koshidaka Y, Fukai S, Takao K, Mori H, Yoshida T.",
+        "citedByCount": 1,
+        "doi": "10.1073/pnas.2515310123",
+        "firstIndexDate": "2026-04-08",
+        "firstPublicationDate": "2026-04-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13080001"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41950098",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "15",
+        "journalIssn": "0027-8424; 1091-6490; ",
+        "journalTitle": "Proc Natl Acad Sci U S A",
+        "journalVolume": "123",
+        "pageInfo": "e2515310123",
+        "pmcid": "PMC13080001",
+        "pmid": "41950098",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Alternative microexon splicing code for a four-amino acid peptide of PTPRD governs behavioral development.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Amin MR, Arnab SP, Khan M, DeGiorgio M.",
+        "citedByCount": 0,
+        "doi": "10.1093/gbe/evag085",
+        "firstIndexDate": "2026-04-03",
+        "firstPublicationDate": "2026-04-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13089544"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41928457",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "1759-6653",
+        "journalTitle": "Genome Biol Evol",
+        "journalVolume": "18",
+        "pageInfo": "evag085",
+        "pmcid": "PMC13089544",
+        "pmid": "41928457",
+        "pubType": "research-article; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Detecting Positive Selection by Modeling Structure Within Images of Genetic Variation.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Ullah A, Tong Z, Kamran M, Umaira, Chen X, Xu H, Xiao B.",
+        "citedByCount": 0,
+        "doi": "10.3389/fpls.2026.1867756",
+        "firstIndexDate": "2026-08-05",
+        "firstPublicationDate": "2026-06-30",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13364981"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42555475",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-462x",
+        "journalTitle": "Front Plant Sci",
+        "journalVolume": "17",
+        "pageInfo": "1867756",
+        "pmcid": "PMC13364981",
+        "pmid": "42555475",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "MAGIC populations: a next-generation framework for dissecting complex quantitative traits and accelerating molecular breeding in crops.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Chaudhary S, Dave S, Ballesteros-Tato A.",
+        "citedByCount": 0,
+        "doi": "10.1016/j.celrep.2026.117312",
+        "firstIndexDate": "2026-04-26",
+        "firstPublicationDate": "2026-04-25",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13234847"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42035417",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "2211-1247",
+        "journalTitle": "Cell Rep",
+        "journalVolume": "45",
+        "pageInfo": "117312",
+        "pmcid": "PMC13234847",
+        "pmid": "42035417",
+        "pubType": "research-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Multiple roads to IgE memory: A pluralistic model of IgE immunity."
+      },
+      {
+        "authorString": "Hirsz D, Dixon LE.",
+        "citedByCount": 1,
+        "doi": "10.1093/jxb/erag129",
+        "firstIndexDate": "2026-03-16",
+        "firstPublicationDate": "2026-05-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13139672"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41833447",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "9",
+        "journalIssn": "0022-0957; 1460-2431; ",
+        "journalTitle": "J Exp Bot",
+        "journalVolume": "77",
+        "pageInfo": "2714-2726",
+        "pmcid": "PMC13139672",
+        "pmid": "41833447",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Optimizing wheat development to a range of winter climates."
+      },
+      {
+        "authorString": "Martynowicz H, Jodkowska A, Fu\u0142ek M, Smardz J, Bort M, Ga\u0107 P, Przegra\u0142ek J, Dratwa-Kuzmin M, Bogunia-Kubik K, Wi\u0119ckiewicz M.",
+        "citedByCount": 0,
+        "doi": "10.1007/s11325-026-03775-z",
+        "firstIndexDate": "2026-08-16",
+        "firstPublicationDate": "2026-08-14",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13476348"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42599341",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "1520-9512; 1522-1709; ",
+        "journalTitle": "Sleep Breath",
+        "journalVolume": "30",
+        "pageInfo": "238",
+        "pmcid": "PMC13476348",
+        "pmid": "42599341",
+        "pubType": "research-article; journal article; observational study",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "The COMT rs4680 SNP participates in the regulation of the arousal threshold in patients with obstructive sleep apnea.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Kazantseva AV, Toropova AV, Khusnutdinova EK, Malykh SB.",
+        "citedByCount": 0,
+        "doi": "10.18699/vjgb-26-51",
+        "firstIndexDate": "2026-06-06",
+        "firstPublicationDate": "2026-05-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13231057"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42245177",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "2500-0462; 2500-3259; ",
+        "journalTitle": "Vavilovskii Zhurnal Genet Selektsii",
+        "journalVolume": "30",
+        "pageInfo": "470-481",
+        "pmcid": "PMC13231057",
+        "pmid": "42245177",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "The association study of genetic variants with developing musical aptitude in humans.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Son S, Park SR.",
+        "citedByCount": 0,
+        "doi": "10.3389/fpls.2026.1929693",
+        "firstIndexDate": "2026-09-05",
+        "firstPublicationDate": "2026-08-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13539761"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42694518",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-462x",
+        "journalTitle": "Front Plant Sci",
+        "journalVolume": "17",
+        "pageInfo": "1929693",
+        "pmcid": "PMC13539761",
+        "pmid": "42694518",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "AI-integrated digital breeding for crop improvement.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Cafaro M, Ambrosecchia L, Cioffi V, Tortora E, Sperandeo R, Cantone D.",
+        "citedByCount": 0,
+        "doi": "10.3390/brainsci16040355",
+        "firstIndexDate": "2026-04-27",
+        "firstPublicationDate": "2026-03-26",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13115180"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42041768",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "2076-3425",
+        "journalTitle": "Brain Sci",
+        "journalVolume": "16",
+        "pageInfo": "355",
+        "pmcid": "PMC13115180",
+        "pmid": "42041768",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "The Early Emotional Bond: An Evolutionary-Developmental Perspective Integrating Psychoanalysis, Neuroscience, and Cross-Cultural Evidence.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Orellana P, Caviedes A, Gonzalez L, Ochoa-Rosales C, Carmona D, Gonz\u00e1lez-Silva C, Hern\u00e1ndez H, Britton GB, Villarreal AE, Campos V, Hendrie H, Acosta-Uribe J, Pina-Escudero SD, Yokoyama JS, Vilor-Tejedor N, Parra M, Santamaria-Garc\u00eda H, Iba\u00f1ez A, de la Cruz R, Duran-Aniotz C.",
+        "citedByCount": 0,
+        "doi": "10.1002/alz.71224",
+        "firstIndexDate": "2026-02-23",
+        "firstPublicationDate": "2026-02-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12927995"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41724662",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "2",
+        "journalIssn": "1552-5260; 1552-5279; ",
+        "journalTitle": "Alzheimers Dement",
+        "journalVolume": "22",
+        "pageInfo": "e71224",
+        "pmcid": "PMC12927995",
+        "pmid": "41724662",
+        "pubType": "meta-analysis; systematic review; review-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Association of apolipoprotein E variants on Alzheimer's disease in Latin America: A systematic review and meta-analysis.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Chow KH, Abel T.",
+        "citedByCount": 1,
+        "doi": "10.1016/j.ebiom.2026.106151",
+        "firstIndexDate": "2026-02-10",
+        "firstPublicationDate": "2026-02-03",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12890709"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41637937",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2352-3964",
+        "journalTitle": "EBioMedicine",
+        "journalVolume": "124",
+        "pageInfo": "106151",
+        "pmcid": "PMC12890709",
+        "pmid": "41637937",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Neurodevelopmental origins of age-related neurodegenerative diseases.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Chen J, Wang Y, Bai Y, Cai Y.",
+        "citedByCount": 0,
+        "doi": "10.3389/fimmu.2026.1864667",
+        "firstIndexDate": "2026-07-08",
+        "firstPublicationDate": "2026-06-23",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13337888"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42416062",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-3224",
+        "journalTitle": "Front Immunol",
+        "journalVolume": "17",
+        "pageInfo": "1864667",
+        "pmcid": "PMC13337888",
+        "pmid": "42416062",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Narcolepsy: immunity, neural circuitry, and brain network reconfiguration.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Yuan D, Li S, Zhang R, Ng RH, Su Y, Lan L, Shome M, Smith B, Troisch P, Xie J, Choi J, Edmark R, Chen D, Rowen L, Nguyen A, Liu R, Gutierrez V, Brennan C, McKasson M, Murray K, Wallick JA, Algren HA, Duven A, Piening B, Thomas W, Kueh HY, Magis AT, Hadlock J, Snyder M, Goldman JD, Heath JR.",
+        "citedByCount": 0,
+        "doi": "10.1016/j.immuni.2026.08.002",
+        "firstIndexDate": "2026-08-30",
+        "firstPublicationDate": "2026-08-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13577201"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42664960",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalIssn": "1074-7613; 1097-4180; ",
+        "journalTitle": "Immunity",
+        "pageInfo": "S1074-7613(26)00324-9",
+        "pmcid": "PMC13577201",
+        "pmid": "42664960",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "A distinct effector B cell population drives autoantibody production in SARS-CoV-2 infection.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Stanschewski CS, Warmington M, Afzal I, Rey E, Fiene G, Craine E, Murphy K, Tester M, Poland J.",
+        "citedByCount": 1,
+        "doi": "10.1002/tpg2.70277",
+        "firstIndexDate": "2026-08-21",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13492584"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42619371",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "1940-3372",
+        "journalTitle": "Plant Genome",
+        "journalVolume": "19",
+        "pageInfo": "e70277",
+        "pmcid": "PMC13492584",
+        "pmid": "42619371",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Genomic prediction in quinoa across contrasting environments using statistical and machine learning models.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Kim C, Gaire A, Xu J, Kucaba T, Kancans K, Shen S, Gould R, Griffith T.",
+        "citedByCount": 0,
+        "firstIndexDate": "2026-05-20",
+        "firstPublicationDate": "2026-05-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13173017"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "PMC13173017",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "suppl 1",
+        "journalIssn": "2059-8661",
+        "journalTitle": "J Clin Transl Sci",
+        "journalVolume": "10",
+        "pageInfo": "130-131",
+        "pmcid": "PMC13173017",
+        "pubType": "abstract",
+        "source": "PMC",
+        "title": "406 Improving T-cell immunity using interleukin-7 therapy"
+      },
+      {
+        "authorString": "Zhang C, Wang C, Ahmad Z, Ye Y, Cheng J, Ramakrishnan M, Wei Q.",
+        "citedByCount": 0,
+        "doi": "10.3390/plants15121870",
+        "firstIndexDate": "2026-06-27",
+        "firstPublicationDate": "2026-06-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13306268"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42357189",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "12",
+        "journalIssn": "2223-7747",
+        "journalTitle": "Plants (Basel)",
+        "journalVolume": "15",
+        "pageInfo": "1870",
+        "pmcid": "PMC13306268",
+        "pmid": "42357189",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Anthocyanin-Driven Dark Phenotypes in Stress Adaptation.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Chen Y, Fu R, Zhan A.",
+        "citedByCount": 0,
+        "doi": "10.1111/eva.70177",
+        "firstIndexDate": "2025-11-10",
+        "firstPublicationDate": "2025-11-06",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12592103"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41210625",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "11",
+        "journalIssn": "1752-4571",
+        "journalTitle": "Evol Appl",
+        "journalVolume": "18",
+        "pageInfo": "e70177",
+        "pmcid": "PMC12592103",
+        "pmid": "41210625",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Genomic Insights Into Early-Stage Selective Filtering During the Transport Stage of Biological Invasions.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "go"
+          ]
+        }
+      },
+      {
+        "authorString": "Xu C, Chen R, Li W, Song L, Huang S, Zhang F, Liu Y, Huang X, Li N, Du L, Shen S.",
+        "citedByCount": 0,
+        "doi": "10.3390/plants15162516",
+        "firstIndexDate": "2026-08-30",
+        "firstPublicationDate": "2026-08-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13516375"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42654918",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "16",
+        "journalIssn": "2223-7747",
+        "journalTitle": "Plants (Basel)",
+        "journalVolume": "15",
+        "pageInfo": "2516",
+        "pmcid": "PMC13516375",
+        "pmid": "42654918",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Genomics, Multi-Omics, and Emerging Artificial Intelligence for Combined Drought-Heat Stress Resilience in Plants: A Structured Narrative Review.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Wang P, Li C, Wang D, Wu Q, Zeng Z, Guo H, Cheng H, Chen S, Cao H, Cheng H, Xie J, Que Y.",
+        "citedByCount": 1,
+        "doi": "10.1002/advs.76735",
+        "firstIndexDate": "2026-07-30",
+        "firstPublicationDate": "2026-07-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13403741"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42505031",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "47",
+        "journalIssn": "2198-3844",
+        "journalTitle": "Adv Sci (Weinh)",
+        "journalVolume": "13",
+        "pageInfo": "e76735",
+        "pmcid": "PMC13403741",
+        "pmid": "42505031",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Adaptive Responses of Tropical Crops: A Multi-Scale Omics Integrated Perspective.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Morrow EH, Harper JA.",
+        "bookOrReportDetails": {
+          "publisher": "medRxiv",
+          "yearOfPublication": 2026
+        },
+        "citedByCount": 0,
+        "doi": "10.64898/2026.02.26.26347171",
+        "firstIndexDate": "2026-07-03",
+        "firstPublicationDate": "2026-02-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PPR1268188"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "PPR1268188",
+        "inEPMC": "Y",
+        "inPMC": "N",
+        "isOpenAccess": "Y",
+        "pubType": "preprint",
+        "pubYear": "2026",
+        "source": "PPR",
+        "title": "Evidence for sexual antagonism and antagonistic pleiotropy in the maintenance of late onset Alzheimer\u2019s disease alleles",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Harro J, Eensoo D, Kiive E, Villa I, Kurrikoff T, M\u00e4estu J, Kanarik M, Laugus K, Sakala K, Veidebaum T.",
+        "citedByCount": 0,
+        "doi": "10.1017/neu.2026.10072",
+        "firstIndexDate": "2026-04-07",
+        "firstPublicationDate": "2026-04-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13202404"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41943419",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "0924-2708; 1601-5215; ",
+        "journalTitle": "Acta Neuropsychiatr",
+        "journalVolume": "38",
+        "pageInfo": "e33",
+        "pmcid": "PMC13202404",
+        "pmid": "41943419",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Insights into neuroscience from the representative birth cohort samples of a multidisciplinary longitudinal study.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Quadalti C.",
+        "citedByCount": 2,
+        "doi": "10.3390/ani15192851",
+        "firstIndexDate": "2025-10-16",
+        "firstPublicationDate": "2025-09-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12523904"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41096446",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "19",
+        "journalIssn": "2076-2615",
+        "journalTitle": "Animals (Basel)",
+        "journalVolume": "15",
+        "pageInfo": "2851",
+        "pmcid": "PMC12523904",
+        "pmid": "41096446",
+        "pubType": "comment; discussion; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "One Health, Two Species: Linking Domestication to Cognitive Aging in Dogs and Humans.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Pozzi CM, Gaiti A, Spada A.",
+        "citedByCount": 2,
+        "doi": "10.1007/s00122-025-05010-x",
+        "firstIndexDate": "2025-09-01",
+        "firstPublicationDate": "2025-08-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12390881"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40864264",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "9",
+        "journalIssn": "1432-2242; 0040-5752; ",
+        "journalTitle": "Theor Appl Genet",
+        "journalVolume": "138",
+        "pageInfo": "231",
+        "pmcid": "PMC12390881",
+        "pmid": "40864264",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Climate change and plant genomic plasticity."
+      },
+      {
+        "authorString": "Hogben BP, Lowe AJ, Hampel C, Littmann L, O'Leary M, Dorey JB, Blyth C.",
+        "citedByCount": 0,
+        "doi": "10.1002/ece3.73959",
+        "firstIndexDate": "2026-07-12",
+        "firstPublicationDate": "2026-07-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13354547"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42437094",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "7",
+        "journalIssn": "2045-7758",
+        "journalTitle": "Ecol Evol",
+        "journalVolume": "16",
+        "pageInfo": "e73959",
+        "pmcid": "PMC13354547",
+        "pmid": "42437094",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Population Collapse of the Spidery Wattle (&lt;i&gt;Acacia araneosa&lt;/i&gt;) During Late Holocene Aridification: Genomic Evidence for Critically Endangered Status.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Nitrini R, Takada LT, Brucki SMD.",
+        "citedByCount": 0,
+        "doi": "10.1055/s-0046-1824435",
+        "firstIndexDate": "2026-07-15",
+        "firstPublicationDate": "2026-06-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13368400"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42447924",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "6",
+        "journalIssn": "0004-282x; 1678-4227; ",
+        "journalTitle": "Arq Neuropsiquiatr",
+        "journalVolume": "84",
+        "pageInfo": "1-10",
+        "pmcid": "PMC13368400",
+        "pmid": "42447924",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "The past, present, and future of Alzheimer's disease-part 3: the future.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Park J, Jeon JG, Kang Y, Han KM, Shin D, Han MR, Ham BJ.",
+        "citedByCount": 0,
+        "doi": "10.3389/fnbeh.2026.1878769",
+        "firstIndexDate": "2026-08-15",
+        "firstPublicationDate": "2026-07-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13462048"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42591615",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1662-5153",
+        "journalTitle": "Front Behav Neurosci",
+        "journalVolume": "20",
+        "pageInfo": "1878769",
+        "pmcid": "PMC13462048",
+        "pmid": "42591615",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "&lt;i&gt;ADAMTS18&lt;/i&gt; as a candidate gene linking social stress and depression: a cross-species study in African wild dogs (&lt;i&gt;Lycaon pictus&lt;/i&gt;) and humans.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Starko S, Wernberg T, Gil JMS, Zertuche-Gonz\u00e1lez J, Cruz-L\u00f3pez R, Wheeler D, Batley J, Coleman MA.",
+        "citedByCount": 0,
+        "doi": "10.1002/ece3.73141",
+        "firstIndexDate": "2026-03-10",
+        "firstPublicationDate": "2026-03-05",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12963028"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41798312",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "2045-7758",
+        "journalTitle": "Ecol Evol",
+        "journalVolume": "16",
+        "pageInfo": "e73141",
+        "pmcid": "PMC12963028",
+        "pmid": "41798312",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Environmental Drivers of Genetic Structure and Local Adaptation in a Marine Foundation Species.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Rosas NM, Szombathy A, Szigeti K.",
+        "citedByCount": 0,
+        "doi": "10.3389/fgene.2026.1786287",
+        "firstIndexDate": "2026-06-18",
+        "firstPublicationDate": "2026-06-03",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13271839"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42311760",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-8021",
+        "journalTitle": "Front Genet",
+        "journalVolume": "17",
+        "pageInfo": "1786287",
+        "pmcid": "PMC13271839",
+        "pmid": "42311760",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "The effect of human-specific genetic variants on neuronal spinogenesis.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Park G, Kim H, Song S.",
+        "citedByCount": 0,
+        "doi": "10.1038/s44259-026-00261-0",
+        "firstIndexDate": "2026-09-09",
+        "firstPublicationDate": "2026-09-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13554269"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42711467",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2731-8745",
+        "journalTitle": "NPJ Antimicrob Resist",
+        "journalVolume": "4",
+        "pageInfo": "57",
+        "pmcid": "PMC13554269",
+        "pmid": "42711467",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Selective context, rather than persister cycling alone, drives resistance fixation in Escherichia coli.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "bioproject",
+            "gen",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Cipriano GL, Grimaldi A, Marra A, Quartarone A, Maresca G.",
+        "citedByCount": 0,
+        "doi": "10.3389/fnagi.2026.1782720",
+        "firstIndexDate": "2026-04-16",
+        "firstPublicationDate": "2026-03-31",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13076524"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41987880",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1663-4365",
+        "journalTitle": "Front Aging Neurosci",
+        "journalVolume": "18",
+        "pageInfo": "1782720",
+        "pmcid": "PMC13076524",
+        "pmid": "41987880",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Gut microbiota and cognitive decline: a scoping review of microbial mechanisms and adaptive responses in dementia.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Koh JH, Ye CJ.",
+        "citedByCount": 0,
+        "doi": "10.4110/in.2026.26.e24",
+        "firstIndexDate": "2026-07-06",
+        "firstPublicationDate": "2026-05-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13333242"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42405209",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "1598-2629; 2092-6685; ",
+        "journalTitle": "Immune Netw",
+        "journalVolume": "26",
+        "pageInfo": "e24",
+        "pmcid": "PMC13333242",
+        "pmid": "42405209",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Decoding Immune Regulation: From Genetic Variation to Mechanism Through Single-Cell Genomics.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Durant A, Mukherjee S, Lee ML, Choi SE, Scollard P, Klinedinst BS, Trittschuh EH, Mez J, Farrer LA, Gifford KA, Cruchaga C, Hassenstab J, Naj AC, Wang LS, Johnson SC, Engelman CD, Kukull WA, Keene CD, Saykin AJ, Cuccaro ML, Kunkle BW, Pericak-Vance MA, Martin ER, Bennett DA, Barnes LL, Schneider JA, Bush WS, Haines JL, Mayeux R, Vardarajan BN, Albert MS, Thompson PM, Jefferson AL, Alzheimer's Disease Neuroimaging Initiative (ADNI)*Alzheimer's Disease Genetics Consortium (ADGC)The Alzheimer's Disease Sequencing Project (ADSP), Crane PK, Dumitrescu L, Archer DB, Hohman TJ, Gaynor LS.",
+        "citedByCount": 2,
+        "doi": "10.1002/alz.71024",
+        "firstIndexDate": "2026-01-16",
+        "firstPublicationDate": "2026-01-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12809718"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41542929",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "1552-5260; 1552-5279; ",
+        "journalTitle": "Alzheimers Dement",
+        "journalVolume": "22",
+        "pageInfo": "e71024",
+        "pmcid": "PMC12809718",
+        "pmid": "41542929",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article; research support, n.i.h., extramural",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Evaluating the association of apolipoprotein E genotype and cognitive resilience in SuperAgers.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp"
+          ]
+        }
+      },
+      {
+        "authorString": "Malich D, Vasylyshyn A.",
+        "citedByCount": 0,
+        "firstIndexDate": "2026-09-29",
+        "firstPublicationDate": "2026-09-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13617113"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "PMC13617113",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1662-4548; 1662-453x; ",
+        "journalTitle": "Front Neurosci",
+        "journalVolume": "20",
+        "pmcid": "PMC13617113",
+        "pubType": "systematic-review; review",
+        "source": "PMC",
+        "title": "Testosterone modulation of default mode network and its effects on cognitive function and mood in humans: a systematic review"
+      },
+      {
+        "authorString": "Axelsson Andr\u00e9n E, Kettunen P, Wallin A, Svensson J.",
+        "citedByCount": 0,
+        "doi": "10.1016/j.cccb.2026.100561",
+        "firstIndexDate": "2026-09-14",
+        "firstPublicationDate": "2026-08-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13571115"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42733490",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2666-2450",
+        "journalTitle": "Cereb Circ Cogn Behav",
+        "journalVolume": "11",
+        "pageInfo": "100561",
+        "pmcid": "PMC13571115",
+        "pmid": "42733490",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Insulin resistance increases the risk of conversion to the subcortical small vessel type of dementia."
+      },
+      {
+        "authorString": "Kidwell R, Gupta M, Fontaine J, Sanz I, Scharer CD.",
+        "citedByCount": 0,
+        "doi": "10.1093/immhor/vlag029",
+        "firstIndexDate": "2026-07-21",
+        "firstPublicationDate": "2026-07-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13387164"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42479690",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "7",
+        "journalIssn": "2573-7732",
+        "journalTitle": "Immunohorizons",
+        "journalVolume": "10",
+        "pageInfo": "vlag029",
+        "pmcid": "PMC13387164",
+        "pmid": "42479690",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Identification of genetic variants in B cell expressed genes associated with systemic lupus erythematosus in African American females.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "geo",
+            "refsnp"
+          ]
+        }
+      },
+      {
+        "authorString": "Abdelraheem O, El Kheir-Mataria WA, Chun S.",
+        "citedByCount": 0,
+        "doi": "10.1155/jare/1605361",
+        "firstIndexDate": "2026-04-20",
+        "firstPublicationDate": "2026-04-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13090574"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42007363",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2090-2204; 2090-2212; ",
+        "journalTitle": "J Aging Res",
+        "journalVolume": "2026",
+        "pageInfo": "1605361",
+        "pmcid": "PMC13090574",
+        "pmid": "42007363",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Genetic, Socioecological, and Health Research on Extreme Longevity in Semisupercentenarians and Supercentenarians: A Scoping Review.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Duan X, Wang L, Koski TM, An L, Efferth T, Fu Y.",
+        "citedByCount": 0,
+        "doi": "10.1002/advs.77194",
+        "firstIndexDate": "2026-09-17",
+        "firstPublicationDate": "2026-09-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13579253"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42745690",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2198-3844",
+        "journalTitle": "Adv Sci (Weinh)",
+        "pageInfo": "e77194",
+        "pmcid": "PMC13579253",
+        "pmid": "42745690",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Drought Stress Mediated Changes in Food Crops: Mechanisms and Remediation Strategies.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Yang L, Lindahl A, Robben M.",
+        "citedByCount": 0,
+        "doi": "10.3389/fgene.2026.1833788",
+        "firstIndexDate": "2026-08-16",
+        "firstPublicationDate": "2026-07-30",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13469661"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42597847",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-8021",
+        "journalTitle": "Front Genet",
+        "journalVolume": "17",
+        "pageInfo": "1833788",
+        "pmcid": "PMC13469661",
+        "pmid": "42597847",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Immunogenetics and TCR expression patterns together predict future T1D onset from multi-omic datasets.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "geo",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Moazzam-Jazi M, Jafarinejad-Farsangi S, Najd-Hassan-Bonab L, Daneshpour M, Liu Z, Gupta MK, Vadde R.",
+        "citedByCount": 3,
+        "doi": "10.1016/j.molmet.2026.102335",
+        "firstIndexDate": "2026-02-16",
+        "firstPublicationDate": "2026-02-13",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12954304"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41692338",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2212-8778",
+        "journalTitle": "Mol Metab",
+        "journalVolume": "106",
+        "pageInfo": "102335",
+        "pmcid": "PMC12954304",
+        "pmid": "41692338",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Interplay between obesity-associated insulin resistance and immune system through the lens of evolutionary medicine.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Roy J, Lee R, Osborne C, Miklas PN, Osorno JM, McClean PE.",
+        "citedByCount": 1,
+        "doi": "10.1002/tpg2.70296",
+        "firstIndexDate": "2026-09-07",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13547584"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42702790",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "1940-3372",
+        "journalTitle": "Plant Genome",
+        "journalVolume": "19",
+        "pageInfo": "e70296",
+        "pmcid": "PMC13547584",
+        "pmid": "42702790",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Genomic resources to advance seed coat color and patterning genetics and breeding in common bean (Phaseolus vulgaris L.).",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Olajide T, Oladapo O, Asogwa C, Olajide G, Oyekan A, Fatola A, Olanrewaju T, Oyegbile D, Ugbo I, Oyoyo H, Kamarudeen R, Famakin O.",
+        "citedByCount": 2,
+        "doi": "10.1186/s41021-025-00332-0",
+        "firstIndexDate": "2025-10-09",
+        "firstPublicationDate": "2025-10-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12509407"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41063299",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "1880-7046; 1880-7062; ",
+        "journalTitle": "Genes Environ",
+        "journalVolume": "47",
+        "pageInfo": "16",
+        "pmcid": "PMC12509407",
+        "pmid": "41063299",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Genetics and environmental determinants of Alzheimer's disease and related dementias in older Africans: a narrative review.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp"
+          ]
+        }
+      },
+      {
+        "authorString": "Irfan JA, Abeyratne CR, Chhetri HB, Hyatt D, Makaju SO, Daum C, Bauer D, Lipzen A, Barry K, Jacobson D, Mazarei M, Stewart CN, Missaoui AM.",
+        "citedByCount": 0,
+        "doi": "10.1002/tpg2.70306",
+        "firstIndexDate": "2026-09-22",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13591432"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42765369",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "1940-3372",
+        "journalTitle": "Plant Genome",
+        "journalVolume": "19",
+        "pageInfo": "e70306",
+        "pmcid": "PMC13591432",
+        "pmid": "42765369",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Genomic prediction of agronomic traits in a switchgrass (Panicum virgatum L.) half-sib progeny panel evaluated across multiple environments."
+      },
+      {
+        "authorString": "Svetec N, Lee U, Zhao L.",
+        "citedByCount": 1,
+        "doi": "10.1016/j.tig.2026.01.013",
+        "firstIndexDate": "2026-03-27",
+        "firstPublicationDate": "2026-03-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13025824"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41881768",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "5",
+        "journalIssn": "0168-9525",
+        "journalTitle": "Trends Genet",
+        "journalVolume": "42",
+        "pageInfo": "423-433",
+        "pmcid": "PMC13025824",
+        "pmid": "41881768",
+        "pubType": "research support, non-u.s. gov't; research-article; review; journal article; research support, n.i.h., extramural",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Machine learning for evolutionary genetics and molecular evolution."
+      },
+      {
+        "authorString": "Jafari H, Abebe BK, Cong L, Ahmed Z, Zhaofei W, Sun M, Muhatai G, Chuzhao L, Dang R.",
+        "citedByCount": 2,
+        "doi": "10.1007/s44154-025-00274-1",
+        "firstIndexDate": "2026-01-13",
+        "firstPublicationDate": "2026-01-12",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12791104"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41521281",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2731-0450; 2097-4418; ",
+        "journalTitle": "Stress Biol",
+        "journalVolume": "6",
+        "pageInfo": "5",
+        "pmcid": "PMC12791104",
+        "pmid": "41521281",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Review: Genomic insights into the adaptive traits and stress resistance in modern horses.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Hosseinzadeh S, Rafat SA, Javanmard A, Hasanpur K, Bardou P, Charles M, Klopp C, Smith AL, Fiddaman SR.",
+        "citedByCount": 1,
+        "doi": "10.1038/s41598-026-41813-8",
+        "firstIndexDate": "2026-04-08",
+        "firstPublicationDate": "2026-04-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13062120"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41946774",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "11726",
+        "pmcid": "PMC13062120",
+        "pmid": "41946774",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Whole genome analysis of selection associated with resistance to heat stress in chickens.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "go",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Prada D, Morava-Kozicz E, Rajendrakumar AL, Kupsco A, Lesseur C, Irizar H, Cant\u00fa-de-Leon D, Garc\u00eda-Cuellar C, Ram\u00edrez A, Gonz\u00e1lez-Ru\u00edz J, Horowitz CR, Cushman M, Manly J, Judd S, Bagiella E, Baccarelli A, Parks R.",
+        "citedByCount": 0,
+        "doi": "10.1186/s12883-026-04857-x",
+        "firstIndexDate": "2026-04-22",
+        "firstPublicationDate": "2026-04-21",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13101111"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42015047",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "1471-2377",
+        "journalTitle": "BMC Neurol",
+        "journalVolume": "26",
+        "pageInfo": "247",
+        "pmcid": "PMC13101111",
+        "pmid": "42015047",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Blood mitochondrial heteroplasmic variants and cognitive performance in late midlife: REGARDS study.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refseq"
+          ]
+        }
+      }
+    ]
+  },
+  "version": "6.9"
+}

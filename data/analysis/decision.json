@@ -1,0 +1,17 @@
+{
+  "primary_decision": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT",
+  "decision_rule_applied": 3,
+  "adverse_selection_upper_C_abs_below_minus_Delta": null,
+  "secondary_classifications": {
+    "P_abs": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+    "P_rec": "UNRESOLVED"
+  },
+  "interpretation_labels": [
+    "HALF CACHE ALIGNMENT: the HALF law is a prior outcome-informed choice that exactly matches the one-generation cache delay to a two-update target return; it favors retrieval by construction. No other lag, copy probability or target law was tested.",
+    "OPPORTUNITY COST: a valid ACTIVE-M carrier replaces exactly one uniform fresh proposal (one of two effectively uniform random proposals) with its cache; its magnitude is conditional on the frozen fresh-probe distribution and is not a general cost scale.",
+    "START-DEPENDENCE GATE: rule 2 (D_HALF and D_ZERO wholly inside (-1/32, +1/32)) is applied before any enrichment classification.",
+    "ADVERSE OUTCOMES: under BOUNDED NEGATIVE, an upper C_abs bound below -1/32 indicates adverse selection; otherwise only 'not enriched by one expected individual' is admissible.",
+    "SECONDARY POPULATION-PERFORMANCE LIMITS: P_abs and P_rec form a separate family that cannot alter the primary decision; P_rec half-width 0.029 is close to Delta_P = 1/32 and is often unresolved.",
+    "CLAIM LIMITS: no claim of rare invasion, mechanism origin, arbitrary recurrence, general cost scale, stationarity, equilibrium, evolutionary stability, population benefit, biological extrapolation, global novelty or replication of studies 056-060."
+  ]
+}

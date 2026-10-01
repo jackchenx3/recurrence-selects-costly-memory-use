@@ -1,0 +1,72 @@
+[
+  {
+    "query": "\"evolution of memory\" changing environments",
+    "service": "OpenAlex",
+    "url": "https://api.openalex.org/works?search=%22evolution%20of%20memory%22%20changing%20environments&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+  },
+  {
+    "query": "\"evolution of memory\" changing environments",
+    "service": "Europe PMC",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22evolution%20of%20memory%22%20changing%20environments&format=json&pageSize=100"
+  },
+  {
+    "query": "\"phenotypic memory\" evolution fluctuating environment",
+    "service": "OpenAlex",
+    "url": "https://api.openalex.org/works?search=%22phenotypic%20memory%22%20evolution%20fluctuating%20environment&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+  },
+  {
+    "query": "\"phenotypic memory\" evolution fluctuating environment",
+    "service": "Europe PMC",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22phenotypic%20memory%22%20evolution%20fluctuating%20environment&format=json&pageSize=100"
+  },
+  {
+    "query": "memory exploration evolution changing environments",
+    "service": "OpenAlex",
+    "url": "https://api.openalex.org/works?search=memory%20exploration%20evolution%20changing%20environments&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+  },
+  {
+    "query": "memory exploration evolution changing environments",
+    "service": "Europe PMC",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=memory%20exploration%20evolution%20changing%20environments&format=json&pageSize=100"
+  },
+  {
+    "query": "learning memory evolution cost environmental predictability",
+    "service": "OpenAlex",
+    "url": "https://api.openalex.org/works?search=learning%20memory%20evolution%20cost%20environmental%20predictability&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+  },
+  {
+    "query": "learning memory evolution cost environmental predictability",
+    "service": "Europe PMC",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=learning%20memory%20evolution%20cost%20environmental%20predictability&format=json&pageSize=100"
+  },
+  {
+    "query": "\"memory use\" digital organisms evolution",
+    "service": "OpenAlex",
+    "url": "https://api.openalex.org/works?search=%22memory%20use%22%20digital%20organisms%20evolution&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+  },
+  {
+    "query": "\"memory use\" digital organisms evolution",
+    "service": "Europe PMC",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22memory%20use%22%20digital%20organisms%20evolution&format=json&pageSize=100"
+  },
+  {
+    "query": "adaptation cost memory fluctuating environments",
+    "service": "OpenAlex",
+    "url": "https://api.openalex.org/works?search=adaptation%20cost%20memory%20fluctuating%20environments&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+  },
+  {
+    "query": "adaptation cost memory fluctuating environments",
+    "service": "Europe PMC",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=adaptation%20cost%20memory%20fluctuating%20environments&format=json&pageSize=100"
+  },
+  {
+    "query": "environmental memory allele selection",
+    "service": "OpenAlex",
+    "url": "https://api.openalex.org/works?search=environmental%20memory%20allele%20selection&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+  },
+  {
+    "query": "environmental memory allele selection",
+    "service": "Europe PMC",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=environmental%20memory%20allele%20selection&format=json&pageSize=100"
+  }
+]

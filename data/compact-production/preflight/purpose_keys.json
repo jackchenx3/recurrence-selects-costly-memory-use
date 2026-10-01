@@ -1,0 +1,15 @@
+{
+  "receipt": "MMEM-PURPOSE-KEYS-1",
+  "namespace": "production-r1",
+  "keys": [
+    {"purpose": "INITIAL_GENOTYPE", "text": "PHASE2-MUTABLE-MEMORY-001|production-r1|INITIAL_GENOTYPE", "k0": "f116a16c", "k1": "bbb26b31"},
+    {"purpose": "TARGET_INNOVATION", "text": "PHASE2-MUTABLE-MEMORY-001|production-r1|TARGET_INNOVATION", "k0": "fab92d42", "k1": "730bd130"},
+    {"purpose": "TARGET_COPY", "text": "PHASE2-MUTABLE-MEMORY-001|production-r1|TARGET_COPY", "k0": "81f8d27e", "k1": "ec39b677"},
+    {"purpose": "FRESH_MASK", "text": "PHASE2-MUTABLE-MEMORY-001|production-r1|FRESH_MASK", "k0": "76780a48", "k1": "01dd61d2"},
+    {"purpose": "SCOUT_MASK", "text": "PHASE2-MUTABLE-MEMORY-001|production-r1|SCOUT_MASK", "k0": "c87a881d", "k1": "7ab68311"},
+    {"purpose": "LOCAL_BIT", "text": "PHASE2-MUTABLE-MEMORY-001|production-r1|LOCAL_BIT", "k0": "dd04321a", "k1": "6c306e73"},
+    {"purpose": "DONOR_KEY", "text": "PHASE2-MUTABLE-MEMORY-001|production-r1|DONOR_KEY", "k0": "7e90eee6", "k1": "f7e52c7d"},
+    {"purpose": "SURVIVAL_UNIFORM", "text": "PHASE2-MUTABLE-MEMORY-001|production-r1|SURVIVAL_UNIFORM", "k0": "5d7e32e8", "k1": "df69b8c0"},
+    {"purpose": "POLICY_MUTATION", "text": "PHASE2-MUTABLE-MEMORY-001|production-r1|POLICY_MUTATION", "k0": "4baa9ebf", "k1": "d3bd4a04"}
+  ]
+}

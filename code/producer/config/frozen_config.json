@@ -1,0 +1,197 @@
+{
+  "config_schema": "MMEM-FROZEN-CONFIG-1",
+  "study_id": "PHASE2-MUTABLE-MEMORY-001",
+  "specification_revision": 1,
+  "input_hashes": {
+    "specification_sha256": "c17a3a1e9ac9cf2260f6743eaf08e4c2808080a767af16d2f9e9d2b9ad3e821d",
+    "terminal_review_sha256": "787cf32a20312f2682c761243f3dec04c5eb8036d14d6efc444e9830db37960a"
+  },
+  "context_hashes_recorded_from_DESIGN_GO_not_checked_by_driver": {
+    "literature_boundary_sha256": "bfe712ec36c435249d217708848803ccdb20c542b8ae441d66a5f8af725c7f25",
+    "prior_audit_sha256": "e38f8f9a1acad16cdbc429417974abbf10db0b84ac9e58deb3f784b50e72eade"
+  },
+  "population": {
+    "size": 32,
+    "genotype_bits": 32,
+    "policy_alleles": ["F", "M"],
+    "cache_rule": "post-mutation M: cache := producing parent's pre-update genotype (valid); post-mutation F: cache invalid; initial caches invalid",
+    "lineage_identifiers_read_by_operators": false
+  },
+  "updates": {
+    "first": 1,
+    "last": 256,
+    "late_window_first": 193,
+    "late_window_last": 256,
+    "late_window_length": 64,
+    "measurement_point": "after survival, policy mutation and cache transition"
+  },
+  "target_laws": {
+    "ZERO": "T_t = I_t for all t",
+    "HALF": "T_1 = I_1, T_2 = I_2; for t >= 3, T_t = T_(t-2) if R_t = 1 else I_t",
+    "innovation_and_copy_bit_generated_every_update": true
+  },
+  "candidates": {
+    "families_in_order": ["PARENT", "POLICY_PROBE", "GLOBAL_SCOUT", "LOCAL_CHILD"],
+    "per_parent": 4,
+    "per_update": 128,
+    "index_formula": "32*family_index + parent_slot",
+    "policy_probe_rule": "ACTIVE and label M and cache valid: cached genotype; otherwise (F, invalid M, any SHAM): parent XOR fresh_mask",
+    "donor_families": 3,
+    "donor_rule": "lowest mismatch among families 0-2; tie: lowest unsigned 64-bit donor key; tie: lowest family index",
+    "local_bit_flip_probability_numerator": 1,
+    "local_bit_flip_probability_denominator": 32,
+    "genotype_deduplication": false
+  },
+  "selection": {
+    "survivors": 32,
+    "weight_formula": "w_j = 2^(32 - h_j)",
+    "weight_exponent_base": 32,
+    "max_weight_sum_log2": 39,
+    "method": "sequential Plackett-Luce without replacement over unselected candidates in candidate-index order; Z uniform in [0,W) by Lemire multiply-high rejection: threshold = (2^64 - W) mod W, reject when low64(x*W) < threshold, else Z = high64(x*W); select first remaining candidate whose cumulative weight > Z; survivor slot = draw order",
+    "floating_point_used": false
+  },
+  "policy_mutation": {
+    "mu_numerator": 1,
+    "mu_denominator": 32,
+    "symmetric": true,
+    "flip_rule": "(word0 & 31U) == 0U"
+  },
+  "design": {
+    "blocks": 41600,
+    "cells_in_index_order": [
+      "ACTIVE|ZERO|ALL_F",
+      "ACTIVE|ZERO|ALL_M",
+      "ACTIVE|HALF|ALL_F",
+      "ACTIVE|HALF|ALL_M",
+      "SHAM|ZERO|ALL_F",
+      "SHAM|ZERO|ALL_M",
+      "SHAM|HALF|ALL_F",
+      "SHAM|HALF|ALL_M"
+    ],
+    "cell_index_formula": "4*arm + 2*law + start with ACTIVE=0, SHAM=1; ZERO=0, HALF=1; ALL_F=0, ALL_M=1",
+    "paths_per_block": 8,
+    "total_paths": 332800,
+    "updates_per_path": 256,
+    "total_path_updates": 85196800,
+    "queries_per_update": 128,
+    "total_objective_queries": 10905190400
+  },
+  "rng": {
+    "generator": "Philox4x32-10",
+    "rounds": 10,
+    "multipliers_hex": ["D2511F53", "CD9E8D57"],
+    "weyl_hex": ["9E3779B9", "BB67AE85"],
+    "key_text_template": "PHASE2-MUTABLE-MEMORY-001|production-r1|<purpose>",
+    "key_namespace": "production-r1",
+    "fixture_key_namespace_non_scientific": "fixture-r1-nonscientific",
+    "key_derivation": "SHA-256 of the UTF-8 key text; key word 0 = digest bytes 0..3 little-endian; key word 1 = digest bytes 4..7 little-endian",
+    "counter_words": ["block", "update", "entity", "subindex"],
+    "purposes_in_order": [
+      "INITIAL_GENOTYPE",
+      "TARGET_INNOVATION",
+      "TARGET_COPY",
+      "FRESH_MASK",
+      "SCOUT_MASK",
+      "LOCAL_BIT",
+      "DONOR_KEY",
+      "SURVIVAL_UNIFORM",
+      "POLICY_MUTATION"
+    ],
+    "coordinate_schemas": {
+      "INITIAL_GENOTYPE": {"update": [0, 0], "fields": {"slot": [0, 31]}, "entity": "slot", "subindex": "0", "extraction": "word0"},
+      "TARGET_INNOVATION": {"update": [1, 256], "fields": {}, "entity": "0", "subindex": "0", "extraction": "word0"},
+      "TARGET_COPY": {"update": [1, 256], "fields": {}, "entity": "0", "subindex": "0", "extraction": "word0 & 1"},
+      "FRESH_MASK": {"update": [1, 256], "fields": {"slot": [0, 31]}, "entity": "slot", "subindex": "0", "extraction": "word0"},
+      "SCOUT_MASK": {"update": [1, 256], "fields": {"slot": [0, 31]}, "entity": "slot", "subindex": "0", "extraction": "word0"},
+      "LOCAL_BIT": {"update": [1, 256], "fields": {"slot": [0, 31], "bit": [0, 31]}, "entity": "slot", "subindex": "bit", "extraction": "flip bit iff (word0 & 31U) == 0U"},
+      "DONOR_KEY": {"update": [1, 256], "fields": {"slot": [0, 31], "family": [0, 2]}, "entity": "3*slot+family", "subindex": "0", "extraction": "uint64(word0) | (uint64(word1) << 32); lower key wins"},
+      "SURVIVAL_UNIFORM": {"update": [1, 256], "fields": {"draw": [0, 31], "retry": [0, 4294967295]}, "entity": "draw", "subindex": "retry", "extraction": "x = uint64(word0) | (uint64(word1) << 32)"},
+      "POLICY_MUTATION": {"update": [1, 256], "fields": {"slot": [0, 31]}, "entity": "slot", "subindex": "0", "extraction": "flip iff (word0 & 31U) == 0U"}
+    },
+    "block_range": [0, 41599],
+    "unused_output_words": [2, 3],
+    "max_survival_retry_subindex": 4294967295,
+    "collision_enumeration_retry_depth": 4,
+    "shared_across_cells": "counters omit arm, law and start; identical counters across the eight paired cells are intentional sharing"
+  },
+  "inference": {
+    "n_blocks": 41600,
+    "Delta_numerator": 1,
+    "Delta_denominator": 32,
+    "method": "two-sided Hoeffding with Bonferroni; h = R * sqrt(ln(2/alpha_each) / (2n)); no empirical variance, normal approximation, pilot or within-path independence",
+    "primary_family": {
+      "familywise_alpha": "0.05",
+      "family_size": 4,
+      "alpha_each": "0.0125",
+      "estimands": [
+        {"name": "C_abs", "definition": "A_HALF - 1/2", "range_length": 1, "block_value_denominator": 4096, "frozen_half_width": "0.00781023"},
+        {"name": "C_rec", "definition": "A_HALF - A_ZERO", "range_length": 2, "block_value_denominator": 4096, "frozen_half_width": "0.01562046"},
+        {"name": "D_HALF", "definition": "L(ACTIVE,HALF,ALL_M) - L(ACTIVE,HALF,ALL_F)", "range_length": 2, "block_value_denominator": 2048, "frozen_half_width": "0.01562046"},
+        {"name": "D_ZERO", "definition": "L(ACTIVE,ZERO,ALL_M) - L(ACTIVE,ZERO,ALL_F)", "range_length": 2, "block_value_denominator": 2048, "frozen_half_width": "0.01562046"}
+      ]
+    },
+    "secondary_family": {
+      "familywise_alpha": "0.05",
+      "family_size": 2,
+      "alpha_each": "0.025",
+      "Delta_P_numerator": 1,
+      "Delta_P_denominator": 32,
+      "estimands": [
+        {"name": "P_abs", "definition": "P(ACTIVE,HALF) - P(SHAM,HALF), start-averaged", "range_length": 2, "block_value_denominator": 131072, "frozen_half_width": "0.01451463"},
+        {"name": "P_rec", "definition": "[P(ACTIVE,HALF)-P(SHAM,HALF)] - [P(ACTIVE,ZERO)-P(SHAM,ZERO)], start-averaged", "range_length": 4, "block_value_denominator": 131072, "frozen_half_width": "0.02902925"}
+      ],
+      "may_alter_primary_decision": false
+    }
+  },
+  "decision_rules_in_order": [
+    {"order": 1, "label": "INVALID", "condition": "failure of a deterministic identity (N1/N2), seed/counter audit, saved-output reconstruction or 128-query count; post-production INVALID is terminal"},
+    {"order": 2, "label": "START-DEPENDENT; SCIENTIFIC QUESTION UNRESOLVED", "condition": "interval for D_HALF or D_ZERO not wholly inside the open interval (-Delta, +Delta)"},
+    {"order": 3, "label": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT", "condition": "lower(C_abs) > Delta and lower(C_rec) > Delta"},
+    {"order": 4, "label": "SELECTIVE ENRICHMENT NOT ATTRIBUTABLE TO RECURRENCE AT THE FIXED SCALE", "condition": "lower(C_abs) > Delta and upper(C_rec) <= Delta"},
+    {"order": 5, "label": "BOUNDED NEGATIVE AT THE ONE-INDIVIDUAL SCALE", "condition": "upper(C_abs) <= Delta; additionally report whether upper(C_abs) < -Delta (adverse selection)"},
+    {"order": 6, "label": "UNRESOLVED", "condition": "every other pattern"}
+  ],
+  "secondary_classification_rules_in_order": [
+    {"order": 1, "label": "MEANINGFUL POSITIVE PERFORMANCE", "condition": "lower > Delta_P"},
+    {"order": 2, "label": "MEANINGFUL ADVERSE PERFORMANCE", "condition": "upper < -Delta_P"},
+    {"order": 3, "label": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE", "condition": "upper <= Delta_P"},
+    {"order": 4, "label": "UNRESOLVED", "condition": "every other interval"}
+  ],
+  "saved_records": {
+    "primary": 4,
+    "performance": 2,
+    "absolute_cell_means": 16,
+    "total": 22
+  },
+  "audit": {
+    "first_block": 0,
+    "last_block": 63,
+    "audit_paths": 512,
+    "audit_rows": 16777216
+  },
+  "resources": {
+    "allocations": 1,
+    "max_cpus": 32,
+    "max_mem_gib": 64,
+    "max_wall_hours": 6,
+    "max_new_output_gib": 100
+  },
+  "output": {
+    "byte_order": "little-endian",
+    "shards": 32,
+    "blocks_per_shard": 1300,
+    "shard_rule": "shard = floor(block / 1300); output bytes are independent of thread count",
+    "update_record_bytes": 24,
+    "path_record_bytes": 128,
+    "block_record_bytes": 96,
+    "audit_row_bytes": 72
+  },
+  "neutral_expectations": {
+    "r": "15/16",
+    "P_M_given_ALL_F": "[1 - r^t]/2",
+    "P_M_given_ALL_M": "[1 + r^t]/2",
+    "expected_difference_at_256": "6.678005283720385e-08",
+    "expected_difference_window_average": "9.57983820600146e-07",
+    "note": "justifies the neutral window in expectation only; does not establish ACTIVE convergence"
+  }
+}

@@ -1,0 +1,1124 @@
+{
+  "hitCount": 30,
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 100,
+    "queryString": "\"evolution of memory\" changing environments",
+    "resultType": "lite",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "authorString": "Leadbeater E, Watrobska C.",
+        "citedByCount": 5,
+        "doi": "10.1098/rstb.2024.0109",
+        "firstIndexDate": "2025-06-26",
+        "firstPublicationDate": "2025-06-26",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12198905"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40566906",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1929",
+        "journalIssn": "0962-8436; 1471-2970; ",
+        "journalTitle": "Philos Trans R Soc Lond B Biol Sci",
+        "journalVolume": "380",
+        "pageInfo": "20240109",
+        "pmcid": "PMC12198905",
+        "pmid": "40566906",
+        "pubType": "discussion; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "What could evolve in the evolution of memory?"
+      },
+      {
+        "authorString": "Qu D, Ma Y, Wang Y.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-54851-z",
+        "firstIndexDate": "2026-06-03",
+        "firstPublicationDate": "2026-06-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13462340"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42230858",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "25050",
+        "pmcid": "PMC13462340",
+        "pmid": "42230858",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "STR-GNN: stability-regularized graph neural networks for suppressing spurious temporal variations in dynamic community detection.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Jahangeer M, Guo J, Li Y, Qin Z, Liu W, Zhao C, Zhou W, Mou H, Shen C, Fu L, Li X, Luo S, Fang M, Junaid M, Yao H, Wang Q, Du G.",
+        "citedByCount": 0,
+        "doi": "10.1002/smll.74663",
+        "firstIndexDate": "2026-07-23",
+        "firstPublicationDate": "2026-07-22",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13533238"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42485060",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "49",
+        "journalIssn": "1613-6810; 1613-6829; ",
+        "journalTitle": "Small",
+        "journalVolume": "22",
+        "pageInfo": "e74663",
+        "pmcid": "PMC13533238",
+        "pmid": "42485060",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Controlling Ion Dynamics at Nanoscale for Memristor-Based Neuromorphic Computing.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Bouyeure A, Pacheco-Estefan D, Jacob G, Kobelt M, Fellner MC, Rose J, Axmacher N.",
+        "citedByCount": 2,
+        "doi": "10.7554/elife.105126",
+        "firstIndexDate": "2026-03-17",
+        "firstPublicationDate": "2026-03-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12991641"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41837840",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2050-084x",
+        "journalTitle": "Elife",
+        "journalVolume": "14",
+        "pageInfo": "RP105126",
+        "pmcid": "PMC12991641",
+        "pmid": "41837840",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Distinct representational properties of cues and contexts shape fear and reversal learning.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Zhou S, Li Q.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-025-31685-9",
+        "firstIndexDate": "2025-12-16",
+        "firstPublicationDate": "2025-12-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12808139"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41398436",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "2012",
+        "pmcid": "PMC12808139",
+        "pmid": "41398436",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Mitigating catastrophic forgetting in lifelong learning: a hybrid architecture integrating neural ordinary differential equations with memory-augmented transformers.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Li G, Wang S, Wang L, Wang X, Li Y, Guo X, Zhao H, Xu B.",
+        "citedByCount": 0,
+        "doi": "10.1016/j.jare.2025.10.057",
+        "firstIndexDate": "2025-10-30",
+        "firstPublicationDate": "2025-10-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13316593"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41161487",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2090-1232; 2090-1224; ",
+        "journalTitle": "J Adv Res",
+        "journalVolume": "85",
+        "pageInfo": "425-440",
+        "pmcid": "PMC13316593",
+        "pmid": "41161487",
+        "pubType": "research support, non-u.s. gov't; review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Never underestimate honeybees: Their exceptionally diverse adaptive strategies.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Bavassi L, Fuentemilla L.",
+        "citedByCount": 3,
+        "doi": "10.1162/netn_a_00415",
+        "firstIndexDate": "2024-12-30",
+        "firstPublicationDate": "2024-12-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11675164"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "39735504",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "2472-1751",
+        "journalTitle": "Netw Neurosci",
+        "journalVolume": "8",
+        "pageInfo": "1529-1544",
+        "pmcid": "PMC11675164",
+        "pmid": "39735504",
+        "pubType": "research-article; journal article",
+        "pubYear": "2024",
+        "source": "MED",
+        "title": "Segregation-to-integration transformation model of memory evolution.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Wang K, Zou T.",
+        "citedByCount": 0,
+        "doi": "10.3389/fpsyg.2026.1901905",
+        "firstIndexDate": "2026-09-23",
+        "firstPublicationDate": "2026-09-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13590704"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "42769157",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-1078",
+        "journalTitle": "Front Psychol",
+        "journalVolume": "17",
+        "pageInfo": "1901905",
+        "pmcid": "PMC13590704",
+        "pmid": "42769157",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "A fractional differential equation model for student learning dynamics using anonymized learning analytics data."
+      },
+      {
+        "authorString": "Purushotham JN, Lutz HL, Parker E, Andersen KG.",
+        "citedByCount": 9,
+        "doi": "10.1016/j.immuni.2025.03.014",
+        "firstIndexDate": "2025-04-02",
+        "firstPublicationDate": "2025-03-31",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11981831"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40168990",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "4",
+        "journalIssn": "1074-7613; 1097-4180; ",
+        "journalTitle": "Immunity",
+        "journalVolume": "58",
+        "pageInfo": "784-796",
+        "pmcid": "PMC11981831",
+        "pmid": "40168990",
+        "pubType": "research-article; review; journal article; research support, n.i.h., extramural",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Immunological drivers of zoonotic virus emergence, evolution, and endemicity."
+      },
+      {
+        "authorString": "Gokhale CS, Giaimo S, Remigi P.",
+        "citedByCount": 12,
+        "doi": "10.1371/journal.pcbi.1009431",
+        "firstIndexDate": "2021-10-02",
+        "firstPublicationDate": "2021-10-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8513827"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "34597291",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "10",
+        "journalIssn": "1553-734x; 1553-7358; ",
+        "journalTitle": "PLoS Comput Biol",
+        "journalVolume": "17",
+        "pageInfo": "e1009431",
+        "pmcid": "PMC8513827",
+        "pmid": "34597291",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2021",
+        "source": "MED",
+        "title": "Memory shapes microbial populations."
+      },
+      {
+        "authorString": "Nairne JS.",
+        "citedByCount": 3,
+        "doi": "10.1007/s10648-022-09696-z",
+        "firstIndexDate": "2022-08-16",
+        "firstPublicationDate": "2022-07-30",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC9362505"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "35966455",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "1040-726x; 1573-336x; ",
+        "journalTitle": "Educ Psychol Rev",
+        "journalVolume": "34",
+        "pageInfo": "2275-2296",
+        "pmcid": "PMC9362505",
+        "pmid": "35966455",
+        "pubType": "other; journal article",
+        "pubYear": "2022",
+        "source": "MED",
+        "title": "Adaptive Education: Learning and Remembering with a Stone-Age Brain.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Lo AW, Zhang R.",
+        "citedByCount": 4,
+        "doi": "10.1016/j.isci.2021.102853",
+        "firstIndexDate": "2021-08-13",
+        "firstPublicationDate": "2021-07-13",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8340130"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "34381977",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "8",
+        "journalIssn": "2589-0042",
+        "journalTitle": "iScience",
+        "journalVolume": "24",
+        "pageInfo": "102853",
+        "pmcid": "PMC8340130",
+        "pmid": "34381977",
+        "pubType": "research-article; journal article",
+        "pubYear": "2021",
+        "source": "MED",
+        "title": "The evolutionary origin of Bayesian heuristics and finite memory.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Yang J, Zhang H, Lim S.",
+        "citedByCount": 0,
+        "doi": "10.7554/elife.95160",
+        "firstIndexDate": "2024-10-11",
+        "firstPublicationDate": "2024-10-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11466453"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "39388221",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2050-084x",
+        "journalTitle": "Elife",
+        "journalVolume": "13",
+        "pageInfo": "RP95160",
+        "pmcid": "PMC11466453",
+        "pmid": "39388221",
+        "pubType": "research-article; journal article",
+        "pubYear": "2024",
+        "source": "MED",
+        "title": "Sensory-memory interactions via modular structure explain errors in visual working memory.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Orianne JF, Eustache F.",
+        "citedByCount": 8,
+        "doi": "10.3389/fpsyg.2023.1238272",
+        "firstIndexDate": "2023-10-31",
+        "firstPublicationDate": "2023-10-12",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10603192"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "37901083",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-1078",
+        "journalTitle": "Front Psychol",
+        "journalVolume": "14",
+        "pageInfo": "1238272",
+        "pmcid": "PMC10603192",
+        "pmid": "37901083",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2023",
+        "source": "MED",
+        "title": "Collective memory: between individual systems of consciousness and social systems."
+      },
+      {
+        "authorString": "Liu Y, Ye S, Li XN, Li WG.",
+        "citedByCount": 23,
+        "doi": "10.1007/s12264-023-01129-3",
+        "firstIndexDate": "2023-10-10",
+        "firstPublicationDate": "2023-10-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11178705"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "37812300",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "6",
+        "journalIssn": "1673-7067; 1995-8218; ",
+        "journalTitle": "Neurosci Bull",
+        "journalVolume": "40",
+        "pageInfo": "777-794",
+        "pmcid": "PMC11178705",
+        "pmid": "37812300",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2024",
+        "source": "MED",
+        "title": "Memory Trace for Fear Extinction: Fragile yet Reinforceable."
+      },
+      {
+        "authorString": "Friedman G, McCarthy S, Rachinskii D.",
+        "citedByCount": 12,
+        "doi": "10.1371/journal.pone.0103241",
+        "firstIndexDate": "2014-07-29",
+        "firstPublicationDate": "2014-07-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4113350"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "25068284",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "7",
+        "journalIssn": "1932-6203",
+        "journalTitle": "PLoS One",
+        "journalVolume": "9",
+        "pageInfo": "e103241",
+        "pmcid": "PMC4113350",
+        "pmid": "25068284",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2014",
+        "source": "MED",
+        "title": "Hysteresis can grant fitness in stochastically varying environment."
+      },
+      {
+        "authorString": "Mathis R, Ackermann M.",
+        "citedByCount": 15,
+        "doi": "10.1186/s12862-017-0884-4",
+        "firstIndexDate": "2017-03-10",
+        "firstPublicationDate": "2017-03-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC5343395"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "28274196",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "1471-2148",
+        "journalTitle": "BMC Evol Biol",
+        "journalVolume": "17",
+        "pageInfo": "73",
+        "pmcid": "PMC5343395",
+        "pmid": "28274196",
+        "pubType": "research-article; journal article",
+        "pubYear": "2017",
+        "source": "MED",
+        "title": "Asymmetric cellular memory in bacteria exposed to antibiotics.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen"
+          ]
+        }
+      },
+      {
+        "authorString": "Biswas S, Clawson W, Levin M.",
+        "citedByCount": 34,
+        "doi": "10.3390/ijms24010285",
+        "firstIndexDate": "2023-01-08",
+        "firstPublicationDate": "2022-12-23",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC9820177"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "36613729",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "1422-0067",
+        "journalTitle": "Int J Mol Sci",
+        "journalVolume": "24",
+        "pageInfo": "285",
+        "pmcid": "PMC9820177",
+        "pmid": "36613729",
+        "pubType": "research-article; journal article",
+        "pubYear": "2022",
+        "source": "MED",
+        "title": "Learning in Transcriptional Network Models: Computational Discovery of Pathway-Level Memory and Effective Interventions.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Chen L, Cummings KA, Mau W, Zaki Y, Dong Z, Rabinowitz S, Clem RL, Shuman T, Cai DJ.",
+        "citedByCount": 52,
+        "doi": "10.1016/j.nlm.2020.107266",
+        "firstIndexDate": "2020-06-10",
+        "firstPublicationDate": "2020-06-05",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC7429265"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "32512183",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalIssn": "1074-7427; 1095-9564; ",
+        "journalTitle": "Neurobiol Learn Mem",
+        "journalVolume": "173",
+        "pageInfo": "107266",
+        "pmcid": "PMC7429265",
+        "pmid": "32512183",
+        "pubType": "research support, non-u.s. gov't; research-article; review; journal article; research support, n.i.h., extramural",
+        "pubYear": "2020",
+        "source": "MED",
+        "title": "The role of intrinsic excitability in the evolution of memory: Significance in memory allocation, consolidation, and updating."
+      },
+      {
+        "authorString": "Santoro A, Frankland PW, Richards BA.",
+        "citedByCount": 17,
+        "doi": "10.1523/jneurosci.0763-16.2016",
+        "firstIndexDate": "2016-12-02",
+        "firstPublicationDate": "2016-11-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6601977"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "27903731",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "48",
+        "journalIssn": "0270-6474; 1529-2401; ",
+        "journalTitle": "J Neurosci",
+        "journalVolume": "36",
+        "pageInfo": "12228-12242",
+        "pmcid": "PMC6601977",
+        "pmid": "27903731",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2016",
+        "source": "MED",
+        "title": "Memory Transformation Enhances Reinforcement Learning in Dynamic Environments."
+      },
+      {
+        "authorString": "Finley JR.",
+        "citedByCount": 1,
+        "doi": "10.3389/fcogn.2024.1505549",
+        "firstIndexDate": "2026-06-24",
+        "firstPublicationDate": "2025-01-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13281061"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42339427",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2813-4532",
+        "journalTitle": "Front Cognit",
+        "journalVolume": "3",
+        "pageInfo": "1505549",
+        "pmcid": "PMC13281061",
+        "pmid": "42339427",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2024",
+        "source": "MED",
+        "title": "Expanded taxonomies of human memory.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Bracis C, Gurarie E, Van Moorter B, Goodwin RA.",
+        "citedByCount": 59,
+        "doi": "10.1371/journal.pone.0136057",
+        "firstIndexDate": "2015-08-21",
+        "firstPublicationDate": "2015-08-19",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4542208"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "26288228",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "8",
+        "journalIssn": "1932-6203",
+        "journalTitle": "PLoS One",
+        "journalVolume": "10",
+        "pageInfo": "e0136057",
+        "pmcid": "PMC4542208",
+        "pmid": "26288228",
+        "pubType": "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article",
+        "pubYear": "2015",
+        "source": "MED",
+        "title": "Memory Effects on Movement Behavior in Animal Foraging."
+      },
+      {
+        "authorString": "Nadeau JL.",
+        "citedByCount": 4,
+        "doi": "10.3389/fnins.2015.00315",
+        "firstIndexDate": "2015-09-22",
+        "firstPublicationDate": "2015-09-04",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4559597"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "26388725",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1662-4548; 1662-453x; ",
+        "journalTitle": "Front Neurosci",
+        "journalVolume": "9",
+        "pageInfo": "315",
+        "pmcid": "PMC4559597",
+        "pmid": "26388725",
+        "pubType": "research-article; journal article",
+        "pubYear": "2015",
+        "source": "MED",
+        "title": "Initial photophysical characterization of the proteorhodopsin optical proton sensor (PROPS)."
+      },
+      {
+        "authorString": "Toader AC, Regalado JM, Li YR, Terceros A, Yadav N, Kumar S, Satow S, Hollunder F, Bonito-Oliva A, Rajasethupathy P.",
+        "citedByCount": 51,
+        "doi": "10.1016/j.cell.2023.02.024",
+        "firstIndexDate": "2023-04-05",
+        "firstPublicationDate": "2023-03-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10169089"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "37001501",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "7",
+        "journalIssn": "0092-8674; 1097-4172; ",
+        "journalTitle": "Cell",
+        "journalVolume": "186",
+        "pageInfo": "1369-1381.e17",
+        "pmcid": "PMC10169089",
+        "pmid": "37001501",
+        "pubType": "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural",
+        "pubYear": "2023",
+        "source": "MED",
+        "title": "Anteromedial thalamus gates the selection and stabilization of long-term memories."
+      },
+      {
+        "authorString": "Jacobs LF.",
+        "citedByCount": 147,
+        "doi": "10.1073/pnas.1201880109",
+        "firstIndexDate": "2012-06-23",
+        "firstPublicationDate": "2012-06-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC3386877"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "22723365",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalIssn": "0027-8424; 1091-6490; ",
+        "journalTitle": "Proc Natl Acad Sci U S A",
+        "journalVolume": "109 Suppl 1",
+        "pageInfo": "10693-10700",
+        "pmcid": "PMC3386877",
+        "pmid": "22723365",
+        "pubType": "research-article; review; research support, u.s. gov't, non-p.h.s.; journal article",
+        "pubYear": "2012",
+        "source": "MED",
+        "title": "From chemotaxis to the cognitive map: the function of olfaction."
+      },
+      {
+        "authorString": "Mitra-Delmotte G, Mitra AN.",
+        "citedByCount": 2,
+        "doi": "10.3389/fphys.2012.00366",
+        "firstIndexDate": "2012-10-13",
+        "firstPublicationDate": "2012-10-05",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC3464435"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "23060803",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-042x",
+        "journalTitle": "Front Physiol",
+        "journalVolume": "3",
+        "pageInfo": "366",
+        "pmcid": "PMC3464435",
+        "pmid": "23060803",
+        "pubType": "review-article; journal article",
+        "pubYear": "2012",
+        "source": "MED",
+        "title": "Field-Control, Phase-Transitions, and Life's Emergence."
+      },
+      {
+        "authorString": "Eisenberg B.",
+        "citedByCount": 23,
+        "doi": "10.1021/jp106760t",
+        "firstIndexDate": "2010-12-08",
+        "firstPublicationDate": "2010-10-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC2996618"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "21135913",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "48",
+        "journalIssn": "1932-7447; 1932-7455; ",
+        "journalTitle": "J Phys Chem C Nanomater Interfaces",
+        "journalVolume": "114",
+        "pageInfo": "20719-20733",
+        "pmcid": "PMC2996618",
+        "pmid": "21135913",
+        "pubType": "research-article; journal article",
+        "pubYear": "2010",
+        "source": "MED",
+        "title": "Multiple Scales in the Simulation of Ion Channels and Proteins."
+      },
+      {
+        "citedByCount": 2,
+        "doi": "10.1007/s10827-021-00801-9",
+        "firstIndexDate": "2021-12-23",
+        "firstPublicationDate": "2021-12-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8687879"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "34931275",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "suppl 1",
+        "journalIssn": "0929-5313; 1573-6873; ",
+        "journalTitle": "J Comput Neurosci",
+        "journalVolume": "49",
+        "pageInfo": "3-208",
+        "pmcid": "PMC8687879",
+        "pmid": "34931275",
+        "pubType": "abstract; journal article",
+        "pubYear": "2021",
+        "source": "MED",
+        "title": "30th Annual Computational Neuroscience Meeting: CNS*2021-Meeting Abstracts.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Gong T, Shuai L.",
+        "citedByCount": 4,
+        "doi": "10.1371/journal.pone.0142281",
+        "firstIndexDate": "2015-11-07",
+        "firstPublicationDate": "2015-11-06",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4636343"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "26544876",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "11",
+        "journalIssn": "1932-6203",
+        "journalTitle": "PLoS One",
+        "journalVolume": "10",
+        "pageInfo": "e0142281",
+        "pmcid": "PMC4636343",
+        "pmid": "26544876",
+        "pubType": "research-article; journal article; research support, n.i.h., extramural",
+        "pubYear": "2015",
+        "source": "MED",
+        "title": "Modeling Coevolution between Language and Memory Capacity during Language Origin."
+      },
+      {
+        "citedByCount": 0,
+        "firstIndexDate": "2026-04-20",
+        "firstPublicationDate": "2020-09-04",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13070663"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "PMC13070663",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "suppl 1",
+        "journalIssn": "0924-9338; 1778-3585; ",
+        "journalTitle": "Eur Psychiatry",
+        "journalVolume": "63",
+        "pageInfo": "S283-S589",
+        "pmcid": "PMC13070663",
+        "pubType": "abstract",
+        "pubYear": "2020",
+        "source": "PMC",
+        "title": "E-Poster Viewing",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "refsnp",
+            "nct"
+          ]
+        }
+      }
+    ]
+  },
+  "version": "6.9"
+}

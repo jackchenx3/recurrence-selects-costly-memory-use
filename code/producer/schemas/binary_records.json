@@ -1,0 +1,27 @@
+{
+  "schema": "MMEM-BINARY-RECORDS-1",
+  "byte_order": "little-endian",
+  "cell_index": "4*arm + 2*law + start",
+  "records": {
+    "update": {"bytes": 24, "count": 85196800, "python_struct": "<IHBBHBBBBBBQ",
+      "fields": ["block", "update", "cell", "m_count", "total_mismatch", "valid_m_cache", "cache_probe_use",
+                 "cache_probe_survivors", "f_to_m", "m_to_f", "query_count", "survival_retries_u64"]},
+    "path": {"bytes": 128, "count": 332800, "python_struct": "<IBBBBIIIIIIIQHHHH32sIII32s",
+      "fields": ["block", "cell", "arm", "law", "start", "late_m_sum", "late_mismatch_sum", "total_queries", "f_to_m",
+                 "m_to_f", "cache_probe_use", "cache_probe_survivors", "survival_retries_u64", "fixation_updates",
+                 "extinction_updates", "late_fixation_updates", "late_extinction_updates", "final_state_sha256",
+                 "final_m_count", "final_total_mismatch", "reserved0", "paired_trajectory_sha256"]},
+    "block": {"bytes": 96, "count": 41600, "python_struct": "<IBBBB6i8I8I",
+      "fields": ["block", "n1_ok", "n2_ok", "query_ok", "audit_block", "c_abs_num_over_4096", "c_rec_num_over_4096",
+                 "d_half_num_over_2048", "d_zero_num_over_2048", "p_abs_num_over_131072", "p_rec_num_over_131072",
+                 "late_m_sum[8]", "late_mismatch_sum[8]"]},
+    "audit_row": {"bytes": 72, "count": 16777216, "python_struct": "<IHBBBBBBIIIBBBBQBBBBQQQII",
+      "fields": ["block", "update", "cell", "candidate", "family", "parent", "parent_label_pre", "parent_cache_valid",
+                 "parent_cache", "genotype", "target", "mismatch", "recurrence_bit", "recurrence_applied",
+                 "probe_source", "weight", "selected_rank", "post_label", "policy_flip", "donor_family", "W", "x", "Z",
+                 "retry", "reserved"]}
+  },
+  "paired_trajectory_sha256": "SHA-256 of ASCII MMEM-PAIRED-TRAJECTORY-V1, block u32, arm u8, law u8 (no cell, no start); then after every completed update: update u16, target u32, recurrence bit u8, recurrence applied u8, total mismatch u16, 32 survivor candidate indices u8 in survivor-slot order, 32 post-update genotypes u32, post-update label mask u32 (bit i = label of slot i, 1 = M) XORed with 0xffffffff for an ALL_M start. Audit evidence only; SHAM path records 4/5 and 6/7 must be equal.",
+  "not_applicable_u8": 255,
+  "total_record_bytes": 3299274752
+}

@@ -1,0 +1,29 @@
+{
+  "record": "PHASE2-MUTABLE-MEMORY-001-PUBLICATION-METADATA-PATCH",
+  "status": "PASS",
+  "applied_at_utc": "2026-10-01T15:02:16.026205+00:00",
+  "scope": "Administrative public-availability closure after repository reservation; no scientific value, claim, estimate, interval, decision or figure changed.",
+  "repository": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use",
+  "files": [
+    {
+      "path": "README.md",
+      "source_sha256": "9b085623e3f5a0df15cb44790f181e13275c1232b4155da1683766ea8c56f731",
+      "public_sha256": "59f1a75ffd8255a10b46e921bde303d0f89dcff5ed8fb2f3f1b6e1f827df907d"
+    },
+    {
+      "path": "docs/DATA_AVAILABILITY.md",
+      "source_sha256": "963ddb27ffa89a099e1403b4b736b25d2bc75df1ac2c4eb7710aebbf7a5a6676",
+      "public_sha256": "6c4499b8506b2c2b7c98c37d840486d176a044759204552272d140e767402051"
+    },
+    {
+      "path": "paper/MANUSCRIPT.md",
+      "source_sha256": "3078bfcde14d4fd96d648fa5aa7ef8c1d1590d587f22ff381c7734b471f3407d",
+      "public_sha256": "470b54362222f109b7d688c47fcb35e114e4b92c55c3c8e7fb58d2908135bf22"
+    },
+    {
+      "path": "provenance/SOURCE_PLAN.json",
+      "source_sha256": "fb9fa6a3d20ad514a4dc566884b46f66b7c1500cbce1796869e8743b514a2f2b",
+      "public_sha256": "6f2be2bd3d4d97ed4d0d945be5a5427d1c8e4fae522d605d93a6fb4d4db1ac09"
+    }
+  ]
+}

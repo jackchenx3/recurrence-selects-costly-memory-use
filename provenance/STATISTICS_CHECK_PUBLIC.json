@@ -1,0 +1,20 @@
+{
+  "checks_passed": 870,
+  "document_sha256": {
+    "manuscript": "470b54362222f109b7d688c47fcb35e114e4b92c55c3c8e7fb58d2908135bf22",
+    "registry": "fa3c92c93c80004bc44d59a7a66a633293ab17a4e2bac367cf42bc8c3c489ffc",
+    "supplement": "44f6a63cc46bc41437881f18fb70ba516f872225e01e731a3d8424318a645850"
+  },
+  "failures": [],
+  "input_sha256": {
+    "accepted": "2eb3aaf5d754f4570a75522aa9e1f38358715c06c674d5a267732a1357926e6f",
+    "decision": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0",
+    "diagnostics": "51554620a5e302416edf8de8a073c6962abbc2c8967da80b91b83e4c3d5b685c",
+    "estimates": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0",
+    "records_receipt": "afd96dc0a5b190401c035fc66c8af8fd4d4603e7185d05bff73fb05e698cff5a",
+    "replay_receipt": "9b40322d0d09b90f0a6862533c1efdc7aff21bd699a882b9b9555c5f7c4b4857"
+  },
+  "registered_entries": 163,
+  "sha_check_enforced": true,
+  "status": "PASS"
+}

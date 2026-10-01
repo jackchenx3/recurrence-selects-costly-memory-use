@@ -1,0 +1,9 @@
+This repository uses separate licenses for code and research content.
+
+Original source code under code/ and scripts/: MIT License; see LICENSE-CODE.
+
+Manuscript, supporting text, original figures and original numerical data:
+Creative Commons Attribution 4.0 International; see LICENSE-CONTENT.md.
+
+Copyright (c) 2026 Jack Chen. Third-party dependencies and cited works retain
+their respective licenses. No third-party paper PDFs are redistributed here.

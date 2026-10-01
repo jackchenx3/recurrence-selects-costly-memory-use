@@ -1,0 +1,796 @@
+{
+  "hitCount": 20,
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 100,
+    "queryString": "\"memory use\" digital organisms evolution",
+    "resultType": "lite",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "authorString": "Eppley MG, Dellinger RJ, Curtis L, Estien CO, Forg L, Jones AJ, Swank A, Lee A.",
+        "citedByCount": 1,
+        "doi": "10.1002/ece3.73063",
+        "firstIndexDate": "2026-04-23",
+        "firstPublicationDate": "2026-03-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13093552"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42016973",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "2045-7758",
+        "journalTitle": "Ecol Evol",
+        "journalVolume": "16",
+        "pageInfo": "e73063",
+        "pmcid": "PMC13093552",
+        "pmid": "42016973",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Where We Go From Here: Harnessing Queer Perspectives to Advance Practice in Ecology and Evolutionary Biology.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Sharma HD, Budaraju RR, Kumar N, Kumar V, Rathore NC, Babu GR, Dhaka A.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-025-22894-3",
+        "firstIndexDate": "2025-11-07",
+        "firstPublicationDate": "2025-11-06",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12592332"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41198872",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "15",
+        "pageInfo": "38923",
+        "pmcid": "PMC12592332",
+        "pmid": "41198872",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Sentiment classification via improved feature selection using Boolean operator-based particle swarm optimization.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Xu C, Jin Z, Xie S, Wang H, Lin X, Ma D, Zhang Y, Liu B.",
+        "citedByCount": 6,
+        "doi": "10.1186/s12915-025-02426-1",
+        "firstIndexDate": "2025-10-26",
+        "firstPublicationDate": "2025-10-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12553268"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41137113",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "1741-7007",
+        "journalTitle": "BMC Biol",
+        "journalVolume": "23",
+        "pageInfo": "322",
+        "pmcid": "PMC12553268",
+        "pmid": "41137113",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Ortho2Web: a workflow for disentangling the roles of hybridization and allopolyploidization in reticulation within Campanulaceae.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "bioproject",
+            "gca",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Elbehiry A, Marzouk E, Edrees HM, Abdelsalam MH, Aljizani F, Alqarni S, Khateeb E, Alzaben F, Ibrahem M, Mousa AM, Huraysh N, Abu-Okail A.",
+        "citedByCount": 5,
+        "doi": "10.3390/diagnostics15232944",
+        "firstIndexDate": "2025-12-11",
+        "firstPublicationDate": "2025-11-21",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12691374"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41374325",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "23",
+        "journalIssn": "2075-4418",
+        "journalTitle": "Diagnostics (Basel)",
+        "journalVolume": "15",
+        "pageInfo": "2944",
+        "pmcid": "PMC12691374",
+        "pmid": "41374325",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Next-Generation Sequencing for Bloodstream Infections: Shaping the Future of Rapid Diagnostics and Precision Medicine.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Baruri S, Batra L, Adhikari S, El-Baz A.",
+        "citedByCount": 0,
+        "doi": "10.3390/epigenomes10030053",
+        "firstIndexDate": "2026-08-27",
+        "firstPublicationDate": "2026-08-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13510679"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42647202",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "2075-4655",
+        "journalTitle": "Epigenomes",
+        "journalVolume": "10",
+        "pageInfo": "53",
+        "pmcid": "PMC13510679",
+        "pmid": "42647202",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Integrative Epigenomics: Bioinformatics Strategies for Multi-Omics Data Analysis in Health and Disease.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Ntiniakou T, Osborne J, Zhao J, Dichamp J, Cogno N, Heiland R, Amponsah K, Pesek J, Duswald T, Hayoun-Mya O, Jennings J, Pedrazzi M, Bournes R, Ruscone M, Cooper F, No\u00ebl V, Leach MI, Madrid-Valiente A, Estragu\u00e9s-Mu\u00f1oz J, Smelko A, Aliyev T, Manca M, Pitt-Francis J, Mirams G, Macklin P, Fletcher AG, Vavourakis V, Hoehme S, Carbonell-Caballero J, Bauer R, Paul Liedekerke V, Drasdo D, Valencia A, Montagud A.",
+        "bookOrReportDetails": {
+          "publisher": "bioRxiv",
+          "yearOfPublication": 2025
+        },
+        "citedByCount": 0,
+        "doi": "10.1101/2025.07.16.664358",
+        "firstIndexDate": "2025-07-22",
+        "firstPublicationDate": "2025-07-18",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PPR1052200"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "PPR1052200",
+        "inEPMC": "Y",
+        "inPMC": "N",
+        "isOpenAccess": "Y",
+        "pubType": "preprint",
+        "pubYear": "2025",
+        "source": "PPR",
+        "title": "Open Benchmarking for Cell-Based Multiscale Models: Lessons from a Community Initiative",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Krishnasamy S, Alotaibi MB, Alehaideb LI, Abbas Q.",
+        "citedByCount": 0,
+        "doi": "10.3390/s23229294",
+        "firstIndexDate": "2023-11-26",
+        "firstPublicationDate": "2023-11-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10675451"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "38005679",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "22",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "23",
+        "pageInfo": "9294",
+        "pmcid": "PMC10675451",
+        "pmid": "38005679",
+        "pubType": "research-article; journal article",
+        "pubYear": "2023",
+        "source": "MED",
+        "title": "Development and Validation of a Cyber-Physical System Leveraging EFDPN for Enhanced WSN-IoT Network Security.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Breitmeyer SE, Williams AM, Conlon MD, Wertz TA, Heflin BC, Shull DR, Duris JW.",
+        "citedByCount": 2,
+        "doi": "10.3390/toxics12120921",
+        "firstIndexDate": "2025-01-15",
+        "firstPublicationDate": "2024-12-19",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11728657"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "39771136",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "12",
+        "journalIssn": "2305-6304",
+        "journalTitle": "Toxics",
+        "journalVolume": "12",
+        "pageInfo": "921",
+        "pmcid": "PMC11728657",
+        "pmid": "39771136",
+        "pubType": "research-article; journal article",
+        "pubYear": "2024",
+        "source": "MED",
+        "title": "Predicted Potential for Aquatic Exposure Effects of Per- and Polyfluorinated Alkyl Substances (PFAS) in Pennsylvania's Statewide Network of Streams.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Pita-Galeana MA, Ruhle M, L\u00f3pez-V\u00e1zquez L, de Anda-J\u00e1uregui G, Hern\u00e1ndez-Lemus E.",
+        "citedByCount": 14,
+        "doi": "10.3390/ijms26189206",
+        "firstIndexDate": "2025-09-28",
+        "firstPublicationDate": "2025-09-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12470432"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41009770",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "18",
+        "journalIssn": "1422-0067",
+        "journalTitle": "Int J Mol Sci",
+        "journalVolume": "26",
+        "pageInfo": "9206",
+        "pmcid": "PMC12470432",
+        "pmid": "41009770",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Computational Metagenomics: State of the Art.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Puranen S, Pesonen M, Pensar J, Xu YY, Lees JA, Bentley SD, Croucher NJ, Corander J.",
+        "citedByCount": 17,
+        "doi": "10.1099/mgen.0.000184",
+        "firstIndexDate": "2018-05-31",
+        "firstPublicationDate": "2018-05-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6096938"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "29813016",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "6",
+        "journalIssn": "2057-5858",
+        "journalTitle": "Microb Genom",
+        "journalVolume": "4",
+        "pmcid": "PMC6096938",
+        "pmid": "29813016",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2018",
+        "source": "MED",
+        "title": "SuperDCA for genome-wide epistasis analysis.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "bioproject",
+            "gen",
+            "doi",
+            "pdb"
+          ]
+        }
+      },
+      {
+        "authorString": "Grabowski LM, Bryson DM, Dyer FC, Pennock RT, Ofria C.",
+        "citedByCount": 3,
+        "doi": "10.1371/journal.pone.0060466",
+        "firstIndexDate": "2013-04-12",
+        "firstPublicationDate": "2013-04-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC3620120"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "23577113",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "1932-6203",
+        "journalTitle": "PLoS One",
+        "journalVolume": "8",
+        "pageInfo": "e60466",
+        "pmcid": "PMC3620120",
+        "pmid": "23577113",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2013",
+        "source": "MED",
+        "title": "A case study of the de novo evolution of a complex odometric behavior in digital organisms."
+      },
+      {
+        "authorString": "Abdelaal MA, Moustafa AI, Kasban H, Saleh H, Abdallah HA, Afifi MYI.",
+        "citedByCount": 3,
+        "doi": "10.3390/s25072322",
+        "firstIndexDate": "2025-04-13",
+        "firstPublicationDate": "2025-04-06",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11990954"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40218834",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "7",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "25",
+        "pageInfo": "2322",
+        "pmcid": "PMC11990954",
+        "pmid": "40218834",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "DNA-Inspired Lightweight Cryptographic Algorithm for Secure and Efficient Image Encryption."
+      },
+      {
+        "authorString": "Lui LM, Nielsen TN, Arkin AP.",
+        "citedByCount": 37,
+        "doi": "10.1371/journal.pcbi.1008972",
+        "firstIndexDate": "2021-05-08",
+        "firstPublicationDate": "2021-05-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8172020"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "33961626",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "1553-734x; 1553-7358; ",
+        "journalTitle": "PLoS Comput Biol",
+        "journalVolume": "17",
+        "pageInfo": "e1008972",
+        "pmcid": "PMC8172020",
+        "pmid": "33961626",
+        "pubType": "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article",
+        "pubYear": "2021",
+        "source": "MED",
+        "title": "A method for achieving complete microbial genomes and improving bins from metagenomics data.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen",
+            "rfam"
+          ]
+        }
+      },
+      {
+        "authorString": "Wang X, Wang X, Lv T, Jin L, He M.",
+        "citedByCount": 2,
+        "doi": "10.3390/s21206927",
+        "firstIndexDate": "2021-11-25",
+        "firstPublicationDate": "2021-10-19",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC8540708"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "34696140",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "20",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "21",
+        "pageInfo": "6927",
+        "pmcid": "PMC8540708",
+        "pmid": "34696140",
+        "pubType": "research-article; journal article",
+        "pubYear": "2021",
+        "source": "MED",
+        "title": "HARNAS: Human Activity Recognition Based on Automatic Neural Architecture Search Using Evolutionary Algorithms."
+      },
+      {
+        "authorString": "Duan SF, Han PJ, Wang QM, Liu WQ, Shi JY, Li K, Zhang XL, Bai FY.",
+        "citedByCount": 198,
+        "dbCrossReferenceList": {
+          "dbName": [
+            "EMBL"
+          ]
+        },
+        "doi": "10.1038/s41467-018-05106-7",
+        "firstIndexDate": "2018-07-14",
+        "firstPublicationDate": "2018-07-12",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6043522"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "Y",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "30002370",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2041-1723",
+        "journalTitle": "Nat Commun",
+        "journalVolume": "9",
+        "pageInfo": "2690",
+        "pmcid": "PMC6043522",
+        "pmid": "30002370",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2018",
+        "source": "MED",
+        "title": "The origin and adaptive evolution of domesticated populations of yeast from Far East Asia.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "bioproject",
+            "biosample"
+          ]
+        }
+      },
+      {
+        "authorString": "Pravosudov VV, Roth TC, Forister ML, Ladage LD, Kramer R, Schilkey F, van der Linden AM.",
+        "citedByCount": 19,
+        "doi": "10.1111/mec.12146",
+        "firstIndexDate": "2012-12-05",
+        "firstPublicationDate": "2012-12-03",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4120876"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "23205699",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "2",
+        "journalIssn": "0962-1083; 1365-294x; ",
+        "journalTitle": "Mol Ecol",
+        "journalVolume": "22",
+        "pageInfo": "397-408",
+        "pmcid": "PMC4120876",
+        "pmid": "23205699",
+        "pubType": "research support, non-u.s. gov't; research-article; research support, u.s. gov't, non-p.h.s.; journal article; research support, n.i.h., extramural",
+        "pubYear": "2013",
+        "source": "MED",
+        "title": "Differential hippocampal gene expression is associated with climate-related natural variation in memory and the hippocampus in food-caching chickadees.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Hinchliff CE, Smith SA, Allman JF, Burleigh JG, Chaudhary R, Coghill LM, Crandall KA, Deng J, Drew BT, Gazis R, Gude K, Hibbett DS, Katz LA, Laughinghouse HD, McTavish EJ, Midford PE, Owen CL, Ree RH, Rees JA, Soltis DE, Williams T, Cranston KA.",
+        "citedByCount": 457,
+        "doi": "10.1073/pnas.1423041112",
+        "firstIndexDate": "2015-09-20",
+        "firstPublicationDate": "2015-09-18",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4611642"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "26385966",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "41",
+        "journalIssn": "0027-8424; 1091-6490; ",
+        "journalTitle": "Proc Natl Acad Sci U S A",
+        "journalVolume": "112",
+        "pageInfo": "12764-12769",
+        "pmcid": "PMC4611642",
+        "pmid": "26385966",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2015",
+        "source": "MED",
+        "title": "Synthesis of phylogeny and taxonomy into a comprehensive tree of life.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Kanitz A, Gypas F, Gruber AJ, Gruber AR, Martin G, Zavolan M.",
+        "citedByCount": 114,
+        "doi": "10.1186/s13059-015-0702-5",
+        "firstIndexDate": "2015-07-24",
+        "firstPublicationDate": "2015-07-23",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4511015"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "26201343",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1474-7596; 1474-760x; 1465-6906; ",
+        "journalTitle": "Genome Biol",
+        "journalVolume": "16",
+        "pageInfo": "150",
+        "pmcid": "PMC4511015",
+        "pmid": "26201343",
+        "pubType": "comparative study; research support, non-u.s. gov't; research-article; evaluation study; journal article",
+        "pubYear": "2015",
+        "source": "MED",
+        "title": "Comparative assessment of methods for the computational inference of transcript isoform abundance from RNA-seq data.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen",
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "O'Neill MA, Hilgetag CC.",
+        "citedByCount": 2,
+        "doi": "10.1098/rstb.2001.0912",
+        "firstIndexDate": "2008-12-24",
+        "firstPublicationDate": "2001-08-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC1088514"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "11545702",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "1412",
+        "journalIssn": "0962-8436; 1471-2970; ",
+        "journalTitle": "Philos Trans R Soc Lond B Biol Sci",
+        "journalVolume": "356",
+        "pageInfo": "1259-1276",
+        "pmcid": "PMC1088514",
+        "pmid": "11545702",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "pubYear": "2001",
+        "source": "MED",
+        "title": "The portable UNIX programming system (PUPS) and CANTOR: a computational environment for dynamical representation and analysis of complex neurobiological data."
+      },
+      {
+        "citedByCount": 0,
+        "firstIndexDate": "2019-11-27",
+        "firstPublicationDate": "2010-12-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC6863360"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "PMC6863360",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "suppl 1",
+        "journalIssn": "0893-133x; 1740-634x; ",
+        "journalTitle": "Neuropsychopharmacology",
+        "journalVolume": "35",
+        "pageInfo": "S78-S187",
+        "pmcid": "PMC6863360",
+        "pubType": "meeting-report; meeting report",
+        "pubYear": "2010",
+        "source": "PMC",
+        "title": "Poster Session I"
+      }
+    ]
+  },
+  "version": "6.9"
+}

@@ -1,0 +1,18 @@
+{
+  "record": "PHASE2-MUTABLE-MEMORY-001-MANUSCRIPT-V2-VISUAL-QA",
+  "status": "PASS",
+  "inspected_at_utc": "2026-10-01T14:45:08.025861+00:00",
+  "build_receipt_sha256": "454145a674da107ac5f063fa7b3f7fa02c5ca15308299729a2f0485f13d9bb56",
+  "manuscript_pdf_sha256": "14bb960b4ad38688ce01b40fe825369182668e6cba7f43d7f68adcaa589c3f1e",
+  "manuscript_pages_inspected": 14,
+  "supplement_pdf_sha256": "7cc3b6f6c8c0d9a6be265ccff1b19f8666c0c1dc91592816e9f5e226e2ed5aad",
+  "supplement_pages_inspected": 10,
+  "rendering": "Poppler pdftoppm at 120 dpi; all 24 individual page renderings inspected in seven 2x2 contact sheets; Figure 2 additionally inspected at original PNG resolution.",
+  "figures": {
+    "figure1_design": "PASS; no overlap or clipping; labels and caption legible in the manuscript page rendering.",
+    "figure2_allele": "PASS; all cell-mean labels are separated after the bounded label-offset patch; axes, intervals and thresholds are legible.",
+    "figure3_accuracy": "PASS; axis label is fully visible; means, intervals and thresholds are legible."
+  },
+  "pages": "PASS; no clipped body text, tables, references, broken glyphs, black artifacts or unintended blank pages; headers, footers and page numbers are consistent.",
+  "remaining_material_visual_defects": []
+}

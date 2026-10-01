@@ -1,0 +1,3817 @@
+{
+  "hitCount": 2006,
+  "nextCursorMark": "AoIIQGyjzyg1NjMwMDczNg==",
+  "nextPageUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=adaptation+cost+memory+fluctuating+environments&cursorMark=AoIIQGyjzyg1NjMwMDczNg%3D%3D&resultType=lite&pageSize=100&format=json",
+  "request": {
+    "cursorMark": "*",
+    "pageSize": 100,
+    "queryString": "adaptation cost memory fluctuating environments",
+    "resultType": "lite",
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "authorString": "Sanchez-Lucas R.",
+        "citedByCount": 1,
+        "doi": "10.1042/ebc20250050",
+        "firstIndexDate": "2026-07-22",
+        "firstPublicationDate": "2026-07-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13424981"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42483965",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "0071-1365; 1744-1358; ",
+        "journalTitle": "Essays Biochem",
+        "journalVolume": "70",
+        "pageInfo": "5-14",
+        "pmcid": "PMC13424981",
+        "pmid": "42483965",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Plant defence priming and memory mechanisms under climate change.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Alves \u00c2, Pombinho R, Cabanes D.",
+        "citedByCount": 0,
+        "doi": "10.3389/fmicb.2026.1832970",
+        "firstIndexDate": "2026-07-02",
+        "firstPublicationDate": "2026-06-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13314625"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42382352",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-302x",
+        "journalTitle": "Front Microbiol",
+        "journalVolume": "17",
+        "pageInfo": "1832970",
+        "pmcid": "PMC13314625",
+        "pmid": "42382352",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Decoding the spatiotemporal heterogeneity of bacterial virulence gene expression using single-cell approaches."
+      },
+      {
+        "authorString": "Khan MHU, Muhammad A, Li L, Zhang D, Zhou M, Zhang B, Zhang Z, Liu Q.",
+        "citedByCount": 0,
+        "doi": "10.1111/jpi.70158",
+        "firstIndexDate": "2026-08-07",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13444212"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42557933",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "5",
+        "journalIssn": "0742-3098; 1600-079x; ",
+        "journalTitle": "J Pineal Res",
+        "journalVolume": "78",
+        "pageInfo": "e70158",
+        "pmcid": "PMC13444212",
+        "pmid": "42557933",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Promoter-Level Regulation of Melatonin Biosynthesis in Plant Stress Responses: A Framework for Climate-Resilient Crop Improvement.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Yu H, Zhang F, Luo X, Geng H, Chen J, Yu S, Pan T, Feng Z, Cao J, Yan M.",
+        "citedByCount": 0,
+        "doi": "10.3390/plants15182881",
+        "firstIndexDate": "2026-09-28",
+        "firstPublicationDate": "2026-09-21",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13611536"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42796912",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "18",
+        "journalIssn": "2223-7747",
+        "journalTitle": "Plants (Basel)",
+        "journalVolume": "15",
+        "pageInfo": "2881",
+        "pmcid": "PMC13611536",
+        "pmid": "42796912",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Cotton Seed Germination Under the Main Abiotic Stress: Physiological Mechanisms, Molecular Responses, and Agronomic Strategies."
+      },
+      {
+        "authorString": "Abu-Ein AA, Al-Hazaimeh OM, Tawfik M, Tawfik M, Fathi IS.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-41740-8",
+        "firstIndexDate": "2026-03-11",
+        "firstPublicationDate": "2026-03-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13057183"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41807532",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "11624",
+        "pmcid": "PMC13057183",
+        "pmid": "41807532",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Dynamic fog node placement optimization using adaptive dynamic pufferfish optimization for real-time IoT networks.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Jain P, Jolly MK, George JT.",
+        "bookOrReportDetails": {
+          "publisher": "bioRxiv",
+          "yearOfPublication": 2025
+        },
+        "citedByCount": 0,
+        "doi": "10.1101/2025.05.24.655868",
+        "firstIndexDate": "2025-05-30",
+        "firstPublicationDate": "2025-05-28",
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "N",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PPR1027451",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "isOpenAccess": "N",
+        "pubType": "preprint",
+        "pubYear": "2025",
+        "source": "PPR",
+        "title": "Effects of Cellular Memory and Adaptation Cost on Optimal Survival in Fluctuating Environments"
+      },
+      {
+        "authorString": "Mageroy M, Luna E, Puentes A.",
+        "citedByCount": 1,
+        "doi": "10.1042/ebc20250063",
+        "firstIndexDate": "2026-06-03",
+        "firstPublicationDate": "2026-07-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13424990"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42233287",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "0071-1365; 1744-1358; ",
+        "journalTitle": "Essays Biochem",
+        "journalVolume": "70",
+        "pageInfo": "15-24",
+        "pmcid": "PMC13424990",
+        "pmid": "42233287",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "From early defence priming to lasting memory: developmental and seasonal dynamics in trees."
+      },
+      {
+        "authorString": "Lai YH, Lu T.",
+        "citedByCount": 0,
+        "doi": "10.1016/j.tim.2026.07.011",
+        "firstIndexDate": "2026-08-22",
+        "firstPublicationDate": "2026-08-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13555788"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42624720",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "journalIssn": "0966-842x; 1878-4380; ",
+        "journalTitle": "Trends Microbiol",
+        "pageInfo": "S0966-842X(26)00210-6",
+        "pmcid": "PMC13555788",
+        "pmid": "42624720",
+        "pubType": "research-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Coarse-grained resource allocation modeling for decoding and rewiring microbial metabolism.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Ahmad U.",
+        "citedByCount": 0,
+        "doi": "10.3389/fbioe.2026.1887696",
+        "firstIndexDate": "2026-09-11",
+        "firstPublicationDate": "2026-08-26",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13555213"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42719520",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2296-4185",
+        "journalTitle": "Front Bioeng Biotechnol",
+        "journalVolume": "14",
+        "pageInfo": "1887696",
+        "pmcid": "PMC13555213",
+        "pmid": "42719520",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Exploring the role of CRISPR in advancing space biotechnology: challenges and solutions for human survival beyond earth.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Wu D, Zhao L, Kim B, Yin J, Xue J.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-53462-y",
+        "firstIndexDate": "2026-06-03",
+        "firstPublicationDate": "2026-06-02",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13503932"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42230690",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "26598",
+        "pmcid": "PMC13503932",
+        "pmid": "42230690",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Dynamic energy-aware fixed-point linear mapping multiplier for internet of things edge devices."
+      },
+      {
+        "authorString": "Park J, Yoon I, Noh DK.",
+        "citedByCount": 0,
+        "doi": "10.3390/s26113325",
+        "firstIndexDate": "2026-06-13",
+        "firstPublicationDate": "2026-05-23",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13258997"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42280846",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "11",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "3325",
+        "pmcid": "PMC13258997",
+        "pmid": "42280846",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Stability-Controlled Continual Federated Learning for Energy-Harvesting AIoT Systems."
+      },
+      {
+        "authorString": "Zhang J, Song M, Zhang L, Tian W, Guo B, Zhou S, Ma C.",
+        "citedByCount": 2,
+        "doi": "10.3390/plants15040534",
+        "firstIndexDate": "2026-02-27",
+        "firstPublicationDate": "2026-02-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12944131"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "41754241",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "2223-7747",
+        "journalTitle": "Plants (Basel)",
+        "journalVolume": "15",
+        "pageInfo": "534",
+        "pmcid": "PMC12944131",
+        "pmid": "41754241",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Ecological Memory in Plants: Epigenetic Integration of Abiotic Stress and Climate Change."
+      },
+      {
+        "authorString": "Batool R, Sonil NI, Nazar MF, Ullah Z.",
+        "citedByCount": 0,
+        "doi": "10.1039/d6ra05215k",
+        "firstIndexDate": "2026-07-30",
+        "firstPublicationDate": "2026-07-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13411329"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42524527",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "37",
+        "journalIssn": "2046-2069",
+        "journalTitle": "RSC Adv",
+        "journalVolume": "16",
+        "pageInfo": "39270-39295",
+        "pmcid": "PMC13411329",
+        "pmid": "42524527",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Intelligent chemical sensors: learning-enabled platforms for adaptive chemical detection.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Xiong W, Xia J, Yu Y, Xiong S, Hu H, Wan P, Li D.",
+        "citedByCount": 0,
+        "doi": "10.1371/journal.pone.0350026",
+        "firstIndexDate": "2026-05-31",
+        "firstPublicationDate": "2026-05-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13221050"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42213739",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "1932-6203",
+        "journalTitle": "PLoS One",
+        "journalVolume": "21",
+        "pageInfo": "e0350026",
+        "pmcid": "PMC13221050",
+        "pmid": "42213739",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "TransGrid-CostOpt: A hybrid transformer framework for cost prediction and optimization of distribution network assets.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Nasir K, Badri SK, Khattak A, Alghazzawi DM, Alghamdi MY, Alkhozae M, Almakky A, Alhazmi RM, Asghar MZ.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-61336-6",
+        "firstIndexDate": "2026-09-16",
+        "firstPublicationDate": "2026-09-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13578756"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42744836",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "28717",
+        "pmcid": "PMC13578756",
+        "pmid": "42744836",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "HED-ID: a federated expert system for interpretable and resource-adaptive intrusion detection on edge devices."
+      },
+      {
+        "authorString": "Jumah JAB, Mirghani HO, Alateeq S, Algahtani MA, Althubyani BY, Alsaadi N, Abdallah A, Alazzam MB.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-68894-9",
+        "firstIndexDate": "2026-09-05",
+        "firstPublicationDate": "2026-09-03",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13545245"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42697903",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "27800",
+        "pmcid": "PMC13545245",
+        "pmid": "42697903",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Clinical risk-aware reinforcement learning for latency-constrained healthcare IoT scheduling."
+      },
+      {
+        "authorString": "Kang X, Hua C.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-45004-3",
+        "firstIndexDate": "2026-03-27",
+        "firstPublicationDate": "2026-03-26",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13172484"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41888546",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "15158",
+        "pmcid": "PMC13172484",
+        "pmid": "41888546",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Negotiation-augmented federated reinforcement learning for conflict-free edge-cloud stream scheduling.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Beg R, Nigam N, Sharma YK, Patel A, Solanki S, Sharma S, Kumar L.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-43745-9",
+        "firstIndexDate": "2026-04-30",
+        "firstPublicationDate": "2026-04-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13338176"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42049924",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "20974",
+        "pmcid": "PMC13338176",
+        "pmid": "42049924",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Design of an integrated evidence-driven few-shot meta-learning for zero-day malware detection and forensic attributions."
+      },
+      {
+        "authorString": "Padmavathi V, Kanimozhi R.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-025-27569-7",
+        "firstIndexDate": "2025-12-10",
+        "firstPublicationDate": "2025-12-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12689678"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41365933",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "15",
+        "pageInfo": "43374",
+        "pmcid": "PMC12689678",
+        "pmid": "41365933",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Adaptive contextual memory network for enhanced communication and efficiency in the internet of underwater things."
+      },
+      {
+        "authorString": "Duan C, Wang Y, Zhang P, Li S, Luo S.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-49980-4",
+        "firstIndexDate": "2026-04-23",
+        "firstPublicationDate": "2026-04-22",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13272966"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42020517",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "18793",
+        "pmcid": "PMC13272966",
+        "pmid": "42020517",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Uncertainty-resilient control of large-scale industrial IoT networks via learning-guided fuzzy intelligence."
+      },
+      {
+        "authorString": "Alyanbaawi A, Hassan A, Khashaba MM, Elkomy O, Rushdy E, El-Sayed A.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-62233-8",
+        "firstIndexDate": "2026-08-05",
+        "firstPublicationDate": "2026-08-04",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13438613"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42552332",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "24005",
+        "pmcid": "PMC13438613",
+        "pmid": "42552332",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "APATCP: programmable multi-controller framework for real-time detection and mitigation of complex TCP flooding attacks in SD-IoT networks.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Junar N, Arockiasamy K.",
+        "citedByCount": 0,
+        "doi": "10.3389/frai.2026.1865639",
+        "firstIndexDate": "2026-09-09",
+        "firstPublicationDate": "2026-08-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13547271"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42707143",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2624-8212",
+        "journalTitle": "Front Artif Intell",
+        "journalVolume": "9",
+        "pageInfo": "1865639",
+        "pmcid": "PMC13547271",
+        "pmid": "42707143",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Adaptive continual botnet detection with self-supervised prototypical networks and few-shot learning for evolving botnet detection.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Lu D, Zhang M, Guo Y, Li H, Liu N.",
+        "citedByCount": 0,
+        "doi": "10.3390/s26113311",
+        "firstIndexDate": "2026-06-13",
+        "firstPublicationDate": "2026-05-23",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13258927"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42280832",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "11",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "3311",
+        "pmcid": "PMC13258927",
+        "pmid": "42280832",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "An Autonomous SAR Image Interpretation Algorithm Based on Multi-Agent Collaborative Scheduling."
+      },
+      {
+        "authorString": "Patel P, Gopal KM, Patel NC, Sahu BK, Tripathy SP, Altayeb M, Panchyk M, Touti E.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-51611-x",
+        "firstIndexDate": "2026-05-13",
+        "firstPublicationDate": "2026-05-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13443084"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42098457",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "24177",
+        "pmcid": "PMC13443084",
+        "pmid": "42098457",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Fuzzy adaptive human memory optimization based optimal task scheduling in cloud computing.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Torok M, Chan MCM, Sui D, Deghat M.",
+        "citedByCount": 0,
+        "doi": "10.3390/s26165250",
+        "firstIndexDate": "2026-08-30",
+        "firstPublicationDate": "2026-08-19",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13517523"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42655560",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "16",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "5250",
+        "pmcid": "PMC13517523",
+        "pmid": "42655560",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Online Wind Mapping for Coupled Path Planning and Contouring Control of Quadrotors.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Sadder MT, Alsadon AA, Alkharabsheh BS, Musallam A, Alnajjar AM, Al-Qadumii LW.",
+        "citedByCount": 0,
+        "doi": "10.3390/ijms27146187",
+        "firstIndexDate": "2026-07-30",
+        "firstPublicationDate": "2026-07-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13410683"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42511531",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "14",
+        "journalIssn": "1422-0067",
+        "journalTitle": "Int J Mol Sci",
+        "journalVolume": "27",
+        "pageInfo": "6187",
+        "pmcid": "PMC13410683",
+        "pmid": "42511531",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Dehydration Stress Memory Genes in Tomato (&lt;i&gt;Solanum lycopersicum&lt;/i&gt; L.).",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Liu Q, Lyu LD.",
+        "citedByCount": 2,
+        "doi": "10.1016/j.tig.2026.03.008",
+        "firstIndexDate": "2026-04-20",
+        "firstPublicationDate": "2026-04-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13094712"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42000255",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "7",
+        "journalIssn": "0168-9525",
+        "journalTitle": "Trends Genet",
+        "journalVolume": "42",
+        "pageInfo": "656-669",
+        "pmcid": "PMC13094712",
+        "pmid": "42000255",
+        "pubType": "research support, non-u.s. gov't; research-article; review; journal article; research support, n.i.h., extramural",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Heterogeneity in microbial antibiotic responses: genetic basis and within-host evolution.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Yao R.",
+        "citedByCount": 0,
+        "doi": "10.21147/j.issn.1000-9604.2026.04.05",
+        "firstIndexDate": "2026-09-10",
+        "firstPublicationDate": "2026-08-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13551100"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42712812",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "4",
+        "journalIssn": "1000-9604; 1993-0631; ",
+        "journalTitle": "Chin J Cancer Res",
+        "journalVolume": "38",
+        "pageInfo": "431-443",
+        "pmcid": "PMC13551100",
+        "pmid": "42712812",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "AI agents in cancer imaging: Concepts, advances, and clinical perspectives.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Ma R, Ruan X, Niu X, Li Q, Wen J, Pan Y, Shang C.",
+        "citedByCount": 1,
+        "doi": "10.3389/fpls.2026.1869320",
+        "firstIndexDate": "2026-07-02",
+        "firstPublicationDate": "2026-06-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13318754"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42389139",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-462x",
+        "journalTitle": "Front Plant Sci",
+        "journalVolume": "17",
+        "pageInfo": "1869320",
+        "pmcid": "PMC13318754",
+        "pmid": "42389139",
+        "pubType": "systematic review; systematic-review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Acetylation as a dynamic regulatory interface between plant stress memory, cross-tolerance, and crop resilience design.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Jiang C, Hou M, Wang H.",
+        "citedByCount": 0,
+        "doi": "10.3390/s26020383",
+        "firstIndexDate": "2026-01-28",
+        "firstPublicationDate": "2026-01-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12845919"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41600178",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "2",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "383",
+        "pmcid": "PMC12845919",
+        "pmid": "41600178",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "An Adaptive Compression Method for Lightweight AI Models of Edge Nodes in Customized Production.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Calderone A, Baricich A, Pournajaf S, Sottile F, Maggio MG, Bonanno M, De Luca R, Ligato F, Quartarone A, Calabr\u00f2 RS.",
+        "citedByCount": 0,
+        "doi": "10.3389/fpsyg.2026.1845070",
+        "firstIndexDate": "2026-07-02",
+        "firstPublicationDate": "2026-06-17",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13319079"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42389111",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-1078",
+        "journalTitle": "Front Psychol",
+        "journalVolume": "17",
+        "pageInfo": "1845070",
+        "pmcid": "PMC13319079",
+        "pmid": "42389111",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Muscle and mind: rewiring cognitive-motor recovery through exercise-responsive neurophysiology in neurological populations.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Kaur H, Malik S, Baggan V, Harnal S, Tyagi N.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-60908-w",
+        "firstIndexDate": "2026-08-09",
+        "firstPublicationDate": "2026-08-07",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13451192"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42567922",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "24520",
+        "pmcid": "PMC13451192",
+        "pmid": "42567922",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Hybrid fuzzy clustering with Golden Eagle Optimization Algorithm for fault tolerant load balancing in fog computing environment.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Chen Q, Xie Y.",
+        "citedByCount": 1,
+        "doi": "10.3390/s26103222",
+        "firstIndexDate": "2026-05-28",
+        "firstPublicationDate": "2026-05-19",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13210817"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42198030",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "10",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "3222",
+        "pmcid": "PMC13210817",
+        "pmid": "42198030",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Noise-Resilient Whitened Domain Adaptation for Intelligent Mechanical Fault Diagnosis Under Non-Stationary Sensor Signals."
+      },
+      {
+        "authorString": "Akkad H, Ciftci F, Ahlatc\u0131o\u011flu \u00d6zerol E, Kizilkurtlu AA.",
+        "citedByCount": 0,
+        "doi": "10.3390/bios16070392",
+        "firstIndexDate": "2026-07-30",
+        "firstPublicationDate": "2026-07-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13406200"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42505468",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "7",
+        "journalIssn": "2079-6374",
+        "journalTitle": "Biosensors (Basel)",
+        "journalVolume": "16",
+        "pageInfo": "392",
+        "pmcid": "PMC13406200",
+        "pmid": "42505468",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "From Static to Dynamic: The Convergence of Nanomaterials and 3D/4D Bioprinting for Adaptive Wearable Sports Biosensors.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Wang P, Li C, Wang D, Wu Q, Zeng Z, Guo H, Cheng H, Chen S, Cao H, Cheng H, Xie J, Que Y.",
+        "citedByCount": 1,
+        "doi": "10.1002/advs.76735",
+        "firstIndexDate": "2026-07-30",
+        "firstPublicationDate": "2026-07-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13403741"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42505031",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "47",
+        "journalIssn": "2198-3844",
+        "journalTitle": "Adv Sci (Weinh)",
+        "journalVolume": "13",
+        "pageInfo": "e76735",
+        "pmcid": "PMC13403741",
+        "pmid": "42505031",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Adaptive Responses of Tropical Crops: A Multi-Scale Omics Integrated Perspective.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Elhawat N, Domokos-Szabolcsy \u00c9, Veres S.",
+        "citedByCount": 0,
+        "doi": "10.3389/fpls.2026.1788373",
+        "firstIndexDate": "2026-03-27",
+        "firstPublicationDate": "2026-03-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13008687"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41884428",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-462x",
+        "journalTitle": "Front Plant Sci",
+        "journalVolume": "17",
+        "pageInfo": "1788373",
+        "pmcid": "PMC13008687",
+        "pmid": "41884428",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Empowering resilience: celebrating and accelerating women's transformative contributions to plant abiotic stress research (2010-2025).",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Jalal A, Farooq U, Rabbi I, Badshah A, Khan A, Alam MM, Su'ud MM.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-025-34308-5",
+        "firstIndexDate": "2026-02-06",
+        "firstPublicationDate": "2026-02-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12864935"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "41622280",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "4355",
+        "pmcid": "PMC12864935",
+        "pmid": "41622280",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Towards intelligent edge computing through reinforcement learning based offloading in public edge as a service."
+      },
+      {
+        "authorString": "Almulifi A, Kurdi H.",
+        "citedByCount": 1,
+        "doi": "10.3390/s26051497",
+        "firstIndexDate": "2026-03-15",
+        "firstPublicationDate": "2026-02-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12986576"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41829461",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "1497",
+        "pmcid": "PMC12986576",
+        "pmid": "41829461",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "LITO: Lemur-Inspired Task Offloading for Edge-Fog-Cloud Continuum Systems.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Ahmed S, Osman Y, Cue L, Almazyad I, Albalawi N, Saeed M, Khokhar A.",
+        "citedByCount": 0,
+        "firstIndexDate": "2026-09-25",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13611755"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "N",
+        "id": "PMC13611755",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "18",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pmcid": "PMC13611755",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "PMC",
+        "title": "OSI Stack Redesign for Quantum Networks: Requirements, Technologies, Challenges, and Future Directions"
+      },
+      {
+        "authorString": "Yu X, Tang L, Mi J, Long L, Qin X, Li X, Mo Q.",
+        "citedByCount": 1,
+        "doi": "10.1038/s41598-025-32235-z",
+        "firstIndexDate": "2025-12-27",
+        "firstPublicationDate": "2025-12-26",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12820232"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41453898",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "2455",
+        "pmcid": "PMC12820232",
+        "pmid": "41453898",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "NF-MORL: a neuro-fuzzy multi-objective reinforcement learning framework for task scheduling in fog computing environments."
+      },
+      {
+        "authorString": "Velmurugan M, Velmurugan T.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-54933-y",
+        "firstIndexDate": "2026-06-06",
+        "firstPublicationDate": "2026-06-04",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13473483"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42243360",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "25474",
+        "pmcid": "PMC13473483",
+        "pmid": "42243360",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Selective entropy-fused proximal policy optimisation with federated reinforcement learning for intelligent multi-UAV trajectory and communication optimisation.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Dong H, Yang H, Miao Y, Zhu J, Cheung K, Hua H, Sun C, Li S, Wang Z, Chung CY.",
+        "citedByCount": 0,
+        "doi": "10.1038/s44172-026-00709-1",
+        "firstIndexDate": "2026-06-24",
+        "firstPublicationDate": "2026-06-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13291239"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42337089",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2731-3395",
+        "journalTitle": "Commun Eng",
+        "journalVolume": "5",
+        "pageInfo": "114",
+        "pmcid": "PMC13291239",
+        "pmid": "42337089",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Operating smart grids by customizing large model agents.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Manavalan T, Gunasekaran P, Elumalai S, Verma LP, Kumar G.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-47949-x",
+        "firstIndexDate": "2026-04-21",
+        "firstPublicationDate": "2026-04-20",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13261137"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42009763",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "18323",
+        "pmcid": "PMC13261137",
+        "pmid": "42009763",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Hybrid Monarch Butterfly Optimization-DenseNet framework for energy-aware task scheduling in cloud environments.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Araja D, Murovska M, Krumina A, Eory A, Berkis U.",
+        "citedByCount": 0,
+        "doi": "10.3390/life16040571",
+        "firstIndexDate": "2026-05-13",
+        "firstPublicationDate": "2026-04-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13117365"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42073381",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "2075-1729",
+        "journalTitle": "Life (Basel)",
+        "journalVolume": "16",
+        "pageInfo": "571",
+        "pmcid": "PMC13117365",
+        "pmid": "42073381",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Digital Approaches for Managing Brain Fog in Myalgic Encephalomyelitis/Chronic Fatigue Syndrome (ME/CFS): Interventions, Monitoring, and Future Directions."
+      },
+      {
+        "authorString": "Touchette D, Baier F, Michoud G, Peter H, Battin T.",
+        "citedByCount": 0,
+        "doi": "10.3389/fmicb.2026.1898462",
+        "firstIndexDate": "2026-08-22",
+        "firstPublicationDate": "2026-08-05",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13486165"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42620940",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-302x",
+        "journalTitle": "Front Microbiol",
+        "journalVolume": "17",
+        "pageInfo": "1898462",
+        "pmcid": "PMC13486165",
+        "pmid": "42620940",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Diverse drought responses and evidence for stress priming in glacier-fed stream bacteria.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "bioproject"
+          ]
+        }
+      },
+      {
+        "authorString": "Arora P, Bhatt SP, Rimmer JH.",
+        "citedByCount": 0,
+        "doi": "10.2147/copd.s592692",
+        "firstIndexDate": "2026-06-05",
+        "firstPublicationDate": "2026-05-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13228845"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42239673",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1176-9106; 1178-2005; ",
+        "journalTitle": "Int J Chron Obstruct Pulmon Dis",
+        "journalVolume": "21",
+        "pageInfo": "592692",
+        "pmcid": "PMC13228845",
+        "pmid": "42239673",
+        "pubType": "research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; research-article; journal article; research support, n.i.h., extramural",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Exploring COPD Participants' Experiences in a Comprehensive Telewellness Program within a Mixed-Disability Cohort: A Qualitative Study.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Saluja K, Solanki V, Gupta S, Goyal R, Khaneja T.",
+        "bookOrReportDetails": {
+          "publisher": "Research Square",
+          "yearOfPublication": 2025
+        },
+        "citedByCount": 0,
+        "doi": "10.21203/rs.3.rs-6689130/v1",
+        "firstIndexDate": "2025-06-15",
+        "firstPublicationDate": "2025-06-13",
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "N",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "PPR1035866",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "isOpenAccess": "N",
+        "pubType": "preprint",
+        "pubYear": "2025",
+        "source": "PPR",
+        "title": "Efficient Cluster Execution of Sparse Transformers: Joint Quantization and Carbon- Aware DVFS Scheduling",
+        "versionNumber": 1
+      },
+      {
+        "authorString": "Spantideas S, Giannopoulos A.",
+        "citedByCount": 0,
+        "doi": "10.3390/s26102958",
+        "firstIndexDate": "2026-05-28",
+        "firstPublicationDate": "2026-05-08",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13211226"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42197765",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "10",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "2958",
+        "pmcid": "PMC13211226",
+        "pmid": "42197765",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Personalized Federated Actor-Critic Learning for Joint Cost-Comfort Optimization in Energy Communities.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Zhang Z.",
+        "citedByCount": 0,
+        "doi": "10.3390/mi17050586",
+        "firstIndexDate": "2026-05-28",
+        "firstPublicationDate": "2026-05-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13210275"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42195503",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "2072-666x",
+        "journalTitle": "Micromachines (Basel)",
+        "journalVolume": "17",
+        "pageInfo": "586",
+        "pmcid": "PMC13210275",
+        "pmid": "42195503",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "A Review of Embedded Artificial Intelligence Research (2023-2026): Technological Advancements, Representative Advances, and Future Prospects.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Chen J, Chen R, Li Q, Zhan Y.",
+        "citedByCount": 0,
+        "doi": "10.3390/plants15101539",
+        "firstIndexDate": "2026-05-28",
+        "firstPublicationDate": "2026-05-18",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13210779"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42197673",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "10",
+        "journalIssn": "2223-7747",
+        "journalTitle": "Plants (Basel)",
+        "journalVolume": "15",
+        "pageInfo": "1539",
+        "pmcid": "PMC13210779",
+        "pmid": "42197673",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "The NRT1.1-NLP7 Nexus: An Integrative Signaling Nexus from Nitrate Sensing to Systemic Adaptation and Structure-Guided Engineering."
+      },
+      {
+        "authorString": "Anand S, Claassen MA, Riedy CA, Hertwig R.",
+        "citedByCount": 0,
+        "doi": "10.3389/fpubh.2026.1834743",
+        "firstIndexDate": "2026-07-31",
+        "firstPublicationDate": "2026-07-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13416245"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42529029",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2296-2565",
+        "journalTitle": "Front Public Health",
+        "journalVolume": "14",
+        "pageInfo": "1834743",
+        "pmcid": "PMC13416245",
+        "pmid": "42529029",
+        "pubType": "brief-report; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "The Toothbrushing Boost Toolbox: competence-building behavioral strategies for oral health.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Osborne R.",
+        "citedByCount": 1,
+        "doi": "10.1111/nph.70815",
+        "firstIndexDate": "2025-12-05",
+        "firstPublicationDate": "2025-12-03",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12873518"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41340241",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "1469-8137; 0028-646x; ",
+        "journalTitle": "New Phytol",
+        "journalVolume": "249",
+        "pageInfo": "2241-2250",
+        "pmcid": "PMC12873518",
+        "pmid": "41340241",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Finding balance: the dynamic interplay between H3K27me3 writers and erasers in regulating environmental plasticity and memory.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Zhang W, Ou H.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-025-25666-1",
+        "firstIndexDate": "2025-11-25",
+        "firstPublicationDate": "2025-11-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12644854"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41286289",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "15",
+        "pageInfo": "41716",
+        "pmcid": "PMC12644854",
+        "pmid": "41286289",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Reinforcement learning based multi objective task scheduling for energy efficient and cost effective cloud edge computing.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Alatawi MN.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-37819-x",
+        "firstIndexDate": "2026-06-20",
+        "firstPublicationDate": "2026-06-19",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13550636"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42321280",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "28056",
+        "pmcid": "PMC13550636",
+        "pmid": "42321280",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Secure adaptive federated learning for scalable anomaly detection in industrial IoT networks."
+      },
+      {
+        "authorString": "Zaheer W, Nwokoye CH, Afrasiabi SN, El-Khatib K, Yang L.",
+        "citedByCount": 0,
+        "doi": "10.3390/s26123886",
+        "firstIndexDate": "2026-06-27",
+        "firstPublicationDate": "2026-06-18",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13306787"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42356860",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "12",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "3886",
+        "pmcid": "PMC13306787",
+        "pmid": "42356860",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "A Comprehensive Survey on Online AutoML and Adversarial Robustness for IoT and EV Charging Network Security.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Shao S, Ding X, Zhao B, Ye P.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-54606-w",
+        "firstIndexDate": "2026-06-02",
+        "firstPublicationDate": "2026-06-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13463057"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42225722",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "25029",
+        "pmcid": "PMC13463057",
+        "pmid": "42225722",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Topology-aware adaptive scheduling algorithm for heterogeneous AI-PC collaborative computing environments."
+      },
+      {
+        "authorString": "Ali S, Moon YS.",
+        "citedByCount": 1,
+        "doi": "10.3390/cimb48050474",
+        "firstIndexDate": "2026-05-28",
+        "firstPublicationDate": "2026-05-02",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13204260"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42193079",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "5",
+        "journalIssn": "1467-3037; 1467-3045; ",
+        "journalTitle": "Curr Issues Mol Biol",
+        "journalVolume": "48",
+        "pageInfo": "474",
+        "pmcid": "PMC13204260",
+        "pmid": "42193079",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Molecular Mechanisms of Plant Stress Tolerance: From Stress Perception to Phytohormonal Crosstalk and Transcriptional Regulation.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Canabal-Berlanga A, Alvargonz\u00e1lez C, Abad B, Rosas E.",
+        "citedByCount": 0,
+        "doi": "10.1111/jep.70583",
+        "firstIndexDate": "2026-09-01",
+        "firstPublicationDate": "2026-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13527590"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42670598",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "6",
+        "journalIssn": "1356-1294; 1365-2753; ",
+        "journalTitle": "J Eval Clin Pract",
+        "journalVolume": "32",
+        "pageInfo": "e70583",
+        "pmcid": "PMC13527590",
+        "pmid": "42670598",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Phenomenology of a Biographical Disruption: Delirium in the Critically Ill Patient.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Saati-Santamar\u00eda Z, P\u00e9rez-Mendoza D, Khashi U Rahman M, de Sousa BFS, Montero-Calasanz MDC, Rey L, Roy S, Sanju\u00e1n J, Garc\u00eda-Fraile P.",
+        "citedByCount": 4,
+        "doi": "10.1093/femsre/fuag005",
+        "firstIndexDate": "2026-02-12",
+        "firstPublicationDate": "2026-01-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12949522"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41671169",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "0168-6445; 1574-6976; ",
+        "journalTitle": "FEMS Microbiol Rev",
+        "journalVolume": "50",
+        "pageInfo": "fuag005",
+        "pmcid": "PMC12949522",
+        "pmid": "41671169",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Evolutionary mechanisms underlying bacterial adaptation to the plant environment.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Boraxbekk CJ, Supej M, Holmberg HC.",
+        "citedByCount": 4,
+        "doi": "10.1111/sms.70188",
+        "firstIndexDate": "2026-01-13",
+        "firstPublicationDate": "2026-01-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12791087"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41521369",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "0905-7188; 1600-0838; ",
+        "journalTitle": "Scand J Med Sci Sports",
+        "journalVolume": "36",
+        "pageInfo": "e70188",
+        "pmcid": "PMC12791087",
+        "pmid": "41521369",
+        "pubType": "research-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Cognitive Neuroscience in Alpine Skiing: Introducing Computational Sports Medicine for Performance Optimization.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Zhang C, Wang C, Ahmad Z, Ye Y, Cheng J, Ramakrishnan M, Wei Q.",
+        "citedByCount": 0,
+        "doi": "10.3390/plants15121870",
+        "firstIndexDate": "2026-06-27",
+        "firstPublicationDate": "2026-06-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13306268"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42357189",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "12",
+        "journalIssn": "2223-7747",
+        "journalTitle": "Plants (Basel)",
+        "journalVolume": "15",
+        "pageInfo": "1870",
+        "pmcid": "PMC13306268",
+        "pmid": "42357189",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Anthocyanin-Driven Dark Phenotypes in Stress Adaptation.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Benmaidi ML, Lagraa N, Brik B, Jlali L.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-58988-9",
+        "firstIndexDate": "2026-06-25",
+        "firstPublicationDate": "2026-06-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13578254"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "N",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42342794",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "28709",
+        "pmcid": "PMC13578254",
+        "pmid": "42342794",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Mitigating request flooding attack in named data networking using federated learning."
+      },
+      {
+        "authorString": "Marques I.",
+        "citedByCount": 1,
+        "doi": "10.3390/ijms27072926",
+        "firstIndexDate": "2026-04-14",
+        "firstPublicationDate": "2026-03-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13072763"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41977115",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "7",
+        "journalIssn": "1422-0067",
+        "journalTitle": "Int J Mol Sci",
+        "journalVolume": "27",
+        "pageInfo": "2926",
+        "pmcid": "PMC13072763",
+        "pmid": "41977115",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "The Floral Bottleneck in a Changing Climate: Molecular Mechanisms, Knowledge Gaps, and Future Directions.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Hu J, Huang H, Chen W, Zhang S, Xia D, Yao S.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-47517-3",
+        "firstIndexDate": "2026-05-22",
+        "firstPublicationDate": "2026-05-21",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13402613"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42168249",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "23287",
+        "pmcid": "PMC13402613",
+        "pmid": "42168249",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Research on optimization of power grid load forecasting models based on deep learning."
+      },
+      {
+        "authorString": "Jai Vinita L, Vetriselvi V.",
+        "citedByCount": 0,
+        "doi": "10.3389/frai.2026.1861374",
+        "firstIndexDate": "2026-08-15",
+        "firstPublicationDate": "2026-07-29",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13462386"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42591743",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2624-8212",
+        "journalTitle": "Front Artif Intell",
+        "journalVolume": "9",
+        "pageInfo": "1861374",
+        "pmcid": "PMC13462386",
+        "pmid": "42591743",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "A hierarchical federated learning framework with FedNova, game-theoretic matching, and QKD-assisted privacy for the internet of vehicles.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Deshmukh S, Lokhande N, Yeolekar S.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-37505-y",
+        "firstIndexDate": "2026-03-14",
+        "firstPublicationDate": "2026-03-13",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13111617"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41826393",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "13436",
+        "pmcid": "PMC13111617",
+        "pmid": "41826393",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Predictive temperature control of electric two wheeler hub motor using gradient aware neural regulation with degradation tracking and fault tolerant multi condition torque adaptation."
+      },
+      {
+        "authorString": "Lin Y.",
+        "citedByCount": 0,
+        "doi": "10.1016/j.isci.2026.116511",
+        "firstIndexDate": "2026-07-02",
+        "firstPublicationDate": "2026-06-23",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13316225"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42383002",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "7",
+        "journalIssn": "2589-0042",
+        "journalTitle": "iScience",
+        "journalVolume": "29",
+        "pageInfo": "116511",
+        "pmcid": "PMC13316225",
+        "pmid": "42383002",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Plant embodied intelligence: A paradigmatic perspective.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Nehzati M.",
+        "citedByCount": 0,
+        "doi": "10.3389/frai.2025.1689727",
+        "firstIndexDate": "2026-01-05",
+        "firstPublicationDate": "2025-12-19",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12757336"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41487276",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2624-8212",
+        "journalTitle": "Front Artif Intell",
+        "journalVolume": "8",
+        "pageInfo": "1689727",
+        "pmcid": "PMC12757336",
+        "pmid": "41487276",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Self-evolving cognitive substrates through metabolic data processing and recursive self-representation with autonomous memory prioritization mechanisms.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Xia H, Wang B, Qi F, Huang J.",
+        "citedByCount": 0,
+        "doi": "10.1016/j.synbio.2026.07.002",
+        "firstIndexDate": "2026-08-16",
+        "firstPublicationDate": "2026-08-06",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13475702"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42602676",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2405-805x",
+        "journalTitle": "Synth Syst Biotechnol",
+        "journalVolume": "17",
+        "pageInfo": "85-95",
+        "pmcid": "PMC13475702",
+        "pmid": "42602676",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2027",
+        "source": "MED",
+        "title": "Toward engineered microbial chassis for growth-production balancing.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Jebamani SA, Sathianesan GW.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-025-33133-0",
+        "firstIndexDate": "2026-01-28",
+        "firstPublicationDate": "2026-01-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12852770"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41593119",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "3686",
+        "pmcid": "PMC12852770",
+        "pmid": "41593119",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "A direction aware predictive offloading framework for energy conscious mobile augmented reality systems.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Chen T, Hu X, Wang J.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-64040-7",
+        "firstIndexDate": "2026-08-03",
+        "firstPublicationDate": "2026-07-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13427715"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42538331",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "23713",
+        "pmcid": "PMC13427715",
+        "pmid": "42538331",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "LIR-Mamba: consolidating YOLO and selective SSM with global-local scanning for robust infrared small target detection under laser interference."
+      },
+      {
+        "authorString": "Ros S, Iv T, Ryoo I, Kim S.",
+        "citedByCount": 0,
+        "doi": "10.3390/s26134132",
+        "firstIndexDate": "2026-07-15",
+        "firstPublicationDate": "2026-06-30",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13363841"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42451373",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "13",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "4132",
+        "pmcid": "PMC13363841",
+        "pmid": "42451373",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Adaptive SFC Management and Orchestration Based on DRL in Edge Intelligence for Computation Efficiency.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Yu D, Wang Z, Liu J, Liu H, Ying C.",
+        "citedByCount": 0,
+        "doi": "10.3390/s26134005",
+        "firstIndexDate": "2026-07-15",
+        "firstPublicationDate": "2026-06-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13364184"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42451247",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "13",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "4005",
+        "pmcid": "PMC13364184",
+        "pmid": "42451247",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "An End-to-End Fault Diagnosis Model for Rolling Bearings Based on Multi-Scale Convolution and the Kolmogorov-Arnold Network."
+      },
+      {
+        "authorString": "Lou L, Govindarajan V, Shaikh ZA, Liu R, Ayadi M, Wang H, Lv H.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-46244-z",
+        "firstIndexDate": "2026-04-10",
+        "firstPublicationDate": "2026-04-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13223309"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41957078",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "16745",
+        "pmcid": "PMC13223309",
+        "pmid": "41957078",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "FedLiverNet: a federated learning framework for privacy-preserving and efficient liver cancer detection.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Xu H, Liang Y, Xie R, Kong Y.",
+        "citedByCount": 0,
+        "doi": "10.3390/s26113609",
+        "firstIndexDate": "2026-06-13",
+        "firstPublicationDate": "2026-06-05",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13259048"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42281121",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "11",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "3609",
+        "pmcid": "PMC13259048",
+        "pmid": "42281121",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "The Deep Learning Evolution in Wireless Physical Layer Communications: Applications, Challenges, and Evolutionary Directions.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Kalpeyeva Z, Razaque A, Uskenbayeva R, Beishenaly A, Elle V, Kassymova A.",
+        "citedByCount": 0,
+        "doi": "10.3389/fdata.2026.1811835",
+        "firstIndexDate": "2026-08-30",
+        "firstPublicationDate": "2026-08-14",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13521872"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42666299",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2624-909x",
+        "journalTitle": "Front Big Data",
+        "journalVolume": "9",
+        "pageInfo": "1811835",
+        "pmcid": "PMC13521872",
+        "pmid": "42666299",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Real-time AI-driven trend analytics for smart city digital services using streaming data.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "He L, Jia N, Zhao J.",
+        "citedByCount": 1,
+        "doi": "10.3390/s26113489",
+        "firstIndexDate": "2026-06-13",
+        "firstPublicationDate": "2026-06-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13259462"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42281004",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "11",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "3489",
+        "pmcid": "PMC13259462",
+        "pmid": "42281004",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "An Edge-Computing-Based Emotion-Aware Adaptive Lighting System for Intelligent Cockpits.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Basem M, Zaki J, Saraya MS, Talaat FM.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-54104-z",
+        "firstIndexDate": "2026-05-30",
+        "firstPublicationDate": "2026-05-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13219595"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42209587",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "16591",
+        "pmcid": "PMC13219595",
+        "pmid": "42209587",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Improving airport security with IoT-powered deep learning methods for threat detection and intelligent recommendation systems.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Huang H, Guo C, Cheng S, Wang Z.",
+        "citedByCount": 2,
+        "doi": "10.3390/genes17030301",
+        "firstIndexDate": "2026-03-29",
+        "firstPublicationDate": "2026-02-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13026535"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41898835",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "2073-4425",
+        "journalTitle": "Genes (Basel)",
+        "journalVolume": "17",
+        "pageInfo": "301",
+        "pmcid": "PMC13026535",
+        "pmid": "41898835",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "DNA Methylation Dynamics in Plant Abiotic Stress Response: Mechanisms, Memory, and Breeding Applications.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Kumar Punna S, Pusuluru S, Ravikumar M, Menaa F.",
+        "citedByCount": 0,
+        "doi": "10.3389/fchem.2026.1864044",
+        "firstIndexDate": "2026-07-23",
+        "firstPublicationDate": "2026-07-03",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13377688"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42491604",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "2296-2646",
+        "journalTitle": "Front Chem",
+        "journalVolume": "14",
+        "pageInfo": "1864044",
+        "pmcid": "PMC13377688",
+        "pmid": "42491604",
+        "pubType": "brief-report; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "AI-integrated manufacturing of advanced materials for energy storage, catalysis, and environmental applications.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Li Q, He J.",
+        "citedByCount": 0,
+        "doi": "10.3390/biology15141148",
+        "firstIndexDate": "2026-07-30",
+        "firstPublicationDate": "2026-07-14",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13406005"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42510695",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "14",
+        "journalIssn": "2079-7737",
+        "journalTitle": "Biology (Basel)",
+        "journalVolume": "15",
+        "pageInfo": "1148",
+        "pmcid": "PMC13406005",
+        "pmid": "42510695",
+        "pubType": "other; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Closing the Loop on the Cocktail Party Effect: From Attention Decoding to Neuro-Steered Selective Hearing."
+      },
+      {
+        "authorString": "Brito MAB, Molinares DJ.",
+        "citedByCount": 0,
+        "doi": "10.3390/s26041371",
+        "firstIndexDate": "2026-02-27",
+        "firstPublicationDate": "2026-02-21",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12943966"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41755310",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "1371",
+        "pmcid": "PMC12943966",
+        "pmid": "41755310",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "EC-RPLIE: An Innovative Protocol for RPL in IIoT Networks.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Wang X.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-025-29756-y",
+        "firstIndexDate": "2025-11-30",
+        "firstPublicationDate": "2025-11-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12753761"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41315672",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "15",
+        "pageInfo": "45614",
+        "pmcid": "PMC12753761",
+        "pmid": "41315672",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "High-dimensional continuous action space control via trust region optimized deep reinforcement learning.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Arasteh B, Sefati SS, Kusetogullari H, Kiani F, Sorooshian S, Babaee Tirkolaee E.",
+        "citedByCount": 0,
+        "doi": "10.1371/journal.pone.0341059",
+        "firstIndexDate": "2026-03-28",
+        "firstPublicationDate": "2026-03-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13029803"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41894463",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "3",
+        "journalIssn": "1932-6203",
+        "journalTitle": "PLoS One",
+        "journalVolume": "21",
+        "pageInfo": "e0341059",
+        "pmcid": "PMC13029803",
+        "pmid": "41894463",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Loop parallelization in source code for internet of things computing using hybrid heuristic algorithm."
+      },
+      {
+        "authorString": "Narsimhulu B, Kumar TS.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-43108-4",
+        "firstIndexDate": "2026-03-27",
+        "firstPublicationDate": "2026-03-25",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13168454"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41882156",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "14961",
+        "pmcid": "PMC13168454",
+        "pmid": "41882156",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "A hybrid RL-GA-LSTM-AE framework for energy-aware and SLA-driven task scheduling in cloud computing environments.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Liu L, Xu Z.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-025-04652-7",
+        "firstIndexDate": "2025-07-02",
+        "firstPublicationDate": "2025-07-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12218929"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40594214",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "15",
+        "pageInfo": "22056",
+        "pmcid": "PMC12218929",
+        "pmid": "40594214",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Optimizing lightweight neural networks for efficient mobile edge computing."
+      },
+      {
+        "authorString": "Wu Y, Zhao Y, Ralescu A.",
+        "citedByCount": 0,
+        "doi": "10.3390/diagnostics16111711",
+        "firstIndexDate": "2026-06-12",
+        "firstPublicationDate": "2026-06-02",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13256828"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42279577",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "11",
+        "journalIssn": "2075-4418",
+        "journalTitle": "Diagnostics (Basel)",
+        "journalVolume": "16",
+        "pageInfo": "1711",
+        "pmcid": "PMC13256828",
+        "pmid": "42279577",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Continual Learning for Histopathology Image Classification in Class-Incremental Learning.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Raju LR, Reddy MVK, Surukanti SR, Sudhakar G, Subrahmanya Sarma M VV, Adepu A.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-41330-8",
+        "firstIndexDate": "2026-03-01",
+        "firstPublicationDate": "2026-02-27",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13046833"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "41760833",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "11219",
+        "pmcid": "PMC13046833",
+        "pmid": "41760833",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "IntelliScheduler: an edge-cloud computing environment hybrid deep learning framework for task scheduling based on learning."
+      },
+      {
+        "authorString": "Samarina LS, Terletskaya NV, Mussayeva AS.",
+        "citedByCount": 1,
+        "doi": "10.3389/fpls.2026.1782805",
+        "firstIndexDate": "2026-04-18",
+        "firstPublicationDate": "2026-04-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13079370"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41993743",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "journalIssn": "1664-462x",
+        "journalTitle": "Front Plant Sci",
+        "journalVolume": "17",
+        "pageInfo": "1782805",
+        "pmcid": "PMC13079370",
+        "pmid": "41993743",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Environmental control of anthraquinone-flavonoid accumulation in wild plant species: biosynthetic pathways, ecological drivers, and adaptive significance.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Shen X, Pan M, Liang K.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-53024-2",
+        "firstIndexDate": "2026-05-25",
+        "firstPublicationDate": "2026-05-24",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13429628"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42178333",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "23756",
+        "pmcid": "PMC13429628",
+        "pmid": "42178333",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Task-oriented visual SLAM: a comprehensive map classification framework for dynamic indoor robot manipulation.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Brameyer S.",
+        "citedByCount": 0,
+        "doi": "10.1042/bsr20260035",
+        "firstIndexDate": "2026-07-03",
+        "firstPublicationDate": "2026-07-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13333382"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "42394592",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "7",
+        "journalIssn": "0144-8463; 1573-4935; ",
+        "journalTitle": "Biosci Rep",
+        "journalVolume": "46",
+        "pageInfo": "BSR20260035",
+        "pmcid": "PMC13333382",
+        "pmid": "42394592",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Bacterial heteroresistance mechanisms, dynamics, and emerging diagnostic approaches."
+      },
+      {
+        "authorString": "Khope P, Lande M, Shrivastava D, Bahl S, Gajghate SS, Shelare SD, Noor MM, Dennison MS.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-57918-z",
+        "firstIndexDate": "2026-06-16",
+        "firstPublicationDate": "2026-06-15",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13529661"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42297995",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "27332",
+        "pmcid": "PMC13529661",
+        "pmid": "42297995",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Smart grid integration by optimizing energy, carbon, and production in industrial systems with contextual reinforcement learning.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Duan H.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-47085-6",
+        "firstIndexDate": "2026-05-15",
+        "firstPublicationDate": "2026-05-13",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13365567"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42129222",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "21961",
+        "pmcid": "PMC13365567",
+        "pmid": "42129222",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Adaptive tree-reinforced clustering using hierarchical social relations and Q-learning in dynamic data environments.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Cai C, Yu J, Zhang X, Zhou T, Chen Q.",
+        "citedByCount": 5,
+        "doi": "10.1038/s41556-025-01736-4",
+        "firstIndexDate": "2025-08-22",
+        "firstPublicationDate": "2025-09-01",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12414476"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "N",
+        "hasTextMinedTerms": "Y",
+        "id": "40836039",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "N",
+        "issue": "9",
+        "journalIssn": "1465-7392; 1476-4679; ",
+        "journalTitle": "Nat Cell Biol",
+        "journalVolume": "27",
+        "pageInfo": "1381-1386",
+        "pmcid": "PMC12414476",
+        "pmid": "40836039",
+        "pubType": "research-article; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "A model for propagation of RNA structural memory through biomolecular condensates."
+      },
+      {
+        "authorString": "Ali S, Moon YS.",
+        "citedByCount": 0,
+        "doi": "10.3390/ijms27104520",
+        "firstIndexDate": "2026-05-28",
+        "firstPublicationDate": "2026-05-18",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13207466"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42196497",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "10",
+        "journalIssn": "1422-0067",
+        "journalTitle": "Int J Mol Sci",
+        "journalVolume": "27",
+        "pageInfo": "4520",
+        "pmcid": "PMC13207466",
+        "pmid": "42196497",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Biomolecular Condensates in Combined and Recurrent Plant Stresses: Integrating Phase Separation, Signal Prioritization, and Cross-Stress Memory.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Talarico E, Greco E, Guarasci F, Araniti F, Chiappetta A, Bruno L.",
+        "citedByCount": 8,
+        "doi": "10.3390/epigenomes9040046",
+        "firstIndexDate": "2025-11-24",
+        "firstPublicationDate": "2025-11-16",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12641941"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41283359",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "2075-4655",
+        "journalTitle": "Epigenomes",
+        "journalVolume": "9",
+        "pageInfo": "46",
+        "pmcid": "PMC12641941",
+        "pmid": "41283359",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2025",
+        "source": "MED",
+        "title": "Epigenetic Regulation of Salt Stress Responses in Rice: Mechanisms and Prospects for Enhancing Tolerance.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Meseguer-Fern\u00e1ndez MR, Badanta B.",
+        "citedByCount": 0,
+        "doi": "10.3390/healthcare14162533",
+        "firstIndexDate": "2026-08-30",
+        "firstPublicationDate": "2026-08-13",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13512125"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42651302",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "16",
+        "journalIssn": "2227-9032",
+        "journalTitle": "Healthcare (Basel)",
+        "journalVolume": "14",
+        "pageInfo": "2533",
+        "pmcid": "PMC13512125",
+        "pmid": "42651302",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Long COVID-19 in Spain: A Phenomenological Exploration of Health, Support, and Systemic Challenges.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Hu J, Yao R, Yang Q, Ding Y, Zhang L, Liu J.",
+        "citedByCount": 1,
+        "doi": "10.3390/s26041121",
+        "firstIndexDate": "2026-02-27",
+        "firstPublicationDate": "2026-02-09",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC12944388"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "41755063",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "4",
+        "journalIssn": "1424-8220",
+        "journalTitle": "Sensors (Basel)",
+        "journalVolume": "26",
+        "pageInfo": "1121",
+        "pmcid": "PMC12944388",
+        "pmid": "41755063",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "A Lightweight Fire Detection Framework for Edge Visual Sensors Using Small-Sample Domain Adaptation.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Selem E, Alattal A, Shaalan AHA, Abdelwahab NM.",
+        "citedByCount": 0,
+        "doi": "10.1038/s41598-026-62682-1",
+        "firstIndexDate": "2026-07-24",
+        "firstPublicationDate": "2026-07-23",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13396517"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42493569",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "1",
+        "journalIssn": "2045-2322",
+        "journalTitle": "Sci Rep",
+        "journalVolume": "16",
+        "pageInfo": "23098",
+        "pmcid": "PMC13396517",
+        "pmid": "42493569",
+        "pubType": "research-article; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Smart packet prioritization in cognitive radio networks for smart agriculture.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      },
+      {
+        "authorString": "Tlak Gajger I, Vlaini\u0107 J, Cvetkovikj A.",
+        "citedByCount": 0,
+        "doi": "10.3390/antiox15081016",
+        "firstIndexDate": "2026-08-30",
+        "firstPublicationDate": "2026-08-14",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13509840"
+          ]
+        },
+        "hasBook": "N",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "N",
+        "hasPDF": "Y",
+        "hasReferences": "Y",
+        "hasSuppl": "N",
+        "hasTMAccessionNumbers": "Y",
+        "hasTextMinedTerms": "Y",
+        "id": "42650280",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "isOpenAccess": "Y",
+        "issue": "8",
+        "journalIssn": "2076-3921",
+        "journalTitle": "Antioxidants (Basel)",
+        "journalVolume": "15",
+        "pageInfo": "1016",
+        "pmcid": "PMC13509840",
+        "pmid": "42650280",
+        "pubType": "review-article; review; journal article",
+        "pubYear": "2026",
+        "source": "MED",
+        "title": "Disruption of Antioxidant Defense Systems in Honey Bees and Wild Bees Under Environmental Xenobiotic Pressure.",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "doi"
+          ]
+        }
+      }
+    ]
+  },
+  "version": "6.9"
+}

@@ -1,0 +1,790 @@
+{
+  "checked": {
+    "audit_paths_hashes_reconstructed": 512,
+    "audit_rows": 16777216,
+    "block_records": 41600,
+    "blocks_with_both_sham_identities": 41600,
+    "decision_files_compared": 1,
+    "estimates_compared": 22,
+    "manifest_files_matched": 97,
+    "path_records": 332800,
+    "update_records": 85196800
+  },
+  "expected": {
+    "audit_paths_hashes_reconstructed": 512,
+    "audit_rows": 16777216,
+    "block_records": 41600,
+    "blocks_with_both_sham_identities": 41600,
+    "decision_files_compared": 1,
+    "estimates_compared": 22,
+    "manifest_files_matched": 97,
+    "path_records": 332800,
+    "update_records": 85196800
+  },
+  "finished_at_utc": "2026-10-01T13:06:43Z",
+  "first_discrepancy": null,
+  "inputs": [
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_00/updates.bin",
+      "path": "shards/shard_00/updates.bin",
+      "sha256": "5f36db0ea2715d6edec4bfda8b7069f67564fb5c0982f5015c47dd42673b18b1"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_00/paths.bin",
+      "path": "shards/shard_00/paths.bin",
+      "sha256": "99fb3645e61b8ad53a77d9b427f2ad5752ec26979207c6ca43cfe2a48773637d"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_00/blocks.bin",
+      "path": "shards/shard_00/blocks.bin",
+      "sha256": "a9ea31ada018433c343c62c8086bdbc4548f88e6844a5b93b74bad41708422c9"
+    },
+    {
+      "bytes": 1207959552,
+      "error": null,
+      "label": "shards/shard_00/audit_rows_blocks_0000_0063.bin",
+      "path": "shards/shard_00/audit_rows_blocks_0000_0063.bin",
+      "sha256": "55e6805decf999270410127d3984afc90ac197aec0314a289cfb8be2a3526d11"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_01/updates.bin",
+      "path": "shards/shard_01/updates.bin",
+      "sha256": "048ac7f706b0edb0229f13f212f38f424d99c9b207fdeec490bbea40c750e521"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_01/paths.bin",
+      "path": "shards/shard_01/paths.bin",
+      "sha256": "f89fe5a084289930e29bf1e178f7c3d73175ca5aeb75a3528efd3d719c3bb244"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_01/blocks.bin",
+      "path": "shards/shard_01/blocks.bin",
+      "sha256": "4f04823639945e39de715c564fb14956d7051d1294c496d81c59d67e48738206"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_02/updates.bin",
+      "path": "shards/shard_02/updates.bin",
+      "sha256": "53faedbe4e64d98a4bb60dd41df18fd50e6e6bf54b09efadacfa2859ce99b1ab"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_02/paths.bin",
+      "path": "shards/shard_02/paths.bin",
+      "sha256": "8e8bbd67ad50c149b6a55260d4d4156ae1afe36a797b06726516d0c045e5bb19"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_02/blocks.bin",
+      "path": "shards/shard_02/blocks.bin",
+      "sha256": "2e47bc43a6ac29152aab1b05b8eb1821f775b506fca783b7e94d53c6c0cb8fde"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_03/updates.bin",
+      "path": "shards/shard_03/updates.bin",
+      "sha256": "3c147f99f707c0123b2ffc93cadc2ef935c8bb8be2070934f4ecc607d6cc4020"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_03/paths.bin",
+      "path": "shards/shard_03/paths.bin",
+      "sha256": "7aacfdcb9a547db309feb8c5826ecf24012d3a8ae475931b93262f20db6e82a8"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_03/blocks.bin",
+      "path": "shards/shard_03/blocks.bin",
+      "sha256": "71836b5dfbaa9742ae548b0bc004b3a134d426f54822f1db38dd93cbca4840b7"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_04/updates.bin",
+      "path": "shards/shard_04/updates.bin",
+      "sha256": "5c74ecbce4082a683610a055dc75e0fdf17f5854e955a7bb287d8d460a701534"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_04/paths.bin",
+      "path": "shards/shard_04/paths.bin",
+      "sha256": "97e0f198409d908e3b03a64525a2dd0a67fac644a0430c58d34b1a4b1d39fb83"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_04/blocks.bin",
+      "path": "shards/shard_04/blocks.bin",
+      "sha256": "d4ce73d9846109418d94ed6ac1065d69a01dc237855f722b0ddb0739c009dadb"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_05/updates.bin",
+      "path": "shards/shard_05/updates.bin",
+      "sha256": "8d3d3510601141333771f08b2c668d10c2044ea06fcf2724f4b7c0213989f0d8"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_05/paths.bin",
+      "path": "shards/shard_05/paths.bin",
+      "sha256": "353f44cb1b7b64e4620bfde4ba4d86b90dc808ddae19fab266859b5f9178439f"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_05/blocks.bin",
+      "path": "shards/shard_05/blocks.bin",
+      "sha256": "01a43bfa1f8f304f79fbbe90ea85bc3a561e35e9f755557ee61e7af166b312ab"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_06/updates.bin",
+      "path": "shards/shard_06/updates.bin",
+      "sha256": "42c113a5889ddf053d6b871e3c502586bf211af7cac681dc0ac6534bbffd2a31"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_06/paths.bin",
+      "path": "shards/shard_06/paths.bin",
+      "sha256": "1bb28274a1baa39f042e2eaa34f3b0d0bb3e59d4d289032edc9b186bd4a5a139"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_06/blocks.bin",
+      "path": "shards/shard_06/blocks.bin",
+      "sha256": "ec5ee0a8f0acf990a04d2f4ad6e57d0f30bcfd19cccc36ef3b41b39caa043c22"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_07/updates.bin",
+      "path": "shards/shard_07/updates.bin",
+      "sha256": "2c9280c7d074ae8eb0045b8804fdbe093a53f595f36c434b3658cd93ea65fdcd"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_07/paths.bin",
+      "path": "shards/shard_07/paths.bin",
+      "sha256": "ded54bac30328ef57889b37cbe03dcfdb0863162411ad37a51439f4ddac7bc40"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_07/blocks.bin",
+      "path": "shards/shard_07/blocks.bin",
+      "sha256": "60de468a0801f45d5100663a0d4ed295fbe6d0b79c0316f32d3d4f38d033fd7c"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_08/updates.bin",
+      "path": "shards/shard_08/updates.bin",
+      "sha256": "137a7b4ea2f07e96258ee762beb8f6565c811b966e6a27ec366938f1d5f896b7"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_08/paths.bin",
+      "path": "shards/shard_08/paths.bin",
+      "sha256": "2e3e5a8808a695b5b8d5b7ca2fa1daa1e35a0bb78b51e98cee341e7bd3068700"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_08/blocks.bin",
+      "path": "shards/shard_08/blocks.bin",
+      "sha256": "8cacba9bd7ab97949e3d5b41f1d925399fd9eae1fe92ee5ab4c803a19a00d222"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_09/updates.bin",
+      "path": "shards/shard_09/updates.bin",
+      "sha256": "4b8e01478a4417282d5f9b8b61c1c9e31fabd1229bbbf77c1e0db2d05ef9157c"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_09/paths.bin",
+      "path": "shards/shard_09/paths.bin",
+      "sha256": "d4c4cf94624d6822b467c7d9ec888ec0d8f3722eaa1211c664dab23f9ca056c2"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_09/blocks.bin",
+      "path": "shards/shard_09/blocks.bin",
+      "sha256": "1d7054f07c43b5ec5fe8cdf32fc4c5d9a7d4bd8c40fa2c69d7d71f1de7577576"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_10/updates.bin",
+      "path": "shards/shard_10/updates.bin",
+      "sha256": "89f6f81997fddb82fc7be40bdf261f0317ea8d3869b82a91ef596a1348010cff"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_10/paths.bin",
+      "path": "shards/shard_10/paths.bin",
+      "sha256": "a146ca46a048cbafbb88dd92348b00bdd758ebc6cfe86bf8f76a62a8dc5f48fe"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_10/blocks.bin",
+      "path": "shards/shard_10/blocks.bin",
+      "sha256": "22098ebc26023daa038d544348cba7dc8022457d6c483c275a348600f7b14dce"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_11/updates.bin",
+      "path": "shards/shard_11/updates.bin",
+      "sha256": "f2788869f2525a0c05cb43242235d8f13fadbacee860f2ecdd920e780c96cc7c"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_11/paths.bin",
+      "path": "shards/shard_11/paths.bin",
+      "sha256": "a1aee4956c7834d3e27f06053d9770c2a0cf29229e59457575f58a147bc47abd"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_11/blocks.bin",
+      "path": "shards/shard_11/blocks.bin",
+      "sha256": "7e6d22f873362c1094b9808736c3c5dfe5920636e06a9fc83a3f72b29e556ac1"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_12/updates.bin",
+      "path": "shards/shard_12/updates.bin",
+      "sha256": "3b9c5ec4c249830b987c051ec989ac063ca8bd786d91a446fa356c8ca0b1aa8e"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_12/paths.bin",
+      "path": "shards/shard_12/paths.bin",
+      "sha256": "5d0ff6a6338e6596bcb876d4c8a1842f72b7cac7bbdbcd4db51dbb345de49ef2"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_12/blocks.bin",
+      "path": "shards/shard_12/blocks.bin",
+      "sha256": "163d4740c50518f6c710acabecf3b233e55f6115727984a51a10efbbcc4364dc"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_13/updates.bin",
+      "path": "shards/shard_13/updates.bin",
+      "sha256": "eb56eaf9b2e60ce69f78475774b35aa3a63d9bf55db2934a01ac26ddbb983422"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_13/paths.bin",
+      "path": "shards/shard_13/paths.bin",
+      "sha256": "ea1245abcbb43ccc690f4cc18dd20635eb5132647551b8d953f6be006104cbab"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_13/blocks.bin",
+      "path": "shards/shard_13/blocks.bin",
+      "sha256": "d143a8ee40a8ae9b71e6f2fe8888915eab61695d5660823ab038c5046722e2fd"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_14/updates.bin",
+      "path": "shards/shard_14/updates.bin",
+      "sha256": "40cee714f9bd9b88259218229f69a57f7ba2d09843a2283c765162b8fd1d6964"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_14/paths.bin",
+      "path": "shards/shard_14/paths.bin",
+      "sha256": "a84f69506d6d0eed90ec101441193121aa625b52bcae403cb9b81d49746987b9"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_14/blocks.bin",
+      "path": "shards/shard_14/blocks.bin",
+      "sha256": "c8de13ec1f01dd1e1cd05652676f9a05383a2f36728dae3b8834609c170774e0"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_15/updates.bin",
+      "path": "shards/shard_15/updates.bin",
+      "sha256": "88fdc127998f11ed990cadce7328b4157580099c3854eee92f5cd53d6b726076"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_15/paths.bin",
+      "path": "shards/shard_15/paths.bin",
+      "sha256": "6831fbe3c6def4f9bf78178076a467cc3274499363fc8a135b27fc974be97c43"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_15/blocks.bin",
+      "path": "shards/shard_15/blocks.bin",
+      "sha256": "1e351cd127afc11acd019628b0b2462250cc433b80a4fcf4042480bbe5a32f01"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_16/updates.bin",
+      "path": "shards/shard_16/updates.bin",
+      "sha256": "629591ac45afc2c1a7cfb7baa73714a88e04ac75ebee9e7eda34b0665aba4c96"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_16/paths.bin",
+      "path": "shards/shard_16/paths.bin",
+      "sha256": "75aa7af3531f375b75d7acd8db68fa3daa277919616c90314103c5336f1de63b"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_16/blocks.bin",
+      "path": "shards/shard_16/blocks.bin",
+      "sha256": "2a2448a204f540335f15751ace43b174f6013bdf2aa9c9728bfbfc74b06a36e7"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_17/updates.bin",
+      "path": "shards/shard_17/updates.bin",
+      "sha256": "50a6d49c8041d1275e98a043a351512373c00bb77048ea9cbc75ce896f846d34"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_17/paths.bin",
+      "path": "shards/shard_17/paths.bin",
+      "sha256": "26f18a9c081ac230e743cb4d465aa43086e07ee6ea6967988954f4227e3cf513"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_17/blocks.bin",
+      "path": "shards/shard_17/blocks.bin",
+      "sha256": "79195de7d19b154d94b2cf32e2c371b08486c79cc20ae40528d01e503f2f413a"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_18/updates.bin",
+      "path": "shards/shard_18/updates.bin",
+      "sha256": "eaf5741c36411cbf42135e26cb068e1c60113cd6962ac5fa4b7d0ce6a32dcd35"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_18/paths.bin",
+      "path": "shards/shard_18/paths.bin",
+      "sha256": "f476a217f2377771fb727afa3d67ee6e4f469e800496d90d3f0b4f6f34087e25"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_18/blocks.bin",
+      "path": "shards/shard_18/blocks.bin",
+      "sha256": "2d1497ffc3d1a405a29910b906967c677c7abc4bc7cf8b054f1b073bf17d31c0"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_19/updates.bin",
+      "path": "shards/shard_19/updates.bin",
+      "sha256": "d5f66baa0b6e485c1bc7536ddb1698f73853b0fa2a27116ef85f9558c5a47599"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_19/paths.bin",
+      "path": "shards/shard_19/paths.bin",
+      "sha256": "bbdf1e18d03ac22f0a21710c19ca55ed221798d4a97717086214bcec22e7035e"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_19/blocks.bin",
+      "path": "shards/shard_19/blocks.bin",
+      "sha256": "2620e9e5ee05509895038103ad6a3a95a3110e60b76de92aa3868f25558ee1c2"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_20/updates.bin",
+      "path": "shards/shard_20/updates.bin",
+      "sha256": "adb79e997920bf5b304a265c673f0cae16e285b6a5f262d706a31883f8fe7e3b"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_20/paths.bin",
+      "path": "shards/shard_20/paths.bin",
+      "sha256": "72a7a776f634756b9711ffdca5253387e5bb75b942c122c4468588e22db4fdf6"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_20/blocks.bin",
+      "path": "shards/shard_20/blocks.bin",
+      "sha256": "a74a5aada340ba19ed2c045e972863b09e84479d72eee088a4004fe1b83e9780"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_21/updates.bin",
+      "path": "shards/shard_21/updates.bin",
+      "sha256": "d0c60a233091507a3127dff6e98a42446e7f7ea31eea1ccf6f0f0c64d82b3736"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_21/paths.bin",
+      "path": "shards/shard_21/paths.bin",
+      "sha256": "d9305c58e3bf6848d703cd99c92466a2420d2ba1befa4c4ebc823d604e283cf9"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_21/blocks.bin",
+      "path": "shards/shard_21/blocks.bin",
+      "sha256": "43f8f51cca94f28c6f29a97f6c18b5922e63a01db04a35674983e11d8e48ae76"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_22/updates.bin",
+      "path": "shards/shard_22/updates.bin",
+      "sha256": "bbab82369999782624b5fd37fc1b8670505e82f5bfd548656b06fd209dff33ca"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_22/paths.bin",
+      "path": "shards/shard_22/paths.bin",
+      "sha256": "4a2d6eb493a77c13aca2e0336d1e56604c819164706310fd5cd1e287adcde067"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_22/blocks.bin",
+      "path": "shards/shard_22/blocks.bin",
+      "sha256": "a933ead5bce08c78262954d89ac90e10e59fbc18df5712f0e6ae9457081114da"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_23/updates.bin",
+      "path": "shards/shard_23/updates.bin",
+      "sha256": "a8a670dc35478b9e3a5ddfb637942063510de89f8f6d958ee6c102f41a75fe9e"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_23/paths.bin",
+      "path": "shards/shard_23/paths.bin",
+      "sha256": "6ea96c5f943f93eda176a18eec6532fb1dfee7ebf30a87897bd0bdd28c7c7970"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_23/blocks.bin",
+      "path": "shards/shard_23/blocks.bin",
+      "sha256": "c2890693c07b4a20a1da753b211f884549a635085115cb34450614667a6cccc9"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_24/updates.bin",
+      "path": "shards/shard_24/updates.bin",
+      "sha256": "e359d174e38a02a16db6a6ac4615da085735f3ac637086bfd57eec33cc15a69f"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_24/paths.bin",
+      "path": "shards/shard_24/paths.bin",
+      "sha256": "d388618d762428a92c71a531a8df86eec265d4618735528b60679c5d761003af"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_24/blocks.bin",
+      "path": "shards/shard_24/blocks.bin",
+      "sha256": "6b7b86a3380eee93be3873a68a3df8b987da04121d1c2b5fe5f8913c84a4aae4"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_25/updates.bin",
+      "path": "shards/shard_25/updates.bin",
+      "sha256": "4804ba5021b78052110e4092bd4b0aba9983fd87c408fe7036eaa814e9d99365"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_25/paths.bin",
+      "path": "shards/shard_25/paths.bin",
+      "sha256": "5856b8ce9171cdfa175ee420c1ac3afc81b6a6d3dc050c300280a4409a755631"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_25/blocks.bin",
+      "path": "shards/shard_25/blocks.bin",
+      "sha256": "c7ba3ca3cc7789b46f03a06b8a6117cd3a6b4f2cad95e5cac32efc6730c2bf61"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_26/updates.bin",
+      "path": "shards/shard_26/updates.bin",
+      "sha256": "7884701cbd9dd362768dea894772043fb34918327fccbcf69c54d18a08162486"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_26/paths.bin",
+      "path": "shards/shard_26/paths.bin",
+      "sha256": "a07417bd867f976ccc43dd987b3a5724916f51df6813ec87e791fc69ed936a85"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_26/blocks.bin",
+      "path": "shards/shard_26/blocks.bin",
+      "sha256": "580c696c5b7db5cd88a888fa3d2c3e279a2a98ed69a1a869854d27768e387bd5"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_27/updates.bin",
+      "path": "shards/shard_27/updates.bin",
+      "sha256": "3c0b18ae1ec2730f23adfde755cbe56854f29011fd34c85c72a4b53ddfe92b50"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_27/paths.bin",
+      "path": "shards/shard_27/paths.bin",
+      "sha256": "be2afde9a54160bdd3c6422a74a1eccbfa9f5f900cf4842b2fe17ed2965f0042"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_27/blocks.bin",
+      "path": "shards/shard_27/blocks.bin",
+      "sha256": "e05e3512ed8edf21bc7b9380a9b8b8eea20697791041e950a609c4ba8eac2f42"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_28/updates.bin",
+      "path": "shards/shard_28/updates.bin",
+      "sha256": "aff7bc91e13a35404a9b3dd7de2ade27bbac894725b9dd140c0b27854ccf7697"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_28/paths.bin",
+      "path": "shards/shard_28/paths.bin",
+      "sha256": "753f80a36b02d91f5793ce74c23baa58a981823bea04e9457cd26a7c3643023c"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_28/blocks.bin",
+      "path": "shards/shard_28/blocks.bin",
+      "sha256": "41daadda14e0705d6f9afd5e3713bfd2deb6ff2e00ee55a339d283fa4984a994"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_29/updates.bin",
+      "path": "shards/shard_29/updates.bin",
+      "sha256": "13d7b8ff8267b5e285b35a7829aef945d74fff23505aa92ec89640fa9c64e1f2"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_29/paths.bin",
+      "path": "shards/shard_29/paths.bin",
+      "sha256": "9393637725bb6c91e7aac488121e5e8f26bd2572267fdb44e5c5ea0f5b5eae10"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_29/blocks.bin",
+      "path": "shards/shard_29/blocks.bin",
+      "sha256": "2fa4d1124cf050274ad2ba565de5becd84ef7042135077f5d840d52d9bc7a01a"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_30/updates.bin",
+      "path": "shards/shard_30/updates.bin",
+      "sha256": "3e466a20072c2c0044418c02bffd1ce3c8eb27bdbe176926970ee32f777dfd23"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_30/paths.bin",
+      "path": "shards/shard_30/paths.bin",
+      "sha256": "c26a221bc92fb53fce4013e4a8d97809a038b727d2b30ffd5d99bb061800f55d"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_30/blocks.bin",
+      "path": "shards/shard_30/blocks.bin",
+      "sha256": "3deffd4d298f06092705424fea08dd1e18a6d1a8aef5742ed82d56ae8dc3072e"
+    },
+    {
+      "bytes": 63897600,
+      "error": null,
+      "label": "shards/shard_31/updates.bin",
+      "path": "shards/shard_31/updates.bin",
+      "sha256": "dc83520de13307709053c81f5e9448dab3441638db0cab068e92d000dfcd7cff"
+    },
+    {
+      "bytes": 1331200,
+      "error": null,
+      "label": "shards/shard_31/paths.bin",
+      "path": "shards/shard_31/paths.bin",
+      "sha256": "f7d9d90c893410a100dfda7fe88968a3d8d393f1227141ee0ff7691c3abff9e1"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_31/blocks.bin",
+      "path": "shards/shard_31/blocks.bin",
+      "sha256": "6e5dc81f91bc34635c49cd88c18d50aabaeefed06eb24650506eb17da4f70034"
+    },
+    {
+      "bytes": 14901,
+      "error": null,
+      "label": "run_manifest.json",
+      "path": "run_manifest.json",
+      "sha256": "3aa50dc2b9c740341c21d996d1356e55319144a58803d1878b13ab762795d9a6"
+    },
+    {
+      "bytes": 9487,
+      "error": null,
+      "label": "analysis/estimates_22.json",
+      "path": "analysis/estimates_22.json",
+      "sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0"
+    },
+    {
+      "bytes": 1615,
+      "error": null,
+      "label": "analysis/decision.json",
+      "path": "analysis/decision.json",
+      "sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0"
+    }
+  ],
+  "is_scientific_result": false,
+  "key_namespace_of_inputs": "production-r1",
+  "mismatch_count": 0,
+  "mismatch_count_cap": 1000000,
+  "mismatch_count_capped": false,
+  "mode": "production",
+  "python_version": "3.6.8",
+  "random_draws_generated": false,
+  "receipt_schema": "MMEM-AUDITOR-RECORDS-RECEIPT-1",
+  "scope": "record, hash and estimate agreement only; this receipt reports no estimate or decision",
+  "self_checks": [
+    {
+      "name": "sha256_fips180_abc",
+      "result": "PASS"
+    },
+    {
+      "name": "record_struct_sizes",
+      "result": "PASS"
+    },
+    {
+      "name": "total_record_bytes",
+      "result": "PASS"
+    },
+    {
+      "name": "popcount",
+      "result": "PASS"
+    },
+    {
+      "name": "lemire_threshold",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_C_abs",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_C_rec",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_D_HALF",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_D_ZERO",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_P_abs",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_P_rec",
+      "result": "PASS"
+    }
+  ],
+  "self_checks_pass": true,
+  "started_at_utc": "2026-10-01T13:04:36Z",
+  "status": "PASS",
+  "tool": "mmem_record_verifier",
+  "tool_source_sha256": "8e551ab55cbe5dc08b94b3fa6152da5f282993d81c00b383e7c8bf43f9d66d7b",
+  "tool_version": "MMEM-AUDIT-RECORDS-1.2.0"
+}

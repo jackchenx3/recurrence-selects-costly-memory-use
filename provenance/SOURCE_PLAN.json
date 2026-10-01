@@ -1,0 +1,56 @@
+{
+  "schema": "PHASE2-MMEM-SOURCE-PLAN-1",
+  "task": "CLAUDE-017: first complete manuscript source package for PHASE2-MUTABLE-MEMORY-001; CLAUDE-019: one bounded source-only correction patch",
+  "draft_root": "manuscript-draft-v2 (patched from manuscript-draft-v1; paths are relative to the study working directory)",
+  "status": "SOURCE_ONLY. The v1 source was checked, rendered and visually reviewed by the supervisor (statistics check PASS, 864 checks, sha_check_enforced true; visual QA PATCH_REQUIRED for figures 1 and 3). The CLAUDE-019 patch was applied without running any script; rebuild and receipts are kept by the supervisor outside this snapshot.",
+  "supplied_inputs": [
+    {"name": "PHASE2-MUTABLE-MEMORY-001-REV1.md", "role": "frozen prospective specification (revision 1)", "path": "design/PHASE2-MUTABLE-MEMORY-001-REV1.md", "sha256": "c17a3a1e9ac9cf2260f6743eaf08e4c2808080a767af16d2f9e9d2b9ad3e821d"},
+    {"name": "PHASE2_STUDY_001_ACCEPTED.json", "role": "acceptance record; authenticated output hashes; scope; job status", "path": "PHASE2_STUDY_001_ACCEPTED.json", "sha256": "2eb3aaf5d754f4570a75522aa9e1f38358715c06c674d5a267732a1357926e6f"},
+    {"name": "RESULTS_NOTE.md", "role": "accepted result narrative and interpretation", "path": null, "sha256": null},
+    {"name": "decision.json", "role": "frozen primary decision and secondary classifications", "path": "postproduction-stage/attempt1/analysis/decision.json", "sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0"},
+    {"name": "estimates_22.json", "role": "22 saved estimate records", "path": "postproduction-stage/attempt1/analysis/estimates_22.json", "sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0"},
+    {"name": "diagnostics_descriptive.json", "role": "descriptive diagnostics", "path": null, "sha256": "51554620a5e302416edf8de8a073c6962abbc2c8967da80b91b83e4c3d5b685c"},
+    {"name": "production_replay_receipt.json", "role": "separately implemented internal C++ replay receipt", "path": null, "sha256": "9b40322d0d09b90f0a6862533c1efdc7aff21bd699a882b9b9555c5f7c4b4857", "sha256_note": "confirmed equal to authenticated_outputs.independent_replay_receipt_sha256 by the v1 statistics check (sha_check_enforced true)"},
+    {"name": "production_records_receipt.json", "role": "separately implemented internal Python record-verification receipt", "path": null, "sha256": "afd96dc0a5b190401c035fc66c8af8fd4d4603e7185d05bff73fb05e698cff5a", "sha256_note": "confirmed equal to authenticated_outputs.independent_record_receipt_sha256 by the v1 statistics check (sha_check_enforced true)"},
+    {"name": "LITERATURE_NOVELTY_REVIEW.md", "role": "bounded literature boundary and novelty decision", "path": null, "sha256": null},
+    {"name": "selected_references_csl.json", "role": "Crossref metadata for references 1-5 and 7-16", "path": null, "sha256": null},
+    {"name": "build_pdfs.py (supplied)", "role": "rendering style template for scripts/build_pdfs.py", "path": null, "sha256": null}
+  ],
+  "patch_inputs_claude_019": [
+    {"name": "manuscript_claim_repro_audit.md", "role": "CLAUDE-018 claim and reproducibility audit (blocking and major findings applied)"},
+    {"name": "MANUSCRIPT_V1_VISUAL_QA.json", "role": "supervisor visual QA of v1 figures and PDFs"},
+    {"name": "REFERENCE_METADATA_CORRECTIONS.md", "role": "supervisor reference-metadata corrections (Grabowski et al. 2010; Leadbeater and Watrobska)"},
+    {"name": "PROSPECTIVE_TIMING_BINDINGS.json", "role": "design, terminal GO review, production authority, submission and acceptance hashes and times"},
+    {"name": "STATISTICS_CHECK.json", "role": "v1 statistics-check report (PASS, 864 checks, input SHA-256 values)"}
+  ],
+  "created_files": [
+    "README.md",
+    "paper/MANUSCRIPT.md",
+    "paper/SUPPLEMENT.md",
+    "scripts/build_pdfs.py",
+    "scripts/make_figures.py",
+    "scripts/check_statistics.py",
+    "provenance/CLAIM_EVIDENCE.json",
+    "provenance/QUOTED_STATISTICS.json",
+    "provenance/FIGURE_BINDINGS.json",
+    "provenance/SOURCE_PLAN.json",
+    "docs/AI_ASSISTANCE.md",
+    "docs/DATA_AVAILABILITY.md",
+    "CONSTRUCTION_NOT_RUN.json"
+  ],
+  "historical_records": {"CONSTRUCTION_NOT_RUN.json": "CLAUDE-017 construction record; preserved byte-for-byte and not updated by later patches."},
+  "rebuild_commands": [
+    "python scripts/make_figures.py --estimates <estimates_22.json> --decision <decision.json> --output-dir _build/figures",
+    "python scripts/check_statistics.py --estimates <estimates_22.json> --decision <decision.json> --diagnostics <diagnostics_descriptive.json> --accepted <PHASE2_STUDY_001_ACCEPTED.json> --replay-receipt <production_replay_receipt.json> --records-receipt <production_records_receipt.json> --draft-root . --report _build/STATISTICS_CHECK.json",
+    "python scripts/build_pdfs.py --figures-dir _build/figures --output-dir _build/paper"
+  ],
+  "requirements": {"make_figures.py": "Python 3 standard library + matplotlib", "check_statistics.py": "Python 3 standard library only", "build_pdfs.py": "Python 3 + reportlab (bundled Vera fonts)", "version_pinning": "matplotlib and reportlab versions used for the release build are to be recorded in the supervisor's build receipt"},
+  "page_targets": {"manuscript": "8-12 rendered A4 pages", "supplement": "5-8 rendered A4 pages", "v1_measured": {"manuscript": 14, "supplement": 9}, "note": "Page count alone is not a reason to compress scientifically useful content."},
+  "public_release_closure": {
+    "repository": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use",
+    "release": "v1.0.0",
+    "build": "Figures, PDFs and the saved-statistic check were regenerated from authenticated inputs and visually verified before release.",
+    "archival_record": "The version DOI is linked from the repository release when public."
+  },
+  "unsupported_statements_omitted": "No acknowledgments, funding statement, competing-interests declaration or institutional-clearance claim was supplied or verified, so none was invented for the preprint."
+}

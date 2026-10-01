@@ -1,0 +1,10 @@
+{
+  "deduplicated_candidates": 786,
+  "queries": 7,
+  "records": 838,
+  "services": [
+    "OpenAlex",
+    "Europe PMC"
+  ],
+  "title_screen_candidates_score_ge_3": 202
+}
