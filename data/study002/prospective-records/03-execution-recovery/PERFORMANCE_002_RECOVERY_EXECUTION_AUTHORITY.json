@@ -1,0 +1,66 @@
+{
+  "accepted_recovery_runner": {
+    "bytes": 32161,
+    "construction_authority_sha256": "a8da8ab3c51162867696f3a814e08f51095ab420fdffe4aefa9d10b489e2c60f",
+    "path": "production-runner-performance002-v2/run_production_stage.sh",
+    "sha256": "52ceff5a4cdd10947e4cc0dd7f1d14ed50e8f4f443e13c74e73ddd88a9a9afca",
+    "source_receipt_sha256": "478e152765a5c8cd2f2928a44241f7a2045438fa35b3cff2bb674ed097211372"
+  },
+  "execution": {
+    "analysis_in_production_job_authorized": false,
+    "automatic_retry_authorized": false,
+    "command": "/bin/bash $PROJECT_ROOT/production-runner-performance002-v2/run_production_stage.sh",
+    "further_retry_authorized": false,
+    "output_root": "$PROJECT_ROOT/production-stage/performance002_attempt2",
+    "parameter_changes_authorized": false,
+    "pilot_authorized": false,
+    "recovery_jobs_authorized": 1
+  },
+  "independent_review": {
+    "path": "results/qwen_018/recovery_review.md",
+    "receipt_sha256": "76499dfd462ce8bd01fa6dded8105217518499a080f9097a82f3fb8a32456516",
+    "sha256": "aa9d1528d95b0bf653f982c0565d15b9575c6d68adb54e477fb68521e1d9d6ff",
+    "verdict": "RECOVERY_GO",
+    "worker": "QWEN-018"
+  },
+  "issued_at_utc": "2026-10-02T06:32:55.514310+00:00",
+  "preserved_attempt1_failure": {
+    "job_id": "53552434",
+    "path": "PERFORMANCE_002_PRODUCTION_ATTEMPT1_FAILURE.json",
+    "production_output_dir_present": false,
+    "runner_receipt_sha256": "c78c5361d4f6c0ba76cc850b7cb7e48476da11b2af2c272d6b7d7c5d2cc3b98d",
+    "scientific_outcomes_observed": false,
+    "sha256": "289bf3188286476698136d499c12eb3a8c9e4e6fc5cde18fcb15718395f4afaa"
+  },
+  "prospective_recovery_addendum": {
+    "path": "design/PHASE2-PERFORMANCE-CONVERSION-002-EXECUTION-RECOVERY-REV1.md",
+    "sha256": "db12c0143b6ba2c0b8cd3771ad18b9afe12feb069fe2a97d15227f4fad836e83"
+  },
+  "publication_from_unreviewed_job_output_authorized": false,
+  "record": "PHASE2-PERFORMANCE-CONVERSION-002-RECOVERY-EXECUTION-AUTHORITY-1",
+  "resource_request": {
+    "cpus_per_task": 32,
+    "jobs": 1,
+    "memory": "64G",
+    "new_output_hard_ceiling_gib": 100,
+    "nodes": 1,
+    "partition": "norm",
+    "tasks": 1,
+    "wall_time": "06:00:00"
+  },
+  "scheduler_submission_authorized": true,
+  "scientific_execution_authorized": true,
+  "scientific_scope": {
+    "blocks": 41600,
+    "cells_per_block": 6,
+    "law": "HALF only",
+    "namespace": "PHASE2-PERFORMANCE-CONVERSION-002|production-r1|<purpose>",
+    "objective_queries": 8178892800,
+    "paths": 249600,
+    "saved_estimates": 19,
+    "unchanged_from": "PHASE2-PERFORMANCE-CONVERSION-002 revision 1"
+  },
+  "status": "ONE_RECOVERY_SCIENTIFIC_PRODUCTION_AUTHORIZED",
+  "study_id": "PHASE2-PERFORMANCE-CONVERSION-002",
+  "user_authorization": "All remaining research and compute actions authorized on 2026-10-01; this authority is a bounded supervisor decision after independent review."
+}

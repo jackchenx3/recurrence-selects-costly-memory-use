@@ -1,35 +1,25 @@
 {
-  "record": "PHASE2-MUTABLE-MEMORY-001-PUBLIC-EXPORT-TRANSFORMATIONS",
+  "record": "PHASE2-PUBLIC-PACKAGE-V1-1-0-EXPORT-TRANSFORMATIONS",
   "status": "PASS",
+  "version": "1.1.0",
   "transformations": [
-    {
-      "path": "figures/FIGURE_DATA.json",
-      "source_sha256": "abf2f0a80b6d826dd5789fde54c73cdab66d56f98df3d8623a08da4126f229df",
-      "public_sha256": "643f07bf6be1e476e8a838b625060e3d07c359f24ccec475614d03e2588580ce",
-      "change": "normalized administrative path fields: inputs.decision.path, inputs.estimates.path",
-      "scientific_values_changed": false
-    },
-    {
-      "path": "scripts/check_statistics.py",
-      "source_sha256": "582890d630370045cf06b7920006610923fada4301fb6dfad8eeafb64c162a6c",
-      "public_sha256": "d2e1f1fa2b5e91a855ae457e3aedfd88287e9b348aa989c1a4fcf886abe1d568",
-      "change": "added an optional public-export hash adapter; arithmetic and decision checks are unchanged",
-      "scientific_values_changed": false
-    },
     {
       "path": "code/auditor/README.md",
       "source_sha256": "309aef916f4ac11964773326870990435e04983d08614cc8507a839f1248930d",
       "public_sha256": "8d91bcb4f4eaa84219a47aa3eec2b38a77cb01ebcf18310d7f05094d3594569c",
       "change": "normalized administrative path text",
-      "scientific_values_changed": false
+      "scientific_values_changed": false,
+      "study": "study001",
+      "carried_forward_from": "v1.0.0"
     },
     {
-      "path": "data/audit/production_replay_receipt.json",
-      "logical_input_key": "replay_receipt",
-      "source_sha256": "9b40322d0d09b90f0a6862533c1efdc7aff21bd699a882b9b9555c5f7c4b4857",
-      "public_sha256": "18fe275319d957a4fb6449b42060a3747c035901663eaf7e8b065c2c1a4a19cb",
-      "change": "replaced private absolute input paths by their existing relative labels",
-      "scientific_values_changed": false
+      "path": "data/acceptance/PRODUCTION_INVENTORY_AUDIT.json",
+      "source_sha256": "622fa9e01a40c44ba545926e54b06e102d20b7fcf9e9c8e645ddaf9f7212e09c",
+      "public_sha256": "dfbb88d79b21bbf9d15e996fd116a5c340d87a17290a134e6ce8553c5d1ad9d6",
+      "change": "normalized administrative path fields: attempt_root",
+      "scientific_values_changed": false,
+      "study": "study001",
+      "carried_forward_from": "v1.0.0"
     },
     {
       "path": "data/audit/production_records_receipt.json",
@@ -37,31 +27,892 @@
       "source_sha256": "afd96dc0a5b190401c035fc66c8af8fd4d4603e7185d05bff73fb05e698cff5a",
       "public_sha256": "a7412538efa4965b834691e3f550c3cba86154a21fbf9444c5e91f7d34b38e4f",
       "change": "replaced private absolute input paths by their existing relative labels",
-      "scientific_values_changed": false
+      "scientific_values_changed": false,
+      "study": "study001",
+      "carried_forward_from": "v1.0.0"
     },
     {
-      "path": "data/acceptance/PRODUCTION_INVENTORY_AUDIT.json",
-      "source_sha256": "622fa9e01a40c44ba545926e54b06e102d20b7fcf9e9c8e645ddaf9f7212e09c",
-      "public_sha256": "dfbb88d79b21bbf9d15e996fd116a5c340d87a17290a134e6ce8553c5d1ad9d6",
-      "change": "normalized administrative path fields: attempt_root",
-      "scientific_values_changed": false
-    },
-    {
-      "path": "data/compact-production/run_manifest.json",
-      "source_sha256": "3aa50dc2b9c740341c21d996d1356e55319144a58803d1878b13ab762795d9a6",
-      "public_sha256": "7b55e11b393b8ba88c58e859b640172b17cfcb918cbbf6ef8458de2aa5aa877e",
-      "change": "normalized administrative path fields: config_path",
-      "scientific_values_changed": false
+      "path": "data/audit/production_replay_receipt.json",
+      "logical_input_key": "replay_receipt",
+      "source_sha256": "9b40322d0d09b90f0a6862533c1efdc7aff21bd699a882b9b9555c5f7c4b4857",
+      "public_sha256": "18fe275319d957a4fb6449b42060a3747c035901663eaf7e8b065c2c1a4a19cb",
+      "change": "replaced private absolute input paths by their existing relative labels",
+      "scientific_values_changed": false,
+      "study": "study001",
+      "carried_forward_from": "v1.0.0"
     },
     {
       "path": "data/compact-production/ANALYSIS_LOCK.json",
       "source_sha256": "b8eaf1ace3ca7c39726a1e98936d18762adc1ca14edd04637518509c19a1a68c",
       "public_sha256": "c16efeb65bd0e6e90bdf2476ab1c52bdd0d7c304e05ead6025dca6259147e8cf",
       "change": "normalized administrative path fields: out",
+      "scientific_values_changed": false,
+      "study": "study001",
+      "carried_forward_from": "v1.0.0"
+    },
+    {
+      "path": "data/compact-production/run_manifest.json",
+      "source_sha256": "3aa50dc2b9c740341c21d996d1356e55319144a58803d1878b13ab762795d9a6",
+      "public_sha256": "7b55e11b393b8ba88c58e859b640172b17cfcb918cbbf6ef8458de2aa5aa877e",
+      "change": "normalized administrative path fields: config_path",
+      "scientific_values_changed": false,
+      "study": "study001",
+      "carried_forward_from": "v1.0.0"
+    },
+    {
+      "path": "data/study002/audit/production_records_receipt.json",
+      "logical_input_key": "s2_records_receipt",
+      "study": "study002",
+      "source_sha256": "09f5dccf4921c8d842ef60fb31aca712bbb582e87a2011c76c02efb658539197",
+      "public_sha256": "3a8fd5626899e10503525563ed5a4024a772b0812a8fcca0ac8507ddd78188a4",
+      "change": "normalized administrative absolute path text only; listed replacements are exhaustive",
+      "replacements": [
+        {
+          "line": 37,
+          "original_value_sha256": "9d92809a4bdd83690bf2cc4f75797f2829ab29cf0c68e2d0f139b1bebb3c07eb",
+          "replacement": "data/study002/compact-production/shards/shard_00/updates.bin"
+        },
+        {
+          "line": 44,
+          "original_value_sha256": "47391bccc094537a1278c23e2b83a8742faa34c6dd2a29eeec1bf3999ac93e6d",
+          "replacement": "data/study002/compact-production/shards/shard_00/paths.bin"
+        },
+        {
+          "line": 51,
+          "original_value_sha256": "99e1e0c47236d31c758dc992d8888a53149519340a30a0d3ff09b6b580c3d061",
+          "replacement": "data/study002/compact-production/shards/shard_00/blocks.bin"
+        },
+        {
+          "line": 58,
+          "original_value_sha256": "352c813faf2fbcf45aa4b0c7f37df1eb94089282590b72c5113696896bd8b8ed",
+          "replacement": "data/study002/compact-production/shards/shard_00/audit_rows_blocks_0000_0063.bin"
+        },
+        {
+          "line": 65,
+          "original_value_sha256": "adc74f7b7374a1ed281631c4525d49261a3c9a6ba560bdf6c9209c65ce6e6764",
+          "replacement": "data/study002/compact-production/shards/shard_00/audit_permutations_blocks_0000_0063.bin"
+        },
+        {
+          "line": 72,
+          "original_value_sha256": "31b83a59709b832d12215b156c7d50531cb49450810ebdeec861bd2384c5d409",
+          "replacement": "data/study002/compact-production/shards/shard_01/updates.bin"
+        },
+        {
+          "line": 79,
+          "original_value_sha256": "a2ba5b6579554e4839d92ecaa598dbdb88918126727a9f6a0808b4d3563282f3",
+          "replacement": "data/study002/compact-production/shards/shard_01/paths.bin"
+        },
+        {
+          "line": 86,
+          "original_value_sha256": "673a2d7b6a69cae7ba13495b23e4af757e0db11820b6677c46461caf91cbdffb",
+          "replacement": "data/study002/compact-production/shards/shard_01/blocks.bin"
+        },
+        {
+          "line": 93,
+          "original_value_sha256": "0a8d6aba5c565987e7962524e79a9e4515442722ea2f0cb8896a6691f8a1de8f",
+          "replacement": "data/study002/compact-production/shards/shard_02/updates.bin"
+        },
+        {
+          "line": 100,
+          "original_value_sha256": "a292bb9d586b1ef4cf46cdeae569b7a3987fa7a7059a3dff1fc0d808aae54d0a",
+          "replacement": "data/study002/compact-production/shards/shard_02/paths.bin"
+        },
+        {
+          "line": 107,
+          "original_value_sha256": "7bc9285cf4350fced23c0d6583930f0bc3e2e39fa4c518e1e0f4e153e9215df6",
+          "replacement": "data/study002/compact-production/shards/shard_02/blocks.bin"
+        },
+        {
+          "line": 114,
+          "original_value_sha256": "96a5a8bf4167f735ea5de610607423c6cd572d02849db04b33b770905f7a44de",
+          "replacement": "data/study002/compact-production/shards/shard_03/updates.bin"
+        },
+        {
+          "line": 121,
+          "original_value_sha256": "e8db861a3ade0ed5b6234c78f859bf3d88de8c079ca80168c29a2ed31a169dcb",
+          "replacement": "data/study002/compact-production/shards/shard_03/paths.bin"
+        },
+        {
+          "line": 128,
+          "original_value_sha256": "7940a43a7044e036c314f4f2a1f8ab0a4f89ac00c1a481d5e2e18f6b3ba34b61",
+          "replacement": "data/study002/compact-production/shards/shard_03/blocks.bin"
+        },
+        {
+          "line": 135,
+          "original_value_sha256": "bd5afb8da74c5c794e06c1f94e6f75a69bd51148b1b01900be1c80a5684bedbe",
+          "replacement": "data/study002/compact-production/shards/shard_04/updates.bin"
+        },
+        {
+          "line": 142,
+          "original_value_sha256": "f8d7c16167b3564b99b4d1f42cad296518d6e5231d826efc2f4474656a0b5f62",
+          "replacement": "data/study002/compact-production/shards/shard_04/paths.bin"
+        },
+        {
+          "line": 149,
+          "original_value_sha256": "65b6d5946f8066df8b642be1adbaaec5e0146bd11e910c432515e84f73b4a2e4",
+          "replacement": "data/study002/compact-production/shards/shard_04/blocks.bin"
+        },
+        {
+          "line": 156,
+          "original_value_sha256": "dfb9c41adad66f72c0475db6c4630f262b832ff86506e7ddad8c2a689434597b",
+          "replacement": "data/study002/compact-production/shards/shard_05/updates.bin"
+        },
+        {
+          "line": 163,
+          "original_value_sha256": "382a9cb29b0d9621fb83b0f4f113bb357d11224afb488d9a1c1ed3160ed89aca",
+          "replacement": "data/study002/compact-production/shards/shard_05/paths.bin"
+        },
+        {
+          "line": 170,
+          "original_value_sha256": "f0bd9716dd2daa5d4385c9533a614e10ba00e01d0e0ed0af9af527fb24e7a0c7",
+          "replacement": "data/study002/compact-production/shards/shard_05/blocks.bin"
+        },
+        {
+          "line": 177,
+          "original_value_sha256": "4483476ca5ee2019270e4ad8c5dfc7fb32705a8d76e8ec0c825ac79adf83a705",
+          "replacement": "data/study002/compact-production/shards/shard_06/updates.bin"
+        },
+        {
+          "line": 184,
+          "original_value_sha256": "61e752d571389efc6cd117969dc927cf09503c4cc442da1084d93656ab8b6641",
+          "replacement": "data/study002/compact-production/shards/shard_06/paths.bin"
+        },
+        {
+          "line": 191,
+          "original_value_sha256": "1d45dee31b5359c6859e7ca2652169f1fa56e2a968482e64fe213245445855ab",
+          "replacement": "data/study002/compact-production/shards/shard_06/blocks.bin"
+        },
+        {
+          "line": 198,
+          "original_value_sha256": "1782dd916214c624bf084c3bd6951d4851fe7c62cd0a44cfe460eb12850f5e97",
+          "replacement": "data/study002/compact-production/shards/shard_07/updates.bin"
+        },
+        {
+          "line": 205,
+          "original_value_sha256": "45415febc19408e0c676bfacdc92f814db97d9006f5836da6b05ca9c910cbfe7",
+          "replacement": "data/study002/compact-production/shards/shard_07/paths.bin"
+        },
+        {
+          "line": 212,
+          "original_value_sha256": "610af30b65d3c2780f94b9d6b1e7af6156c9eb85dae501f72596c41ed6a22646",
+          "replacement": "data/study002/compact-production/shards/shard_07/blocks.bin"
+        },
+        {
+          "line": 219,
+          "original_value_sha256": "6f53539ae9cb2d883484813b6dc60055fa482dc15ef72d7a190924951ef79764",
+          "replacement": "data/study002/compact-production/shards/shard_08/updates.bin"
+        },
+        {
+          "line": 226,
+          "original_value_sha256": "068dda7bfc9cf3005c9b28461b5ceb63648135c1602952d2c171fd8a4d4c6856",
+          "replacement": "data/study002/compact-production/shards/shard_08/paths.bin"
+        },
+        {
+          "line": 233,
+          "original_value_sha256": "886346a06755c0dcfa0fd42c25b913c4f6cccfb57b5485217d59a7417c7bce23",
+          "replacement": "data/study002/compact-production/shards/shard_08/blocks.bin"
+        },
+        {
+          "line": 240,
+          "original_value_sha256": "fd14410041cbf835110d78b2d6509afa4951ab5f5f05b80ef95148e0b4334950",
+          "replacement": "data/study002/compact-production/shards/shard_09/updates.bin"
+        },
+        {
+          "line": 247,
+          "original_value_sha256": "7edabc92f96a6b17f7948e9a2d2edc5711dffb5771167828eb75f414ab4e979b",
+          "replacement": "data/study002/compact-production/shards/shard_09/paths.bin"
+        },
+        {
+          "line": 254,
+          "original_value_sha256": "502f19396239685a5a2f177952132ea12b54a6d78ab698640a3d28a41dd1c14d",
+          "replacement": "data/study002/compact-production/shards/shard_09/blocks.bin"
+        },
+        {
+          "line": 261,
+          "original_value_sha256": "bcaab1e2eb10f44e6c7a634ce29a155fc854225487ac990fbc30457bbb9fc02f",
+          "replacement": "data/study002/compact-production/shards/shard_10/updates.bin"
+        },
+        {
+          "line": 268,
+          "original_value_sha256": "9bb8bc30fe37254f93a8c5e2106a10e3fa69ed1ddbfc6970e3c1220aa73812e8",
+          "replacement": "data/study002/compact-production/shards/shard_10/paths.bin"
+        },
+        {
+          "line": 275,
+          "original_value_sha256": "4b10b522a10c8713ccaea4c1f397f59cb4c7bf0abafcbf772b486754a6847001",
+          "replacement": "data/study002/compact-production/shards/shard_10/blocks.bin"
+        },
+        {
+          "line": 282,
+          "original_value_sha256": "2367b46b0af10376efc3f8fb05a2762cc120e50d362c5bc16d17a503db26d868",
+          "replacement": "data/study002/compact-production/shards/shard_11/updates.bin"
+        },
+        {
+          "line": 289,
+          "original_value_sha256": "96ceaa34619b3449633114d733886b27d001f2eb145ad8bf015035194c924546",
+          "replacement": "data/study002/compact-production/shards/shard_11/paths.bin"
+        },
+        {
+          "line": 296,
+          "original_value_sha256": "4194509f061a34e6f2d52ba848cf65e8101795164dabb02c0c9b942b7a47035e",
+          "replacement": "data/study002/compact-production/shards/shard_11/blocks.bin"
+        },
+        {
+          "line": 303,
+          "original_value_sha256": "90eb0631a3a3bda26e97d9dd19043d4942dc499d62706b5beb268649905f7520",
+          "replacement": "data/study002/compact-production/shards/shard_12/updates.bin"
+        },
+        {
+          "line": 310,
+          "original_value_sha256": "2245bd9fed3bcbf23dad405243daf0bc609d31c4a3c937de91a56965b8b429cf",
+          "replacement": "data/study002/compact-production/shards/shard_12/paths.bin"
+        },
+        {
+          "line": 317,
+          "original_value_sha256": "6eba77794789c7efb0a95baaa2a24336fece0e509fb07b33200d9126fb854a14",
+          "replacement": "data/study002/compact-production/shards/shard_12/blocks.bin"
+        },
+        {
+          "line": 324,
+          "original_value_sha256": "50f8d1af303fe93a34feee2738e5033a7c23a338210aa1106da9feaf9c7a60f3",
+          "replacement": "data/study002/compact-production/shards/shard_13/updates.bin"
+        },
+        {
+          "line": 331,
+          "original_value_sha256": "b891df07e535c63b371b8fa33f4592a2c4af5af6166e26a68e3a4cebb3cc7d3b",
+          "replacement": "data/study002/compact-production/shards/shard_13/paths.bin"
+        },
+        {
+          "line": 338,
+          "original_value_sha256": "67f8fb95a4a632f703f214ef5265fcc3ad76e355f9157fd9bed7c5f13681a252",
+          "replacement": "data/study002/compact-production/shards/shard_13/blocks.bin"
+        },
+        {
+          "line": 345,
+          "original_value_sha256": "ede6f7c9841671da6c1b90082ae16694b53860ee7e9761287041507f4e1c995b",
+          "replacement": "data/study002/compact-production/shards/shard_14/updates.bin"
+        },
+        {
+          "line": 352,
+          "original_value_sha256": "c80c56733dfc438aad7a633d9c0dbcae8fe119bcca34b86ad7cec20a660ac259",
+          "replacement": "data/study002/compact-production/shards/shard_14/paths.bin"
+        },
+        {
+          "line": 359,
+          "original_value_sha256": "350d8b19adfb0ce0d3ed61095d38dee86b85b2f385bdf0334b2db5d8251786fc",
+          "replacement": "data/study002/compact-production/shards/shard_14/blocks.bin"
+        },
+        {
+          "line": 366,
+          "original_value_sha256": "b233ab787636c600ee6937845bf8d3b2027a26c63abfcf91f07d02c9ff1935e4",
+          "replacement": "data/study002/compact-production/shards/shard_15/updates.bin"
+        },
+        {
+          "line": 373,
+          "original_value_sha256": "7e45b911bbf2ee14a70b1e59073e628f93df72e1ddb025b9a7ef7177b23a0349",
+          "replacement": "data/study002/compact-production/shards/shard_15/paths.bin"
+        },
+        {
+          "line": 380,
+          "original_value_sha256": "447a6cd7298a5b1e63937ba4025dece6345830b1e0ebc35ddfe640d3fed56724",
+          "replacement": "data/study002/compact-production/shards/shard_15/blocks.bin"
+        },
+        {
+          "line": 387,
+          "original_value_sha256": "77c63ec56085564e2c10839e569d2231e41ac27c3189feac4b9c6a8be0193cb9",
+          "replacement": "data/study002/compact-production/shards/shard_16/updates.bin"
+        },
+        {
+          "line": 394,
+          "original_value_sha256": "e986e29af1953f698d685d8095fd8020bc9cc59d202301b4f893cbde2fb05960",
+          "replacement": "data/study002/compact-production/shards/shard_16/paths.bin"
+        },
+        {
+          "line": 401,
+          "original_value_sha256": "cfdf172aeea28702627f9afcad68925d2c29a3ca4a0cafaa46cbe8010df40f60",
+          "replacement": "data/study002/compact-production/shards/shard_16/blocks.bin"
+        },
+        {
+          "line": 408,
+          "original_value_sha256": "cae10ce548b3b8d259ada198377a3e9d1fc1f4d3218dad9e02be27aaeb414c24",
+          "replacement": "data/study002/compact-production/shards/shard_17/updates.bin"
+        },
+        {
+          "line": 415,
+          "original_value_sha256": "9ce6ee3d84d5ae257ad06b8de611f331300e85624d9df917c3fe698bd2c98d6c",
+          "replacement": "data/study002/compact-production/shards/shard_17/paths.bin"
+        },
+        {
+          "line": 422,
+          "original_value_sha256": "6903c914ad712af7ad3f342baf4297839e3cf58f7edfe0c5570131b121577c2e",
+          "replacement": "data/study002/compact-production/shards/shard_17/blocks.bin"
+        },
+        {
+          "line": 429,
+          "original_value_sha256": "700d15bacd040adb4151cb4beb11be695c12e835abd79182a29f60a1bccc05f3",
+          "replacement": "data/study002/compact-production/shards/shard_18/updates.bin"
+        },
+        {
+          "line": 436,
+          "original_value_sha256": "2ea852839287ddc89c2cb0d0c214ba3bb6a481618a86134f269074c83eb66b80",
+          "replacement": "data/study002/compact-production/shards/shard_18/paths.bin"
+        },
+        {
+          "line": 443,
+          "original_value_sha256": "c917ab33389c95d8f7e7fafd9f5e009deda78e46c5c5e85d830198dc33d61831",
+          "replacement": "data/study002/compact-production/shards/shard_18/blocks.bin"
+        },
+        {
+          "line": 450,
+          "original_value_sha256": "92b97560bf4f58a274ab67d0dec56d742df8fe4be8f7124adcc17bb3bbee69bb",
+          "replacement": "data/study002/compact-production/shards/shard_19/updates.bin"
+        },
+        {
+          "line": 457,
+          "original_value_sha256": "2fce6be69b22d5cce022455b6d57d13c0e9dd671e8bab40433878736c57b60a2",
+          "replacement": "data/study002/compact-production/shards/shard_19/paths.bin"
+        },
+        {
+          "line": 464,
+          "original_value_sha256": "f65a20e65ba7d4797ab6f611f75a3b54d8fafd7b65413144c3e928b17324675f",
+          "replacement": "data/study002/compact-production/shards/shard_19/blocks.bin"
+        },
+        {
+          "line": 471,
+          "original_value_sha256": "69014a47401cd37d27840adba0d1d1a8d2c7c34f52eee5249e2e5ee8530cf4bb",
+          "replacement": "data/study002/compact-production/shards/shard_20/updates.bin"
+        },
+        {
+          "line": 478,
+          "original_value_sha256": "2b6df167d8d8daaa2808b8556a3cfd6c6c9e5ea9168f1bc34177b13543d40bb3",
+          "replacement": "data/study002/compact-production/shards/shard_20/paths.bin"
+        },
+        {
+          "line": 485,
+          "original_value_sha256": "b815ca3c3d97d3c630d916a5910b094618480f314b92967fe077bcc60043eac0",
+          "replacement": "data/study002/compact-production/shards/shard_20/blocks.bin"
+        },
+        {
+          "line": 492,
+          "original_value_sha256": "49fff530ccb9db1790e5028e84d79c8b28ee6e0d6570f27d7a9d4cc5b70b31ee",
+          "replacement": "data/study002/compact-production/shards/shard_21/updates.bin"
+        },
+        {
+          "line": 499,
+          "original_value_sha256": "03f51665b4b01f4405ef6bf3ec97dc61b07775d2064c9899e915dc6e20c11314",
+          "replacement": "data/study002/compact-production/shards/shard_21/paths.bin"
+        },
+        {
+          "line": 506,
+          "original_value_sha256": "6435d665aedcaa702a715aef6e98e634dab7b1fd1db35c3c55a0113937fcf174",
+          "replacement": "data/study002/compact-production/shards/shard_21/blocks.bin"
+        },
+        {
+          "line": 513,
+          "original_value_sha256": "4361c46db409634887e1a431a515db37c9adf52f367840c752d30c0562b29d6c",
+          "replacement": "data/study002/compact-production/shards/shard_22/updates.bin"
+        },
+        {
+          "line": 520,
+          "original_value_sha256": "ab8ca733705573f47245739644ade5250e9f91ee4af80f13aa90d265372a7af6",
+          "replacement": "data/study002/compact-production/shards/shard_22/paths.bin"
+        },
+        {
+          "line": 527,
+          "original_value_sha256": "a882a412eab2342ab524035be99ada8935dc599ff3b933d03e70c5236263f5ac",
+          "replacement": "data/study002/compact-production/shards/shard_22/blocks.bin"
+        },
+        {
+          "line": 534,
+          "original_value_sha256": "74a0ccaf7a22e1888160af9382f31200448f3d26a4cdddc988bf961ab11cb508",
+          "replacement": "data/study002/compact-production/shards/shard_23/updates.bin"
+        },
+        {
+          "line": 541,
+          "original_value_sha256": "a7f4ed4f82939115475b9c18cb94902d4709b638a01f310da00dd95680c799d2",
+          "replacement": "data/study002/compact-production/shards/shard_23/paths.bin"
+        },
+        {
+          "line": 548,
+          "original_value_sha256": "7acd6a11064b40c83f205f4f7242f4fc3b8a44afbfae1dc2841e5e05c7b6a5aa",
+          "replacement": "data/study002/compact-production/shards/shard_23/blocks.bin"
+        },
+        {
+          "line": 555,
+          "original_value_sha256": "5dd9fe22e0b5ae9eb1240816ede5426953537816690cd02167d1ebdf035693a2",
+          "replacement": "data/study002/compact-production/shards/shard_24/updates.bin"
+        },
+        {
+          "line": 562,
+          "original_value_sha256": "3313b497210a8bb856ec5d219f5b431172596fb53aff4938fc9bbc172a762289",
+          "replacement": "data/study002/compact-production/shards/shard_24/paths.bin"
+        },
+        {
+          "line": 569,
+          "original_value_sha256": "330c08f7effceafb8f9525260925073f0543a8eef25ed3c7440cdf0c23f6c40a",
+          "replacement": "data/study002/compact-production/shards/shard_24/blocks.bin"
+        },
+        {
+          "line": 576,
+          "original_value_sha256": "00e391a0edd3e2bdc7dcb0b7cbef74584d39f4e3be0f8ddc04ca035c696f8ffc",
+          "replacement": "data/study002/compact-production/shards/shard_25/updates.bin"
+        },
+        {
+          "line": 583,
+          "original_value_sha256": "155d70462b3c0c1e5a82c32ebae0010fb58f18cda9e22289ae0a712c8195d9d3",
+          "replacement": "data/study002/compact-production/shards/shard_25/paths.bin"
+        },
+        {
+          "line": 590,
+          "original_value_sha256": "103dc4887383725c8e9d7e5d2a67473d83d7588626598cddd23267f6d4e9c913",
+          "replacement": "data/study002/compact-production/shards/shard_25/blocks.bin"
+        },
+        {
+          "line": 597,
+          "original_value_sha256": "b976413aeb57d3b0cd03c2923dfa1019c812fab17167ffb237855781f75136cb",
+          "replacement": "data/study002/compact-production/shards/shard_26/updates.bin"
+        },
+        {
+          "line": 604,
+          "original_value_sha256": "9514a4c50813f09ba290d7d29f73bf99b47a95be55dd243126e59f28795cd8cb",
+          "replacement": "data/study002/compact-production/shards/shard_26/paths.bin"
+        },
+        {
+          "line": 611,
+          "original_value_sha256": "6de460f3d8e7674b66e8bb3aa2aa8b358e040d4d26f60837cc520824ef92d261",
+          "replacement": "data/study002/compact-production/shards/shard_26/blocks.bin"
+        },
+        {
+          "line": 618,
+          "original_value_sha256": "661105cf71a885fc66c0647cecf99f78c0dd2980166650c232a5c69fa55f735d",
+          "replacement": "data/study002/compact-production/shards/shard_27/updates.bin"
+        },
+        {
+          "line": 625,
+          "original_value_sha256": "b5344003342b1e50062b39747c0d4ba52a7259b170d7424bedfe3c74e7bb2d4d",
+          "replacement": "data/study002/compact-production/shards/shard_27/paths.bin"
+        },
+        {
+          "line": 632,
+          "original_value_sha256": "63d6980b84b5bd41ab3c123c4763c77b1ac53d347effd49b9f7eb0994c6784b1",
+          "replacement": "data/study002/compact-production/shards/shard_27/blocks.bin"
+        },
+        {
+          "line": 639,
+          "original_value_sha256": "bde2715d0d2ea3d4de56de3a4a34e26cf99c2cc47a505b2780be79008b832166",
+          "replacement": "data/study002/compact-production/shards/shard_28/updates.bin"
+        },
+        {
+          "line": 646,
+          "original_value_sha256": "6f7c977406942b7f912187aa82c30fb92988d69d6d7d32b4b5ce7dbb8ce2f799",
+          "replacement": "data/study002/compact-production/shards/shard_28/paths.bin"
+        },
+        {
+          "line": 653,
+          "original_value_sha256": "13896b5ed7db1576ce96b96e8d604647f7ddcea03b58ddcd8600c723f7cfc5ff",
+          "replacement": "data/study002/compact-production/shards/shard_28/blocks.bin"
+        },
+        {
+          "line": 660,
+          "original_value_sha256": "e1aff9619b9f74884486d90f406533ac6f7e94113a2009a26ebbf3aa51b0ca67",
+          "replacement": "data/study002/compact-production/shards/shard_29/updates.bin"
+        },
+        {
+          "line": 667,
+          "original_value_sha256": "ba464c38ad84e9abaa707fa72b83b4d280874fe6087e8c7f0022d9677618460b",
+          "replacement": "data/study002/compact-production/shards/shard_29/paths.bin"
+        },
+        {
+          "line": 674,
+          "original_value_sha256": "6ba75270213ab168310fe4b0a3fb56d4e3de79a6a56b318d5937f61af1cdbc37",
+          "replacement": "data/study002/compact-production/shards/shard_29/blocks.bin"
+        },
+        {
+          "line": 681,
+          "original_value_sha256": "0ce46dda5b019585a14d39e3ee5ebd7e6ab9cf44e9f98507a0dfad6500b39546",
+          "replacement": "data/study002/compact-production/shards/shard_30/updates.bin"
+        },
+        {
+          "line": 688,
+          "original_value_sha256": "75e3026e330cd841683108a82fcea78bc371c58696a0dd4e778f645718b7285b",
+          "replacement": "data/study002/compact-production/shards/shard_30/paths.bin"
+        },
+        {
+          "line": 695,
+          "original_value_sha256": "bc5b26c07dd772e75208bbc7882c7234ac4c0ce87c129885f845c3fbad5e8916",
+          "replacement": "data/study002/compact-production/shards/shard_30/blocks.bin"
+        },
+        {
+          "line": 702,
+          "original_value_sha256": "ab92737d13552aef20cc2d2f441b53504fdeeeaf8c911d9ac0fa5e851d0cce05",
+          "replacement": "data/study002/compact-production/shards/shard_31/updates.bin"
+        },
+        {
+          "line": 709,
+          "original_value_sha256": "731a51d75fa50d23c264c730b6b529fe55d56e6049a5bbd1af56e79768856146",
+          "replacement": "data/study002/compact-production/shards/shard_31/paths.bin"
+        },
+        {
+          "line": 716,
+          "original_value_sha256": "d6ca8b2967e95d37c913f736ee0066765f10f34ea4b0dbc6ab0b45a39465a1a5",
+          "replacement": "data/study002/compact-production/shards/shard_31/blocks.bin"
+        },
+        {
+          "line": 723,
+          "original_value_sha256": "46642df0365df576335182d9208aae95842af1af3e836971033467d28c1940d0",
+          "replacement": "data/study002/compact-production/run_manifest.json"
+        },
+        {
+          "line": 730,
+          "original_value_sha256": "546ee1c85d3020bb85932983813b22b501643df1238a8a101fa274504ffc9383",
+          "replacement": "data/study002/analysis/estimates_19.json"
+        },
+        {
+          "line": 737,
+          "original_value_sha256": "cb1feb7702e297d81c85bd6dfd2c4a581cb552fe15a7ac842d2b7e2f1af228e6",
+          "replacement": "data/study002/analysis/decision.json"
+        }
+      ],
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/study002/audit/production_replay_receipt.json",
+      "logical_input_key": "s2_replay_receipt",
+      "study": "study002",
+      "source_sha256": "cbee79527876745e8918576f73a5d302377e4463d959318ca2f5feffa66416d4",
+      "public_sha256": "15603f8076284d5f5d2f1e19d4eefa25010aed3c3647b5f2fe5942e46d7663b4",
+      "change": "normalized administrative absolute path text only; listed replacements are exhaustive",
+      "replacements": [
+        {
+          "line": 19,
+          "original_value_sha256": "9d92809a4bdd83690bf2cc4f75797f2829ab29cf0c68e2d0f139b1bebb3c07eb",
+          "replacement": "data/study002/compact-production/shards/shard_00/updates.bin"
+        },
+        {
+          "line": 20,
+          "original_value_sha256": "47391bccc094537a1278c23e2b83a8742faa34c6dd2a29eeec1bf3999ac93e6d",
+          "replacement": "data/study002/compact-production/shards/shard_00/paths.bin"
+        },
+        {
+          "line": 21,
+          "original_value_sha256": "99e1e0c47236d31c758dc992d8888a53149519340a30a0d3ff09b6b580c3d061",
+          "replacement": "data/study002/compact-production/shards/shard_00/blocks.bin"
+        },
+        {
+          "line": 22,
+          "original_value_sha256": "352c813faf2fbcf45aa4b0c7f37df1eb94089282590b72c5113696896bd8b8ed",
+          "replacement": "data/study002/compact-production/shards/shard_00/audit_rows_blocks_0000_0063.bin"
+        },
+        {
+          "line": 23,
+          "original_value_sha256": "adc74f7b7374a1ed281631c4525d49261a3c9a6ba560bdf6c9209c65ce6e6764",
+          "replacement": "data/study002/compact-production/shards/shard_00/audit_permutations_blocks_0000_0063.bin"
+        }
+      ],
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/study002/compact-production/ANALYSIS_LOCK.json",
+      "study": "study002",
+      "source_sha256": "7899d1d9e0a492b713a1db2bc26d9d5d069f03a1d95ef0a4300e537721cbd6c9",
+      "public_sha256": "0d480fc439560cfbfe5c6c5f0a3fde96bb8ed98e149c50b5c96d8b620c4da87b",
+      "change": "normalized administrative absolute path text only; listed replacements are exhaustive",
+      "replacements": [
+        {
+          "line": 1,
+          "original_value_sha256": "ecaf57ca93592b18a6dfe8d0ca4e14f27a1d1954f213d89ff572317e75cb3e49",
+          "replacement": "data/study002/analysis"
+        }
+      ],
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/study002/compact-production/run_manifest.json",
+      "study": "study002",
+      "source_sha256": "b7aceaf6638e8f06246c8fb9b182c280a8ed98c4444d93a4a60decdbafb80136",
+      "public_sha256": "17e15d21b10a53abd72a0de2e14501f1cc2466bbb5b53143a31a1136b3c72905",
+      "change": "normalized administrative absolute path text only; listed replacements are exhaustive",
+      "replacements": [
+        {
+          "line": 5,
+          "original_value_sha256": "70ee349ae3f3aae12cc4e01c7be3202029e707b15c8f3769482920f4b5d9b83f",
+          "replacement": "code/study002/producer/config/frozen_config.json"
+        }
+      ],
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/study002/prospective-records/02-original-attempt1-infrastructure-failure/PERFORMANCE_002_PRODUCTION_ATTEMPT1_FAILURE.json",
+      "study": "study002",
+      "source_sha256": "289bf3188286476698136d499c12eb3a8c9e4e6fc5cde18fcb15718395f4afaa",
+      "public_sha256": "51fd44e4a40a04d118a9ff71b3eb85165b8085d777b8e84396b5021069e25e9b",
+      "change": "normalized administrative absolute path text only; listed replacements are exhaustive",
+      "replacements": [
+        {
+          "line": 20,
+          "original_value_sha256": "4e556c35f2e45ef9b3cf5c4fcbbf8d87b35cc4f01f714eba3840d18c51b2e4e1",
+          "replacement": "$PROJECT_ROOT/production-stage/performance002_attempt1/commands/production.stderr"
+        },
+        {
+          "line": 27,
+          "original_value_sha256": "5e2c349346b82d7d473ef49ecb049d11068a445f00d5cd56b24ee304b664b6a8",
+          "replacement": "$PROJECT_ROOT/production-stage/performance002_attempt1/runner_receipt.json"
+        }
+      ],
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/study002/prospective-records/02-original-attempt1-infrastructure-failure/PERFORMANCE_002_PRODUCTION_EXECUTION_AUTHORITY.json",
+      "study": "study002",
+      "source_sha256": "31c2100dd73de0090ded3059525aacd139565917086d2c19880b01e319c98992",
+      "public_sha256": "4ff0702e70169afde1da7d5bb5a84b5e82660807ebc07dcf6f849b64953b3a6e",
+      "change": "normalized administrative absolute path text only; listed replacements are exhaustive",
+      "replacements": [
+        {
+          "line": 23,
+          "original_value_sha256": "4cd7fb5203d579f25c9d57900baeff4caa9a9a2ac1757a68c2fd20291cd63db9",
+          "replacement": "$PROJECT_ROOT/production-runner-performance002-v1/run_production_stage.sh"
+        },
+        {
+          "line": 24,
+          "original_value_sha256": "4e9ad5823b01f50b7f3b1a36e7219addd5b6d44f579e743bc9e9012a39d6ece1",
+          "replacement": "$PROJECT_ROOT/production-stage/performance002_attempt1"
+        }
+      ],
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/study002/prospective-records/02-original-attempt1-infrastructure-failure/PERFORMANCE_002_PRODUCTION_SUBMISSION.json",
+      "study": "study002",
+      "source_sha256": "49eb55dddd8b0a6a15fa42242f22d916e3686a2d7d4c7a180bdf1535a3a96597",
+      "public_sha256": "f0ac4375d2555979df1bf6d32f60366e000de8e3f93094f4a7c1f0d9b1f83954",
+      "change": "normalized administrative absolute path text only; listed replacements are exhaustive",
+      "replacements": [
+        {
+          "line": 3,
+          "original_value_sha256": "4cd7fb5203d579f25c9d57900baeff4caa9a9a2ac1757a68c2fd20291cd63db9",
+          "replacement": "$PROJECT_ROOT/production-runner-performance002-v1/run_production_stage.sh"
+        },
+        {
+          "line": 25,
+          "original_value_sha256": "1a3f36d9ad0159b45203f683242430f0a14ca672a4dac4c5830b3eb288d4a62a",
+          "replacement": "$PROJECT_ROOT/production-stage/scheduler/performance002_53552434.stderr"
+        },
+        {
+          "line": 26,
+          "original_value_sha256": "2d6236cc1c6b62363ed108332198bbf32f1556e50d81de16c07b0688a3b1dd0a",
+          "replacement": "$PROJECT_ROOT/production-stage/scheduler/performance002_53552434.stdout"
+        }
+      ],
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/study002/prospective-records/03-execution-recovery/PERFORMANCE_002_RECOVERY_EXECUTION_AUTHORITY.json",
+      "study": "study002",
+      "source_sha256": "c4cb2e4c162df92a761b2fff391b6e81e000055db88d7cbaeb954b0750b4e085",
+      "public_sha256": "d5af51350976736770e3ddebd308a58eb68fb7c63dc293af5b4fedd46e8de014",
+      "change": "normalized administrative absolute path text only; listed replacements are exhaustive",
+      "replacements": [
+        {
+          "line": 12,
+          "original_value_sha256": "ddb92c377b40ad1832271350cbb9bfa0df150969c8f15cd36f8162c0841cb20a",
+          "replacement": "$PROJECT_ROOT/production-runner-performance002-v2/run_production_stage.sh"
+        },
+        {
+          "line": 14,
+          "original_value_sha256": "2b7fe688a0cebc895f2771f8531b652855b9fd6433351a282f3970a393447dce",
+          "replacement": "$PROJECT_ROOT/production-stage/performance002_attempt2"
+        }
+      ],
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/study002/prospective-records/03-execution-recovery/PERFORMANCE_002_RECOVERY_SUBMISSION.json",
+      "study": "study002",
+      "source_sha256": "610b9baca9941d34fbbd8252dba9ecc0657ae0fc233bd482452275001e45c6d1",
+      "public_sha256": "cc5765635591d9e65e38c7e92707769228f59f835eb2490be8da5eee67ec1ac5",
+      "change": "normalized administrative absolute path text only; listed replacements are exhaustive",
+      "replacements": [
+        {
+          "line": 3,
+          "original_value_sha256": "ddb92c377b40ad1832271350cbb9bfa0df150969c8f15cd36f8162c0841cb20a",
+          "replacement": "$PROJECT_ROOT/production-runner-performance002-v2/run_production_stage.sh"
+        },
+        {
+          "line": 23,
+          "original_value_sha256": "7e2ad1493e6765ef39f62f84fea2533702b1a5dc2aceda635f47cffc2941567c",
+          "replacement": "$PROJECT_ROOT/production-stage/scheduler/performance002_recovery_53553084.stderr"
+        },
+        {
+          "line": 24,
+          "original_value_sha256": "bd0004c2aad087bad1feee5ebd525abe3099b8e611897635a1e1e854f53bf1fe",
+          "replacement": "$PROJECT_ROOT/production-stage/scheduler/performance002_recovery_53553084.stdout"
+        }
+      ],
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/study002/prospective-records/04-acceptance/PERFORMANCE_002_ANALYSIS_ACCEPTED.json",
+      "study": "study002",
+      "source_sha256": "f23596489d8a4cdc63d644a40c8a439fd0b40573ef18336946655018114bee49",
+      "public_sha256": "58210f7210797052807e5a9e2be22687ecd7b588974626b092a2c6c9ac86dc30",
+      "change": "normalized administrative absolute path text only; listed replacements are exhaustive",
+      "replacements": [
+        {
+          "line": 25,
+          "original_value_sha256": "c63e5c337facff313a56290a137371e13bfeb1deae02f62bc39a50ef82f85c5b",
+          "replacement": "$PROJECT_ROOT/analysis-stage/performance002_attempt1/ANALYSIS_RUNNER_RECEIPT.json"
+        }
+      ],
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/study002/prospective-records/04-acceptance/PERFORMANCE_002_PRODUCTION_ACCEPTED.json",
+      "study": "study002",
+      "source_sha256": "efbb0b0304b70817e52afdb1b9556a3ec575e8e0e860e2407ddbc1163527d670",
+      "public_sha256": "2f57e2f800ecd2dacf69735fb75e5c4ed37df11dbe741d6919829197e17688db",
+      "change": "normalized administrative absolute path text only; listed replacements are exhaustive",
+      "replacements": [
+        {
+          "line": 28,
+          "original_value_sha256": "974110bbb3b42bd49ecd049ad8d5fca7e5089f0b5d0c7822bcdb901211689515",
+          "replacement": "data/study002/compact-production/run_manifest.json"
+        },
+        {
+          "line": 33,
+          "original_value_sha256": "7f29130e9cb7126511cbb98e95bfed4505b2963fa14e15d2c7e4f14aba7b3375",
+          "replacement": "$PROJECT_ROOT/production-stage/performance002_attempt2/runner_receipt.json"
+        }
+      ],
+      "scientific_values_changed": false
+    },
+    {
+      "path": "provenance/QWEN_019_MANUSCRIPT_AUDIT.receipt.json",
+      "study": "both",
+      "source_sha256": "e9c8376dfe0fb112e6ae44407f942be423f0b3e8fd6771d353e1d1594623d352",
+      "public_sha256": "104fe04adcdf21f5cf5f1e544d29a9536d8cc0164337c536c607b3db1df19be4",
+      "change": "normalized administrative absolute path text only; listed replacements are exhaustive",
+      "replacements": [
+        {
+          "line": 5,
+          "original_value_sha256": "4141adfeea0ac829645084c28b71d0589020e3d8b07949c82513d1ecd7a5990b",
+          "replacement": "$PROJECT_ROOT/assignments/QWEN_019_MANUSCRIPT_V1_1_CLAIM_REPRO_AUDIT.md"
+        },
+        {
+          "line": 9,
+          "original_value_sha256": "2bce3bc8ed817dbfc9adb34c00c5b920f47bb9591514087cf4e43326f006a86a",
+          "replacement": "data/acceptance/PHASE2_STUDY_001_ACCEPTED.json"
+        },
+        {
+          "line": 13,
+          "original_value_sha256": "fa64c09bc9698b3a00dff6e386b4598a8208f6b4ec63ba2574511ae34d9b65ac",
+          "replacement": "data/study002/prospective-records/04-acceptance/PERFORMANCE_002_AUDIT_ACCEPTED.json"
+        },
+        {
+          "line": 17,
+          "original_value_sha256": "722d46018bad9f1ae8e8e187d82855da96e1db03f759b7133a95ad9dc6485e5b",
+          "replacement": "data/study002/acceptance/RESULTS_NOTE.md"
+        },
+        {
+          "line": 21,
+          "original_value_sha256": "d896de0fbb886bd264d7eef1b91435af51230f3f45a0b69f7a69b4885559b291",
+          "replacement": "paper/MANUSCRIPT.md"
+        },
+        {
+          "line": 25,
+          "original_value_sha256": "cd442d4c9e50eeb2d4f01dcaf9a0e3f4920fe6616b7dcffb46df10895b3be8e3",
+          "replacement": "paper/SUPPLEMENT.md"
+        },
+        {
+          "line": 29,
+          "original_value_sha256": "a222cff2c3a6b234e67d3323fd3367ab493112ff58325855a8c47cfccbfe99a7",
+          "replacement": "docs/DATA_AVAILABILITY.md"
+        },
+        {
+          "line": 33,
+          "original_value_sha256": "853f0aa824c599b1ce1f2da819f7f8ec04ee08fffe81a55514cfaeb1ae898ed8",
+          "replacement": "docs/AI_ASSISTANCE.md"
+        },
+        {
+          "line": 37,
+          "original_value_sha256": "fb4d0c3eac75794cb0c31b1c92fad87368c107fd92592d244e218c1e7f3aeabe",
+          "replacement": "provenance/CLAIM_EVIDENCE.json"
+        },
+        {
+          "line": 41,
+          "original_value_sha256": "bb637d744faffc4bd184ff5f575c0fa9dc663a33ffa990c6c1684d8a1292112e",
+          "replacement": "provenance/FIGURE_BINDINGS.json"
+        },
+        {
+          "line": 45,
+          "original_value_sha256": "fd2f0b9fd3f569fb53408c56a1bc9440e3ba98345886e0cf8485e76ca97cd5d9",
+          "replacement": "provenance/SOURCE_PLAN.json"
+        },
+        {
+          "line": 49,
+          "original_value_sha256": "0fd82b1f5b599af9be07d18fe92b1a5ee47015828f80d59be14704d2dd6987c6",
+          "replacement": "provenance/MANUSCRIPT_V1_1_STATISTICS_CHECK_1975.json"
+        },
+        {
+          "line": 53,
+          "original_value_sha256": "a3fad1b15dab897f1f88600205be43a66a5770990bcb074c40394da5efe7d36d",
+          "replacement": "provenance/MANUSCRIPT_V1_1_PROVENANCE_PATCH_RECEIPT.json"
+        },
+        {
+          "line": 57,
+          "original_value_sha256": "233fbc9412614b6eaaa38a8eec210c96c564109ff7eef3712976053b1b915859",
+          "replacement": "provenance/MANUSCRIPT_V1_1_PATCHED_SOURCE_AUTHENTICATION.json"
+        },
+        {
+          "line": 61,
+          "original_value_sha256": "b0f45e58258421d74d5c499fb8166a1eb3631386b0bf440e02a01236306533f6",
+          "replacement": "provenance/MANUSCRIPT_V1_1_BUILD_RECEIPT_2.json"
+        },
+        {
+          "line": 65,
+          "original_value_sha256": "cfdb438cce48727503b28ddef98fa1457d4f7ec52c53a85714daa14b35a04ccf",
+          "replacement": "provenance/MANUSCRIPT_V1_1_VISUAL_QA.json"
+        }
+      ],
+      "scientific_values_changed": false
+    },
+    {
+      "path": "scripts/check_statistics.py",
+      "study": "both",
+      "source_sha256": "73e655f36a82822bbda1cbaff05cdccb36c2facfc99ffc8e26b358c0b8cfb069",
+      "public_sha256": "804a652d4091047b7b97d09e6a8bd6a27cfdb2516522dcf355f054e373491524",
+      "change": "renamed the original top-level sha256_file() to _physical_sha256_file() and inserted an optional --public-transformations hash adapter immediately before the __main__ guard; arithmetic, interval, label, scope, diagnostic, audit and decision checks are unchanged",
       "scientific_values_changed": false
     }
   ],
-  "private_paths_remaining": 0,
+  "superseded_v1_0_0_entries": [
+    {
+      "path": "figures/FIGURE_DATA.json",
+      "public_sha256": "643f07bf6be1e476e8a838b625060e3d07c359f24ccec475614d03e2588580ce",
+      "reason": "file logically replaced in v1.1.0; see the v1.0.0 record in provenance/history/v1.0.0/"
+    },
+    {
+      "path": "scripts/check_statistics.py",
+      "public_sha256": "d2e1f1fa2b5e91a855ae457e3aedfd88287e9b348aa989c1a4fcf886abe1d568",
+      "reason": "file logically replaced in v1.1.0; see the v1.0.0 record in provenance/history/v1.0.0/"
+    }
+  ],
+  "v1_0_0_record": "provenance/history/v1.0.0/PUBLIC_EXPORT_TRANSFORMATIONS.json",
+  "checker_adapter": "scripts/check_statistics.py --public-transformations maps the exact public SHA-256 of each entry with a logical_input_key to its source_sha256 for both studies",
+  "files_copied_from_authenticated_sources": 169,
+  "files_copied_byte_identical": 156,
+  "bytes_copied_public": 52224861,
+  "files_copied_by_study": {
+    "study002": 135,
+    "both": 34
+  },
+  "scientific_binary_files_copied": 64,
+  "scientific_binary_bytes_copied": 47923200,
   "scientific_binary_files_changed": 0,
-  "interpretation": "Changes are portable path substitutions or an adapter that authenticates those substitutions. No scientific value, binary record, estimate, interval or decision was changed."
+  "excluded_from_public_copy": [],
+  "private_paths_remaining": 0,
+  "credential_markers_remaining": 0,
+  "files_scanned": 343,
+  "scientific_execution_performed_for_publication": false,
+  "interpretation": "Changes are administrative absolute-path substitutions or an adapter that authenticates those substitutions. No scientific value, binary record, estimate, interval, label or decision was changed."
 }

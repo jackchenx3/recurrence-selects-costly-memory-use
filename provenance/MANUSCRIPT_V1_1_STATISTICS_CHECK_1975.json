@@ -1,0 +1,34 @@
+{
+  "checks_passed": 1975,
+  "document_sha256": {
+    "manuscript": "5e6941605cfc11180074925c748d8427b353e9e3f9eb3e234def09d7a9ebce31",
+    "registry": "e47484bcdec2b8369c14f93a36f3b203c816fc90305a43ecc6dccb0b27dd383f",
+    "supplement": "93cc4f81d8904f3a113dd105fdf78d1a423bda070bf0632660983af756640658"
+  },
+  "failures": [],
+  "input_sha256": {
+    "accepted": "2eb3aaf5d754f4570a75522aa9e1f38358715c06c674d5a267732a1357926e6f",
+    "decision": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0",
+    "diagnostics": "51554620a5e302416edf8de8a073c6962abbc2c8967da80b91b83e4c3d5b685c",
+    "estimates": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0",
+    "records_receipt": "afd96dc0a5b190401c035fc66c8af8fd4d4603e7185d05bff73fb05e698cff5a",
+    "replay_receipt": "9b40322d0d09b90f0a6862533c1efdc7aff21bd699a882b9b9555c5f7c4b4857",
+    "s2_accepted": "fc7777239cd4442c35c01d6261fd71e6fbf7e7f6fd6e11ddcc5d24876ce2f4a2",
+    "s2_decision": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a",
+    "s2_diagnostics": "304843eb5d4a38761a6ce371c7cc125260041dfd910b29d5ba3cc377a6ac3553",
+    "s2_estimates": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d",
+    "s2_records_receipt": "09f5dccf4921c8d842ef60fb31aca712bbb582e87a2011c76c02efb658539197",
+    "s2_replay_receipt": "cbee79527876745e8918576f73a5d302377e4463d959318ca2f5feffa66416d4"
+  },
+  "registered_entries": 371,
+  "sha_check_enforced": true,
+  "status": "PASS",
+  "studies": {
+    "PHASE2-MUTABLE-MEMORY-001": {
+      "saved_estimates": 22
+    },
+    "PHASE2-PERFORMANCE-CONVERSION-002": {
+      "saved_estimates": 19
+    }
+  }
+}

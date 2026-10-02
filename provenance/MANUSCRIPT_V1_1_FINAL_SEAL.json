@@ -1,0 +1,65 @@
+{
+  "bindings": {
+    "build_receipt": {
+      "bytes": 11953,
+      "path": "MANUSCRIPT_V1_1_BUILD_RECEIPT_2.json",
+      "sha256": "8a44e699c8df28a64860f27d3162b359cb5660b8b7c6b1a178ec141f9977dc1c"
+    },
+    "claim_audit": {
+      "bytes": 2498,
+      "path": "results/qwen_019/manuscript_audit.md",
+      "sha256": "eacec40baf2528a8c1f66f99553b36386c97081a27294c06cdebbe64bc13a330"
+    },
+    "claim_audit_receipt": {
+      "bytes": 4890,
+      "path": "results/qwen_019/manuscript_audit.receipt.json",
+      "sha256": "e9c8376dfe0fb112e6ae44407f942be423f0b3e8fd6771d353e1d1594623d352"
+    },
+    "figure_data": {
+      "bytes": 11610,
+      "path": "manuscript-update-v1.1-draft/_build/figures/FIGURE_DATA.json",
+      "sha256": "4ae2d357edd9b9fe8b827b3fdf47e301de5ce350858c1bfc6350dcdc168ed62a"
+    },
+    "manuscript_pdf": {
+      "bytes": 1302146,
+      "path": "manuscript-update-v1.1-draft/_build/paper/MANUSCRIPT.pdf",
+      "sha256": "5915b85c569f06dbad6578483d39372db9b7c10707517eb189abb22875abcf20"
+    },
+    "provenance_patch": {
+      "bytes": 3213,
+      "path": "MANUSCRIPT_V1_1_PROVENANCE_PATCH_RECEIPT.json",
+      "sha256": "b758f4090deec92ea572585a6dbfcb32dbae67c4429bd905459c53efb22422ff"
+    },
+    "source_authentication": {
+      "bytes": 2442,
+      "path": "MANUSCRIPT_V1_1_PATCHED_SOURCE_AUTHENTICATION.json",
+      "sha256": "a41c8c026a07a8b507439665d44c50a0da7c45caa5bc9e467118d6aab9eccc0a"
+    },
+    "statistics_check": {
+      "bytes": 1659,
+      "path": "manuscript-update-v1.1-draft/_build/STATISTICS_CHECK.json",
+      "sha256": "673340ba108a49e9ebae1763cd68970e34c7e907aa73018d681cd8b7bbea509d"
+    },
+    "supplement_pdf": {
+      "bytes": 123534,
+      "path": "manuscript-update-v1.1-draft/_build/paper/SUPPLEMENT.pdf",
+      "sha256": "2195256046f5ff3837eae8fc37d2319ceda5364b435c6beddd78a7e26b5e0cc2"
+    },
+    "visual_qa": {
+      "bytes": 10496,
+      "path": "MANUSCRIPT_V1_1_VISUAL_QA.json",
+      "sha256": "50994e0b1a6a22179a2323851d0879ae7ca722b846bf01396cced35698aa2c74"
+    }
+  },
+  "decision": "PUBLICATION_PACKAGE_GO",
+  "figures": 4,
+  "manuscript_pages": 22,
+  "record": "PHASE2-MUTABLE-MEMORY-PAPER-V1-1-FINAL-SEAL",
+  "scientific_execution_performed_for_revision": false,
+  "scope": "One coherent revision combining accepted Study 001 and post-v1.0 prospective Study 002; separate estimate families, not independent replications. Negative and unresolved performance outcomes and all claim limits retained.",
+  "sealed_at_utc": "2026-10-02T08:14:41.662951+00:00",
+  "statistics_checks_passed": 1975,
+  "status": "PASS",
+  "supplement_pages": 19,
+  "version": "1.1.0"
+}

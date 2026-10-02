@@ -1,0 +1,100 @@
+{
+  "record": "PHASE2-PERFORMANCE-CONVERSION-002-AUDITOR-CONSTRUCTION-CLAUDE-023",
+  "study_id": "PHASE2-PERFORMANCE-CONVERSION-002",
+  "specification_revision": 1,
+  "specification_sha256": "58ee414d753fab042e6cccee1a4e6b95dd7f167633b4f33c1491687d9afcb895",
+  "design_go_sha256": "f4a6180109e0d212cbe784a7722a64576e5e7cb0fbfd4b23c757bb5e7ab84d6a",
+  "status": "SOURCE_ONLY_NOT_RUN",
+  "compilation_performed": false,
+  "execution_performed": false,
+  "tests_run": false,
+  "benchmark_performed": false,
+  "timing_measured": false,
+  "simulation_performed": false,
+  "scheduler_job_submitted": false,
+  "network_accessed": false,
+  "scientific_outcome_inspected": false,
+  "producer_source_read_imported_copied_or_called": false,
+  "production_runner_created": false,
+  "claims_any_test_passed": false,
+  "result_exists": false,
+  "provenance": {
+    "statement": "Adapted from an authenticated copy of the accepted independent study-001 auditor, which was itself derived without producer source. The study-002 changes were derived only from the supplied study-002 specification, frozen configuration, output formats and binary record schema. No study-001 key, random tape, block, trajectory, record layout, count or estimand is used. Study-001 key texts are reconstructed only by the --kat-only key-disjointness check, which never generates a draw.",
+    "authorities": [
+      "PHASE2-PERFORMANCE-CONVERSION-002-REV1.md (supplied text)",
+      "DESIGN_002_GO.json (supplied text)",
+      "performance_design_terminal_review.md (supplied text)",
+      "frozen_config.json, PCONV-FROZEN-CONFIG-1 (supplied text)",
+      "binary_records.json, PCONV-BINARY-RECORDS-1 (supplied text)",
+      "OUTPUT_FORMATS.md, study 002 (supplied text)",
+      "PERFORMANCE_002_SOURCE_REVIEW_DECISION.json (supplied text; findings list only)",
+      "fixtures.json, PCONV-FIXTURES-1 (supplied text; list of fixture behaviours only, never expected values)"
+    ]
+  },
+  "passes": [
+    {
+      "pass": "CLAUDE-022",
+      "kind": "SOURCE_ONLY_ADAPTATION_INTERRUPTED",
+      "statement": "Began the bounded source-only adaptation from the authenticated study-001 auditor seed. Edited nine of the eleven files, then the account session limit was reached (CLI exit 1). It ran nothing and produced no scientific outcome. README.md and AUDITOR_NOT_RUN.json still held study-001 text. Supervisor disposition: TERMINAL_SESSION_LIMIT_PARTIAL_SOURCE_PRESERVED; resume once from the authenticated partial tree without restarting from baseline.",
+      "attempt_sha256": "ec44d46c45bdbdcb1d5ee7f466eaadc9faa3673c114dc2f3ae2b35eff2cba28f",
+      "partial_seed_receipt_sha256": "9a6f2392ba47409e0de11247a9509713fe5c73a62122575e6e0bc0fe78e88c59",
+      "changed_files_basis": "The disposition records nine changed files. This list is the nine files other than README.md and AUDITOR_NOT_RUN.json, which still held study-001 text; it is inferred, not taken from a diff.",
+      "changed_files": [
+        "Makefile",
+        "docs/INPUT_CONTRACT.md",
+        "python/mmem_record_verifier.py",
+        "src/main.cpp",
+        "src/philox.hpp",
+        "src/records.hpp",
+        "src/replay.hpp",
+        "src/sha256.hpp",
+        "tests/fixture_gate.py"
+      ],
+      "compilation_performed": false,
+      "execution_performed": false,
+      "tests_run": false,
+      "scientific_outcome_inspected": false
+    },
+    {
+      "pass": "CLAUDE-023",
+      "kind": "SOURCE_ONLY_COMPLETION",
+      "statement": "Inspected the nine CLAUDE-022 files for completeness and cross-file consistency. Checked: record offsets and struct formats against binary_records.json; cell index, HALF law and probe rule; the shared permutation's orientation and Lemire retries; the coordinate schemas; N1/N2/C1; the seven block numerators and the 19 estimate records; file sizes and counts; and that each of the five gate corruptions maps to the first discrepancy each verifier would report. No defect was found that required a code change. One diagnostic wording was changed ('survivor lineage' to 'survivor order'). README.md and AUDITOR_NOT_RUN.json were rewritten for study 002, removing the study-001 text, counts, paths and 22-estimate descriptions.",
+      "changed_files": [
+        "AUDITOR_NOT_RUN.json",
+        "README.md",
+        "python/mmem_record_verifier.py"
+      ],
+      "files_added_or_removed": false,
+      "compilation_performed": false,
+      "execution_performed": false,
+      "tests_run": false,
+      "scientific_outcome_inspected": false
+    }
+  ],
+  "final_inventory": [
+    "AUDITOR_NOT_RUN.json",
+    "Makefile",
+    "README.md",
+    "docs/INPUT_CONTRACT.md",
+    "python/mmem_record_verifier.py",
+    "src/main.cpp",
+    "src/philox.hpp",
+    "src/records.hpp",
+    "src/replay.hpp",
+    "src/sha256.hpp",
+    "tests/fixture_gate.py"
+  ],
+  "final_inventory_file_count": 11,
+  "final_inventory_hashes": "NOT_COMPUTED_BY_WORKER: the worker may not run a command; the supervisor authenticates the final tree",
+  "coverage_claimed_by_source": {
+    "cpp_replay_production": {"blocks": 64, "paths": 384, "update_records": 98304, "candidate_rows": 12582912, "permutation_rows": 16384},
+    "python_records_production": {"blocks": 41600, "paths": 249600, "update_records": 63897600, "record_files_in_manifest": 98, "estimate_records": 19},
+    "gate_corruptions": ["audit_candidate_row", "permutation_row", "paired_path_hash", "reserved_field", "estimate_record"],
+    "gate_expectations": 12
+  },
+  "provisional_interfaces": [
+    "fixture layout file names (docs/INPUT_CONTRACT.md section 4)",
+    "run_manifest.json root keys (section 5)",
+    "estimates_19.json and decision.json keys and decimal encoding (section 6)"
+  ]
+}

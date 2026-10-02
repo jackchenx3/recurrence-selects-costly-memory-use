@@ -1,0 +1,29 @@
+{
+  "automatic_retry_authorized": false,
+  "command": "/bin/bash $PROJECT_ROOT/production-runner-performance002-v1/run_production_stage.sh",
+  "duplicate_submission_forbidden": true,
+  "existing_same_name_job_was_absent_before_submission": true,
+  "job_id": "53552434",
+  "job_name": "pconv002-prod",
+  "node_at_confirmation": "cn140",
+  "partition": "norm",
+  "pre_submission_verification_sha256": "fa8c082caa52aca2ad85d32911b27e04c2de1aa1bec61bc508a3d4b9aae7a8ea",
+  "production_authority_sha256": "31c2100dd73de0090ded3059525aacd139565917086d2c19880b01e319c98992",
+  "record": "PHASE2-PERFORMANCE-CONVERSION-002-PRODUCTION-JOB-SUBMISSION-1",
+  "resources": {
+    "cpus_per_task": 32,
+    "memory": "64G",
+    "nodes": 1,
+    "tasks": 1,
+    "wall_time": "06:00:00"
+  },
+  "runner_sha256": "99b48507aaff907ced740fa37fa5ab4b71f8ecdc5d0cdca83452992eac8b1239",
+  "scientific_execution_authorized": true,
+  "sole_output_root_was_absent_before_submission": true,
+  "state_at_confirmation": "RUNNING",
+  "status": "SUBMITTED_ONCE_AND_CONFIRMED_RUNNING",
+  "stderr": "$PROJECT_ROOT/production-stage/scheduler/performance002_53552434.stderr",
+  "stdout": "$PROJECT_ROOT/production-stage/scheduler/performance002_53552434.stdout",
+  "study_id": "PHASE2-PERFORMANCE-CONVERSION-002",
+  "submitted_at_utc": "2026-10-02T06:04:43.112303+00:00"
+}

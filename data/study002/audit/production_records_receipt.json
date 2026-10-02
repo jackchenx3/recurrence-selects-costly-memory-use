@@ -1,0 +1,824 @@
+{
+  "checked": {
+    "audit_paths_hashes_reconstructed": 384,
+    "audit_rows": 12582912,
+    "block_records": 41600,
+    "blocks_with_both_sham_identities": 41600,
+    "blocks_with_c1_record_consistency": 41600,
+    "decision_files_compared": 1,
+    "estimates_compared": 19,
+    "manifest_files_matched": 98,
+    "path_records": 249600,
+    "path_updates_with_128_queries": 63897600,
+    "permutation_records": 16384,
+    "update_records": 63897600
+  },
+  "expected": {
+    "audit_paths_hashes_reconstructed": 384,
+    "audit_rows": 12582912,
+    "block_records": 41600,
+    "blocks_with_both_sham_identities": 41600,
+    "blocks_with_c1_record_consistency": 41600,
+    "decision_files_compared": 1,
+    "estimates_compared": 19,
+    "manifest_files_matched": 98,
+    "path_records": 249600,
+    "path_updates_with_128_queries": 63897600,
+    "permutation_records": 16384,
+    "update_records": 63897600
+  },
+  "finished_at_utc": "2026-10-02T07:08:55Z",
+  "first_discrepancy": null,
+  "inputs": [
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_00/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_00/updates.bin",
+      "sha256": "5e652583c4ceb0195385cc694712bfa666ae86e59209d0221cad374ef058dd4b"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_00/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_00/paths.bin",
+      "sha256": "f05dfb7c97bc1f13161013485a452c76b252fb11222efb3626dc6c974832bdd7"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_00/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_00/blocks.bin",
+      "sha256": "769a537924e7429ffe3d4d3d5a828615d0af1e581c31904163c8a6deb178c41e"
+    },
+    {
+      "bytes": 1107296256,
+      "error": null,
+      "label": "shards/shard_00/audit_rows_blocks_0000_0063.bin",
+      "path": "data/study002/compact-production/shards/shard_00/audit_rows_blocks_0000_0063.bin",
+      "sha256": "1643956d37e06b1940f7c023f3935147af46f023a393d940178e577cf8c956d9"
+    },
+    {
+      "bytes": 6815744,
+      "error": null,
+      "label": "shards/shard_00/audit_permutations_blocks_0000_0063.bin",
+      "path": "data/study002/compact-production/shards/shard_00/audit_permutations_blocks_0000_0063.bin",
+      "sha256": "00230c475e5f2c5923fca76d2368ede55aef7f0efd49a4c22a7e8044c1e1632a"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_01/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_01/updates.bin",
+      "sha256": "dd5755059bb029f3aeaa4b3e6c6c8fe04a68570e6281212c00e960b6bf5d0e48"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_01/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_01/paths.bin",
+      "sha256": "e7285fb30595d45edd8709c5873a9b61e54a95775c5f3307a6fd6751c6e427b4"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_01/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_01/blocks.bin",
+      "sha256": "8e482260c5b2f8a42da415b11e0ecd2c45e9ae239f50ff1bde3284d0e2648e9e"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_02/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_02/updates.bin",
+      "sha256": "613832bf9558a6e6b9f615f1fad5eaf7d2021bb2aa40094a21c08b1960014636"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_02/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_02/paths.bin",
+      "sha256": "75582d3415321df5bdd21ecdb86627472eb80a821fcb827b94bee3fce66518a3"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_02/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_02/blocks.bin",
+      "sha256": "a62818453314b6203753abdbec1111b8fd14c22cdbe55c6dd6562a962fd80729"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_03/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_03/updates.bin",
+      "sha256": "4c37804c45cb14bdb6f0af23bf839db1e883df9c2abcc72e4f005153913c4894"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_03/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_03/paths.bin",
+      "sha256": "4af23b5320eb3f28c2580703451f68701d9117cd12263b2bbcca77eac2869a22"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_03/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_03/blocks.bin",
+      "sha256": "08b2c14172cf4aadece850e2fe41866a029bc150392a593a55e086132a215a14"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_04/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_04/updates.bin",
+      "sha256": "46b4997299f82f997f9cd5c09cde7f63334c29ba297855d04f4590d3256c3d41"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_04/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_04/paths.bin",
+      "sha256": "edb762a8cc18e66df46732a842c3c601c07bbf30120a71447f7f98e5e3f20306"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_04/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_04/blocks.bin",
+      "sha256": "0dbf1f7ef042f5c8f2457ae63ddbdd40fc57f9e6b1ea876d6e878054efa18ccf"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_05/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_05/updates.bin",
+      "sha256": "bab80a70318629a7f6f1fb2fe197de7b7ea243c7e26b54dc1fbf79dbb08a57b2"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_05/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_05/paths.bin",
+      "sha256": "98eee928194c667416b895e1d6c4a64bc5536ae0b08fac1c669110d3197c6048"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_05/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_05/blocks.bin",
+      "sha256": "8967f426e5c64328654692874616534361c774cfbf4044a96d9316063e1441cd"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_06/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_06/updates.bin",
+      "sha256": "c90a8ad7e91205065f09129abcb7c82a2be4dca3fa1f92df92a9e88bdf527f04"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_06/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_06/paths.bin",
+      "sha256": "ca18291447a9b9326218b4c3fcee727a2e5c42b1ddb8f74d573800fd3828160f"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_06/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_06/blocks.bin",
+      "sha256": "a4f2cb55652579c9cfc34ff4593978e9d654feb74eaf6affa9c4f6f692bf9a1e"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_07/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_07/updates.bin",
+      "sha256": "287844fc7432f2d7e097ed6f67c7887447129d6d19a336b56002b5fdaea2a132"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_07/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_07/paths.bin",
+      "sha256": "51be25c76eed411238fc11c2b09326914a34ac4ddf08c83a0218e29b09a6ca29"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_07/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_07/blocks.bin",
+      "sha256": "5ce438ba3261f427e605353698ed85883d57e5d4d4e41cf4eeb7c3719a5b3b6e"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_08/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_08/updates.bin",
+      "sha256": "ea9a9b8eaa5cb10d591ca45c1772c1eefef26327eb6c45bccaee7fdafceece26"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_08/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_08/paths.bin",
+      "sha256": "3d43c6edb923ddf2ce3fbfc031aa36ab3a42df89ba047691a68c86e22512be55"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_08/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_08/blocks.bin",
+      "sha256": "13c5ca970b6c393341a849928bb4d0fb6c6685f25a6a2464e8233d076f64757d"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_09/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_09/updates.bin",
+      "sha256": "209af95ce7ae531bec6872d19ed457ab1dca58500eb6b7391343a29c71a3bdd3"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_09/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_09/paths.bin",
+      "sha256": "6bb19f386e5725252f044aab59dc53d5a2675468d77fa88bb070a8c4be7c602b"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_09/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_09/blocks.bin",
+      "sha256": "0c8fdf42eec3b4ea978ae8dedb1acd923c2f65242ef663de00d00f772b86286a"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_10/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_10/updates.bin",
+      "sha256": "e4636e11f5a3169db6efc57156df4a3d903fcdadda2ec6d7773117cfe4cdc5ed"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_10/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_10/paths.bin",
+      "sha256": "8b388d726311c948a16b9ba4cf15e485d7cfc0e89b7927d2a2bbdbd212d146ba"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_10/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_10/blocks.bin",
+      "sha256": "a5662694c1628070651fc71de4ed11f663f73a032d01c49729278257155b97a3"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_11/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_11/updates.bin",
+      "sha256": "f3263297962dc822c6d33f7fe9ac8df3bb8485132dd5488756537c25d6ab2dae"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_11/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_11/paths.bin",
+      "sha256": "a571e5a10ac9ce6339615b069537f9c82b4826dc524ebd8222cda57ef90a026e"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_11/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_11/blocks.bin",
+      "sha256": "7a07ca1955a2a8305bc6113629297a923ccaade0a2739f11539eb0324fb5c584"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_12/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_12/updates.bin",
+      "sha256": "2fef6521b077f1786c4d00d90902ebf338da7efae50966f4703215d20e5816f0"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_12/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_12/paths.bin",
+      "sha256": "2640e3747851f347604120b1cac3a5f82ddb137065d113c71c9152eafcc3248f"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_12/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_12/blocks.bin",
+      "sha256": "7add4fc85a74398dabc42e3cc0ca0bc10e2c1af985747ce4d52d298050888302"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_13/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_13/updates.bin",
+      "sha256": "b88d756fb3be27058f0849e7b800369c3168826f3cfa097333dcc4812629b957"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_13/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_13/paths.bin",
+      "sha256": "6fb02a8470d64168d8c173e8956d0f9a77bf03e6ec44c9b6f97be998b40f8e2f"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_13/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_13/blocks.bin",
+      "sha256": "53578ce3747cc328177a3b2c5e3f8dbd82a776af09215b5052602faf3d6d5485"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_14/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_14/updates.bin",
+      "sha256": "86ef0c59ab5ad9d86a988e65a68b667d0826cb320e27f21dd2dbc855d3f14aea"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_14/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_14/paths.bin",
+      "sha256": "388ec47d27c4abe085eb8f1aecadffef446d0a81fe2c9e436642882d250f6a98"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_14/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_14/blocks.bin",
+      "sha256": "941484e958e21ed69e01da641018801a0e34ab87e7269d53b685bfdcdefba3d1"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_15/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_15/updates.bin",
+      "sha256": "5eeafea8528342af287161266ff68d371e283d7a16b58491f3d7c34aab5ae433"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_15/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_15/paths.bin",
+      "sha256": "4626bb71b4e1a13aec649527ef797b1b6596d86d6373f0810e8adc4f4cbdcab0"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_15/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_15/blocks.bin",
+      "sha256": "f908d97088796e67113f617c2fc840b889ba66f35f74a2726e53297d84e9bf99"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_16/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_16/updates.bin",
+      "sha256": "b005b92f3995fa82a7042b212e7b7e6d3faeeaed7172650dae4570c878cfb64a"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_16/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_16/paths.bin",
+      "sha256": "9af2d16b6506795d4b0e1e3eb3a06f00f62abd89f5a4c2f7d392eb3217591c82"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_16/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_16/blocks.bin",
+      "sha256": "0df2035a8b3e5396a8a23e2a6869d498eee6cff1f74c31ad8f255ab04af4479b"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_17/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_17/updates.bin",
+      "sha256": "a6cee5c650724514b74c003b43cd2a866b537fc328767ca01bd288c241d30ed0"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_17/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_17/paths.bin",
+      "sha256": "24ca76fb7238ce94cd9ef22d823dcc7f676fe6e27f077333d753344da82eb8f7"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_17/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_17/blocks.bin",
+      "sha256": "13c7d408561ef3cbac6ccbd24d4c751a9117b8f9eb1cbdbbb031488cc389df71"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_18/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_18/updates.bin",
+      "sha256": "51ddf972e0f44a8ffc46d7b251c38da55bc96848182ad711f0617afec9ca648b"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_18/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_18/paths.bin",
+      "sha256": "0ca8fc61346cef39c3a08ef4b53c9921bfa4aab66af842338db4eb19ef17b811"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_18/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_18/blocks.bin",
+      "sha256": "e356b2aa9514956768f1d9b4b65e9f205350d5cc9d730f2f870665268293f582"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_19/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_19/updates.bin",
+      "sha256": "0850ffdf03a532e4fed2a03365fde08d57a68f05a7d496a1f9259e1a30782d8c"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_19/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_19/paths.bin",
+      "sha256": "8725baae52296d075a1673ad5dfce713d041cf7b46371e51f560e82687d2ca9c"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_19/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_19/blocks.bin",
+      "sha256": "622fe21ca6bdc7d5b05ee4b039470ad1bb141bb91430bda06867bea04c12f482"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_20/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_20/updates.bin",
+      "sha256": "f2f20c4e0623378951b8ae067612753bdd57c2c381f116fb004cacd17ccd3980"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_20/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_20/paths.bin",
+      "sha256": "6acd4b440ddbc242f5843ae9b188d6a17c3f4648dccf4c8890c70ef6a8da3125"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_20/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_20/blocks.bin",
+      "sha256": "304fd71105445a7bb231d8f7fe5829363a35e7e055c20d1f55e5e9658e0179c7"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_21/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_21/updates.bin",
+      "sha256": "e028d467f6ab0a4d457c01ba97885400364c0f8467c30a17971f78eb13615baa"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_21/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_21/paths.bin",
+      "sha256": "a6e8c6ff7d67833af0759dcc238f7ce7335a59a5ba2db0a2c4778d7d77233f32"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_21/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_21/blocks.bin",
+      "sha256": "f5c6d42e0379f7665634964437c63019cdd7c06cb5ed23f531e567788f206276"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_22/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_22/updates.bin",
+      "sha256": "b1b54d6630b016ca207a6140a178f497c8914b87e227d6c87680e63d607548e2"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_22/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_22/paths.bin",
+      "sha256": "f00b65d695def16f2b8e0e043def173d7c5d854aa21d122fa3bf75fea74a2086"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_22/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_22/blocks.bin",
+      "sha256": "720432f4d7704f3112b8f8d15d47bf0cf82be24eb6da4d0ba9e24dd6403248fe"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_23/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_23/updates.bin",
+      "sha256": "d2d89952787a11df38d17d0af24f1636cb645b1aaeb82eb43f29a0f95db7c19c"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_23/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_23/paths.bin",
+      "sha256": "b1cf50b5da1a70576facd661fd4999f6e331d8212bd0c49321ebe30658edf501"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_23/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_23/blocks.bin",
+      "sha256": "c0d0b0042643fdfbfbbba5ca6c18d88a9df0310dedd49f86311419952e1672f9"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_24/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_24/updates.bin",
+      "sha256": "623f30ac33f0f3a208707727a42daf292346dd2c02c25b9ee6d1ba9153eabde7"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_24/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_24/paths.bin",
+      "sha256": "ee0cd65a5978c1aa66afa1fca5c820b78679605b404b93b7dc8f5155a596e19f"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_24/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_24/blocks.bin",
+      "sha256": "f08f6049903bec53cbabf4fe7903bf752d1f8e99d86bd96a07af0c12f1577f86"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_25/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_25/updates.bin",
+      "sha256": "f9e07518e40c547aafbfcf11cfdcb156493cdd7c4c1065c6466ceaa5f292a472"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_25/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_25/paths.bin",
+      "sha256": "41fe41745012f1c36be5863bf0276893b3e5d3bc6ec7ac09895651fa5eea775b"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_25/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_25/blocks.bin",
+      "sha256": "415902a23773610dac9f252be1d57faf383fc4a767dc778edb8f273537dda23b"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_26/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_26/updates.bin",
+      "sha256": "8a0fb2de854dc2a26ab13125715b3a6cba14e37b30a638e184fbcfef9a968cd0"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_26/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_26/paths.bin",
+      "sha256": "ab949f75c4c2cd6a561232b227464306444c18fc79e98be648c7333d262ac66c"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_26/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_26/blocks.bin",
+      "sha256": "0de4ba4a22b02d803f357871d989c2abc8a8725669c59a93c727506131ff8782"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_27/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_27/updates.bin",
+      "sha256": "d232b1f231e88e1b8423093864d7bdfd8495f6700203a22f35910f9d39471b0b"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_27/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_27/paths.bin",
+      "sha256": "f4aa4aa5f65340cf5177bbf81c315c911c71894af5702de5c5c91950247146f6"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_27/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_27/blocks.bin",
+      "sha256": "4e9ed5d7b93146ae79c655ef0ba81a26c371af3294042468030a0a44a6d68c04"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_28/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_28/updates.bin",
+      "sha256": "1501e2edb86e8f22cf3574a25e8ddb7c26bae38abc503b4b7063ca3dcb29b896"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_28/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_28/paths.bin",
+      "sha256": "1df4b1f6879dda2a2a84a5e5d974020988731e2eb59a55fdf630d976b35460cf"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_28/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_28/blocks.bin",
+      "sha256": "375e6fb0feef18c0e04121c661e4fce848dda8030eb0fa1d39f9da0a446698af"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_29/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_29/updates.bin",
+      "sha256": "8bac20fb6f5c785fe37a87db1d5bf0d4cd542cdfd48600aedb9d0dc42b6a2499"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_29/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_29/paths.bin",
+      "sha256": "60fe959a2730fb3226ace05434c8ece2f32b812a128653fda17dc71f921ea434"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_29/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_29/blocks.bin",
+      "sha256": "14f7005d91a5cfdeb19ff5544324039394a41457f6797a7b362c4aee3cdd51c1"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_30/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_30/updates.bin",
+      "sha256": "9e5b567f8cfd6e01714166034cdfc9e8d35b573e1a473fe924d9933e1f933cee"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_30/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_30/paths.bin",
+      "sha256": "825a5c6675d65583dd616d129d14e01f917c4f46f67970616cd87cf93ec26a18"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_30/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_30/blocks.bin",
+      "sha256": "bf28e73c23024d79f844a17979c75b603fa76a652c8f810e74eccdf9d2aadc22"
+    },
+    {
+      "bytes": 95846400,
+      "error": null,
+      "label": "shards/shard_31/updates.bin",
+      "path": "data/study002/compact-production/shards/shard_31/updates.bin",
+      "sha256": "c39a12c299af6f42599d636a53927e10de643ca2186e928b0bb66ccc90cdfcfb"
+    },
+    {
+      "bytes": 1372800,
+      "error": null,
+      "label": "shards/shard_31/paths.bin",
+      "path": "data/study002/compact-production/shards/shard_31/paths.bin",
+      "sha256": "6cb79b1cc60b50c6d02b572c699f7c1bb40f0db76c453c2b75eec4359a813337"
+    },
+    {
+      "bytes": 124800,
+      "error": null,
+      "label": "shards/shard_31/blocks.bin",
+      "path": "data/study002/compact-production/shards/shard_31/blocks.bin",
+      "sha256": "3055c2751baaa921fe70c758c9bc430bd38b1c71c971b61b85ab47d5fbc97d0f"
+    },
+    {
+      "bytes": 15348,
+      "error": null,
+      "label": "run_manifest.json",
+      "path": "data/study002/compact-production/run_manifest.json",
+      "sha256": "b7aceaf6638e8f06246c8fb9b182c280a8ed98c4444d93a4a60decdbafb80136"
+    },
+    {
+      "bytes": 8482,
+      "error": null,
+      "label": "analysis/estimates_19.json",
+      "path": "data/study002/analysis/estimates_19.json",
+      "sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d"
+    },
+    {
+      "bytes": 1917,
+      "error": null,
+      "label": "analysis/decision.json",
+      "path": "data/study002/analysis/decision.json",
+      "sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a"
+    }
+  ],
+  "is_scientific_result": false,
+  "key_namespace_of_inputs": "production-r1",
+  "mismatch_count": 0,
+  "mismatch_count_cap": 1000000,
+  "mismatch_count_capped": false,
+  "mode": "production",
+  "python_version": "3.11.4",
+  "random_draws_generated": false,
+  "receipt_schema": "PCONV-AUDITOR-RECORDS-RECEIPT-1",
+  "scope": "record, hash and estimate agreement only; this receipt reports no estimate or decision",
+  "self_checks": [
+    {
+      "name": "sha256_fips180_abc",
+      "result": "PASS"
+    },
+    {
+      "name": "record_struct_sizes",
+      "result": "PASS"
+    },
+    {
+      "name": "total_record_bytes",
+      "result": "PASS"
+    },
+    {
+      "name": "popcount",
+      "result": "PASS"
+    },
+    {
+      "name": "lemire_thresholds",
+      "result": "PASS"
+    },
+    {
+      "name": "fnv1a32_published_vectors",
+      "result": "PASS"
+    },
+    {
+      "name": "fisher_yates_replay_identity_rotation_and_orientation",
+      "result": "PASS"
+    },
+    {
+      "name": "fisher_yates_replay_detects_a_rejected_accepted_x",
+      "result": "PASS"
+    },
+    {
+      "name": "two_over_alpha_exact",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_Delta_P",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_D_INFO",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_D_NONINFO",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_E_INFO",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_E_NONINFO",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_B_INFO",
+      "result": "PASS"
+    },
+    {
+      "name": "frozen_half_width_B_NONINFO",
+      "result": "PASS"
+    }
+  ],
+  "self_checks_pass": true,
+  "started_at_utc": "2026-10-02T07:06:24Z",
+  "status": "PASS",
+  "study_id": "PHASE2-PERFORMANCE-CONVERSION-002",
+  "tool": "pconv_record_verifier",
+  "tool_source_sha256": "e700ce2621def54db2b2f14fb077dced6cff0e57eb6a3439ac2cfe870e1b5ad9",
+  "tool_version": "PCONV-AUDIT-RECORDS-1.0.0"
+}

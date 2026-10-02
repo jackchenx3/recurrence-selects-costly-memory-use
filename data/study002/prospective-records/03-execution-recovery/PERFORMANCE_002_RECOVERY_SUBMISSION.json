@@ -1,0 +1,27 @@
+{
+  "attempt2_absent_before_submission": true,
+  "command": "/bin/bash $PROJECT_ROOT/production-runner-performance002-v2/run_production_stage.sh",
+  "duplicate_submission_forbidden": true,
+  "further_retry_authorized": false,
+  "independent_recovery_review_sha256": "aa9d1528d95b0bf653f982c0565d15b9575c6d68adb54e477fb68521e1d9d6ff",
+  "job_id": "53553084",
+  "job_name": "pconv002-recov",
+  "partition": "norm",
+  "record": "PHASE2-PERFORMANCE-CONVERSION-002-RECOVERY-JOB-SUBMISSION-1",
+  "recovery_execution_authority_sha256": "c4cb2e4c162df92a761b2fff391b6e81e000055db88d7cbaeb954b0750b4e085",
+  "resources": {
+    "cpus_per_task": 32,
+    "memory": "64G",
+    "nodes": 1,
+    "tasks": 1,
+    "wall_time": "06:00:00"
+  },
+  "runner_sha256": "52ceff5a4cdd10947e4cc0dd7f1d14ed50e8f4f443e13c74e73ddd88a9a9afca",
+  "scientific_execution_authorized": true,
+  "state_at_confirmation": "PENDING",
+  "status": "SUBMITTED_ONCE_PENDING",
+  "stderr": "$PROJECT_ROOT/production-stage/scheduler/performance002_recovery_53553084.stderr",
+  "stdout": "$PROJECT_ROOT/production-stage/scheduler/performance002_recovery_53553084.stdout",
+  "study_id": "PHASE2-PERFORMANCE-CONVERSION-002",
+  "submitted_at_utc": "2026-10-02T06:33:40.935692+00:00"
+}

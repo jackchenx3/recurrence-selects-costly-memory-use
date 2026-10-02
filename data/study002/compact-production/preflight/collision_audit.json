@@ -1,0 +1,17 @@
+{
+  "receipt": "PCONV-COLLISION-AUDIT-1",
+  "status": "PASS",
+  "keys_pairwise_distinct_and_namespaces_disjoint": true,
+  "coordinate_boundaries_ok": true,
+  "blocks_enumerated": [0, 1, 63, 64, 20800, 41598, 41599],
+  "paired_cells": 6,
+  "survival_and_decoy_retry_depth_enumerated": 4,
+  "declared_draws_per_cell_per_block": 376352,
+  "enumeration_duplicates": 0,
+  "schema_mismatches": 0,
+  "block_update_passthrough_failures": 0,
+  "intentional_paired_cell_sharing": 13172320,
+  "paired_cell_divergences": 0,
+  "within_purpose_duplicates_for_distinct_draws": 0,
+  "purpose_separated_reuse_allowed": 684544
+}

@@ -1,12 +1,16 @@
-# Supplementary Information: Environmental recurrence selects a costly memory-use allele without a resolved one-bit population benefit
+# Supplementary Information: Environmental recurrence and directional cache information select a costly memory-use allele without a resolved one-bit population benefit
 
 **Jack Chen**
 
-Research preprint draft; not externally peer reviewed
+Research preprint draft, version 1.1.0; not externally peer reviewed
 
 ## S1. Status and scope
 
-This supplement documents the frozen design, analysis and audit of the prospective study PHASE2-MUTABLE-MEMORY-001 (specification revision 1). The accepted primary decision is **SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT**; the secondary classifications are **BOUNDED BELOW THE POSITIVE ONE-BIT SCALE** for `P_abs` and **UNRESOLVED** for `P_rec`. Every value below is read from the saved analyzer, diagnostics and audit records listed in Section S15. The complete scope is 41,600 independent paired blocks, eight cells per block, 332,800 paths, 85,196,800 path-updates and 10,905,190,400 objective queries.
+This supplement documents two prospective studies. Part A (Sections S1-S15) documents Study 001; its content, values and provenance are unchanged from version 1.0 apart from this introduction and cross-references to Part B. Part B (Sections S16-S26) documents Study 002, a post-v1.0 prospective extension added in version 1.1.0.
+
+## Part A. Study 001 (PHASE2-MUTABLE-MEMORY-001)
+
+Part A documents the frozen design, analysis and audit of the prospective study PHASE2-MUTABLE-MEMORY-001 (specification revision 1). The accepted primary decision is **SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT**; the secondary classifications are **BOUNDED BELOW THE POSITIVE ONE-BIT SCALE** for `P_abs` and **UNRESOLVED** for `P_rec`. Every value below is read from the saved analyzer, diagnostics and audit records listed in Section S15. The complete scope is 41,600 independent paired blocks, eight cells per block, 332,800 paths, 85,196,800 path-updates and 10,905,190,400 objective queries.
 
 ## S2. State and full update order
 
@@ -98,7 +102,7 @@ Derivation of the neutral expectation: because the genealogy is independent of l
 
 Observed descriptive consistency: SHAM memory-use frequencies were 0.500083 and 0.499917 under ZERO and 0.499089 and 0.500911 under HALF, and the exact saved fractions in each pair sum to 1. SHAM accuracy was 0.607310 under ZERO and 0.619018 under HALF from both starts, with identical exact fractions. The record verifier confirmed both identities block by block in all 41,600 blocks.
 
-What SHAM does not control: SHAM is an exact neutral benchmark for the label process (N1, N2; expected start-averaged frequency 1/2) and a paired control for query budget and keyed random draws, but ACTIVE genotypes and genealogies diverge from SHAM at the first valid-M retrieval, so SHAM does not hold realised drift or genotype state fixed for ACTIVE paths and ACTIVE-SHAM contrasts are arm-level comparisons within the model, not path-level counterfactuals. It also does not separate the lag-two information in the cache from the loss of one fresh proposal (the ZERO law provides that comparison through `C_rec`); it does not represent alternative caches, costs or retrieval rules; and it says nothing about ACTIVE convergence or long-run behavior.
+What SHAM does not control: SHAM is an exact neutral benchmark for the label process (N1, N2; expected start-averaged frequency 1/2) and a paired control for query budget and keyed random draws, but ACTIVE genotypes and genealogies diverge from SHAM at the first valid-M retrieval, so SHAM does not hold realised drift or genotype state fixed for ACTIVE paths and ACTIVE-SHAM contrasts are arm-level comparisons within the model, not path-level counterfactuals. It also does not separate the lag-two information in the cache from the loss of one fresh proposal (the ZERO law provides that comparison through `C_rec`, and Study 002 provides a within-law comparison; Section S16); it does not represent alternative caches, costs or retrieval rules; and it says nothing about ACTIVE convergence or long-run behavior.
 
 ## S9. Estimands and interval construction
 
@@ -201,9 +205,9 @@ The result concerns selection on use of a supplied private cache under one prosp
 - **Descriptive only:** all 16 cell means, the ZERO allele deficit, the ZERO adverse accuracy contrast, and all diagnostics.
 - **Not supported:** origin of memory architecture or capacity; separate selection on cache retention versus retrieval; general start-independence; rare-mutant invasion; fixation probability; stationarity; equilibrium; evolutionary stability; arbitrary recurrence or any other lag, copy probability or target law; any other or general cost scale; population benefit; biological, ecological or neural extrapolation; priority or global novelty; and replication of earlier internal private-memory studies.
 
-## S15. Provenance of quoted values
+## S15. Provenance of quoted values (Study 001)
 
-Every number in the manuscript and this supplement that is registered in `provenance/QUOTED_STATISTICS.json` is checked by `scripts/check_statistics.py` against the saved records below, which also recomputes the six interval endpoints, the 16 descriptive identities, the decision labels, the scope counts and the audit mismatch counts. The SHA-256 values are those authenticated in the acceptance record of 2026-10-01.
+Every number in the manuscript and this supplement that is registered in `provenance/QUOTED_STATISTICS.json` is checked by `scripts/check_statistics.py` against the saved records below (Study 001) and in Section S26 (Study 002), which also recomputes the six interval endpoints, the 16 descriptive identities, the decision labels, the scope counts and the audit mismatch counts. The SHA-256 values are those authenticated in the acceptance record of 2026-10-01.
 
 | Source | SHA-256 |
 |---|---|
@@ -227,3 +231,211 @@ Prospective timing records (all times UTC, 2026-10-01). These establish design p
 | Production execution authority | 12:53:04 | `ee3cb68bed5d212e6ea10ece542e2e90c32cb9cea07d85fceda10fc56b375b1d` |
 | Sole production submission, job 53530597 (no automatic retry, no parameter changes) | 12:55:19 | not supplied |
 | Acceptance record | 13:33:13 | `2eb3aaf5d754f4570a75522aa9e1f38358715c06c674d5a267732a1357926e6f` |
+
+## Part B. Study 002 (PHASE2-PERFORMANCE-CONVERSION-002)
+
+## S16. Status, question and relation to Study 001
+
+Study 002 is a post-v1.0 prospective extension specified in PHASE2-PERFORMANCE-CONVERSION-002 revision 1 (SHA-256 `58ee414d753fab042e6cccee1a4e6b95dd7f167633b4f33c1491687d9afcb895`). Its frozen question was: under the single aligned HALF recurrence law, does directional information in the supplied one-record cache produce a late-window population-accuracy gain exceeding one correct bit when compared with a control that preserves the one-proposal displacement and the cache-parent distance but scrambles cache direction at recurrent updates? It is a within-law operator intervention. It does not test the origin of memory capacity, a per-use value of information, arbitrary recurrence, equilibrium, invasion, biological memory or generality across model classes.
+
+The accepted primary decision is **BOUNDED BELOW THE POSITIVE ONE-BIT SCALE** (rule 5; interval wholly inside (-1/32, +1/32)). The secondary classifications are **MEANINGFUL POSITIVE AT THE ONE-BIT SCALE** for `E_INFO` and `E_NONINFO`, and **BOUNDED BELOW THE POSITIVE ONE-BIT SCALE** for `B_INFO` and `B_NONINFO`. The complete scope is 41,600 new independent paired blocks, six cells per block, 249,600 paths, 63,897,600 path-updates, 8,178,892,800 objective queries and 19 saved estimate records.
+
+Relation to Study 001. All operators other than the policy probe are those of Sections S2-S6. The Study 002 producer extends the authenticated Study 001 producer; the specification required unchanged operators to remain behaviorally and fixture-identical. The cohort, namespace and every random tape are new, and no Study 001 genotype, target, trajectory, block or outcome was reused. The INFO probe rule equals the Study 001 ACTIVE rule. The 22 Study 001 records and the 19 Study 002 records are separate accepted estimate sets, 41 saved estimate records in total, with separate familywise controls; they are not pooled and are not independent replications of each other.
+
+## S17. Arms, shared state and full event order
+
+Fixed state is as in Section S2. Initialization (update 0) for each block: 32 independent uniform 32-bit genotypes shared by all six cells; all caches invalid; every label `F` in ALL_F cells and every label `M` in ALL_M cells.
+
+At each update t = 1, ..., 256:
+
+1. Generate the innovation `I_t` and recurrence bit `R_t`, and set the HALF target: `T_1 = I_1`, `T_2 = I_2`, and for t >= 3, `T_t = T_(t-2)` if `R_t = 1` and `T_t = I_t` otherwise. Generate the shared permutation `pi_(b,t)` (Section S18). All are generated whether or not they are used.
+2. For each parent slot i = 0, ..., 31 with genotype `x` and cache `c`, construct four candidates: the parent `x`; the policy probe (table below); the global scout `x XOR scout_mask`; and the local child, the lowest-mismatch member of the first three candidates (keyed donor tie-break) with each bit flipped independently with probability 1/32.
+3. Evaluate all 128 candidates by Hamming mismatch to `T_t`, in (family, parent slot) order. Duplicates are evaluated separately.
+4. Draw 32 survivors sequentially without replacement with exact integer weights `2^(32-h)` (Section S5). No label, cache, lineage or arm enters the weights.
+5. Each survivor inherits its producing parent's policy; each survivor slot then flips `M <-> F` independently with probability 1/32.
+6. Post-mutation `F` survivors receive an invalid cache; post-mutation `M` survivors receive the producing parent's pre-update genotype.
+7. Record memory-use count, total mismatch, valid probe use, true-cache use, decoy use, probe survivors, policy mutations and the query count, all after step 6.
+
+Policy probe by arm:
+
+| Label and cache state at update t | INFO | NONINFO | SHAM |
+|---|---|---|---|
+| `F`, or `M` with invalid cache | `x XOR fresh_mask` | `x XOR fresh_mask` | `x XOR fresh_mask` |
+| valid `M`, t < 3 or `R_t = 0` (innovation update) | `c` | `c` | `x XOR fresh_mask` |
+| valid `M`, t >= 3 and `R_t = 1` (recurrent update) | `c` | `x XOR pi_(b,t)(c XOR x)` | `x XOR fresh_mask` |
+
+The experimental operator reads `R_t`; the evolving policy cannot. At innovation updates INFO and NONINFO apply the identical rule, so they remain bit-identical until the first recurrent valid-`M` coordinate, where only the policy-probe genotype may differ before downstream selection. Both arms displace one fresh proposal at every valid-`M` use.
+
+## S18. The shared decoy permutation
+
+**Construction.** For each block b and update t, `pi_(b,t)` is built from the identity array `[0, ..., 31]` by a Fisher-Yates shuffle: for i = 31, ..., 1, draw j exactly uniformly from `[0, i]` and swap positions i and j. A source bit s maps to destination `pi[s]`. Each j is drawn by multiply-high (Lemire) rejection from the purpose-separated stream `DECOY_PERMUTATION`, whose Philox counter is (block, update, entity = i, subindex = retry) and whose unsigned 64-bit draw is `word0 OR (word1 << 32)`; output words 2-3 are unused. Every step is generated for every block and update regardless of branch or arm, and one permutation is shared by all six cells and all 32 parents of that block and update.
+
+**Random coordinates.** Study 002 uses canonical Random123 Philox4x32-10 with the key and counter construction of Section S7 under the UTF-8 namespace `PHASE2-PERFORMANCE-CONVERSION-002|production-r1|<purpose>`. The purposes are those of Section S7 (`INITIAL_GENOTYPE`, `TARGET_INNOVATION`, `TARGET_COPY`, `FRESH_MASK`, `SCOUT_MASK`, `LOCAL_BIT`, `DONOR_KEY`, `SURVIVAL_UNIFORM`, `POLICY_MUTATION`) plus `DECOY_PERMUTATION`. All coordinates are addressable, the implementation aborts on range overflow, and the specification required a purpose-separated collision audit and a constructed exact-permutation frequency fixture before production.
+
+**Geometry of the control.**
+
+- *Distance matched.* Permuting bit positions preserves Hamming weight, so `popcount(pi(c XOR x)) = popcount(c XOR x)` and every NONINFO decoy lies exactly as far from its parent as the cache does, pathwise.
+- *One common relabeling.* Because one permutation is shared by all parents of a block and update, overlaps among the displacement masks of different parents are preserved under one common coordinate relabeling.
+- *Not preserved.* Other cross-genotype relations are not preserved; in particular, siblings that share one cached genotype do not share one decoy endpoint.
+- *Uniform subset law.* For a fixed parent and displacement weight w, the decoy displacement is a uniformly random w-subset of the 32 positions.
+- *Retained direction.* Displacements of weight 0 or 32 are unchanged by any permutation and therefore retain direction. Their counts are reported in Section S23.
+
+## S19. SHAM identities in Study 002
+
+SHAM never reads labels or caches in genotype construction, so identities N1 and N2 of Section S8 hold: SHAM genotype, mismatch, accuracy and survivor trajectories are bit-identical between starts, and SHAM labels are exact complements after every update, so the start-averaged memory-use frequency is exactly 1/2 in every block. The neutral derivation of Section S8 applies unchanged. Observed: SHAM memory-use frequencies were 0.499678 (21285489/42598400) and 0.500322 (21312911/42598400), which sum exactly to 1, and SHAM accuracy was 0.619009 (1687602263/2726297600) from both starts. The record verifier confirmed both identities in all 41,600 blocks. SHAM is both the neutral allele benchmark for `E_NONINFO` and the no-memory performance reference for `B_INFO` and `B_NONINFO`; as in Study 001, its genotypes and genealogies diverge from INFO and NONINFO at the first valid-`M` retrieval, so contrasts with SHAM are arm-level comparisons, not path-level counterfactuals.
+
+## S20. Estimands and interval families
+
+For block b, let `L_b(arm, start)` be the mean memory-use frequency over updates 193-256 and `P_b(arm, start)` the corresponding mean population accuracy. With equal-weight start averages `A_b(arm)` and `P_b(arm)`:
+
+- `Delta_P,b = P_b(INFO) - P_b(NONINFO)` (range length 2);
+- `D_INFO,b = L_b(INFO, ALL_M) - L_b(INFO, ALL_F)` and `D_NONINFO,b` analogously (range length 2);
+- `E_INFO,b = A_b(INFO) - A_b(NONINFO)` (range length 2);
+- `E_NONINFO,b = A_b(NONINFO) - 1/2` (range length 1);
+- `B_INFO,b = P_b(INFO) - P_b(SHAM)` and `B_NONINFO,b = P_b(NONINFO) - P_b(SHAM)` (range length 2).
+
+Each estimate is the mean of its block variable over n = 41,600 independent blocks and equals the same linear combination of the saved descriptive cell means; the statistics-checking script verifies these identities exactly in rational arithmetic. `Delta_P` is the total population-accuracy effect of directional cache information beyond the parent and matched displacement length, mediated through evolved policy use: INFO and NONINFO share policy rules but not realized policy states, so `Delta_P` includes any divergence in policy frequency, cache use, survivor composition and descendants. It is not a per-use value-of-information estimate and does not separate retention from retrieval.
+
+Intervals use the Hoeffding-Bonferroni construction of Section S9, `h = R sqrt[ln(2/alpha_each)/(2n)]`, with exact rational estimates and high-precision half-widths. No empirical variance, normal approximation or pilot is used.
+
+| Family | Estimands | alpha_each | Range length | Half-width |
+|---|---|---|---|---|
+| Primary | `Delta_P`, `D_INFO`, `D_NONINFO` | 0.05/3 | 2 | 0.01517128 |
+| Secondary allele | `E_INFO` | 0.025 | 2 | 0.01451463 |
+| Secondary allele | `E_NONINFO` | 0.025 | 1 | 0.00725731 |
+| Secondary performance | `B_INFO`, `B_NONINFO` | 0.025 | 2 | 0.01451463 |
+
+The primary half-width lies below Delta/2 = 0.015625, so the gate can be passed only if a start contrast is estimated near zero. Each family has 95% familywise coverage; coverage is not controlled jointly across the three Study 002 families or with the Study 001 families.
+
+## S21. Frozen decision order and its application
+
+Primary rules, applied in order with delta = 1/32 = 0.03125:
+
+1. Any deterministic identity, coordinate, query-count, saved-output or independent-audit failure: **INVALID**. Not triggered.
+2. Either gate interval not wholly within (-delta, +delta): **START-DEPENDENT; PRIMARY UNRESOLVED**. Not triggered: `D_INFO` [-0.015042, 0.015301] and `D_NONINFO` [-0.016439, 0.013903] both lie inside.
+3. Lower bound of `Delta_P` above delta: meaningful positive directional-information effect relative to NONINFO. Not triggered: the lower bound is -0.006521.
+4. Upper bound of `Delta_P` below -delta: meaningful adverse directional-information effect relative to NONINFO. Not triggered.
+5. Upper bound of `Delta_P` at or below delta: **BOUNDED BELOW THE POSITIVE ONE-BIT SCALE**, with a separate statement of whether the interval is wholly inside (-delta, +delta). Triggered: the upper bound is 0.023821, and the interval [-0.006521, 0.023821] lies wholly inside (-delta, +delta).
+6. Otherwise: UNRESOLVED. Not reached.
+
+The decision record lists decision rule 5 as applied and records that the bounded interval lies wholly inside (-delta, +delta). Each secondary estimand was classified, in order, as meaningful positive if its lower bound exceeds delta, meaningful adverse if its upper bound is below -delta, bounded below the positive one-bit scale if its upper bound is at or below delta, and unresolved otherwise. `E_INFO` (lower bound 0.169688) and `E_NONINFO` (lower bound 0.118825) are **MEANINGFUL POSITIVE AT THE ONE-BIT SCALE**; `B_INFO` (upper bound 0.023896) and `B_NONINFO` (upper bound 0.015246) are **BOUNDED BELOW THE POSITIVE ONE-BIT SCALE**. Secondary classifications cannot alter the primary decision, and a positive primary would not have established benefit over no-memory use unless the lower bound of `B_INFO` also exceeded delta.
+
+Prespecified interpretive branches:
+
+| Pattern | Frozen interpretation | Applied |
+|---|---|---|
+| Positive primary and meaningful positive `B_INFO` | One-bit benefit relative to both the matched decoy and SHAM in this fixed model | No |
+| Positive primary without meaningful `B_INFO` | Directional information offsets some displacement cost; no demonstrated one-bit absolute benefit | No |
+| Bounded or adverse primary with meaningful positive `E_INFO` | Directional information selects for policy use without converting into one-bit population performance, sharpening the selection-performance separation. | Yes |
+| Bounded or adverse primary without meaningful `E_INFO` | The information intervention does not explain the accepted enrichment | No |
+
+All branches were to be retained as reported. No parameter, lag, probability, cost, horizon or cohort follow-up follows any branch.
+
+## S22. All 19 saved estimate records
+
+Inferential records carry frozen bounds; descriptive records do not. Exact values are the saved rational estimates; decimal values are rounded to six places.
+
+| # | Record | Family | Exact | Estimate | Interval |
+|---|---|---|---|---|---|
+| 1 | `Delta_P` | Primary | 5895597/681574400 | 0.008650 | [-0.006521, 0.023821] |
+| 2 | `D_INFO` | Primary | 2757/21299200 | 0.000129 | [-0.015042, 0.015301] |
+| 3 | `D_NONINFO` | Primary | -54019/42598400 | -0.001268 | [-0.016439, 0.013903] |
+| 4 | `E_INFO` | Secondary allele | 1569351/8519680 | 0.184203 | [0.169688, 0.198718] |
+| 5 | `E_NONINFO` | Secondary allele | 10741847/85196800 | 0.126083 | [0.118825, 0.133340] |
+| 6 | `B_INFO` | Secondary performance | 25576047/2726297600 | 0.009381 | [-0.005133, 0.023896] |
+| 7 | `B_NONINFO` | Secondary performance | 1993659/2726297600 | 0.000731 | [-0.013783, 0.015246] |
+| 8 | Frequency, INFO, ALL_F | Descriptive | 69028243/85196800 | 0.810221 | descriptive |
+| 9 | Frequency, INFO, ALL_M | Descriptive | 69039271/85196800 | 0.810351 | descriptive |
+| 10 | Frequency, NONINFO, ALL_F | Descriptive | 26697133/42598400 | 0.626717 | descriptive |
+| 11 | Frequency, NONINFO, ALL_M | Descriptive | 13321557/21299200 | 0.625449 | descriptive |
+| 12 | Frequency, SHAM, ALL_F | Descriptive | 21285489/42598400 | 0.499678 | descriptive |
+| 13 | Frequency, SHAM, ALL_M | Descriptive | 21312911/42598400 | 0.500322 | descriptive |
+| 14 | Accuracy, INFO, ALL_F | Descriptive | 856541369/1363148800 | 0.628355 | descriptive |
+| 15 | Accuracy, INFO, ALL_M | Descriptive | 856636941/1363148800 | 0.628425 | descriptive |
+| 16 | Accuracy, NONINFO, ALL_F | Descriptive | 1689605501/2726297600 | 0.619744 | descriptive |
+| 17 | Accuracy, NONINFO, ALL_M | Descriptive | 1689586343/2726297600 | 0.619737 | descriptive |
+| 18 | Accuracy, SHAM, ALL_F | Descriptive | 1687602263/2726297600 | 0.619009 | descriptive |
+| 19 | Accuracy, SHAM, ALL_M | Descriptive | 1687602263/2726297600 | 0.619009 | descriptive |
+
+Saved-precision values of the primary estimand and the secondary contrasts:
+
+| Record | Estimate | Lower | Upper |
+|---|---|---|---|
+| `Delta_P` | 0.00864996836735652 | -0.006521316095375593 | 0.023821252830088634 |
+| `E_INFO` | 0.18420304518479567 | 0.16968841954593594 | 0.19871767082365541 |
+| `E_NONINFO` | 0.12608275193434495 | 0.11882543911491509 | 0.13334006475377482 |
+| `B_INFO` | 0.009381238130422739 | -0.005133387508436994 | 0.023895863769282472 |
+| `B_NONINFO` | 0.0007312697630662184 | -0.013783355875793514 | 0.015245895401925951 |
+
+Derived start averages used in the main text: memory-use frequency 0.810286 for INFO and 0.626083 for NONINFO (exactly 1/2 for SHAM); accuracy 0.628390 for INFO, 0.619740 for NONINFO and 0.619009 for SHAM. In percentage points, `Delta_P` is +0.865 (-0.652 to +2.382), `E_INFO` 18.420 (16.969 to 19.872), `E_NONINFO` 12.608 (11.883 to 13.334), `B_INFO` +0.938 (-0.513 to +2.390) and `B_NONINFO` +0.073 (-1.378 to +1.525).
+
+## S23. Descriptive diagnostics
+
+Totals over all blocks and updates, from the Study 002 descriptive diagnostics record. These counts support interpretation only and carry no inferential bounds. Valid probe use counts policy probes built by valid-`M` carriers in INFO or NONINFO; in NONINFO it is the sum of true-cache uses (innovation updates) and decoy uses (recurrent updates).
+
+| Cell | `F -> M` | `M -> F` | Valid probe uses | Valid probe survivors | Valid-`M` parents at displacement weight 0 |
+|---|---|---|---|---|---|
+| INFO, ALL_F | 2,222,248 | 8,425,691 | 262,335,134 | 76,070,068 | 83,507,588 |
+| INFO, ALL_M | 1,745,959 | 8,901,980 | 276,680,738 | 79,832,243 | 87,969,874 |
+| NONINFO, ALL_F | 4,298,024 | 6,349,915 | 200,347,494 | 47,690,642 | 84,354,781 |
+| NONINFO, ALL_M | 3,687,279 | 6,960,660 | 218,682,953 | 51,883,813 | 91,669,182 |
+| SHAM, ALL_F | 5,653,523 | 4,994,416 | 0 | 0 | 50,037,470 |
+| SHAM, ALL_M | 4,994,416 | 5,653,523 | 0 | 0 | 56,000,609 |
+
+| Cell | True-cache uses | True-cache survivors | Decoy uses | Decoy survivors | Decoys of weight 0 | Decoys identical to cache |
+|---|---|---|---|---|---|---|
+| INFO, ALL_F | 262,335,134 | 76,070,068 | 0 | 0 | 0 | 0 |
+| INFO, ALL_M | 276,680,738 | 79,832,243 | 0 | 0 | 0 | 0 |
+| NONINFO, ALL_F | 100,189,242 | 19,329,879 | 100,158,252 | 28,360,763 | 42,175,734 | 42,478,033 |
+| NONINFO, ALL_M | 109,946,211 | 21,266,901 | 108,736,742 | 30,616,912 | 45,696,359 | 46,024,351 |
+
+The SHAM mutation counts are exchanged between starts, as label complementarity (N2) implies. Every cell contains 5,284,414 recurrent block-updates. No displacement of weight 32 occurred in any arm, and no survival or permutation retry occurred. Weight-0 displacements, where the cache equals the parent and the decoy necessarily equals the cache, made up 42.1% (ALL_F) and 42.0% (ALL_M) of NONINFO decoy applications; these retain direction trivially. Decoys identical to the cache slightly outnumber weight-0 decoys because a permutation can also leave a nonzero displacement unchanged. In every one of the 41,600 blocks, NONINFO paths diverged from INFO paths from both starts. The diagnostics record (SHA-256 in Section S26) also archives fixation, extinction and late-window occupancy counters; they are not interpreted here. It lists 8,178,892,800 total objective queries.
+
+## S24. Execution history, fixtures and independent audit
+
+**Failed original production submission (infrastructure only).** The original Study 002 production submission did not run the model. It stopped at command-line validation because the required `--design-go` argument was missing, and exited with status 64. It created no production output, generated no random number, executed no model and produced no outcome; no value from it exists or was used. The specification states that a failed or uncertain submission is never duplicated. The authenticated failure record has SHA-256 `289bf3188286476698136d499c12eb3a8c9e4e6fc5cde18fcb15718395f4afaa` and was accepted at 06:28:45 UTC on 2026-10-02. A prospective recovery addendum (SHA-256 `db12c0143b6ba2c0b8cd3771ad18b9afe12feb069fe2a97d15227f4fad836e83`) was issued at 06:29:59 before the corrected run. The corrected run used the frozen production namespace (`production-r1`) and the frozen scientific counts and wrote to a separate attempt-2 production directory.
+
+**Jobs.** Production job 53553084 (run manifest SHA-256 `b7aceaf6638e8f06246c8fb9b182c280a8ed98c4444d93a4a60decdbafb80136`; runner receipt `6ea7f69901c17005a017cf134fd8804a7bdd0c1f4b43de53f9e28e0044de8087`); frozen analyzer job 53553256 (runner receipt `c6bb16016b0133bea52dc3a8e4db5b8fe13189bdd0c79a231181c4669b321570`); separately implemented audit job 53553294 (runner receipt `32e3ffff29b3de9f20158af58a67c2c130cb7456ec8c7287f67354897928a8ed`). The specification allowed one production allocation of at most 32 CPUs, 64 GiB RAM and six hours.
+
+**Deterministic fixtures required before production (none contains a sampled production outcome).** (1) Study 001 candidate, survival, mutation and cache hand traces bit-identical when the new arm is absent; (2) Fisher-Yates and rejection fixtures with forced retries and exact known permutations; (3) INFO and NONINFO bit-identical through every innovation update while their states are identical; (4) at the first recurrent valid-`M` coordinate, only the policy-probe genotype may differ before downstream selection; (5) decoy distance equal to cache distance for all 33 possible weights, with weights 0 and 32 unchanged and reported; (6) preservation of Hamming weights and pairwise overlaps of displacement masks under the shared permutation; (7) the uniform subset law, verified analytically and by exhaustive small-bit analogues; (8) SHAM N1 and N2 for full 256-update paths from both starts and a mixed-label diagnostic; (9) unconditional generation of all random purposes, with coordinate-collision and branch-invariance audits; (10) bit-identical regeneration of a non-audit path from its block identifier and source and configuration hashes.
+
+**Replay audit.** The C++ tool PCONV-AUDIT-REPLAY-1.0.0 (executable SHA-256 `48fff49ee3c704adb0ea46f57823fa7830e7f1fa5ec9d7575dde9aca730e4ac3`), run in production mode with production-namespace keys only, replayed blocks 0-63. Its known-answer tests (three FIPS 180 SHA-256 vectors, three Random123 Philox4x32-10 vectors, the key-word layout and Study 002 key texts including `DECOY_PERMUTATION`, a 64-by-64-bit product, the survival and Fisher-Yates rejection thresholds, popcount, published FNV-1a vectors, coordinate-schema ranges and donor injectivity, identity and rotation Fisher-Yates cases with source-to-destination orientation, a forced rejection retry, exhaustive 4- and 5-position analogues of the uniform subset law, decoy distance matching at weights 0 to 32 with retained weights 0 and 32 and preserved overlaps, the arm-specific probe rule and the HALF law) all passed. It checked 64 blocks, 384 path records, 98,304 update records, 12,582,912 audit rows and 16,384 permutation records, each equal to the expected count, and reported status PASS, zero mismatches and no first discrepancy. The receipt states that it reports no estimate and is not a scientific result.
+
+**Record audit.** The Python tool PCONV-AUDIT-RECORDS-1.0.0 (source SHA-256 `e700ce2621def54db2b2f14fb077dced6cff0e57eb6a3439ac2cfe870e1b5ad9`) generated no random draws. It checked 41,600 block records (all with both SHAM identities), 249,600 path records, 63,897,600 update records, 63,897,600 path-updates with 128 queries, 384 reconstructed audit-path hashes, 12,582,912 audit rows, 16,384 permutation records, 98 manifest files, 19 estimates and one decision file, each equal to the expected count, and reported status PASS and zero mismatches. Its self-checks, including the seven frozen half-widths and a Fisher-Yates replay check that detects a wrongly accepted draw, all passed. The records it compared include the estimate file with SHA-256 `5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d` and the decision file with SHA-256 `3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a`.
+
+The specification required a reviewer that did not implement the producer to reconstruct the estimates and replay the audit paths without importing producer code. Both audits are nevertheless internal reproducibility checks performed within the project; neither is external peer review or an independent scientific replication, and they detect implementation divergence, not a shared misreading of the specification.
+
+## S25. Exact claim limits for Study 002 and the two-study result
+
+The result concerns the total population-accuracy and allele-frequency effects of directional information in a supplied one-record cache under one HALF law aligned to the cache delay, one fixed one-proposal opportunity cost, one mutation rate, one finite horizon and one model class. Specifically:
+
+- **Supported:** relative to the recurrence-gated, parent-distance-matched NONINFO control, directional cache information raised the late-window start-averaged memory-use frequency by more than one expected individual (95% familywise), and NONINFO itself exceeded exact neutrality by more than one expected individual; both Study 002 start contrasts passed the prespecified finite-horizon ±1/32 gate.
+- **Bounded:** the total population-accuracy effect of directional information relative to NONINFO (`Delta_P`) lies below one correct bit per survivor, wholly inside ±1/32; `B_INFO` and `B_NONINFO` lie below one correct bit; no sign is resolved.
+- **Descriptive only:** all 12 cell means, all diagnostics, and the close agreement between the Study 002 INFO and Study 001 ACTIVE-HALF cell means.
+- **Joint result:** recurrence selected a costly memory-use policy (Study 001), and directional cache information strongly amplified that selection (Study 002), without a resolved one-bit population-performance gain in either study.
+- **Not supported:** a per-use value-of-information or per-use causal effect; separate selection on retention versus retrieval; spontaneous origin of memory architecture or capacity; general population utility; any other lag, law, cost, mutation rate, horizon or model class; equilibrium, invasion, stability or fixation; biological, ecological or neural relevance; priority or global novelty; independent replication of Study 001 or independent model-class reproduction.
+
+The control matches parent distance and one common coordinate relabeling but not every cross-genotype relation, and weight-0 displacements retain direction. No grid, cost sweep, new cohort, lag variant or numerical extension follows from either study.
+
+## S26. Provenance of Study 002 quoted values
+
+Every registered Study 002 value in the manuscript and this supplement is checked by `scripts/check_statistics.py` against the saved records below, which also recomputes the seven interval endpoints, the exact linear identities, the decision and classification labels, the SHAM identities, the scope counts, the diagnostic consistency relations and the audit mismatch counts. The checker requires both the 22 Study 001 records and the 19 Study 002 records and authenticates each set against its own acceptance record.
+
+| Source | SHA-256 |
+|---|---|
+| Decision record | `3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a` |
+| 19 estimate records | `5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d` |
+| Descriptive diagnostics | `304843eb5d4a38761a6ce371c7cc125260041dfd910b29d5ba3cc377a6ac3553` |
+| Replay receipt | `cbee79527876745e8918576f73a5d302377e4463d959318ca2f5feffa66416d4` |
+| Record-verification receipt | `09f5dccf4921c8d842ef60fb31aca712bbb582e87a2011c76c02efb658539197` |
+| Production run manifest | `b7aceaf6638e8f06246c8fb9b182c280a8ed98c4444d93a4a60decdbafb80136` |
+| Acceptance record (accepted 2026-10-02 07:10:51 UTC) | `fc7777239cd4442c35c01d6261fd71e6fbf7e7f6fd6e11ddcc5d24876ce2f4a2` |
+| Frozen specification, revision 1 | `58ee414d753fab042e6cccee1a4e6b95dd7f167633b4f33c1491687d9afcb895` |
+| Terminal design review (`DESIGN_GO`) | `76b0c6172e61f60befecef183e83d9e43ea50c1b6bc1e93299668b76f55be60f` |
+| Design-GO record (frozen 2026-10-01 18:59:00 UTC) | `f4a6180109e0d212cbe784a7722a64576e5e7cb0fbfd4b23c757bb5e7ab84d6a` |
+| Original production authority (issued 2026-10-02 06:02:41 UTC) | `31c2100dd73de0090ded3059525aacd139565917086d2c19880b01e319c98992` |
+| Attempt-1 failure record (accepted 2026-10-02 06:28:45 UTC) | `289bf3188286476698136d499c12eb3a8c9e4e6fc5cde18fcb15718395f4afaa` |
+| Prospective recovery addendum (issued 2026-10-02 06:29:59 UTC) | `db12c0143b6ba2c0b8cd3771ad18b9afe12feb069fe2a97d15227f4fad836e83` |
+| Recovery execution authority (issued 2026-10-02 06:32:55 UTC) | `c4cb2e4c162df92a761b2fff391b6e81e000055db88d7cbaeb954b0750b4e085` |
+
+The first six values are authenticated in the Study 002 acceptance record; the acceptance-record SHA-256 is recomputed and enforced by the statistics-checking script; the specification hash is quoted from the source-binding record and is not recomputed by the checker. The remaining provenance records establish prospective order and preserve the disclosed infrastructure-only failure; they add or modify no scientific outcome.

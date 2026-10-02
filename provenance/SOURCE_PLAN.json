@@ -1,27 +1,191 @@
 {
   "schema": "PHASE2-MMEM-SOURCE-PLAN-1",
-  "task": "CLAUDE-017: first complete manuscript source package for PHASE2-MUTABLE-MEMORY-001; CLAUDE-019: one bounded source-only correction patch",
-  "draft_root": "manuscript-draft-v2 (patched from manuscript-draft-v1; paths are relative to the study working directory)",
-  "status": "SOURCE_ONLY. The v1 source was checked, rendered and visually reviewed by the supervisor (statistics check PASS, 864 checks, sha_check_enforced true; visual QA PATCH_REQUIRED for figures 1 and 3). The CLAUDE-019 patch was applied without running any script; rebuild and receipts are kept by the supervisor outside this snapshot.",
+  "package_version": "1.1.0",
+  "task": "CLAUDE-017: first complete manuscript source package for PHASE2-MUTABLE-MEMORY-001; CLAUDE-019: one bounded source-only correction patch; CLAUDE-025: version 1.1.0 source revision integrating the accepted post-v1.0 prospective extension PHASE2-PERFORMANCE-CONVERSION-002 (Study 002) into the existing paper",
+  "draft_root": "manuscript-update-v1.1-draft (edited from the authenticated v2 final source, record PHASE2-MUTABLE-MEMORY-001-MANUSCRIPT-V2-FINAL-SOURCE-AUTHENTICATION; paths are relative to the study working directory)",
+  "status": "SOURCE_ONLY. The v1 source was checked, rendered and visually reviewed by the supervisor (statistics check PASS, 864 checks, sha_check_enforced true; visual QA PATCH_REQUIRED for figures 1 and 3). The CLAUDE-019 patch was applied without running any script. The CLAUDE-025 revision edited existing files only: no script, statistics check, figure build, PDF build, scientific model or network access was run or used, no unsupplied upstream path was inspected, and no file was created or removed. Figure 4, the PDFs and the two-study statistics check do not yet exist and must be produced and reviewed before release.",
+  "version_history": {
+    "1.0": "Study 001 manuscript (CLAUDE-017 draft, CLAUDE-019 patch, QWEN-012 figure-label patch; authenticated v2 final source).",
+    "1.1.0": "Adds Study 002 as a post-v1.0 prospective extension. Study 001 values, the adverse ZERO contrast, the unresolved accuracy interaction, claim limits, citations and provenance are preserved. Title adjusted to name both studies' scope. Adds manuscript Section 2.8, Results 3.6-3.10, Tables 3-4, Figure 4, supplement Part B (S16-S26), Study 002 provenance and two-study checks."
+  },
+  "studies": {
+    "PHASE2-MUTABLE-MEMORY-001": {
+      "label": "Study 001",
+      "saved_estimates": 22,
+      "acceptance_sha256": "2eb3aaf5d754f4570a75522aa9e1f38358715c06c674d5a267732a1357926e6f"
+    },
+    "PHASE2-PERFORMANCE-CONVERSION-002": {
+      "label": "Study 002",
+      "saved_estimates": 19,
+      "acceptance_sha256": "fc7777239cd4442c35c01d6261fd71e6fbf7e7f6fd6e11ddcc5d24876ce2f4a2"
+    },
+    "relation": "Separate accepted estimate sets (41 records in total) with separate familywise controls; not pooled; not independent replications."
+  },
   "supplied_inputs": [
-    {"name": "PHASE2-MUTABLE-MEMORY-001-REV1.md", "role": "frozen prospective specification (revision 1)", "path": "design/PHASE2-MUTABLE-MEMORY-001-REV1.md", "sha256": "c17a3a1e9ac9cf2260f6743eaf08e4c2808080a767af16d2f9e9d2b9ad3e821d"},
-    {"name": "PHASE2_STUDY_001_ACCEPTED.json", "role": "acceptance record; authenticated output hashes; scope; job status", "path": "PHASE2_STUDY_001_ACCEPTED.json", "sha256": "2eb3aaf5d754f4570a75522aa9e1f38358715c06c674d5a267732a1357926e6f"},
-    {"name": "RESULTS_NOTE.md", "role": "accepted result narrative and interpretation", "path": null, "sha256": null},
-    {"name": "decision.json", "role": "frozen primary decision and secondary classifications", "path": "postproduction-stage/attempt1/analysis/decision.json", "sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0"},
-    {"name": "estimates_22.json", "role": "22 saved estimate records", "path": "postproduction-stage/attempt1/analysis/estimates_22.json", "sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0"},
-    {"name": "diagnostics_descriptive.json", "role": "descriptive diagnostics", "path": null, "sha256": "51554620a5e302416edf8de8a073c6962abbc2c8967da80b91b83e4c3d5b685c"},
-    {"name": "production_replay_receipt.json", "role": "separately implemented internal C++ replay receipt", "path": null, "sha256": "9b40322d0d09b90f0a6862533c1efdc7aff21bd699a882b9b9555c5f7c4b4857", "sha256_note": "confirmed equal to authenticated_outputs.independent_replay_receipt_sha256 by the v1 statistics check (sha_check_enforced true)"},
-    {"name": "production_records_receipt.json", "role": "separately implemented internal Python record-verification receipt", "path": null, "sha256": "afd96dc0a5b190401c035fc66c8af8fd4d4603e7185d05bff73fb05e698cff5a", "sha256_note": "confirmed equal to authenticated_outputs.independent_record_receipt_sha256 by the v1 statistics check (sha_check_enforced true)"},
-    {"name": "LITERATURE_NOVELTY_REVIEW.md", "role": "bounded literature boundary and novelty decision", "path": null, "sha256": null},
-    {"name": "selected_references_csl.json", "role": "Crossref metadata for references 1-5 and 7-16", "path": null, "sha256": null},
-    {"name": "build_pdfs.py (supplied)", "role": "rendering style template for scripts/build_pdfs.py", "path": null, "sha256": null}
+    {
+      "name": "PHASE2-MUTABLE-MEMORY-001-REV1.md",
+      "role": "frozen prospective specification (revision 1)",
+      "path": "design/PHASE2-MUTABLE-MEMORY-001-REV1.md",
+      "sha256": "c17a3a1e9ac9cf2260f6743eaf08e4c2808080a767af16d2f9e9d2b9ad3e821d"
+    },
+    {
+      "name": "PHASE2_STUDY_001_ACCEPTED.json",
+      "role": "acceptance record; authenticated output hashes; scope; job status",
+      "path": "PHASE2_STUDY_001_ACCEPTED.json",
+      "sha256": "2eb3aaf5d754f4570a75522aa9e1f38358715c06c674d5a267732a1357926e6f"
+    },
+    {
+      "name": "RESULTS_NOTE.md",
+      "role": "accepted result narrative and interpretation",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "name": "decision.json",
+      "role": "frozen primary decision and secondary classifications",
+      "path": "postproduction-stage/attempt1/analysis/decision.json",
+      "sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0"
+    },
+    {
+      "name": "estimates_22.json",
+      "role": "22 saved estimate records",
+      "path": "postproduction-stage/attempt1/analysis/estimates_22.json",
+      "sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0"
+    },
+    {
+      "name": "diagnostics_descriptive.json",
+      "role": "descriptive diagnostics",
+      "path": null,
+      "sha256": "51554620a5e302416edf8de8a073c6962abbc2c8967da80b91b83e4c3d5b685c"
+    },
+    {
+      "name": "production_replay_receipt.json",
+      "role": "separately implemented internal C++ replay receipt",
+      "path": null,
+      "sha256": "9b40322d0d09b90f0a6862533c1efdc7aff21bd699a882b9b9555c5f7c4b4857",
+      "sha256_note": "confirmed equal to authenticated_outputs.independent_replay_receipt_sha256 by the v1 statistics check (sha_check_enforced true)"
+    },
+    {
+      "name": "production_records_receipt.json",
+      "role": "separately implemented internal Python record-verification receipt",
+      "path": null,
+      "sha256": "afd96dc0a5b190401c035fc66c8af8fd4d4603e7185d05bff73fb05e698cff5a",
+      "sha256_note": "confirmed equal to authenticated_outputs.independent_record_receipt_sha256 by the v1 statistics check (sha_check_enforced true)"
+    },
+    {
+      "name": "LITERATURE_NOVELTY_REVIEW.md",
+      "role": "bounded literature boundary and novelty decision",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "name": "selected_references_csl.json",
+      "role": "Crossref metadata for references 1-5 and 7-16",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "name": "build_pdfs.py (supplied)",
+      "role": "rendering style template for scripts/build_pdfs.py",
+      "path": null,
+      "sha256": null
+    }
   ],
   "patch_inputs_claude_019": [
-    {"name": "manuscript_claim_repro_audit.md", "role": "CLAUDE-018 claim and reproducibility audit (blocking and major findings applied)"},
-    {"name": "MANUSCRIPT_V1_VISUAL_QA.json", "role": "supervisor visual QA of v1 figures and PDFs"},
-    {"name": "REFERENCE_METADATA_CORRECTIONS.md", "role": "supervisor reference-metadata corrections (Grabowski et al. 2010; Leadbeater and Watrobska)"},
-    {"name": "PROSPECTIVE_TIMING_BINDINGS.json", "role": "design, terminal GO review, production authority, submission and acceptance hashes and times"},
-    {"name": "STATISTICS_CHECK.json", "role": "v1 statistics-check report (PASS, 864 checks, input SHA-256 values)"}
+    {
+      "name": "manuscript_claim_repro_audit.md",
+      "role": "CLAUDE-018 claim and reproducibility audit (blocking and major findings applied)"
+    },
+    {
+      "name": "MANUSCRIPT_V1_VISUAL_QA.json",
+      "role": "supervisor visual QA of v1 figures and PDFs"
+    },
+    {
+      "name": "REFERENCE_METADATA_CORRECTIONS.md",
+      "role": "supervisor reference-metadata corrections (Grabowski et al. 2010; Leadbeater and Watrobska)"
+    },
+    {
+      "name": "PROSPECTIVE_TIMING_BINDINGS.json",
+      "role": "design, terminal GO review, production authority, submission and acceptance hashes and times"
+    },
+    {
+      "name": "STATISTICS_CHECK.json",
+      "role": "v1 statistics-check report (PASS, 864 checks, input SHA-256 values)"
+    }
+  ],
+  "revision_inputs_claude_025": [
+    {
+      "name": "PHASE2-PERFORMANCE-CONVERSION-002-REV1.md",
+      "role": "Study 002 frozen prospective specification (revision 1)",
+      "path": "design/PHASE2-PERFORMANCE-CONVERSION-002-REV1.md",
+      "sha256": "58ee414d753fab042e6cccee1a4e6b95dd7f167633b4f33c1491687d9afcb895"
+    },
+    {
+      "name": "PHASE2_STUDY_002_ACCEPTED.json",
+      "role": "Study 002 acceptance record; output hashes; scope; audit counts; limits; disposition",
+      "path": "PHASE2_STUDY_002_ACCEPTED.json",
+      "sha256": "fc7777239cd4442c35c01d6261fd71e6fbf7e7f6fd6e11ddcc5d24876ce2f4a2"
+    },
+    {
+      "name": "decision.json (Study 002)",
+      "role": "frozen primary decision, wholly-inside flag, secondary classifications, interpretive branch",
+      "path": "analysis-stage/performance002_attempt1/results/decision.json",
+      "sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a"
+    },
+    {
+      "name": "estimates_19.json",
+      "role": "19 saved Study 002 estimate records",
+      "path": "analysis-stage/performance002_attempt1/results/estimates_19.json",
+      "sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d"
+    },
+    {
+      "name": "diagnostics_descriptive.json (Study 002)",
+      "role": "descriptive diagnostics",
+      "path": "analysis-stage/performance002_attempt1/results/diagnostics_descriptive.json",
+      "sha256": "304843eb5d4a38761a6ce371c7cc125260041dfd910b29d5ba3cc377a6ac3553"
+    },
+    {
+      "name": "production_replay_receipt.json (Study 002)",
+      "role": "separately implemented internal C++ replay receipt",
+      "path": "audit-stage/performance002_production_attempt1/production_replay_receipt.json",
+      "sha256": "cbee79527876745e8918576f73a5d302377e4463d959318ca2f5feffa66416d4"
+    },
+    {
+      "name": "production_records_receipt.json (Study 002)",
+      "role": "separately implemented internal Python record-verification receipt",
+      "path": "audit-stage/performance002_production_attempt1/production_records_receipt.json",
+      "sha256": "09f5dccf4921c8d842ef60fb31aca712bbb582e87a2011c76c02efb658539197"
+    },
+    {
+      "name": "SOURCE_BINDINGS.json (Study 002)",
+      "role": "byte counts and SHA-256 of the accepted Study 002 files",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "name": "QUOTED_STATISTICS.json (Study 002, upstream)",
+      "role": "upstream digest of the 19 records; re-registered here",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "name": "RESULTS_NOTE.md (Study 002)",
+      "role": "accepted result narrative and manuscript disposition",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "name": "MANUSCRIPT_V2_FINAL_SOURCE_AUTHENTICATION.json",
+      "role": "authentication of the seed source (13 files)",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "name": "CLAUDE-025 task statement",
+      "role": "integration requirements; source of the failed-original-submission and recovery-addendum facts",
+      "path": null,
+      "sha256": null
+    }
   ],
   "created_files": [
     "README.md",
@@ -38,19 +202,81 @@
     "docs/DATA_AVAILABILITY.md",
     "CONSTRUCTION_NOT_RUN.json"
   ],
-  "historical_records": {"CONSTRUCTION_NOT_RUN.json": "CLAUDE-017 construction record; preserved byte-for-byte and not updated by later patches."},
+  "edited_files_claude_025": [
+    "README.md",
+    "docs/AI_ASSISTANCE.md",
+    "docs/DATA_AVAILABILITY.md",
+    "paper/MANUSCRIPT.md",
+    "paper/SUPPLEMENT.md",
+    "provenance/CLAIM_EVIDENCE.json",
+    "provenance/FIGURE_BINDINGS.json",
+    "provenance/QUOTED_STATISTICS.json",
+    "provenance/SOURCE_PLAN.json",
+    "scripts/build_pdfs.py",
+    "scripts/check_statistics.py",
+    "scripts/make_figures.py"
+  ],
+  "historical_records": {
+    "CONSTRUCTION_NOT_RUN.json": "CLAUDE-017 construction record; preserved byte-for-byte and not updated by later patches or by CLAUDE-025."
+  },
   "rebuild_commands": [
-    "python scripts/make_figures.py --estimates <estimates_22.json> --decision <decision.json> --output-dir _build/figures",
-    "python scripts/check_statistics.py --estimates <estimates_22.json> --decision <decision.json> --diagnostics <diagnostics_descriptive.json> --accepted <PHASE2_STUDY_001_ACCEPTED.json> --replay-receipt <production_replay_receipt.json> --records-receipt <production_records_receipt.json> --draft-root . --report _build/STATISTICS_CHECK.json",
+    "python scripts/make_figures.py --estimates <estimates_22.json> --decision <decision.json> --s2-estimates <estimates_19.json> --s2-decision <study-002 decision.json> --output-dir _build/figures",
+    "python scripts/check_statistics.py --estimates <estimates_22.json> --decision <decision.json> --diagnostics <diagnostics_descriptive.json> --accepted <PHASE2_STUDY_001_ACCEPTED.json> --replay-receipt <production_replay_receipt.json> --records-receipt <production_records_receipt.json> --s2-estimates <estimates_19.json> --s2-decision <study-002 decision.json> --s2-diagnostics <study-002 diagnostics_descriptive.json> --s2-accepted <PHASE2_STUDY_002_ACCEPTED.json> --s2-replay-receipt <study-002 production_replay_receipt.json> --s2-records-receipt <study-002 production_records_receipt.json> --draft-root . --report _build/STATISTICS_CHECK.json",
     "python scripts/build_pdfs.py --figures-dir _build/figures --output-dir _build/paper"
   ],
-  "requirements": {"make_figures.py": "Python 3 standard library + matplotlib", "check_statistics.py": "Python 3 standard library only", "build_pdfs.py": "Python 3 + reportlab (bundled Vera fonts)", "version_pinning": "matplotlib and reportlab versions used for the release build are to be recorded in the supervisor's build receipt"},
-  "page_targets": {"manuscript": "8-12 rendered A4 pages", "supplement": "5-8 rendered A4 pages", "v1_measured": {"manuscript": 14, "supplement": 9}, "note": "Page count alone is not a reason to compress scientifically useful content."},
-  "public_release_closure": {
-    "repository": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use",
-    "release": "v1.0.0",
-    "build": "Figures, PDFs and the saved-statistic check were regenerated from authenticated inputs and visually verified before release.",
-    "archival_record": "The version DOI is linked from the repository release when public."
+  "requirements": {
+    "make_figures.py": "Python 3 standard library + matplotlib",
+    "check_statistics.py": "Python 3 standard library only",
+    "build_pdfs.py": "Python 3 + reportlab (bundled Vera fonts)",
+    "version_pinning": "matplotlib and reportlab versions used for the release build are to be recorded in the supervisor's build receipt"
   },
-  "unsupported_statements_omitted": "No acknowledgments, funding statement, competing-interests declaration or institutional-clearance claim was supplied or verified, so none was invented for the preprint."
+  "page_targets": {
+    "manuscript": "8-12 rendered A4 pages for v1.0; longer for the two-study v1.1.0",
+    "supplement": "5-8 rendered A4 pages for v1.0; longer with Part B",
+    "v1_measured": {
+      "manuscript": 14,
+      "supplement": 9
+    },
+    "note": "Page count alone is not a reason to compress scientifically useful content."
+  },
+  "open_items_for_author": [
+    "Write any acknowledgments, funding statement, competing-interests declaration and institutional clearance. None was supplied or verified, so the manuscript contains no such section; these cannot be drafted or asserted by AI.",
+    "Assign DOI, repository address and release date at public release; none are claimed in this draft.",
+    "Run scripts/check_statistics.py with both studies' authenticated records (sha check enforced), generate all four figures, rebuild the PDFs and perform visual QA, including the new Figure 4 and the longer tables in Supplement Part B."
+  ],
+  "supervisor_provenance_completion": {
+    "status": "COMPLETE",
+    "reason": "CLAUDE-025 correctly marked records unavailable in its bounded source context; the supervisor later authenticated the existing records directly and completed the public provenance fields before audit.",
+    "records": [
+      {
+        "path": "results/qwen_014/performance_design_terminal_review.md",
+        "sha256": "76b0c6172e61f60befecef183e83d9e43ea50c1b6bc1e93299668b76f55be60f"
+      },
+      {
+        "path": "DESIGN_002_GO.json",
+        "sha256": "f4a6180109e0d212cbe784a7722a64576e5e7cb0fbfd4b23c757bb5e7ab84d6a",
+        "created_at_utc": "2026-10-01T18:59:00Z"
+      },
+      {
+        "path": "PERFORMANCE_002_PRODUCTION_EXECUTION_AUTHORITY.json",
+        "sha256": "31c2100dd73de0090ded3059525aacd139565917086d2c19880b01e319c98992",
+        "issued_at_utc": "2026-10-02T06:02:41.744486+00:00"
+      },
+      {
+        "path": "PERFORMANCE_002_PRODUCTION_ATTEMPT1_FAILURE.json",
+        "sha256": "289bf3188286476698136d499c12eb3a8c9e4e6fc5cde18fcb15718395f4afaa",
+        "accepted_at_utc": "2026-10-02T06:28:45.272422+00:00"
+      },
+      {
+        "path": "design/PHASE2-PERFORMANCE-CONVERSION-002-EXECUTION-RECOVERY-REV1.md",
+        "sha256": "db12c0143b6ba2c0b8cd3771ad18b9afe12feb069fe2a97d15227f4fad836e83",
+        "issued_at_utc": "2026-10-02T06:29:59.265954+00:00"
+      },
+      {
+        "path": "PERFORMANCE_002_RECOVERY_EXECUTION_AUTHORITY.json",
+        "sha256": "c4cb2e4c162df92a761b2fff391b6e81e000055db88d7cbaeb954b0750b4e085",
+        "issued_at_utc": "2026-10-02T06:32:55.514310+00:00"
+      }
+    ]
+  }
 }

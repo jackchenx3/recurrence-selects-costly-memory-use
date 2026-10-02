@@ -1,0 +1,16 @@
+{
+  "receipt": "PCONV-PURPOSE-KEYS-1",
+  "namespace": "production-r1",
+  "keys": [
+    {"purpose": "INITIAL_GENOTYPE", "text": "PHASE2-PERFORMANCE-CONVERSION-002|production-r1|INITIAL_GENOTYPE", "k0": "f8878ff1", "k1": "7ed8243f"},
+    {"purpose": "TARGET_INNOVATION", "text": "PHASE2-PERFORMANCE-CONVERSION-002|production-r1|TARGET_INNOVATION", "k0": "73c2821e", "k1": "d5c7aca7"},
+    {"purpose": "TARGET_COPY", "text": "PHASE2-PERFORMANCE-CONVERSION-002|production-r1|TARGET_COPY", "k0": "e68efeee", "k1": "fef35c49"},
+    {"purpose": "FRESH_MASK", "text": "PHASE2-PERFORMANCE-CONVERSION-002|production-r1|FRESH_MASK", "k0": "27046e7d", "k1": "351c13f6"},
+    {"purpose": "SCOUT_MASK", "text": "PHASE2-PERFORMANCE-CONVERSION-002|production-r1|SCOUT_MASK", "k0": "6d510ef2", "k1": "7b886cc2"},
+    {"purpose": "LOCAL_BIT", "text": "PHASE2-PERFORMANCE-CONVERSION-002|production-r1|LOCAL_BIT", "k0": "3e3e09e7", "k1": "ec145d0d"},
+    {"purpose": "DONOR_KEY", "text": "PHASE2-PERFORMANCE-CONVERSION-002|production-r1|DONOR_KEY", "k0": "a0596ddb", "k1": "398e70bf"},
+    {"purpose": "SURVIVAL_UNIFORM", "text": "PHASE2-PERFORMANCE-CONVERSION-002|production-r1|SURVIVAL_UNIFORM", "k0": "4e0ab555", "k1": "7d033bdf"},
+    {"purpose": "POLICY_MUTATION", "text": "PHASE2-PERFORMANCE-CONVERSION-002|production-r1|POLICY_MUTATION", "k0": "309df97d", "k1": "a16e219e"},
+    {"purpose": "DECOY_PERMUTATION", "text": "PHASE2-PERFORMANCE-CONVERSION-002|production-r1|DECOY_PERMUTATION", "k0": "c45c5d4e", "k1": "01b1afb1"}
+  ]
+}

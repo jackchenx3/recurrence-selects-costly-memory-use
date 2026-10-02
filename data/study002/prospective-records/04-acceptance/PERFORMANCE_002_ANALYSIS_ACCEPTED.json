@@ -1,0 +1,31 @@
+{
+  "analyzer_rerun_forbidden": true,
+  "created_utc": "2026-10-02T07:06:02.547442+00:00",
+  "decision_rule_applied": 5,
+  "job_id": "53553256",
+  "next_authorized_action": "Run the accepted independent production auditor exactly once: C++ replay of 64 selected blocks and Python verification of all records and 19 estimates.",
+  "outputs": {
+    "decision.json": {
+      "bytes": 1917,
+      "sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a"
+    },
+    "diagnostics_descriptive.json": {
+      "bytes": 2633,
+      "sha256": "304843eb5d4a38761a6ce371c7cc125260041dfd910b29d5ba3cc377a6ac3553"
+    },
+    "estimates_19.json": {
+      "bytes": 8482,
+      "sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d"
+    }
+  },
+  "primary_decision": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+  "record": "PERFORMANCE-002-ANALYSIS-ACCEPTANCE-1",
+  "record_count": 19,
+  "runner_receipt": {
+    "path": "$PROJECT_ROOT/analysis-stage/performance002_attempt1/ANALYSIS_RUNNER_RECEIPT.json",
+    "sha256": "c6bb16016b0133bea52dc3a8e4db5b8fe13189bdd0c79a231181c4669b321570"
+  },
+  "scientific_interpretation_withheld_until_independent_audit": true,
+  "status": "ANALYSIS_COMPLETE_AUDIT_AUTHORIZED",
+  "study_id": "PHASE2-PERFORMANCE-CONVERSION-002"
+}

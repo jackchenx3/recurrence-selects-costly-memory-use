@@ -1,23 +1,23 @@
 cff-version: 1.2.0
 message: "Please cite the research preprint and versioned evidence package."
 type: software
-title: "Environmental recurrence selects a costly memory-use allele without a resolved one-bit population benefit: research artifacts"
+title: "Environmental recurrence and directional cache information select a costly memory-use allele without a resolved one-bit population benefit: research artifacts"
 authors:
   - family-names: Chen
     given-names: Jack
-version: 1.0.0
-date-released: '2026-10-01'
+    affiliation: "Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health"
+version: 1.1.0
+date-released: '2026-10-02'
 repository-code: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use"
-doi: 10.5281/zenodo.23085659
 license: MIT
 preferred-citation:
   type: unpublished
-  title: "Environmental recurrence selects a costly memory-use allele without a resolved one-bit population benefit"
+  title: "Environmental recurrence and directional cache information select a costly memory-use allele without a resolved one-bit population benefit"
   authors:
     - family-names: Chen
       given-names: Jack
+      affiliation: "Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health"
   year: 2026
-  version: 1.0.0
-  doi: 10.5281/zenodo.23085659
-  url: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/blob/main/paper/MANUSCRIPT.md"
-  notes: "Research preprint; not externally peer reviewed. Manuscript and data are CC BY 4.0."
+  version: 1.1.0
+  url: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/blob/v1.1.0/paper/MANUSCRIPT.md"
+  notes: "Research preprint; not externally peer reviewed. Manuscript and data are CC BY 4.0. Zenodo archival publication pending."

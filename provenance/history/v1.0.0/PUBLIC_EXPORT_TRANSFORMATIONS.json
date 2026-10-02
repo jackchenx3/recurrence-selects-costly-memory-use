@@ -1,0 +1,67 @@
+{
+  "record": "PHASE2-MUTABLE-MEMORY-001-PUBLIC-EXPORT-TRANSFORMATIONS",
+  "status": "PASS",
+  "transformations": [
+    {
+      "path": "figures/FIGURE_DATA.json",
+      "source_sha256": "abf2f0a80b6d826dd5789fde54c73cdab66d56f98df3d8623a08da4126f229df",
+      "public_sha256": "643f07bf6be1e476e8a838b625060e3d07c359f24ccec475614d03e2588580ce",
+      "change": "normalized administrative path fields: inputs.decision.path, inputs.estimates.path",
+      "scientific_values_changed": false
+    },
+    {
+      "path": "scripts/check_statistics.py",
+      "source_sha256": "582890d630370045cf06b7920006610923fada4301fb6dfad8eeafb64c162a6c",
+      "public_sha256": "d2e1f1fa2b5e91a855ae457e3aedfd88287e9b348aa989c1a4fcf886abe1d568",
+      "change": "added an optional public-export hash adapter; arithmetic and decision checks are unchanged",
+      "scientific_values_changed": false
+    },
+    {
+      "path": "code/auditor/README.md",
+      "source_sha256": "309aef916f4ac11964773326870990435e04983d08614cc8507a839f1248930d",
+      "public_sha256": "8d91bcb4f4eaa84219a47aa3eec2b38a77cb01ebcf18310d7f05094d3594569c",
+      "change": "normalized administrative path text",
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/audit/production_replay_receipt.json",
+      "logical_input_key": "replay_receipt",
+      "source_sha256": "9b40322d0d09b90f0a6862533c1efdc7aff21bd699a882b9b9555c5f7c4b4857",
+      "public_sha256": "18fe275319d957a4fb6449b42060a3747c035901663eaf7e8b065c2c1a4a19cb",
+      "change": "replaced private absolute input paths by their existing relative labels",
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/audit/production_records_receipt.json",
+      "logical_input_key": "records_receipt",
+      "source_sha256": "afd96dc0a5b190401c035fc66c8af8fd4d4603e7185d05bff73fb05e698cff5a",
+      "public_sha256": "a7412538efa4965b834691e3f550c3cba86154a21fbf9444c5e91f7d34b38e4f",
+      "change": "replaced private absolute input paths by their existing relative labels",
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/acceptance/PRODUCTION_INVENTORY_AUDIT.json",
+      "source_sha256": "622fa9e01a40c44ba545926e54b06e102d20b7fcf9e9c8e645ddaf9f7212e09c",
+      "public_sha256": "dfbb88d79b21bbf9d15e996fd116a5c340d87a17290a134e6ce8553c5d1ad9d6",
+      "change": "normalized administrative path fields: attempt_root",
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/compact-production/run_manifest.json",
+      "source_sha256": "3aa50dc2b9c740341c21d996d1356e55319144a58803d1878b13ab762795d9a6",
+      "public_sha256": "7b55e11b393b8ba88c58e859b640172b17cfcb918cbbf6ef8458de2aa5aa877e",
+      "change": "normalized administrative path fields: config_path",
+      "scientific_values_changed": false
+    },
+    {
+      "path": "data/compact-production/ANALYSIS_LOCK.json",
+      "source_sha256": "b8eaf1ace3ca7c39726a1e98936d18762adc1ca14edd04637518509c19a1a68c",
+      "public_sha256": "c16efeb65bd0e6e90bdf2476ab1c52bdd0d7c304e05ead6025dca6259147e8cf",
+      "change": "normalized administrative path fields: out",
+      "scientific_values_changed": false
+    }
+  ],
+  "private_paths_remaining": 0,
+  "scientific_binary_files_changed": 0,
+  "interpretation": "Changes are portable path substitutions or an adapter that authenticates those substitutions. No scientific value, binary record, estimate, interval or decision was changed."
+}

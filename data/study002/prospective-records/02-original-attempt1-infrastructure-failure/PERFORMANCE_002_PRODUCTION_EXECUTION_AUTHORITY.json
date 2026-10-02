@@ -1,0 +1,61 @@
+{
+  "accepted_runner": {
+    "bytes": 31795,
+    "construction_authority_sha256": "2e536dd747aeb7edcd7afba76b9c6399216c96914405e6b4c191ca22f6033c5d",
+    "path": "production-runner-performance002-v1/run_production_stage.sh",
+    "sha256": "99b48507aaff907ced740fa37fa5ab4b71f8ecdc5d0cdca83452992eac8b1239",
+    "source_receipt_sha256": "3901a6af750c4987fef94401bcf5167b317ef0f4bc075009302a90763c0228ab"
+  },
+  "design": {
+    "blocks": 41600,
+    "cells_per_block": 6,
+    "law": "HALF only",
+    "objective_queries": 8178892800,
+    "path": "design/PHASE2-PERFORMANCE-CONVERSION-002-REV1.md",
+    "paths": 249600,
+    "saved_estimates": 19,
+    "sha256": "58ee414d753fab042e6cccee1a4e6b95dd7f167633b4f33c1491687d9afcb895"
+  },
+  "execution": {
+    "analysis_in_production_job_authorized": false,
+    "attempts_authorized": 1,
+    "automatic_retry_authorized": false,
+    "command": "/bin/bash $PROJECT_ROOT/production-runner-performance002-v1/run_production_stage.sh",
+    "output_root": "$PROJECT_ROOT/production-stage/performance002_attempt1",
+    "parameter_changes_authorized": false,
+    "pilot_authorized": false
+  },
+  "gates": {
+    "auditor_fixture_acceptance_sha256": "03a11965395bf1f17053648a2bd5781a6491cc05b3df6c76afd1ba5b2bba6de9",
+    "auditor_fixture_receipt_sha256": "188dd780494ebacfc003608b5302aedf307b7c22bdcc2908a498a43905e745ba",
+    "auditor_source_review_sha256": "8133cba192e79cf7fa449f704b1e7b02033f8e0b658906276f29f5d4534d5c42",
+    "authority_deployment_evidence_sha256": "9e9786e6be89b9c09c7fa86311d67920f0e8a5137d6329d874dcd5eb7e64e515",
+    "decision": "All prospective design, source, producer fixture, independent-auditor fixture, frozen identity, deployment and terminal runner-review gates pass. The conditional missing-authority concern was resolved by direct batch-shell evidence without changing source.",
+    "design_go_sha256": "f4a6180109e0d212cbe784a7722a64576e5e7cb0fbfd4b23c757bb5e7ab84d6a",
+    "producer_fixture_acceptance_sha256": "faa594ad5c21abd9f09eed7b7c8fca4b6e576488f65ad38e6d885b94e5c500de",
+    "producer_fixture_receipt_sha256": "94ba6486f049d76b36822d61521a68d0574c01934ff37ecf108b438b5a9a7c3c",
+    "producer_source_review_sha256": "ffb34948b2e17ff467f5c2ee6c393e715b1545b559c9a39373f7e3a5f7624554",
+    "runner_final_disposition": "RUNNER_GO",
+    "runner_final_disposition_sha256": "2bab16802a941a4f743893a1cd6b808965740607f70970c99866bbae9ad46225",
+    "runner_initial_terminal_review_sha256": "766dc1c05eea6fca46d5c22989f29679863688875de483583b9ab9dd0d8bd321"
+  },
+  "issued_at_utc": "2026-10-02T06:02:41.744486+00:00",
+  "publication_from_unreviewed_job_output_authorized": false,
+  "record": "PHASE2-PERFORMANCE-CONVERSION-002-PRODUCTION-EXECUTION-AUTHORITY-1",
+  "resource_request": {
+    "cpus_per_task": 32,
+    "jobs": 1,
+    "memory": "64G",
+    "new_output_hard_ceiling_gib": 100,
+    "nodes": 1,
+    "ordinary_cpu_job": true,
+    "partition": "norm",
+    "tasks": 1,
+    "wall_time": "06:00:00"
+  },
+  "scheduler_submission_authorized": true,
+  "scientific_execution_authorized": true,
+  "status": "SCIENTIFIC_PRODUCTION_AUTHORIZED",
+  "study_id": "PHASE2-PERFORMANCE-CONVERSION-002",
+  "user_authorization": "All remaining research, compute, worker, resource-allocation, dissemination and publication actions authorized on 2026-10-01."
+}

@@ -1,0 +1,90 @@
+{
+  "status": "COMPLETE",
+  "response_status": "completed",
+  "incomplete_details": null,
+  "prompt": "$PROJECT_ROOT/assignments/QWEN_019_MANUSCRIPT_V1_1_CLAIM_REPRO_AUDIT.md",
+  "prompt_sha256": "019fb6a5d989a700d0f886e3fe4fb1f8c763befad77512ddf94ec0f2fd2c4421",
+  "context_files": [
+    {
+      "path": "data/acceptance/PHASE2_STUDY_001_ACCEPTED.json",
+      "sha256": "2eb3aaf5d754f4570a75522aa9e1f38358715c06c674d5a267732a1357926e6f"
+    },
+    {
+      "path": "data/study002/prospective-records/04-acceptance/PERFORMANCE_002_AUDIT_ACCEPTED.json",
+      "sha256": "fc7777239cd4442c35c01d6261fd71e6fbf7e7f6fd6e11ddcc5d24876ce2f4a2"
+    },
+    {
+      "path": "data/study002/acceptance/RESULTS_NOTE.md",
+      "sha256": "d85b094b5157770d69a3f7de06d5c8df25b4fb075293ff1576ff771c5acc280d"
+    },
+    {
+      "path": "paper/MANUSCRIPT.md",
+      "sha256": "5e6941605cfc11180074925c748d8427b353e9e3f9eb3e234def09d7a9ebce31"
+    },
+    {
+      "path": "paper/SUPPLEMENT.md",
+      "sha256": "93cc4f81d8904f3a113dd105fdf78d1a423bda070bf0632660983af756640658"
+    },
+    {
+      "path": "docs/DATA_AVAILABILITY.md",
+      "sha256": "4739210bfb19981a5ccaa7d6aaa9570970b554f2e20847372079bc3de0d88f53"
+    },
+    {
+      "path": "docs/AI_ASSISTANCE.md",
+      "sha256": "cd5f0fde6c5eba224c32cf34768e269b369fa1d202d2b3adc268de4dcd07f575"
+    },
+    {
+      "path": "provenance/CLAIM_EVIDENCE.json",
+      "sha256": "77995adf507661ffc9660800ccdfbeb24c0cbb63fef543aac8330cc4991da1cf"
+    },
+    {
+      "path": "provenance/FIGURE_BINDINGS.json",
+      "sha256": "7de302d71fcab1d48578c4158d27deefa37a5b7c10554cbad38b91a88ab6885f"
+    },
+    {
+      "path": "provenance/SOURCE_PLAN.json",
+      "sha256": "f8a50c7134a32508ae1a92da86b70d052d5419acf9f3e7d719beedbda0d9a1cd"
+    },
+    {
+      "path": "provenance/MANUSCRIPT_V1_1_STATISTICS_CHECK_1975.json",
+      "sha256": "673340ba108a49e9ebae1763cd68970e34c7e907aa73018d681cd8b7bbea509d"
+    },
+    {
+      "path": "provenance/MANUSCRIPT_V1_1_PROVENANCE_PATCH_RECEIPT.json",
+      "sha256": "b758f4090deec92ea572585a6dbfcb32dbae67c4429bd905459c53efb22422ff"
+    },
+    {
+      "path": "provenance/MANUSCRIPT_V1_1_PATCHED_SOURCE_AUTHENTICATION.json",
+      "sha256": "a41c8c026a07a8b507439665d44c50a0da7c45caa5bc9e467118d6aab9eccc0a"
+    },
+    {
+      "path": "provenance/MANUSCRIPT_V1_1_BUILD_RECEIPT_2.json",
+      "sha256": "8a44e699c8df28a64860f27d3162b359cb5660b8b7c6b1a178ec141f9977dc1c"
+    },
+    {
+      "path": "provenance/MANUSCRIPT_V1_1_VISUAL_QA.json",
+      "sha256": "50994e0b1a6a22179a2323851d0879ae7ca722b846bf01396cced35698aa2c74"
+    }
+  ],
+  "response_json_sha256": "941d470191deb7da5124d4f155f520c95e33404d1655b5495f18791262322aba",
+  "response_text_sha256": "eacec40baf2528a8c1f66f99553b36386c97081a27294c06cdebbe64bc13a330",
+  "response_characters": 2497,
+  "model": "analysis-local",
+  "response_id": "resp_8e54bd400db54e6d",
+  "usage": {
+    "input_tokens": 85507,
+    "input_tokens_details": {
+      "cached_tokens": 0,
+      "input_tokens_per_turn": [],
+      "cached_tokens_per_turn": []
+    },
+    "output_tokens": 516,
+    "output_tokens_details": {
+      "reasoning_tokens": 0,
+      "tool_output_tokens": 0,
+      "output_tokens_per_turn": [],
+      "tool_output_tokens_per_turn": []
+    },
+    "total_tokens": 86023
+  }
+}

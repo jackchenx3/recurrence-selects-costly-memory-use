@@ -1,0 +1,22 @@
+{
+  "primary_decision": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+  "decision_rule_applied": 5,
+  "bounded_interval_wholly_inside_minus_delta_plus_delta": true,
+  "secondary_classifications": {
+    "E_INFO": "MEANINGFUL POSITIVE AT THE ONE-BIT SCALE",
+    "E_NONINFO": "MEANINGFUL POSITIVE AT THE ONE-BIT SCALE",
+    "B_INFO": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+    "B_NONINFO": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE"
+  },
+  "interpretive_branch": "Directional information selects for policy use without converting into one-bit population performance, sharpening the selection-performance separation.",
+  "b_info_lower_exceeds_delta": false,
+  "e_info_lower_exceeds_delta": true,
+  "interpretation_labels": [
+    "TOTAL EFFECT: Delta_P is the total population-accuracy effect of directional cache information beyond the parent and matched displacement length, mediated through evolved policy use.",
+    "NOT PER-USE: Delta_P is not a per-use value-of-information estimate, does not separate retention from retrieval, and does not demonstrate spontaneous memory origin.",
+    "CONTROL GEOMETRY: the fixed shared permutation matches parent distance and one common coordinate relabeling but does not preserve every cross-genotype relation; displacement weights 0 and 32 cannot be scrambled and retain direction (counts in diagnostics_descriptive.json).",
+    "SCOPE: one supplied cache, one HALF law, one fixed displacement cost and one parent-distance-matched directional-scramble control; no generalization to other lags, costs, models or biology.",
+    "SECONDARY FAMILIES: E_INFO, E_NONINFO, B_INFO and B_NONINFO cannot alter the primary decision. A positive primary does not establish benefit over no-memory use unless lower(B_INFO) > 1/32.",
+    "NO EXTENSION: a null, bounded or adverse outcome is reportable and must not trigger a numerical extension, parameter change or follow-up cohort."
+  ]
+}

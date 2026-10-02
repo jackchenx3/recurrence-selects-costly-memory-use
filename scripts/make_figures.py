@@ -1,16 +1,20 @@
 #!/usr/bin/env python3
-"""Render the three manuscript figures from the saved analyzer records.
+"""Render the four manuscript figures from the saved analyzer records of both studies.
 
-Inputs are named explicitly: the 22-record estimate file (analysis/estimates_22.json,
-a JSON list of records addressed by their "name" field) and the decision record
-(analysis/decision.json). No value is embedded in this script; every plotted value is
-read from those files and written, with input SHA-256 values, to FIGURE_DATA.json in
-the output directory. Figure 1 is a deterministic schematic containing no outcome
-values. Only the Python standard library and matplotlib are used; no producer,
-analyzer or auditor code is imported.
+Inputs are named explicitly. Study 001 (PHASE2-MUTABLE-MEMORY-001): the 22-record
+estimate file (analysis/estimates_22.json, a JSON list of records addressed by their
+"name" field) and the decision record (analysis/decision.json). Study 002
+(PHASE2-PERFORMANCE-CONVERSION-002): the 19-record estimate file
+(results/estimates_19.json) and its decision record (results/decision.json). No value is
+embedded in this script; every plotted value is read from those files and written, with
+input SHA-256 values, to FIGURE_DATA.json in the output directory. Each input must match
+the SHA-256 authenticated in its study's acceptance record unless --skip-sha-check is
+given, in which case the mismatch is recorded in FIGURE_DATA.json. Figure 1 is a
+deterministic schematic containing no outcome values. Only the Python standard library
+and matplotlib are used; no producer, analyzer or auditor code is imported.
 
-Outputs: figure1_design, figure2_allele and figure3_accuracy, each as PNG, PDF and SVG,
-plus FIGURE_DATA.json.
+Outputs: figure1_design, figure2_allele and figure3_accuracy (Study 001) and
+figure4_information (Study 002), each as PNG, PDF and SVG, plus FIGURE_DATA.json.
 """
 import argparse
 import hashlib
@@ -21,7 +25,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
-from matplotlib.patches import FancyArrowPatch, FancyBboxPatch  # noqa: E402
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Patch  # noqa: E402
 
 ARMS = ("ACTIVE", "SHAM")
 LAWS = ("ZERO", "HALF")
@@ -31,9 +35,35 @@ PRIMARY_GATE = ("D_HALF", "D_ZERO")
 SECONDARY = ("P_abs", "P_rec")
 DELTA = 1.0 / 32.0
 
+# Study 002 record names (PHASE2-PERFORMANCE-CONVERSION-002).
+S2_ARMS = ("INFO", "NONINFO", "SHAM")
+S2_PRIMARY = ("Delta_P", "D_INFO", "D_NONINFO")
+S2_ALLELE = ("E_INFO", "E_NONINFO")
+S2_PERFORMANCE = ("B_INFO", "B_NONINFO")
+S2_SAVED_ESTIMATES = 19
+S2_LABELS = {
+    "Delta_P": "Delta_P\n(INFO - NONINFO accuracy)",
+    "D_INFO": "D_INFO\n(INFO start contrast)",
+    "D_NONINFO": "D_NONINFO\n(NONINFO start contrast)",
+    "E_INFO": "E_INFO\n(INFO - NONINFO frequency)",
+    "E_NONINFO": "E_NONINFO\n(NONINFO frequency - 1/2)",
+    "B_INFO": "B_INFO\n(INFO - SHAM accuracy)",
+    "B_NONINFO": "B_NONINFO\n(NONINFO - SHAM accuracy)",
+}
+
+# SHA-256 values authenticated in PHASE2_STUDY_001_ACCEPTED.json (authenticated_outputs)
+# and PHASE2_STUDY_002_ACCEPTED.json (analysis).
+AUTHENTICATED_SHA256 = {
+    "estimates": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0",
+    "decision": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0",
+    "s2_estimates": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d",
+    "s2_decision": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a",
+}
+
 INK = "#20262c"
 MUTED = "#55636e"
 GRID = "#dde4e8"
+BAND = "#e4eef5"
 ARM_COLOR = {"ACTIVE": "#1f5f8b", "SHAM": "#7a8288"}
 START_MARKER = {"ALL_F": ("o", True), "ALL_M": ("s", False)}
 
@@ -82,6 +112,23 @@ def load_records(estimates_path, decision_path):
     missing = [name for name in required if name not in by_name]
     if missing:
         raise SystemExit("missing estimate records: " + ", ".join(missing))
+    return by_name, decision
+
+
+def load_s2_records(estimates_path, decision_path):
+    with open(str(estimates_path)) as handle:
+        records = json.load(handle)
+    with open(str(decision_path)) as handle:
+        decision = json.load(handle)
+    if not isinstance(records, list) or len(records) != S2_SAVED_ESTIMATES:
+        raise SystemExit("Study 002 estimate file must be a list of 19 records")
+    by_name = {rec["name"]: rec for rec in records}
+    required = list(S2_PRIMARY + S2_ALLELE + S2_PERFORMANCE)
+    required += ["%s|%s|%s" % (p, a, s) for p in ("M_FREQUENCY_LATE", "ACCURACY_LATE")
+                 for a in S2_ARMS for s in STARTS]
+    missing = [name for name in required if name not in by_name]
+    if missing:
+        raise SystemExit("missing Study 002 estimate records: " + ", ".join(missing))
     return by_name, decision
 
 
@@ -238,8 +285,14 @@ def cell_panel(ax, cells, ylabel, reference=None, reference_label=None):
     ax.legend(handles=handles, frameon=False, fontsize=7, loc="upper right")
 
 
-def interval_panel(ax, items, xlim, thresholds, xlabel):
-    names = [item["name"] for item in items]
+def interval_panel(ax, items, xlim, thresholds, xlabel, labels=None, band=None):
+    names = labels if labels is not None else [item["name"] for item in items]
+    if band is not None:
+        # Shaded meaningful-scale band (-band, +band) with labelled edges.
+        ax.axvspan(-band, band, facecolor=BAND, edgecolor="none", zorder=0)
+        for value, text in ((-band, "-1/32"), (band, "+1/32")):
+            ax.text(value, 0.02, text, transform=ax.get_xaxis_transform(), ha="center", va="bottom",
+                    fontsize=6.6, color=MUTED, bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.6})
     for k, item in enumerate(items):
         y = len(items) - 1 - k
         ax.plot([item["lower"], item["upper"]], [y, y], color=INK, linewidth=2, solid_capstyle="round")
@@ -300,15 +353,69 @@ def figure3(output_dir, acc_cells, secondary, decision):
     return save(fig, output_dir, "figure3_accuracy")
 
 
+# ---------------------------------------------------------------------------------------
+# Figure 4: Study 002 directional-information estimands
+# ---------------------------------------------------------------------------------------
+def figure4(output_dir, primary, allele, performance, decision):
+    # Explicit margins leave room below panel c for the legend and the decision line.
+    fig = plt.figure(figsize=(7.4, 7.4))
+    grid = fig.add_gridspec(3, 1, height_ratios=[3, 2, 2], hspace=0.75, left=0.27, right=0.97,
+                            top=0.95, bottom=0.17)
+    a, b, c = (fig.add_subplot(grid[k, 0]) for k in range(3))
+    near = (-0.048, 0.048)
+    interval_panel(a, primary, near, [-DELTA, DELTA], "Estimate (proportion)",
+                   labels=[S2_LABELS[item["name"]] for item in primary], band=DELTA)
+    panel_label(a, "a", "Primary family: directional-information effect and start-state gate")
+    high = max(item["upper"] for item in allele)
+    interval_panel(b, allele, (near[0], high + 0.05), [-DELTA, DELTA], "Allele-frequency contrast (proportion)",
+                   labels=[S2_LABELS[item["name"]] for item in allele], band=DELTA)
+    panel_label(b, "b", "Secondary allele family")
+    interval_panel(c, performance, near, [-DELTA, DELTA], "Accuracy contrast (proportion)",
+                   labels=[S2_LABELS[item["name"]] for item in performance], band=DELTA)
+    panel_label(c, "c", "Secondary no-memory performance family")
+    handles = [Patch(facecolor=BAND, edgecolor="none",
+                     label="meaningful scale (-1/32, +1/32): one correct bit or one expected individual"),
+               plt.Line2D([], [], color=INK, linewidth=2, marker="o", markersize=6,
+                          markeredgecolor="white", label="estimate, 95% familywise interval")]
+    fig.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.5, 0.085), ncol=1, frameon=False,
+               fontsize=7.2)
+    inside = decision.get("bounded_interval_wholly_inside_minus_delta_plus_delta")
+    fig.text(0.5, 0.0, "Primary decision (rule %s): %s; interval wholly inside (-1/32, +1/32): %s"
+             % (decision["decision_rule_applied"], decision["primary_decision"], "yes" if inside else "no"),
+             ha="center", fontsize=7.4, color=MUTED)
+    return save(fig, output_dir, "figure4_information")
+
+
+def authenticate_inputs(paths, skip):
+    hashes = {key: sha256_file(path) for key, path in paths.items()}
+    mismatched = sorted(key for key in hashes if hashes[key] != AUTHENTICATED_SHA256[key])
+    if mismatched and not skip:
+        raise SystemExit("input SHA-256 differs from the authenticated value for: " + ", ".join(mismatched)
+                         + " (use --skip-sha-check only for non-release test builds)")
+    return hashes, mismatched
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--estimates", type=Path, required=True, help="path to analysis/estimates_22.json")
-    parser.add_argument("--decision", type=Path, required=True, help="path to analysis/decision.json")
+    parser.add_argument("--estimates", type=Path, required=True, help="Study 001 analysis/estimates_22.json")
+    parser.add_argument("--decision", type=Path, required=True, help="Study 001 analysis/decision.json")
+    parser.add_argument("--s2-estimates", type=Path, required=True, help="Study 002 results/estimates_19.json")
+    parser.add_argument("--s2-decision", type=Path, required=True, help="Study 002 results/decision.json")
     parser.add_argument("--output-dir", type=Path, required=True, help="directory for figures and FIGURE_DATA.json")
+    parser.add_argument("--skip-sha-check", action="store_true",
+                        help="allow inputs whose SHA-256 differs from the authenticated values (recorded)")
     args = parser.parse_args()
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
+    input_paths = {"estimates": args.estimates, "decision": args.decision,
+                   "s2_estimates": args.s2_estimates, "s2_decision": args.s2_decision}
+    input_hashes, mismatched = authenticate_inputs(input_paths, args.skip_sha_check)
+
     by_name, decision = load_records(args.estimates, args.decision)
+    s2_by_name, s2_decision = load_s2_records(args.s2_estimates, args.s2_decision)
+    s2_primary = [interval_record(s2_by_name[n]) for n in S2_PRIMARY]
+    s2_allele = [interval_record(s2_by_name[n]) for n in S2_ALLELE]
+    s2_performance = [interval_record(s2_by_name[n]) for n in S2_PERFORMANCE]
     freq_cells = cell_values(by_name, "M_FREQUENCY_LATE")
     acc_cells = cell_values(by_name, "ACCURACY_LATE")
     enrichment = [interval_record(by_name[n]) for n in PRIMARY_ENRICHMENT]
@@ -319,13 +426,20 @@ def main():
         "figure1_design": figure1(args.output_dir),
         "figure2_allele": figure2(args.output_dir, freq_cells, enrichment, gate, decision),
         "figure3_accuracy": figure3(args.output_dir, acc_cells, secondary, decision),
+        "figure4_information": figure4(args.output_dir, s2_primary, s2_allele, s2_performance, s2_decision),
     }
     data = {
-        "schema": "PHASE2-MMEM-FIGURE-DATA-1",
+        "schema": "PHASE2-MMEM-FIGURE-DATA-2",
+        "package_version": "1.1.0",
         "inputs": {
-            "estimates": {"path": str(args.estimates), "sha256": sha256_file(args.estimates)},
-            "decision": {"path": str(args.decision), "sha256": sha256_file(args.decision)},
+            key: {"path": str(path), "sha256": input_hashes[key],
+                  "authenticated_sha256": AUTHENTICATED_SHA256[key],
+                  "matches_authenticated": key not in mismatched,
+                  "study": "PHASE2-PERFORMANCE-CONVERSION-002" if key.startswith("s2_")
+                  else "PHASE2-MUTABLE-MEMORY-001"}
+            for key, path in sorted(input_paths.items())
         },
+        "sha_check_enforced": not args.skip_sha_check,
         "matplotlib_version": matplotlib.__version__,
         "outputs": outputs,
         "figure1_design": {"outcome_values": None, "note": "deterministic schematic; target pattern is illustrative"},
@@ -343,6 +457,19 @@ def main():
             "performance_estimands": secondary,
             "thresholds": {"Delta_P": DELTA},
             "secondary_classifications": decision["secondary_classifications"],
+        },
+        "figure4_information": {
+            "study": "PHASE2-PERFORMANCE-CONVERSION-002",
+            "panel_a_primary_estimands": s2_primary,
+            "panel_b_allele_estimands": s2_allele,
+            "panel_c_performance_estimands": s2_performance,
+            "meaningful_band": [-DELTA, DELTA],
+            "thresholds": {"delta": DELTA},
+            "primary_decision": s2_decision["primary_decision"],
+            "decision_rule_applied": s2_decision["decision_rule_applied"],
+            "bounded_interval_wholly_inside_minus_delta_plus_delta":
+                s2_decision.get("bounded_interval_wholly_inside_minus_delta_plus_delta"),
+            "secondary_classifications": s2_decision["secondary_classifications"],
         },
     }
     out = args.output_dir / "FIGURE_DATA.json"

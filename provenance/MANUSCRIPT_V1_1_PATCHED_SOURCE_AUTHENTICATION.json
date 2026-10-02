@@ -1,0 +1,64 @@
+{
+  "authenticated_at_utc": "2026-10-02T08:07:27.379418+00:00",
+  "file_count": 13,
+  "inventory": {
+    "CONSTRUCTION_NOT_RUN.json": {
+      "bytes": 1503,
+      "sha256": "49c6e591e983baf5205a6a9f8550f6f2f83ad68c7b02ff504e549b580e0bbf13"
+    },
+    "README.md": {
+      "bytes": 6315,
+      "sha256": "ff50a9285ef71eaa24cbe0d920d175bc75b8d05830df8d48edc0f894c432348c"
+    },
+    "docs/AI_ASSISTANCE.md": {
+      "bytes": 3332,
+      "sha256": "cd5f0fde6c5eba224c32cf34768e269b369fa1d202d2b3adc268de4dcd07f575"
+    },
+    "docs/DATA_AVAILABILITY.md": {
+      "bytes": 9104,
+      "sha256": "4739210bfb19981a5ccaa7d6aaa9570970b554f2e20847372079bc3de0d88f53"
+    },
+    "paper/MANUSCRIPT.md": {
+      "bytes": 69124,
+      "sha256": "5e6941605cfc11180074925c748d8427b353e9e3f9eb3e234def09d7a9ebce31"
+    },
+    "paper/SUPPLEMENT.md": {
+      "bytes": 55613,
+      "sha256": "93cc4f81d8904f3a113dd105fdf78d1a423bda070bf0632660983af756640658"
+    },
+    "provenance/CLAIM_EVIDENCE.json": {
+      "bytes": 37672,
+      "sha256": "77995adf507661ffc9660800ccdfbeb24c0cbb63fef543aac8330cc4991da1cf"
+    },
+    "provenance/FIGURE_BINDINGS.json": {
+      "bytes": 8568,
+      "sha256": "7de302d71fcab1d48578c4158d27deefa37a5b7c10554cbad38b91a88ab6885f"
+    },
+    "provenance/QUOTED_STATISTICS.json": {
+      "bytes": 86962,
+      "sha256": "e47484bcdec2b8369c14f93a36f3b203c816fc90305a43ecc6dccb0b27dd383f"
+    },
+    "provenance/SOURCE_PLAN.json": {
+      "bytes": 13894,
+      "sha256": "f8a50c7134a32508ae1a92da86b70d052d5419acf9f3e7d719beedbda0d9a1cd"
+    },
+    "scripts/build_pdfs.py": {
+      "bytes": 8657,
+      "sha256": "52055d72541082f7cd8e37f9211badaabc3960ae1450d05fb19e74cde930cd51"
+    },
+    "scripts/check_statistics.py": {
+      "bytes": 49493,
+      "sha256": "73e655f36a82822bbda1cbaff05cdccb36c2facfc99ffc8e26b358c0b8cfb069"
+    },
+    "scripts/make_figures.py": {
+      "bytes": 25086,
+      "sha256": "9d916279b4063f7616b156c917b1c4f02c33107d92b5a4f4603236b0e5e9329a"
+    }
+  },
+  "schema": "PHASE2-MMEM-MANUSCRIPT-V1-1-PATCHED-SOURCE-AUTHENTICATION-1",
+  "source_worker": "CLAUDE-025",
+  "status": "PASS",
+  "supervisor_patch_receipt": "outputs/new-phase-20260930/MANUSCRIPT_V1_1_PROVENANCE_PATCH_RECEIPT.json",
+  "supervisor_patch_receipt_sha256": "b758f4090deec92ea572585a6dbfcb32dbae67c4429bd905459c53efb22422ff",
+  "worker_source_authentication": "outputs/new-phase-20260930/MANUSCRIPT_V1_1_SOURCE_AUTHENTICATION.json"
+}

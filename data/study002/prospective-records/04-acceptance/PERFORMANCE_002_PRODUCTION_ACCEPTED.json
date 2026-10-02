@@ -1,0 +1,38 @@
+{
+  "attempt1_preserved": true,
+  "created_utc": "2026-10-02T07:00:38.699551+00:00",
+  "integrity": {
+    "all_stage_exit_statuses_zero": true,
+    "final_reauthentication_passed": true,
+    "input_snapshot_byte_identical": true,
+    "output_ceiling_passed": true,
+    "runner_completed": true
+  },
+  "inventory": {
+    "blocks": 41600,
+    "cells": 6,
+    "file_count": 125,
+    "inventoried_bytes": 4229861817,
+    "objective_queries": 8178892800,
+    "paths": 249600,
+    "scientific_output_bytes": 4229120000,
+    "shards": 32
+  },
+  "next_authorized_action": "Run the frozen producer analyzer exactly once against the complete attempt2 production directory; then run the accepted independent auditor exactly once.",
+  "production_attempt": "performance002_attempt2",
+  "production_job_id": "53553084",
+  "record": "PERFORMANCE-002-PRODUCTION-ACCEPTANCE-1",
+  "retry_forbidden": true,
+  "run_manifest": {
+    "bytes": 15348,
+    "path": "data/study002/compact-production/run_manifest.json",
+    "sha256": "b7aceaf6638e8f06246c8fb9b182c280a8ed98c4444d93a4a60decdbafb80136"
+  },
+  "runner_receipt": {
+    "bytes": 29059,
+    "path": "$PROJECT_ROOT/production-stage/performance002_attempt2/runner_receipt.json",
+    "sha256": "6ea7f69901c17005a017cf134fd8804a7bdd0c1f4b43de53f9e28e0044de8087"
+  },
+  "status": "PRODUCTION_COMPLETE_ANALYZER_AUTHORIZED",
+  "study_id": "PHASE2-PERFORMANCE-CONVERSION-002"
+}

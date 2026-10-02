@@ -1,0 +1,177 @@
+{
+  "descriptive_only": true,
+  "cells": [
+    "INFO|ALL_F",
+    "INFO|ALL_M",
+    "NONINFO|ALL_F",
+    "NONINFO|ALL_M",
+    "SHAM|ALL_F",
+    "SHAM|ALL_M"
+  ],
+  "total_objective_queries": 8178892800,
+  "blocks_where_NONINFO_decoupled_from_INFO_by_start": [
+    41600,
+    41600
+  ],
+  "extreme_displacement_note": "decoy_w0/decoy_w32 count NONINFO decoy applications whose displacement weight is 0 or 32 and therefore retain direction; valid_m_disp_w0/w32 count valid-M parents at those weights in every arm.",
+  "per_cell_total_f_to_m": [
+    2222248,
+    1745959,
+    4298024,
+    3687279,
+    5653523,
+    4994416
+  ],
+  "per_cell_total_m_to_f": [
+    8425691,
+    8901980,
+    6349915,
+    6960660,
+    4994416,
+    5653523
+  ],
+  "per_cell_total_valid_probe_use": [
+    262335134,
+    276680738,
+    200347494,
+    218682953,
+    0,
+    0
+  ],
+  "per_cell_total_valid_probe_survivors": [
+    76070068,
+    79832243,
+    47690642,
+    51883813,
+    0,
+    0
+  ],
+  "per_cell_total_survival_retries": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "per_cell_total_fixation_updates": [
+    598320,
+    685519,
+    183469,
+    252045,
+    49364,
+    106166
+  ],
+  "per_cell_total_extinction_updates": [
+    44181,
+    2019,
+    91731,
+    33735,
+    106166,
+    49364
+  ],
+  "per_cell_total_late_fixation_updates": [
+    162272,
+    163426,
+    50989,
+    51179,
+    14056,
+    14254
+  ],
+  "per_cell_total_late_extinction_updates": [
+    571,
+    511,
+    9702,
+    9681,
+    14254,
+    14056
+  ],
+  "per_cell_total_true_cache_use": [
+    262335134,
+    276680738,
+    100189242,
+    109946211,
+    0,
+    0
+  ],
+  "per_cell_total_decoy_use": [
+    0,
+    0,
+    100158252,
+    108736742,
+    0,
+    0
+  ],
+  "per_cell_total_true_cache_survivors": [
+    76070068,
+    79832243,
+    19329879,
+    21266901,
+    0,
+    0
+  ],
+  "per_cell_total_decoy_survivors": [
+    0,
+    0,
+    28360763,
+    30616912,
+    0,
+    0
+  ],
+  "per_cell_total_valid_m_disp_w0": [
+    83507588,
+    87969874,
+    84354781,
+    91669182,
+    50037470,
+    56000609
+  ],
+  "per_cell_total_valid_m_disp_w32": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "per_cell_total_decoy_w0": [
+    0,
+    0,
+    42175734,
+    45696359,
+    0,
+    0
+  ],
+  "per_cell_total_decoy_w32": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "per_cell_total_decoy_identical_to_cache": [
+    0,
+    0,
+    42478033,
+    46024351,
+    0,
+    0
+  ],
+  "per_cell_total_recurrent_updates": [
+    5284414,
+    5284414,
+    5284414,
+    5284414,
+    5284414,
+    5284414
+  ],
+  "per_cell_total_decoy_permutation_retries": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

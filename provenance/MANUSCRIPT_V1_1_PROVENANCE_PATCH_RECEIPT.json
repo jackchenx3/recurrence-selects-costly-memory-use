@@ -1,0 +1,81 @@
+{
+  "after": {
+    "docs/DATA_AVAILABILITY.md": {
+      "bytes": 9104,
+      "sha256": "4739210bfb19981a5ccaa7d6aaa9570970b554f2e20847372079bc3de0d88f53"
+    },
+    "paper/MANUSCRIPT.md": {
+      "bytes": 69124,
+      "sha256": "5e6941605cfc11180074925c748d8427b353e9e3f9eb3e234def09d7a9ebce31"
+    },
+    "paper/SUPPLEMENT.md": {
+      "bytes": 55613,
+      "sha256": "93cc4f81d8904f3a113dd105fdf78d1a423bda070bf0632660983af756640658"
+    },
+    "provenance/CLAIM_EVIDENCE.json": {
+      "bytes": 37672,
+      "sha256": "77995adf507661ffc9660800ccdfbeb24c0cbb63fef543aac8330cc4991da1cf"
+    },
+    "provenance/SOURCE_PLAN.json": {
+      "bytes": 13894,
+      "sha256": "f8a50c7134a32508ae1a92da86b70d052d5419acf9f3e7d719beedbda0d9a1cd"
+    }
+  },
+  "before": {
+    "docs/DATA_AVAILABILITY.md": {
+      "bytes": 7981,
+      "sha256": "b4d5d9343952d432912eeb28383c228478a78928530670e93d36bece54d7ae6f"
+    },
+    "paper/MANUSCRIPT.md": {
+      "bytes": 68514,
+      "sha256": "c33331ef827d761a16add22a622cbdc30b393caf7d1041ae852b6fd10bcb7249"
+    },
+    "paper/SUPPLEMENT.md": {
+      "bytes": 54800,
+      "sha256": "616a262776cf9b5853e7f2b75c7505875f736baf0ce49de1830cfc45e6c03a78"
+    },
+    "provenance/CLAIM_EVIDENCE.json": {
+      "bytes": 29874,
+      "sha256": "db0d8293b12ef32c862d4719416d9b26cfe0113301a19e288ae86d1f9d8404aa"
+    },
+    "provenance/SOURCE_PLAN.json": {
+      "bytes": 11596,
+      "sha256": "db8c2f8941c5aa2954c5029c3f99e6d42d0d76c765555c7214a7b06410a7f449"
+    }
+  },
+  "patched_at_utc": "2026-10-02T08:06:55.542511+00:00",
+  "reason": "Fill a material reproducibility gap identified during visual/source review: the bounded drafting worker did not receive existing Study 002 prospective review, authority, failure and recovery records. No scientific estimate, decision, method or claim changed.",
+  "records_authenticated": [
+    {
+      "path": "results/qwen_014/performance_design_terminal_review.md",
+      "sha256": "76b0c6172e61f60befecef183e83d9e43ea50c1b6bc1e93299668b76f55be60f"
+    },
+    {
+      "created_at_utc": "2026-10-01T18:59:00Z",
+      "path": "DESIGN_002_GO.json",
+      "sha256": "f4a6180109e0d212cbe784a7722a64576e5e7cb0fbfd4b23c757bb5e7ab84d6a"
+    },
+    {
+      "issued_at_utc": "2026-10-02T06:02:41.744486+00:00",
+      "path": "PERFORMANCE_002_PRODUCTION_EXECUTION_AUTHORITY.json",
+      "sha256": "31c2100dd73de0090ded3059525aacd139565917086d2c19880b01e319c98992"
+    },
+    {
+      "accepted_at_utc": "2026-10-02T06:28:45.272422+00:00",
+      "path": "PERFORMANCE_002_PRODUCTION_ATTEMPT1_FAILURE.json",
+      "sha256": "289bf3188286476698136d499c12eb3a8c9e4e6fc5cde18fcb15718395f4afaa"
+    },
+    {
+      "issued_at_utc": "2026-10-02T06:29:59.265954+00:00",
+      "path": "design/PHASE2-PERFORMANCE-CONVERSION-002-EXECUTION-RECOVERY-REV1.md",
+      "sha256": "db12c0143b6ba2c0b8cd3771ad18b9afe12feb069fe2a97d15227f4fad836e83"
+    },
+    {
+      "issued_at_utc": "2026-10-02T06:32:55.514310+00:00",
+      "path": "PERFORMANCE_002_RECOVERY_EXECUTION_AUTHORITY.json",
+      "sha256": "c4cb2e4c162df92a761b2fff391b6e81e000055db88d7cbaeb954b0750b4e085"
+    }
+  ],
+  "schema": "PHASE2-MMEM-MANUSCRIPT-V1-1-SUPERVISOR-PROVENANCE-PATCH-1",
+  "status": "COMPLETE"
+}

@@ -1,0 +1,21 @@
+{
+  "record": "PHASE2-PERFORMANCE-CONVERSION-002-DESIGN-GO-1",
+  "study_id": "PHASE2-PERFORMANCE-CONVERSION-002",
+  "status": "DESIGN_GO",
+  "decision": "ACCEPT_FOR_BOUNDED_IMPLEMENTATION_CONSTRUCTION",
+  "design": "design/PHASE2-PERFORMANCE-CONVERSION-002-REV1.md",
+  "design_sha256": "58ee414d753fab042e6cccee1a4e6b95dd7f167633b4f33c1491687d9afcb895",
+  "terminal_review": "results/qwen_014/performance_design_terminal_review.md",
+  "terminal_review_sha256": "76b0c6172e61f60befecef183e83d9e43ea50c1b6bc1e93299668b76f55be60f",
+  "terminal_verdict": "DESIGN_GO",
+  "accepted_limits": [
+    "The primary contrast is a total population-accuracy effect through evolved policy use, not a per-use value of information.",
+    "The shared permutation matches parent distance and common coordinate relabeling but not every cross-genotype geometric relationship.",
+    "Displacement weights zero and 32 cannot be scrambled and must remain counted and reported.",
+    "The result is limited to one supplied cache, one HALF law, one fixed displacement cost and one directional-scramble control."
+  ],
+  "implementation_authority": "One isolated worker may adapt an authenticated copy of the accepted study-001 implementation into a reviewable source package. It may not compile, run fixtures, simulate, benchmark, submit a job or inspect outcomes.",
+  "scientific_execution_authorized": false,
+  "production_authorized": false,
+  "created_at_utc": "2026-10-01T18:59:00Z"
+}

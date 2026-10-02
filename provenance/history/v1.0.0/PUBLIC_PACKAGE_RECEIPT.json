@@ -1,0 +1,26 @@
+{
+  "record": "PHASE2-MUTABLE-MEMORY-001-PUBLIC-PACKAGE",
+  "status": "PASS",
+  "created_at_utc": "2026-10-01T15:02:16.026205+00:00",
+  "version": "1.0.0",
+  "repository": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use",
+  "scientific_scope": {
+    "paired_blocks": 41600,
+    "cells": 8,
+    "paths": 332800,
+    "saved_estimates": 22,
+    "objective_queries": 10905190400
+  },
+  "checks": {
+    "saved_statistics": 870,
+    "source_audits": "two accepted zero-mismatch internal audits",
+    "visual_qa": "24 final PDF pages"
+  },
+  "licenses": {
+    "manuscript_figures_data": "CC BY 4.0",
+    "original_code": "MIT"
+  },
+  "complete_outcomes_asset": "phase2-mutable-memory-complete-outcomes-v1.0.0.tar.zst",
+  "publication_state": "READY_FOR_GITHUB_RELEASE_AND_ZENODO_ARCHIVAL_RECORD",
+  "scientific_execution_performed_for_publication": false
+}

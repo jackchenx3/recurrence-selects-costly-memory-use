@@ -1,0 +1,285 @@
+{
+  "build_receipt": "outputs/new-phase-20260930/MANUSCRIPT_V1_1_BUILD_RECEIPT_2.json",
+  "build_receipt_sha256": "8a44e699c8df28a64860f27d3162b359cb5660b8b7c6b1a178ec141f9977dc1c",
+  "figures": [
+    {
+      "bytes": 466909,
+      "path": "_build/figures/figure1_design.png",
+      "sha256": "b086bf8732f96dba648c454f67bd06c6bfe5ab91b445a2f42ff0359995a6026c"
+    },
+    {
+      "bytes": 196795,
+      "path": "_build/figures/figure2_allele.png",
+      "sha256": "71f2406ea9a1022995e7e7d2c4a3b46eaf54522f272d8fbda84702dc3ff21081"
+    },
+    {
+      "bytes": 161294,
+      "path": "_build/figures/figure3_accuracy.png",
+      "sha256": "60563d2436808dedca3907d3c70518d154ea79724b789111acebb99568cb3614"
+    },
+    {
+      "bytes": 338354,
+      "path": "_build/figures/figure4_information.png",
+      "sha256": "e76ea988e0e797425028abbdc78e14e63a6dd5f16066f55d81ad54e1f572cb66"
+    }
+  ],
+  "findings": {
+    "clipping_or_overlap": false,
+    "material_layout_defect": false,
+    "missing_pages_or_figures": false,
+    "notes": [
+      "Tables continue across pages with repeated headers and remain legible.",
+      "The final references and provenance pages contain intentional unused lower-page space; no content is missing.",
+      "Figure 4 clearly shows the prespecified +/-1/32 band, point estimates, familywise intervals and primary decision."
+    ],
+    "unreadable_figure_labels": false
+  },
+  "rendered_pages_after_patch": [
+    {
+      "bytes": 544447,
+      "path": "_build/visual-final/manuscript-20.png",
+      "sha256": "f8a27251b36c4a7dcdd0b23cca4ae3508e60189678652b9696527e322ae9a79b"
+    },
+    {
+      "bytes": 529425,
+      "path": "_build/visual-final/manuscript-21.png",
+      "sha256": "cc9e0666fa5d32623078220b03acfe5e40594d068ea721d9781d0c83e6e6d17f"
+    },
+    {
+      "bytes": 370122,
+      "path": "_build/visual-final/manuscript-22.png",
+      "sha256": "cdce59bf918c67a01ecf526d177da166e290a59a5eb302bdc72e53ac56c85446"
+    },
+    {
+      "bytes": 548687,
+      "path": "_build/visual-final/supplement-17.png",
+      "sha256": "7cdb9d18156b5162adfe64908052e869cfc2a0e7136dcd09066c5fb544701e6d"
+    },
+    {
+      "bytes": 468950,
+      "path": "_build/visual-final/supplement-18.png",
+      "sha256": "6821f535558d241d616dd95bb8bc2e05041519a57bd5763b6323b4c33f9b5fca"
+    },
+    {
+      "bytes": 340776,
+      "path": "_build/visual-final/supplement-19.png",
+      "sha256": "5850845daa3a38366a3c5b4108bf86278d0867c97abd8528bef3235bbd6e3955"
+    }
+  ],
+  "rendered_pages_initial": [
+    {
+      "bytes": 344110,
+      "path": "_build/visual-attempt2/manuscript/page-01.png",
+      "sha256": "4c9d56c34c049aa45b8185bdf7c69d64896c92c7a8c766825ff8b138f33080c4"
+    },
+    {
+      "bytes": 356681,
+      "path": "_build/visual-attempt2/manuscript/page-02.png",
+      "sha256": "a4c785fbb9ea47e4f4612fb9419b30d8e46649b185c43d21c3729e358291948f"
+    },
+    {
+      "bytes": 362458,
+      "path": "_build/visual-attempt2/manuscript/page-03.png",
+      "sha256": "024114fc7f35dc15c2ca830ac611e7d900ec895f98fc8fb243f715912752d57b"
+    },
+    {
+      "bytes": 189213,
+      "path": "_build/visual-attempt2/manuscript/page-04.png",
+      "sha256": "d93927123f0b0b07894a3a47aca72d2bdf48eaff6bf7794ab6e4509380c8b556"
+    },
+    {
+      "bytes": 290197,
+      "path": "_build/visual-attempt2/manuscript/page-05.png",
+      "sha256": "2f94b60d0764dbeb41299ab66f8b2af0c149f378cf27d085ea491d09dd5cf152"
+    },
+    {
+      "bytes": 335190,
+      "path": "_build/visual-attempt2/manuscript/page-06.png",
+      "sha256": "9570099266d203d414857aa733804ec88a5ba348286ecc45fb82bada7c767124"
+    },
+    {
+      "bytes": 324330,
+      "path": "_build/visual-attempt2/manuscript/page-07.png",
+      "sha256": "bbc18353d8025e0da6889125e9ab1feeb3ec9d5b6526800f124b417d2d831d51"
+    },
+    {
+      "bytes": 349682,
+      "path": "_build/visual-attempt2/manuscript/page-08.png",
+      "sha256": "4df75556a599dd100508cf2f500cacf250ea4285791503c4d213185d2ffac7e8"
+    },
+    {
+      "bytes": 303825,
+      "path": "_build/visual-attempt2/manuscript/page-09.png",
+      "sha256": "6da00e1df8a1d4f8271bc8dd9b7f888d30e868def26aa18c5e4a9a8ea0a91af9"
+    },
+    {
+      "bytes": 331803,
+      "path": "_build/visual-attempt2/manuscript/page-10.png",
+      "sha256": "7d99c44e219c8e9b321bb7fa7b390be895d0cb37a41fae44636f1db4b152dec4"
+    },
+    {
+      "bytes": 305247,
+      "path": "_build/visual-attempt2/manuscript/page-11.png",
+      "sha256": "2271bea79b6be12e9358f75d18ab70e2585b197e248d9661533b1219ded246eb"
+    },
+    {
+      "bytes": 193956,
+      "path": "_build/visual-attempt2/manuscript/page-12.png",
+      "sha256": "e552f683bcacc93a3017748ba6546fd9aa5fb284231c2c21fb4d676797b93e13"
+    },
+    {
+      "bytes": 280539,
+      "path": "_build/visual-attempt2/manuscript/page-13.png",
+      "sha256": "b1350bc872d9648e74e9923ea163f33b04070ff896dbbf5bf09831dd53ae3c4c"
+    },
+    {
+      "bytes": 319998,
+      "path": "_build/visual-attempt2/manuscript/page-14.png",
+      "sha256": "c5fae26f335adcece1607d84302a878d1b3850a09da6f20fcb7b3f0b8b67b3b3"
+    },
+    {
+      "bytes": 226665,
+      "path": "_build/visual-attempt2/manuscript/page-15.png",
+      "sha256": "5bf814f472a3db862559f04f5a5260a6d8308bd88569be49725c2c74501a6da2"
+    },
+    {
+      "bytes": 201983,
+      "path": "_build/visual-attempt2/manuscript/page-16.png",
+      "sha256": "2f624f3b2d068e7829be452913f1abf113eddef57e1554087dbbd20d401ab18a"
+    },
+    {
+      "bytes": 356950,
+      "path": "_build/visual-attempt2/manuscript/page-17.png",
+      "sha256": "dd38b9a2f78706fe439d4a8b903c13c6ded729d3fbf7e088254e522b7136b0e4"
+    },
+    {
+      "bytes": 343520,
+      "path": "_build/visual-attempt2/manuscript/page-18.png",
+      "sha256": "cd7c75b3f07cc70d78570c88fe66c27b3f4ecf0ac61de6b977c5fc2c3b157390"
+    },
+    {
+      "bytes": 357993,
+      "path": "_build/visual-attempt2/manuscript/page-19.png",
+      "sha256": "a9987ec16933a9fb7eb99ef86711b5325493ec3d1c732fb4e5de1715b96bea2e"
+    },
+    {
+      "bytes": 381268,
+      "path": "_build/visual-attempt2/manuscript/page-20.png",
+      "sha256": "cb1969cc45379fc339c279a5319564406ee07fc5d57f7067965f5683e28daedd"
+    },
+    {
+      "bytes": 362879,
+      "path": "_build/visual-attempt2/manuscript/page-21.png",
+      "sha256": "717b0f964afc929f3ed1367a2ee603042d701fb77f67be7c988166c6b538073c"
+    },
+    {
+      "bytes": 182897,
+      "path": "_build/visual-attempt2/manuscript/page-22.png",
+      "sha256": "99c51bfe5a50bce24188e442ec4fd48021c06029ed7f60f3ad4681f207beae53"
+    },
+    {
+      "bytes": 280049,
+      "path": "_build/visual-attempt2/supplement/page-01.png",
+      "sha256": "93dfdc4594baea5359fbc344cce8ef60366dc4a7bb833e37eed6f40f42c93e23"
+    },
+    {
+      "bytes": 289936,
+      "path": "_build/visual-attempt2/supplement/page-02.png",
+      "sha256": "90395b430725f362877da9ac0bd52525ab0c02162a57a7e9bd8f4bf36a18d87e"
+    },
+    {
+      "bytes": 237110,
+      "path": "_build/visual-attempt2/supplement/page-03.png",
+      "sha256": "99c1de23dfae7fd086055e21ab16fae5769bfb1f0feca5411e6c0dd45a3dc12a"
+    },
+    {
+      "bytes": 302957,
+      "path": "_build/visual-attempt2/supplement/page-04.png",
+      "sha256": "8b6c20ea104227dcc9c01327e14c6ba0cc818ae679b3f67272104610ec874fc7"
+    },
+    {
+      "bytes": 298540,
+      "path": "_build/visual-attempt2/supplement/page-05.png",
+      "sha256": "6438228ae6577d045b7b61e05f8e8dc75dc4a8515c4801eee5ada4634d46e2b1"
+    },
+    {
+      "bytes": 226874,
+      "path": "_build/visual-attempt2/supplement/page-06.png",
+      "sha256": "ba00a71b5e4b0ab2a0ae4d7caf98ce242b6b2c9c0d7ad89d317b84872b404e88"
+    },
+    {
+      "bytes": 291081,
+      "path": "_build/visual-attempt2/supplement/page-07.png",
+      "sha256": "df944c814d86399057b3957a4cdd66afd2d14211bf04b9045f36945a4720db72"
+    },
+    {
+      "bytes": 361936,
+      "path": "_build/visual-attempt2/supplement/page-08.png",
+      "sha256": "5193698907e849e8a963f4c7c1a32417d2a76cbe7ca6215139b3a7128fa9018c"
+    },
+    {
+      "bytes": 230805,
+      "path": "_build/visual-attempt2/supplement/page-09.png",
+      "sha256": "d78d1e20c06466fe0050490202568e5705ae2d83814fa3070a1a661b9fc50567"
+    },
+    {
+      "bytes": 253486,
+      "path": "_build/visual-attempt2/supplement/page-10.png",
+      "sha256": "5514e464a63a8d8fd010b29cdab63ad766c8258cc910705a7d40f0497b684363"
+    },
+    {
+      "bytes": 266998,
+      "path": "_build/visual-attempt2/supplement/page-11.png",
+      "sha256": "ec0d455f0c5f8022781d075ea60d03569964f733a8970e05c8e4d4309822de60"
+    },
+    {
+      "bytes": 325000,
+      "path": "_build/visual-attempt2/supplement/page-12.png",
+      "sha256": "cca943ace2337dc8beb51b5440c170ebbf1d83ae0764225e24afe7771f416f32"
+    },
+    {
+      "bytes": 294829,
+      "path": "_build/visual-attempt2/supplement/page-13.png",
+      "sha256": "67db03002f577b2f1568400530ecf4b0b5da419b4b906b9a99387622b46d04e5"
+    },
+    {
+      "bytes": 173480,
+      "path": "_build/visual-attempt2/supplement/page-14.png",
+      "sha256": "26472058d5984f17f953086b6d99a00e32f03a408177ea2be76c51ed8d64b8e9"
+    },
+    {
+      "bytes": 203736,
+      "path": "_build/visual-attempt2/supplement/page-15.png",
+      "sha256": "2577087734d8ba0c7baa36d5b9a68a5ff6bc51fe34576a692f7989cdce8e81f7"
+    },
+    {
+      "bytes": 165215,
+      "path": "_build/visual-attempt2/supplement/page-16.png",
+      "sha256": "f500f1ebed9566e776f480f64cc9404d5de9b2c92c89abf30b8048ed95f1cfdc"
+    },
+    {
+      "bytes": 390310,
+      "path": "_build/visual-attempt2/supplement/page-17.png",
+      "sha256": "3917b39f9667371414bd4a826c4dd2c2097b76e1605eb9c2d4266bd2e57db022"
+    },
+    {
+      "bytes": 308775,
+      "path": "_build/visual-attempt2/supplement/page-18.png",
+      "sha256": "3e354a8bd49d95b95baf85d0904243c1830fa3d86eb195dafefdec7baa630fbb"
+    },
+    {
+      "bytes": 188042,
+      "path": "_build/visual-attempt2/supplement/page-19.png",
+      "sha256": "742560a2700cbd4fdadbed846fbbb92916b39fdcb8b4b7192bd91ae80c70d3f4"
+    }
+  ],
+  "review_method": "Rendered every PDF page to PNG and inspected all pages in contact sheets; inspected all four source-bound PNG figures at original detail; after the material provenance patch, re-rendered and inspected affected manuscript pages 20-22 and supplement pages 17-19 at 150 dpi.",
+  "reviewed_at_utc": "2026-10-02T08:08:51.577298+00:00",
+  "schema": "PHASE2-MMEM-MANUSCRIPT-V1-1-VISUAL-QA-1",
+  "scope": {
+    "figures": 4,
+    "manuscript_pages": 22,
+    "supplement_pages": 19
+  },
+  "status": "PASS"
+}

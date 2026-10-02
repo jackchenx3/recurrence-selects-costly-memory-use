@@ -212,14 +212,122 @@
       "Delta_P": 0.03125
     }
   },
+  "figure4_information": {
+    "bounded_interval_wholly_inside_minus_delta_plus_delta": true,
+    "decision_rule_applied": 5,
+    "meaningful_band": [
+      -0.03125,
+      0.03125
+    ],
+    "panel_a_primary_estimands": [
+      {
+        "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+        "estimate": 0.008649968367356521,
+        "estimate_exact": "5895597/681574400",
+        "half_width": 0.015171284462732113,
+        "lower": -0.006521316095375593,
+        "name": "Delta_P",
+        "upper": 0.023821252830088634
+      },
+      {
+        "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+        "estimate": 0.00012944148137019232,
+        "estimate_exact": "2757/21299200",
+        "half_width": 0.015171284462732113,
+        "lower": -0.01504184298136192,
+        "name": "D_INFO",
+        "upper": 0.015300725944102306
+      },
+      {
+        "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+        "estimate": -0.0012680992713341346,
+        "estimate_exact": "-54019/42598400",
+        "half_width": 0.015171284462732113,
+        "lower": -0.016439383734066247,
+        "name": "D_NONINFO",
+        "upper": 0.01390318519139798
+      }
+    ],
+    "panel_b_allele_estimands": [
+      {
+        "classification": "MEANINGFUL POSITIVE AT THE ONE-BIT SCALE",
+        "estimate": 0.18420304518479566,
+        "estimate_exact": "1569351/8519680",
+        "half_width": 0.014514625638859732,
+        "lower": 0.16968841954593594,
+        "name": "E_INFO",
+        "upper": 0.1987176708236554
+      },
+      {
+        "classification": "MEANINGFUL POSITIVE AT THE ONE-BIT SCALE",
+        "estimate": 0.12608275193434496,
+        "estimate_exact": "10741847/85196800",
+        "half_width": 0.007257312819429866,
+        "lower": 0.11882543911491508,
+        "name": "E_NONINFO",
+        "upper": 0.13334006475377483
+      }
+    ],
+    "panel_c_performance_estimands": [
+      {
+        "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+        "estimate": 0.009381238130422739,
+        "estimate_exact": "25576047/2726297600",
+        "half_width": 0.014514625638859732,
+        "lower": -0.005133387508436994,
+        "name": "B_INFO",
+        "upper": 0.02389586376928247
+      },
+      {
+        "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+        "estimate": 0.0007312697630662185,
+        "estimate_exact": "1993659/2726297600",
+        "half_width": 0.014514625638859732,
+        "lower": -0.013783355875793515,
+        "name": "B_NONINFO",
+        "upper": 0.015245895401925951
+      }
+    ],
+    "primary_decision": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+    "secondary_classifications": {
+      "B_INFO": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+      "B_NONINFO": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+      "E_INFO": "MEANINGFUL POSITIVE AT THE ONE-BIT SCALE",
+      "E_NONINFO": "MEANINGFUL POSITIVE AT THE ONE-BIT SCALE"
+    },
+    "study": "PHASE2-PERFORMANCE-CONVERSION-002",
+    "thresholds": {
+      "delta": 0.03125
+    }
+  },
   "inputs": {
     "decision": {
-      "path": "data/analysis/decision.json",
-      "sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0"
+      "authenticated_sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0",
+      "matches_authenticated": true,
+      "path": "outputs/new-phase-20260930/postproduction-stage/attempt1/analysis/decision.json",
+      "sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0",
+      "study": "PHASE2-MUTABLE-MEMORY-001"
     },
     "estimates": {
-      "path": "data/analysis/estimates_22.json",
-      "sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0"
+      "authenticated_sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0",
+      "matches_authenticated": true,
+      "path": "outputs/new-phase-20260930/postproduction-stage/attempt1/analysis/estimates_22.json",
+      "sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0",
+      "study": "PHASE2-MUTABLE-MEMORY-001"
+    },
+    "s2_decision": {
+      "authenticated_sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a",
+      "matches_authenticated": true,
+      "path": "outputs/new-phase-20260930/analysis-stage/performance002_attempt1/results/decision.json",
+      "sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a",
+      "study": "PHASE2-PERFORMANCE-CONVERSION-002"
+    },
+    "s2_estimates": {
+      "authenticated_sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d",
+      "matches_authenticated": true,
+      "path": "outputs/new-phase-20260930/analysis-stage/performance002_attempt1/results/estimates_19.json",
+      "sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d",
+      "study": "PHASE2-PERFORMANCE-CONVERSION-002"
     }
   },
   "matplotlib_version": "3.9.4",
@@ -238,7 +346,14 @@
       "figure3_accuracy.png",
       "figure3_accuracy.pdf",
       "figure3_accuracy.svg"
+    ],
+    "figure4_information": [
+      "figure4_information.png",
+      "figure4_information.pdf",
+      "figure4_information.svg"
     ]
   },
-  "schema": "PHASE2-MMEM-FIGURE-DATA-1"
+  "package_version": "1.1.0",
+  "schema": "PHASE2-MMEM-FIGURE-DATA-2",
+  "sha_check_enforced": true
 }

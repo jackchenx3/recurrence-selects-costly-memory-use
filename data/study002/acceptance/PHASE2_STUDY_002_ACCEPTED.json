@@ -1,0 +1,85 @@
+{
+  "accepted_at_utc": "2026-10-02T07:10:51.967849+00:00",
+  "analysis": {
+    "decision_sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a",
+    "diagnostics_sha256": "304843eb5d4a38761a6ce371c7cc125260041dfd910b29d5ba3cc377a6ac3553",
+    "estimates_sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d",
+    "job_id": "53553256",
+    "runner_receipt_sha256": "c6bb16016b0133bea52dc3a8e4db5b8fe13189bdd0c79a231181c4669b321570",
+    "saved_estimates": 19
+  },
+  "independent_audit": {
+    "estimates_compared": 19,
+    "full_block_records": 41600,
+    "full_path_records": 249600,
+    "full_update_records": 63897600,
+    "job_id": "53553294",
+    "mismatches": 0,
+    "records_receipt_sha256": "09f5dccf4921c8d842ef60fb31aca712bbb582e87a2011c76c02efb658539197",
+    "replay_audit_rows": 12582912,
+    "replay_blocks": 64,
+    "replay_paths": 384,
+    "replay_receipt_sha256": "cbee79527876745e8918576f73a5d302377e4463d959318ca2f5feffa66416d4",
+    "replay_update_records": 98304,
+    "runner_receipt_sha256": "32e3ffff29b3de9f20158af58a67c2c130cb7456ec8c7287f67354897928a8ed",
+    "status": "PASS"
+  },
+  "limits": [
+    "supplied one-record cache architecture",
+    "allele couples retention and retrieval",
+    "one HALF law aligned to cache delay",
+    "one fixed one-proposal opportunity cost",
+    "one finite horizon and model class",
+    "Delta_P is a total effect through evolved policy use, not a per-use value-of-information effect",
+    "matched shared permutation does not preserve every cross-genotype relation; displacement weight zero retains direction",
+    "no biological, equilibrium, invasion, general memory-origin or priority claim"
+  ],
+  "manuscript_disposition": "SUBSTANTIVE_INTEGRATION_INTO_EXISTING_PAPER_WARRANTED; NEW STANDALONE PAPER NOT WARRANTED",
+  "no_extension": true,
+  "primary": {
+    "decision": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+    "estimate": "0.00864996836735652043269230769230769230769230769230769230769231",
+    "lower": "-0.00652131609537559283225993487140508802727019595274373496452249",
+    "name": "Delta_P",
+    "rule": 5,
+    "upper": "0.0238212528300886336976445502560204726426548113373591195799071"
+  },
+  "production": {
+    "blocks": 41600,
+    "job_id": "53553084",
+    "objective_queries": 8178892800,
+    "paths": 249600,
+    "run_manifest_sha256": "b7aceaf6638e8f06246c8fb9b182c280a8ed98c4444d93a4a60decdbafb80136",
+    "runner_receipt_sha256": "6ea7f69901c17005a017cf134fd8804a7bdd0c1f4b43de53f9e28e0044de8087"
+  },
+  "record": "PHASE2-PERFORMANCE-CONVERSION-002-ACCEPTED-1",
+  "scientific_conclusion": "Directional cache information produced a large finite-horizon increase in selection on the memory-use allele relative to a matched noninformative displacement, but its total population-accuracy effect was bounded below the prespecified positive one-bit scale and its sign remained unresolved. This sharpens the accepted selection-performance separation.",
+  "secondary": {
+    "B_INFO": {
+      "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+      "estimate": "0.00938123813042273888221153846153846153846153846153846153846154",
+      "lower": "-0.00513338750843699397828049144564849137815196548765197114030706",
+      "upper": "0.0238958637692824717427035683687254144550750424107288942172301"
+    },
+    "B_NONINFO": {
+      "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+      "estimate": "0.000731269763066218449519230769230769230769230769230769230769231",
+      "lower": "-0.0137833558757935144109727991379561836858442731799596634479994",
+      "upper": "0.0152458954019259513100112606764177221473827347184212019095378"
+    },
+    "E_INFO": {
+      "classification": "MEANINGFUL POSITIVE AT THE ONE-BIT SCALE",
+      "estimate": "0.184203045184795673076923076923076923076923076923076923076923",
+      "lower": "0.169688419545935940216431047015889970160309572973886490398154",
+      "upper": "0.198717670823655405937415106830263875993536580872267355755692"
+    },
+    "E_NONINFO": {
+      "classification": "MEANINGFUL POSITIVE AT THE ONE-BIT SCALE",
+      "estimate": "0.126082751934344951923076923076923076923076923076923076923077",
+      "lower": "0.118825439114915085492830908123329600464770171102327860583693",
+      "upper": "0.133340064753774818353322938030516553381383675051518293262461"
+    }
+  },
+  "status": "SCIENTIFICALLY_COMPLETE_AND_ACCEPTED",
+  "study_id": "PHASE2-PERFORMANCE-CONVERSION-002"
+}

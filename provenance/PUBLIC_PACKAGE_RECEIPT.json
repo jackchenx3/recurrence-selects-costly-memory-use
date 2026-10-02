@@ -1,26 +1,74 @@
 {
-  "record": "PHASE2-MUTABLE-MEMORY-001-PUBLIC-PACKAGE",
+  "record": "PHASE2-PUBLIC-PACKAGE-V1-1-0",
   "status": "PASS",
-  "created_at_utc": "2026-10-01T15:02:16.026205+00:00",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "release_date": "2026-10-02",
+  "title": "Environmental recurrence and directional cache information select a costly memory-use allele without a resolved one-bit population benefit",
   "repository": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use",
+  "baseline": {
+    "tag": "v1.0.0",
+    "commit": "443130389ebe421f42eb5f48fe98b5f15a06f835",
+    "current_main": "ee370828db3fa29c5124ec04b780847bd4c4a1cf"
+  },
+  "file_counts": {
+    "files": 342,
+    "bytes": 119682062,
+    "scope": "all files except SHA256SUMS and this receipt",
+    "files_including_this_receipt_and_SHA256SUMS": 344,
+    "baseline_files_unchanged": 161,
+    "baseline_files_replaced": 32,
+    "baseline_files_removed": 0
+  },
   "scientific_scope": {
-    "paired_blocks": 41600,
-    "cells": 8,
-    "paths": 332800,
-    "saved_estimates": 22,
-    "objective_queries": 10905190400
+    "study001": {
+      "study_id": "PHASE2-MUTABLE-MEMORY-001",
+      "paired_blocks": 41600,
+      "cells": 8,
+      "paths": 332800,
+      "saved_estimates": 22,
+      "objective_queries": 10905190400,
+      "public_files_changed_in_v1_1_0": 0
+    },
+    "study002": {
+      "study_id": "PHASE2-PERFORMANCE-CONVERSION-002",
+      "blocks": 41600,
+      "paths": 249600,
+      "objective_queries": 8178892800,
+      "saved_estimates": 19,
+      "full_update_records_audited": 63897600,
+      "replay_blocks": 64,
+      "replay_audit_rows": 12582912,
+      "audit_mismatches": 0,
+      "corrected_run_shards": 32,
+      "shard_binary_files": 64,
+      "original_attempt1": "infrastructure failure only; no scientific output"
+    },
+    "relation": "two separate prespecified estimate families (41 records); not pooled; not independent replications"
   },
   "checks": {
-    "saved_statistics": 870,
-    "source_audits": "two accepted zero-mismatch internal audits",
-    "visual_qa": "24 final PDF pages"
+    "saved_statistics_checks_accepted": 1975,
+    "sha_check_enforced": true,
+    "statistics_check_report": "provenance/MANUSCRIPT_V1_1_STATISTICS_CHECK_1975.json",
+    "visual_qa": "provenance/MANUSCRIPT_V1_1_VISUAL_QA.json",
+    "manuscript_pages": 22,
+    "supplement_pages": 19,
+    "claim_audit": "QWEN-019 MANUSCRIPT_GO",
+    "source_audits": "four accepted zero-mismatch internal audits (two per study)",
+    "statistics_checker_run_by_builder": false
   },
   "licenses": {
     "manuscript_figures_data": "CC BY 4.0",
     "original_code": "MIT"
   },
-  "complete_outcomes_asset": "phase2-mutable-memory-complete-outcomes-v1.0.0.tar.zst",
-  "publication_state": "READY_FOR_GITHUB_RELEASE_AND_ZENODO_ARCHIVAL_RECORD",
+  "complete_outcomes_assets": {
+    "study001": "phase2-mutable-memory-complete-outcomes-v1.0.0.tar.zst",
+    "study002": "phase2-performance-conversion-002-complete-outcomes-v1.1.0.tar.zst"
+  },
+  "zenodo": {
+    "state": "Zenodo archival publication pending",
+    "doi_cited": null,
+    "note": "A draft DOI is reserved but unpublished; no DOI is cited until the archival record is published."
+  },
+  "publication_state": "STAGED_FOR_SUPERVISOR_REVIEW; GITHUB_RELEASE_AND_ZENODO_ARCHIVAL_PUBLICATION_PENDING",
   "scientific_execution_performed_for_publication": false
 }

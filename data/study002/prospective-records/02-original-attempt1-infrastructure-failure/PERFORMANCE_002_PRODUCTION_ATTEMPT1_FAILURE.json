@@ -1,0 +1,32 @@
+{
+  "accepted_at_utc": "2026-10-02T06:28:45.272422+00:00",
+  "automatic_retry_authorized": false,
+  "cause": "The production runner omitted the required --design-go argument from its sole mmem_production command. The binary refused at argument validation before creating the production output directory.",
+  "disposition": "Preserve attempt1 permanently. Any recovery requires a separately frozen prospective recovery addendum, corrected attempt2 runner, independent terminal review and new explicit execution authority; never alter or reuse attempt1.",
+  "evidence": {
+    "build_exit_status": 0,
+    "final_reauthentication_passed": true,
+    "partial_evidence_preserved": true,
+    "preflight_exit_status": 0,
+    "production_exit_status": 64,
+    "production_output_dir_present": false,
+    "runner_source_unchanged": true,
+    "scientific_outcomes_observed": false,
+    "scientific_records_created": 0
+  },
+  "job_id": "53552434",
+  "production_stderr": {
+    "bytes": 301,
+    "path": "$PROJECT_ROOT/production-stage/performance002_attempt1/commands/production.stderr",
+    "sha256": "704d82020722a731c6b56a39fe07c27e3ac34c5287ba0e97d31301b236e2f548"
+  },
+  "record": "PHASE2-PERFORMANCE-CONVERSION-002-PRODUCTION-ATTEMPT1-FAILURE-1",
+  "runner_exit_status": 64,
+  "runner_receipt": {
+    "bytes": 11681,
+    "path": "$PROJECT_ROOT/production-stage/performance002_attempt1/runner_receipt.json",
+    "sha256": "c78c5361d4f6c0ba76cc850b7cb7e48476da11b2af2c272d6b7d7c5d2cc3b98d"
+  },
+  "status": "FAILED_BEFORE_SCIENTIFIC_EXECUTION",
+  "study_id": "PHASE2-PERFORMANCE-CONVERSION-002"
+}
