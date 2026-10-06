@@ -7,8 +7,9 @@ authors:
     given-names: Jack
     affiliation: "Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health"
 version: 1.2.0
-date-released: '2026-10-02'
+date-released: '2026-10-06'
 repository-code: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use"
+doi: "10.5281/zenodo.23085659"
 license: MIT
 preferred-citation:
   type: unpublished
@@ -19,5 +20,6 @@ preferred-citation:
       affiliation: "Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health"
   year: 2026
   version: 1.2.0
+  doi: "10.5281/zenodo.23085659"
   url: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/blob/v1.2.0/paper/MANUSCRIPT.md"
-  notes: "Research preprint; not externally peer reviewed. Manuscript and data are CC BY 4.0. Zenodo archival publication pending."
+  notes: "Research preprint; not externally peer reviewed. Manuscript and data are CC BY 4.0; original code is MIT."

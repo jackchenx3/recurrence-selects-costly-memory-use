@@ -1,6 +1,6 @@
 # Environmental recurrence selects a costly memory-use policy across two operator bundles without a resolved one-bit population benefit
 
-Research preprint and reproducibility package, version **1.2.0** (2026-10-02). Not externally peer reviewed.
+Research preprint and reproducibility package, version **1.2.0** (2026-10-06). Not externally peer reviewed.
 
 **Author:** Jack Chen\
 **Affiliation:** Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health
@@ -118,7 +118,7 @@ The accepted release build used Python 3, matplotlib 3.9.4 and reportlab 5.0.1 (
 ## Availability and citation
 
 Repository: https://github.com/jackchenx3/recurrence-selects-costly-memory-use\
-Archival record: Zenodo archival publication pending. No DOI is cited for this version until the archival record is published.
+Zenodo DOI: https://doi.org/10.5281/zenodo.23085659
 
 The complete-outcomes archives are separate release assets and are not stored in this Git repository. See `CITATION.cff`. Internal AI-assisted checks are documented in `docs/AI_ASSISTANCE.md`. They are not external peer review or independent scientific replication.
 

@@ -2,9 +2,9 @@
 
 ## Status
 
-A public reproducibility package is being prepared. **No DOI, repository address or release date has been assigned yet.** None is claimed in the manuscript.
+Version 1.2.0 is publicly archived at https://doi.org/10.5281/zenodo.23085659 and in the versioned GitHub release at https://github.com/jackchenx3/recurrence-selects-costly-memory-use/releases/tag/v1.2.0. It was published on 2026-10-06. The tagged manuscript preserves its sealed pre-publication availability statement; current availability is given here.
 
-## Licenses for the future public package
+## Licenses for the public package
 
 - Manuscript text, figures and data: Creative Commons Attribution 4.0 International (CC BY 4.0).
 - Original code: MIT License.
@@ -13,7 +13,7 @@ A public reproducibility package is being prepared. **No DOI, repository address
 
 Version 1.2.0 of the manuscript reports three prospective studies in two operator bundles: Study 001 (PHASE2-MUTABLE-MEMORY-001; 22 saved estimate records); Study 002 (PHASE2-PERFORMANCE-CONVERSION-002; 19 saved estimate records), a post-v1.0 prospective extension; and Study 003 (PHASE2-TORUS-MEMORY-003; 22 saved estimate records), a post-v1.1 prospective extension in one independently implemented alternative operator bundle. The three record sets are separately accepted estimate sets (63 in total) and are released and checked separately; none is pooled with another. The Study 001 entries below are unchanged from version 1.0, and the Study 002 entries are unchanged from version 1.1.0.
 
-## Planned contents: Study 001
+## Published contents: Study 001
 
 - Frozen specification PHASE2-MUTABLE-MEMORY-001 revision 1, with its literature boundary.
 - Prospective timing records: the terminal design-review record and receipt, the production execution authority, the production job submission and the acceptance record (hashes and times below).
@@ -27,7 +27,7 @@ Version 1.2.0 of the manuscript reports three prospective studies in two operato
 - Job requests, accounting, logs, exit status and delivery manifests.
 - This manuscript source package, including the figure, statistics-checking and PDF scripts, with build receipts that record the SHA-256 of the checked documents, figures and PDFs and the matplotlib and reportlab versions used.
 
-## Planned contents: Study 002
+## Published contents: Study 002
 
 - Frozen specification PHASE2-PERFORMANCE-CONVERSION-002 revision 1.
 - The producer extension, configuration, build environment and SHA-256 manifests; the production namespace `production-r1`, the key schema including `DECOY_PERMUTATION`, and the collision receipt.
@@ -38,7 +38,7 @@ Version 1.2.0 of the manuscript reports three prospective studies in two operato
 - The record of the failed original production submission (missing required `--design-go` argument; exit status 64; no production output, random draw, model execution or outcome) and the prospective recovery addendum that preceded the corrected run.
 - The design-review record, production authorization and acceptance record.
 
-## Planned contents: Study 003
+## Published contents: Study 003
 
 - Frozen specification PHASE2-TORUS-MEMORY-003 revision 1, its design arithmetic (including the exact 128-rank tournament table) and the design-GO record.
 - The pinned Random123 Threefry4x64-20 reference provenance (official repository commit, header and known-answer-vector hashes), the key schema for namespace `production-r1`, and the address-enumeration and collision audit.
