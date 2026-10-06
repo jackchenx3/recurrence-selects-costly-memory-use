@@ -1,0 +1,112 @@
+{
+  "build_failures_disposition": "Two ReportLab inline-code parser failures were fixed by replacing literal multiplication asterisks with the Unicode multiplication sign in two supplement paragraphs. Both failed attempts and exact patch receipts are preserved; the final source and PDFs passed the statistic checker and visual review.",
+  "build_receipt": {
+    "bytes": 4680,
+    "sha256": "dafa1918a9f83bbea67102a91e2c9720de894852489c740d4358934d3dd44cba"
+  },
+  "figures": {
+    "files": {
+      "figure1": {
+        "bytes": 466909,
+        "sha256": "b086bf8732f96dba648c454f67bd06c6bfe5ab91b445a2f42ff0359995a6026c"
+      },
+      "figure2": {
+        "bytes": 196795,
+        "sha256": "71f2406ea9a1022995e7e7d2c4a3b46eaf54522f272d8fbda84702dc3ff21081"
+      },
+      "figure3": {
+        "bytes": 161294,
+        "sha256": "60563d2436808dedca3907d3c70518d154ea79724b789111acebb99568cb3614"
+      },
+      "figure4": {
+        "bytes": 338354,
+        "sha256": "e76ea988e0e797425028abbdc78e14e63a6dd5f16066f55d81ad54e1f572cb66"
+      },
+      "figure5": {
+        "bytes": 426269,
+        "sha256": "04f2757e6226cd56f295c79386c011ca803901bc640f6222d295a62ef35c56ae"
+      }
+    },
+    "finding": "All source-bound raster figures were inspected at original resolution; labels, intervals, legends, scales and panel layouts are readable and internally coherent.",
+    "reviewed": 5,
+    "total": 5
+  },
+  "manuscript": {
+    "contact_sheets": [
+      {
+        "bytes": 657194,
+        "file": "manuscript_01_06.jpg",
+        "sha256": "3ce7a9736be1b53367f2c4aa7e57dfc1ebb54fd5ac5dcd46e242dc470d59094e"
+      },
+      {
+        "bytes": 739310,
+        "file": "manuscript_07_12.jpg",
+        "sha256": "449c82845e12385d997d0936ab9697d27655af4b8f3d8979fcd6d33204175f25"
+      },
+      {
+        "bytes": 498423,
+        "file": "manuscript_13_18.jpg",
+        "sha256": "07ccbd0f5d6a3b4db24e367070ba2dce239798f928f2bccee5fbc1d6b4953e2f"
+      },
+      {
+        "bytes": 567951,
+        "file": "manuscript_19_24.jpg",
+        "sha256": "26e5880bf852f54ce837b6f0bab5cc58e55a97f20007af1686d964b27333f376"
+      },
+      {
+        "bytes": 794131,
+        "file": "manuscript_25_30.jpg",
+        "sha256": "b39b56c45fa2fba540c8417bcdd8af3ccc8133ba9b9ef6c6205a568695965e1d"
+      },
+      {
+        "bytes": 102662,
+        "file": "manuscript_31_31.jpg",
+        "sha256": "cfea6cc48679085776bdee7429e6d5e65fcb14b12667becea2993832f4b9301c"
+      }
+    ],
+    "finding": "All pages readable; no clipping, overflow, blank-page anomaly, broken table, missing figure, or malformed glyph observed.",
+    "pages_reviewed": 31,
+    "pages_total": 31
+  },
+  "record": "PHASE2-MMEM-MANUSCRIPT-V1-2-VISUAL-QA-1",
+  "reviewed_at_utc": "2026-10-02T23:37:02.699485+00:00",
+  "scientific_execution_performed": false,
+  "status": "PASS",
+  "supplement": {
+    "contact_sheets": [
+      {
+        "bytes": 631517,
+        "file": "supplement_01_06.jpg",
+        "sha256": "cc79b8fa013b6ee3c36b8bd470d64f4d5bcbe355fdad317df378bf36d748c9b3"
+      },
+      {
+        "bytes": 630757,
+        "file": "supplement_07_12.jpg",
+        "sha256": "a2cf5645a50ee6b257326b474ad660bc58c727f73ee0a978ba489f83e42097a9"
+      },
+      {
+        "bytes": 619250,
+        "file": "supplement_13_18.jpg",
+        "sha256": "03b748a63f44775ec16c5c5001a753c040c911ff2c462d2e9c058de8113a98fa"
+      },
+      {
+        "bytes": 689552,
+        "file": "supplement_19_24.jpg",
+        "sha256": "f440a9c2440b2eb47131e57c871a07d44d40da2a93d06bb56e7fc3c4277c4c54"
+      },
+      {
+        "bytes": 624928,
+        "file": "supplement_25_30.jpg",
+        "sha256": "af1fc1f01bb844b32163c95204d081877109f436ba1d3c426fbb0a88d0bb45ab"
+      },
+      {
+        "bytes": 68173,
+        "file": "supplement_31_31.jpg",
+        "sha256": "df2301eddbf668b975db6123b4c06cb8910fc5c9d09d3152bd80cf53c2097320"
+      }
+    ],
+    "finding": "All pages readable; no clipping, overflow, blank-page anomaly, broken table, missing content, or malformed glyph observed. Page 31 intentionally ends the provenance table and explanatory paragraph.",
+    "pages_reviewed": 31,
+    "pages_total": 31
+  }
+}

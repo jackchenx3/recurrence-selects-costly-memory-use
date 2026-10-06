@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-10-02T23:28:52.373603+00:00",
+  "failure": "ReportLab inline Markdown conversion paired the two literal multiplication asterisks across code spans, producing mismatched <font>/<i> tags.",
+  "figures_status": "PASS_ALL_FIVE",
+  "pdf_status": "MANUSCRIPT_WRITTEN_THEN_SUPPLEMENT_PARSE_FAILED",
+  "preserved_partial_pdf_dir": "$PROJECT_ROOT/manuscript-update-v1.2-draft/_build/paper-attempt1",
+  "record": "PHASE2-MMEM-MANUSCRIPT-V1-2-BUILD-ATTEMPT1-FAILURE-1",
+  "scientific_content_affected": false,
+  "scientific_execution_performed": false,
+  "source_file": "paper/SUPPLEMENT.md",
+  "source_sha256_before": "1345ce468371a917edc1120c4accab1646b97e7415f99563de2aa18505318527",
+  "statistics_check_status": "PASS_2998",
+  "status": "PRESERVED_FORMATTING_PARSE_FAILURE"
+}

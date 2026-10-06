@@ -1,0 +1,36 @@
+{
+  "title": "Environmental recurrence and directional cache information select a costly memory-use allele without a resolved one-bit population benefit",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {
+      "name": "Chen, Jack",
+      "affiliation": "Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health"
+    }
+  ],
+  "description": "Two prospective abstract computational studies of one model ask whether lag-two environmental recurrence, and then directional cache information, selectively enrich a mutable allele for using a supplied one-record private cache when each retrieval replaces one of two fresh proposals. In Study 001, recurrence strongly enriched the allele above its exact neutral benchmark, while the recurrent ACTIVE-minus-SHAM population-accuracy contrast was bounded below the prespecified one-correct-bit scale with sign unresolved, the recurrence performance interaction was unresolved and the ZERO-law contrast was descriptively adverse. In Study 002, directional retrieval further amplified selection on the allele relative to a recurrence-gated, parent-distance-matched noninformative control, but its total population-accuracy effect through evolved policy use was bounded below the prespecified positive one-bit scale with sign unresolved. The result separates selection on a policy allele from demonstrated population performance. The memory architecture was supplied; retention and retrieval were not separated; one aligned HALF law, one fixed cost, one mutation rate, one horizon and one model class were tested. The 22 and 19 saved estimate records are separate families, not independent replications. Audits were internal. Research preprint; not externally peer reviewed. Manuscript/data CC BY 4.0; original code MIT; AI assistance disclosed.",
+  "license": "cc-by-4.0",
+  "version": "1.1.0",
+  "publication_date": "2026-10-02",
+  "keywords": [
+    "evolutionary computation",
+    "environmental recurrence",
+    "memory-use allele",
+    "finite populations",
+    "private memory",
+    "directional information",
+    "reproducible research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/releases/tag/v1.1.0",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/releases/tag/v1.0.0",
+      "relation": "isNewVersionOf",
+      "scheme": "url"
+    }
+  ]
+}

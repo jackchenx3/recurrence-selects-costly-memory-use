@@ -1,0 +1,27 @@
+{
+  "accepted_at_utc": "2026-10-02T23:49:42.359848+00:00",
+  "compact_context_receipt": {
+    "bytes": 3486,
+    "sha256": "390c439778c11a1cd6f393892b7173fc8d0fec75ac2ef6f21de71f31a30625a8"
+  },
+  "compact_recovery_authority": {
+    "bytes": 675,
+    "sha256": "b0696a3bcedd69e533250cdeaed1855eb2eeb6cea4a630ce2e2ac3ec7af996b2"
+  },
+  "full_context_transport_failure": {
+    "bytes": 845,
+    "sha256": "bea55b39ef813d10309b4253b0ed90afc01c6ab10f136d764ea7e5cc42e83a1d"
+  },
+  "material_defects": [],
+  "record": "PHASE2-MMEM-MANUSCRIPT-V1-2-AUDIT-ACCEPTED-1",
+  "review": {
+    "bytes": 3702,
+    "sha256": "fecd6a486c1c0c120b66c0339f34761ca2e8e00ea81648d04a3f9bab85cf092e"
+  },
+  "review_receipt": {
+    "bytes": 2581,
+    "sha256": "b7e5d8ca2e6ce12e283107613b689be0d2ccb1bdeced660707ed97a5cb0e669a"
+  },
+  "scientific_execution_performed": false,
+  "status": "MANUSCRIPT_GO"
+}

@@ -1,0 +1,46 @@
+{
+  "build_receipt": {
+    "bytes": 4680,
+    "sha256": "dafa1918a9f83bbea67102a91e2c9720de894852489c740d4358934d3dd44cba"
+  },
+  "claims": {
+    "cross_bundle_result": "selection/performance separation recurs across two operator bundles",
+    "limits": "No universal replication, component attribution, gradual-search, biological, equilibrium, invasion, memory-origin or priority claim.",
+    "study003_allele_result": "recurrence-attributable selective enrichment in this alternative operator bundle",
+    "study003_performance_result": "P_abs bounded below the positive 1/32 maximal-loss scale; P_rec unresolved"
+  },
+  "disposition": "PUBLICATION_PACKAGE_GO",
+  "independent_audit_acceptance": {
+    "bytes": 880,
+    "sha256": "53f6ca6d66e60c72114259f452675a5a5c2e75156056a2994972f5b5417b02c9"
+  },
+  "outputs": {
+    "figures": 5,
+    "manuscript_pages": 31,
+    "supplement_pages": 31
+  },
+  "post_audit_source_patch": {
+    "bytes": 1724,
+    "sha256": "c41dc435a7cbb1e8312d6f295002de2326c1073dcf048a891142366d84fa478f"
+  },
+  "publication_scope": "One coherent v1.2.0 revision of the existing paper; no standalone Study 003 paper.",
+  "record": "PHASE2-MMEM-MANUSCRIPT-V1-2-FINAL-SEAL-1",
+  "scientific_execution_repeated": false,
+  "sealed_at_utc": "2026-10-02T23:49:42.363010+00:00",
+  "source_authentication": {
+    "bytes": 3628,
+    "sha256": "4f54976e8c50a3769b77bfbb26f3e2109a01ae5e4921652970281f0c4ec6bee6"
+  },
+  "statistics": {
+    "checks_passed": 2998,
+    "failures": 0,
+    "sha_enforced": true
+  },
+  "status": "PASS",
+  "title": "Environmental recurrence selects a costly memory-use policy across two operator bundles without a resolved one-bit population benefit",
+  "version": "1.2.0",
+  "visual_qa": {
+    "bytes": 4146,
+    "sha256": "ffc2365b99338f4a6ed97c73f21ce235af519b425423788057b0cc1ed51eac36"
+  }
+}

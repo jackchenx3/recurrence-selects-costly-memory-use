@@ -1,12 +1,12 @@
-# Supplementary Information: Environmental recurrence and directional cache information select a costly memory-use allele without a resolved one-bit population benefit
+# Supplementary Information: Environmental recurrence selects a costly memory-use policy across two operator bundles without a resolved one-bit population benefit
 
 **Jack Chen**
 
-Research preprint draft, version 1.1.0; not externally peer reviewed
+Research preprint draft, version 1.2.0; not externally peer reviewed
 
 ## S1. Status and scope
 
-This supplement documents two prospective studies. Part A (Sections S1-S15) documents Study 001; its content, values and provenance are unchanged from version 1.0 apart from this introduction and cross-references to Part B. Part B (Sections S16-S26) documents Study 002, a post-v1.0 prospective extension added in version 1.1.0.
+This supplement documents three prospective studies in two operator bundles. Part A (Sections S1-S15) documents Study 001; its content, values and provenance are unchanged from version 1.0 apart from this introduction and cross-references to Parts B and C. Part B (Sections S16-S26) documents Study 002, a post-v1.0 prospective extension added in version 1.1.0, and is unchanged apart from cross-references. Part C (Sections S27-S39) documents Study 003, a post-v1.1 prospective extension added in version 1.2.0 that poses the Study 001 question again in an independently implemented alternative operator bundle. The 22 Study 001, 19 Study 002 and 22 Study 003 records are three separately accepted estimate sets, 63 saved estimate records in total; none is pooled with another.
 
 ## Part A. Study 001 (PHASE2-MUTABLE-MEMORY-001)
 
@@ -207,7 +207,7 @@ The result concerns selection on use of a supplied private cache under one prosp
 
 ## S15. Provenance of quoted values (Study 001)
 
-Every number in the manuscript and this supplement that is registered in `provenance/QUOTED_STATISTICS.json` is checked by `scripts/check_statistics.py` against the saved records below (Study 001) and in Section S26 (Study 002), which also recomputes the six interval endpoints, the 16 descriptive identities, the decision labels, the scope counts and the audit mismatch counts. The SHA-256 values are those authenticated in the acceptance record of 2026-10-01.
+Every number in the manuscript and this supplement that is registered in `provenance/QUOTED_STATISTICS.json` is checked by `scripts/check_statistics.py` against the saved records below (Study 001), in Section S26 (Study 002) and in Section S39 (Study 003), which also recomputes the six interval endpoints, the 16 descriptive identities, the decision labels, the scope counts and the audit mismatch counts. The SHA-256 values are those authenticated in the acceptance record of 2026-10-01.
 
 | Source | SHA-256 |
 |---|---|
@@ -419,7 +419,7 @@ The control matches parent distance and one common coordinate relabeling but not
 
 ## S26. Provenance of Study 002 quoted values
 
-Every registered Study 002 value in the manuscript and this supplement is checked by `scripts/check_statistics.py` against the saved records below, which also recomputes the seven interval endpoints, the exact linear identities, the decision and classification labels, the SHAM identities, the scope counts, the diagnostic consistency relations and the audit mismatch counts. The checker requires both the 22 Study 001 records and the 19 Study 002 records and authenticates each set against its own acceptance record.
+Every registered Study 002 value in the manuscript and this supplement is checked by `scripts/check_statistics.py` against the saved records below, which also recomputes the seven interval endpoints, the exact linear identities, the decision and classification labels, the SHAM identities, the scope counts, the diagnostic consistency relations and the audit mismatch counts. The checker requires the 22 Study 001, 19 Study 002 and 22 Study 003 records and authenticates each set against its own acceptance record.
 
 | Source | SHA-256 |
 |---|---|
@@ -439,3 +439,218 @@ Every registered Study 002 value in the manuscript and this supplement is checke
 | Recovery execution authority (issued 2026-10-02 06:32:55 UTC) | `c4cb2e4c162df92a761b2fff391b6e81e000055db88d7cbaeb954b0750b4e085` |
 
 The first six values are authenticated in the Study 002 acceptance record; the acceptance-record SHA-256 is recomputed and enforced by the statistics-checking script; the specification hash is quoted from the source-binding record and is not recomputed by the checker. The remaining provenance records establish prospective order and preserve the disclosed infrastructure-only failure; they add or modify no scientific outcome.
+
+## Part C. Study 003 (PHASE2-TORUS-MEMORY-003)
+
+## S27. Status, question and relation to Studies 001 and 002
+
+Study 003 is a post-v1.1 prospective extension specified in PHASE2-TORUS-MEMORY-003 revision 1 (SHA-256 `0ff662dc31807b0b2cdcae371d884473ed398e2583272d94331bac8c8f9ff0b0`; design-GO record `e5dc485dd858f18eb9652cfe6b63f142e2d09fb6b069d640438cd8dbe63a786d`, both bound in the frozen decision record). Its frozen question was: does the Study 001 classification of recurrence-attributable enrichment of a mutation-generated private-cache-use allele under a one-proposal opportunity cost reproduce in one independently implemented, large-alphabet, graded-loss, tournament-survival model with entirely new cohorts? The fixed class name is "32-locus, 2^16-allele torus with graded circular loss and tournament survival". It is a test of one alternative operator bundle: alphabet, loss, local-mutation semantics and survival all differ from the bit, Hamming, XOR and Plackett-Luce bundle of Studies 001 and 002. It is not a continuous-state, gradual-search or small-step model. It does not test memory-capacity origin, arbitrary recurrence, biological memory, equilibrium, evolutionary stability, rare-mutant invasion, per-use value of information or the Study 002 directional-versus-displacement contrast.
+
+The accepted primary decision is **SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT IN THIS ALTERNATIVE OPERATOR BUNDLE**. The performance classifications are **BOUNDED BELOW THE POSITIVE ONE-BIT SCALE** for `P_abs` (saved class `BOUNDED_BELOW_POSITIVE`; in Study 003 the label refers to the positive 1/32 performance scale of Section S34, not to a bit) and **UNRESOLVED** for `P_rec`. The frozen crossed interpretation is **SELECTION/PERFORMANCE SEPARATION RECURS IN THIS OPERATOR BUNDLE**. The complete scope is 41,600 new independent paired blocks, eight cells per block, 332,800 paths, 85,196,800 path-updates, 10,905,190,400 objective queries and 22 saved estimate records.
+
+Relation to Studies 001 and 002. The producer is a new implementation from the specification and imports or adapts no producer, analyzer or auditor source from Studies 001 or 002; the only permitted external random-number dependency is the pinned Random123 reference of Section S32. The specification required the auditor to be built, without importing producer code, by a worker who did not implement the producer, and to implement Threefry and circular loss independently. No genotype, target, random tape, trajectory, cohort, seed namespace or outcome from any earlier study was reused. No numerical effect is pooled with Studies 001 or 002, and reproduction is assessed only by the prespecified within-bundle classification. The 22 Study 001, 19 Study 002 and 22 Study 003 records are three separately accepted estimate sets, 63 in total.
+
+The two operator bundles compare as follows.
+
+| Element | Studies 001 and 002 | Study 003 |
+|---|---|---|
+| Individual state | one unsigned 32-bit genotype | 32 circular loci, each an unsigned 16-bit integer in Z/2^16 Z |
+| Raw objective | Hamming mismatch to a 32-bit target | exact integer loss `sum_i d_i^2`, with `d_i` the circular distance at locus i |
+| Fresh probe and global scout | parent XOR an independent uniform 32-bit mask | independent uniform 32-coordinate vectors |
+| Local child | best of candidates 1-3; each bit flipped with probability 1/32 | best of candidates 1-3; each coordinate replaced by a uniform 16-bit value with probability 1/32 |
+| Survival | 32 exact integer-weighted draws without replacement, weights `2^(32-h)` | 32 independent four-entry tournaments with replacement; rank only |
+| Random numbers | Random123 Philox4x32-10 | Random123 Threefry4x64-20 |
+| Population accuracy | `1 - (mean survivor mismatch)/32` | `(2^40 - total survivor loss)/2^40` |
+| Performance scale 1/32 | one correct bit per survivor | 1/32 of maximal total loss |
+| Implementation and cohorts | Study 001 producer; Study 002 extends it | new implementation, new random addressing, new cohorts |
+
+Shared by both bundles: 32 haploid individuals; the supplied one-record lineage cache; the `M`/`F` policy allele, which couples retention and retrieval; symmetric policy mutation at rate 1/32; four evaluated candidates per parent and 128 objective queries per update; replacement of exactly one fresh proposal by a valid ACTIVE-`M` cache; the ZERO and HALF target laws; 256 updates with the late window 193-256; the eight paired cells; 41,600 blocks; and the Hoeffding-Bonferroni families of Section S9.
+
+## S28. State, horizon and exact torus loss
+
+Fixed state: 32 haploid individuals in deterministic slots 0-31; phenotype `x = (x_0, ..., x_31)` with each coordinate an unsigned 16-bit integer in Z/2^16 Z; policy allele `M` (use a valid private cache in ACTIVE) or `F` (fresh exploration); and a private cache that is invalid or holds one 32-coordinate phenotype from the immediate lineage. Updates run from 1 to 256 inclusive, and the late window is the post-mutation states at updates 193-256 inclusive.
+
+For one coordinate, let `u = (x_i - t_i) mod 2^16`, an integer from 0 to 2^16 - 1, and `d_i = min(u, 2^16 - u)`. The antipode has distance 2^15. Individual loss is the exact integer `Q(x, t) = sum_i d_i^2`. The maximal coordinate loss is 2^30, the maximal individual loss is 32 × 2^30 = 2^35, and the maximal population loss is 32 × 2^35 = 2^40. After survival, true population accuracy is stored as the exact rational `(2^40 - sum over survivors of Q)/2^40`. No floating-point arithmetic enters loss, ranking, saved accuracy numerators or inferential reconstruction. A uniformly random coordinate has expected squared distance 715827883/2, a fraction 715827883/2147483648 of its maximum, slightly above one-third; the expected accuracy of a uniformly random population is therefore slightly below 2/3.
+
+## S29. Blocks, cells, initial state and target laws
+
+There are 41,600 independent random blocks, and every block contains the same eight paired cells, arm (ACTIVE, SHAM) x target law (ZERO, HALF) x policy start (ALL_F, ALL_M). In each block the 32 initial phenotypes have independent uniform 16-bit coordinates and are shared by all eight cells; every cache starts invalid; ALL_F labels every individual `F` and ALL_M labels every individual `M`. Target innovations and copy bits, every candidate draw, donor keys, tournament entries, candidate tie keys and policy-mutation draws take the same coordinate-keyed values in every compatible cell. Blocks are the independent units for all intervals.
+
+For every block and update t, an indexed uniform 32-coordinate innovation vector `I_t` and an indexed fair recurrence bit `R_t` are generated whether used or not. ZERO: `T_t = I_t` for every t. HALF: `T_1 = I_1`, `T_2 = I_2`, and for t >= 3, `T_t = T_(t-2)` when `R_t = 1`, including chained copies, and `T_t = I_t` otherwise. ZERO and HALF share every innovation. HALF is fixed because a one-generation lineage cache is aligned to a two-update target return; it favors retrieval by construction. No other lag, copy probability or target law was tested.
+
+## S30. Candidate families and the opportunity cost
+
+At update t, parent slot i has pre-update phenotype `x_i`. Candidate order is (family, parent slot), with family order parent, policy probe, scout, local child, and candidate index `32 * family + parent_slot` runs from 0 to 127.
+
+1. **Parent:** exactly `x_i`.
+2. **Policy probe:** for `F`, an independent uniform 32-coordinate vector `fresh(t, i)`; for a valid `M` in ACTIVE, its cached phenotype; for an invalid `M` in ACTIVE, exactly `fresh(t, i)`; for either label in SHAM, exactly `fresh(t, i)`.
+3. **Global scout:** an independent uniform 32-coordinate vector `scout(t, i)`.
+4. **Local child:** among families 0-2 for this parent, the smallest-loss donor, an equal-loss tie being broken by the lower unsigned 64-bit donor key and then by the lower family index. For each coordinate independently, the donor coordinate is replaced by an independent uniform 16-bit value when the low five bits of the replacement flag are zero, and retained otherwise.
+
+Every fresh and scout vector, local replacement flag and local replacement value is generated unconditionally. A replacement value may equal the donor value, so a coordinate is flagged with probability exactly 1/32 and actually changes with probability exactly `(1/32)(1 - 2^-16)`. This is a large-alphabet resampling operator, not a small torus step. A valid ACTIVE-`M` carrier replaces exactly one uniform fresh proposal with its cache. There is no penalty coefficient and no other cost. Duplicate phenotypes, including a cache equal to the parent, remain separate candidates, and each incurs one objective query, so every update makes exactly 128 queries.
+
+## S31. Four-entry tournament survival, tie semantics and full event order
+
+For each survivor slot s = 0, ..., 31, four candidate indices are drawn independently with replacement from 0-127, in the same fixed candidate order in every cell. A candidate may appear more than once within a tournament and may win several survivor slots. The tournament winner is the entry with (1) the lowest exact loss; then (2) the lowest label-blind unsigned 64-bit candidate tie key, generated once per candidate and update and reused in every tournament and cell; then (3) the lowest candidate index. The policy label, cache, lineage and entry position never enter the tie break.
+
+Tournament size four was frozen prospectively because 32 survivor slots x four entries gives exactly 128 entries per update, the size of the candidate pool, so every candidate has one tournament entry in expectation while independent with-replacement tournaments permit zero, one or several descendants. It was not calibrated to the survival strength of Study 001, and every result is conditional on this intensity. For total ordered candidate rank r = 1, ..., 128, best first, the exact probability of winning one survivor slot is `p_r = [(129 - r)^4 - (128 - r)^4]/128^4 = N_r/2^28`, expected offspring is `32 p_r = N_r/2^23`, and the probability of no offspring is `(1 - p_r)^32`; the probabilities sum to 1. The unique best candidate has expected offspring 8290815/8388608 and leaves no offspring with probability above one-third; the worst has expected offspring 1/8388608. The complete exact 128-row rank table is Appendix A of the frozen specification and is part of the planned package.
+
+At each update t = 1, ..., 256 the following steps occur in this order:
+
+1. Generate `I_t` and `R_t` and set `T_t` by the cell's law (Section S29).
+2. For each parent slot, construct the four candidates (Section S30), generating every declared draw.
+3. Evaluate all 128 candidates by exact integer loss against `T_t`.
+4. For each survivor slot, draw four tournament entries and assign the winner to that slot.
+5. Each survivor inherits the producing parent's pre-update policy label.
+6. Independently in each survivor slot, flip only that label `M <-> F` with probability mu = 1/32; there is no post-survival phenotype mutation.
+7. A post-mutation `F` gets an invalid cache; a post-mutation `M` caches the producing parent's pre-update phenotype, even when the winning candidate was that parent's cache probe. Separate survivor slots descending from one candidate keep separate cache copies. SHAM writes caches by the same rule but never reads them, and an `M -> F -> M` history carries no hidden record.
+8. Record memory-use count, exact population-loss numerator, valid cache-probe uses, cache-probe winners, `F -> M` and `M -> F` counts, tournament duplicate count and query count, all after step 7.
+
+## S32. Coordinate-keyed Threefry4x64-20 addressing
+
+Random values come from canonical Random123 Threefry4x64-20 pinned to the official D. E. Shaw Research repository commit `9545ff6413f258be2f04c1d319d99aaef7521150` (2022-01-17), with reference `include/Random123/threefry.h` SHA-256 `4c210b32b5ba605b059c54d5edd6f01bf04190de49a0abeecec76420cd072a72` and official `tests/kat_vectors` SHA-256 `aab5ebabf40003f63d6d87b24cbd2c8a02652e00cf8bad64226fd50586929183`. The 64-bit four-word rotation pairs, in round-cycle order, are (14, 16), (52, 57), (23, 40), (5, 37), (25, 33), (46, 12), (58, 22) and (32, 32), and the key-schedule parity constant is `0x1BD11BDAA9FC1A22`. Producer and auditor were each required to pass at least the official 20-round known-answer vectors: counter `(0,0,0,0)` with key `(0,0,0,0)` gives `(09218ebde6c85537, 55941f5266d86105, 4bd25e16282434dc, ee29ec846bd2e40b)`, and the all-ones counter with the all-ones key gives `(29c24097942bba1b, 0371bbfb0f6f4e11, 3c231ffa33f83a1c, cd29113fde32d168)`.
+
+Key. For each purpose, the SHA-256 digest of the exact UTF-8 text `PHASE2-TORUS-MEMORY-003|production-r1|<PURPOSE>` is split into byte ranges 0-7, 8-15, 16-23 and 24-31, each read as a little-endian unsigned 64-bit key word. Counter. Every call uses the four unsigned 64-bit counter words (block, update, entity, subindex). Lanes. A 32-coordinate vector uses two calls with subindex q = 0 and 1. In each output word, four 16-bit lanes are extracted from least to most significant; output words 0-3 and lanes 0-3 are enumerated in order, and coordinate `16q + 4 × word + lane` receives `(output_word >> (16 × lane)) & 0xffff`.
+
+| Purpose | Counter | Extraction |
+|---|---|---|
+| `INITIAL_VECTOR` | (block, 0, parent, q), parent 0-31, q 0-1 | 32-coordinate vector |
+| `TARGET_INNOVATION_VECTOR` | (block, t, 0, q), t 1-256, q 0-1 | 32-coordinate vector |
+| `TARGET_COPY` | (block, t, 0, 0), every t 1-256 | output word 0, bit 0 |
+| `FRESH_VECTOR` | (block, t, parent, q), q 0-1 | 32-coordinate vector |
+| `SCOUT_VECTOR` | (block, t, parent, q), q 0-1 | 32-coordinate vector |
+| `LOCAL_REPLACE_FLAG` | (block, t, parent, q), q 0-1 | same lane order; replace iff `lane & 31 == 0` |
+| `LOCAL_REPLACE_VALUE` | (block, t, parent, q), q 0-1 | 32-coordinate vector |
+| `DONOR_KEY` | (block, t, 3 * parent + family, 0), family 0-2 | output word 0 |
+| `TOURNAMENT_ENTRY` | (block, t, survivor_slot, entry), entry 0-3 | output word 0 `& 127` |
+| `CANDIDATE_TIE_KEY` | (block, t, candidate_index, 0) | output word 0 |
+| `POLICY_MUTATION` | (block, t, survivor_slot, 0) | flip iff output word 0 `& 31 == 0` |
+
+Purpose-separated keys make identical counters across purposes distinct. All declared draws are addressable and generated regardless of arm, law, start, label or branch; `TARGET_COPY` is generated at t = 1 and t = 2 although unused. The implementation aborts on an out-of-range coordinate. Before any path, the specification required a mechanical enumeration of every declared schema proving that no `(purpose, key, counter, extraction)` address is duplicated, and a check of invariance under cell evaluation order and thread count.
+
+## S33. SHAM identities and the neutral derivation in Study 003
+
+SHAM never reads a policy label or cache when constructing phenotypes. With shared random coordinates, N1: SHAM phenotype, loss, accuracy, candidate and winner trajectories are bit-identical between ALL_F and ALL_M; and N2: labels in the two SHAM starts are exact complements after every update, so their memory-use frequencies sum to 1 at every update and their start-averaged late-window frequency is exactly 1/2 in every block. Because tournament winners and their producing parents do not depend on labels in SHAM, the neutral derivation of Section S8 applies unchanged, with r = 1 - 2mu = 15/16 and the same expected start differences at update 256 and over the late window. These are analytic neutral checks, not evidence of ACTIVE convergence.
+
+Observed: SHAM memory-use frequencies were 0.499608 (42565009/85196800) and 0.500392 (42631791/85196800) under ZERO and 0.499756 (21288793/42598400) and 0.500244 (21309607/42598400) under HALF; each pair sums exactly to 1. SHAM accuracy was 0.729671 under ZERO and 0.735785 under HALF, with identical exact fractions from both starts. The recovery record verifier confirmed both identities in all 41,600 blocks. As in Studies 001 and 002, ACTIVE and SHAM phenotypes and genealogies diverge at the first valid-`M` retrieval, so ACTIVE-SHAM contrasts are arm-level comparisons, not path-level counterfactuals.
+
+## S34. Estimands and interval families
+
+For block b, let `L_b(arm, law, start)` be the mean memory-use frequency over post-transition updates 193-256 and `P_b(arm, law, start)` the late-window mean exact normalized population accuracy, with start averages where the start is omitted. The block variables are those of Section S9: `A_HALF,b` and `A_ZERO,b`; `C_abs,b = A_HALF,b - 1/2` (range length 1); `C_rec,b = A_HALF,b - A_ZERO,b`, `D_HALF,b` and `D_ZERO,b` (range length 2); `P_abs,b = P_b(ACTIVE, HALF) - P_b(SHAM, HALF)` (range length 2); and `P_rec,b = [P_b(ACTIVE, HALF) - P_b(SHAM, HALF)] - [P_b(ACTIVE, ZERO) - P_b(SHAM, ZERO)]` (range length 4). Each estimate is the mean of its block variable over n = 41,600 independent blocks; each saved record carries the exact sum of block numerators and the block denominator, and each estimate equals the same linear combination of the saved descriptive cell means, which the statistics-checking script verifies exactly in rational arithmetic.
+
+The meaningful allele scale is Delta = 1/32, one expected individual in a 32-member population; it is a late-window expected excess, not persistence of one named carrier. The meaningful performance scale is Delta_P = 1/32 of maximal total loss. It equals moving one coordinate per individual from the torus antipode to exact agreement on average and is roughly the removal of three typical random-coordinate losses per individual. It is not the share of the random-to-perfect range that the 1/32 scale represents in Studies 001 and 002, so effect magnitudes are not compared across bundles; only prespecified within-bundle classifications are.
+
+Intervals use the construction of Section S9, `h = R sqrt[ln(2/alpha_each)/(2n)]`, with 95% familywise coverage in each family. The primary allele family uses alpha_each = 0.05/4 = 0.0125: `C_abs` has half-width 0.00781023, and `C_rec`, `D_HALF` and `D_ZERO` have half-width 0.01562046, below Delta/2 = 0.015625. The performance family uses alpha_each = 0.05/2 = 0.025: `P_abs` has half-width 0.01451463 and `P_rec` 0.02902925. No empirical variance, normal approximation, within-path independence or outcome-adaptive choice enters these bounds. The two Study 003 families are controlled separately from each other and from every Study 001 and Study 002 family.
+
+## S35. Frozen decision order, application and crossed interpretation
+
+Primary rules, applied in order with Delta = 1/32 = 0.03125:
+
+1. Failure of a deterministic identity, RNG collision audit, saved-output reconstruction or 128-query count: **INVALID**. Not triggered; the decision record lists zero identity failures. The audit-header defect of Section S37 is a nonscientific interface failure, not one of these conditions.
+2. Either `D_HALF` or `D_ZERO` interval not wholly inside (-Delta, +Delta): **START-DEPENDENT; SCIENTIFIC QUESTION UNRESOLVED**. Not triggered: `D_HALF` [-0.015822, 0.015419] and `D_ZERO` [-0.015861, 0.015380] both lie inside.
+3. Lower bounds of both `C_abs` and `C_rec` above Delta: **SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT IN THIS ALTERNATIVE OPERATOR BUNDLE**. Triggered: `C_abs` lower bound 0.275067 and `C_rec` lower bound 0.408801.
+4. Lower bound of `C_abs` above Delta and upper bound of `C_rec` at or below Delta: SELECTIVE ENRICHMENT NOT ATTRIBUTABLE TO RECURRENCE AT THE FIXED SCALE. Not reached.
+5. Upper bound of `C_abs` at or below Delta: BOUNDED NEGATIVE AT THE ONE-INDIVIDUAL SCALE, with a statement of whether the upper bound is below -Delta. Not reached; the adverse-selection field is null in the decision record.
+6. Every other pattern: UNRESOLVED. Not reached.
+
+Only rule 3 reproduces the Study 001 classification; a start-dependent or unresolved result would have been no answer rather than evidence against the mechanism. Performance rules, applied in order to each of `P_abs` and `P_rec` with Delta_P = 1/32: lower bound above Delta_P, meaningful positive; upper bound below -Delta_P, meaningful adverse; upper bound at or below Delta_P, bounded below the positive scale; otherwise unresolved. `P_abs` has upper bound 0.019571, at or below 0.03125, and is **BOUNDED BELOW THE POSITIVE ONE-BIT SCALE** (saved class `BOUNDED_BELOW_POSITIVE`), with an interval containing zero. `P_rec` has lower bound -0.022743 and upper bound 0.035316 and is **UNRESOLVED**. This family cannot alter the primary decision.
+
+Frozen crossed interpretation:
+
+| Pattern | Frozen interpretation | Applied |
+|---|---|---|
+| Primary support and `P_abs` bounded below positive Delta_P | The selection/performance separation recurs in this operator bundle | Yes |
+| Primary support and meaningfully positive `P_abs` | The separation is class-specific at the declared scales | No |
+| All other combinations | Reported literally, including null, bounded, adverse and unresolved outcomes | No |
+
+The decision record states the applied branch as **SELECTION/PERFORMANCE SEPARATION RECURS IN THIS OPERATOR BUNDLE**. No branch triggers added cohorts, a different tournament, another operator class or any component-isolating follow-up.
+
+## S36. All 22 saved Study 003 estimate records
+
+Inferential records carry frozen bounds; descriptive records do not. Exact values are the saved rational estimates; decimal values are rounded to six places. Record numbers follow the saved index plus one.
+
+| # | Record | Exact | Estimate | Interval |
+|---|---|---|---|---|
+| 1 | `C_abs` | 48200517/170393600 | 0.282878 | [0.275067, 0.290688] |
+| 2 | `C_rec` | 9039837/21299200 | 0.424421 | [0.408801, 0.440042] |
+| 3 | `D_HALF` | -687/3407872 | -0.000202 | [-0.015822, 0.015419] |
+| 4 | `D_ZERO` | -20481/85196800 | -0.000240 | [-0.015861, 0.015380] |
+| 5 | `P_abs` | 284666892836763/56294995342131200 | 0.005057 | [-0.009458, 0.019571] |
+| 6 | `P_rec` | 36804952557685197/5854679515581644800 | 0.006286 | [-0.022743, 0.035316] |
+| 7 | Frequency, ACTIVE, ZERO, ALL_F | 30549551/85196800 | 0.358576 | descriptive |
+| 8 | Frequency, ACTIVE, ZERO, ALL_M | 234839/655360 | 0.358336 | descriptive |
+| 9 | Frequency, ACTIVE, HALF, ALL_F | 33353623/42598400 | 0.782978 | descriptive |
+| 10 | Frequency, ACTIVE, HALF, ALL_M | 66690071/85196800 | 0.782777 | descriptive |
+| 11 | Frequency, SHAM, ZERO, ALL_F | 42565009/85196800 | 0.499608 | descriptive |
+| 12 | Frequency, SHAM, ZERO, ALL_M | 42631791/85196800 | 0.500392 | descriptive |
+| 13 | Frequency, SHAM, HALF, ALL_F | 21288793/42598400 | 0.499756 | descriptive |
+| 14 | Frequency, SHAM, HALF, ALL_M | 21309607/42598400 | 0.500244 | descriptive |
+| 15 | Accuracy, ACTIVE, ZERO, ALL_F | 2132393394645606663/2927339757790822400 | 0.728441 | descriptive |
+| 16 | Accuracy, ACTIVE, ZERO, ALL_M | 533099455361384907/731834939447705600 | 0.728442 | descriptive |
+| 17 | Accuracy, ACTIVE, HALF, ALL_F | 1084347749061327307/1463669878895411200 | 0.740842 | descriptive |
+| 18 | Accuracy, ACTIVE, HALF, ALL_M | 1668226509797077/2251799813685248 | 0.740841 | descriptive |
+| 19 | Accuracy, SHAM, ZERO, ALL_F | 533998851474226017/731834939447705600 | 0.729671 | descriptive |
+| 20 | Accuracy, SHAM, ZERO, ALL_M | 533998851474226017/731834939447705600 | 0.729671 | descriptive |
+| 21 | Accuracy, SHAM, HALF, ALL_F | 2153892302001915681/2927339757790822400 | 0.735785 | descriptive |
+| 22 | Accuracy, SHAM, HALF, ALL_M | 2153892302001915681/2927339757790822400 | 0.735785 | descriptive |
+
+Saved-precision values of the six inferential records, rounded from the saved 40-place display values to 19 places:
+
+| Record | Estimate | Lower | Upper |
+|---|---|---|---|
+| `C_abs` | 0.2828775083101712740 | 0.2750672787822218728 | 0.2906877378381206753 |
+| `C_rec` | 0.4244214336688701923 | 0.4088009746129713898 | 0.4400418927247689949 |
+| `D_HALF` | -0.0002015920785757212 | -0.0158220511344745237 | 0.0154188669773230814 |
+| `D_ZERO` | -0.0002403963529146635 | -0.0158608554088134660 | 0.0153800627029841391 |
+| `P_abs` | 0.0050566998204140212 | -0.0094579258184457116 | 0.0195713254592737541 |
+| `P_rec` | 0.0062864162691967155 | -0.0227428350085227502 | 0.0353156675469161812 |
+
+Derived start averages used in the main text: ACTIVE frequency 0.782878 under HALF and 0.358456 under ZERO; ACTIVE accuracy 0.740842 under HALF and 0.728441 under ZERO; SHAM accuracy 0.735785 under HALF and 0.729671 under ZERO. The ZERO ACTIVE minus SHAM accuracy contrast, -0.001230, and the ZERO frequency deficit below 1/2 are descriptive. No aggregate diagnostic record was among the accepted Study 003 analysis outputs used for this revision, so no Study 003 diagnostic count (mutation, cache-probe use or tournament duplicates) is reported or interpreted.
+
+## S37. Execution, audit-header defect, recovery and audit provenance
+
+**Production and outcome-blind authentication.** One production allocation (job 53561601; ceiling 32 CPU cores, 64 GiB RAM, 12 hours and 150 GiB of new output) ran the frozen namespace `production-r1` for all 41,600 blocks and 332,800 paths. A separate job (53562156) then authenticated, without running analysis or audit and without parsing any scientific value, all 1,962 output files and 4,694,355,040 bytes against an independent inventory, the production manifest (SHA-256 `fb91f91676b84babbcb09ee6cd9129e58580249e21d3b223d71880170873bf4c`) and the completion marker (SHA-256 `ea9763c421161fe8044f6c489b09183f743f4cd8514ab9bab67424f88c1949ff`); every member hash and size matched, and the recorded counts were 41,600 blocks, 332,800 paths, 85,196,800 path-updates, 10,905,190,400 objective queries, 16,777,216 audit candidate rows and 16,777,216 audit tournament-entry rows. The frozen analyzer (job 53562267) computed the 22 estimate records and the decision record.
+
+**Audit attempt 1 (preserved failure).** The first audit attempt (job 53562358; failure record SHA-256 `a54f2842774f38af0cab5a5ee6564b8ac295baf25549b7695b9f4d0500c45531`) stopped at a header-interface check. In the three non-chunk audit files, `audit/audit_candidates.t3c`, `audit/audit_context.t3x` and `audit/audit_entries.t3e`, the authenticated production outputs had written `chunk_index = 0` (bytes `00000000`), whereas the frozen binary schema requires the non-chunk sentinel `0xFFFFFFFF` (bytes `ffffffff`). The cause is in the producer's `FileAuditSink::open`, which constructed the audit `FileHeader` with chunk index 0. Before the stop, the Python verifier had already reconstructed all 22 estimates and checked all 41,600 block records, including N1 and N2, 332,800 path records and 85,196,800 update records, and the C++ tool had passed its ten self-tests; replay of the candidate, tournament-entry and context payloads had not started and remained unverified. The record classifies the event as a preserved nonscientific header-interface failure; production and analysis were unchanged, there was no automatic retry, and attempt 1 is immutable.
+
+**Normalization-only recovery.** Under a prospectively frozen recovery, a derived audit tree was built (normalization receipt SHA-256 `b66baa25585d2a7d0cb4a1ca3fdc002ed8bc7f3ca9f92b6c48475e64da786b5a`). The three audit files were copied and in each exactly bytes 48-51, the `chunk_index` field, were changed from `00000000` to `ffffffff`, 12 differing bytes in total; for every file the receipt proves that all payload bytes from offset 64 to the end are identical to the original. The other files of the tree are hard links to the unmodified production outputs (derived manifest SHA-256 `93a033ed000ad0aacab5dbf83486b8b41f26903eb4f1ec207362caec183126ce`). No scientific value was parsed, and no source, production output or analysis output was modified. The original malformed files remain part of the authenticated production outputs.
+
+**Recovery audit (PASS).** The same accepted auditor then ran once on the derived tree (job 53562452; runner receipt SHA-256 `6ef9d18b51125253b57d59d32c1694a33bda428f54fc83351da0a7d62fee0d5e`). The C++ replay tool `torus_audit` (binary SHA-256 `6b46c3e77045a1992f482e387e6829368052fca3f87082ed857def45aa893626`; receipt SHA-256 `497970f5243313a6cd945b69ce9c7eaba7449ceb33ef6d0dfd0d8873811ec5cc`) passed ten self-tests, including FIPS SHA-256 vectors, purpose-key derivation and separation, the official Threefry known-answer vectors, counter order, lane extraction, range refusal and schema count, circular loss and the rank table, target-law pairing, tournament and donor order, and one- and two-update hand traces. Without invoking producer code or modifying inputs, it replayed blocks 0-63 and checked 64 blocks, 512 paths, 131,072 path updates, 16,777,216 candidate rows, 16,777,216 tournament-entry rows, 131,072 context rows, 131,072 update rows, 512 path rows and 64 block rows, reading the normalized audit files by their normalized SHA-256 values. The Python verifier (receipt SHA-256 `151f88a11c42d36bc9e64c97d98d83afe087e579bfbde4e00762ed13ae73ab11`) checked all 41,600 block records, all N1/N2 blocks, 332,800 path rows, 85,196,800 update rows, all 22 estimates, 16,777,216 candidate rows, 16,777,216 tournament-entry rows and 131,072 context rows. Both exited with status 0 and reported PASS with zero mismatches. These are internal reproducibility audits performed within the project with AI assistance; they are not external peer review or an independent scientific replication, and they detect implementation divergence, not a shared misreading of the specification.
+
+**Release-source correction.** After acceptance, a source-only patch (record of 20:56:31 UTC on 2026-10-02) changed one line of `src/torus/chunk_io.cpp` so that `FileAuditSink::open` constructs the header with the non-chunk sentinel `kNoChunk` instead of 0. The patch was neither compiled nor executed, the original production outputs were not modified, and the scientific model, random streams, event order, records, analyzer and fixtures are unchanged. Because the defect affected only a header field that no scientific computation reads, and the recovery proved the audit payloads byte-identical, no scientific rerun was warranted. The original authenticated outputs, the failed attempt, the normalization receipt and the derived audit tree are all preserved.
+
+## S38. Exact claim limits for Study 003 and the three-study result
+
+The result concerns recurrence-attributable enrichment of a mutable supplied-cache-use policy in one alternative large-alphabet torus/tournament operator bundle, under one HALF law aligned to the cache delay, one ZERO law, one fixed one-proposal opportunity cost, one mutation rate and one finite horizon. Specifically:
+
+- **Supported:** under HALF and the one-proposal opportunity cost, the late-window start-averaged frequency of the memory-use allele exceeded both its exact neutral expectation and its ZERO-law frequency by more than one expected individual (95% familywise), and both late-window start contrasts passed the prespecified finite-horizon ±1/32 gate; the frozen primary decision supports recurrence-attributable selective enrichment in this alternative operator bundle.
+- **Bounded:** the recurrent-law ACTIVE minus SHAM performance contrast lies below the positive 1/32 performance scale (95% familywise within its family); its sign is not resolved.
+- **Unresolved:** the recurrence interaction in performance.
+- **Descriptive only:** all 16 cell means, the ZERO allele deficit and the ZERO adverse accuracy contrast.
+- **Three-study result:** recurrence selected a costly memory-use policy in the original bundle (Study 001), directional cache information amplified that selection (Study 002), and recurrence-attributable enrichment recurred in one independently implemented alternative bundle (Study 003), without a resolved population-performance gain at the declared scale in any study; the frozen crossed interpretation is that the selection/performance separation recurs in this operator bundle.
+- **Not supported:** universal replication or generality across operator bundles; continuous, gradual or small-step search; attribution of the outcome separately to alphabet, graded loss, resampling or mutation semantics, or tournament survival; any other tournament size, cost, mutation rate, lag, law or horizon; separate selection on retention versus retrieval; spontaneous origin of memory architecture or capacity; general population utility; biological, ecological or neural relevance; equilibrium, invasion, stability or fixation; priority or global novelty; component attribution; a path-level counterfactual; numerical comparison or pooling of effect magnitudes across bundles; and the Study 002 directional-versus-displacement contrast in this bundle.
+
+The three original audit-file headers were malformed; only their four-byte `chunk_index` fields were normalized, in a derived audit tree used for verification. No grid, rate or cost sweep, alternative tournament, new cohort, lag variant, top-up or numerical extension follows from Study 003, and none is proposed.
+
+## S39. Provenance of Study 003 quoted values
+
+Every registered Study 003 value in the manuscript and this supplement is checked by `scripts/check_statistics.py` against the saved records below. The checker recomputes the six interval endpoints and half-widths, the exact block-numerator and cell-mean identities, the decision order, the decision predicates, the performance classes and the crossed interpretation. It also checks the SHAM identities, the scope counts, the outcome-blind production authentication, the preserved attempt-1 failure, the normalization receipt, the recovery receipts and the source-patch receipt.
+
+| Source | SHA-256 |
+|---|---|
+| Decision record (`decisions.json`) | `84f88bb17c20593abd222b8e099e2981e725b28968c650dbf306f43441892f09` |
+| 22 estimate records (`estimates.json`) | `65a31d9f8c73459aa29c3bc4388ed22a156952a18d71388440bffb38f4c073c4` |
+| Production-output authentication | `21f8e4147b68ba8099b7d0c293f512ec51e269b40e4b816c2c9b81b826e2a865` |
+| Audit attempt-1 failure record | `a54f2842774f38af0cab5a5ee6564b8ac295baf25549b7695b9f4d0500c45531` |
+| Audit normalization receipt | `b66baa25585d2a7d0cb4a1ca3fdc002ed8bc7f3ca9f92b6c48475e64da786b5a` |
+| Recovery C++ replay receipt | `497970f5243313a6cd945b69ce9c7eaba7449ceb33ef6d0dfd0d8873811ec5cc` |
+| Recovery Python verification receipt | `151f88a11c42d36bc9e64c97d98d83afe087e579bfbde4e00762ed13ae73ab11` |
+| Recovery runner receipt | `6ef9d18b51125253b57d59d32c1694a33bda428f54fc83351da0a7d62fee0d5e` |
+| Production manifest | `fb91f91676b84babbcb09ee6cd9129e58580249e21d3b223d71880170873bf4c` |
+| Production runner receipt | `f6737bf03d217f8cde8375f7f6ae5e459d6aa8aeb33a65ed2b85284db540fbc6` |
+| Analysis runner receipt | `100c0d26627d20808cfdb5b8e0e950b0f307e576cad3ccf765cf046fed976204` |
+| Acceptance record (accepted 2026-10-02 20:54:51 UTC) | `2ac18b3f6c22bc6f11ebbf21ffd8614dbcf24f8f3d028c169e92b2d046b02d5d` |
+| Frozen specification, revision 1 | `0ff662dc31807b0b2cdcae371d884473ed398e2583272d94331bac8c8f9ff0b0` |
+| Design-GO record | `e5dc485dd858f18eb9652cfe6b63f142e2d09fb6b069d640438cd8dbe63a786d` |
+
+The first eleven values are authenticated in the Study 003 acceptance record. The acceptance-record SHA-256 is bound by the post-audit source-patch receipt and is enforced by the statistics-checking script. The specification and design-GO hashes are bound in the frozen decision record and are not recomputed from the files by the checker. The source-patch receipt post-dates acceptance and has no frozen SHA-256 of its own; the checker verifies that it binds the supplied acceptance and failure records. These provenance records add or modify no scientific outcome.

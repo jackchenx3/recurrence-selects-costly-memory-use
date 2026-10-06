@@ -1,0 +1,359 @@
+{
+  "figure1_design": {
+    "note": "deterministic schematic; target pattern is illustrative",
+    "outcome_values": null
+  },
+  "figure2_allele": {
+    "cell_means_descriptive": [
+      {
+        "arm": "ACTIVE",
+        "estimate_exact": "314125/851968",
+        "law": "ZERO",
+        "record": "M_FREQUENCY_LATE|ACTIVE|ZERO|ALL_F",
+        "start": "ALL_F",
+        "value": 0.36870516263521635
+      },
+      {
+        "arm": "ACTIVE",
+        "estimate_exact": "31404287/85196800",
+        "law": "ZERO",
+        "record": "M_FREQUENCY_LATE|ACTIVE|ZERO|ALL_M",
+        "start": "ALL_M",
+        "value": 0.3686087623009315
+      },
+      {
+        "arm": "ACTIVE",
+        "estimate_exact": "8625439/10649600",
+        "law": "HALF",
+        "record": "M_FREQUENCY_LATE|ACTIVE|HALF|ALL_F",
+        "start": "ALL_F",
+        "value": 0.8099307955228365
+      },
+      {
+        "arm": "ACTIVE",
+        "estimate_exact": "34532549/42598400",
+        "law": "HALF",
+        "record": "M_FREQUENCY_LATE|ACTIVE|HALF|ALL_M",
+        "start": "ALL_M",
+        "value": 0.8106536630483774
+      },
+      {
+        "arm": "SHAM",
+        "estimate_exact": "42605507/85196800",
+        "law": "ZERO",
+        "record": "M_FREQUENCY_LATE|SHAM|ZERO|ALL_F",
+        "start": "ALL_F",
+        "value": 0.5000834186260517
+      },
+      {
+        "arm": "SHAM",
+        "estimate_exact": "42591293/85196800",
+        "law": "ZERO",
+        "record": "M_FREQUENCY_LATE|SHAM|ZERO|ALL_M",
+        "start": "ALL_M",
+        "value": 0.49991658137394834
+      },
+      {
+        "arm": "SHAM",
+        "estimate_exact": "42520779/85196800",
+        "law": "HALF",
+        "record": "M_FREQUENCY_LATE|SHAM|HALF|ALL_F",
+        "start": "ALL_F",
+        "value": 0.4990889211801382
+      },
+      {
+        "arm": "SHAM",
+        "estimate_exact": "42676021/85196800",
+        "law": "HALF",
+        "record": "M_FREQUENCY_LATE|SHAM|HALF|ALL_M",
+        "start": "ALL_M",
+        "value": 0.5009110788198617
+      }
+    ],
+    "decision_rule_applied": 3,
+    "enrichment_estimands": [
+      {
+        "classification": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT",
+        "estimate": 0.31029222928560696,
+        "estimate_exact": "5287181/17039360",
+        "half_width": 0.007810229527949401,
+        "lower": 0.30248199975765755,
+        "name": "C_abs",
+        "upper": 0.31810245881355637
+      },
+      {
+        "classification": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT",
+        "estimate": 0.44163526681753307,
+        "estimate_exact": "75251823/170393600",
+        "half_width": 0.015620459055898803,
+        "lower": 0.42601480776163425,
+        "name": "C_rec",
+        "upper": 0.45725572587343183
+      }
+    ],
+    "neutral_reference": 0.5,
+    "primary_decision": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT",
+    "start_state_estimands": [
+      {
+        "classification": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT",
+        "estimate": 0.0007228675255408654,
+        "estimate_exact": "30793/42598400",
+        "half_width": 0.015620459055898803,
+        "lower": -0.014897591530357936,
+        "name": "D_HALF",
+        "upper": 0.01634332658143967
+      },
+      {
+        "classification": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT",
+        "estimate": -9.640033428485576e-05,
+        "estimate_exact": "-8213/85196800",
+        "half_width": 0.015620459055898803,
+        "lower": -0.01571685939018366,
+        "name": "D_ZERO",
+        "upper": 0.015524058721613946
+      }
+    ],
+    "thresholds": {
+      "Delta": 0.03125
+    }
+  },
+  "figure3_accuracy": {
+    "cell_means_descriptive": [
+      {
+        "arm": "ACTIVE",
+        "estimate_exact": "1650292613/2726297600",
+        "law": "ZERO",
+        "record": "ACCURACY_LATE|ACTIVE|ZERO|ALL_F",
+        "start": "ALL_F",
+        "value": 0.6053237229127151
+      },
+      {
+        "arm": "ACTIVE",
+        "estimate_exact": "1650309069/2726297600",
+        "law": "ZERO",
+        "record": "ACCURACY_LATE|ACTIVE|ZERO|ALL_M",
+        "start": "ALL_M",
+        "value": 0.6053297589375423
+      },
+      {
+        "arm": "ACTIVE",
+        "estimate_exact": "1713218809/2726297600",
+        "law": "HALF",
+        "record": "ACCURACY_LATE|ACTIVE|HALF|ALL_F",
+        "start": "ALL_F",
+        "value": 0.6284049140490019
+      },
+      {
+        "arm": "ACTIVE",
+        "estimate_exact": "428290869/681574400",
+        "law": "HALF",
+        "record": "ACCURACY_LATE|ACTIVE|HALF|ALL_M",
+        "start": "ALL_M",
+        "value": 0.6283846180255597
+      },
+      {
+        "arm": "SHAM",
+        "estimate_exact": "827853941/1363148800",
+        "law": "ZERO",
+        "record": "ACCURACY_LATE|SHAM|ZERO|ALL_F",
+        "start": "ALL_F",
+        "value": 0.60731003174415
+      },
+      {
+        "arm": "SHAM",
+        "estimate_exact": "827853941/1363148800",
+        "law": "ZERO",
+        "record": "ACCURACY_LATE|SHAM|ZERO|ALL_M",
+        "start": "ALL_M",
+        "value": 0.60731003174415
+      },
+      {
+        "arm": "SHAM",
+        "estimate_exact": "210953313/340787200",
+        "law": "HALF",
+        "record": "ACCURACY_LATE|SHAM|HALF|ALL_F",
+        "start": "ALL_F",
+        "value": 0.619017712519719
+      },
+      {
+        "arm": "SHAM",
+        "estimate_exact": "210953313/340787200",
+        "law": "HALF",
+        "record": "ACCURACY_LATE|SHAM|HALF|ALL_M",
+        "start": "ALL_M",
+        "value": 0.619017712519719
+      }
+    ],
+    "performance_estimands": [
+      {
+        "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+        "estimate": 0.009377053517561693,
+        "estimate_exact": "51129277/5452595200",
+        "half_width": 0.014514625638859732,
+        "lower": -0.00513757212129804,
+        "name": "P_abs",
+        "upper": 0.023891679156421427
+      },
+      {
+        "classification": "UNRESOLVED",
+        "estimate": 0.011360344336583065,
+        "estimate_exact": "61943359/5452595200",
+        "half_width": 0.029029251277719464,
+        "lower": -0.017668906941136403,
+        "name": "P_rec",
+        "upper": 0.04038959561430253
+      }
+    ],
+    "secondary_classifications": {
+      "P_abs": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+      "P_rec": "UNRESOLVED"
+    },
+    "thresholds": {
+      "Delta_P": 0.03125
+    }
+  },
+  "figure4_information": {
+    "bounded_interval_wholly_inside_minus_delta_plus_delta": true,
+    "decision_rule_applied": 5,
+    "meaningful_band": [
+      -0.03125,
+      0.03125
+    ],
+    "panel_a_primary_estimands": [
+      {
+        "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+        "estimate": 0.008649968367356521,
+        "estimate_exact": "5895597/681574400",
+        "half_width": 0.015171284462732113,
+        "lower": -0.006521316095375593,
+        "name": "Delta_P",
+        "upper": 0.023821252830088634
+      },
+      {
+        "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+        "estimate": 0.00012944148137019232,
+        "estimate_exact": "2757/21299200",
+        "half_width": 0.015171284462732113,
+        "lower": -0.01504184298136192,
+        "name": "D_INFO",
+        "upper": 0.015300725944102306
+      },
+      {
+        "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+        "estimate": -0.0012680992713341346,
+        "estimate_exact": "-54019/42598400",
+        "half_width": 0.015171284462732113,
+        "lower": -0.016439383734066247,
+        "name": "D_NONINFO",
+        "upper": 0.01390318519139798
+      }
+    ],
+    "panel_b_allele_estimands": [
+      {
+        "classification": "MEANINGFUL POSITIVE AT THE ONE-BIT SCALE",
+        "estimate": 0.18420304518479566,
+        "estimate_exact": "1569351/8519680",
+        "half_width": 0.014514625638859732,
+        "lower": 0.16968841954593594,
+        "name": "E_INFO",
+        "upper": 0.1987176708236554
+      },
+      {
+        "classification": "MEANINGFUL POSITIVE AT THE ONE-BIT SCALE",
+        "estimate": 0.12608275193434496,
+        "estimate_exact": "10741847/85196800",
+        "half_width": 0.007257312819429866,
+        "lower": 0.11882543911491508,
+        "name": "E_NONINFO",
+        "upper": 0.13334006475377483
+      }
+    ],
+    "panel_c_performance_estimands": [
+      {
+        "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+        "estimate": 0.009381238130422739,
+        "estimate_exact": "25576047/2726297600",
+        "half_width": 0.014514625638859732,
+        "lower": -0.005133387508436994,
+        "name": "B_INFO",
+        "upper": 0.02389586376928247
+      },
+      {
+        "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+        "estimate": 0.0007312697630662185,
+        "estimate_exact": "1993659/2726297600",
+        "half_width": 0.014514625638859732,
+        "lower": -0.013783355875793515,
+        "name": "B_NONINFO",
+        "upper": 0.015245895401925951
+      }
+    ],
+    "primary_decision": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+    "secondary_classifications": {
+      "B_INFO": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+      "B_NONINFO": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+      "E_INFO": "MEANINGFUL POSITIVE AT THE ONE-BIT SCALE",
+      "E_NONINFO": "MEANINGFUL POSITIVE AT THE ONE-BIT SCALE"
+    },
+    "study": "PHASE2-PERFORMANCE-CONVERSION-002",
+    "thresholds": {
+      "delta": 0.03125
+    }
+  },
+  "inputs": {
+    "decision": {
+      "authenticated_sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0",
+      "matches_authenticated": true,
+      "path": "outputs/new-phase-20260930/postproduction-stage/attempt1/analysis/decision.json",
+      "sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0",
+      "study": "PHASE2-MUTABLE-MEMORY-001"
+    },
+    "estimates": {
+      "authenticated_sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0",
+      "matches_authenticated": true,
+      "path": "outputs/new-phase-20260930/postproduction-stage/attempt1/analysis/estimates_22.json",
+      "sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0",
+      "study": "PHASE2-MUTABLE-MEMORY-001"
+    },
+    "s2_decision": {
+      "authenticated_sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a",
+      "matches_authenticated": true,
+      "path": "outputs/new-phase-20260930/analysis-stage/performance002_attempt1/results/decision.json",
+      "sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a",
+      "study": "PHASE2-PERFORMANCE-CONVERSION-002"
+    },
+    "s2_estimates": {
+      "authenticated_sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d",
+      "matches_authenticated": true,
+      "path": "outputs/new-phase-20260930/analysis-stage/performance002_attempt1/results/estimates_19.json",
+      "sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d",
+      "study": "PHASE2-PERFORMANCE-CONVERSION-002"
+    }
+  },
+  "matplotlib_version": "3.9.4",
+  "outputs": {
+    "figure1_design": [
+      "figure1_design.png",
+      "figure1_design.pdf",
+      "figure1_design.svg"
+    ],
+    "figure2_allele": [
+      "figure2_allele.png",
+      "figure2_allele.pdf",
+      "figure2_allele.svg"
+    ],
+    "figure3_accuracy": [
+      "figure3_accuracy.png",
+      "figure3_accuracy.pdf",
+      "figure3_accuracy.svg"
+    ],
+    "figure4_information": [
+      "figure4_information.png",
+      "figure4_information.pdf",
+      "figure4_information.svg"
+    ]
+  },
+  "package_version": "1.1.0",
+  "schema": "PHASE2-MMEM-FIGURE-DATA-2",
+  "sha_check_enforced": true
+}

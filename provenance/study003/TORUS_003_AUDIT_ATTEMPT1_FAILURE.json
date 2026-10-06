@@ -1,0 +1,62 @@
+{
+  "actual_headers": {
+    "audit/audit_candidates.t3c": {
+      "block_count": 64,
+      "chunk_bytes_hex": "00000000",
+      "chunk_index": 0,
+      "first_block": 0
+    },
+    "audit/audit_context.t3x": {
+      "block_count": 64,
+      "chunk_bytes_hex": "00000000",
+      "chunk_index": 0,
+      "first_block": 0
+    },
+    "audit/audit_entries.t3e": {
+      "block_count": 64,
+      "chunk_bytes_hex": "00000000",
+      "chunk_index": 0,
+      "first_block": 0
+    }
+  },
+  "analysis_unchanged": true,
+  "attempt1_immutable": true,
+  "audit_invocations": 2,
+  "automatic_retry": false,
+  "cpp_receipt_sha256": "a80acd495d444ca75e1a86046a621a89247948b3f7762cbd7a504b228a542342",
+  "created_at_utc": "2026-10-02T20:33:54.629638+00:00",
+  "frozen_contract": {
+    "binary_schema_sha256": "fce058ab01557e861f4d88ffc9e9baa8a05f0f21e5dfc8911068d801b3123301",
+    "bytes_hex": "ffffffff",
+    "required_nonchunk_chunk_index": 4294967295
+  },
+  "interpretation": "The analyzer outputs and all non-audit chunk records were independently reconstructed before the verifier reached the malformed audit header. Candidate/tournament/context payload replay did not start and remains unverified.",
+  "job_id": "53562358",
+  "producer_cause": {
+    "description": "constructs audit FileHeader with chunk_index 0 instead of the schema-required 0xFFFFFFFF",
+    "file": "implementation/phase2_torus_memory_v1/src/torus/chunk_io.cpp",
+    "symbol": "FileAuditSink::open"
+  },
+  "production_unchanged": true,
+  "python_receipt_sha256": "838bbfdc052356ef016a3536af2a2eeb08f1a388f3c030b7e71f121665b811fb",
+  "record": "PHASE2-TORUS-MEMORY-003-INDEPENDENT-AUDIT-ATTEMPT1-FAILURE-1",
+  "runner_receipt_sha256": "40f7cc1e877313896fabdf9406b66a376f556affd36343e04dac616f5b0fb426",
+  "scientific_execution_performed": false,
+  "shared_failure": {
+    "code": "HEADER_chunk_index",
+    "where": "audit/audit_candidates.t3c"
+  },
+  "status": "PRESERVED_NONSCIENTIFIC_HEADER_INTERFACE_FAILURE",
+  "study_id": "PHASE2-TORUS-MEMORY-003",
+  "verified_before_failure": {
+    "cpp_selftests": 10,
+    "python_block_rows": 41600,
+    "python_candidate_rows": 0,
+    "python_context_rows": 0,
+    "python_entry_rows": 0,
+    "python_estimate_rows": 22,
+    "python_n1_n2_blocks": 41600,
+    "python_path_rows": 332800,
+    "python_update_rows": 85196800
+  }
+}

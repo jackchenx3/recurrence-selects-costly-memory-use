@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 """Independently check every registered numerical claim in the manuscript draft.
 
-Version 1.1.0 of the package reports two prospective studies, and this checker
-validates both:
+Version 1.2.0 of the package reports three prospective studies in two operator
+bundles, and this checker validates all three:
 
   * Study 001, PHASE2-MUTABLE-MEMORY-001 (22 saved estimate records);
-  * Study 002, PHASE2-PERFORMANCE-CONVERSION-002 (19 saved estimate records).
+  * Study 002, PHASE2-PERFORMANCE-CONVERSION-002 (19 saved estimate records);
+  * Study 003, PHASE2-TORUS-MEMORY-003 (22 saved estimate records), a post-v1.1
+    prospective extension in an independently implemented alternative operator bundle.
 
-The two record sets are separate accepted estimate sets (41 in total). They are
-authenticated against their own acceptance records and are never pooled.
+The three record sets are separately accepted estimate sets (63 in total). Each is
+authenticated against its own acceptance record and none is pooled with another.
+For Study 003 the checker also verifies the preserved audit-header failure, the
+normalization-only audit recovery and the post-audit source-patch receipt.
 
 The checker reads only the saved analyzer, diagnostics, acceptance and audit
 records named on the command line, plus the draft Markdown and
@@ -131,6 +135,57 @@ S2_ACCEPTED_HASH_PATH = {
 # SHA-256 of PHASE2_STUDY_002_ACCEPTED.json (PHASE2-PERFORMANCE-CONVERSION-002-SOURCE-BINDINGS-1).
 S2_ACCEPTED_SHA256 = "fc7777239cd4442c35c01d6261fd71e6fbf7e7f6fd6e11ddcc5d24876ce2f4a2"
 S2_STATUS = "SCIENTIFICALLY_COMPLETE_AND_ACCEPTED"
+
+# ---- Study 003: PHASE2-TORUS-MEMORY-003 -----------------------------------------------------
+S3_STUDY_ID = "PHASE2-TORUS-MEMORY-003"
+S3_N_BLOCKS = 41600
+S3_CELLS_PER_BLOCK = 8
+S3_SAVED_ESTIMATES = 22
+S3_TOURNAMENT_ENTRIES = 4
+S3_SURVIVORS = 32
+S3_PRIMARY = ("C_abs", "C_rec", "D_HALF", "D_ZERO")
+S3_PERFORMANCE = ("P_abs", "P_rec")
+S3_RANGE_LENGTH = {"C_abs": 1, "C_rec": 2, "D_HALF": 2, "D_ZERO": 2, "P_abs": 2, "P_rec": 4}
+S3_ALPHA_EACH = {name: Decimal(1) / 80 for name in S3_PRIMARY}
+S3_ALPHA_EACH.update({name: Decimal(1) / 40 for name in S3_PERFORMANCE})
+S3_FROZEN_HALF_WIDTH_8DP = FROZEN_HALF_WIDTH_8DP
+S3_FAMILY = {"C_abs": "PRIMARY_ALLELE", "C_rec": "PRIMARY_ALLELE", "D_HALF": "PRIMARY_ALLELE",
+             "D_ZERO": "PRIMARY_ALLELE", "P_abs": "PERFORMANCE", "P_rec": "PERFORMANCE"}
+# Display strings carry 40 decimal places; allow for their final-digit rounding.
+S3_TOL = Decimal("1e-39")
+# Labels from the frozen specification (sections 11-12). Only rule 3 occurred.
+S3_RULE_LABELS = {
+    1: "INVALID",
+    2: "START-DEPENDENT; SCIENTIFIC QUESTION UNRESOLVED",
+    3: "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT IN THIS ALTERNATIVE OPERATOR BUNDLE",
+    4: "SELECTIVE ENRICHMENT NOT ATTRIBUTABLE TO RECURRENCE AT THE FIXED SCALE",
+    5: "BOUNDED NEGATIVE AT THE ONE-INDIVIDUAL SCALE",
+    6: "UNRESOLVED",
+}
+# Performance class codes as saved in decisions.json. The first two never occurred; their
+# exact wording is not frozen in any supplied file and they are compared only if reached.
+S3_PERFORMANCE_CLASSES = ("MEANINGFUL_POSITIVE", "MEANINGFUL_ADVERSE", "BOUNDED_BELOW_POSITIVE", "UNRESOLVED")
+# Saved classification codes observed for the reached classes (estimates.json).
+S3_OBSERVED_CODES = {"PRIMARY_SUPPORT": 10, "GATE_INSIDE": 20, "BOUNDED_BELOW_POSITIVE": 32,
+                     "UNRESOLVED": 33, "DESCRIPTIVE": 40}
+S3_CROSSED_SEPARATION = "SELECTION/PERFORMANCE SEPARATION RECURS IN THIS OPERATOR BUNDLE"
+S3_ACCEPTED_HASH_PATH = {
+    "s3_estimates": ("analysis", "estimates_json_sha256"),
+    "s3_decisions": ("analysis", "decisions_sha256"),
+    "s3_production_authentication": ("production", "output_authentication_sha256"),
+    "s3_audit_failure": ("independent_audit", "attempt1", "failure_record_sha256"),
+    "s3_normalization_receipt": ("independent_audit", "recovery", "normalization_receipt_sha256"),
+    "s3_recovery_runner_receipt": ("independent_audit", "recovery", "runner_receipt_sha256"),
+    "s3_cpp_replay_receipt": ("independent_audit", "recovery", "cpp_replay_receipt_sha256"),
+}
+# SHA-256 of PHASE2_STUDY_003_ACCEPTED.json (TORUS_003_POST_AUDIT_SOURCE_PATCH_RECEIPT.json
+# accepted_study_sha256). The source-patch receipt itself post-dates acceptance and has no
+# frozen SHA-256; it is checked for consistency with the accepted and failure records.
+S3_ACCEPTED_SHA256 = "2ac18b3f6c22bc6f11ebbf21ffd8614dbcf24f8f3d028c169e92b2d046b02d5d"
+S3_STATUS = "SCIENTIFICALLY_COMPLETE_AND_ACCEPTED"
+S3_NONCHUNK_SENTINEL = 0xFFFFFFFF
+S3_AUDIT_FILES = ("audit/audit_candidates.t3c", "audit/audit_context.t3x", "audit/audit_entries.t3e")
+S3_HEADER_OFFSETS = [48, 49, 50, 51]
 
 
 class Report(object):
@@ -485,6 +540,325 @@ def check_study_002(R, src, file_hashes, skip_sha):
     return {"by_name": by_name, "exact": exact, "bounds": bounds, "scope": scope}
 
 
+# =============================================================================================
+# Study 003
+# =============================================================================================
+def check_study_003(R, src, file_hashes, skip_sha):
+    accepted = src["s3_accepted"]
+    estimates = src["s3_estimates"]
+    decisions = src["s3_decisions"]
+    prodauth = src["s3_production_authentication"]
+    failure = src["s3_audit_failure"]
+    normalization = src["s3_normalization_receipt"]
+    runner = src["s3_recovery_runner_receipt"]
+    cpp = src["s3_cpp_replay_receipt"]
+    patch = src["s3_source_patch_receipt"]
+
+    # ---- 1. Source authentication -------------------------------------------------
+    for key, path in sorted(S3_ACCEPTED_HASH_PATH.items()):
+        authenticate(R, skip_sha, "Study 003 " + key, file_hashes[key], get_path(accepted, path))
+    authenticate(R, skip_sha, "Study 003 accepted", file_hashes["s3_accepted"], S3_ACCEPTED_SHA256)
+    R.check(patch["accepted_study_sha256"] == file_hashes["s3_accepted"],
+            "Study 003 source-patch receipt does not bind the supplied acceptance record")
+    R.check(patch["preserved_failure_record_sha256"] == file_hashes["s3_audit_failure"],
+            "Study 003 source-patch receipt does not bind the supplied audit failure record")
+    R.check(accepted["study_id"] == S3_STUDY_ID, "Study 003 study_id")
+    R.check(accepted["status"] == S3_STATUS, "Study 003 acceptance status")
+    R.check(accepted["no_extension"] is True, "Study 003 no_extension flag")
+    R.check(accepted["no_scientific_rerun"] is True, "Study 003 no_scientific_rerun flag")
+    for record in (estimates, decisions, cpp):
+        R.check(record["namespace"] == "production-r1", "Study 003 namespace differs from production-r1")
+    R.check(estimates["schema"] == "PHASE2-TORUS-MEMORY-003-ESTIMATES-v1", "Study 003 estimate schema")
+    R.check(decisions["schema"] == "PHASE2-TORUS-MEMORY-003-DECISIONS-v1", "Study 003 decision schema")
+    R.check(decisions["design_sha256"] == accepted["design"]["sha256"], "Study 003 decision design hash")
+    R.check(decisions["design_go_record_sha256"] == accepted["design"]["design_go_sha256"],
+            "Study 003 decision design-GO hash")
+    R.check(decisions["production_manifest_sha256"] == accepted["production"]["manifest_sha256"],
+            "Study 003 decision production-manifest hash")
+
+    # ---- 2. Record structure -------------------------------------------------------
+    records = estimates["records"]
+    R.check(isinstance(records, list) and len(records) == S3_SAVED_ESTIMATES, "Study 003: expected 22 records")
+    R.check([r["index"] for r in records] == list(range(S3_SAVED_ESTIMATES)), "Study 003 indices are not 0..21")
+    families = [r["family"] for r in records]
+    R.check(families.count("PRIMARY_ALLELE") == 4, "Study 003: expected 4 primary allele records")
+    R.check(families.count("PERFORMANCE") == 2, "Study 003: expected 2 performance records")
+    R.check(families.count("ABSOLUTE_CELL_MEAN") == 16, "Study 003: expected 16 descriptive records")
+    raw = {}
+    for rec in records:
+        R.check(rec["name"] not in raw, "Study 003 duplicate record name " + rec["name"])
+        raw[rec["name"]] = rec
+    for name, family in S3_FAMILY.items():
+        R.check(raw[name]["family"] == family, "Study 003 family differs for " + name)
+
+    exact = {}
+    for rec in records:
+        name = rec["name"]
+        exact[name] = Fraction(rec["exact_value"])
+        R.check(rec["n_blocks"] == S3_N_BLOCKS, "Study 003 %s n_blocks != 41600" % name)
+        R.check(Fraction(int(rec["sum_of_block_numerators"]), S3_N_BLOCKS * int(rec["block_denominator"]))
+                == exact[name], "Study 003 %s exact value differs from block-numerator sum" % name)
+        R.check(abs(to_decimal(exact[name]) - Decimal(rec["display"]["estimate"])) <= S3_TOL,
+                "Study 003 display estimate disagrees with exact value for " + name)
+        if rec["family"] == "ABSOLUTE_CELL_MEAN":
+            R.check(rec["alpha_each"] is None and rec["display"]["lower"] == "NA"
+                    and rec["display"]["upper"] == "NA", "Study 003 descriptive record carries bounds: " + name)
+            R.check(rec["classification_code"] == S3_OBSERVED_CODES["DESCRIPTIVE"],
+                    "Study 003 descriptive classification code: " + name)
+            R.check(Fraction(0) <= exact[name] <= Fraction(1), "Study 003 descriptive mean outside [0,1]: " + name)
+    # Normalized view used by the quoted-statistics registry.
+    by_name = {name: dict(rec, estimate_exact=rec["exact_value"]) for name, rec in raw.items()}
+
+    def freq(arm, law, start):
+        return exact["MFREQ_%s_%s_%s" % (arm, law, start)]
+
+    def acc(arm, law, start):
+        return exact["ACC_%s_%s_%s" % (arm, law, start)]
+
+    # ---- 3. Exact estimand identities from the 16 descriptive means ---------------
+    A_half = (freq("ACTIVE", "HALF", "ALL_F") + freq("ACTIVE", "HALF", "ALL_M")) / 2
+    A_zero = (freq("ACTIVE", "ZERO", "ALL_F") + freq("ACTIVE", "ZERO", "ALL_M")) / 2
+
+    def P(arm, law):
+        return (acc(arm, law, "ALL_F") + acc(arm, law, "ALL_M")) / 2
+
+    derived = {
+        "C_abs": A_half - Fraction(1, 2),
+        "C_rec": A_half - A_zero,
+        "D_HALF": freq("ACTIVE", "HALF", "ALL_M") - freq("ACTIVE", "HALF", "ALL_F"),
+        "D_ZERO": freq("ACTIVE", "ZERO", "ALL_M") - freq("ACTIVE", "ZERO", "ALL_F"),
+        "P_abs": P("ACTIVE", "HALF") - P("SHAM", "HALF"),
+        "P_rec": (P("ACTIVE", "HALF") - P("SHAM", "HALF")) - (P("ACTIVE", "ZERO") - P("SHAM", "ZERO")),
+    }
+    for name, value in derived.items():
+        R.check(value == exact[name], "Study 003 exact identity failed for %s: %s != %s" % (name, value, exact[name]))
+    for law in LAWS:
+        R.check(freq("SHAM", law, "ALL_F") + freq("SHAM", law, "ALL_M") == 1,
+                "Study 003 N2 complement fails in SHAM %s frequencies" % law)
+        R.check(acc("SHAM", law, "ALL_F") == acc("SHAM", law, "ALL_M"),
+                "Study 003 N1 identity fails in SHAM %s accuracy" % law)
+
+    # ---- 4. Hoeffding-Bonferroni half-widths and endpoints -------------------------
+    bounds = {}
+    for name in S3_PRIMARY + S3_PERFORMANCE:
+        rec = raw[name]
+        R.check(int(rec["range_length"]) == S3_RANGE_LENGTH[name], "Study 003 %s range length differs" % name)
+        R.check(parse_alpha(rec["alpha_each"]) == S3_ALPHA_EACH[name], "Study 003 %s alpha_each differs" % name)
+        h = half_width(S3_RANGE_LENGTH[name], S3_ALPHA_EACH[name], S3_N_BLOCKS)
+        lo = to_decimal(exact[name]) - h
+        hi = to_decimal(exact[name]) + h
+        bounds[name] = (lo, hi, h)
+        R.check(abs(h - Decimal(rec["display"]["half_width"])) <= S3_TOL, "Study 003 %s half-width mismatch" % name)
+        R.check(abs(lo - Decimal(rec["display"]["lower"])) <= S3_TOL, "Study 003 %s lower endpoint mismatch" % name)
+        R.check(abs(hi - Decimal(rec["display"]["upper"])) <= S3_TOL, "Study 003 %s upper endpoint mismatch" % name)
+        R.check(fmt_decimal(h, 8) == S3_FROZEN_HALF_WIDTH_8DP[name],
+                "Study 003 %s half-width does not round to the frozen value" % name)
+        acc_est = accepted["analysis"]["estimates"][name]
+        R.check(acc_est["exact_value"] == rec["exact_value"] and acc_est["estimate"] == rec["display"]["estimate"]
+                and acc_est["lower"] == rec["display"]["lower"] and acc_est["upper"] == rec["display"]["upper"]
+                and acc_est["classification_code"] == rec["classification_code"],
+                "Study 003 accepted estimate differs from the estimate record for " + name)
+    R.check(bounds["C_rec"][2] < to_decimal(DELTA / 2), "Study 003 range-2 primary half-width is not below Delta/2")
+
+    # ---- 5. Decisions ---------------------------------------------------------------
+    D = to_decimal(DELTA)
+    recovery = accepted["independent_audit"]["recovery"]
+    audits_ok = (decisions["identity_failure_count"] == 0 and decisions["identity_failures_first_1000"] == []
+                 and recovery["status"] == "PASS" and recovery["mismatches"] == 0
+                 and cpp["verdict"] == "PASS" and cpp["failure"] is None
+                 and runner["status"] == "PASS")
+
+    def inside(name):
+        lo, hi, _ = bounds[name]
+        return lo > -D and hi < D
+
+    if not audits_ok:
+        rule = 1
+    elif not (inside("D_HALF") and inside("D_ZERO")):
+        rule = 2
+    elif bounds["C_abs"][0] > D and bounds["C_rec"][0] > D:
+        rule = 3
+    elif bounds["C_abs"][0] > D and bounds["C_rec"][1] <= D:
+        rule = 4
+    elif bounds["C_abs"][1] <= D:
+        rule = 5
+    else:
+        rule = 6
+    adverse = (bounds["C_abs"][1] < -D) if rule == 5 else None
+    R.check(decisions["primary_decision"] == S3_RULE_LABELS[rule], "Study 003 primary decision differs")
+    R.check(accepted["analysis"]["primary_decision"] == S3_RULE_LABELS[rule], "Study 003 accepted primary decision")
+    R.check(decisions["primary_adverse_upper_below_minus_delta"] == adverse, "Study 003 adverse-selection field")
+    pred = decisions["predicates"]
+    for name in ("C_abs", "C_rec"):
+        lo, hi, _ = bounds[name]
+        R.check(pred[name]["lower_above_delta"] == (lo > D), "Study 003 %s lower_above_delta predicate" % name)
+        R.check(pred[name]["upper_at_or_below_delta"] == (hi <= D), "Study 003 %s upper_at_or_below predicate" % name)
+        R.check(pred[name]["upper_below_minus_delta"] == (hi < -D), "Study 003 %s upper_below_minus predicate" % name)
+    for name in ("D_HALF", "D_ZERO"):
+        R.check(pred[name]["wholly_inside_plus_minus_delta"] == inside(name), "Study 003 %s gate predicate" % name)
+    if rule == 3:
+        R.check(raw["C_abs"]["classification_code"] == raw["C_rec"]["classification_code"]
+                == S3_OBSERVED_CODES["PRIMARY_SUPPORT"], "Study 003 enrichment classification codes")
+    if rule >= 3:
+        R.check(raw["D_HALF"]["classification_code"] == raw["D_ZERO"]["classification_code"]
+                == S3_OBSERVED_CODES["GATE_INSIDE"], "Study 003 gate classification codes")
+
+    def classify(name):
+        lo, hi, _ = bounds[name]
+        if lo > D:
+            return S3_PERFORMANCE_CLASSES[0]
+        if hi < -D:
+            return S3_PERFORMANCE_CLASSES[1]
+        if hi <= D:
+            return S3_PERFORMANCE_CLASSES[2]
+        return S3_PERFORMANCE_CLASSES[3]
+
+    classes = {}
+    for name in S3_PERFORMANCE:
+        classes[name] = classify(name)
+        R.check(decisions["performance_classes"][name] == classes[name], "Study 003 %s performance class" % name)
+        R.check(pred[name]["class"] == classes[name], "Study 003 %s predicate class" % name)
+        if classes[name] in S3_OBSERVED_CODES:
+            R.check(raw[name]["classification_code"] == S3_OBSERVED_CODES[classes[name]],
+                    "Study 003 %s classification code" % name)
+    if rule == 3 and classes["P_abs"] == "BOUNDED_BELOW_POSITIVE":
+        R.check(decisions["crossed_interpretation"] == S3_CROSSED_SEPARATION, "Study 003 crossed interpretation")
+    R.check(accepted["analysis"]["crossed_interpretation"] == decisions["crossed_interpretation"],
+            "Study 003 accepted crossed interpretation differs from decisions")
+
+    # ---- 6. Scope counts ---------------------------------------------------------------
+    paths_total = S3_N_BLOCKS * S3_CELLS_PER_BLOCK
+    audit_paths = AUDIT_BLOCKS * S3_CELLS_PER_BLOCK
+    scope = {
+        "blocks": S3_N_BLOCKS, "cells": S3_CELLS_PER_BLOCK, "paths": paths_total,
+        "path_updates": paths_total * UPDATES,
+        "queries": paths_total * UPDATES * CANDIDATES_PER_UPDATE,
+        "audit_blocks": AUDIT_BLOCKS, "audit_paths": audit_paths,
+        "audit_update_records": audit_paths * UPDATES,
+        "audit_candidate_rows": audit_paths * UPDATES * CANDIDATES_PER_UPDATE,
+        "audit_entry_rows": audit_paths * UPDATES * S3_SURVIVORS * S3_TOURNAMENT_ENTRIES,
+        "saved_estimates": S3_SAVED_ESTIMATES,
+    }
+    R.check(scope["audit_entry_rows"] == scope["audit_candidate_rows"],
+            "Study 003 tournament entries per update differ from the candidate-pool size")
+    prod = accepted["production"]
+    R.check(prod["blocks"] == scope["blocks"] and prod["cells"] == scope["cells"], "Study 003 production blocks/cells")
+    R.check(prod["paths"] == scope["paths"], "Study 003 production paths")
+    R.check(prod["objective_queries"] == scope["queries"], "Study 003 objective queries")
+    R.check(accepted["analysis"]["saved_estimates"] == scope["saved_estimates"], "Study 003 saved estimates")
+    pa = prodauth["manifest_verification"]
+    R.check(prodauth["status"] == "PASS" and prodauth["study_id"] == S3_STUDY_ID, "Study 003 output authentication")
+    R.check(prodauth["analysis_or_audit_executed"] is False and prodauth["scientific_values_parsed"] is False
+            and prodauth["source_or_production_outputs_modified"] is False,
+            "Study 003 output authentication was not outcome-blind")
+    R.check(pa["counts"] == {"audit_candidate_rows": scope["audit_candidate_rows"],
+                             "audit_entry_rows": scope["audit_entry_rows"], "blocks": scope["blocks"],
+                             "chunks": pa["counts"]["chunks"], "objective_queries": scope["queries"],
+                             "path_updates": scope["path_updates"], "paths": scope["paths"]},
+            "Study 003 authenticated production counts")
+    R.check(pa["all_member_hashes_and_sizes_match"] is True and pa["member_set_and_order_exact"] is True
+            and pa["completion_binds_manifest"] is True, "Study 003 manifest verification")
+    R.check(prodauth["production_manifest_sha256"] == prod["manifest_sha256"], "Study 003 manifest hash")
+    R.check(prodauth["production_complete_sha256"] == prod["complete_marker_sha256"], "Study 003 completion hash")
+    R.check(prodauth["runner_receipt_sha256"] == prod["runner_receipt_sha256"], "Study 003 production runner hash")
+    inv = prodauth["independent_inventory"]
+    R.check(inv["canonical_inventory_sha256"] == prod["output_inventory_sha256"], "Study 003 inventory hash")
+    R.check(inv["file_count"] == prod["output_files"] and inv["total_bytes"] == prod["output_bytes"],
+            "Study 003 inventory size")
+    R.check(inv["matched_runner_inventory_exactly"] is True and inv["rejected_or_irregular_entries"] == 0,
+            "Study 003 inventory irregular")
+
+    # ---- 7. Audit: preserved attempt-1 failure, normalization-only recovery, replay ----------
+    attempt1 = accepted["independent_audit"]["attempt1"]
+    R.check(failure["status"] == attempt1["status"] == "PRESERVED_NONSCIENTIFIC_HEADER_INTERFACE_FAILURE",
+            "Study 003 attempt-1 status")
+    R.check(failure["job_id"] == attempt1["job_id"], "Study 003 attempt-1 job id")
+    R.check(attempt1["scientific_payload_replay_completed"] is False, "Study 003 attempt-1 payload replay flag")
+    R.check(failure["frozen_contract"]["required_nonchunk_chunk_index"] == S3_NONCHUNK_SENTINEL
+            and failure["frozen_contract"]["bytes_hex"] == "ffffffff", "Study 003 frozen non-chunk sentinel")
+    R.check(sorted(failure["actual_headers"]) == sorted(S3_AUDIT_FILES), "Study 003 malformed header file set")
+    R.check(all(h["chunk_index"] == 0 and h["block_count"] == AUDIT_BLOCKS and h["first_block"] == 0
+                for h in failure["actual_headers"].values()), "Study 003 malformed header contents")
+    R.check(failure["shared_failure"]["code"] == "HEADER_chunk_index", "Study 003 failure code")
+    R.check(failure["scientific_execution_performed"] is False and failure["automatic_retry"] is False
+            and failure["production_unchanged"] is True and failure["analysis_unchanged"] is True
+            and failure["attempt1_immutable"] is True, "Study 003 attempt-1 flags")
+    vbf = failure["verified_before_failure"]
+    R.check(vbf["python_candidate_rows"] == 0 and vbf["python_entry_rows"] == 0 and vbf["python_context_rows"] == 0,
+            "Study 003 attempt-1 reports audit-payload rows checked")
+    R.check(vbf["python_block_rows"] == scope["blocks"] and vbf["python_path_rows"] == scope["paths"]
+            and vbf["python_update_rows"] == scope["path_updates"]
+            and vbf["python_estimate_rows"] == scope["saved_estimates"], "Study 003 attempt-1 pre-failure counts")
+
+    norm = normalization["normalizations"]
+    R.check(normalization["status"] == "PASS" and normalization["scientific_values_parsed"] is False
+            and normalization["source_production_or_analysis_modified"] is False, "Study 003 normalization flags")
+    R.check(sorted(n["path"] for n in norm) == sorted(S3_AUDIT_FILES)
+            and normalization["copied_and_normalized_files"] == len(S3_AUDIT_FILES) == recovery["normalized_files"],
+            "Study 003 normalized file set")
+    R.check(all(n["differing_offsets"] == S3_HEADER_OFFSETS and n["original_bytes_hex"] == "00000000"
+                and n["normalized_bytes_hex"] == "ffffffff" and n["payload_bytes_64_to_eof_identical"] is True
+                for n in norm), "Study 003 normalization touched more than the chunk_index field")
+    total_diff = sum(len(n["differing_offsets"]) for n in norm)
+    R.check(total_diff == normalization["total_differing_bytes"] == recovery["total_differing_bytes"],
+            "Study 003 total differing bytes")
+    R.check(recovery["payload_bytes_64_to_eof_identical_for_all_three"] is True
+            and recovery["normalization_only"] is True and recovery["production_or_analysis_modified"] is False,
+            "Study 003 recovery flags")
+    cpp_inputs = {item["path"]: item["sha256"] for item in cpp["inputs"]}
+    R.check(all(cpp_inputs.get(n["path"]) == n["normalized_sha256"] for n in norm),
+            "Study 003 replay did not read the normalized audit files")
+    R.check(cpp["manifest"]["sha256"] == normalization["manifest_sha256"] == runner["manifest_sha256"],
+            "Study 003 derived audit-tree manifest")
+
+    R.check(runner["status"] == "PASS" and runner["job_id"] == recovery["job_id"], "Study 003 recovery runner")
+    R.check(runner["cpp_replay_verdict"] == "PASS" and runner["cpp_replay_exit_status"] == 0
+            and runner["python_verify_verdict"] == "PASS" and runner["python_verify_exit_status"] == 0,
+            "Study 003 recovery verdicts")
+    R.check(runner["normalization_only"] is True and runner["production_or_analysis_modified"] is False,
+            "Study 003 recovery runner flags")
+    runner_files = {item["path"]: item["sha256"] for item in runner["files"]}
+    R.check(runner_files.get("TORUS_003_AUDIT_NORMALIZATION_RECEIPT.json") == file_hashes["s3_normalization_receipt"],
+            "Study 003 runner does not bind the normalization receipt")
+    R.check(runner_files.get("cpp_replay_receipt.json") == file_hashes["s3_cpp_replay_receipt"],
+            "Study 003 runner does not bind the replay receipt")
+    R.check(runner_files.get("python_verify_receipt.json") == recovery["python_verify_receipt_sha256"],
+            "Study 003 runner python-verify receipt hash differs from acceptance record")
+
+    R.check(cpp["verdict"] == "PASS" and cpp["failure"] is None and cpp["mode"] == "replay",
+            "Study 003 replay verdict")
+    R.check(cpp["inputs_modified"] is False and cpp["producer_code_invoked"] is False,
+            "Study 003 replay modified inputs or invoked producer code")
+    R.check(cpp["checked"] == recovery["cpp_checked"], "Study 003 replay counts differ from acceptance record")
+    cc = cpp["checked"]
+    R.check(cc["blocks"] == cc["block_rows"] == scope["audit_blocks"], "Study 003 replay blocks")
+    R.check(cc["paths"] == cc["path_rows"] == scope["audit_paths"], "Study 003 replay paths")
+    R.check(cc["path_updates"] == cc["context_rows"] == cc["update_rows"] == scope["audit_update_records"],
+            "Study 003 replay path-updates")
+    R.check(cc["candidate_rows"] == scope["audit_candidate_rows"], "Study 003 replay candidate rows")
+    R.check(cc["entry_rows"] == scope["audit_entry_rows"], "Study 003 replay tournament-entry rows")
+    R.check(len(cpp["selftests_passed"]) == 10 and "threefry_official_kat" in cpp["selftests_passed"],
+            "Study 003 replay self-tests")
+    py = recovery["python_checked"]
+    R.check(py["block_rows"] == py["n1_n2_blocks"] == scope["blocks"], "Study 003 python block rows")
+    R.check(py["path_rows"] == scope["paths"] and py["update_rows"] == scope["path_updates"],
+            "Study 003 python path/update rows")
+    R.check(py["estimate_rows"] == scope["saved_estimates"], "Study 003 python estimate rows")
+    R.check(py["candidate_rows"] == scope["audit_candidate_rows"] and py["entry_rows"] == scope["audit_entry_rows"]
+            and py["context_rows"] == scope["audit_update_records"], "Study 003 python audit-payload rows")
+
+    R.check(patch["status"] == "SOURCE_ONLY_PATCH_COMPLETE_UNEXECUTED" and patch["compiled_or_executed"] is False,
+            "Study 003 source patch status")
+    R.check(patch["scientific_rerun_required"] is False and patch["original_production_outputs_modified"] is False,
+            "Study 003 source patch flags")
+    R.check([c["path"] for c in patch["changed_files"]] == ["src/torus/chunk_io.cpp"],
+            "Study 003 source patch changed more than the audit sink")
+    R.check("kNoChunk" in patch["exact_patch"]["after"] and "kNoChunk" not in patch["exact_patch"]["before"],
+            "Study 003 source patch does not emit the non-chunk sentinel")
+
+    return {"by_name": by_name, "exact": exact, "bounds": bounds, "scope": scope}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--estimates", type=Path, required=True, help="Study 001 analysis/estimates_22.json")
@@ -502,6 +876,21 @@ def main():
                         help="Study 002 production_replay_receipt.json")
     parser.add_argument("--s2-records-receipt", type=Path, required=True,
                         help="Study 002 production_records_receipt.json")
+    parser.add_argument("--s3-estimates", type=Path, required=True, help="Study 003 estimates.json")
+    parser.add_argument("--s3-decisions", type=Path, required=True, help="Study 003 decisions.json")
+    parser.add_argument("--s3-accepted", type=Path, required=True, help="PHASE2_STUDY_003_ACCEPTED.json")
+    parser.add_argument("--s3-production-authentication", type=Path, required=True,
+                        help="TORUS_003_PRODUCTION_OUTPUT_AUTHENTICATION.json")
+    parser.add_argument("--s3-audit-failure", type=Path, required=True,
+                        help="TORUS_003_AUDIT_ATTEMPT1_FAILURE.json (preserved header-interface failure)")
+    parser.add_argument("--s3-normalization-receipt", type=Path, required=True,
+                        help="TORUS_003_AUDIT_NORMALIZATION_RECEIPT.json")
+    parser.add_argument("--s3-recovery-runner-receipt", type=Path, required=True,
+                        help="TORUS_003_AUDIT_RECOVERY_RUNNER_RECEIPT.json")
+    parser.add_argument("--s3-cpp-replay-receipt", type=Path, required=True,
+                        help="Study 003 recovery cpp_replay_receipt.json")
+    parser.add_argument("--s3-source-patch-receipt", type=Path, required=True,
+                        help="TORUS_003_POST_AUDIT_SOURCE_PATCH_RECEIPT.json")
     parser.add_argument("--draft-root", type=Path, required=True, help="root of this manuscript source package")
     parser.add_argument("--quoted", type=Path, default=None,
                         help="registry (default: <draft-root>/provenance/QUOTED_STATISTICS.json)")
@@ -516,7 +905,13 @@ def main():
              "records_receipt": args.records_receipt,
              "s2_estimates": args.s2_estimates, "s2_decision": args.s2_decision,
              "s2_diagnostics": args.s2_diagnostics, "s2_accepted": args.s2_accepted,
-             "s2_replay_receipt": args.s2_replay_receipt, "s2_records_receipt": args.s2_records_receipt}
+             "s2_replay_receipt": args.s2_replay_receipt, "s2_records_receipt": args.s2_records_receipt,
+             "s3_estimates": args.s3_estimates, "s3_decisions": args.s3_decisions,
+             "s3_accepted": args.s3_accepted, "s3_production_authentication": args.s3_production_authentication,
+             "s3_audit_failure": args.s3_audit_failure, "s3_normalization_receipt": args.s3_normalization_receipt,
+             "s3_recovery_runner_receipt": args.s3_recovery_runner_receipt,
+             "s3_cpp_replay_receipt": args.s3_cpp_replay_receipt,
+             "s3_source_patch_receipt": args.s3_source_patch_receipt}
     src = {key: load_json(path) for key, path in paths.items()}
     accepted = src["accepted"]
     estimates = src["estimates"]
@@ -737,12 +1132,18 @@ def main():
     # ---- 9. Study 002 ------------------------------------------------------------------------
     s2 = check_study_002(R, src, file_hashes, args.skip_sha_check)
 
+    # ---- 9b. Study 003 -----------------------------------------------------------------------
+    s3 = check_study_003(R, src, file_hashes, args.skip_sha_check)
+
     contexts = {
         "001": {"by_name": by_name, "exact": exact, "bounds": bounds, "scope": scope},
         "002": s2,
-        # The two record sets are separate accepted estimate sets; these totals are counts only.
+        "003": s3,
+        # The record sets are separately accepted estimate sets; these totals are counts only.
         "both": {"scope": {"saved_estimates_total": SAVED_ESTIMATES + S2_SAVED_ESTIMATES,
                            "descriptive_means_total": 16 + 12}},
+        "all": {"scope": {"saved_estimates_total": SAVED_ESTIMATES + S2_SAVED_ESTIMATES + S3_SAVED_ESTIMATES,
+                          "descriptive_means_total": 16 + 12 + 16}},
     }
 
     # ---- 10. Registered quoted statistics ------------------------------------------------------
@@ -841,8 +1242,10 @@ def main():
     summary = {"status": "PASS" if not R.failures else "FAIL", "checks_passed": R.passed,
                "failures": R.failures, "input_sha256": file_hashes, "document_sha256": document_hashes,
                "sha_check_enforced": not args.skip_sha_check,
+               "package_version": "1.2.0",
                "studies": {"PHASE2-MUTABLE-MEMORY-001": {"saved_estimates": SAVED_ESTIMATES},
-                           "PHASE2-PERFORMANCE-CONVERSION-002": {"saved_estimates": S2_SAVED_ESTIMATES}},
+                           "PHASE2-PERFORMANCE-CONVERSION-002": {"saved_estimates": S2_SAVED_ESTIMATES},
+                           "PHASE2-TORUS-MEMORY-003": {"saved_estimates": S3_SAVED_ESTIMATES}},
                "registered_entries": len(registry["entries"])}
     if args.report:
         args.report.parent.mkdir(parents=True, exist_ok=True)
@@ -851,14 +1254,14 @@ def main():
     return 0 if not R.failures else 1
 
 
-# ---- Public-export hash adapter (public repository package v1.1.0) -------------
+# ---- Public-export hash adapter (public repository package v1.2.0) -------------
 # Optional "--public-transformations FILE". A public receipt whose only change is a
 # recorded administrative path normalization has different physical bytes from the
 # authenticated source receipt. For every registered checker input (an entry with a
-# logical_input_key, Study 001 or Study 002) this adapter maps the exact physical
-# SHA-256 of the public copy back to the authenticated source SHA-256 recorded in the
-# transformation file. Any other byte difference still fails the SHA-256 checks. No
-# arithmetic, interval, label, scope, diagnostic, audit or decision check is changed,
+# logical_input_key, Study 001, Study 002 or Study 003) this adapter maps the exact
+# physical SHA-256 of the public copy back to the authenticated source SHA-256 recorded
+# in the transformation file. Any other byte difference still fails the SHA-256 checks.
+# No arithmetic, interval, label, scope, diagnostic, audit or decision check is changed,
 # added or removed. The substitutions are listed in the JSON report.
 import atexit as _pe_atexit
 import json as _pe_json

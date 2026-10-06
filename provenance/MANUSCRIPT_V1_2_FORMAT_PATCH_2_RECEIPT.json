@@ -1,0 +1,13 @@
+{
+  "after_sha256": "8e3fc067b811f11c3ee733c40eba01cc7e33ba55f34ba6b2a9019b30f5ca1573",
+  "before_sha256": "5d3cbd503e8543e647d81dc7422bbac9f3d6cfb3096c2b6a5fd430a3f1f22666",
+  "created_at_utc": "2026-10-02T23:29:56.336371+00:00",
+  "exact_after": "coordinate `16q + 4 \u00d7 word + lane` receives `(output_word >> (16 \u00d7 lane)) & 0xffff`.",
+  "exact_before": "coordinate `16q + 4 * word + lane` receives `(output_word >> (16 * lane)) & 0xffff`.",
+  "file": "paper/SUPPLEMENT.md",
+  "other_files_changed": false,
+  "reason": "Avoid legacy Markdown italic parsing while preserving the exact lane formula.",
+  "record": "PHASE2-MMEM-MANUSCRIPT-V1-2-FORMAT-PATCH-2",
+  "scientific_values_changed": false,
+  "status": "APPLIED_UNBUILT"
+}

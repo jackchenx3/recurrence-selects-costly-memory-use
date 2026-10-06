@@ -1,0 +1,13 @@
+{
+  "after_sha256": "5d3cbd503e8543e647d81dc7422bbac9f3d6cfb3096c2b6a5fd430a3f1f22666",
+  "before_sha256": "1345ce468371a917edc1120c4accab1646b97e7415f99563de2aa18505318527",
+  "created_at_utc": "2026-10-02T23:28:52.375150+00:00",
+  "exact_after": "The maximal coordinate loss is 2^30, the maximal individual loss is 32 \u00d7 2^30 = 2^35, and the maximal population loss is 32 \u00d7 2^35 = 2^40.",
+  "exact_before": "The maximal coordinate loss is 2^30, the maximal individual loss is `32 * 2^30 = 2^35`, and the maximal population loss is `32 * 2^35 = 2^40`.",
+  "file": "paper/SUPPLEMENT.md",
+  "other_files_changed": false,
+  "reason": "Avoid ReportLab Markdown italic parsing of literal multiplication asterisks inside two code spans in one paragraph.",
+  "record": "PHASE2-MMEM-MANUSCRIPT-V1-2-FORMAT-PATCH-1",
+  "scientific_values_changed": false,
+  "status": "APPLIED_UNBUILT"
+}

@@ -1,0 +1,137 @@
+{
+  "accepted_at_utc": "2026-10-02T20:54:51.358509+00:00",
+  "analysis": {
+    "crossed_interpretation": "SELECTION/PERFORMANCE SEPARATION RECURS IN THIS OPERATOR BUNDLE",
+    "decisions_sha256": "84f88bb17c20593abd222b8e099e2981e725b28968c650dbf306f43441892f09",
+    "estimates": {
+      "C_abs": {
+        "classification_code": 10,
+        "estimate": "0.2828775083101712740384615384615384615385",
+        "exact_value": "48200517/170393600",
+        "lower": "0.2750672787822218727665173143871826344707",
+        "upper": "0.2906877378381206753104057625358942886063"
+      },
+      "C_rec": {
+        "classification_code": 10,
+        "estimate": "0.4244214336688701923076923076923076923077",
+        "exact_value": "9039837/21299200",
+        "lower": "0.4088009746129713897638038595435960381721",
+        "upper": "0.4400418927247689948515807558410193464433"
+      },
+      "D_HALF": {
+        "classification_code": 20,
+        "estimate": "-0.0002015920785757211538461538461538461538",
+        "exact_value": "-687/3407872",
+        "lower": "-0.0158220511344745236977346019948655002894",
+        "upper": "0.0154188669773230813900422943025578079817"
+      },
+      "D_ZERO": {
+        "classification_code": 20,
+        "estimate": "-0.0002403963529146634615384615384615384615",
+        "exact_value": "-20481/85196800",
+        "lower": "-0.0158608554088134660054269096871731925971",
+        "upper": "0.0153800627029841390823499866102501156740"
+      },
+      "P_abs": {
+        "classification_code": 32,
+        "estimate": "0.0050566998204140212180845992406830191612",
+        "exact_value": "284666892836763/56294995342131200",
+        "lower": "-0.0094579258184457116424074306665039337554",
+        "upper": "0.0195713254592737540785766291478699720779"
+      },
+      "P_rec": {
+        "classification_code": 33,
+        "estimate": "0.0062864162691967154868913999402698559257",
+        "exact_value": "36804952557685197/5854679515581644800",
+        "lower": "-0.0227428350085227502340926598741040499076",
+        "upper": "0.0353156675469161812078754597546437617589"
+      }
+    },
+    "estimates_binary_sha256": "86879612cee7b9bb091434e511305eec92b2864dbb7fc72e3164c612810246e2",
+    "estimates_json_sha256": "65a31d9f8c73459aa29c3bc4388ed22a156952a18d71388440bffb38f4c073c4",
+    "job_id": "53562267",
+    "primary_decision": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT IN THIS ALTERNATIVE OPERATOR BUNDLE",
+    "runner_receipt_sha256": "100c0d26627d20808cfdb5b8e0e950b0f307e576cad3ccf765cf046fed976204",
+    "saved_estimates": 22
+  },
+  "design": {
+    "design_go_sha256": "e5dc485dd858f18eb9652cfe6b63f142e2d09fb6b069d640438cd8dbe63a786d",
+    "model_class": "32-locus, 2^16-allele torus with graded circular loss and four-entry tournament survival",
+    "sha256": "0ff662dc31807b0b2cdcae371d884473ed398e2583272d94331bac8c8f9ff0b0"
+  },
+  "independent_audit": {
+    "attempt1": {
+      "cause": "three audit-file headers encoded non-chunk chunk_index as 0 rather than schema-required 0xFFFFFFFF",
+      "failure_record_sha256": "a54f2842774f38af0cab5a5ee6564b8ac295baf25549b7695b9f4d0500c45531",
+      "job_id": "53562358",
+      "scientific_payload_replay_completed": false,
+      "status": "PRESERVED_NONSCIENTIFIC_HEADER_INTERFACE_FAILURE"
+    },
+    "recovery": {
+      "cpp_checked": {
+        "block_rows": 64,
+        "blocks": 64,
+        "candidate_rows": 16777216,
+        "context_rows": 131072,
+        "entry_rows": 16777216,
+        "path_rows": 512,
+        "path_updates": 131072,
+        "paths": 512,
+        "update_rows": 131072
+      },
+      "cpp_replay_receipt_sha256": "497970f5243313a6cd945b69ce9c7eaba7449ceb33ef6d0dfd0d8873811ec5cc",
+      "job_id": "53562452",
+      "mismatches": 0,
+      "normalization_only": true,
+      "normalization_receipt_sha256": "b66baa25585d2a7d0cb4a1ca3fdc002ed8bc7f3ca9f92b6c48475e64da786b5a",
+      "normalized_files": 3,
+      "payload_bytes_64_to_eof_identical_for_all_three": true,
+      "production_or_analysis_modified": false,
+      "python_checked": {
+        "block_rows": 41600,
+        "candidate_rows": 16777216,
+        "context_rows": 131072,
+        "entry_rows": 16777216,
+        "estimate_rows": 22,
+        "n1_n2_blocks": 41600,
+        "path_rows": 332800,
+        "update_rows": 85196800
+      },
+      "python_verify_receipt_sha256": "151f88a11c42d36bc9e64c97d98d83afe087e579bfbde4e00762ed13ae73ab11",
+      "runner_receipt_sha256": "6ef9d18b51125253b57d59d32c1694a33bda428f54fc83351da0a7d62fee0d5e",
+      "status": "PASS",
+      "total_differing_bytes": 12
+    }
+  },
+  "limits": [
+    "one alternative operator bundle only; no universal replication claim",
+    "large-alphabet torus proposals are uniform, not continuous or gradual search",
+    "operator-bundle result cannot attribute effects to alphabet, graded loss, mutation/resampling, or tournament survival separately",
+    "supplied cache architecture; policy allele couples retention and retrieval",
+    "one HALF law aligned to cache delay, one ZERO law, fixed cost and finite horizon",
+    "no biological, equilibrium, invasion, general memory-origin or priority claim",
+    "the three original audit-file headers were malformed; only their four-byte chunk_index fields were normalized in a derived audit tree for verification"
+  ],
+  "manuscript_disposition": "SUBSTANTIVE_INTEGRATION_INTO_EXISTING_PAPER_AS_V1.2_WARRANTED; NEW_STANDALONE_PAPER_NOT_WARRANTED",
+  "no_extension": true,
+  "no_scientific_rerun": true,
+  "production": {
+    "blocks": 41600,
+    "cells": 8,
+    "complete_marker_sha256": "ea9763c421161fe8044f6c489b09183f743f4cd8514ab9bab67424f88c1949ff",
+    "job_id": "53561601",
+    "manifest_sha256": "fb91f91676b84babbcb09ee6cd9129e58580249e21d3b223d71880170873bf4c",
+    "objective_queries": 10905190400,
+    "output_authentication_sha256": "21f8e4147b68ba8099b7d0c293f512ec51e269b40e4b816c2c9b81b826e2a865",
+    "output_bytes": 4694355040,
+    "output_files": 1962,
+    "output_inventory_sha256": "e4429e98639c6ce4c6f5f98e609530cbbe49e1b2a559d26da0c50a10aaa40ff8",
+    "paths": 332800,
+    "runner_receipt_sha256": "f6737bf03d217f8cde8375f7f6ae5e459d6aa8aeb33a65ed2b85284db540fbc6"
+  },
+  "record": "PHASE2-TORUS-MEMORY-003-ACCEPTED-1",
+  "reproducibility_disposition": "Before release, correct FileAuditSink::open so non-chunk audit headers emit 0xFFFFFFFF; preserve original authenticated outputs, failed audit attempt, normalization receipt, and derived audit tree. No scientific rerun is warranted.",
+  "scientific_conclusion": "Recurrence-attributable enrichment of the mutable supplied-cache-use policy recurred in one independently implemented large-alphabet torus/tournament operator bundle, while the population-accuracy effect remained bounded below the prespecified positive scale with unresolved sign. This supports a cross-model selection/performance separation at the declared scales.",
+  "status": "SCIENTIFICALLY_COMPLETE_AND_ACCEPTED",
+  "study_id": "PHASE2-TORUS-MEMORY-003"
+}

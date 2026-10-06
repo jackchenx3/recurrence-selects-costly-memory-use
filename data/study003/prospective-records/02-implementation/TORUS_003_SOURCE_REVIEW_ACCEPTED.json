@@ -1,0 +1,53 @@
+{
+  "record": "PHASE2-TORUS-MEMORY-003-SOURCE-REVIEW-ACCEPTANCE-1",
+  "status": "SOURCE_REVIEW_ACCEPTED_PATCH_GO",
+  "created_at_utc": "2026-10-02T16:22:50.362338+00:00",
+  "frozen_design_sha256": "0ff662dc31807b0b2cdcae371d884473ed398e2583272d94331bac8c8f9ff0b0",
+  "patched_source_inventory_sha256": "25a96258588c5fba416402c5781c6574443a0c14fa6b5f449eff74fb03bd1d4b",
+  "records": {
+    "component_a_accepted": {
+      "path": "$PROJECT_ROOT/TORUS_003_QWEN_028A_ACCEPTED.json",
+      "sha256": "07c07c4121d06ee24dc6910da05690af85e1dd45a2091057585f81a1c6494845"
+    },
+    "component_b_supervisor": {
+      "path": "$PROJECT_ROOT/TORUS_003_COMPONENT_B_SUPERVISOR_REVIEW.json",
+      "sha256": "c03301a16c44799ca42c903e606f997db86d93b2269325d8285a576c9e38aa0a"
+    },
+    "component_c_review": {
+      "path": "$PROJECT_ROOT/results/qwen_028c/fixture_contract_source_review.md",
+      "sha256": "7c4b8a9d21f0d7a2781e3dba3a0d69ea1a0c5a3ab84770083a96d57b7643a13e"
+    },
+    "integrated_fix_decision": {
+      "path": "$PROJECT_ROOT/TORUS_003_SOURCE_REVIEW_DECISION.json",
+      "sha256": "da4a8fd224ba2beaff508b8760a9cbfa0d42a690b62f36610d8e34f293a51fb4"
+    },
+    "patch_authentication": {
+      "path": "$PROJECT_ROOT/TORUS_003_SOURCE_PATCH_AUTHENTICATION.json",
+      "sha256": "292b2ee327b5ea43f1a5e2708b35911a2d3d3f51d9b1346462c6af0d0306391f"
+    },
+    "patch_diff": {
+      "path": "$PROJECT_ROOT/TORUS_003_CLAUDE_030_PATCH.diff",
+      "sha256": "86b9a5b1bc6e1b5b6d90cddb51c8514768ed93aff37cbc178caaa76a94ac3a32"
+    },
+    "patch_review": {
+      "path": "$PROJECT_ROOT/results/qwen_029_torus_patch_review/patch_terminal_review.md",
+      "sha256": "ab6c3a565b28dbe41bf920cc9548be564d19db567a77fa7b2fb8c79ab16a1b1d"
+    },
+    "patch_review_receipt": {
+      "path": "$PROJECT_ROOT/results/qwen_029_torus_patch_review/patch_terminal_review.receipt.json",
+      "sha256": "b43a4414aefec8438b13fec7899e71219d8f44d4d9a7e12eb99e979311d767b5"
+    }
+  },
+  "disposition": {
+    "component_a": "CORE_GO",
+    "component_b": "ANALYZER_FIX_CORRECTED",
+    "component_c": "FIXTURES_GO_EXCEPT_SUPERSEDED_N1_ASSESSMENT",
+    "patch_terminal": "PATCH_GO",
+    "material_defects_remaining": 0
+  },
+  "scientific_execution_performed": false,
+  "compilation_performed": false,
+  "fixtures_run": false,
+  "production_authorized": false,
+  "next_gate": "construct and independently review one deterministic producer fixture-stage runner, then issue a separate bounded execution authority"
+}

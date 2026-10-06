@@ -300,34 +300,227 @@
       "delta": 0.03125
     }
   },
+  "figure5_operator_bundles": {
+    "meaningful_band": [
+      -0.03125,
+      0.03125
+    ],
+    "note": "Different operator bundles and independent cohorts; each study's familywise families are controlled separately; no estimate is pooled and effect magnitudes are not compared across bundles. The allele scale 1/32 is one expected individual in both studies; the performance scale 1/32 is one correct bit per survivor in Study 001 and 1/32 of maximal total torus loss in Study 003.",
+    "panel_a_primary_allele_estimands": [
+      {
+        "classification": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT",
+        "estimate": 0.31029222928560696,
+        "estimate_exact": "5287181/17039360",
+        "half_width": 0.007810229527949401,
+        "lower": 0.30248199975765755,
+        "name": "C_abs",
+        "study": "001",
+        "upper": 0.31810245881355637
+      },
+      {
+        "classification_code": 10,
+        "estimate": 0.2828775083101713,
+        "estimate_display": "0.2828775083101712740384615384615384615385",
+        "estimate_exact": "48200517/170393600",
+        "family": "PRIMARY_ALLELE",
+        "half_width": 0.007810229527949401,
+        "lower": 0.27506727878222187,
+        "lower_display": "0.2750672787822218727665173143871826344707",
+        "name": "C_abs",
+        "study": "003",
+        "upper": 0.2906877378381207,
+        "upper_display": "0.2906877378381206753104057625358942886063"
+      },
+      {
+        "classification": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT",
+        "estimate": 0.44163526681753307,
+        "estimate_exact": "75251823/170393600",
+        "half_width": 0.015620459055898803,
+        "lower": 0.42601480776163425,
+        "name": "C_rec",
+        "study": "001",
+        "upper": 0.45725572587343183
+      },
+      {
+        "classification_code": 10,
+        "estimate": 0.4244214336688702,
+        "estimate_display": "0.4244214336688701923076923076923076923077",
+        "estimate_exact": "9039837/21299200",
+        "family": "PRIMARY_ALLELE",
+        "half_width": 0.015620459055898803,
+        "lower": 0.4088009746129714,
+        "lower_display": "0.4088009746129713897638038595435960381721",
+        "name": "C_rec",
+        "study": "003",
+        "upper": 0.440041892724769,
+        "upper_display": "0.4400418927247689948515807558410193464433"
+      },
+      {
+        "classification": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT",
+        "estimate": 0.0007228675255408654,
+        "estimate_exact": "30793/42598400",
+        "half_width": 0.015620459055898803,
+        "lower": -0.014897591530357936,
+        "name": "D_HALF",
+        "study": "001",
+        "upper": 0.01634332658143967
+      },
+      {
+        "classification_code": 20,
+        "estimate": -0.00020159207857572116,
+        "estimate_display": "-0.0002015920785757211538461538461538461538",
+        "estimate_exact": "-687/3407872",
+        "family": "PRIMARY_ALLELE",
+        "half_width": 0.015620459055898803,
+        "lower": -0.015822051134474522,
+        "lower_display": "-0.0158220511344745236977346019948655002894",
+        "name": "D_HALF",
+        "study": "003",
+        "upper": 0.015418866977323082,
+        "upper_display": "0.0154188669773230813900422943025578079817"
+      },
+      {
+        "classification": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT",
+        "estimate": -9.640033428485576e-05,
+        "estimate_exact": "-8213/85196800",
+        "half_width": 0.015620459055898803,
+        "lower": -0.01571685939018366,
+        "name": "D_ZERO",
+        "study": "001",
+        "upper": 0.015524058721613946
+      },
+      {
+        "classification_code": 20,
+        "estimate": -0.00024039635291466346,
+        "estimate_display": "-0.0002403963529146634615384615384615384615",
+        "estimate_exact": "-20481/85196800",
+        "family": "PRIMARY_ALLELE",
+        "half_width": 0.015620459055898803,
+        "lower": -0.015860855408813466,
+        "lower_display": "-0.0158608554088134660054269096871731925971",
+        "name": "D_ZERO",
+        "study": "003",
+        "upper": 0.01538006270298414,
+        "upper_display": "0.0153800627029841390823499866102501156740"
+      }
+    ],
+    "panel_b_performance_estimands": [
+      {
+        "classification": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+        "estimate": 0.009377053517561693,
+        "estimate_exact": "51129277/5452595200",
+        "half_width": 0.014514625638859732,
+        "lower": -0.00513757212129804,
+        "name": "P_abs",
+        "study": "001",
+        "upper": 0.023891679156421427
+      },
+      {
+        "classification": "BOUNDED_BELOW_POSITIVE",
+        "classification_code": 32,
+        "estimate": 0.005056699820414021,
+        "estimate_display": "0.0050566998204140212180845992406830191612",
+        "estimate_exact": "284666892836763/56294995342131200",
+        "family": "PERFORMANCE",
+        "half_width": 0.014514625638859732,
+        "lower": -0.009457925818445711,
+        "lower_display": "-0.0094579258184457116424074306665039337554",
+        "name": "P_abs",
+        "study": "003",
+        "upper": 0.019571325459273755,
+        "upper_display": "0.0195713254592737540785766291478699720779"
+      },
+      {
+        "classification": "UNRESOLVED",
+        "estimate": 0.011360344336583065,
+        "estimate_exact": "61943359/5452595200",
+        "half_width": 0.029029251277719464,
+        "lower": -0.017668906941136403,
+        "name": "P_rec",
+        "study": "001",
+        "upper": 0.04038959561430253
+      },
+      {
+        "classification": "UNRESOLVED",
+        "classification_code": 33,
+        "estimate": 0.006286416269196716,
+        "estimate_display": "0.0062864162691967154868913999402698559257",
+        "estimate_exact": "36804952557685197/5854679515581644800",
+        "family": "PERFORMANCE",
+        "half_width": 0.029029251277719464,
+        "lower": -0.02274283500852275,
+        "lower_display": "-0.0227428350085227502340926598741040499076",
+        "name": "P_rec",
+        "study": "003",
+        "upper": 0.03531566754691618,
+        "upper_display": "0.0353156675469161812078754597546437617589"
+      }
+    ],
+    "studies": {
+      "001": "PHASE2-MUTABLE-MEMORY-001",
+      "003": "PHASE2-TORUS-MEMORY-003"
+    },
+    "study_001_primary_decision": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT",
+    "study_001_secondary_classifications": {
+      "P_abs": "BOUNDED BELOW THE POSITIVE ONE-BIT SCALE",
+      "P_rec": "UNRESOLVED"
+    },
+    "study_003_crossed_interpretation": "SELECTION/PERFORMANCE SEPARATION RECURS IN THIS OPERATOR BUNDLE",
+    "study_003_design_sha256": "0ff662dc31807b0b2cdcae371d884473ed398e2583272d94331bac8c8f9ff0b0",
+    "study_003_identity_failure_count": 0,
+    "study_003_performance_classes": {
+      "P_abs": "BOUNDED_BELOW_POSITIVE",
+      "P_rec": "UNRESOLVED"
+    },
+    "study_003_primary_decision": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT IN THIS ALTERNATIVE OPERATOR BUNDLE",
+    "study_003_production_manifest_sha256": "fb91f91676b84babbcb09ee6cd9129e58580249e21d3b223d71880170873bf4c",
+    "thresholds": {
+      "Delta": 0.03125,
+      "Delta_P": 0.03125
+    }
+  },
   "inputs": {
     "decision": {
       "authenticated_sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0",
       "matches_authenticated": true,
-      "path": "outputs/new-phase-20260930/postproduction-stage/attempt1/analysis/decision.json",
+      "path": "../postproduction-stage/attempt1/analysis/decision.json",
       "sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0",
       "study": "PHASE2-MUTABLE-MEMORY-001"
     },
     "estimates": {
       "authenticated_sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0",
       "matches_authenticated": true,
-      "path": "outputs/new-phase-20260930/postproduction-stage/attempt1/analysis/estimates_22.json",
+      "path": "../postproduction-stage/attempt1/analysis/estimates_22.json",
       "sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0",
       "study": "PHASE2-MUTABLE-MEMORY-001"
     },
     "s2_decision": {
       "authenticated_sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a",
       "matches_authenticated": true,
-      "path": "outputs/new-phase-20260930/analysis-stage/performance002_attempt1/results/decision.json",
+      "path": "../analysis-stage/performance002_attempt1/results/decision.json",
       "sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a",
       "study": "PHASE2-PERFORMANCE-CONVERSION-002"
     },
     "s2_estimates": {
       "authenticated_sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d",
       "matches_authenticated": true,
-      "path": "outputs/new-phase-20260930/analysis-stage/performance002_attempt1/results/estimates_19.json",
+      "path": "../analysis-stage/performance002_attempt1/results/estimates_19.json",
       "sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d",
       "study": "PHASE2-PERFORMANCE-CONVERSION-002"
+    },
+    "s3_decisions": {
+      "authenticated_sha256": "84f88bb17c20593abd222b8e099e2981e725b28968c650dbf306f43441892f09",
+      "matches_authenticated": true,
+      "path": "../analysis-stage/torus003_attempt1/results/decisions.json",
+      "sha256": "84f88bb17c20593abd222b8e099e2981e725b28968c650dbf306f43441892f09",
+      "study": "PHASE2-TORUS-MEMORY-003"
+    },
+    "s3_estimates": {
+      "authenticated_sha256": "65a31d9f8c73459aa29c3bc4388ed22a156952a18d71388440bffb38f4c073c4",
+      "matches_authenticated": true,
+      "path": "../analysis-stage/torus003_attempt1/results/estimates.json",
+      "sha256": "65a31d9f8c73459aa29c3bc4388ed22a156952a18d71388440bffb38f4c073c4",
+      "study": "PHASE2-TORUS-MEMORY-003"
     }
   },
   "matplotlib_version": "3.9.4",
@@ -351,9 +544,14 @@
       "figure4_information.png",
       "figure4_information.pdf",
       "figure4_information.svg"
+    ],
+    "figure5_operator_bundles": [
+      "figure5_operator_bundles.png",
+      "figure5_operator_bundles.pdf",
+      "figure5_operator_bundles.svg"
     ]
   },
-  "package_version": "1.1.0",
-  "schema": "PHASE2-MMEM-FIGURE-DATA-2",
+  "package_version": "1.2.0",
+  "schema": "PHASE2-MMEM-FIGURE-DATA-3",
   "sha_check_enforced": true
 }

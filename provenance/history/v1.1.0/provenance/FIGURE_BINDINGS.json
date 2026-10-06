@@ -1,0 +1,84 @@
+{
+  "schema": "PHASE2-MMEM-FIGURE-BINDINGS-2",
+  "package_version": "1.1.0",
+  "generator": "scripts/make_figures.py",
+  "generator_command": "python scripts/make_figures.py --estimates <estimates_22.json> --decision <decision.json> --s2-estimates <estimates_19.json> --s2-decision <study-002 decision.json> --output-dir <figures-dir>",
+  "generation_status": {
+    "v1": "The CLAUDE-017 generator was run by the supervisor; record PHASE2-MUTABLE-MEMORY-001-MANUSCRIPT-V1-VISUAL-QA (2026-10-01T14:12:00Z) gave figure 2 PASS and figures 1 and 3 PATCH_REQUIRED.",
+    "v2": "scripts/make_figures.py was patched in CLAUDE-019 (figure 1 layout; figure 3 panel-b x-axis label) and has not been re-run in this source snapshot. Regenerated figures, rebuilt PDFs, their SHA-256 values and the repeated visual QA are recorded by the supervisor in build and patch receipts kept outside this snapshot.",
+    "v1.1.0": "CLAUDE-025 added figure 4 (Study 002) and SHA-256 authentication of all four inputs against the two acceptance records, without running any script. The drawing code of figures 1-3 is unchanged; interval_panel gained optional labels and a shaded meaningful-scale band that only figure 4 uses. Figure 4 does not yet exist; it must be generated, inspected and visually reviewed before release."
+  },
+  "note": "All plotted values are read at run time from the inputs below by record name and are written to <figures-dir>/FIGURE_DATA.json with input SHA-256 values and a matches_authenticated flag. No outcome value is embedded in the generator. The generator refuses inputs whose SHA-256 differs from the authenticated value unless --skip-sha-check is given, which is recorded in FIGURE_DATA.json. Input paths are relative to the study working directory.",
+  "inputs": {
+    "estimates": {"study": "PHASE2-MUTABLE-MEMORY-001", "supplied_name": "estimates_22.json", "schema": "JSON list of 22 records addressed by 'name'; fields estimate_exact, estimate, lower, upper, half_width, classification/family_decision", "path": "postproduction-stage/attempt1/analysis/estimates_22.json", "sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0"},
+    "decision": {"study": "PHASE2-MUTABLE-MEMORY-001", "supplied_name": "decision.json", "schema": "object with primary_decision, decision_rule_applied, secondary_classifications", "path": "postproduction-stage/attempt1/analysis/decision.json", "sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0"},
+    "s2_estimates": {"study": "PHASE2-PERFORMANCE-CONVERSION-002", "supplied_name": "estimates_19.json", "schema": "JSON list of 19 records addressed by 'name'; fields estimate_exact, estimate, lower, upper, half_width, classification/family_decision", "path": "analysis-stage/performance002_attempt1/results/estimates_19.json", "sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d", "sha256_origin": "PHASE2_STUDY_002_ACCEPTED.json analysis.estimates_sha256"},
+    "s2_decision": {"study": "PHASE2-PERFORMANCE-CONVERSION-002", "supplied_name": "decision.json", "schema": "object with primary_decision, decision_rule_applied, bounded_interval_wholly_inside_minus_delta_plus_delta, secondary_classifications", "path": "analysis-stage/performance002_attempt1/results/decision.json", "sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a", "sha256_origin": "PHASE2_STUDY_002_ACCEPTED.json analysis.decision_sha256"}
+  },
+  "figures": [
+    {
+      "id": "figure1_design",
+      "outputs": ["figure1_design.png", "figure1_design.pdf", "figure1_design.svg"],
+      "manuscript_reference": "paper/MANUSCRIPT.md section 2.2, ![Figure 1](figures/figure1_design.png)",
+      "kind": "deterministic schematic",
+      "data_bindings": [],
+      "content": ["(a) four candidates per parent; policy probe depends on allele and arm", "(b) population event order", "(c) ZERO and HALF target laws with an explicitly labelled illustrative recurrence pattern (not data)", "(d) eight paired cells and the two inferential families"],
+      "v1_source_sha256": "09776069565c8d2f29b73f52840bf0c02f2218c7f90ce9907eeaebc8236645ca",
+      "v1_visual_qa": "PATCH_REQUIRED: panel-c and panel-d headings overlap; notes beneath panels a and b overlap across the center gutter; bottom explanatory line too close to the canvas edge.",
+      "v2_patch": "Explicit gridspec margins (left 0.02, right 0.98, top 0.94, bottom 0.05), wider gutters (hspace 0.40, wspace 0.14) and taller canvas (7.4 x 7.6 in); shortened panel-c heading; panel a/b notes wrapped to stay within their own panels; panel-c bottom note wrapped and raised inside the axes; panel-d box text re-broken to fit. Schematic content unchanged except that the SHAM line reads 'exact neutral label benchmark'."
+    },
+    {
+      "id": "figure2_allele",
+      "outputs": ["figure2_allele.png", "figure2_allele.pdf", "figure2_allele.svg"],
+      "manuscript_reference": "paper/MANUSCRIPT.md section 3.3, ![Figure 2](figures/figure2_allele.png)",
+      "data_bindings": {
+        "panel_a_cell_means_descriptive": ["M_FREQUENCY_LATE|ACTIVE|ZERO|ALL_F", "M_FREQUENCY_LATE|ACTIVE|ZERO|ALL_M", "M_FREQUENCY_LATE|ACTIVE|HALF|ALL_F", "M_FREQUENCY_LATE|ACTIVE|HALF|ALL_M", "M_FREQUENCY_LATE|SHAM|ZERO|ALL_F", "M_FREQUENCY_LATE|SHAM|ZERO|ALL_M", "M_FREQUENCY_LATE|SHAM|HALF|ALL_F", "M_FREQUENCY_LATE|SHAM|HALF|ALL_M"],
+        "panel_a_reference_line": "exact neutral start-averaged expectation 1/2 (design constant)",
+        "panel_b_enrichment_intervals": ["C_abs", "C_rec"],
+        "panel_c_start_state_intervals": ["D_HALF", "D_ZERO"],
+        "thresholds": {"Delta": "1/32 (design constant)"},
+        "annotation": "decision.primary_decision"
+      },
+      "v1_source_sha256": "c68d04acd65427c8195ce2ff18bc82e0ec605d3a26b8a1a92de72cf384d9ee89",
+      "v1_visual_qa": "PASS",
+      "v2_patch": "none"
+    },
+    {
+      "id": "figure3_accuracy",
+      "outputs": ["figure3_accuracy.png", "figure3_accuracy.pdf", "figure3_accuracy.svg"],
+      "manuscript_reference": "paper/MANUSCRIPT.md section 3.4, ![Figure 3](figures/figure3_accuracy.png)",
+      "data_bindings": {
+        "panel_a_cell_means_descriptive": ["ACCURACY_LATE|ACTIVE|ZERO|ALL_F", "ACCURACY_LATE|ACTIVE|ZERO|ALL_M", "ACCURACY_LATE|ACTIVE|HALF|ALL_F", "ACCURACY_LATE|ACTIVE|HALF|ALL_M", "ACCURACY_LATE|SHAM|ZERO|ALL_F", "ACCURACY_LATE|SHAM|ZERO|ALL_M", "ACCURACY_LATE|SHAM|HALF|ALL_F", "ACCURACY_LATE|SHAM|HALF|ALL_M"],
+        "panel_b_performance_intervals": ["P_abs", "P_rec"],
+        "thresholds": {"Delta_P": "1/32, one correct bit per survivor (design constant)"},
+        "annotation": "decision.secondary_classifications"
+      },
+      "v1_source_sha256": "869f089e70309ca5b26a957590a6c4602ee378e37bd607ad2167ed9b0ea2e2ef",
+      "v1_visual_qa": "PATCH_REQUIRED: panel-b x-axis label clipped at the right edge after the word 'one'.",
+      "v2_patch": "Panel-b x-axis label shortened to 'Accuracy contrast'; the dotted -1/32 and +1/32 one-bit thresholds are explained in the Figure 3 caption. Plotted values and thresholds unchanged."
+    },
+    {
+      "id": "figure4_information",
+      "study": "PHASE2-PERFORMANCE-CONVERSION-002",
+      "outputs": ["figure4_information.png", "figure4_information.pdf", "figure4_information.svg"],
+      "manuscript_reference": "paper/MANUSCRIPT.md section 3.9, ![Figure 4](figures/figure4_information.png)",
+      "data_bindings": {
+        "panel_a_primary_intervals": ["Delta_P", "D_INFO", "D_NONINFO"],
+        "panel_b_allele_intervals": ["E_INFO", "E_NONINFO"],
+        "panel_c_performance_intervals": ["B_INFO", "B_NONINFO"],
+        "meaningful_band": "(-1/32, +1/32), shaded with dotted edges and labelled in every panel (design constant)",
+        "annotation": "s2_decision.primary_decision, s2_decision.decision_rule_applied, s2_decision.bounded_interval_wholly_inside_minus_delta_plus_delta"
+      },
+      "accepted_values_for_visual_check": {
+        "note": "From PHASE2_STUDY_002_ACCEPTED.json, rounded to six places; for visual QA only. The generator reads the records, not these values.",
+        "Delta_P": "0.008650 [-0.006521, 0.023821]",
+        "E_INFO": "0.184203 [0.169688, 0.198718]",
+        "E_NONINFO": "0.126083 [0.118825, 0.133340]",
+        "B_INFO": "0.009381 [-0.005133, 0.023896]",
+        "B_NONINFO": "0.000731 [-0.013783, 0.015246]"
+      },
+      "visual_qa": "NOT YET RUN"
+    }
+  ],
+  "pdf_resolution": "scripts/build_pdfs.py --figures-dir <figures-dir> resolves figures/<name>.png by file name and fails if any of the four PNG files is missing."
+}

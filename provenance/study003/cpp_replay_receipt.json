@@ -1,0 +1,22 @@
+{
+  "schema": "PHASE2-TORUS-MEMORY-003-AUDITOR-CPP-RECEIPT-v1",
+  "tool": "torus_audit",
+  "tool_version": "1",
+  "mode": "replay",
+  "verdict": "PASS",
+  "failure": null,
+  "namespace": "production-r1",
+  "blocks": 64,
+  "compiler": "8.5.0 20210514 (Red Hat 8.5.0-28.0.1)",
+  "cplusplus": 201703,
+  "binary_sha256": "6b46c3e77045a1992f482e387e6829368052fca3f87082ed857def45aa893626",
+  "source_files": [{"path": "Makefile", "sha256": "dff50ba26120b31bf4040d758010d8fd4f7486c6ddaaa314e5d923455482580d"}, {"path": "src/main.cpp", "sha256": "20daca20aad928da07492bfb2483ea8a39ebf35b2a9c3a7050f9befb8ba2cff2"}, {"path": "src/records.hpp", "sha256": "185a504dfa11753c8ab19d23c8ee015c1924430ef7d62acaed1ac142189b7344"}, {"path": "src/replay.hpp", "sha256": "0313b91c3834f4b512560aea2e82f08b78ea124017bff534a9712bb0f497642f"}, {"path": "src/sha256.hpp", "sha256": "598fbfa71368465fbe44f42d1c14ec757401b56350c35acfba5570e4e1220291"}, {"path": "src/threefry.hpp", "sha256": "548cd21c50138378cd67ef749a5acc2d1f5d6e821e8e626e182d0c9a118e6653"}],
+  "selftests_passed": ["sha256_fips_vectors", "purpose_key_derivation_and_separation", "threefry_official_kat", "counter_order", "lane_extraction", "range_refusal_and_schema_count", "circular_loss_and_rank_table", "target_law_pairing", "tournament_and_donor_order", "hand_trace_one_and_two_updates"],
+  "manifest": {"path": "data/study003/audit/02-normalization-derived-headers/DERIVED_TREE_MANIFEST.sha256", "sha256": "93a033ed000ad0aacab5dbf83486b8b41f26903eb4f1ec207362caec183126ce"},
+  "inputs": [{"path": "updates/chunk_00000.t3u", "sha256": "c2cf275ac150e57109c227fc963043b35a1ee69f9888c9d8c092b60daaa4bccd", "bytes": 3145792}, {"path": "paths/chunk_00000.t3p", "sha256": "67eca3b07a058e96d25d36096043d31419fc079c8e539a6dc5a130d2c1ac3a22", "bytes": 114752}, {"path": "blocks/chunk_00000.t3b", "sha256": "674fc2f376686fdbd9275aef2d8bcb8a7fabc19299385eb3097b824f173d4818", "bytes": 8768}, {"path": "audit/audit_candidates.t3c", "sha256": "89720a9624fbb2813229dc8174b6a930f171c14661c77622296c6f2de4b2d338", "bytes": 1744830528}, {"path": "audit/audit_entries.t3e", "sha256": "3bd36dfc2e278a7663fa4416e0806f5cd8e70f39ece5697b27d161d7a1c841c2", "bytes": 268435520}, {"path": "audit/audit_context.t3x", "sha256": "080f904bf1404c1cb36e63ea5abfc9b2c54f33afd1cc2643c38dea2e2d961414", "bytes": 555745344}],
+  "checked": {"blocks": 64, "paths": 512, "path_updates": 131072, "candidate_rows": 16777216, "entry_rows": 16777216, "context_rows": 131072, "update_rows": 131072, "path_rows": 512, "block_rows": 64},
+  "inputs_modified": false,
+  "producer_code_invoked": false,
+  "started_utc": "2026-10-02T20:47:03Z",
+  "finished_utc": "2026-10-02T20:47:38Z"
+}

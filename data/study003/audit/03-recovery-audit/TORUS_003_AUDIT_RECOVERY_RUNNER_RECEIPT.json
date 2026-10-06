@@ -1,0 +1,82 @@
+{
+  "auditor_invocations": 2,
+  "cpp_replay_exit_status": 0,
+  "cpp_replay_verdict": "PASS",
+  "created_at_utc": "2026-10-02T20:50:04.827880+00:00",
+  "files": [
+    {
+      "bytes": 2051,
+      "path": "TORUS_003_AUDIT_NORMALIZATION_RECEIPT.json",
+      "sha256": "b66baa25585d2a7d0cb4a1ca3fdc002ed8bc7f3ca9f92b6c48475e64da786b5a"
+    },
+    {
+      "bytes": 2,
+      "path": "cpp_replay.exit_status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "bytes": 0,
+      "path": "cpp_replay.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 32,
+      "path": "cpp_replay.stdout",
+      "sha256": "01d789b5da0906c25086af332e90feb968e372843493c5739c122cf79eced971"
+    },
+    {
+      "bytes": 1502,
+      "path": "cpp_replay.time",
+      "sha256": "5977ecda59c5ceba3324558f877dd91cd80e5396794e0d818286ad72bc18448c"
+    },
+    {
+      "bytes": 2756,
+      "path": "cpp_replay_receipt.json",
+      "sha256": "497970f5243313a6cd945b69ce9c7eaba7449ceb33ef6d0dfd0d8873811ec5cc"
+    },
+    {
+      "bytes": 21,
+      "path": "finished_utc.txt",
+      "sha256": "241cf70fe06cfa26edddf0e40fe63b4b39fd9b5bffa19b413f003b89ab566bc2"
+    },
+    {
+      "bytes": 2,
+      "path": "python_verify.exit_status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "bytes": 0,
+      "path": "python_verify.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 35,
+      "path": "python_verify.stdout",
+      "sha256": "f24bd1b23e0c237e956ef37ac7fa27178a24b8d1cd0abd4f9a1048fcd3691059"
+    },
+    {
+      "bytes": 1413,
+      "path": "python_verify.time",
+      "sha256": "9047d275c277cf5125401d866e069ba5a4da906420550d71b20903833760e189"
+    },
+    {
+      "bytes": 311246,
+      "path": "python_verify_receipt.json",
+      "sha256": "151f88a11c42d36bc9e64c97d98d83afe087e579bfbde4e00762ed13ae73ab11"
+    },
+    {
+      "bytes": 21,
+      "path": "started_utc.txt",
+      "sha256": "62184dbf3433a4dfc682e08327412915c741666842e5ce50728263b2d5614410"
+    }
+  ],
+  "job_id": "53562452",
+  "manifest_sha256": "93a033ed000ad0aacab5dbf83486b8b41f26903eb4f1ec207362caec183126ce",
+  "normalization_only": true,
+  "production_or_analysis_modified": false,
+  "python_verify_exit_status": 0,
+  "python_verify_verdict": "PASS",
+  "record": "PHASE2-TORUS-MEMORY-003-AUDIT-RECOVERY-RUNNER-RECEIPT-1",
+  "retry_forbidden": true,
+  "status": "PASS"
+}

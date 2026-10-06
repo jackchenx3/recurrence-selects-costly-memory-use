@@ -1,0 +1,33 @@
+{
+  "accepted_study_sha256": "2ac18b3f6c22bc6f11ebbf21ffd8614dbcf24f8f3d028c169e92b2d046b02d5d",
+  "changed_files": [
+    {
+      "after": {
+        "bytes": 5713,
+        "sha256": "809c63d24d9584380858d67efab190082df4ae86b472824488d5db3055162867"
+      },
+      "before": {
+        "bytes": 5706,
+        "sha256": "42ee9884379e537b487e20416ceeda55465c7d662d6e037a0d7f35d2e9d5613f"
+      },
+      "path": "src/torus/chunk_io.cpp"
+    }
+  ],
+  "compiled_or_executed": false,
+  "created_at_utc": "2026-10-02T20:56:31.361421+00:00",
+  "exact_patch": {
+    "after": "FileHeader h{magic, row, expected, ns, kNoChunk, 0, kAuditBlocks};",
+    "before": "FileHeader h{magic, row, expected, ns, 0, 0, kAuditBlocks};"
+  },
+  "original_production_outputs_modified": false,
+  "patched_file_count": 81,
+  "patched_root": "code/study003/producer",
+  "preserved_failure_record_sha256": "a54f2842774f38af0cab5a5ee6564b8ac295baf25549b7695b9f4d0500c45531",
+  "reason": "Emit the schema-required 0xFFFFFFFF non-chunk sentinel in all three audit-file headers. The scientific model, RNG, event order, records, analyzer, fixtures and production outputs are unchanged.",
+  "record": "PHASE2-TORUS-MEMORY-003-POST-AUDIT-SOURCE-PATCH-1",
+  "scientific_rerun_required": false,
+  "source_file_count": 81,
+  "source_inventory_sha256": "25a96258588c5fba416402c5781c6574443a0c14fa6b5f449eff74fb03bd1d4b",
+  "source_root": "code/study003/history/original-malformed-header-source/phase2_torus_memory_v1",
+  "status": "SOURCE_ONLY_PATCH_COMPLETE_UNEXECUTED"
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "PHASE2-TORUS-MEMORY-003-FIXTURE-RECEIPT-v1",
+  "namespace": "fixture-r1",
+  "non_production": true,
+  "config_sha256": "73648abca608d7bffa7344cb456147c856c7130bb57cc269f87cde4acefedb0e",
+  "threads": 32,
+  "groups": [
+    {"group": 1, "name": "official Threefry4x64-20 known-answer vectors and SHA-256 self-test", "result": "PASS", "notes": ["official threefry4x64-20 KAT lines checked: 3"]},
+    {"group": 2, "name": "declared-address enumeration, collision audit, thread/cell-order invariance", "result": "PASS", "notes": []},
+    {"group": 3, "name": "circular-distance wrap, equality and antipode", "result": "PASS", "notes": []},
+    {"group": 4, "name": "maximum coordinate, individual and population loss; exact accuracy numerator", "result": "PASS", "notes": []},
+    {"group": 5, "name": "one- and two-update hand trace: all families, tournaments, label mutation, cache transitions", "result": "PASS", "notes": []},
+    {"group": 6, "name": "target-law pairing at t=1/2, innovations, direct and chained copies", "result": "PASS", "notes": []},
+    {"group": 7, "name": "memory-better and memory-worse torus cases with exact integer losses", "result": "PASS", "notes": []},
+    {"group": 8, "name": "duplicate candidates: cache equals parent, both evaluated, 128 queries", "result": "PASS", "notes": []},
+    {"group": 9, "name": "invalid cache: ACTIVE-M uses exactly the same fresh vector as F and SHAM", "result": "PASS", "notes": []},
+    {"group": 10, "name": "donor tie: equal losses, lower donor key, lower family index", "result": "PASS", "notes": []},
+    {"group": 11, "name": "local child: flagged replacement equal to donor value; flagged vs actual-change counts", "result": "PASS", "notes": []},
+    {"group": 12, "name": "tournament: duplicate entries, cross-label ties, forced key tie, index fallback, multiple wins", "result": "PASS", "notes": []},
+    {"group": 13, "name": "exact four-entry tournament rank table, all 128 ranks, sum p_r = 1", "result": "PASS", "notes": []},
+    {"group": 14, "name": "full 256-update SHAM paths from ALL_F, ALL_M and mixed labels: N1 and N2", "result": "PASS", "notes": []},
+    {"group": 15, "name": "random-coordinate invariance to labels, arm, law, start, cell order and thread count", "result": "PASS", "notes": []},
+    {"group": 16, "name": "regeneration of a non-audit path from block ID to bit-identical saved summaries", "result": "PASS", "notes": []}
+  ],
+  "status": "ALL_FIXTURES_PASSED"
+}

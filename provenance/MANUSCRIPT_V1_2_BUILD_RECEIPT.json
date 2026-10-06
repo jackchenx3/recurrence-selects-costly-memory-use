@@ -1,0 +1,153 @@
+{
+  "build_attempt1_failure": {
+    "bytes": 892,
+    "sha256": "0bf3c5bdbe905aa73170f3a44dc979b0c3872cd11738f3e5f9e49ee69e596375"
+  },
+  "build_attempt2_failure": {
+    "bytes": 778,
+    "sha256": "797083d562599016174aa315401b64b67f5ef42f387982548ef3f02f546aab4c"
+  },
+  "built_at_utc": "2026-10-02T23:37:02.699485+00:00",
+  "figure_data": {
+    "bytes": 19587,
+    "sha256": "e8aa0447dc5444d790a6659e5a7320adb4eefaf237f4c590587b941807797e51"
+  },
+  "figure_outputs": {
+    "FIGURE_DATA.json": {
+      "bytes": 19587,
+      "sha256": "e8aa0447dc5444d790a6659e5a7320adb4eefaf237f4c590587b941807797e51"
+    },
+    "figure1_design.pdf": {
+      "bytes": 37312,
+      "sha256": "add0de7498bcfd9957b131d30cf415275d1ba16e412398795579f9b84e190ae9"
+    },
+    "figure1_design.png": {
+      "bytes": 466909,
+      "pixels": [
+        2191,
+        2142
+      ],
+      "sha256": "b086bf8732f96dba648c454f67bd06c6bfe5ab91b445a2f42ff0359995a6026c"
+    },
+    "figure1_design.svg": {
+      "bytes": 149431,
+      "sha256": "94babd045273a0c5acc99a012b10e71d74946e762d6d9a4b674bd4f094fa067d"
+    },
+    "figure2_allele.pdf": {
+      "bytes": 34744,
+      "sha256": "b3d1f8a86902fa42ff443059e81864dc59fa1eac872947df2d769f86b1e77313"
+    },
+    "figure2_allele.png": {
+      "bytes": 196795,
+      "pixels": [
+        1950,
+        1112
+      ],
+      "sha256": "71f2406ea9a1022995e7e7d2c4a3b46eaf54522f272d8fbda84702dc3ff21081"
+    },
+    "figure2_allele.svg": {
+      "bytes": 93271,
+      "sha256": "d65a98fa24041f045ea521a45398cec3c49a9647a25ea0c83e9a864a7c9873ac"
+    },
+    "figure3_accuracy.pdf": {
+      "bytes": 31031,
+      "sha256": "bbbe04e09cdf4f362a5414b30224d164ccb11726dc87e02ea8bfbd124a40df2b"
+    },
+    "figure3_accuracy.png": {
+      "bytes": 161294,
+      "pixels": [
+        1982,
+        1048
+      ],
+      "sha256": "60563d2436808dedca3907d3c70518d154ea79724b789111acebb99568cb3614"
+    },
+    "figure3_accuracy.svg": {
+      "bytes": 74900,
+      "sha256": "ce14dbcd3fe952471c2f5b3ca025cc7d54391e5a284772626f8d83adbb684e2b"
+    },
+    "figure4_information.pdf": {
+      "bytes": 34161,
+      "sha256": "0a8ea2c03240d43bda283fc5b9f75d5cdaefa6ab9aac1b1fed362eb928fa502e"
+    },
+    "figure4_information.png": {
+      "bytes": 338354,
+      "pixels": [
+        2147,
+        2220
+      ],
+      "sha256": "e76ea988e0e797425028abbdc78e14e63a6dd5f16066f55d81ad54e1f572cb66"
+    },
+    "figure4_information.svg": {
+      "bytes": 116154,
+      "sha256": "c2cd3673017c08a24a74761711d551bcf77af66f14ab5e9f8e9b18e493c37b42"
+    },
+    "figure5_operator_bundles.pdf": {
+      "bytes": 36554,
+      "sha256": "09b3fb1054ae077743ae134ecadf975d51a60fb27699cc85d062412dafef81a9"
+    },
+    "figure5_operator_bundles.png": {
+      "bytes": 426269,
+      "pixels": [
+        2555,
+        2460
+      ],
+      "sha256": "04f2757e6226cd56f295c79386c011ca803901bc640f6222d295a62ef35c56ae"
+    },
+    "figure5_operator_bundles.svg": {
+      "bytes": 137851,
+      "sha256": "1d5083c7c85cff380da94cf1ee5577bddb591193371d0ba1836a6a29628ad2dc"
+    }
+  },
+  "format_patch_attempt1": {
+    "bytes": 888,
+    "sha256": "6f0b86a8aaebc1c19a838510f97602a99a982ecbef10c4be00e5832e957caf97"
+  },
+  "format_patch_attempt2": {
+    "bytes": 738,
+    "sha256": "38c32fd67e407c021338d5cd7900d602f91379a47db34087d9ccbd33b84bd40e"
+  },
+  "notes": "The two failed PDF-build attempts were parser-only failures before a complete PDF pair; both are preserved. The final checker and build produced the accepted outputs after the two minimal formatting corrections.",
+  "package_version": "1.2.0",
+  "pdf_outputs": {
+    "MANUSCRIPT.pdf": {
+      "bytes": 1770048,
+      "page_points": [
+        595.2756,
+        841.8898
+      ],
+      "pages": 31,
+      "sha256": "324198ef5e94933ebd9517271f4c6b4a7ba83864e463c8f5af43bdb34db8cb00"
+    },
+    "SUPPLEMENT.pdf": {
+      "bytes": 161943,
+      "page_points": [
+        595.2756,
+        841.8898
+      ],
+      "pages": 31,
+      "sha256": "2f9d6769f6f102347155dcf3e83a562e94d631c14f369e7a402e091b70d5b739"
+    }
+  },
+  "record": "PHASE2-MMEM-MANUSCRIPT-V1-2-BUILD-RECEIPT-1",
+  "scientific_execution_performed": false,
+  "source_authentication": {
+    "bytes": 3628,
+    "sha256": "4f54976e8c50a3769b77bfbb26f3e2109a01ae5e4921652970281f0c4ec6bee6"
+  },
+  "statistics_check": {
+    "bytes": 2614,
+    "checks_passed": 2998,
+    "failures": 0,
+    "registered_entries": 553,
+    "sha256": "ec965a4332a0d1a0089babe7c9260873292d936dd300155a6b7c373fc85f0f1a",
+    "sha_check_enforced": true,
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "successful_attempt": 3,
+  "tool_versions": {
+    "Pillow": "12.3.0",
+    "matplotlib": "3.9.4",
+    "reportlab": "5.0.1"
+  }
+}

@@ -11,7 +11,7 @@ A public reproducibility package is being prepared. **No DOI, repository address
 
 ## Scope
 
-Version 1.1.0 of the manuscript reports two prospective studies: Study 001 (PHASE2-MUTABLE-MEMORY-001; 22 saved estimate records) and Study 002 (PHASE2-PERFORMANCE-CONVERSION-002; 19 saved estimate records), a post-v1.0 prospective extension. The two record sets are separate accepted estimate sets and are released and checked separately. The Study 001 entries below are unchanged from version 1.0.
+Version 1.2.0 of the manuscript reports three prospective studies in two operator bundles: Study 001 (PHASE2-MUTABLE-MEMORY-001; 22 saved estimate records); Study 002 (PHASE2-PERFORMANCE-CONVERSION-002; 19 saved estimate records), a post-v1.0 prospective extension; and Study 003 (PHASE2-TORUS-MEMORY-003; 22 saved estimate records), a post-v1.1 prospective extension in one independently implemented alternative operator bundle. The three record sets are separately accepted estimate sets (63 in total) and are released and checked separately; none is pooled with another. The Study 001 entries below are unchanged from version 1.0, and the Study 002 entries are unchanged from version 1.1.0.
 
 ## Planned contents: Study 001
 
@@ -37,6 +37,20 @@ Version 1.1.0 of the manuscript reports two prospective studies: Study 001 (PHAS
 - Receipts from the separately implemented internal replay and record-verification audits, and the runner receipts.
 - The record of the failed original production submission (missing required `--design-go` argument; exit status 64; no production output, random draw, model execution or outcome) and the prospective recovery addendum that preceded the corrected run.
 - The design-review record, production authorization and acceptance record.
+
+## Planned contents: Study 003
+
+- Frozen specification PHASE2-TORUS-MEMORY-003 revision 1, its design arithmetic (including the exact 128-rank tournament table) and the design-GO record.
+- The pinned Random123 Threefry4x64-20 reference provenance (official repository commit, header and known-answer-vector hashes), the key schema for namespace `production-r1`, and the address-enumeration and collision audit.
+- The separately written producer, analyzer and auditor sources, configuration, build environment and SHA-256 manifests. None imports or adapts Study 001 or Study 002 producer, analyzer or auditor code.
+- Per-update binary records for all 332,800 paths, per-path summaries and final-state hashes, and per-block variables with N1/N2 flags.
+- Candidate, tournament-entry and context rows for audit blocks 0-63, including the three original audit files (`audit/audit_candidates.t3c`, `audit/audit_context.t3x`, `audit/audit_entries.t3e`) with their malformed `chunk_index = 0` headers, unchanged.
+- The outcome-blind production-output authentication (all 1,962 output files and 4,694,355,040 bytes).
+- Analyzer outputs: the 22 estimate records and the decision record.
+- The preserved audit attempt-1 failure record (job 53562358; nonscientific header-interface failure; no audit-payload replay).
+- The audit normalization receipt and the derived audit tree with its manifest. In each of the three audit files exactly bytes 48-51 were changed from `00000000` to `ffffffff` (12 bytes in total); every payload byte from offset 64 to the end of each file is identical to the original; all other files of the tree are hard links to the unmodified production outputs.
+- The recovery audit receipts (job 53562452): runner receipt, C++ replay receipt and Python verification receipt, all PASS with zero mismatches.
+- The acceptance record and the post-audit source-patch receipt. The patch changes one line of `src/torus/chunk_io.cpp` so that release source emits the non-chunk sentinel `0xFFFFFFFF`; it was neither compiled nor executed, no original production output was modified, and no scientific rerun was warranted or performed.
 
 ## Authenticated outputs used by the manuscript: Study 001
 
@@ -77,6 +91,33 @@ The following Study 002 provenance records establish prospective order and prese
 | Recovery execution authority | `PERFORMANCE_002_RECOVERY_EXECUTION_AUTHORITY.json` | 2026-10-02 06:32:55 | `c4cb2e4c162df92a761b2fff391b6e81e000055db88d7cbaeb954b0750b4e085` |
 
 Locations are relative to the study's internal working directory and are not public addresses.
+
+## Authenticated outputs used by the manuscript: Study 003
+
+All values except the last two rows are authenticated in the Study 003 acceptance record (PHASE2-TORUS-MEMORY-003-ACCEPTED-1). The supplied records give file names, but no internal locations, for the estimate and decision files.
+
+| Output | Supplied name | SHA-256 |
+|---|---|---|
+| 22 estimate records | `estimates.json` | `65a31d9f8c73459aa29c3bc4388ed22a156952a18d71388440bffb38f4c073c4` |
+| 22 estimate records (binary) | not recorded in supplied files | `86879612cee7b9bb091434e511305eec92b2864dbb7fc72e3164c612810246e2` |
+| Decision record | `decisions.json` | `84f88bb17c20593abd222b8e099e2981e725b28968c650dbf306f43441892f09` |
+| Analysis runner receipt (job 53562267) | not recorded in supplied files | `100c0d26627d20808cfdb5b8e0e950b0f307e576cad3ccf765cf046fed976204` |
+| Production manifest (job 53561601) | not recorded in supplied files | `fb91f91676b84babbcb09ee6cd9129e58580249e21d3b223d71880170873bf4c` |
+| Production completion marker | not recorded in supplied files | `ea9763c421161fe8044f6c489b09183f743f4cd8514ab9bab67424f88c1949ff` |
+| Production output inventory (1,962 files; 4,694,355,040 bytes) | not recorded in supplied files | `e4429e98639c6ce4c6f5f98e609530cbbe49e1b2a559d26da0c50a10aaa40ff8` |
+| Production runner receipt | not recorded in supplied files | `f6737bf03d217f8cde8375f7f6ae5e459d6aa8aeb33a65ed2b85284db540fbc6` |
+| Outcome-blind production-output authentication | `TORUS_003_PRODUCTION_OUTPUT_AUTHENTICATION.json` | `21f8e4147b68ba8099b7d0c293f512ec51e269b40e4b816c2c9b81b826e2a865` |
+| Audit attempt-1 failure record (job 53562358; preserved) | `TORUS_003_AUDIT_ATTEMPT1_FAILURE.json` | `a54f2842774f38af0cab5a5ee6564b8ac295baf25549b7695b9f4d0500c45531` |
+| Audit normalization receipt (12 header bytes; derived tree only) | `TORUS_003_AUDIT_NORMALIZATION_RECEIPT.json` | `b66baa25585d2a7d0cb4a1ca3fdc002ed8bc7f3ca9f92b6c48475e64da786b5a` |
+| Recovery audit runner receipt (job 53562452) | `TORUS_003_AUDIT_RECOVERY_RUNNER_RECEIPT.json` | `6ef9d18b51125253b57d59d32c1694a33bda428f54fc83351da0a7d62fee0d5e` |
+| Recovery C++ replay receipt | `cpp_replay_receipt.json` | `497970f5243313a6cd945b69ce9c7eaba7449ceb33ef6d0dfd0d8873811ec5cc` |
+| Recovery Python verification receipt | `python_verify_receipt.json` | `151f88a11c42d36bc9e64c97d98d83afe087e579bfbde4e00762ed13ae73ab11` |
+| Frozen specification, revision 1 | not recorded in supplied files | `0ff662dc31807b0b2cdcae371d884473ed398e2583272d94331bac8c8f9ff0b0` |
+| Design-GO record | not recorded in supplied files | `e5dc485dd858f18eb9652cfe6b63f142e2d09fb6b069d640438cd8dbe63a786d` |
+| Acceptance record (2026-10-02T20:54:51Z) | `PHASE2_STUDY_003_ACCEPTED.json` | `2ac18b3f6c22bc6f11ebbf21ffd8614dbcf24f8f3d028c169e92b2d046b02d5d` |
+| Post-audit source-patch receipt (2026-10-02T20:56:31Z; post-acceptance) | `TORUS_003_POST_AUDIT_SOURCE_PATCH_RECEIPT.json` | no frozen SHA-256; it binds the acceptance record and the attempt-1 failure record |
+
+The acceptance-record SHA-256 is taken from the post-audit source-patch receipt (`accepted_study_sha256`). The source patch changes `src/torus/chunk_io.cpp` from 5,706 bytes (SHA-256 `42ee9884379e537b487e20416ceeda55465c7d662d6e037a0d7f35d2e9d5613f`) to 5,713 bytes (SHA-256 `809c63d24d9584380858d67efab190082df4ae86b472824488d5db3055162867`); the patched source tree contains 81 files. The original authenticated outputs, the failed audit attempt, the normalization receipt and the derived audit tree are all preserved, and these records add or modify no scientific outcome.
 
 ## Prospective design records: Study 001
 

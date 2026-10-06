@@ -1,19 +1,23 @@
 {
-  "schema": "PHASE2-MMEM-FIGURE-BINDINGS-2",
-  "package_version": "1.1.0",
+  "schema": "PHASE2-MMEM-FIGURE-BINDINGS-3",
+  "package_version": "1.2.0",
   "generator": "scripts/make_figures.py",
-  "generator_command": "python scripts/make_figures.py --estimates <estimates_22.json> --decision <decision.json> --s2-estimates <estimates_19.json> --s2-decision <study-002 decision.json> --output-dir <figures-dir>",
+  "generator_command": "python scripts/make_figures.py --estimates <estimates_22.json> --decision <decision.json> --s2-estimates <estimates_19.json> --s2-decision <study-002 decision.json> --s3-estimates <study-003 estimates.json> --s3-decisions <study-003 decisions.json> --output-dir <figures-dir>",
+  "figure_data_schema": "PHASE2-MMEM-FIGURE-DATA-3",
   "generation_status": {
     "v1": "The CLAUDE-017 generator was run by the supervisor; record PHASE2-MUTABLE-MEMORY-001-MANUSCRIPT-V1-VISUAL-QA (2026-10-01T14:12:00Z) gave figure 2 PASS and figures 1 and 3 PATCH_REQUIRED.",
     "v2": "scripts/make_figures.py was patched in CLAUDE-019 (figure 1 layout; figure 3 panel-b x-axis label) and has not been re-run in this source snapshot. Regenerated figures, rebuilt PDFs, their SHA-256 values and the repeated visual QA are recorded by the supervisor in build and patch receipts kept outside this snapshot.",
-    "v1.1.0": "CLAUDE-025 added figure 4 (Study 002) and SHA-256 authentication of all four inputs against the two acceptance records, without running any script. The drawing code of figures 1-3 is unchanged; interval_panel gained optional labels and a shaded meaningful-scale band that only figure 4 uses. Figure 4 does not yet exist; it must be generated, inspected and visually reviewed before release."
+    "v1.1.0": "CLAUDE-025 added figure 4 (Study 002) and SHA-256 authentication of all four inputs against the two acceptance records, without running any script. The drawing code of figures 1-3 is unchanged; interval_panel gained optional labels and a shaded meaningful-scale band that only figure 4 uses. Figure 4 does not yet exist; it must be generated, inspected and visually reviewed before release.",
+    "v1.2.0": "Version 1.2.0 (CLAUDE-037, completed by CLAUDE-038 after a session-limit interruption) added figure 5 (Study 001 and Study 003 side by side) and SHA-256 authentication of the two Study 003 inputs against the Study 003 acceptance record, without running any script. The frozen assignment permitted no change to figures 1-4 beyond cross-references or necessary layout; main() now also loads the Study 003 inputs, and FIGURE_DATA.json uses schema PHASE2-MMEM-FIGURE-DATA-3. The four v1.1.0 figures were built from the v1.1.0 source and are bound, with the v1.1.0 visual QA record MANUSCRIPT_V1_1_VISUAL_QA.json (SHA-256 50994e0b1a6a22179a2323851d0879ae7ca722b846bf01396cced35698aa2c74), in record PHASE2-MUTABLE-MEMORY-PAPER-V1-1-FINAL-SEAL (PUBLICATION_PACKAGE_GO, 2026-10-02T08:14:41Z); for version 1.2.0, figures 1-4 and the new figure 5 must all be regenerated from this source, inspected and visually reviewed before release."
   },
   "note": "All plotted values are read at run time from the inputs below by record name and are written to <figures-dir>/FIGURE_DATA.json with input SHA-256 values and a matches_authenticated flag. No outcome value is embedded in the generator. The generator refuses inputs whose SHA-256 differs from the authenticated value unless --skip-sha-check is given, which is recorded in FIGURE_DATA.json. Input paths are relative to the study working directory.",
   "inputs": {
     "estimates": {"study": "PHASE2-MUTABLE-MEMORY-001", "supplied_name": "estimates_22.json", "schema": "JSON list of 22 records addressed by 'name'; fields estimate_exact, estimate, lower, upper, half_width, classification/family_decision", "path": "postproduction-stage/attempt1/analysis/estimates_22.json", "sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0"},
     "decision": {"study": "PHASE2-MUTABLE-MEMORY-001", "supplied_name": "decision.json", "schema": "object with primary_decision, decision_rule_applied, secondary_classifications", "path": "postproduction-stage/attempt1/analysis/decision.json", "sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0"},
     "s2_estimates": {"study": "PHASE2-PERFORMANCE-CONVERSION-002", "supplied_name": "estimates_19.json", "schema": "JSON list of 19 records addressed by 'name'; fields estimate_exact, estimate, lower, upper, half_width, classification/family_decision", "path": "analysis-stage/performance002_attempt1/results/estimates_19.json", "sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d", "sha256_origin": "PHASE2_STUDY_002_ACCEPTED.json analysis.estimates_sha256"},
-    "s2_decision": {"study": "PHASE2-PERFORMANCE-CONVERSION-002", "supplied_name": "decision.json", "schema": "object with primary_decision, decision_rule_applied, bounded_interval_wholly_inside_minus_delta_plus_delta, secondary_classifications", "path": "analysis-stage/performance002_attempt1/results/decision.json", "sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a", "sha256_origin": "PHASE2_STUDY_002_ACCEPTED.json analysis.decision_sha256"}
+    "s2_decision": {"study": "PHASE2-PERFORMANCE-CONVERSION-002", "supplied_name": "decision.json", "schema": "object with primary_decision, decision_rule_applied, bounded_interval_wholly_inside_minus_delta_plus_delta, secondary_classifications", "path": "analysis-stage/performance002_attempt1/results/decision.json", "sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a", "sha256_origin": "PHASE2_STUDY_002_ACCEPTED.json analysis.decision_sha256"},
+    "s3_estimates": {"study": "PHASE2-TORUS-MEMORY-003", "supplied_name": "estimates.json", "schema": "PHASE2-TORUS-MEMORY-003-ESTIMATES-v1: object whose 'records' list holds 22 records addressed by 'name'; fields exact_value, display.estimate/lower/upper/half_width, family, classification_code", "path": null, "sha256": "65a31d9f8c73459aa29c3bc4388ed22a156952a18d71388440bffb38f4c073c4", "sha256_origin": "PHASE2_STUDY_003_ACCEPTED.json analysis.estimates_json_sha256"},
+    "s3_decisions": {"study": "PHASE2-TORUS-MEMORY-003", "supplied_name": "decisions.json", "schema": "PHASE2-TORUS-MEMORY-003-DECISIONS-v1: object with primary_decision, performance_classes, crossed_interpretation, identity_failure_count, design_sha256, production_manifest_sha256", "path": null, "sha256": "84f88bb17c20593abd222b8e099e2981e725b28968c650dbf306f43441892f09", "sha256_origin": "PHASE2_STUDY_003_ACCEPTED.json analysis.decisions_sha256"}
   },
   "figures": [
     {
@@ -77,8 +81,52 @@
         "B_INFO": "0.009381 [-0.005133, 0.023896]",
         "B_NONINFO": "0.000731 [-0.013783, 0.015246]"
       },
+      "visual_qa": "v1.1.0: covered by MANUSCRIPT_V1_1_VISUAL_QA.json within record PHASE2-MUTABLE-MEMORY-PAPER-V1-1-FINAL-SEAL. v1.2.0: drawing code unchanged; regenerate and re-inspect before release."
+    },
+    {
+      "id": "figure5_operator_bundles",
+      "study": ["PHASE2-MUTABLE-MEMORY-001", "PHASE2-TORUS-MEMORY-003"],
+      "outputs": ["figure5_operator_bundles.png", "figure5_operator_bundles.pdf", "figure5_operator_bundles.svg"],
+      "manuscript_reference": "paper/MANUSCRIPT.md section 3.14, ![Figure 5](figures/figure5_operator_bundles.png); cited in sections 3.13 and 3.15",
+      "data_bindings": {
+        "panel_a_primary_allele_intervals": {
+          "study_001": {"source": "estimates", "records": ["C_abs", "C_rec", "D_HALF", "D_ZERO"]},
+          "study_003": {"source": "s3_estimates", "records": ["C_abs", "C_rec", "D_HALF", "D_ZERO"], "fields": ["exact_value", "display.lower", "display.upper", "display.half_width", "classification_code"]}
+        },
+        "panel_b_performance_intervals": {
+          "study_001": {"source": "estimates", "records": ["P_abs", "P_rec"]},
+          "study_003": {"source": "s3_estimates", "records": ["P_abs", "P_rec"], "fields": ["exact_value", "display.lower", "display.upper", "display.half_width", "classification_code"], "classification": "s3_decisions.performance_classes"}
+        },
+        "row_order": "for each estimand, Study 001 then Study 003; colored by study; never pooled",
+        "meaningful_band": "(-1/32, +1/32), shaded with dotted edges in both panels (design constant)",
+        "scale_meaning": "Allele scale 1/32 = one expected individual in both studies. Performance scale 1/32 = one correct bit per survivor in Study 001 and 1/32 of maximal total torus loss in Study 003; magnitudes are not compared across bundles, only frozen within-study classifications.",
+        "annotation": "decision.primary_decision and decision.secondary_classifications (Study 001); s3_decisions.primary_decision and s3_decisions.performance_classes (Study 003)",
+        "figure_data_fields": "FIGURE_DATA.json figure5_operator_bundles also records s3_decisions.crossed_interpretation, identity_failure_count, design_sha256 and production_manifest_sha256"
+      },
+      "accepted_values_for_visual_check": {
+        "note": "Study 003 values from PHASE2_STUDY_003_ACCEPTED.json and Study 001 values from manuscript Table 1, rounded to six places; for visual QA only. The generator reads the records, not these values.",
+        "study_003": {
+          "C_abs": "0.282878 [0.275067, 0.290688]",
+          "C_rec": "0.424421 [0.408801, 0.440042]",
+          "D_HALF": "-0.000202 [-0.015822, 0.015419]",
+          "D_ZERO": "-0.000240 [-0.015861, 0.015380]",
+          "P_abs": "0.005057 [-0.009458, 0.019571]",
+          "P_rec": "0.006286 [-0.022743, 0.035316]"
+        },
+        "study_001": {
+          "C_abs": "0.310292 [0.302482, 0.318102]",
+          "C_rec": "0.441635 [0.426015, 0.457256]",
+          "D_HALF": "0.000723 [-0.014898, 0.016343]",
+          "D_ZERO": "-0.000096 [-0.015717, 0.015524]",
+          "P_abs": "0.009377 [-0.005138, 0.023892]",
+          "P_rec": "0.011360 [-0.017669, 0.040390]"
+        },
+        "study_003_primary_decision": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT IN THIS ALTERNATIVE OPERATOR BUNDLE",
+        "study_003_performance_classes": {"P_abs": "BOUNDED_BELOW_POSITIVE", "P_rec": "UNRESOLVED"},
+        "study_003_crossed_interpretation": "SELECTION/PERFORMANCE SEPARATION RECURS IN THIS OPERATOR BUNDLE"
+      },
       "visual_qa": "NOT YET RUN"
     }
   ],
-  "pdf_resolution": "scripts/build_pdfs.py --figures-dir <figures-dir> resolves figures/<name>.png by file name and fails if any of the four PNG files is missing."
+  "pdf_resolution": "scripts/build_pdfs.py --figures-dir <figures-dir> resolves figures/<name>.png by file name and fails if any of the five PNG files is missing."
 }

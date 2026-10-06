@@ -1,0 +1,53 @@
+{
+  "status": "COMPLETE",
+  "finish_reason": "stop",
+  "prompt": "$PROJECT_ROOT/assignments/QWEN_037R_MANUSCRIPT_V1_2_CLAIM_REPRO_AUDIT.md",
+  "prompt_sha256": "10cc14f4d4d0c3e1eae391234efed61f8236a17b76550d77882f771783706970",
+  "context_files": [
+    {
+      "path": "provenance/QWEN_037_TRANSPORT_FAILURE.json",
+      "sha256": "bea55b39ef813d10309b4253b0ed90afc01c6ab10f136d764ea7e5cc42e83a1d"
+    },
+    {
+      "path": "$PROJECT_ROOT/QWEN_037R_MANUSCRIPT_V1_2_RECOVERY_AUTHORITY.json",
+      "sha256": "b0696a3bcedd69e533250cdeaed1855eb2eeb6cea4a630ce2e2ac3ec7af996b2"
+    }
+  ],
+  "package_root": "$PROJECT_ROOT/manuscript-v1.2-audit-compact-context",
+  "package_receipt": "$PROJECT_ROOT/MANUSCRIPT_V1_2_AUDIT_COMPACT_CONTEXT_RECEIPT.json",
+  "package_receipt_sha256": "390c439778c11a1cd6f393892b7173fc8d0fec75ac2ef6f21de71f31a30625a8",
+  "package_inventory_sha256": "886c40d97e393343b5541b7b6c460e4a151d701bfded3f628985f16058cc6c3c",
+  "selected_package_files": [
+    "AI_ASSISTANCE.md",
+    "CHUNK_IO_ONE_LINE_PATCH.diff",
+    "DATA_AVAILABILITY.md",
+    "MANUSCRIPT_REVIEW_EXCERPT.md",
+    "MANUSCRIPT_V1_2_BUILD_RECEIPT.json",
+    "MANUSCRIPT_V1_2_FINAL_SOURCE_AUTHENTICATION.json",
+    "MANUSCRIPT_V1_2_VISUAL_QA.json",
+    "PHASE2_STUDY_001_ACCEPTED.json",
+    "PHASE2_STUDY_002_ACCEPTED.json",
+    "PHASE2_STUDY_003_ACCEPTED.json",
+    "QWEN_037_TRANSPORT_FAILURE.json",
+    "STATISTICS_CHECK_FINAL2.json",
+    "SUPPLEMENT_STUDY003_EXCERPT.md",
+    "TORUS_003_AUDIT_ATTEMPT1_FAILURE.json",
+    "TORUS_003_AUDIT_NORMALIZATION_RECEIPT.json",
+    "TORUS_003_POST_AUDIT_SOURCE_PATCH_RECEIPT.json"
+  ],
+  "response_json_sha256": "7736ca4dcb7f7ca99d770dd5c8a73163d895720e04ce80ef44463c2ff12ebc6b",
+  "response_text_sha256": "fecd6a486c1c0c120b66c0339f34761ca2e8e00ea81648d04a3f9bab85cf092e",
+  "response_characters": 3701,
+  "model": "analysis-local",
+  "response_id": "chatcmpl-93f95ea080ea6157",
+  "usage": {
+    "prompt_tokens": 58204,
+    "total_tokens": 59043,
+    "completion_tokens": 839,
+    "prompt_tokens_details": null,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "scientific_execution_performed": false
+}

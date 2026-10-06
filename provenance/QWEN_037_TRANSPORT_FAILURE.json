@@ -1,0 +1,15 @@
+{
+  "assignment_sha256": "9c13e53811d90c5dd871abe4dc1b0e47f58cfd9bfeb450ce035025e842929be3",
+  "context_receipt_sha256": "36f63cfe3ded2adc895a0300802e108eaa35f50a024d813411f3d3252b6cbae1",
+  "created_at_utc": "2026-10-02T23:45:25.849238+00:00",
+  "disposition": "Preserve the 24-file request. Use one bounded compact-context recovery that reviews the exact v1.2 delta and release-source correction without changing source.",
+  "error": "urllib.error.HTTPError: HTTP Error 400: Bad Request",
+  "job_id": "53554732",
+  "model_output_created": false,
+  "record": "QWEN-037-MANUSCRIPT-V1-2-TRANSPORT-FAILURE-1",
+  "result_directory_created": false,
+  "runner_sha256": "d19a0a30106a1ab35b5d000636822e030415c4368aa19661e320b62ed7ed195d",
+  "scientific_execution_performed": false,
+  "service_port": 20732,
+  "status": "HTTP_400_BEFORE_MODEL_OUTPUT"
+}

@@ -1,0 +1,944 @@
+{
+  "schema": "PHASE2-MMEM-CLAIM-EVIDENCE-1",
+  "package_version": "1.1.0",
+  "study_id": "PHASE2-MUTABLE-MEMORY-001",
+  "acceptance_record": "PHASE2-MUTABLE-MEMORY-001-ACCEPTANCE-1 (accepted_at_utc 2026-10-01T13:33:13Z)",
+  "study_002": {
+    "study_id": "PHASE2-PERFORMANCE-CONVERSION-002",
+    "role": "post-v1.0 prospective extension integrated in version 1.1.0",
+    "acceptance_record": "PHASE2-PERFORMANCE-CONVERSION-002-ACCEPTED-1 (accepted_at_utc 2026-10-02T07:10:51.967849+00:00)",
+    "manuscript_disposition": "SUBSTANTIVE_INTEGRATION_INTO_EXISTING_PAPER_WARRANTED; NEW STANDALONE PAPER NOT WARRANTED",
+    "estimate_sets": "The 22 Study 001 records and 19 Study 002 records are separate accepted estimate sets (41 in total); they are not pooled and are not independent replications."
+  },
+  "note": "Paths are relative to the study working directory and are given only where an exact path appears in a supplied record; otherwise the supplied file name is given and path is null. SHA-256 values are those authenticated in the acceptance record, listed in the record-verification receipt, or listed in PHASE2-MUTABLE-MEMORY-001-PROSPECTIVE-TIMING-BINDINGS-1. Numeric literals are checked by scripts/check_statistics.py against provenance/QUOTED_STATISTICS.json.",
+  "sources": {
+    "estimates": {
+      "supplied_name": "estimates_22.json",
+      "path": "postproduction-stage/attempt1/analysis/estimates_22.json",
+      "bytes": 9487,
+      "sha256": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0",
+      "sha256_origin": "acceptance record authenticated_outputs.estimates_22_json_sha256; also records receipt inputs"
+    },
+    "decision": {
+      "supplied_name": "decision.json",
+      "path": "postproduction-stage/attempt1/analysis/decision.json",
+      "bytes": 1615,
+      "sha256": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0",
+      "sha256_origin": "acceptance record authenticated_outputs.decision_json_sha256; also records receipt inputs"
+    },
+    "diagnostics": {
+      "supplied_name": "diagnostics_descriptive.json",
+      "path": null,
+      "sha256": "51554620a5e302416edf8de8a073c6962abbc2c8967da80b91b83e4c3d5b685c",
+      "sha256_origin": "acceptance record authenticated_outputs.diagnostics_json_sha256"
+    },
+    "replay_receipt": {
+      "supplied_name": "production_replay_receipt.json",
+      "path": null,
+      "sha256": "9b40322d0d09b90f0a6862533c1efdc7aff21bd699a882b9b9555c5f7c4b4857",
+      "sha256_origin": "acceptance record authenticated_outputs.independent_replay_receipt_sha256; mapping confirmed by the v1 statistics check (status PASS, sha_check_enforced true, input_sha256.replay_receipt equal)"
+    },
+    "records_receipt": {
+      "supplied_name": "production_records_receipt.json",
+      "path": null,
+      "sha256": "afd96dc0a5b190401c035fc66c8af8fd4d4603e7185d05bff73fb05e698cff5a",
+      "sha256_origin": "acceptance record authenticated_outputs.independent_record_receipt_sha256; mapping confirmed by the v1 statistics check (status PASS, sha_check_enforced true, input_sha256.records_receipt equal)"
+    },
+    "inventory_audit": {
+      "supplied_name": null,
+      "path": null,
+      "sha256": "622fa9e01a40c44ba545926e54b06e102d20b7fcf9e9c8e645ddaf9f7212e09c",
+      "sha256_origin": "acceptance record authenticated_outputs.production_inventory_audit_sha256; file not supplied"
+    },
+    "run_manifest": {
+      "supplied_name": null,
+      "path": "production-stage/attempt1/production/run_manifest.json",
+      "bytes": 14901,
+      "sha256": "3aa50dc2b9c740341c21d996d1356e55319144a58803d1878b13ab762795d9a6",
+      "sha256_origin": "records receipt inputs; file not supplied"
+    },
+    "accepted": {
+      "supplied_name": "PHASE2_STUDY_001_ACCEPTED.json",
+      "path": "PHASE2_STUDY_001_ACCEPTED.json",
+      "sha256": "2eb3aaf5d754f4570a75522aa9e1f38358715c06c674d5a267732a1357926e6f",
+      "sha256_origin": "prospective timing bindings accepted_result.sha256; equal to v1 statistics-check input_sha256.accepted; enforced by scripts/check_statistics.py"
+    },
+    "specification": {
+      "supplied_name": "PHASE2-MUTABLE-MEMORY-001-REV1.md",
+      "path": "design/PHASE2-MUTABLE-MEMORY-001-REV1.md",
+      "revision": 1,
+      "sha256": "c17a3a1e9ac9cf2260f6743eaf08e4c2808080a767af16d2f9e9d2b9ad3e821d",
+      "sha256_origin": "prospective timing bindings design.sha256"
+    },
+    "terminal_design_review": {
+      "supplied_name": "terminal_design_review.md",
+      "path": "results/claude_003/terminal_design_review.md",
+      "sha256": "787cf32a20312f2682c761243f3dec04c5eb8036d14d6efc444e9830db37960a",
+      "worker": "CLAUDE-003 (non-implementing AI reviewer)",
+      "verdict": "GO",
+      "completed_at_utc": "2026-10-01T01:55:25Z",
+      "receipt_path": "results/claude_003/terminal_design_review.receipt.json",
+      "receipt_sha256": "6277757f9ab3dfa611515c161776c17b561738eba6fa478ae0f8634e13c03176",
+      "sha256_origin": "prospective timing bindings terminal_design_review"
+    },
+    "production_authority": {
+      "supplied_name": "PRODUCTION_EXECUTION_AUTHORITY.json",
+      "path": "PRODUCTION_EXECUTION_AUTHORITY.json",
+      "issued_at_utc": "2026-10-01T12:53:04Z",
+      "sha256": "ee3cb68bed5d212e6ea10ece542e2e90c32cb9cea07d85fceda10fc56b375b1d",
+      "sha256_origin": "prospective timing bindings production_authority"
+    },
+    "production_submission": {
+      "supplied_name": "PRODUCTION_JOB_SUBMISSION.json",
+      "path": "PRODUCTION_JOB_SUBMISSION.json",
+      "submitted_at_utc": "2026-10-01T12:55:19Z",
+      "job_id": "53530597",
+      "automatic_retry": false,
+      "parameter_changes": false,
+      "sha256": null,
+      "sha256_origin": "not supplied in the prospective timing bindings"
+    },
+    "prospective_timing_bindings": {
+      "supplied_name": "PROSPECTIVE_TIMING_BINDINGS.json",
+      "record": "PHASE2-MUTABLE-MEMORY-001-PROSPECTIVE-TIMING-BINDINGS-1",
+      "path": null,
+      "sha256": null
+    },
+    "results_note": {
+      "supplied_name": "RESULTS_NOTE.md",
+      "path": null,
+      "sha256": null
+    },
+    "literature_review": {
+      "supplied_name": "LITERATURE_NOVELTY_REVIEW.md",
+      "path": null,
+      "sha256": null,
+      "annotation": "Its narrative names the authors of doi:10.1098/rstb.2024.0109 as 'Leadbeater and Hollis'; that is a metadata error. The correct authors are Leadbeater and Watrobska (reference_metadata_corrections). Annotate the review if it is released."
+    },
+    "literature_search_archive": {
+      "supplied_name": null,
+      "path": null,
+      "sha256": null,
+      "status": "to be included in the public package: search script, API responses, deduplicated records and title screen"
+    },
+    "reference_metadata": {
+      "supplied_name": "selected_references_csl.json",
+      "path": null,
+      "sha256": null
+    },
+    "reference_metadata_corrections": {
+      "supplied_name": "REFERENCE_METADATA_CORRECTIONS.md",
+      "path": null,
+      "sha256": null,
+      "checked_at": "2026-10-01 by the supervisor",
+      "content": "Complete citation for Grabowski et al. 2010 (Artificial Life XII, MIT Press, pp. 224-231, ISBN 978-0-262-29075-3); confirms Leadbeater and Watrobska for doi:10.1098/rstb.2024.0109; the bounded search did not establish a unique nearest precedent."
+    },
+    "s2_estimates": {
+      "supplied_name": "estimates_19.json",
+      "path": "analysis-stage/performance002_attempt1/results/estimates_19.json",
+      "bytes": 8482,
+      "sha256": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d",
+      "sha256_origin": "Study 002 acceptance record analysis.estimates_sha256; source bindings; records receipt inputs"
+    },
+    "s2_decision": {
+      "supplied_name": "decision.json (Study 002)",
+      "path": "analysis-stage/performance002_attempt1/results/decision.json",
+      "bytes": 1917,
+      "sha256": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a",
+      "sha256_origin": "Study 002 acceptance record analysis.decision_sha256; source bindings; records receipt inputs"
+    },
+    "s2_diagnostics": {
+      "supplied_name": "diagnostics_descriptive.json (Study 002)",
+      "path": "analysis-stage/performance002_attempt1/results/diagnostics_descriptive.json",
+      "bytes": 2633,
+      "sha256": "304843eb5d4a38761a6ce371c7cc125260041dfd910b29d5ba3cc377a6ac3553",
+      "sha256_origin": "Study 002 acceptance record analysis.diagnostics_sha256; source bindings"
+    },
+    "s2_replay_receipt": {
+      "supplied_name": "production_replay_receipt.json (Study 002)",
+      "path": "audit-stage/performance002_production_attempt1/production_replay_receipt.json",
+      "bytes": 5554,
+      "sha256": "cbee79527876745e8918576f73a5d302377e4463d959318ca2f5feffa66416d4",
+      "sha256_origin": "Study 002 acceptance record independent_audit.replay_receipt_sha256; source bindings"
+    },
+    "s2_records_receipt": {
+      "supplied_name": "production_records_receipt.json (Study 002)",
+      "path": "audit-stage/performance002_production_attempt1/production_records_receipt.json",
+      "bytes": 41145,
+      "sha256": "09f5dccf4921c8d842ef60fb31aca712bbb582e87a2011c76c02efb658539197",
+      "sha256_origin": "Study 002 acceptance record independent_audit.records_receipt_sha256; source bindings"
+    },
+    "s2_audit_runner_receipt": {
+      "supplied_name": null,
+      "path": "audit-stage/performance002_production_attempt1/AUDIT_RUNNER_RECEIPT.json",
+      "bytes": 2134,
+      "sha256": "32e3ffff29b3de9f20158af58a67c2c130cb7456ec8c7287f67354897928a8ed",
+      "sha256_origin": "source bindings; Study 002 acceptance record independent_audit.runner_receipt_sha256; file not supplied"
+    },
+    "s2_run_manifest": {
+      "supplied_name": null,
+      "path": "production-stage/performance002_attempt2/production/run_manifest.json",
+      "bytes": 15348,
+      "sha256": "b7aceaf6638e8f06246c8fb9b182c280a8ed98c4444d93a4a60decdbafb80136",
+      "sha256_origin": "Study 002 acceptance record production.run_manifest_sha256; records receipt inputs; file not supplied"
+    },
+    "s2_accepted": {
+      "supplied_name": "PHASE2_STUDY_002_ACCEPTED.json",
+      "path": "PHASE2_STUDY_002_ACCEPTED.json",
+      "bytes": 4464,
+      "sha256": "fc7777239cd4442c35c01d6261fd71e6fbf7e7f6fd6e11ddcc5d24876ce2f4a2",
+      "sha256_origin": "PHASE2-PERFORMANCE-CONVERSION-002-SOURCE-BINDINGS-1; enforced by scripts/check_statistics.py"
+    },
+    "s2_specification": {
+      "supplied_name": "PHASE2-PERFORMANCE-CONVERSION-002-REV1.md",
+      "path": "design/PHASE2-PERFORMANCE-CONVERSION-002-REV1.md",
+      "revision": 1,
+      "bytes": 13721,
+      "sha256": "58ee414d753fab042e6cccee1a4e6b95dd7f167633b4f33c1491687d9afcb895",
+      "sha256_origin": "PHASE2-PERFORMANCE-CONVERSION-002-SOURCE-BINDINGS-1; not recomputed by the checker"
+    },
+    "s2_source_bindings": {
+      "supplied_name": "SOURCE_BINDINGS.json",
+      "record": "PHASE2-PERFORMANCE-CONVERSION-002-SOURCE-BINDINGS-1",
+      "created_utc": "2026-10-02T07:10:51.967849+00:00",
+      "path": null,
+      "sha256": null
+    },
+    "s2_quoted_statistics_upstream": {
+      "supplied_name": "QUOTED_STATISTICS.json (Study 002)",
+      "record": "PHASE2-PERFORMANCE-CONVERSION-002-QUOTED-STATISTICS-1",
+      "path": null,
+      "sha256": null,
+      "role": "upstream digest of the 19 records; its values are re-registered in provenance/QUOTED_STATISTICS.json and recomputed from the records"
+    },
+    "s2_results_note": {
+      "supplied_name": "RESULTS_NOTE.md (Study 002)",
+      "path": null,
+      "sha256": null
+    },
+    "s2_failed_original_submission": {
+      "supplied_name": "PERFORMANCE_002_PRODUCTION_ATTEMPT1_FAILURE.json",
+      "path": "PERFORMANCE_002_PRODUCTION_ATTEMPT1_FAILURE.json",
+      "accepted_at_utc": "2026-10-02T06:28:45.272422+00:00",
+      "job_id": "53552434",
+      "runner_exit_status": 64,
+      "scientific_execution_performed": false,
+      "sha256": "289bf3188286476698136d499c12eb3a8c9e4e6fc5cde18fcb15718395f4afaa",
+      "sha256_origin": "direct supervisor authentication"
+    },
+    "s2_recovery_addendum": {
+      "supplied_name": "PHASE2-PERFORMANCE-CONVERSION-002-EXECUTION-RECOVERY-REV1.md",
+      "path": "design/PHASE2-PERFORMANCE-CONVERSION-002-EXECUTION-RECOVERY-REV1.md",
+      "issued_at_utc": "2026-10-02T06:29:59.265954+00:00",
+      "sha256": "db12c0143b6ba2c0b8cd3771ad18b9afe12feb069fe2a97d15227f4fad836e83",
+      "sha256_origin": "direct supervisor authentication"
+    },
+    "s2_design_review": {
+      "supplied_name": "performance_design_terminal_review.md",
+      "path": "results/qwen_014/performance_design_terminal_review.md",
+      "verdict": "DESIGN_GO",
+      "sha256": "76b0c6172e61f60befecef183e83d9e43ea50c1b6bc1e93299668b76f55be60f",
+      "receipt_path": "results/qwen_014/performance_design_terminal_review.receipt.json",
+      "receipt_sha256": "68be3ec35649e62e64cb404179bb6ce6d33743b39959946ee75067f995070c04",
+      "sha256_origin": "direct supervisor authentication"
+    },
+    "s2_design_go": {
+      "supplied_name": "DESIGN_002_GO.json",
+      "path": "DESIGN_002_GO.json",
+      "created_at_utc": "2026-10-01T18:59:00Z",
+      "sha256": "f4a6180109e0d212cbe784a7722a64576e5e7cb0fbfd4b23c757bb5e7ab84d6a",
+      "sha256_origin": "direct supervisor authentication"
+    },
+    "s2_production_authority": {
+      "supplied_name": "PERFORMANCE_002_PRODUCTION_EXECUTION_AUTHORITY.json",
+      "path": "PERFORMANCE_002_PRODUCTION_EXECUTION_AUTHORITY.json",
+      "issued_at_utc": "2026-10-02T06:02:41.744486+00:00",
+      "sha256": "31c2100dd73de0090ded3059525aacd139565917086d2c19880b01e319c98992",
+      "sha256_origin": "direct supervisor authentication"
+    },
+    "s2_recovery_authority": {
+      "supplied_name": "PERFORMANCE_002_RECOVERY_EXECUTION_AUTHORITY.json",
+      "path": "PERFORMANCE_002_RECOVERY_EXECUTION_AUTHORITY.json",
+      "issued_at_utc": "2026-10-02T06:32:55.514310+00:00",
+      "sha256": "c4cb2e4c162df92a761b2fff391b6e81e000055db88d7cbaeb954b0750b4e085",
+      "sha256_origin": "direct supervisor authentication"
+    }
+  },
+  "claims": [
+    {
+      "id": "CL01",
+      "role": "central_joint_result",
+      "text": "Lag-two recurrence strongly enriched the mutation-generated memory-use allele under the one-proposal opportunity cost, while the recurrent-law ACTIVE minus SHAM accuracy contrast was bounded below the one-correct-bit scale with sign unresolved and the recurrence interaction in accuracy was unresolved.",
+      "locations": [
+        "MANUSCRIPT.md: title, Abstract, 1 (final paragraph), 3.5",
+        "SUPPLEMENT.md: S1, S14"
+      ],
+      "evidence": [
+        {
+          "source": "decision",
+          "fields": [
+            "primary_decision",
+            "decision_rule_applied",
+            "secondary_classifications"
+          ]
+        },
+        {
+          "source": "estimates",
+          "records": [
+            "C_abs",
+            "C_rec",
+            "D_HALF",
+            "D_ZERO",
+            "P_abs",
+            "P_rec"
+          ]
+        },
+        {
+          "source": "accepted",
+          "fields": [
+            "primary_decision",
+            "secondary_decisions",
+            "claim_limit"
+          ]
+        }
+      ],
+      "must_not_be_split": true,
+      "limits": "One aligned recurrent law (HALF), one fixed cost, supplied cache architecture; the allele jointly controls cache retention and retrieval; population benefit not demonstrated."
+    },
+    {
+      "id": "CL02",
+      "role": "primary_inference",
+      "text": "C_abs = 0.310292 [0.302482, 0.318102] and C_rec = 0.441635 [0.426015, 0.457256]; both lower bounds exceed 1/32; rule 3 applied.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 3.3, Table 1",
+        "SUPPLEMENT.md: S10, S11"
+      ],
+      "evidence": [
+        {
+          "source": "estimates",
+          "records": [
+            "C_abs",
+            "C_rec"
+          ],
+          "fields": [
+            "estimate_exact",
+            "lower",
+            "upper",
+            "half_width",
+            "family_decision"
+          ]
+        },
+        {
+          "source": "decision",
+          "fields": [
+            "decision_rule_applied"
+          ]
+        }
+      ],
+      "independent_check": "check_statistics.py recomputes estimates exactly from the 16 descriptive means and endpoints from the Hoeffding-Bonferroni formula."
+    },
+    {
+      "id": "CL03",
+      "role": "start_state_gate",
+      "text": "D_HALF = 0.000723 [-0.014898, 0.016343] and D_ZERO = -0.000096 [-0.015717, 0.015524] both lie inside (-1/32, +1/32); rule 2 not triggered. Stated as passage of the prespecified finite-horizon +/-1/32 start-state gate: late-window start contrasts bounded within one expected individual (95% familywise) over the 256-update horizon.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 2.7, 3.2, 3.5, 4, 5, Table 1",
+        "SUPPLEMENT.md: S10, S14"
+      ],
+      "evidence": [
+        {
+          "source": "estimates",
+          "records": [
+            "D_HALF",
+            "D_ZERO"
+          ]
+        }
+      ],
+      "limits": "Gate passage at the one-individual scale over 256 updates only; not general start-independence, not a mutation-selection balance, not stationarity or equilibrium."
+    },
+    {
+      "id": "CL04",
+      "role": "secondary_inference",
+      "text": "P_abs = 0.009377 [-0.005138, 0.023892], BOUNDED BELOW THE POSITIVE ONE-BIT SCALE, sign unresolved; P_rec = 0.011360 [-0.017669, 0.040390], UNRESOLVED; secondary family cannot alter the primary decision.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 3.4, 3.5, Table 1",
+        "SUPPLEMENT.md: S10"
+      ],
+      "evidence": [
+        {
+          "source": "estimates",
+          "records": [
+            "P_abs",
+            "P_rec"
+          ],
+          "fields": [
+            "classification",
+            "relation_to_allele_enrichment_descriptive",
+            "cannot_alter_primary_decision"
+          ]
+        },
+        {
+          "source": "decision",
+          "fields": [
+            "secondary_classifications"
+          ]
+        }
+      ],
+      "limits": "P_abs is an ACTIVE-SHAM arm-level contrast within the model, not a path-level counterfactual; the P_rec half-width was fixed in the frozen specification."
+    },
+    {
+      "id": "CL05",
+      "role": "retained_adverse_descriptive",
+      "text": "Under ZERO, start-averaged ACTIVE accuracy (0.605327) was descriptively below SHAM (0.607310), a contrast of -0.001983; no inferential bound was frozen.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 3.4, 4, 5",
+        "SUPPLEMENT.md: S11, S14"
+      ],
+      "evidence": [
+        {
+          "source": "estimates",
+          "records": [
+            "ACCURACY_LATE|ACTIVE|ZERO|ALL_F",
+            "ACCURACY_LATE|ACTIVE|ZERO|ALL_M",
+            "ACCURACY_LATE|SHAM|ZERO|ALL_F",
+            "ACCURACY_LATE|SHAM|ZERO|ALL_M"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CL06",
+      "role": "descriptive_means",
+      "text": "The 16 absolute cell means (late-window memory-use frequency and accuracy for 8 cells) are descriptive only and are reported in full.",
+      "locations": [
+        "MANUSCRIPT.md: 3.3, 3.4, Table 2",
+        "SUPPLEMENT.md: S11"
+      ],
+      "evidence": [
+        {
+          "source": "estimates",
+          "records": "records 7-22",
+          "fields": [
+            "estimate_exact",
+            "classification"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CL07",
+      "role": "neutral_benchmark",
+      "text": "SHAM gives exact identities N1 and N2; start-averaged SHAM frequency is exactly 1/2 per block; expected start difference r^256 = 6.678005283720385e-08 and late-window average 9.57983820600146e-07 with r = 15/16. SHAM is an exact neutral benchmark for the label process and a paired control for query budget and keyed random draws; because ACTIVE genotypes and genealogies diverge at the first valid-M retrieval, it does not hold realised drift or genotype state fixed for ACTIVE paths.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 1, 2.5, 5",
+        "SUPPLEMENT.md: S8"
+      ],
+      "evidence": [
+        {
+          "source": "specification",
+          "sections": [
+            "8"
+          ]
+        },
+        {
+          "source": "records_receipt",
+          "fields": [
+            "checked.blocks_with_both_sham_identities"
+          ]
+        },
+        {
+          "source": "estimates",
+          "records": "SHAM cell means 11-14, 19-22"
+        }
+      ],
+      "independent_check": "check_statistics.py recomputes both neutral expressions in exact rational arithmetic and verifies N1/N2 on the saved means."
+    },
+    {
+      "id": "CL08",
+      "role": "scope",
+      "text": "41,600 independent paired blocks, 8 cells per block, 332,800 paths, 85,196,800 path-updates and 10,905,190,400 objective queries; 22 saved estimate records; 0 post-outcome changes.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 2.5, 3.1",
+        "SUPPLEMENT.md: S1, S12"
+      ],
+      "evidence": [
+        {
+          "source": "accepted",
+          "fields": [
+            "scope"
+          ]
+        },
+        {
+          "source": "diagnostics",
+          "fields": [
+            "total_objective_queries"
+          ]
+        },
+        {
+          "source": "records_receipt",
+          "fields": [
+            "checked.block_records",
+            "checked.path_records",
+            "checked.update_records"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CL09",
+      "role": "audit",
+      "text": "Separately written C++ replay (blocks 0-63; 512 paths; 16,777,216 audit rows) and Python record verification (all 41,600 blocks; 22 estimates) both returned PASS with zero mismatches. These are separately implemented internal reproducibility audits, not external peer review and not independent scientific replication. Producer and audit tools were both written with AI assistance from the same specification; the audits detect implementation divergence, not a shared misreading of the specification.",
+      "locations": [
+        "MANUSCRIPT.md: 3.1, 5",
+        "SUPPLEMENT.md: S13"
+      ],
+      "evidence": [
+        {
+          "source": "replay_receipt",
+          "fields": [
+            "status",
+            "mismatch_count",
+            "first_discrepancy",
+            "checked",
+            "expected",
+            "known_answer_tests_pass"
+          ]
+        },
+        {
+          "source": "records_receipt",
+          "fields": [
+            "status",
+            "mismatch_count",
+            "first_discrepancy",
+            "checked",
+            "expected",
+            "self_checks_pass"
+          ]
+        },
+        {
+          "source": "accepted",
+          "fields": [
+            "independent_audit_job"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CL10",
+      "role": "design_interpretation",
+      "text": "The opportunity cost is a model-specific search-budget trade-off (retrieval replaces one of two effectively uniform fresh proposals), not a calibrated energetic or biological cost; HALF matches the recurrence lag to the retrieval delay and favors retrieval by construction; no other lag, copy probability, cost, target process or model class was tested; the allele jointly determines cache retention and retrieval, so selection on the two is not separated.",
+      "locations": [
+        "MANUSCRIPT.md: 2.1, 2.2, 2.3, 4, 5",
+        "SUPPLEMENT.md: S3, S4, S6, S14"
+      ],
+      "evidence": [
+        {
+          "source": "specification",
+          "sections": [
+            "4",
+            "5",
+            "15"
+          ]
+        },
+        {
+          "source": "decision",
+          "fields": [
+            "interpretation_labels"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CL11",
+      "role": "literature_boundary",
+      "text": "Broad claims that memory evolves, predictability favors memory, or costly memory can evolve are occupied by prior work; the contribution is the joint design and a new implementation and cohort. Morgan, Suchow and Griffiths is described only as a close precedent among studies identified by the bounded search; no ranking or unique nearest precedent is claimed.",
+      "locations": [
+        "MANUSCRIPT.md: 1, 4, 5, References"
+      ],
+      "evidence": [
+        {
+          "source": "literature_review",
+          "sections": [
+            "Closest prior results",
+            "Novelty decision",
+            "Limits of this review"
+          ]
+        },
+        {
+          "source": "reference_metadata"
+        },
+        {
+          "source": "reference_metadata_corrections"
+        }
+      ],
+      "resolved_items": [
+        "Reference 6 completed from the supervisor's metadata correction (Grabowski LM, Bryson DM, Dyer FC, Ofria C, Pennock RT; Artificial Life XII, MIT Press, 2010, pp. 224-231, ISBN 978-0-262-29075-3). The in-text statement is limited to what the title supports.",
+        "Authors of doi:10.1098/rstb.2024.0109 confirmed as Leadbeater and Watrobska; the draft already followed this."
+      ]
+    },
+    {
+      "id": "CL12",
+      "role": "claim_limits",
+      "text": "No claim of memory-architecture origin, separate selection on cache retention versus retrieval, general start-independence, rare invasion, fixation probability, stationarity, equilibrium, evolutionary stability, arbitrary recurrence, general cost scale, population benefit, biological extrapolation, priority/global novelty, or replication of earlier internal studies.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 4, 5",
+        "SUPPLEMENT.md: S14"
+      ],
+      "evidence": [
+        {
+          "source": "accepted",
+          "fields": [
+            "claim_limit"
+          ]
+        },
+        {
+          "source": "decision",
+          "fields": [
+            "interpretation_labels"
+          ]
+        },
+        {
+          "source": "specification",
+          "sections": [
+            "15"
+          ]
+        },
+        {
+          "source": "results_note",
+          "sections": [
+            "Claim limits"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CL13",
+      "role": "prospective_design_provenance",
+      "text": "The frozen specification (revision 1) and its terminal GO review by a non-implementing AI reviewer (2026-10-01T01:55:25Z) precede the production execution authority (12:53:04Z) and the sole production submission (job 53530597, 12:55:19Z, no automatic retry, no parameter changes); acceptance record SHA-256 2eb3aaf5d754f4570a75522aa9e1f38358715c06c674d5a267732a1357926e6f.",
+      "locations": [
+        "MANUSCRIPT.md: 2, 7, 8",
+        "SUPPLEMENT.md: S13, S15"
+      ],
+      "evidence": [
+        {
+          "source": "prospective_timing_bindings"
+        },
+        {
+          "source": "specification"
+        },
+        {
+          "source": "terminal_design_review"
+        },
+        {
+          "source": "production_authority"
+        },
+        {
+          "source": "production_submission"
+        },
+        {
+          "source": "accepted"
+        }
+      ],
+      "limits": "Establishes prospective design provenance only; adds or modifies no scientific outcome. The design and review hashes are quoted from the timing record and are not recomputed by scripts/check_statistics.py; the acceptance-record hash is."
+    },
+    {
+      "id": "CL14",
+      "role": "two_study_central_result",
+      "text": "Recurrence selected a costly memory-use policy (Study 001), and directional cache information strongly amplified selection on that policy relative to a recurrence-gated, parent-distance-matched NONINFO control (Study 002), while the total population-accuracy effect of directional information was bounded below the positive one-bit scale with sign unresolved and no resolved accuracy gain over SHAM was found in either study.",
+      "locations": [
+        "MANUSCRIPT.md: title, Abstract, 1 (final paragraph), 3.10, 4",
+        "SUPPLEMENT.md: S1, S16, S25"
+      ],
+      "evidence": [
+        {
+          "source": "s2_decision",
+          "fields": [
+            "primary_decision",
+            "decision_rule_applied",
+            "secondary_classifications",
+            "interpretive_branch"
+          ]
+        },
+        {
+          "source": "s2_estimates",
+          "records": [
+            "Delta_P",
+            "E_INFO",
+            "E_NONINFO",
+            "B_INFO",
+            "B_NONINFO"
+          ]
+        },
+        {
+          "source": "s2_accepted",
+          "fields": [
+            "scientific_conclusion",
+            "manuscript_disposition"
+          ]
+        },
+        {
+          "source": "decision",
+          "fields": [
+            "primary_decision",
+            "secondary_classifications"
+          ]
+        }
+      ],
+      "must_not_be_split": true,
+      "limits": "Total effect through evolved policy use, not per-use; one HALF law aligned to the cache delay, one cost, one mutation rate, one horizon and one model class; supplied cache; the 22 and 19 records are separate estimate sets and are not independent replications."
+    },
+    {
+      "id": "CL15",
+      "role": "study_002_primary_inference",
+      "text": "Delta_P = 0.00864996836735652 (0.008650) with familywise interval [-0.006521316095375593, 0.023821252830088634]; the interval contains zero and lies wholly inside (-1/32, +1/32); decision rule 5: BOUNDED BELOW THE POSITIVE ONE-BIT SCALE.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 2.8, 3.8, Table 3, Figure 4",
+        "SUPPLEMENT.md: S16, S21, S22"
+      ],
+      "evidence": [
+        {
+          "source": "s2_estimates",
+          "records": [
+            "Delta_P"
+          ],
+          "fields": [
+            "estimate_exact",
+            "lower",
+            "upper",
+            "half_width",
+            "family_decision"
+          ]
+        },
+        {
+          "source": "s2_decision",
+          "fields": [
+            "primary_decision",
+            "decision_rule_applied",
+            "bounded_interval_wholly_inside_minus_delta_plus_delta"
+          ]
+        },
+        {
+          "source": "s2_accepted",
+          "fields": [
+            "primary"
+          ]
+        }
+      ],
+      "independent_check": "check_statistics.py recomputes Delta_P exactly from the 12 descriptive means, the endpoints from the Hoeffding-Bonferroni formula with alpha_each 0.05/3, the decision order, and the wholly-inside flag.",
+      "limits": "Delta_P is the total population-accuracy effect of directional cache information beyond the parent and matched displacement length, mediated through evolved policy use; it is not a per-use value-of-information estimate."
+    },
+    {
+      "id": "CL16",
+      "role": "study_002_start_state_gate",
+      "text": "D_INFO = 0.000129 [-0.015042, 0.015301] and D_NONINFO = -0.001268 [-0.016439, 0.013903] both lie inside (-1/32, +1/32); rule 2 not triggered.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 3.7, Table 3, Figure 4",
+        "SUPPLEMENT.md: S21, S22"
+      ],
+      "evidence": [
+        {
+          "source": "s2_estimates",
+          "records": [
+            "D_INFO",
+            "D_NONINFO"
+          ]
+        }
+      ],
+      "limits": "Finite-horizon gate at the one-individual scale over 256 updates only."
+    },
+    {
+      "id": "CL17",
+      "role": "study_002_secondary_allele",
+      "text": "E_INFO = 0.184203 [0.169688, 0.198718] and E_NONINFO = 0.126083 [0.118825, 0.133340]; both MEANINGFUL POSITIVE AT THE ONE-BIT SCALE; cannot alter the primary decision.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 3.9, 3.10, 4, Table 3, Figure 4",
+        "SUPPLEMENT.md: S21, S22"
+      ],
+      "evidence": [
+        {
+          "source": "s2_estimates",
+          "records": [
+            "E_INFO",
+            "E_NONINFO"
+          ],
+          "fields": [
+            "classification",
+            "cannot_alter_primary_decision"
+          ]
+        },
+        {
+          "source": "s2_decision",
+          "fields": [
+            "secondary_classifications",
+            "e_info_lower_exceeds_delta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CL18",
+      "role": "study_002_secondary_performance",
+      "text": "B_INFO = 0.009381 [-0.005133, 0.023896] and B_NONINFO = 0.000731 [-0.013783, 0.015246]; both BOUNDED BELOW THE POSITIVE ONE-BIT SCALE with unresolved signs; lower(B_INFO) does not exceed 1/32, so no one-bit benefit relative to no-memory use is demonstrated.",
+      "locations": [
+        "MANUSCRIPT.md: 3.9, 3.10, 5, Table 3, Figure 4",
+        "SUPPLEMENT.md: S21, S22, S25"
+      ],
+      "evidence": [
+        {
+          "source": "s2_estimates",
+          "records": [
+            "B_INFO",
+            "B_NONINFO"
+          ]
+        },
+        {
+          "source": "s2_decision",
+          "fields": [
+            "secondary_classifications",
+            "b_info_lower_exceeds_delta"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CL19",
+      "role": "study_002_design_and_control_geometry",
+      "text": "One HALF law; INFO, recurrence-gated parent-distance-matched NONINFO and SHAM arms; ALL_F and ALL_M starts; one shared Fisher-Yates permutation per block and update preserves parent distance and one common coordinate relabeling but not every cross-genotype relation; weight-0 and weight-32 displacements retain direction (42,175,734 and 45,696,359 weight-0 decoy applications; no weight-32 cases).",
+      "locations": [
+        "MANUSCRIPT.md: 1, 2.8, 4, 5",
+        "SUPPLEMENT.md: S17, S18, S23, S25"
+      ],
+      "evidence": [
+        {
+          "source": "s2_specification",
+          "sections": [
+            "4",
+            "5",
+            "7",
+            "15"
+          ]
+        },
+        {
+          "source": "s2_diagnostics",
+          "fields": [
+            "per_cell_total_decoy_w0",
+            "per_cell_total_decoy_w32",
+            "per_cell_total_decoy_use"
+          ]
+        },
+        {
+          "source": "s2_decision",
+          "fields": [
+            "interpretation_labels"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CL20",
+      "role": "study_002_scope_and_audit",
+      "text": "41,600 independent paired blocks, 6 cells per block, 249,600 paths, 63,897,600 path-updates, 8,178,892,800 objective queries, 19 saved estimate records; replay of blocks 0-63 (384 paths, 98,304 update records, 12,582,912 audit rows, 16,384 permutation records) and full record verification both PASS with zero mismatches. Internal reproducibility audits, not external peer review or independent replication.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 2.8, 3.6",
+        "SUPPLEMENT.md: S16, S24"
+      ],
+      "evidence": [
+        {
+          "source": "s2_accepted",
+          "fields": [
+            "production",
+            "analysis",
+            "independent_audit"
+          ]
+        },
+        {
+          "source": "s2_replay_receipt",
+          "fields": [
+            "status",
+            "mismatch_count",
+            "checked",
+            "expected",
+            "known_answer_tests"
+          ]
+        },
+        {
+          "source": "s2_records_receipt",
+          "fields": [
+            "status",
+            "mismatch_count",
+            "checked",
+            "expected",
+            "self_checks"
+          ]
+        },
+        {
+          "source": "s2_diagnostics",
+          "fields": [
+            "total_objective_queries"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CL21",
+      "role": "study_002_execution_history",
+      "text": "The original Study 002 production submission failed at command-line validation (missing required --design-go; exit status 64) with no production output, random draw, model execution or outcome; a prospective recovery addendum preceded the corrected run (job 53553084).",
+      "locations": [
+        "MANUSCRIPT.md: 3.6, 7",
+        "SUPPLEMENT.md: S24, S26"
+      ],
+      "evidence": [
+        {
+          "source": "s2_failed_original_submission"
+        },
+        {
+          "source": "s2_recovery_addendum"
+        },
+        {
+          "source": "s2_accepted",
+          "fields": [
+            "production.job_id"
+          ]
+        },
+        {
+          "source": "s2_replay_receipt",
+          "fields": [
+            "inputs (attempt-2 production paths)"
+          ]
+        }
+      ],
+      "limits": "Infrastructure-only; no scientific value. The failure and the addendum are stated from the task record; neither file was supplied to this revision, so no hash or time is quoted."
+    },
+    {
+      "id": "CL22",
+      "role": "study_002_claim_limits",
+      "text": "No claim of spontaneous memory origin, general population utility, biological relevance, equilibrium, invasion, stability, priority, per-use causal or value-of-information effect, separation of retention from retrieval, independent replication of Study 001 or independent model-class reproduction; no grid, cost sweep, new cohort, lag variant or numerical extension is proposed.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 4, 5",
+        "SUPPLEMENT.md: S16, S25"
+      ],
+      "evidence": [
+        {
+          "source": "s2_accepted",
+          "fields": [
+            "limits",
+            "no_extension"
+          ]
+        },
+        {
+          "source": "s2_decision",
+          "fields": [
+            "interpretation_labels"
+          ]
+        },
+        {
+          "source": "s2_specification",
+          "sections": [
+            "1",
+            "15"
+          ]
+        }
+      ]
+    }
+  ]
+}

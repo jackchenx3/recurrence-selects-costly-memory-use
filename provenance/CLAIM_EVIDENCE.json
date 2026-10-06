@@ -1,6 +1,6 @@
 {
   "schema": "PHASE2-MMEM-CLAIM-EVIDENCE-1",
-  "package_version": "1.1.0",
+  "package_version": "1.2.0",
   "study_id": "PHASE2-MUTABLE-MEMORY-001",
   "acceptance_record": "PHASE2-MUTABLE-MEMORY-001-ACCEPTANCE-1 (accepted_at_utc 2026-10-01T13:33:13Z)",
   "study_002": {
@@ -9,6 +9,14 @@
     "acceptance_record": "PHASE2-PERFORMANCE-CONVERSION-002-ACCEPTED-1 (accepted_at_utc 2026-10-02T07:10:51.967849+00:00)",
     "manuscript_disposition": "SUBSTANTIVE_INTEGRATION_INTO_EXISTING_PAPER_WARRANTED; NEW STANDALONE PAPER NOT WARRANTED",
     "estimate_sets": "The 22 Study 001 records and 19 Study 002 records are separate accepted estimate sets (41 in total); they are not pooled and are not independent replications."
+  },
+  "study_003": {
+    "study_id": "PHASE2-TORUS-MEMORY-003",
+    "role": "post-v1.1 prospective extension integrated in version 1.2.0; one independently implemented alternative operator bundle (32-locus, 2^16-allele torus with graded circular loss and four-entry tournament survival)",
+    "acceptance_record": "PHASE2-TORUS-MEMORY-003-ACCEPTED-1 (accepted_at_utc 2026-10-02T20:54:51.358509+00:00)",
+    "manuscript_disposition": "SUBSTANTIVE_INTEGRATION_INTO_EXISTING_PAPER_AS_V1.2_WARRANTED; NEW_STANDALONE_PAPER_NOT_WARRANTED",
+    "estimate_sets": "The 22 Study 001, 19 Study 002 and 22 Study 003 records are three separately accepted estimate sets (63 in total), each with its own familywise families; none is pooled with another and they are not presented as independent replications.",
+    "construction_provenance": "Integrated by CLAUDE-037 (six files edited; stopped at a temporary account session limit, record PHASE2-MMEM-CLAUDE-037-SESSION-LIMIT-PARTIAL-1) and completed by CLAUDE-038 from the preserved partial source under the identical frozen assignment; no script or scientific computation was run."
   },
   "note": "Paths are relative to the study working directory and are given only where an exact path appears in a supplied record; otherwise the supplied file name is given and path is null. SHA-256 values are those authenticated in the acceptance record, listed in the record-verification receipt, or listed in PHASE2-MUTABLE-MEMORY-001-PROSPECTIVE-TIMING-BINDINGS-1. Numeric literals are checked by scripts/check_statistics.py against provenance/QUOTED_STATISTICS.json.",
   "sources": {
@@ -262,6 +270,138 @@
       "issued_at_utc": "2026-10-02T06:32:55.514310+00:00",
       "sha256": "c4cb2e4c162df92a761b2fff391b6e81e000055db88d7cbaeb954b0750b4e085",
       "sha256_origin": "direct supervisor authentication"
+    },
+    "s3_estimates": {
+      "supplied_name": "estimates.json",
+      "schema": "PHASE2-TORUS-MEMORY-003-ESTIMATES-v1",
+      "path": null,
+      "sha256": "65a31d9f8c73459aa29c3bc4388ed22a156952a18d71388440bffb38f4c073c4",
+      "sha256_origin": "Study 003 acceptance record analysis.estimates_json_sha256; enforced by scripts/check_statistics.py and scripts/make_figures.py"
+    },
+    "s3_estimates_binary": {
+      "supplied_name": null,
+      "path": null,
+      "sha256": "86879612cee7b9bb091434e511305eec92b2864dbb7fc72e3164c612810246e2",
+      "sha256_origin": "Study 003 acceptance record analysis.estimates_binary_sha256; file not supplied"
+    },
+    "s3_decisions": {
+      "supplied_name": "decisions.json",
+      "schema": "PHASE2-TORUS-MEMORY-003-DECISIONS-v1",
+      "path": null,
+      "sha256": "84f88bb17c20593abd222b8e099e2981e725b28968c650dbf306f43441892f09",
+      "sha256_origin": "Study 003 acceptance record analysis.decisions_sha256; enforced by scripts/check_statistics.py and scripts/make_figures.py"
+    },
+    "s3_analysis_runner_receipt": {
+      "supplied_name": null,
+      "job_id": "53562267",
+      "path": null,
+      "sha256": "100c0d26627d20808cfdb5b8e0e950b0f307e576cad3ccf765cf046fed976204",
+      "sha256_origin": "Study 003 acceptance record analysis.runner_receipt_sha256; file not supplied"
+    },
+    "s3_production": {
+      "supplied_name": null,
+      "job_id": "53561601",
+      "path": null,
+      "manifest_sha256": "fb91f91676b84babbcb09ee6cd9129e58580249e21d3b223d71880170873bf4c",
+      "complete_marker_sha256": "ea9763c421161fe8044f6c489b09183f743f4cd8514ab9bab67424f88c1949ff",
+      "output_inventory_sha256": "e4429e98639c6ce4c6f5f98e609530cbbe49e1b2a559d26da0c50a10aaa40ff8",
+      "runner_receipt_sha256": "f6737bf03d217f8cde8375f7f6ae5e459d6aa8aeb33a65ed2b85284db540fbc6",
+      "output_files": 1962,
+      "output_bytes": 4694355040,
+      "sha256_origin": "Study 003 acceptance record production; files not supplied; manifest, marker, inventory and runner hashes cross-checked by scripts/check_statistics.py through the production-output authentication"
+    },
+    "s3_production_authentication": {
+      "supplied_name": "TORUS_003_PRODUCTION_OUTPUT_AUTHENTICATION.json",
+      "path": null,
+      "sha256": "21f8e4147b68ba8099b7d0c293f512ec51e269b40e4b816c2c9b81b826e2a865",
+      "sha256_origin": "Study 003 acceptance record production.output_authentication_sha256; enforced by scripts/check_statistics.py"
+    },
+    "s3_audit_failure": {
+      "supplied_name": "TORUS_003_AUDIT_ATTEMPT1_FAILURE.json",
+      "job_id": "53562358",
+      "status": "PRESERVED_NONSCIENTIFIC_HEADER_INTERFACE_FAILURE",
+      "scientific_payload_replay_completed": false,
+      "path": null,
+      "sha256": "a54f2842774f38af0cab5a5ee6564b8ac295baf25549b7695b9f4d0500c45531",
+      "sha256_origin": "Study 003 acceptance record independent_audit.attempt1.failure_record_sha256; also source-patch receipt preserved_failure_record_sha256; enforced by scripts/check_statistics.py"
+    },
+    "s3_normalization_receipt": {
+      "supplied_name": "TORUS_003_AUDIT_NORMALIZATION_RECEIPT.json",
+      "path": null,
+      "sha256": "b66baa25585d2a7d0cb4a1ca3fdc002ed8bc7f3ca9f92b6c48475e64da786b5a",
+      "sha256_origin": "Study 003 acceptance record independent_audit.recovery.normalization_receipt_sha256; enforced by scripts/check_statistics.py"
+    },
+    "s3_recovery_runner_receipt": {
+      "supplied_name": "TORUS_003_AUDIT_RECOVERY_RUNNER_RECEIPT.json",
+      "job_id": "53562452",
+      "path": null,
+      "sha256": "6ef9d18b51125253b57d59d32c1694a33bda428f54fc83351da0a7d62fee0d5e",
+      "sha256_origin": "Study 003 acceptance record independent_audit.recovery.runner_receipt_sha256; enforced by scripts/check_statistics.py"
+    },
+    "s3_cpp_replay_receipt": {
+      "supplied_name": "cpp_replay_receipt.json",
+      "path": null,
+      "sha256": "497970f5243313a6cd945b69ce9c7eaba7449ceb33ef6d0dfd0d8873811ec5cc",
+      "sha256_origin": "Study 003 acceptance record independent_audit.recovery.cpp_replay_receipt_sha256; enforced by scripts/check_statistics.py"
+    },
+    "s3_python_verify_receipt": {
+      "supplied_name": "python_verify_receipt.json",
+      "path": null,
+      "sha256": "151f88a11c42d36bc9e64c97d98d83afe087e579bfbde4e00762ed13ae73ab11",
+      "sha256_origin": "Study 003 acceptance record independent_audit.recovery.python_verify_receipt_sha256; checked by scripts/check_statistics.py against the recovery runner receipt; file not a checker input"
+    },
+    "s3_accepted": {
+      "supplied_name": "PHASE2_STUDY_003_ACCEPTED.json",
+      "record": "PHASE2-TORUS-MEMORY-003-ACCEPTED-1",
+      "accepted_at_utc": "2026-10-02T20:54:51.358509+00:00",
+      "path": null,
+      "sha256": "2ac18b3f6c22bc6f11ebbf21ffd8614dbcf24f8f3d028c169e92b2d046b02d5d",
+      "sha256_origin": "TORUS_003_POST_AUDIT_SOURCE_PATCH_RECEIPT.json accepted_study_sha256; enforced by scripts/check_statistics.py"
+    },
+    "s3_specification": {
+      "supplied_name": null,
+      "record": "PHASE2-TORUS-MEMORY-003 revision 1",
+      "path": null,
+      "sha256": "0ff662dc31807b0b2cdcae371d884473ed398e2583272d94331bac8c8f9ff0b0",
+      "sha256_origin": "Study 003 acceptance record design.sha256; equality with decisions.json design_sha256 checked by scripts/check_statistics.py; not recomputed from the file"
+    },
+    "s3_design_go": {
+      "supplied_name": null,
+      "path": null,
+      "sha256": "e5dc485dd858f18eb9652cfe6b63f142e2d09fb6b069d640438cd8dbe63a786d",
+      "sha256_origin": "Study 003 acceptance record design.design_go_sha256; equality with decisions.json design_go_record_sha256 checked by scripts/check_statistics.py; not recomputed from the file"
+    },
+    "s3_source_patch_receipt": {
+      "supplied_name": "TORUS_003_POST_AUDIT_SOURCE_PATCH_RECEIPT.json",
+      "record": "PHASE2-TORUS-MEMORY-003-POST-AUDIT-SOURCE-PATCH-1",
+      "created_at_utc": "2026-10-02T20:56:31.361421+00:00",
+      "status": "SOURCE_ONLY_PATCH_COMPLETE_UNEXECUTED",
+      "changed_file": "src/torus/chunk_io.cpp (5,706 bytes, SHA-256 42ee9884379e537b487e20416ceeda55465c7d662d6e037a0d7f35d2e9d5613f, to 5,713 bytes, SHA-256 809c63d24d9584380858d67efab190082df4ae86b472824488d5db3055162867)",
+      "exact_patch": {
+        "before": "FileHeader h{magic, row, expected, ns, 0, 0, kAuditBlocks};",
+        "after": "FileHeader h{magic, row, expected, ns, kNoChunk, 0, kAuditBlocks};"
+      },
+      "compiled_or_executed": false,
+      "original_production_outputs_modified": false,
+      "scientific_rerun_required": false,
+      "path": null,
+      "sha256": null,
+      "sha256_origin": "post-acceptance record with no frozen SHA-256; scripts/check_statistics.py verifies that it binds the supplied acceptance and attempt-1 failure records"
+    },
+    "s3_task_assignment": {
+      "supplied_name": "CLAUDE_037_MANUSCRIPT_V1_2_INTEGRATION.md",
+      "role": "frozen integration requirements and claim limits for version 1.2.0, shared by CLAUDE-037 and its continuation CLAUDE-038",
+      "path": null,
+      "sha256": null
+    },
+    "s3_session_limit_record": {
+      "supplied_name": "TORUS_003_CLAUDE_037_SESSION_LIMIT_FAILURE.json",
+      "record": "PHASE2-MMEM-CLAUDE-037-SESSION-LIMIT-PARTIAL-1",
+      "created_at_utc": "2026-10-02T21:17:33.467106+00:00",
+      "status": "PRESERVED_PARTIAL_SOURCE_ONLY_SESSION_LIMIT",
+      "attempt_receipt_sha256": "f47a1bad0af21f316bcd0705134c70953cf463fc649201af3a11c6eba63a4db6",
+      "response_sha256": "80b23920e9b672953b6e1fb5e32dbca87dc26d93f3d53fa668e723a9765c5b43",
+      "role": "construction provenance only; adds or modifies no scientific outcome"
     }
   },
   "claims": [
@@ -938,6 +1078,155 @@
             "15"
           ]
         }
+      ]
+    },
+    {
+      "id": "CL23",
+      "role": "three_study_central_result",
+      "text": "In the original bit/Hamming operator bundle, recurrence selected a costly memory-use policy (Study 001) and directional cache information strongly amplified that selection (Study 002) without a resolved one-bit population-accuracy gain; in one independently implemented torus/tournament bundle with new cohorts (Study 003), recurrence-attributable enrichment recurred and the recurrent-law performance contrast was again bounded below the positive 1/32 scale with sign unresolved. The frozen crossed interpretation is SELECTION/PERFORMANCE SEPARATION RECURS IN THIS OPERATOR BUNDLE. This is agreement between prespecified within-bundle classifications.",
+      "locations": [
+        "MANUSCRIPT.md: title, Abstract, 1 (final two paragraphs), 3.15, 4",
+        "SUPPLEMENT.md: S1, S27, S38"
+      ],
+      "evidence": [
+        {"source": "s3_decisions", "fields": ["primary_decision", "performance_classes", "crossed_interpretation"]},
+        {"source": "s3_accepted", "fields": ["scientific_conclusion", "manuscript_disposition", "analysis.crossed_interpretation"]},
+        {"source": "decision", "fields": ["primary_decision", "secondary_classifications"]},
+        {"source": "s2_decision", "fields": ["primary_decision", "secondary_classifications"]}
+      ],
+      "must_not_be_split": true,
+      "limits": "One alternative operator bundle only; not universal replication; no component attribution; effect magnitudes not compared or pooled across bundles; the 22, 19 and 22 records are three separately accepted estimate sets."
+    },
+    {
+      "id": "CL24",
+      "role": "study_003_primary_inference",
+      "text": "C_abs = 0.2828775083101712740 [0.2750672787822218728, 0.2906877378381206753] and C_rec = 0.4244214336688701923 [0.4088009746129713898, 0.4400418927247689949]; both lower bounds exceed 1/32; decision rule 3: SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT IN THIS ALTERNATIVE OPERATOR BUNDLE.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 3.13, Table 5, Figure 5",
+        "SUPPLEMENT.md: S27, S35, S36"
+      ],
+      "evidence": [
+        {"source": "s3_estimates", "records": ["C_abs", "C_rec"], "fields": ["exact_value", "sum_of_block_numerators", "block_denominator", "display", "classification_code"]},
+        {"source": "s3_decisions", "fields": ["primary_decision", "predicates"]},
+        {"source": "s3_accepted", "fields": ["analysis.estimates.C_abs", "analysis.estimates.C_rec", "analysis.primary_decision"]}
+      ],
+      "independent_check": "check_statistics.py recomputes both estimates exactly from the 16 descriptive means and from the block-numerator sums, the endpoints from the Hoeffding-Bonferroni formula with alpha_each 0.05/4, and the frozen decision order."
+    },
+    {
+      "id": "CL25",
+      "role": "study_003_start_state_gate",
+      "text": "D_HALF = -0.0002015920785757212 [-0.0158220511344745237, 0.0154188669773230814] and D_ZERO = -0.0002403963529146635 [-0.0158608554088134660, 0.0153800627029841391] both lie wholly inside (-1/32, +1/32); rule 2 not triggered.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 3.12, Table 5, Figure 5",
+        "SUPPLEMENT.md: S35, S36"
+      ],
+      "evidence": [
+        {"source": "s3_estimates", "records": ["D_HALF", "D_ZERO"]},
+        {"source": "s3_decisions", "fields": ["predicates.D_HALF.wholly_inside_plus_minus_delta", "predicates.D_ZERO.wholly_inside_plus_minus_delta"]}
+      ],
+      "limits": "Finite-horizon gate at the one-individual scale over 256 updates only; not general start-independence, stationarity or equilibrium."
+    },
+    {
+      "id": "CL26",
+      "role": "study_003_performance_and_crossed_interpretation",
+      "text": "P_abs = 0.0050566998204140212 [-0.0094579258184457116, 0.0195713254592737541], BOUNDED BELOW THE POSITIVE ONE-BIT SCALE (saved class BOUNDED_BELOW_POSITIVE; in Study 003 the positive 1/32 scale is 1/32 of maximal total loss, not a bit), sign unresolved; P_rec = 0.0062864162691967155 [-0.0227428350085227502, 0.0353156675469161812], UNRESOLVED; the performance family cannot alter the primary decision; crossed interpretation SELECTION/PERFORMANCE SEPARATION RECURS IN THIS OPERATOR BUNDLE.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 3.14, 3.15, 5, Table 5, Figure 5",
+        "SUPPLEMENT.md: S27, S34, S35, S36"
+      ],
+      "evidence": [
+        {"source": "s3_estimates", "records": ["P_abs", "P_rec"], "fields": ["exact_value", "display", "classification_code"]},
+        {"source": "s3_decisions", "fields": ["performance_classes", "predicates.P_abs.class", "predicates.P_rec.class", "crossed_interpretation"]},
+        {"source": "s3_accepted", "fields": ["analysis.estimates.P_abs", "analysis.estimates.P_rec", "analysis.crossed_interpretation"]}
+      ],
+      "limits": "ACTIVE-SHAM arm-level contrast, not a path-level counterfactual; Study 003 performance magnitudes and accuracy levels are not comparable with Studies 001 and 002."
+    },
+    {
+      "id": "CL27",
+      "role": "study_003_design_and_independence",
+      "text": "32 individuals; 32 circular loci with 16-bit alleles; graded circular loss sum_i d_i^2; four evaluated entries per parent (128 objective queries per update); sequential four-entry rank-tournament survival with replacement; symmetric policy mutation 1/32; supplied private cache; ACTIVE/SHAM x ZERO/HALF x ALL_F/ALL_M; HALF deliberately aligned to the cache delay. The entire implementation, canonical Random123 Threefry4x64-20 key/counter/lane addressing and all cohorts are new relative to Studies 001 and 002; no producer, analyzer or auditor code was imported.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 1, 2.9, 6",
+        "SUPPLEMENT.md: S27-S33"
+      ],
+      "evidence": [
+        {"source": "s3_specification"},
+        {"source": "s3_accepted", "fields": ["design.model_class", "limits"]},
+        {"source": "s3_task_assignment"}
+      ],
+      "limits": "Uniform proposals and coordinate resampling, not continuous or gradual search; tournament size four not calibrated to Study 001 survival strength."
+    },
+    {
+      "id": "CL28",
+      "role": "study_003_scope_and_audit",
+      "text": "41,600 independent paired blocks, 8 cells per block, 332,800 paths, 85,196,800 path-updates, 10,905,190,400 objective queries, 22 saved estimate records. Recovery C++ replay checked 64 blocks, 512 paths, 131,072 path updates, 16,777,216 candidate rows, 16,777,216 entry rows, 131,072 context rows, 131,072 update rows, 512 path rows and 64 block rows; Python verification checked all 41,600 block records, 332,800 paths, 85,196,800 update rows, all N1/N2 blocks, all 22 estimates and the audit payloads; zero mismatches. Internal reproducibility audits, not external peer review or independent replication.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 2.9, 3.11",
+        "SUPPLEMENT.md: S27, S33, S37"
+      ],
+      "evidence": [
+        {"source": "s3_accepted", "fields": ["production", "analysis.saved_estimates", "independent_audit.recovery"]},
+        {"source": "s3_production_authentication", "fields": ["manifest_verification.counts", "independent_inventory"]},
+        {"source": "s3_cpp_replay_receipt", "fields": ["verdict", "checked", "selftests_passed", "producer_code_invoked", "inputs_modified"]},
+        {"source": "s3_recovery_runner_receipt", "fields": ["status", "cpp_replay_verdict", "python_verify_verdict", "files"]}
+      ]
+    },
+    {
+      "id": "CL29",
+      "role": "study_003_audit_header_defect_and_release_correction",
+      "text": "The authenticated production outputs wrote chunk_index = 0 in the headers of the three non-chunk audit files, whereas the frozen schema required 0xFFFFFFFF. Audit attempt 1 (job 53562358) stopped at this interface check before audit-payload replay and is preserved. A prospectively frozen normalization-only recovery built a derived audit tree that changed exactly bytes 48-51 of each file (12 bytes in total), proved every payload byte from offset 64 onward identical, and left production and analysis unchanged; the same accepted auditor then passed (job 53562452). A one-line post-acceptance source patch makes release source emit 0xFFFFFFFF; it was neither compiled nor executed, no original production output was changed, and no scientific rerun was warranted or performed.",
+      "locations": [
+        "MANUSCRIPT.md: 3.11, 5, 7",
+        "SUPPLEMENT.md: S35, S37, S38, S39"
+      ],
+      "evidence": [
+        {"source": "s3_audit_failure", "fields": ["status", "frozen_contract", "actual_headers", "shared_failure", "verified_before_failure"]},
+        {"source": "s3_normalization_receipt", "fields": ["normalizations", "total_differing_bytes", "source_production_or_analysis_modified"]},
+        {"source": "s3_accepted", "fields": ["independent_audit.attempt1", "independent_audit.recovery", "reproducibility_disposition", "no_scientific_rerun"]},
+        {"source": "s3_source_patch_receipt", "fields": ["exact_patch", "changed_files", "compiled_or_executed", "original_production_outputs_modified", "scientific_rerun_required"]}
+      ],
+      "limits": "Nonscientific header-interface defect only; it is not a rule-1 INVALID condition, and the original malformed files remain part of the authenticated production outputs."
+    },
+    {
+      "id": "CL30",
+      "role": "study_003_claim_limits",
+      "text": "Study 003 supports recurrence-attributable enrichment only in this one alternative large-alphabet torus/tournament operator bundle. No claim of universal replication, continuous or gradual search, separate attribution to alphabet, graded loss, resampling/mutation or tournament survival, spontaneous memory origin, general population utility, biological relevance, equilibrium, invasion, stability, priority, component attribution or path-level counterfactual; supplied cache with retention and retrieval coupled; one aligned HALF law, one ZERO law, one fixed cost, one mutation rate and one finite horizon per operator bundle; no grid, rate/cost sweep, alternate tournament, new cohort, lag variant, top-up or numerical extension is proposed.",
+      "locations": [
+        "MANUSCRIPT.md: Abstract, 1, 2.9, 3.15, 4, 5",
+        "SUPPLEMENT.md: S27, S38"
+      ],
+      "evidence": [
+        {"source": "s3_accepted", "fields": ["limits", "no_extension", "no_scientific_rerun"]},
+        {"source": "s3_task_assignment", "sections": ["Required limits"]}
+      ]
+    },
+    {
+      "id": "CL31",
+      "role": "figure_5_binding",
+      "text": "Figure 5 shows the Study 001 and Study 003 primary allele (C_abs, C_rec, D_HALF, D_ZERO) and performance (P_abs, P_rec) estimands side by side at the declared +/-1/32 scales, read at run time from the authenticated records of each study; different operator bundles and independent cohorts; never pooled.",
+      "locations": [
+        "MANUSCRIPT.md: 3.13, 3.14, 3.15",
+        "provenance/FIGURE_BINDINGS.json: figure5_operator_bundles"
+      ],
+      "evidence": [
+        {"source": "estimates", "records": ["C_abs", "C_rec", "D_HALF", "D_ZERO", "P_abs", "P_rec"]},
+        {"source": "s3_estimates", "records": ["C_abs", "C_rec", "D_HALF", "D_ZERO", "P_abs", "P_rec"]},
+        {"source": "s3_decisions", "fields": ["primary_decision", "performance_classes", "crossed_interpretation"]}
+      ],
+      "independent_check": "scripts/make_figures.py refuses Study 003 inputs whose SHA-256 differs from the acceptance-record values unless --skip-sha-check is given, and writes all plotted values and the Study 003 decisions to FIGURE_DATA.json."
+    },
+    {
+      "id": "CL32",
+      "role": "three_estimate_sets",
+      "text": "The 22 Study 001, 19 Study 002 and 22 Study 003 records are three separately accepted estimate sets, 63 saved estimate records in total, with seven separately controlled familywise families; none is pooled.",
+      "locations": [
+        "MANUSCRIPT.md: 3.15, 5",
+        "SUPPLEMENT.md: S1, S27"
+      ],
+      "evidence": [
+        {"source": "accepted", "fields": ["scope"]},
+        {"source": "s2_accepted", "fields": ["analysis"]},
+        {"source": "s3_accepted", "fields": ["analysis.saved_estimates"]}
       ]
     }
   ]

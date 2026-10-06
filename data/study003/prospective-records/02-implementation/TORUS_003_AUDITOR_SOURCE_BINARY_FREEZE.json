@@ -1,0 +1,82 @@
+{
+  "record": "PHASE2-TORUS-MEMORY-003-AUDITOR-SOURCE-BINARY-FREEZE-1",
+  "status": "FROZEN_AFTER_ACCEPTED_FIXTURES",
+  "created_at_utc": "2026-10-02T19:31:19.819596+00:00",
+  "source_construction_receipt": {
+    "path": "$PROJECT_ROOT/TORUS_003_AUDITOR_SOURCE_CONSTRUCTION_RECEIPT.json",
+    "sha256": "d83b8ebb61ba238c6bac5acea7bdc126ae5c2a8acd40b38d1c58f090dd935881"
+  },
+  "source_review_decision": {
+    "path": "data/study003/prospective-records/02-implementation/TORUS_003_AUDITOR_SOURCE_REVIEW_DECISION.json",
+    "sha256": "613e56a7c24455c323a36c595773b583fca5e25b03eb0bbf37fb5e4d035c36e5"
+  },
+  "source_canonical_inventory_sha256": "4baf39b587120037539fc908e5ca81e9a18207c008ed0fa0ff6599c0c9a52af4",
+  "files": [
+    {
+      "path": "AUDITOR_NOT_RUN.json",
+      "bytes": 4228,
+      "sha256": "a65274858b1225f7714a2f210a8e44aa886f2d00126858120b82a1a01425efc2"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 1807,
+      "sha256": "dff50ba26120b31bf4040d758010d8fd4f7486c6ddaaa314e5d923455482580d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5371,
+      "sha256": "dde89d72eb06624b28516c244b394438b9c3c57e4999d10aacf4ff954007ff5f"
+    },
+    {
+      "path": "docs/INPUT_CONTRACT.md",
+      "bytes": 10764,
+      "sha256": "c3cb7e8ba6821140ad60c66e22da94a51313c3cdbde8bd1a1b82d096ce77f44e"
+    },
+    {
+      "path": "python/torus_record_verifier.py",
+      "bytes": 45255,
+      "sha256": "b503323309fd93e972685d635e10fa5aff1dfda031439501c41092c0f42952be"
+    },
+    {
+      "path": "src/main.cpp",
+      "bytes": 41936,
+      "sha256": "20daca20aad928da07492bfb2483ea8a39ebf35b2a9c3a7050f9befb8ba2cff2"
+    },
+    {
+      "path": "src/records.hpp",
+      "bytes": 20171,
+      "sha256": "185a504dfa11753c8ab19d23c8ee015c1924430ef7d62acaed1ac142189b7344"
+    },
+    {
+      "path": "src/replay.hpp",
+      "bytes": 20095,
+      "sha256": "0313b91c3834f4b512560aea2e82f08b78ea124017bff534a9712bb0f497642f"
+    },
+    {
+      "path": "src/sha256.hpp",
+      "bytes": 6460,
+      "sha256": "598fbfa71368465fbe44f42d1c14ec757401b56350c35acfba5570e4e1220291"
+    },
+    {
+      "path": "src/threefry.hpp",
+      "bytes": 7814,
+      "sha256": "548cd21c50138378cd67ef749a5acc2d1f5d6e821e8e626e182d0c9a118e6653"
+    },
+    {
+      "path": "tests/fixture_gate.py",
+      "bytes": 14025,
+      "sha256": "400cd1961cafc43581e4d2a4388b6254559b822db7a364a16a649b000572615f"
+    }
+  ],
+  "auditor_binary": {
+    "path": "$PROJECT_ROOT/auditor-fixture-stage/torus003_attempt1/build/torus_audit",
+    "bytes": 337648,
+    "sha256": "6b46c3e77045a1992f482e387e6829368052fca3f87082ed857def45aa893626"
+  },
+  "fixture_acceptance": {
+    "path": "data/study003/prospective-records/02-implementation/TORUS_003_AUDITOR_FIXTURES_ACCEPTED.json",
+    "sha256": "e9e687c4742ca78a07fafc6e78af52da3fb7dbb3e997c0dc27349009e862a1fb"
+  },
+  "scientific_execution_authorized": false,
+  "production_authorized": false
+}

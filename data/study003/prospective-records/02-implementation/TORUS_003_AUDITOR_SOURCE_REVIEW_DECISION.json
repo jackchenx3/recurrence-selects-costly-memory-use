@@ -1,0 +1,41 @@
+{
+  "record": "PHASE2-TORUS-MEMORY-003-AUDITOR-SOURCE-REVIEW-DECISION-1",
+  "status": "AUDITOR_FIXTURES_GO",
+  "created_at_utc": "2026-10-02T19:00:32.247436+00:00",
+  "source_receipt": {
+    "path": "$PROJECT_ROOT/TORUS_003_AUDITOR_SOURCE_CONSTRUCTION_RECEIPT.json",
+    "sha256": "d83b8ebb61ba238c6bac5acea7bdc126ae5c2a8acd40b38d1c58f090dd935881",
+    "canonical_inventory_sha256": "4baf39b587120037539fc908e5ca81e9a18207c008ed0fa0ff6599c0c9a52af4"
+  },
+  "source_reauthenticated_unchanged": true,
+  "components": {
+    "A": {
+      "initial_review": "$PROJECT_ROOT/results/qwen_032a/auditor_core_source_review.md",
+      "initial_sha256": "69c24c1cdb3e19691eff087efc347628675da558dcb085cde5f35d43d7f53e51",
+      "initial_disposition": "PRESERVED_TERMINAL_ONLY_NON_SUBSTANTIVE",
+      "evidence_completion": "$PROJECT_ROOT/results/qwen_032a_evidence/auditor_core_evidence.md",
+      "evidence_sha256": "ae404ceb8da211a76ae9688f2a522e9eb324244ef106c78998f3f7a7fd2e6c32",
+      "terminal": "CORE_AUDITOR_GO"
+    },
+    "B": {
+      "review": "$PROJECT_ROOT/results/qwen_032b/auditor_record_source_review.md",
+      "sha256": "631f81fe14430eef0a28c869be2614485b2ddc68ea97a4f4d8f636656af6ef90",
+      "terminal": "RECORD_AUDITOR_FIX",
+      "supervisor_resolution": "$PROJECT_ROOT/TORUS_003_AUDITOR_COMPONENT_B_SUPERVISOR_REVIEW.json",
+      "supervisor_resolution_sha256": "44fce6e7466f9985398960e7bc8d5fa1e4c9261263f5de964c732f5918766ee5",
+      "integrated_disposition": "FALSE_POSITIVE_REJECTED_NO_PATCH"
+    },
+    "C": {
+      "review": "$PROJECT_ROOT/results/qwen_032c/auditor_fixture_source_review.md",
+      "sha256": "6ab1dc4cff7fdaeb561fd11decf16d235d14677814296a8b47debe29e0112e27",
+      "terminal": "AUDITOR_FIXTURES_GO"
+    }
+  },
+  "integrated_reason": "Core replay/RNG and fixture/provenance reviews passed. The sole B finding used 64 rather than 64*32 as the late allele-frequency denominator and omitted the 64-update scaling for loss; the exact frozen schema and algebra confirm the auditor formulas are correct.",
+  "material_source_defects_remaining": [],
+  "compile_authorized": false,
+  "fixture_execution_authorized": false,
+  "next_gate": "construct and independently review one bounded auditor-fixture runner, then issue a separate execution authority",
+  "scientific_execution_authorized": false,
+  "production_authorized": false
+}

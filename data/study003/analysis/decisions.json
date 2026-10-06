@@ -1,0 +1,42 @@
+{
+  "config_sha256": "73648abca608d7bffa7344cb456147c856c7130bb57cc269f87cde4acefedb0e",
+  "crossed_interpretation": "SELECTION/PERFORMANCE SEPARATION RECURS IN THIS OPERATOR BUNDLE",
+  "decision_rule": "design sections 11-12 applied in order; exact rational estimates vs. bracketed Decimal half-widths",
+  "design_go_record_sha256": "e5dc485dd858f18eb9652cfe6b63f142e2d09fb6b069d640438cd8dbe63a786d",
+  "design_sha256": "0ff662dc31807b0b2cdcae371d884473ed398e2583272d94331bac8c8f9ff0b0",
+  "identity_failure_count": 0,
+  "identity_failures_first_1000": [],
+  "namespace": "production-r1",
+  "performance_classes": {
+    "P_abs": "BOUNDED_BELOW_POSITIVE",
+    "P_rec": "UNRESOLVED"
+  },
+  "predicates": {
+    "C_abs": {
+      "lower_above_delta": true,
+      "upper_at_or_below_delta": false,
+      "upper_below_minus_delta": false
+    },
+    "C_rec": {
+      "lower_above_delta": true,
+      "upper_at_or_below_delta": false,
+      "upper_below_minus_delta": false
+    },
+    "D_HALF": {
+      "wholly_inside_plus_minus_delta": true
+    },
+    "D_ZERO": {
+      "wholly_inside_plus_minus_delta": true
+    },
+    "P_abs": {
+      "class": "BOUNDED_BELOW_POSITIVE"
+    },
+    "P_rec": {
+      "class": "UNRESOLVED"
+    }
+  },
+  "primary_adverse_upper_below_minus_delta": null,
+  "primary_decision": "SUPPORTS RECURRENCE-ATTRIBUTABLE SELECTIVE ENRICHMENT IN THIS ALTERNATIVE OPERATOR BUNDLE",
+  "production_manifest_sha256": "fb91f91676b84babbcb09ee6cd9129e58580249e21d3b223d71880170873bf4c",
+  "schema": "PHASE2-TORUS-MEMORY-003-DECISIONS-v1"
+}

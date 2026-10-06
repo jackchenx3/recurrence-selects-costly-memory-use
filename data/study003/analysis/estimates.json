@@ -1,0 +1,402 @@
+{
+  "namespace": "production-r1",
+  "records": [
+    {
+      "alpha_each": "1/80",
+      "block_denominator": "4096",
+      "classification_code": 10,
+      "display": {
+        "estimate": "0.2828775083101712740384615384615384615385",
+        "half_width": "0.0078102295279494012719442240743558270678",
+        "lower": "0.2750672787822218727665173143871826344707",
+        "upper": "0.2906877378381206753104057625358942886063"
+      },
+      "exact_value": "48200517/170393600",
+      "family": "PRIMARY_ALLELE",
+      "index": 0,
+      "n_blocks": 41600,
+      "name": "C_abs",
+      "range_length": "1",
+      "sum_of_block_numerators": "48200517"
+    },
+    {
+      "alpha_each": "1/80",
+      "block_denominator": "4096",
+      "classification_code": 10,
+      "display": {
+        "estimate": "0.4244214336688701923076923076923076923077",
+        "half_width": "0.0156204590558988025438884481487116541356",
+        "lower": "0.4088009746129713897638038595435960381721",
+        "upper": "0.4400418927247689948515807558410193464433"
+      },
+      "exact_value": "9039837/21299200",
+      "family": "PRIMARY_ALLELE",
+      "index": 1,
+      "n_blocks": 41600,
+      "name": "C_rec",
+      "range_length": "2",
+      "sum_of_block_numerators": "72318696"
+    },
+    {
+      "alpha_each": "1/80",
+      "block_denominator": "4096",
+      "classification_code": 20,
+      "display": {
+        "estimate": "-0.0002015920785757211538461538461538461538",
+        "half_width": "0.0156204590558988025438884481487116541356",
+        "lower": "-0.0158220511344745236977346019948655002894",
+        "upper": "0.0154188669773230813900422943025578079817"
+      },
+      "exact_value": "-687/3407872",
+      "family": "PRIMARY_ALLELE",
+      "index": 2,
+      "n_blocks": 41600,
+      "name": "D_HALF",
+      "range_length": "2",
+      "sum_of_block_numerators": "-34350"
+    },
+    {
+      "alpha_each": "1/80",
+      "block_denominator": "4096",
+      "classification_code": 20,
+      "display": {
+        "estimate": "-0.0002403963529146634615384615384615384615",
+        "half_width": "0.0156204590558988025438884481487116541356",
+        "lower": "-0.0158608554088134660054269096871731925971",
+        "upper": "0.0153800627029841390823499866102501156740"
+      },
+      "exact_value": "-20481/85196800",
+      "family": "PRIMARY_ALLELE",
+      "index": 3,
+      "n_blocks": 41600,
+      "name": "D_ZERO",
+      "range_length": "2",
+      "sum_of_block_numerators": "-40962"
+    },
+    {
+      "alpha_each": "1/40",
+      "block_denominator": "140737488355328",
+      "classification_code": 32,
+      "display": {
+        "estimate": "0.0050566998204140212180845992406830191612",
+        "half_width": "0.0145146256388597328604920299071869529167",
+        "lower": "-0.0094579258184457116424074306665039337554",
+        "upper": "0.0195713254592737540785766291478699720779"
+      },
+      "exact_value": "284666892836763/56294995342131200",
+      "family": "PERFORMANCE",
+      "index": 4,
+      "n_blocks": 41600,
+      "name": "P_abs",
+      "range_length": "2",
+      "sum_of_block_numerators": "29605356855023352"
+    },
+    {
+      "alpha_each": "1/40",
+      "block_denominator": "140737488355328",
+      "classification_code": 33,
+      "display": {
+        "estimate": "0.0062864162691967154868913999402698559257",
+        "half_width": "0.0290292512777194657209840598143739058333",
+        "lower": "-0.0227428350085227502340926598741040499076",
+        "upper": "0.0353156675469161812078754597546437617589"
+      },
+      "exact_value": "36804952557685197/5854679515581644800",
+      "family": "PERFORMANCE",
+      "index": 5,
+      "n_blocks": 41600,
+      "name": "P_rec",
+      "range_length": "4",
+      "sum_of_block_numerators": "36804952557685197"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "2048",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.3585762728177584134615384615384615384615",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "30549551/85196800",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 6,
+      "n_blocks": 41600,
+      "name": "MFREQ_ACTIVE_ZERO_ALL_F",
+      "range_length": "1",
+      "sum_of_block_numerators": "30549551"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "2048",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.3583358764648437500000000000000000000000",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "234839/655360",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 7,
+      "n_blocks": 41600,
+      "name": "MFREQ_ACTIVE_ZERO_ALL_M",
+      "range_length": "1",
+      "sum_of_block_numerators": "30529070"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "2048",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.7829783043494591346153846153846153846154",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "33353623/42598400",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 8,
+      "n_blocks": 41600,
+      "name": "MFREQ_ACTIVE_HALF_ALL_F",
+      "range_length": "1",
+      "sum_of_block_numerators": "66707246"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "2048",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.7827767122708834134615384615384615384615",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "66690071/85196800",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 9,
+      "n_blocks": 41600,
+      "name": "MFREQ_ACTIVE_HALF_ALL_M",
+      "range_length": "1",
+      "sum_of_block_numerators": "66690071"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "2048",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.4996080721341646634615384615384615384615",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "42565009/85196800",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 10,
+      "n_blocks": 41600,
+      "name": "MFREQ_SHAM_ZERO_ALL_F",
+      "range_length": "1",
+      "sum_of_block_numerators": "42565009"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "2048",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.5003919278658353365384615384615384615385",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "42631791/85196800",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 11,
+      "n_blocks": 41600,
+      "name": "MFREQ_SHAM_ZERO_ALL_M",
+      "range_length": "1",
+      "sum_of_block_numerators": "42631791"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "2048",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.4997556950495793269230769230769230769231",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "21288793/42598400",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 12,
+      "n_blocks": 41600,
+      "name": "MFREQ_SHAM_HALF_ALL_F",
+      "range_length": "1",
+      "sum_of_block_numerators": "42577586"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "2048",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.5002443049504206730769230769230769230769",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "21309607/42598400",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 13,
+      "n_blocks": 41600,
+      "name": "MFREQ_SHAM_HALF_ALL_M",
+      "range_length": "1",
+      "sum_of_block_numerators": "42619214"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "70368744177664",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.7284406905520463123474646985974126996902",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "2132393394645606663/2927339757790822400",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 14,
+      "n_blocks": 41600,
+      "name": "ACC_ACTIVE_ZERO_ALL_F",
+      "range_length": "1",
+      "sum_of_block_numerators": "2132393394645606663"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "70368744177664",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.7284422027782650775297777447401760862424",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "533099455361384907/731834939447705600",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 15,
+      "n_blocks": 41600,
+      "name": "ACC_ACTIVE_ZERO_ALL_M",
+      "range_length": "1",
+      "sum_of_block_numerators": "2132397821445539628"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "70368744177664",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.7408417462820597240927064866320086786380",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "1084347749061327307/1463669878895411200",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 16,
+      "n_blocks": 41600,
+      "name": "ACC_ACTIVE_HALF_ALL_F",
+      "range_length": "1",
+      "sum_of_block_numerators": "2168695498122654614"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "70368744177664",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.7408413925867116667234313354128971695900",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "1668226509797077/2251799813685248",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 17,
+      "n_blocks": 41600,
+      "name": "ACC_ACTIVE_HALF_ALL_M",
+      "range_length": "1",
+      "sum_of_block_numerators": "2168694462736200100"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "70368744177664",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.7296711631139383892074280223683812297308",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "533998851474226017/731834939447705600",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 18,
+      "n_blocks": 41600,
+      "name": "ACC_SHAM_ZERO_ALL_F",
+      "range_length": "1",
+      "sum_of_block_numerators": "2135995405896904068"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "70368744177664",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.7296711631139383892074280223683812297308",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "533998851474226017/731834939447705600",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 19,
+      "n_blocks": 41600,
+      "name": "ACC_SHAM_ZERO_ALL_M",
+      "range_length": "1",
+      "sum_of_block_numerators": "2135995405896904068"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "70368744177664",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.7357848696139716741899843117817699049528",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "2153892302001915681/2927339757790822400",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 20,
+      "n_blocks": 41600,
+      "name": "ACC_SHAM_HALF_ALL_F",
+      "range_length": "1",
+      "sum_of_block_numerators": "2153892302001915681"
+    },
+    {
+      "alpha_each": null,
+      "block_denominator": "70368744177664",
+      "classification_code": 40,
+      "display": {
+        "estimate": "0.7357848696139716741899843117817699049528",
+        "half_width": "NA",
+        "lower": "NA",
+        "upper": "NA"
+      },
+      "exact_value": "2153892302001915681/2927339757790822400",
+      "family": "ABSOLUTE_CELL_MEAN",
+      "index": 21,
+      "n_blocks": 41600,
+      "name": "ACC_SHAM_HALF_ALL_M",
+      "range_length": "1",
+      "sum_of_block_numerators": "2153892302001915681"
+    }
+  ],
+  "schema": "PHASE2-TORUS-MEMORY-003-ESTIMATES-v1"
+}

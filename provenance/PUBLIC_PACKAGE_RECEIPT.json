@@ -1,59 +1,66 @@
 {
-  "record": "PHASE2-PUBLIC-PACKAGE-V1-1-0",
+  "record": "PHASE2-PUBLIC-PACKAGE-V1-2-0",
   "status": "PASS",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "release_date": "2026-10-02",
-  "title": "Environmental recurrence and directional cache information select a costly memory-use allele without a resolved one-bit population benefit",
+  "title": "Environmental recurrence selects a costly memory-use policy across two operator bundles without a resolved one-bit population benefit",
   "repository": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use",
   "baseline": {
-    "tag": "v1.0.0",
-    "commit": "443130389ebe421f42eb5f48fe98b5f15a06f835",
-    "current_main": "ee370828db3fa29c5124ec04b780847bd4c4a1cf"
+    "tag": "v1.1.0",
+    "commit": "35f234e9f3852cd322518cf42d1e4dcc7103b6fd",
+    "previous_tag": "v1.0.0"
   },
   "file_counts": {
-    "files": 342,
-    "bytes": 119682062,
+    "files": 1889,
+    "bytes": 204972923,
     "scope": "all files except SHA256SUMS and this receipt",
-    "files_including_this_receipt_and_SHA256SUMS": 344,
-    "baseline_files_unchanged": 161,
-    "baseline_files_replaced": 32,
+    "files_including_this_receipt_and_SHA256SUMS": 1891,
+    "baseline_files_unchanged": 309,
+    "baseline_files_replaced": 35,
     "baseline_files_removed": 0
   },
   "scientific_scope": {
     "study001": {
       "study_id": "PHASE2-MUTABLE-MEMORY-001",
-      "paired_blocks": 41600,
-      "cells": 8,
-      "paths": 332800,
       "saved_estimates": 22,
-      "objective_queries": 10905190400,
-      "public_files_changed_in_v1_1_0": 0
+      "public_files_changed_in_v1_2_0": 0
     },
     "study002": {
       "study_id": "PHASE2-PERFORMANCE-CONVERSION-002",
-      "blocks": 41600,
-      "paths": 249600,
-      "objective_queries": 8178892800,
       "saved_estimates": 19,
-      "full_update_records_audited": 63897600,
-      "replay_blocks": 64,
-      "replay_audit_rows": 12582912,
-      "audit_mismatches": 0,
-      "corrected_run_shards": 32,
-      "shard_binary_files": 64,
-      "original_attempt1": "infrastructure failure only; no scientific output"
+      "public_files_changed_in_v1_2_0": 0
     },
-    "relation": "two separate prespecified estimate families (41 records); not pooled; not independent replications"
+    "study003": {
+      "study_id": "PHASE2-TORUS-MEMORY-003",
+      "operator_bundle": "32-locus, 2^16-allele torus with graded circular loss and four-entry tournament survival",
+      "blocks": 41600,
+      "paths": 332800,
+      "cells": 8,
+      "objective_queries": 10905190400,
+      "saved_estimates": 22,
+      "original_output_files": 1962,
+      "original_output_bytes": 4694355040,
+      "audit_attempt1": "preserved nonscientific header-interface failure; no payload replay",
+      "audit_recovery": {
+        "status": "PASS",
+        "mismatches": 0,
+        "normalized_files": 3,
+        "total_differing_bytes": 12
+      },
+      "post_audit_source_patch": "one line of src/torus/chunk_io.cpp; not compiled or executed",
+      "compact_production_files": 1300
+    },
+    "relation": "three separately accepted estimate families (63 records); not pooled; not independent replications"
   },
   "checks": {
-    "saved_statistics_checks_accepted": 1975,
+    "saved_statistics_checks_accepted": 2998,
     "sha_check_enforced": true,
-    "statistics_check_report": "provenance/MANUSCRIPT_V1_1_STATISTICS_CHECK_1975.json",
-    "visual_qa": "provenance/MANUSCRIPT_V1_1_VISUAL_QA.json",
-    "manuscript_pages": 22,
-    "supplement_pages": 19,
-    "claim_audit": "QWEN-019 MANUSCRIPT_GO",
-    "source_audits": "four accepted zero-mismatch internal audits (two per study)",
+    "statistics_check_report": "provenance/MANUSCRIPT_V1_2_STATISTICS_CHECK_2998.json",
+    "visual_qa": "provenance/MANUSCRIPT_V1_2_VISUAL_QA.json",
+    "figures": 5,
+    "manuscript_pages": 31,
+    "supplement_pages": 31,
+    "claim_audit": "QWEN-037R MANUSCRIPT_GO",
     "statistics_checker_run_by_builder": false
   },
   "licenses": {
@@ -62,7 +69,8 @@
   },
   "complete_outcomes_assets": {
     "study001": "phase2-mutable-memory-complete-outcomes-v1.0.0.tar.zst",
-    "study002": "phase2-performance-conversion-002-complete-outcomes-v1.1.0.tar.zst"
+    "study002": "phase2-performance-conversion-002-complete-outcomes-v1.1.0.tar.zst",
+    "study003": "phase2-torus-memory-003-complete-outcomes-v1.2.0.tar.zst (single file or numbered .part-NNN files; see its archive receipt)"
   },
   "zenodo": {
     "state": "Zenodo archival publication pending",

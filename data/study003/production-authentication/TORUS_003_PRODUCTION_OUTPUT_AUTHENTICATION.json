@@ -1,0 +1,71 @@
+{
+  "analysis_or_audit_executed": false,
+  "created_at_utc": "2026-10-02T20:21:38.047924+00:00",
+  "independent_inventory": {
+    "canonical_inventory_sha256": "e4429e98639c6ce4c6f5f98e609530cbbe49e1b2a559d26da0c50a10aaa40ff8",
+    "categories": {
+      "attempt_metadata": {
+        "bytes": 21134,
+        "files": 1
+      },
+      "audit": {
+        "bytes": 2569011392,
+        "files": 3
+      },
+      "blocks": {
+        "bytes": 5699200,
+        "files": 650
+      },
+      "metadata": {
+        "bytes": 264448,
+        "files": 2
+      },
+      "paths": {
+        "bytes": 74588800,
+        "files": 650
+      },
+      "preflight": {
+        "bytes": 5158,
+        "files": 4
+      },
+      "runner_logs": {
+        "bytes": 108,
+        "files": 2
+      },
+      "updates": {
+        "bytes": 2044764800,
+        "files": 650
+      }
+    },
+    "file_count": 1962,
+    "matched_runner_inventory_exactly": true,
+    "rejected_or_irregular_entries": 0,
+    "total_bytes": 4694355040
+  },
+  "job_id": "53562156",
+  "manifest_verification": {
+    "all_member_hashes_and_sizes_match": true,
+    "canonical_entries_sha256": "428c8bd08a7bc08b0f38e1a0cd062c58ae33bf8c98d8f14f14fa6f8d359aa19f",
+    "completion_binds_manifest": true,
+    "counts": {
+      "audit_candidate_rows": 16777216,
+      "audit_entry_rows": 16777216,
+      "blocks": 41600,
+      "chunks": 650,
+      "objective_queries": 10905190400,
+      "path_updates": 85196800,
+      "paths": 332800
+    },
+    "file_count": 1957,
+    "member_set_and_order_exact": true
+  },
+  "production_complete_sha256": "ea9763c421161fe8044f6c489b09183f743f4cd8514ab9bab67424f88c1949ff",
+  "production_manifest_sha256": "fb91f91676b84babbcb09ee6cd9129e58580249e21d3b223d71880170873bf4c",
+  "record": "PHASE2-TORUS-MEMORY-003-PRODUCTION-OUTPUT-AUTHENTICATION-1",
+  "runner_receipt_sha256": "f6737bf03d217f8cde8375f7f6ae5e459d6aa8aeb33a65ed2b85284db540fbc6",
+  "scientific_values_parsed": false,
+  "scope": "outcome-blind independent path/size/SHA-256, manifest, completion and count authentication only",
+  "source_or_production_outputs_modified": false,
+  "status": "PASS",
+  "study_id": "PHASE2-TORUS-MEMORY-003"
+}

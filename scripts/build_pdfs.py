@@ -2,8 +2,9 @@
 
 Follows the established Markdown/reportlab rendering style. Figure references of the
 form ![...](figures/<name>.png) are resolved by file name inside --figures-dir, which
-must contain the outputs of scripts/make_figures.py (figures 1-3 for Study 001 and
-figure 4 for Study 002); a missing figure is an error. Package version 1.1.0.
+must contain the outputs of scripts/make_figures.py (figures 1-3 for Study 001,
+figure 4 for Study 002 and figure 5 comparing Study 001 with Study 003); a missing figure
+is an error. Package version 1.2.0.
 Relative (non-figure) links are rendered as plain labels so that no repository address
 or release tag is embedded. Both --figures-dir and --output-dir are required.
 """
@@ -19,11 +20,11 @@ from reportlab.platypus import (SimpleDocTemplate,Paragraph,Spacer,Image,KeepTog
 import reportlab
 
 ROOT=Path(__file__).resolve().parents[1]
-TITLE='Environmental recurrence and directional cache information select a costly memory-use allele without a resolved one-bit population benefit'
-SHORT_TITLE='Recurrence, cache information and a costly memory-use allele'
-PACKAGE_VERSION='1.1.0'
+TITLE='Environmental recurrence selects a costly memory-use policy across two operator bundles without a resolved one-bit population benefit'
+SHORT_TITLE='Recurrence and a costly memory-use policy in two operator bundles'
+PACKAGE_VERSION='1.2.0'
 VERSION_TEXT='Research preprint draft, version '+PACKAGE_VERSION+'; not externally peer reviewed'
-FIGURE_STEMS=['figure1_design','figure2_allele','figure3_accuracy','figure4_information']
+FIGURE_STEMS=['figure1_design','figure2_allele','figure3_accuracy','figure4_information','figure5_operator_bundles']
 FONTROOT=Path(reportlab.__file__).parent/'fonts'
 for name,file in [('Research','Vera.ttf'),('ResearchBold','VeraBd.ttf'),
                   ('ResearchItalic','VeraIt.ttf'),('ResearchMono','Vera.ttf')]:
@@ -132,7 +133,7 @@ def render(source,dest,figures_dir):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--figures-dir',type=Path,required=True,help='directory containing figure1_design.png, figure2_allele.png, figure3_accuracy.png and figure4_information.png')
+    parser.add_argument('--figures-dir',type=Path,required=True,help='directory containing figure1_design.png, figure2_allele.png, figure3_accuracy.png, figure4_information.png and figure5_operator_bundles.png')
     parser.add_argument('--output-dir',type=Path,required=True,help='directory for MANUSCRIPT.pdf and SUPPLEMENT.pdf')
     parser.add_argument('--source-root',type=Path,default=ROOT,help='package root containing paper/ (default: this package)')
     args=parser.parse_args();args.output_dir.mkdir(parents=True,exist_ok=True)

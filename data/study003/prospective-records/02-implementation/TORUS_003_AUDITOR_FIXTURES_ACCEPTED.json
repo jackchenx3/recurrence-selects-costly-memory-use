@@ -1,0 +1,113 @@
+{
+  "record": "PHASE2-TORUS-MEMORY-003-AUDITOR-FIXTURES-ACCEPTED-1",
+  "status": "PASS",
+  "accepted_at_utc": "2026-10-02T19:31:19.819596+00:00",
+  "job": {
+    "id": "53561011",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:00:34",
+    "node": "cn119",
+    "cpus": 4,
+    "memory": "16G",
+    "walltime": "02:00:00"
+  },
+  "submission": {
+    "path": "$PROJECT_ROOT/TORUS_003_AUDITOR_FIXTURE_JOB_SUBMISSION.json",
+    "sha256": "dca4d59668b971f53aba7254d209605a8c9e625a466d9d649d4b53d6bd734175"
+  },
+  "execution_authority": {
+    "path": "$PROJECT_ROOT/TORUS_003_AUDITOR_FIXTURE_EXECUTION_AUTHORITY.json",
+    "sha256": "bfc22d3effdf76660154ec1624d377880242a65428e8897eb17758437f46a5cb"
+  },
+  "runner_acceptance": {
+    "path": "$PROJECT_ROOT/TORUS_003_AUDITOR_FIXTURE_RUNNER_ACCEPTANCE.json",
+    "sha256": "5300f6aeeb14974ba7d1b0a5c88083470735886bd84ecec24b5ee819112b1a05"
+  },
+  "stage_receipt": {
+    "path": "$PROJECT_ROOT/auditor-fixture-stage/torus003_attempt1/TORUS_003_AUDITOR_FIXTURE_STAGE_RECEIPT.json",
+    "sha256": "dff0cf5d4207f9522f8795d8fd48aa6448cc12caea0a245ac1e4e725ac8fa21c"
+  },
+  "fixture_gate_receipt": {
+    "path": "$PROJECT_ROOT/auditor-fixture-stage/torus003_attempt1/fixture_gate_receipt.json",
+    "sha256": "16bf349cd97088e1e7a7541b5e89c70fc09e38b395f2cea5913b3d17e99cae7a",
+    "steps": 25,
+    "corruption_cases": 20
+  },
+  "selftest_receipt": {
+    "path": "$PROJECT_ROOT/auditor-fixture-stage/torus003_attempt1/selftest_receipt.json",
+    "sha256": "9275dd0771db4e8e7395faa9de8708a2326e46511a218cdc7b24ff07bb49b1e7",
+    "selftests": 10
+  },
+  "auditor_binary": {
+    "path": "$PROJECT_ROOT/auditor-fixture-stage/torus003_attempt1/build/torus_audit",
+    "bytes": 337648,
+    "sha256": "6b46c3e77045a1992f482e387e6829368052fca3f87082ed857def45aa893626"
+  },
+  "output_file_count": 10,
+  "output_inventory_sha256": "5ec7d9f77d50ca46ef2220830b072ff82933ded26e10f8412d3a4a1cf089b7e9",
+  "output_inventory": [
+    {
+      "path": "TORUS_003_AUDITOR_FIXTURE_STAGE_RECEIPT.json",
+      "bytes": 16232,
+      "sha256": "dff0cf5d4207f9522f8795d8fd48aa6448cc12caea0a245ac1e4e725ac8fa21c"
+    },
+    {
+      "path": "build/torus_audit",
+      "bytes": 337648,
+      "sha256": "6b46c3e77045a1992f482e387e6829368052fca3f87082ed857def45aa893626"
+    },
+    {
+      "path": "fixture_gate_receipt.json",
+      "bytes": 9218,
+      "sha256": "16bf349cd97088e1e7a7541b5e89c70fc09e38b395f2cea5913b3d17e99cae7a"
+    },
+    {
+      "path": "logs/build.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/build.stdout.log",
+      "bytes": 763,
+      "sha256": "7635e689d51808875084839c42621b9083380e9077074fbb148b49fb0226e550"
+    },
+    {
+      "path": "logs/fixture_gate.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/fixture_gate.stdout.log",
+      "bytes": 18,
+      "sha256": "5bdd6ec7d6ab8f746b29765198311161d53c566b0ead2ee3656a118f610d346b"
+    },
+    {
+      "path": "logs/selftest.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "logs/selftest.stdout.log",
+      "bytes": 34,
+      "sha256": "5274c67a94cd3636578965e117757dbd8f9a333a448144603bb3bb2b87cdb59f"
+    },
+    {
+      "path": "selftest_receipt.json",
+      "bytes": 1548,
+      "sha256": "9275dd0771db4e8e7395faa9de8708a2326e46511a218cdc7b24ff07bb49b1e7"
+    }
+  ],
+  "source_canonical_inventory_sha256": "4baf39b587120037539fc908e5ca81e9a18207c008ed0fa0ff6599c0c9a52af4",
+  "source_byte_identical_before_after": true,
+  "commands": 3,
+  "validations": 13,
+  "build_warning_lines": 0,
+  "fixture_namespace": "fixture-r1",
+  "fixture_blocks": 2,
+  "scientific_execution_performed": false,
+  "production_execution_performed": false,
+  "network_use": false,
+  "further_fixture_attempts_authorized": false,
+  "next_gate": "freeze producer and auditor source/binary identities, then construct and review one production runner"
+}

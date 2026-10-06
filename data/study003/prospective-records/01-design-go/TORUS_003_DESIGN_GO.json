@@ -1,0 +1,23 @@
+{
+  "arithmetic_sha256": "fa90bf23484d383e0c6362f1e1a9de5ae70cbeee802c7a3c0b7d0aba1b504a8a",
+  "claim": "One alternative operator-bundle classification only; no gradual-search, universal-replication or component-attribution claim.",
+  "design": "design/PHASE2-TORUS-MEMORY-003-REV1.md",
+  "design_sha256": "0ff662dc31807b0b2cdcae371d884473ed398e2583272d94331bac8c8f9ff0b0",
+  "fixed_counts": {
+    "blocks": 41600,
+    "cells": 8,
+    "objective_queries": 10905190400,
+    "paths": 332800,
+    "saved_estimates": 22
+  },
+  "implementation_authorized": true,
+  "reviewer_wording_note": "The review once describes p_r as an at-least-one-of-32 probability. The frozen specification correctly defines p_r as a one-slot win probability, uses 32*p_r for expected offspring, and uses (1-p_r)^32 for at least one/zero descendants. The imprecise sentence is not adopted and no design change is made.",
+  "schema": "PHASE2-TORUS-MEMORY-003-DESIGN-GO-v1",
+  "scientific_execution_authorized": false,
+  "scientific_outcome_exists": false,
+  "status": "DESIGN_GO_ACCEPTED",
+  "terminal_review": "results/qwen_023/torus_design_terminal_review.md",
+  "terminal_review_receipt_sha256": "fbbee2ba6e9b24162d1937644112f7550e3fc513cc9e6e2af88ff1d36aafa917",
+  "terminal_review_sha256": "68ccffc3c9a4d013590e7b5c8e5f4200ce955b77a76554bd58bad4bcc7dcc04a",
+  "terminal_verdict": "TORUS_DESIGN_GO"
+}

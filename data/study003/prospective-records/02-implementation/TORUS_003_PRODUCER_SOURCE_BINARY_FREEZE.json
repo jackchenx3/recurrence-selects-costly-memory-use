@@ -1,0 +1,73 @@
+{
+  "record": "PHASE2-TORUS-MEMORY-003-PRODUCER-SOURCE-BINARY-FREEZE-1",
+  "status": "FROZEN_AFTER_ACCEPTED_PRODUCER_FIXTURES",
+  "created_at_utc": "2026-10-02T17:48:41.138782+00:00",
+  "source_root": "code/study003/history/original-malformed-header-source/phase2_torus_memory_v1",
+  "shared_source_root": "code/study003/history/original-malformed-header-source/phase2_torus_memory_v1",
+  "source_file_count": 81,
+  "source_inventory_sha256": "25a96258588c5fba416402c5781c6574443a0c14fa6b5f449eff74fb03bd1d4b",
+  "source_patch_authentication": {
+    "path": "$PROJECT_ROOT/TORUS_003_SOURCE_PATCH_AUTHENTICATION.json",
+    "sha256": "292b2ee327b5ea43f1a5e2708b35911a2d3d3f51d9b1346462c6af0d0306391f"
+  },
+  "source_review_acceptance": {
+    "path": "data/study003/prospective-records/02-implementation/TORUS_003_SOURCE_REVIEW_ACCEPTED.json",
+    "sha256": "28a23559c56bcb66767b43c125ef63314428573731b8d4642ed1743328cc76db"
+  },
+  "producer_fixture_acceptance": {
+    "path": "data/study003/prospective-records/02-implementation/TORUS_003_PRODUCER_FIXTURES_ACCEPTED.json",
+    "sha256": "9445b24ce31a929c64bc8c5d9b7e65a2a8f9484a490387d41812ee2e6f963c40"
+  },
+  "binaries": {
+    "torus_fixtures": {
+      "remote_path": "$PROJECT_ROOT/fixture-stage/torus003_attempt2/build/torus_fixtures",
+      "bytes": 5931832,
+      "sha256": "80c05badc204f2d456d55799d7df3aa42f3705ce41b7a5d1ecd80faffd3da378"
+    },
+    "torus_produce": {
+      "remote_path": "$PROJECT_ROOT/fixture-stage/torus003_attempt2/build/torus_produce",
+      "bytes": 5627664,
+      "sha256": "a50f617d4187905ccdad409b8a54f90c41e648558bf8f4ce54c959852063d221"
+    },
+    "torus_regen": {
+      "remote_path": "$PROJECT_ROOT/fixture-stage/torus003_attempt2/build/torus_regen",
+      "bytes": 5396632,
+      "sha256": "abf43f83e4b03b026ae9e062a73dc6b806ade5de30ea42007c838631a02a93e0"
+    }
+  },
+  "compiler": {
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "g++ (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28.0.1)\nCopyright (C) 2018 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+  },
+  "build_command": [
+    "/usr/bin/make",
+    "-C",
+    "code/study003/history/original-malformed-header-source/phase2_torus_memory_v1",
+    "BUILD=$PROJECT_ROOT/fixture-stage/torus003_attempt2/build",
+    "all"
+  ],
+  "build_warnings": [
+    "src/apps/torus_fixtures.cpp:95:83: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:125:91: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:135:61: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:151:92: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:184:108: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:253:83: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:291:84: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:312:86: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:332:88: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:368:77: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:401:103: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:434:111: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:497:83: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:532:89: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:568:101: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]",
+    "src/apps/torus_fixtures.cpp:596:96: warning: missing initializer for member '{anonymous}::Group::notes' [-Wmissing-field-initializers]"
+  ],
+  "build_warning_count": 16,
+  "source_authenticated_local_and_shared": true,
+  "source_changed_by_fixture_stage": false,
+  "scientific_execution_performed": false,
+  "production_authorized": false
+}

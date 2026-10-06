@@ -1,12 +1,13 @@
 {
   "schema": "PHASE2-MMEM-SOURCE-PLAN-1",
-  "package_version": "1.1.0",
-  "task": "CLAUDE-017: first complete manuscript source package for PHASE2-MUTABLE-MEMORY-001; CLAUDE-019: one bounded source-only correction patch; CLAUDE-025: version 1.1.0 source revision integrating the accepted post-v1.0 prospective extension PHASE2-PERFORMANCE-CONVERSION-002 (Study 002) into the existing paper",
-  "draft_root": "manuscript-update-v1.1-draft (edited from the authenticated v2 final source, record PHASE2-MUTABLE-MEMORY-001-MANUSCRIPT-V2-FINAL-SOURCE-AUTHENTICATION; paths are relative to the study working directory)",
-  "status": "SOURCE_ONLY. The v1 source was checked, rendered and visually reviewed by the supervisor (statistics check PASS, 864 checks, sha_check_enforced true; visual QA PATCH_REQUIRED for figures 1 and 3). The CLAUDE-019 patch was applied without running any script. The CLAUDE-025 revision edited existing files only: no script, statistics check, figure build, PDF build, scientific model or network access was run or used, no unsupplied upstream path was inspected, and no file was created or removed. Figure 4, the PDFs and the two-study statistics check do not yet exist and must be produced and reviewed before release.",
+  "package_version": "1.2.0",
+  "task": "CLAUDE-017: first complete manuscript source package for PHASE2-MUTABLE-MEMORY-001; CLAUDE-019: one bounded source-only correction patch; CLAUDE-025: version 1.1.0 source revision integrating the accepted post-v1.0 prospective extension PHASE2-PERFORMANCE-CONVERSION-002 (Study 002) into the existing paper; CLAUDE-037 and its continuation CLAUDE-038: version 1.2.0 source revision integrating the accepted post-v1.1 prospective extension PHASE2-TORUS-MEMORY-003 (Study 003) into the existing paper under one identical frozen assignment",
+  "draft_root": "manuscript-update-v1.2-draft (edited from the authenticated source-only v1.1 seed; the sealed v1.1.0 package is record PHASE2-MUTABLE-MEMORY-PAPER-V1-1-FINAL-SEAL; paths are relative to the study working directory)",
+  "status": "SOURCE_ONLY. The v1 source was checked, rendered and visually reviewed by the supervisor (statistics check PASS, 864 checks, sha_check_enforced true; visual QA PATCH_REQUIRED for figures 1 and 3). The CLAUDE-019 patch was applied without running any script. The v1.1.0 package was built, checked (1975 statistics checks passed) and sealed PUBLICATION_PACKAGE_GO by the supervisor. The v1.2.0 revision edited the existing 13 files only: CLAUDE-037 edited six files and stopped at a temporary account session limit; CLAUDE-038 continued from the preserved partial source and completed the remaining seven. In neither task was any script, statistics check, figure build, PDF build, scientific model or network access run or used, no unsupplied upstream path was inspected, and no file was created or removed. Figure 5, the PDFs and the three-study statistics check do not yet exist and must be produced and reviewed before release.",
   "version_history": {
     "1.0": "Study 001 manuscript (CLAUDE-017 draft, CLAUDE-019 patch, QWEN-012 figure-label patch; authenticated v2 final source).",
-    "1.1.0": "Adds Study 002 as a post-v1.0 prospective extension. Study 001 values, the adverse ZERO contrast, the unresolved accuracy interaction, claim limits, citations and provenance are preserved. Title adjusted to name both studies' scope. Adds manuscript Section 2.8, Results 3.6-3.10, Tables 3-4, Figure 4, supplement Part B (S16-S26), Study 002 provenance and two-study checks."
+    "1.1.0": "Adds Study 002 as a post-v1.0 prospective extension. Study 001 values, the adverse ZERO contrast, the unresolved accuracy interaction, claim limits, citations and provenance are preserved. Title adjusted to name both studies' scope. Adds manuscript Section 2.8, Results 3.6-3.10, Tables 3-4, Figure 4, supplement Part B (S16-S26), Study 002 provenance and two-study checks.",
+    "1.2.0": "Adds Study 003 as a post-v1.1 prospective extension in one independently implemented alternative operator bundle. Study 001 and Study 002 values, adverse and unresolved outcomes, operational failures, claim limits, citations and provenance are preserved. Title adjusted to 'Environmental recurrence selects a costly memory-use policy across two operator bundles without a resolved one-bit population benefit'. Adds manuscript Section 2.9, Results 3.11-3.15, Tables 5-6, Figure 5, supplement Part C (S27-S39), the preserved Study 003 audit-header failure, normalization-only recovery and release-source correction, Study 003 provenance and three-study checks. No new citation, parameter, analysis, variant or disclosure."
   },
   "studies": {
     "PHASE2-MUTABLE-MEMORY-001": {
@@ -19,7 +20,15 @@
       "saved_estimates": 19,
       "acceptance_sha256": "fc7777239cd4442c35c01d6261fd71e6fbf7e7f6fd6e11ddcc5d24876ce2f4a2"
     },
-    "relation": "Separate accepted estimate sets (41 records in total) with separate familywise controls; not pooled; not independent replications."
+    "PHASE2-TORUS-MEMORY-003": {
+      "label": "Study 003",
+      "saved_estimates": 22,
+      "operator_bundle": "32-locus, 2^16-allele torus with graded circular loss and four-entry tournament survival",
+      "acceptance_sha256": "2ac18b3f6c22bc6f11ebbf21ffd8614dbcf24f8f3d028c169e92b2d046b02d5d"
+    },
+    "operator_bundles": 2,
+    "figures": 5,
+    "relation": "Three separately accepted estimate sets (63 records in total) with separate familywise controls; not pooled; not independent replications. Studies 001 and 002 share one operator bundle; Study 003 is one independently implemented alternative operator bundle."
   },
   "supplied_inputs": [
     {
@@ -187,6 +196,45 @@
       "sha256": null
     }
   ],
+  "revision_inputs_claude_037_038": [
+    {
+      "name": "CLAUDE_037_MANUSCRIPT_V1_2_INTEGRATION.md",
+      "role": "frozen v1.2.0 integration requirements, exact Study 003 values and claim limits; identical for CLAUDE-037 and CLAUDE-038",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "name": "PHASE2_STUDY_003_ACCEPTED.json",
+      "role": "Study 003 acceptance record; design, production, analysis and audit hashes; estimates; attempt-1 failure; recovery counts; limits; disposition",
+      "path": null,
+      "sha256": "2ac18b3f6c22bc6f11ebbf21ffd8614dbcf24f8f3d028c169e92b2d046b02d5d"
+    },
+    {
+      "name": "TORUS_003_POST_AUDIT_SOURCE_PATCH_RECEIPT.json",
+      "role": "post-acceptance one-line release-source correction of the non-chunk audit-header sentinel; unexecuted; no scientific rerun",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "name": "MANUSCRIPT_V1_1_FINAL_SEAL.json",
+      "role": "seal of the v1.1.0 package (PUBLICATION_PACKAGE_GO; 4 figures; 1975 statistics checks)",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "name": "TORUS_003_CLAUDE_037_SESSION_LIMIT_FAILURE.json",
+      "role": "CLAUDE-038 only: record PHASE2-MMEM-CLAUDE-037-SESSION-LIMIT-PARTIAL-1 listing the six files edited and seven files unchanged by CLAUDE-037",
+      "path": null,
+      "sha256": null,
+      "attempt_receipt_sha256": "f47a1bad0af21f316bcd0705134c70953cf463fc649201af3a11c6eba63a4db6"
+    },
+    {
+      "name": "authenticated seed inventory",
+      "role": "byte counts and SHA-256 of the 13 v1.1 seed files",
+      "path": null,
+      "sha256": null
+    }
+  ],
   "created_files": [
     "README.md",
     "paper/MANUSCRIPT.md",
@@ -216,12 +264,30 @@
     "scripts/check_statistics.py",
     "scripts/make_figures.py"
   ],
+  "edited_files_claude_037": [
+    "paper/MANUSCRIPT.md",
+    "paper/SUPPLEMENT.md",
+    "provenance/QUOTED_STATISTICS.json",
+    "scripts/build_pdfs.py",
+    "scripts/check_statistics.py",
+    "scripts/make_figures.py"
+  ],
+  "edited_files_claude_038": [
+    "README.md",
+    "docs/AI_ASSISTANCE.md",
+    "docs/DATA_AVAILABILITY.md",
+    "provenance/CLAIM_EVIDENCE.json",
+    "provenance/FIGURE_BINDINGS.json",
+    "provenance/SOURCE_PLAN.json",
+    "CONSTRUCTION_NOT_RUN.json"
+  ],
+  "continuation_note": "CLAUDE-038 read the six CLAUDE-037 files for coherence and found no correction necessary; it did not restart from v1.1.",
   "historical_records": {
-    "CONSTRUCTION_NOT_RUN.json": "CLAUDE-017 construction record; preserved byte-for-byte and not updated by later patches or by CLAUDE-025."
+    "CONSTRUCTION_NOT_RUN.json": "CLAUDE-017 construction record; preserved byte-for-byte through CLAUDE-019 and CLAUDE-025. In version 1.2.0 the CLAUDE-017 record is retained verbatim under claude_017_record and a version 1.2.0 construction statement is added."
   },
   "rebuild_commands": [
-    "python scripts/make_figures.py --estimates <estimates_22.json> --decision <decision.json> --s2-estimates <estimates_19.json> --s2-decision <study-002 decision.json> --output-dir _build/figures",
-    "python scripts/check_statistics.py --estimates <estimates_22.json> --decision <decision.json> --diagnostics <diagnostics_descriptive.json> --accepted <PHASE2_STUDY_001_ACCEPTED.json> --replay-receipt <production_replay_receipt.json> --records-receipt <production_records_receipt.json> --s2-estimates <estimates_19.json> --s2-decision <study-002 decision.json> --s2-diagnostics <study-002 diagnostics_descriptive.json> --s2-accepted <PHASE2_STUDY_002_ACCEPTED.json> --s2-replay-receipt <study-002 production_replay_receipt.json> --s2-records-receipt <study-002 production_records_receipt.json> --draft-root . --report _build/STATISTICS_CHECK.json",
+    "python scripts/make_figures.py --estimates <estimates_22.json> --decision <decision.json> --s2-estimates <estimates_19.json> --s2-decision <study-002 decision.json> --s3-estimates <study-003 estimates.json> --s3-decisions <study-003 decisions.json> --output-dir _build/figures",
+    "python scripts/check_statistics.py --estimates <estimates_22.json> --decision <decision.json> --diagnostics <diagnostics_descriptive.json> --accepted <PHASE2_STUDY_001_ACCEPTED.json> --replay-receipt <production_replay_receipt.json> --records-receipt <production_records_receipt.json> --s2-estimates <estimates_19.json> --s2-decision <study-002 decision.json> --s2-diagnostics <study-002 diagnostics_descriptive.json> --s2-accepted <PHASE2_STUDY_002_ACCEPTED.json> --s2-replay-receipt <study-002 production_replay_receipt.json> --s2-records-receipt <study-002 production_records_receipt.json> --s3-estimates <study-003 estimates.json> --s3-decisions <study-003 decisions.json> --s3-accepted <PHASE2_STUDY_003_ACCEPTED.json> --s3-production-authentication <TORUS_003_PRODUCTION_OUTPUT_AUTHENTICATION.json> --s3-audit-failure <TORUS_003_AUDIT_ATTEMPT1_FAILURE.json> --s3-normalization-receipt <TORUS_003_AUDIT_NORMALIZATION_RECEIPT.json> --s3-recovery-runner-receipt <TORUS_003_AUDIT_RECOVERY_RUNNER_RECEIPT.json> --s3-cpp-replay-receipt <study-003 cpp_replay_receipt.json> --s3-source-patch-receipt <TORUS_003_POST_AUDIT_SOURCE_PATCH_RECEIPT.json> --draft-root . --report _build/STATISTICS_CHECK.json",
     "python scripts/build_pdfs.py --figures-dir _build/figures --output-dir _build/paper"
   ],
   "requirements": {
@@ -231,18 +297,22 @@
     "version_pinning": "matplotlib and reportlab versions used for the release build are to be recorded in the supervisor's build receipt"
   },
   "page_targets": {
-    "manuscript": "8-12 rendered A4 pages for v1.0; longer for the two-study v1.1.0",
-    "supplement": "5-8 rendered A4 pages for v1.0; longer with Part B",
+    "manuscript": "8-12 rendered A4 pages for v1.0; longer for the two-study v1.1.0 and the three-study v1.2.0",
+    "supplement": "5-8 rendered A4 pages for v1.0; longer with Parts B and C",
     "v1_measured": {
       "manuscript": 14,
       "supplement": 9
+    },
+    "v1_1_0_measured": {
+      "manuscript": 22,
+      "supplement": 19
     },
     "note": "Page count alone is not a reason to compress scientifically useful content."
   },
   "open_items_for_author": [
     "Write any acknowledgments, funding statement, competing-interests declaration and institutional clearance. None was supplied or verified, so the manuscript contains no such section; these cannot be drafted or asserted by AI.",
     "Assign DOI, repository address and release date at public release; none are claimed in this draft.",
-    "Run scripts/check_statistics.py with both studies' authenticated records (sha check enforced), generate all four figures, rebuild the PDFs and perform visual QA, including the new Figure 4 and the longer tables in Supplement Part B."
+    "Run scripts/check_statistics.py with all three studies' authenticated records (sha check enforced), generate all five figures, rebuild the PDFs and perform visual QA, including the new Figure 5, Tables 5-6 and the longer tables in Supplement Part C."
   ],
   "supervisor_provenance_completion": {
     "status": "COMPLETE",

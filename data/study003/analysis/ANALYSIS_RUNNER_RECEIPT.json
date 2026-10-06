@@ -1,0 +1,58 @@
+{
+  "created_at_utc": "2026-10-02T20:25:19.346837+00:00",
+  "exit_status": 0,
+  "expected_result_set_exact": true,
+  "files": [
+    {
+      "bytes": 2,
+      "path": "analyzer.exit_status",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "bytes": 0,
+      "path": "analyzer.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "analyzer.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1669,
+      "path": "analyzer.time",
+      "sha256": "80fd47b2cf9f2ad3e970db717fa4551ee57b668ae2028736581fb456844af024"
+    },
+    {
+      "bytes": 21,
+      "path": "finished_utc.txt",
+      "sha256": "85f400288cd9dcca02a7a8f2e25079e5eec713e893aaa2e6224032ca758e56f0"
+    },
+    {
+      "bytes": 1544,
+      "path": "results/decisions.json",
+      "sha256": "84f88bb17c20593abd222b8e099e2981e725b28968c650dbf306f43441892f09"
+    },
+    {
+      "bytes": 12279,
+      "path": "results/estimates.json",
+      "sha256": "65a31d9f8c73459aa29c3bc4388ed22a156952a18d71388440bffb38f4c073c4"
+    },
+    {
+      "bytes": 5696,
+      "path": "results/estimates.t3s",
+      "sha256": "86879612cee7b9bb091434e511305eec92b2864dbb7fc72e3164c612810246e2"
+    },
+    {
+      "bytes": 21,
+      "path": "started_utc.txt",
+      "sha256": "bc781ae43a3c39c3229ad9d189928851497965863dff93a738de22725d10bced"
+    }
+  ],
+  "invocations": 1,
+  "job_id": "53562267",
+  "production_modified": false,
+  "record": "PHASE2-TORUS-MEMORY-003-ANALYSIS-RUNNER-RECEIPT-1",
+  "retry_forbidden": true,
+  "status": "COMPLETE"
+}

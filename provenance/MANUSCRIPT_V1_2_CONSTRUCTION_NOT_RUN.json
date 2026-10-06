@@ -1,0 +1,88 @@
+{
+  "schema": "PHASE2-MMEM-CONSTRUCTION-NOT-RUN-2",
+  "package_version": "1.2.0",
+  "task": "CLAUDE-037, completed by its continuation CLAUDE-038 under the identical frozen assignment",
+  "created_by": "Claude (AI assistant), under human direction",
+  "statement": "Version 1.2.0 integrates the accepted post-v1.1 prospective extension PHASE2-TORUS-MEMORY-003 (Study 003) into the existing paper by editing the existing 13 source files only. CLAUDE-037 edited six files and stopped at a temporary account session limit; its partial source was preserved (record PHASE2-MMEM-CLAUDE-037-SESSION-LIMIT-PARTIAL-1). CLAUDE-038 continued from that preserved source without restarting from v1.1, reviewed the six edited files for coherence and completed the remaining seven. In neither task was any script executed, any statistical check run, any figure generated, any PDF built, or any scientific simulation, analysis or audit performed. No network access was used, no unsupplied upstream path was inspected, no file was created or removed, and no upstream file or original production output was modified.",
+  "executed": {
+    "scripts": false,
+    "statistical_checks": false,
+    "figure_generation": false,
+    "pdf_build": false,
+    "scientific_execution": false,
+    "network_access": false,
+    "files_created_or_removed": false
+  },
+  "package_scope": {
+    "studies": ["PHASE2-MUTABLE-MEMORY-001", "PHASE2-PERFORMANCE-CONVERSION-002", "PHASE2-TORUS-MEMORY-003"],
+    "operator_bundles": 2,
+    "saved_estimate_records": {"PHASE2-MUTABLE-MEMORY-001": 22, "PHASE2-PERFORMANCE-CONVERSION-002": 19, "PHASE2-TORUS-MEMORY-003": 22, "total_separately_accepted": 63},
+    "figures": 5
+  },
+  "session_limit_record": {
+    "record": "PHASE2-MMEM-CLAUDE-037-SESSION-LIMIT-PARTIAL-1",
+    "status": "PRESERVED_PARTIAL_SOURCE_ONLY_SESSION_LIMIT",
+    "created_at_utc": "2026-10-02T21:17:33.467106+00:00",
+    "attempt_receipt_sha256": "f47a1bad0af21f316bcd0705134c70953cf463fc649201af3a11c6eba63a4db6",
+    "response_sha256": "80b23920e9b672953b6e1fb5e32dbca87dc26d93f3d53fa668e723a9765c5b43"
+  },
+  "files_edited_claude_037": [
+    "paper/MANUSCRIPT.md",
+    "paper/SUPPLEMENT.md",
+    "provenance/QUOTED_STATISTICS.json",
+    "scripts/build_pdfs.py",
+    "scripts/check_statistics.py",
+    "scripts/make_figures.py"
+  ],
+  "files_edited_claude_038": [
+    "README.md",
+    "docs/AI_ASSISTANCE.md",
+    "docs/DATA_AVAILABILITY.md",
+    "provenance/CLAIM_EVIDENCE.json",
+    "provenance/FIGURE_BINDINGS.json",
+    "provenance/SOURCE_PLAN.json",
+    "CONSTRUCTION_NOT_RUN.json"
+  ],
+  "consequences": [
+    "The quoted statistics, interval recomputations, decision checks and Study 003 audit-provenance checks are untested until scripts/check_statistics.py is run against the authenticated records of all three studies.",
+    "Figure 5 does not yet exist, and figures 1-4 must be regenerated from this source.",
+    "The version 1.2.0 PDFs do not yet exist; rendered page counts are not measured.",
+    "The edited scripts have not been executed and may contain defects."
+  ],
+  "claude_017_record": {
+    "schema": "PHASE2-MMEM-CONSTRUCTION-NOT-RUN-1",
+    "task": "CLAUDE-017",
+    "created_by": "Claude (AI assistant), under human direction",
+    "statement": "Claude created source files only. No script was executed, no statistical check was run, no figure was generated, no PDF was built, and no scientific simulation, analysis or audit was performed. No network access was used, no file other than those explicitly supplied in the task was inspected, and no upstream file was modified.",
+    "executed": {
+      "scripts": false,
+      "statistical_checks": false,
+      "figure_generation": false,
+      "pdf_build": false,
+      "scientific_execution": false,
+      "network_access": false
+    },
+    "files_created": [
+      "README.md",
+      "paper/MANUSCRIPT.md",
+      "paper/SUPPLEMENT.md",
+      "scripts/build_pdfs.py",
+      "scripts/make_figures.py",
+      "scripts/check_statistics.py",
+      "provenance/CLAIM_EVIDENCE.json",
+      "provenance/QUOTED_STATISTICS.json",
+      "provenance/FIGURE_BINDINGS.json",
+      "provenance/SOURCE_PLAN.json",
+      "docs/AI_ASSISTANCE.md",
+      "docs/DATA_AVAILABILITY.md",
+      "CONSTRUCTION_NOT_RUN.json"
+    ],
+    "consequences": [
+      "The quoted statistics, interval recomputations and decision checks are untested until scripts/check_statistics.py is run against the authenticated records.",
+      "The figures referenced by the manuscript do not yet exist.",
+      "Rendered page counts are estimates, not measurements.",
+      "The scripts have not been executed and may contain defects."
+    ],
+    "preservation_note": "Content of the CLAUDE-017 record, preserved byte-for-byte as the whole file through version 1.1.0 (seed SHA-256 49c6e591e983baf5205a6a9f8550f6f2f83ad68c7b02ff504e549b580e0bbf13, 1503 bytes) and retained here verbatim in value."
+  }
+}

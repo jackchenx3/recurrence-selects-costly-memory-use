@@ -1,0 +1,88 @@
+{
+  "record": "PHASE2-TORUS-MEMORY-003-PRODUCER-FIXTURES-ACCEPTED-1",
+  "status": "PRODUCER_FIXTURES_PASS",
+  "created_at_utc": "2026-10-02T17:48:41.124650+00:00",
+  "attempt1": {
+    "job_id": "53558267",
+    "status": "FAILED_CLOSED_BEFORE_FIXTURE_INVOCATION_PRESERVED",
+    "failure_sha256": "24915b1fabf7befe1d80ca0ae747b8e2fd6248f5b4de24d932d6e27f022458fe"
+  },
+  "attempt2": {
+    "job_id": "53558712",
+    "scheduler_state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:01:27",
+    "node": "cn134",
+    "cpus": 32,
+    "memory": "64G",
+    "walltime": "02:00:00"
+  },
+  "submission": {
+    "path": "$PROJECT_ROOT/TORUS_003_PRODUCER_FIXTURE_RECOVERY_JOB_SUBMISSION.json",
+    "sha256": "9a3f501979c68dfcd9f460e8688160529fc6f818a8cd0b051a544104fc18c378"
+  },
+  "execution_authority": {
+    "path": "$PROJECT_ROOT/TORUS_003_PRODUCER_FIXTURE_RECOVERY_AUTHORITY.json",
+    "sha256": "5e75608b092a78e03056fda9794b624e6cc3895771bb76ec757e38d164f1c661"
+  },
+  "runner_acceptance": {
+    "path": "$PROJECT_ROOT/TORUS_003_FIXTURE_RECOVERY_RUNNER_ACCEPTED.json",
+    "sha256": "40973aed6c4caaa72827cd416a839d83aa3bbbddd79c0eaa270063053fbb3479"
+  },
+  "stage_receipt": {
+    "path": "$PROJECT_ROOT/fixture-stage/torus003_attempt2/TORUS_003_PRODUCER_FIXTURE_RECOVERY_ATTEMPT2_STAGE_RECEIPT.json",
+    "shared_path": "$PROJECT_ROOT/fixture-stage/torus003_attempt2/TORUS_003_PRODUCER_FIXTURE_RECOVERY_ATTEMPT2_STAGE_RECEIPT.json",
+    "sha256": "933608e24ebdffe3f10fbc7ef4787bd0f68e19fb31c1b523099ef670d142615d",
+    "status": "PASS"
+  },
+  "fixture_receipt": {
+    "path": "data/study003/prospective-records/02-implementation/fixture_receipt.json",
+    "sha256": "85384fdf8096e5ae2424de9d8f932a04deb533f121025c220eaba76b18fb5ce0",
+    "status": "ALL_FIXTURES_PASSED",
+    "groups": 16
+  },
+  "independent_authentication": {
+    "commands": [
+      "seed_check",
+      "static_preflight",
+      "source_manifest",
+      "build",
+      "fixtures",
+      "source_verify"
+    ],
+    "command_count": 6,
+    "warning_count": 16,
+    "warnings_exactly_attempt1": true,
+    "fixture_groups_pass": 16,
+    "output_files_including_stage_receipt": 47,
+    "output_bytes_excluding_stage_receipt": 37329208,
+    "source_files": 81,
+    "source_byte_identical": true,
+    "all_validations_passed": true
+  },
+  "binaries": {
+    "torus_fixtures": {
+      "remote_path": "$PROJECT_ROOT/fixture-stage/torus003_attempt2/build/torus_fixtures",
+      "bytes": 5931832,
+      "sha256": "80c05badc204f2d456d55799d7df3aa42f3705ce41b7a5d1ecd80faffd3da378"
+    },
+    "torus_produce": {
+      "remote_path": "$PROJECT_ROOT/fixture-stage/torus003_attempt2/build/torus_produce",
+      "bytes": 5627664,
+      "sha256": "a50f617d4187905ccdad409b8a54f90c41e648558bf8f4ce54c959852063d221"
+    },
+    "torus_regen": {
+      "remote_path": "$PROJECT_ROOT/fixture-stage/torus003_attempt2/build/torus_regen",
+      "bytes": 5396632,
+      "sha256": "abf43f83e4b03b026ae9e062a73dc6b806ade5de30ea42007c838631a02a93e0"
+    }
+  },
+  "fixture_binary_invoked": true,
+  "production_binary_invoked": false,
+  "regeneration_binary_invoked": false,
+  "timing_mode_invoked": false,
+  "scientific_execution_performed": false,
+  "production_authorized": false,
+  "further_fixture_attempts_authorized": false,
+  "next_gate": "separately implemented independent auditor source construction, review and fixture stage before any production authority"
+}

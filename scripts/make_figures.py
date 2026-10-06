@@ -1,24 +1,29 @@
 #!/usr/bin/env python3
-"""Render the four manuscript figures from the saved analyzer records of both studies.
+"""Render the five manuscript figures from the saved analyzer records of the three studies.
 
 Inputs are named explicitly. Study 001 (PHASE2-MUTABLE-MEMORY-001): the 22-record
 estimate file (analysis/estimates_22.json, a JSON list of records addressed by their
 "name" field) and the decision record (analysis/decision.json). Study 002
 (PHASE2-PERFORMANCE-CONVERSION-002): the 19-record estimate file
-(results/estimates_19.json) and its decision record (results/decision.json). No value is
-embedded in this script; every plotted value is read from those files and written, with
+(results/estimates_19.json) and its decision record (results/decision.json). Study 003
+(PHASE2-TORUS-MEMORY-003): the 22-record estimate file (estimates.json, an object whose
+"records" list is addressed by "name") and its decision record (decisions.json). No value
+is embedded in this script; every plotted value is read from those files and written, with
 input SHA-256 values, to FIGURE_DATA.json in the output directory. Each input must match
 the SHA-256 authenticated in its study's acceptance record unless --skip-sha-check is
 given, in which case the mismatch is recorded in FIGURE_DATA.json. Figure 1 is a
 deterministic schematic containing no outcome values. Only the Python standard library
 and matplotlib are used; no producer, analyzer or auditor code is imported.
 
-Outputs: figure1_design, figure2_allele and figure3_accuracy (Study 001) and
-figure4_information (Study 002), each as PNG, PDF and SVG, plus FIGURE_DATA.json.
+Outputs: figure1_design, figure2_allele and figure3_accuracy (Study 001),
+figure4_information (Study 002) and figure5_operator_bundles (Study 001 and Study 003
+side by side; two operator bundles and independent cohorts, never pooled), each as PNG,
+PDF and SVG, plus FIGURE_DATA.json.
 """
 import argparse
 import hashlib
 import json
+from decimal import Decimal
 from fractions import Fraction
 from pathlib import Path
 
@@ -51,14 +56,28 @@ S2_LABELS = {
     "B_NONINFO": "B_NONINFO\n(NONINFO - SHAM accuracy)",
 }
 
-# SHA-256 values authenticated in PHASE2_STUDY_001_ACCEPTED.json (authenticated_outputs)
-# and PHASE2_STUDY_002_ACCEPTED.json (analysis).
+# Study 003 record names (PHASE2-TORUS-MEMORY-003). Figure 5 compares the Study 001 and
+# Study 003 primary allele and secondary performance estimands, which share names and the
+# declared 1/32 scales but come from different operator bundles and independent cohorts.
+S3_ESTIMATES_SCHEMA = "PHASE2-TORUS-MEMORY-003-ESTIMATES-v1"
+S3_DECISIONS_SCHEMA = "PHASE2-TORUS-MEMORY-003-DECISIONS-v1"
+S3_SAVED_ESTIMATES = 22
+S3_PRIMARY = ("C_abs", "C_rec", "D_HALF", "D_ZERO")
+S3_PERFORMANCE = ("P_abs", "P_rec")
+STUDY_LABEL = {"001": "Study 001", "003": "Study 003"}
+STUDY_COLOR = {"001": "#1f5f8b", "003": "#a4502a"}
+
+# SHA-256 values authenticated in PHASE2_STUDY_001_ACCEPTED.json (authenticated_outputs),
+# PHASE2_STUDY_002_ACCEPTED.json (analysis) and PHASE2_STUDY_003_ACCEPTED.json (analysis).
 AUTHENTICATED_SHA256 = {
     "estimates": "83828a49936bb8364813e2634f11cb28c4de2212b4b162d96e616ddbc7b4f8c0",
     "decision": "5b3aea3c18c4530b2be9f29d5c64fdd8173b6b323823bf9cc3361bd4e7010fc0",
     "s2_estimates": "5efa213cdfeb985a20fd7bbc65fb36dd505c568670ad350b3223c2139eb0b68d",
     "s2_decision": "3f28b82d0cb40357a1068c464d1c5158c36ba8fbfe775026ce22c70113b3b84a",
+    "s3_estimates": "65a31d9f8c73459aa29c3bc4388ed22a156952a18d71388440bffb38f4c073c4",
+    "s3_decisions": "84f88bb17c20593abd222b8e099e2981e725b28968c650dbf306f43441892f09",
 }
+INPUT_STUDY = {"s2_": "PHASE2-PERFORMANCE-CONVERSION-002", "s3_": "PHASE2-TORUS-MEMORY-003"}
 
 INK = "#20262c"
 MUTED = "#55636e"
@@ -132,11 +151,44 @@ def load_s2_records(estimates_path, decision_path):
     return by_name, decision
 
 
+def load_s3_records(estimates_path, decisions_path):
+    with open(str(estimates_path)) as handle:
+        data = json.load(handle)
+    with open(str(decisions_path)) as handle:
+        decisions = json.load(handle)
+    if data.get("schema") != S3_ESTIMATES_SCHEMA or decisions.get("schema") != S3_DECISIONS_SCHEMA:
+        raise SystemExit("Study 003 estimate or decision schema differs from the accepted schema")
+    records = data["records"]
+    if not isinstance(records, list) or len(records) != S3_SAVED_ESTIMATES:
+        raise SystemExit("Study 003 estimate file must contain 22 records")
+    if data.get("namespace") != decisions.get("namespace"):
+        raise SystemExit("Study 003 estimate and decision namespaces differ")
+    by_name = {rec["name"]: rec for rec in records}
+    missing = [name for name in S3_PRIMARY + S3_PERFORMANCE if name not in by_name]
+    if missing:
+        raise SystemExit("missing Study 003 estimate records: " + ", ".join(missing))
+    return by_name, decisions
+
+
 def interval_record(rec):
     return {"name": rec["name"], "estimate": float(rec["estimate"]), "lower": float(rec["lower"]),
             "upper": float(rec["upper"]), "estimate_exact": rec["estimate_exact"],
             "half_width": float(rec["half_width"]),
             "classification": rec.get("classification", rec.get("family_decision"))}
+
+
+def s3_interval_record(rec, decisions):
+    # Study 003 records carry an exact rational value and high-precision display strings.
+    display = rec["display"]
+    item = {"name": rec["name"], "estimate": float(Fraction(rec["exact_value"])),
+            "lower": float(Decimal(display["lower"])), "upper": float(Decimal(display["upper"])),
+            "estimate_exact": rec["exact_value"], "estimate_display": display["estimate"],
+            "lower_display": display["lower"], "upper_display": display["upper"],
+            "half_width": float(Decimal(display["half_width"])), "family": rec["family"],
+            "classification_code": rec["classification_code"]}
+    if rec["name"] in decisions.get("performance_classes", {}):
+        item["classification"] = decisions["performance_classes"][rec["name"]]
+    return item
 
 
 def cell_values(by_name, prefix):
@@ -285,7 +337,8 @@ def cell_panel(ax, cells, ylabel, reference=None, reference_label=None):
     ax.legend(handles=handles, frameon=False, fontsize=7, loc="upper right")
 
 
-def interval_panel(ax, items, xlim, thresholds, xlabel, labels=None, band=None):
+def interval_panel(ax, items, xlim, thresholds, xlabel, labels=None, band=None, colors=None):
+    # colors is used only by figure 5; figures 2-4 keep the default single ink colour.
     names = labels if labels is not None else [item["name"] for item in items]
     if band is not None:
         # Shaded meaningful-scale band (-band, +band) with labelled edges.
@@ -295,8 +348,9 @@ def interval_panel(ax, items, xlim, thresholds, xlabel, labels=None, band=None):
                     fontsize=6.6, color=MUTED, bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.6})
     for k, item in enumerate(items):
         y = len(items) - 1 - k
-        ax.plot([item["lower"], item["upper"]], [y, y], color=INK, linewidth=2, solid_capstyle="round")
-        ax.plot(item["estimate"], y, marker="o", markersize=7, color=INK,
+        color = colors[k] if colors is not None else INK
+        ax.plot([item["lower"], item["upper"]], [y, y], color=color, linewidth=2, solid_capstyle="round")
+        ax.plot(item["estimate"], y, marker="o", markersize=7, color=color,
                 markeredgecolor="white", markeredgewidth=1.2, zorder=3)
         ax.annotate("%.6f\n[%.6f, %.6f]" % (item["estimate"], item["lower"], item["upper"]),
                     (item["estimate"], y), xytext=(0, 9), textcoords="offset points",
@@ -386,6 +440,60 @@ def figure4(output_dir, primary, allele, performance, decision):
     return save(fig, output_dir, "figure4_information")
 
 
+# ---------------------------------------------------------------------------------------
+# Figure 5: Study 001 and Study 003 estimands at the declared 1/32 scales
+# ---------------------------------------------------------------------------------------
+def paired_rows(names, s1_items, s3_items):
+    # One row per (estimand, study): Study 001 first, then Study 003. Never pooled.
+    s1 = {item["name"]: item for item in s1_items}
+    s3 = {item["name"]: item for item in s3_items}
+    rows, labels, colors = [], [], []
+    for name in names:
+        for study, source in (("001", s1), ("003", s3)):
+            rows.append(dict(source[name], study=study))
+            labels.append("%s\n%s" % (name, STUDY_LABEL[study]))
+            colors.append(STUDY_COLOR[study])
+    return rows, labels, colors
+
+
+def figure5(output_dir, s1_primary, s1_performance, s3_primary, s3_performance, decision, s3_decisions):
+    # Explicit margins leave room below panel b for the legend and two decision lines.
+    fig = plt.figure(figsize=(7.4, 8.2))
+    grid = fig.add_gridspec(2, 1, height_ratios=[8, 4], hspace=0.42, left=0.22, right=0.97,
+                            top=0.95, bottom=0.21)
+    a, b = fig.add_subplot(grid[0, 0]), fig.add_subplot(grid[1, 0])
+    rows_a, labels_a, colors_a = paired_rows(S3_PRIMARY, s1_primary, s3_primary)
+    high = max(item["upper"] for item in rows_a)
+    interval_panel(a, rows_a, (-0.05, high + 0.08), [-DELTA, DELTA], "Allele-frequency estimand (proportion)",
+                   labels=labels_a, band=DELTA, colors=colors_a)
+    panel_label(a, "a", "Primary allele family: enrichment and start-state gate")
+    rows_b, labels_b, colors_b = paired_rows(S3_PERFORMANCE, s1_performance, s3_performance)
+    low = min(item["lower"] for item in rows_b)
+    high = max(item["upper"] for item in rows_b)
+    interval_panel(b, rows_b, (min(low, -DELTA) - 0.01, max(high, DELTA) + 0.01), [-DELTA, DELTA],
+                   "Performance contrast (fraction of each study's maximal loss)",
+                   labels=labels_b, band=DELTA, colors=colors_b)
+    panel_label(b, "b", "Secondary performance family")
+    handles = [Patch(facecolor=STUDY_COLOR["001"], edgecolor="none",
+                     label="Study 001: 32-bit genotypes, Hamming mismatch, weighted sampling without replacement"),
+               Patch(facecolor=STUDY_COLOR["003"], edgecolor="none",
+                     label="Study 003: 2^16-allele torus, graded circular loss, four-entry tournaments; "
+                           "new code and cohort"),
+               Patch(facecolor=BAND, edgecolor="none",
+                     label="declared scale (-1/32, +1/32); each study has its own 95% familywise families")]
+    fig.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.5, 0.125), ncol=1, frameon=False,
+               fontsize=6.9)
+    fig.text(0.5, 0.022, "Study 001: %s; P_abs %s; P_rec %s"
+             % (decision["primary_decision"], decision["secondary_classifications"]["P_abs"],
+                decision["secondary_classifications"]["P_rec"]),
+             ha="center", fontsize=6.8, color=MUTED)
+    fig.text(0.5, 0.0, "Study 003: %s; P_abs %s; P_rec %s"
+             % (s3_decisions["primary_decision"], s3_decisions["performance_classes"]["P_abs"],
+                s3_decisions["performance_classes"]["P_rec"]),
+             ha="center", fontsize=6.8, color=MUTED)
+    return save(fig, output_dir, "figure5_operator_bundles"), rows_a, rows_b
+
+
 def authenticate_inputs(paths, skip):
     hashes = {key: sha256_file(path) for key, path in paths.items()}
     mismatched = sorted(key for key in hashes if hashes[key] != AUTHENTICATED_SHA256[key])
@@ -401,6 +509,8 @@ def main():
     parser.add_argument("--decision", type=Path, required=True, help="Study 001 analysis/decision.json")
     parser.add_argument("--s2-estimates", type=Path, required=True, help="Study 002 results/estimates_19.json")
     parser.add_argument("--s2-decision", type=Path, required=True, help="Study 002 results/decision.json")
+    parser.add_argument("--s3-estimates", type=Path, required=True, help="Study 003 estimates.json (22 records)")
+    parser.add_argument("--s3-decisions", type=Path, required=True, help="Study 003 decisions.json")
     parser.add_argument("--output-dir", type=Path, required=True, help="directory for figures and FIGURE_DATA.json")
     parser.add_argument("--skip-sha-check", action="store_true",
                         help="allow inputs whose SHA-256 differs from the authenticated values (recorded)")
@@ -408,11 +518,15 @@ def main():
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
     input_paths = {"estimates": args.estimates, "decision": args.decision,
-                   "s2_estimates": args.s2_estimates, "s2_decision": args.s2_decision}
+                   "s2_estimates": args.s2_estimates, "s2_decision": args.s2_decision,
+                   "s3_estimates": args.s3_estimates, "s3_decisions": args.s3_decisions}
     input_hashes, mismatched = authenticate_inputs(input_paths, args.skip_sha_check)
 
     by_name, decision = load_records(args.estimates, args.decision)
     s2_by_name, s2_decision = load_s2_records(args.s2_estimates, args.s2_decision)
+    s3_by_name, s3_decisions = load_s3_records(args.s3_estimates, args.s3_decisions)
+    s3_primary = [s3_interval_record(s3_by_name[n], s3_decisions) for n in S3_PRIMARY]
+    s3_performance = [s3_interval_record(s3_by_name[n], s3_decisions) for n in S3_PERFORMANCE]
     s2_primary = [interval_record(s2_by_name[n]) for n in S2_PRIMARY]
     s2_allele = [interval_record(s2_by_name[n]) for n in S2_ALLELE]
     s2_performance = [interval_record(s2_by_name[n]) for n in S2_PERFORMANCE]
@@ -422,21 +536,23 @@ def main():
     gate = [interval_record(by_name[n]) for n in PRIMARY_GATE]
     secondary = [interval_record(by_name[n]) for n in SECONDARY]
 
+    figure5_files, figure5_rows_a, figure5_rows_b = figure5(
+        args.output_dir, enrichment + gate, secondary, s3_primary, s3_performance, decision, s3_decisions)
     outputs = {
         "figure1_design": figure1(args.output_dir),
         "figure2_allele": figure2(args.output_dir, freq_cells, enrichment, gate, decision),
         "figure3_accuracy": figure3(args.output_dir, acc_cells, secondary, decision),
         "figure4_information": figure4(args.output_dir, s2_primary, s2_allele, s2_performance, s2_decision),
+        "figure5_operator_bundles": figure5_files,
     }
     data = {
-        "schema": "PHASE2-MMEM-FIGURE-DATA-2",
-        "package_version": "1.1.0",
+        "schema": "PHASE2-MMEM-FIGURE-DATA-3",
+        "package_version": "1.2.0",
         "inputs": {
             key: {"path": str(path), "sha256": input_hashes[key],
                   "authenticated_sha256": AUTHENTICATED_SHA256[key],
                   "matches_authenticated": key not in mismatched,
-                  "study": "PHASE2-PERFORMANCE-CONVERSION-002" if key.startswith("s2_")
-                  else "PHASE2-MUTABLE-MEMORY-001"}
+                  "study": INPUT_STUDY.get(key[:3], "PHASE2-MUTABLE-MEMORY-001")}
             for key, path in sorted(input_paths.items())
         },
         "sha_check_enforced": not args.skip_sha_check,
@@ -470,6 +586,26 @@ def main():
             "bounded_interval_wholly_inside_minus_delta_plus_delta":
                 s2_decision.get("bounded_interval_wholly_inside_minus_delta_plus_delta"),
             "secondary_classifications": s2_decision["secondary_classifications"],
+        },
+        "figure5_operator_bundles": {
+            "studies": {"001": "PHASE2-MUTABLE-MEMORY-001", "003": "PHASE2-TORUS-MEMORY-003"},
+            "note": ("Different operator bundles and independent cohorts; each study's familywise families are "
+                     "controlled separately; no estimate is pooled and effect magnitudes are not compared across "
+                     "bundles. The allele scale 1/32 is one expected individual in both studies; the performance "
+                     "scale 1/32 is one correct bit per survivor in Study 001 and 1/32 of maximal total torus loss "
+                     "in Study 003."),
+            "panel_a_primary_allele_estimands": figure5_rows_a,
+            "panel_b_performance_estimands": figure5_rows_b,
+            "meaningful_band": [-DELTA, DELTA],
+            "thresholds": {"Delta": DELTA, "Delta_P": DELTA},
+            "study_001_primary_decision": decision["primary_decision"],
+            "study_001_secondary_classifications": decision["secondary_classifications"],
+            "study_003_primary_decision": s3_decisions["primary_decision"],
+            "study_003_performance_classes": s3_decisions["performance_classes"],
+            "study_003_crossed_interpretation": s3_decisions["crossed_interpretation"],
+            "study_003_identity_failure_count": s3_decisions["identity_failure_count"],
+            "study_003_design_sha256": s3_decisions["design_sha256"],
+            "study_003_production_manifest_sha256": s3_decisions["production_manifest_sha256"],
         },
     }
     out = args.output_dir / "FIGURE_DATA.json"

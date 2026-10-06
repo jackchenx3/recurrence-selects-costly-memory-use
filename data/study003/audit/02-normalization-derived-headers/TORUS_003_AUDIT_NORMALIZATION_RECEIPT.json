@@ -1,0 +1,61 @@
+{
+  "copied_and_normalized_files": 3,
+  "created_at_utc": "2026-10-02T20:47:03.638217+00:00",
+  "hard_linked_files": 1951,
+  "manifest_entries_sha256": "d2c97e6d93741e1eaa511c234c3ced01062d804d89d2b00060e17398786eab27",
+  "manifest_sha256": "93a033ed000ad0aacab5dbf83486b8b41f26903eb4f1ec207362caec183126ce",
+  "normalizations": [
+    {
+      "bytes": 1744830528,
+      "differing_offsets": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "normalized_bytes_hex": "ffffffff",
+      "normalized_sha256": "89720a9624fbb2813229dc8174b6a930f171c14661c77622296c6f2de4b2d338",
+      "original_bytes_hex": "00000000",
+      "original_sha256": "fc18a84754a4084b53061ff1d0374117c88f7995b748384beafdc263c5856613",
+      "path": "audit/audit_candidates.t3c",
+      "payload_bytes_64_to_eof_identical": true
+    },
+    {
+      "bytes": 555745344,
+      "differing_offsets": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "normalized_bytes_hex": "ffffffff",
+      "normalized_sha256": "080f904bf1404c1cb36e63ea5abfc9b2c54f33afd1cc2643c38dea2e2d961414",
+      "original_bytes_hex": "00000000",
+      "original_sha256": "1a666a93df839c8cc1ed1833b36118ab6a2a600238739db0a17fda7febf6b730",
+      "path": "audit/audit_context.t3x",
+      "payload_bytes_64_to_eof_identical": true
+    },
+    {
+      "bytes": 268435520,
+      "differing_offsets": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "normalized_bytes_hex": "ffffffff",
+      "normalized_sha256": "3bd36dfc2e278a7663fa4416e0806f5cd8e70f39ece5697b27d161d7a1c841c2",
+      "original_bytes_hex": "00000000",
+      "original_sha256": "6fc6a0e4c78d8e9e945a8ad1ddbb7c46b16fea287d620ef365d89ae98865f806",
+      "path": "audit/audit_entries.t3e",
+      "payload_bytes_64_to_eof_identical": true
+    }
+  ],
+  "record": "PHASE2-TORUS-MEMORY-003-AUDIT-NORMALIZATION-RECEIPT-1",
+  "record_bytes": 4694069888,
+  "record_files": 1954,
+  "scientific_values_parsed": false,
+  "source_production_or_analysis_modified": false,
+  "status": "PASS",
+  "total_differing_bytes": 12
+}
