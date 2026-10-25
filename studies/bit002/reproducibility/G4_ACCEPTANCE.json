@@ -1,0 +1,49 @@
+{
+  "at_utc": "2026-10-25T02:18:36.974591+00:00",
+  "gate": "G4",
+  "state": "ACCEPTED_COMPLETE_CORRECTNESS_G4",
+  "protocol": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/design/PROTOCOL_V0_4_ACCEPTED.txt",
+    "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
+  },
+  "auditor_source_manifest": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/implementation-readiness-120m/auditor-repair-v3/ROOT_FROZEN_CANDIDATE.json",
+    "sha256": "6cce664d4a1df6166aab2cf6c590f985670f00b2f5aee2e0bbd1671355304d21"
+  },
+  "G4a": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/AUDITOR_G4A_ACCEPTANCE_V3.json",
+    "sha256": "4a786185484a9c04bd5ee34074b14b7fcfbe65da56498f3afa15beda3ad9ed04"
+  },
+  "producer_G3": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/PRODUCER_G3_ACCEPTANCE.json",
+    "sha256": "47c5571c940d352bd59650ad6ac52367928110659cb91a1d6ebba0fc889c0251"
+  },
+  "runtime_authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/implementation-readiness-120m/auditor-v3-g4-comparison/ROOT_RUNTIME_AUTHENTICATION.json",
+    "sha256": "b251f3932e1f6eb586e7d4b90d3a5fe71de5a5c29c81f92e6631b5a7e7d24a3e"
+  },
+  "nonauthor_review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/implementation-readiness-120m/g4-independent-review-v3/REVIEW.txt",
+    "sha256": "f8bb928b60f6a33eb610ad50701027472305f9e5033869582b09bd235e2abbf7"
+  },
+  "nonauthor_authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/implementation-readiness-120m/g4-independent-review-v3/ROOT_AUTHENTICATION.json",
+    "sha256": "0ae714b1928f714c0977d9b718790bc71fd6c17336ec385f0cfd991a745297b9"
+  },
+  "all_61_FIXOUT_agree": true,
+  "2219_corruption_cases_PASS": true,
+  "A_L_fixture_and_K_all_16_PASS": true,
+  "sealed_results_hash_agree_only": true,
+  "producer_outputs_never_supplied_to_auditor_source_authors": true,
+  "implementation120_phase_closed_at_this_acceptance": true,
+  "implementation_phase_active_seconds_final": 2142.576502804052,
+  "readiness_active_seconds_at_G4_acceptance": 13769.766551969033,
+  "ROOT_acceptance_session": {
+    "start_utc": "2026-10-25T02:17:57.480+00:00",
+    "end_utc": "2026-10-25T02:18:36.974591+00:00",
+    "active_seconds": 39.494591
+  },
+  "completed_review_seconds_added": 162.371353083,
+  "scientific_or_benchmark_execution_authorized_by_this_receipt": false,
+  "original_failures_evidence_preserved": true
+}

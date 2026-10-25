@@ -1,0 +1,74 @@
+VERDICT: GO (INTEGRATED MANUSCRIPT CONTENT ACCEPTED)
+
+The frozen working v1.3.0 is a scientifically coherent integration of accepted Studies 001–003 and the accepted BIT002 addendum. No material content correction is required. This verdict accepts the integrated manuscript’s narrow claims; it does not authorize scientific execution or confer external publication or journal acceptance.
+
+I did not author or edit these inputs, consult task histories, invoke other reviewers or agents, or reuse a previous review.
+
+I authenticated all 52 listed inputs against their specified byte counts and SHA-256 values. The candidate directory contains exactly the 40 manifest entries, with no missing or extra files. All 40 candidate files still matched at the final check.
+
+The controlling frozen manifest has SHA-256:
+`a3069da00a8f4c6afaef5b900fe4327151fa0287ab1cbae977d2699c490b80df`.
+
+The reviewed main and supplement are respectively:
+`f2089c873321756fa47079387f215721053b4438f517247e459631b81f735877`
+and
+`4ababfc12e368b8135e3e644ece9c0ff27ff4cf2612e60d80efe479e6288b951`.
+
+The earlier construction receipt records intermediate Markdown hashes. Those are historical construction identities; the later frozen manifest authenticates the reviewed candidate.
+
+I read the complete integrated main Markdown, supplement, remaining-gaps document, revision notes and integrated claim map. Against the authenticated baseline main `f00d64ef75db4bba8d10f7dfcd8eacaba0165a3ac58d989d418e1f6883aab4ae` and supplement `8e3fc067b811f11c3ee733c40eba01cc7e33ba55f34ba6b2a9019b30f5ca1573`, I verified that:
+
+- All six original main tables, including captions, and the complete bibliography are byte-identical.
+- Original model/design prose preceding new Section 2.10 and Results 3.1–3.15 are unchanged.
+- Supplement scientific Parts A–C are verbatim apart from trailing whitespace.
+- Author and affiliation fields are unchanged.
+- Old bounded, adverse, descriptive and unresolved findings remain present. The discussion and limitations retain their scientific qualifications.
+
+The new title appropriately accommodates immediate positive performance evidence. The abstract, introduction, methods, results, discussion and limitations consistently distinguish that evidence from the accepted long-run findings. The revision avoids an indiscriminate claim that population benefit is absent or every effect is zero.
+
+Study 002 remains PHASE2-PERFORMANCE-CONVERSION-002, the directional-information experiment. BIT002 is PHASE3-BIT-RETRIEVAL-CAUSALITY-002. They are not interchangeable names.
+
+The notational collision is explicitly resolved: **P_rec in Studies 001/003 is a long-run recurrence interaction; BIT002 P_rec is the immediate recurrent-target CACHE-minus-ALL_FRESH accuracy effect.** No numerical or causal substitution occurs.
+
+The original ACTIVE/SHAM and INFO/NONINFO trajectories diverge. BIT002 instead compares six complete one-turnover evaluations cloned from identical stored state and semantic tape. Its positive immediate accuracy effect therefore does not contradict sign-unresolved long-run performance contrasts. The integration correctly declines to infer long-run mediation, allele effects, or the cause of the original selection/performance separation.
+
+BIT002’s design is accurately represented: frozen v0.4, 42,000 new independent blocks, exactly 21,000 per start, checkpoint uniformly selected from 193–256 before history generation, factual HALF-law CACHE histories, discarded shadow outcomes, and 32 parents/128 queries per turnover. Blocks remain the inferential units; targets, arms, candidates and survivors are not counted as independent replicates. The superseded 40,000-block/two-endpoint notes are identified as such.
+
+L/P use CACHE-minus-ALL_FRESH over the eligible-parent treatment vector. F uses CACHE-minus-FOCAL_FRESH for one hashed-selected family in an otherwise CACHE background. F remains unconditional and divided by 32, including H=0 blocks; there is no per-carrier, e/H normalization or exclusion. Minimum-key selection with lower-slot tie breaking is correctly described without claiming exact uniformity.
+
+The interval family preserves range lengths, alpha allocation, frozen half-widths, material thresholds and negligibility margins. Joint coverage of at least 95% is confined to the six BIT002 intervals under the independent-uniform-Philox-word working idealization. It is neither a generator-independence proof nor manuscript-wide confidence. Cohorts, families and operator bundles are not pooled.
+
+All six canonical outcomes are accurately retained:
+
+| Endpoint | Estimate and interval, percentage points | Classification |
+|---|---|---|
+| L_rec | 5.041741 [3.480912, 6.602570] | MATERIAL_POSITIVE |
+| L_inn | −0.752009 [−2.312838, 0.808820] | NEGLIGIBLE_WITHIN_MARGIN |
+| P_rec | 2.484087 [0.923257, 4.044916] | POSITIVE_MAGNITUDE_UNRESOLVED |
+| P_inn | −0.571308 [−2.132137, 0.989522] | NEGLIGIBLE_WITHIN_MARGIN |
+| F_rec | 1.239360 [1.001549, 1.477172] | MATERIAL_POSITIVE |
+| F_inn | −0.194271 [−0.432082, 0.043541] | NEGLIGIBLE_WITHIN_MARGIN |
+
+P_rec crosses both its material threshold and negligibility margin. All three innovation estimates are negative, with intervals containing zero; their bounded classifications are not presented as established nulls or exclusion of adverse effects within the bounds.
+
+All prespecified average/difference intervals, pattern tokens and `S3_MATERIAL_POSITIVE_ONLY endpoints=L_rec,F_rec` are retained. The P difference includes zero despite the individual endpoints’ differing labels. Positive L/F differences are correctly interpreted as target-effect heterogeneity, not an intervention on recurrence.
+
+The complete canonical result block, including original descriptives, matches the accepted output after removing blank presentation lines. All 33 eligibility bins are retained. Published totals agree: H=1 in 20,996 ALL_F and 20,995 ALL_M blocks; H=0 in nine; e=32 in 2,551. The manuscript carries `abs(L) <= min(1,e/8,(32-e)/8)`, L=0 at e=0/e=32 and F=0 at H=0. No new subgroup inference is introduced.
+
+The provenance qualifications remain substantive. Only histories 0–63 were independently replayed; the other 41,936 rely on fixtures, that replay and check E. A self-consistent forged state with recomputed arms can pass C–J. Conditional replay is not represented as proof of valid history. Protocol Section 10’s directional intuition receives no hypothesis, testing or interpretive privilege.
+
+Execution reporting agrees with the accepted receipts: FRCE job 54269109, cn136/norm, 32 CPUs, 64G requested, eight-hour limit, 34 seconds, original steps successful, and G8 before estimate unseal. The memory amendment, earlier approximately 166.4-GiB qualification observation and user-reported 700 GB are distinguished from measured R2 resources.
+
+R1 job 54254461 remains INVALID after output-monitor failure −9, with its underlying exception unresolved and 46 partial files preserved without interpretation, resumption or pooling. The explicitly authorized fresh R2, bounded correction, source review, synthetic engineering and renewed gates are preserved. The sole benchmark was not repeated; no automatic third attempt is authorized. Earlier studies, releases, attempt4, consumed CODEX059 and failures retain their historical scopes.
+
+The remaining-gaps document correctly separates evidence needed for stronger mechanism/generalization claims from requirements for reporting these accepted narrow findings. No TORUS retrieval intervention, general model or biological mechanism, equilibrium, invasion, evolutionary stability, separate retention selection, established displacement explanation, or novelty/priority is claimed. The broader original Phase 3 protocol remains incomplete.
+
+Data and AI disclosures distinguish local archival/rendering work from scientific simulation, internal computational reviews from journal peer review, and requested-model boundaries from unavailable canonical returned-model identity. Existing author information and references are preserved; no new DOI or external acceptance is invented. Prior v1.2 acceptance covers its old manuscript; BIT002 G9 covers its addendum. Neither substitutes for this integration review.
+
+I hashed PDFs and figure assets only. I did not open or visually inspect them. Layout assurance comes from ROOT’s supplied visual-QA record, which binds the reviewed PDFs and reports inspection of all 69 pages.
+
+The supplied accounting preserves 26,946.929633 charged active seconds against the unchanged 57,600-second cap, with the closed G2–G4 allowance unreopened. Its addition is arithmetically consistent. This pending reviewer generation must be charged after terminal completion; no final total is fabricated here. Acceptance may be recorded in a new receipt around the unchanged frozen candidate.
+
+Execution record: 20 CLI command invocations, 19 completed with exit 0 and one failed with exit 1 because a here-document required a prohibited temporary file. The completed commands covered cwd confirmation, listed JSON/text reads, authentication and inventory, baseline comparisons, protocol text checks, published-fraction/display arithmetic, and final freeze verification. Two large outputs were partially truncated; the obscured manuscript passage and changed discussion/limitations were subsequently read. Nine successful Python invocations also emitted denied ancillary xcrun cache-creation messages. One auxiliary UTC-clock read was used; the last command completed at 17:08:49 UTC, within the 900-second limit.
+
+All 32 publication-text/arithmetic checks passed. No producer, analyzer, auditor, old statistics checker, simulation, RNG, fixture, build script, raw-record reanalysis or new statistical test was run. No candidate file was edited. Canonical returned-provider/model identity is not observable to this reviewer.

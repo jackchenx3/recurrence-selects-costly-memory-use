@@ -1,0 +1,37 @@
+{
+  "at_utc": "2026-10-25T14:19:13.719113+00:00",
+  "state": "AUTHENTICATED_GENUINE_INDEPENDENT_SOURCE_STOP",
+  "named_input_count": 58,
+  "all_hashes_unchanged": true,
+  "terminal": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/independent-source-review/PROCESS_TERMINAL.json",
+    "bytes": 298,
+    "sha256": "35f7139293c0ed2d98b2aecebaa75dc260c9b3cda900a3a01548953734e0ca3d"
+  },
+  "native_stdout": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/independent-source-review/native_stdout.jsonl",
+    "bytes": 307718,
+    "sha256": "a5d91ff99998fd64422ba7b63b8fb6b8632fd84da058fe6ae4e87e9f85ec9988"
+  },
+  "native_stderr": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/independent-source-review/native_stderr.txt",
+    "bytes": 1914,
+    "sha256": "5b07b8b8b599d98b18b36722c72a841a67661296a0652a891ffc857923a1d907"
+  },
+  "report": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/independent-source-review/REVIEW.txt",
+    "bytes": 9359,
+    "sha256": "dceac1f724f87e1705f3bf3c08880a461770544d22d0c99094b06777cadbfa05"
+  },
+  "command_audit": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/independent-source-review/ROOT_COMMAND_AUDIT_DATA.json",
+    "bytes": 283990,
+    "sha256": "89c04816f174b09c9a6029b114ebccaf4f815d2a5f9e511b298ca13c12a7bfb7"
+  },
+  "native_completed_static_commands": 13,
+  "reviewer_reported_invocations": 14,
+  "scope_note": "One initial denied here-document invocation reported, not represented as completed native command item; no fabricated execution. Automatic denied xcrun cache-write messages preserved. All 13 completed commands inspected as local static text/hash/JSON/diff/protocol reads; no candidate execution/import/build or external tools.",
+  "model_identity_limit": "Actual installed CLI explicitly requested gpt-6.1-sol/high; canonical returned model unavailable in native JSONL.",
+  "full_generation_seconds": 340.592781235,
+  "finding": "Concurrent writer fixture can PASS with empty prewrite scan followed by postcompletion stable scan; observed event can be set before any write. Genuine fixture acceptance gap; candidate remains unexecuted/rejected. Runtime scan correction otherwise source-assessed coherent, not runtime PASS."
+}

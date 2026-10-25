@@ -1,0 +1,34 @@
+Remaining scientific questions after manuscript integration
+25 October 2026 — research preprint version 1.3.0
+
+Decision
+
+The accepted evidence supports a manuscript on costly-use-policy selection and immediate retrieval effects. No new computation is needed to report those narrow findings honestly. Stronger mechanism or generality claims remain unsupported. The items below distinguish a publication claim boundary from a proposed future experiment. This document authorizes no jobs, endpoints, cohorts, sweeps, retries or revival of the original incomplete Phase 3 protocol.
+
+1. Long-run mediation of selective enrichment — essential only for a mechanism claim.
+Studies 001-003 establish long-run arm contrasts. BIT002 intervenes on retrieval at a single stored state and resolves immediate recurrent lineage/focal effects. These do not identify how much of long-run allele enrichment is mediated by retrieval, survivor competition, policy-frequency feedback or changes in later states. No quantitative decomposition or evidence of mediation follows by comparing these separate estimands. Any future mediation claim needs a distinct, prospective intervention and estimand that handles state/policy feedback; retain the present descriptive connection meanwhile.
+
+2. Target-effect heterogeneity versus changing recurrence — essential for a recurrence-intervention claim.
+BIT002 evaluates recurrent and innovation targets at the same HALF-generated states. Its L/F target-effect differences are resolved; its P difference is unresolved. Neither identifies the effect of changing recurrence probability or lag on those states. A future environmental-law intervention must define its own distribution and question prospectively. The current result remains a checkpoint-target comparison under one aligned HALF law.
+
+3. Generality of immediate retrieval effects — essential for a cross-bundle retrieval claim.
+Study 003 reproduces a long-run classification in one alternative torus/tournament bundle. BIT002 has no TORUS retrieval-intervention arm. Cross-bundle long-run agreement cannot be relabeled replication of immediate retrieval effects. Only a separately scoped prospective experiment could support that extension; it is not a prerequisite for the present BIT/PL report.
+
+4. Historical validity of all stored states — an explicit reproducibility limit.
+BIT002 independently replays factual history for blocks 0-63 only. Other histories rely on fixtures, that replay and check E. A forged self-consistent state plus recomputed arms can pass conditional checks C-J. Current provenance does not provide independent full-history assurance. Preserve this limitation and the conditional scope of the causal interpretation; no postproduction producer/analyzer/auditor rerun is authorized to remove it. Any stronger assurance requires separately designed prospective validation or truly external reproduction.
+
+5. Precision of recurrent population accuracy and the P target difference — unresolved, not an error to repair.
+BIT002 recurrent P is positive but crosses both its material and negligibility thresholds; the recurrent-minus-innovation interval contains zero. Three negative innovation estimates have zero-containing intervals and lie inside their prespecified margins. Report those exact decisions. Do not add blocks, choose new margins, condition on eligibility or select a favorable derived result. A new precision question would need an independently planned new study, not a top-up of this cohort.
+
+6. Retention, retrieval and per-carrier value — unsupported distinct questions.
+The original allele couples retention and use. BIT002 changes retrieval at an existing state, leaving history and policy fixed; it does not isolate long-run selection on retention. Its F endpoint uses one hashed focal family, is unconditional and divided by 32; it is not a per-carrier or H-conditioned value. L and F use different treatment vectors. Retain these distinctions; do not convert their present estimates into another endpoint.
+
+7. Eligibility and near-monomorphism — structural, not an omitted subgroup result.
+L is forced to zero at e=0 and e=32, and F at H=0. The full distributions and exact bound accompany the results. They do not license post hoc e/H stratification, conditional ratios or exclusion of zero-effect blocks. A future conditional question requires a new prospectively justified estimand and inference plan.
+
+8. External review and public dissemination — editorial steps, not new scientific evidence.
+The original v1.2 and focused BIT002 addendum passed internal AI-assisted computational reviews. The integrated manuscript passed a separate nonauthor claim/content review and visual review; those reviews do not constitute external peer review. This version is publicly released on GitHub; no new Zenodo DOI, journal submission, author declaration or external acceptance is claimed. Decide the external venue and update package/version metadata after a concrete reviewed manuscript exists. Existing published records and original author information remain preserved; do not invent declarations or external status.
+
+Recommended next scientific decision
+
+Complete the integrated manuscript and obtain human scientific reading of its claim boundaries. If the desired paper is the narrow selection-plus-immediate-effects contribution, proceed to ordinary external review preparation without new simulations. If a long-run mechanism paper is required, select one essential question from items 1-3 and prospectively design it as separate work. A broad programme or automatic return to the original 46-estimate protocol is not justified by manuscript integration alone.

@@ -1,3 +1,7 @@
+# Version 1.3.0 — immediate BIT/PL retrieval effects
+
+Integrated the accepted BIT002 experiment into the full Studies001-003 manuscript. All six BIT002 results and limits are retained; immediate effects are distinct from long-run arm contrasts. Added exact results, sources, runtime and reproducibility assets; retained failed/adverse/bounded/unresolved findings. The author is listed by name only. No new scientific run, pooled cohort or external peer-review acceptance.
+
 # Research preprint v1.2.0 (2026-10-02)
 
 Environmental recurrence selects a costly memory-use policy across two operator bundles without a resolved one-bit population benefit

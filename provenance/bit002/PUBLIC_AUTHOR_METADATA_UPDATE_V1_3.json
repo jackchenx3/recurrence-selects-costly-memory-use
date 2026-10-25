@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-10-25T18:29:43.770818+00:00",
+  "authorization": "Author requested workplace/contact removal and public release",
+  "creator_name": "Jack Chen",
+  "author_workplace_affiliation_or_work_email_in_new_release": false,
+  "integrated_content_acceptance_sha256": "ea3487e9ad5129b3ad4e26845f92e375703ff77abe1c8ecf811a6f728a5584e8",
+  "scientific_operators_parameters_endpoints_cohorts_or_values_changed": false,
+  "all_seven_main_tables_and_references_unchanged": true,
+  "scientific_code_data_design_from_v1_2_current_main_byte_identical": true,
+  "private_original_reviewed_and_scientific_files_preserved": true,
+  "older_public_versions_not_rewritten": true,
+  "current_tree_historical_document_copies": "Author affiliation/contact removed from copied older frontmatter/citation metadata and literature request contact parameters; original artifact hashes identify the originals, current SHA256SUMS identifies this derived export. Unrelated reference authors/funders untouched.",
+  "new_doi_or_journal_peer_review_acceptance_claimed": false
+}

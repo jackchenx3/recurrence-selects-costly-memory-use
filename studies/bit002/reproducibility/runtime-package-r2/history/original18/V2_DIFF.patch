@@ -1,0 +1,1260 @@
+--- /dev/null
++++ b/AUTHENTICATED_INPUTS.json
+@@ -0,0 +1,97 @@
++{
++  "baseline_seven_files_verified_before_edit": [
++    {
++      "bytes": 81247,
++      "path": "PROTOCOL_V0_4_ACCEPTED.txt",
++      "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
++    },
++    {
++      "bytes": 18588,
++      "path": "README.txt",
++      "sha256": "4b03e5d25f6189bc64fb63d5d302e73bc012d10aff1fc3eb092b6ebd251112fc"
++    },
++    {
++      "bytes": 6904,
++      "path": "SOURCE_AUTHOR_REPORT.txt",
++      "sha256": "6100e2fbdc7e1f1fdb72ad326a11ddfdb81faa22d5b2c84c43ed64610acd81ed"
++    },
++    {
++      "bytes": 549,
++      "path": "SOURCE_INVENTORY.tsv",
++      "sha256": "42a7fcdce4abddc4e8433b10cef8a3fa4b7008e1ab386b99b20747e357e0acbb"
++    },
++    {
++      "bytes": 2038,
++      "path": "benchmark.sh",
++      "sha256": "268ad8fd02859a63457b53537680b848594c059e5ffbadbe5291569dc0e35481"
++    },
++    {
++      "bytes": 2040,
++      "path": "production.sh",
++      "sha256": "7cd92c4ca88697efe6f8554525d4caf0bc6215fe80b9567cb5dbbd028441f040"
++    },
++    {
++      "bytes": 36452,
++      "path": "runtime_helper.py",
++      "sha256": "2141233cb25460768fea906949b4d66de4f22ab4195518e4e5eaa106c665c837"
++    }
++  ],
++  "inputs": [
++    {
++      "bytes": 81247,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/design/PROTOCOL_V0_4_ACCEPTED.txt",
++      "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
++    },
++    {
++      "bytes": 3022,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/G4_ACCEPTANCE.json",
++      "sha256": "a8613078265e7214d8b9e57d9e3685a604a338fb3f242a35f79aeba51e3a3645"
++    },
++    {
++      "bytes": 1014,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/implementation-readiness-120m/AUTONOMOUS_CONTINUATION_AUTHORITY.json",
++      "sha256": "bf0d76e39eeb64cfffd3da9fcae95a7387940166b20cdef6fdb42de919dfd536"
++    },
++    {
++      "bytes": 1487,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/codex-runtime-package/ROOT_FROZEN_CANDIDATE.json",
++      "sha256": "fcbaeff0f30f9315911bc46db26b6f2e238c36c568435d98c3e5451587e411eb"
++    },
++    {
++      "bytes": 1690,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/codex-runtime-package/ROOT_AUTHENTICATION.json",
++      "sha256": "76dd1bd23bba60b6e8bbf205ca48485b1ae24ab4e45453bcc94e457bbf20e616"
++    },
++    {
++      "bytes": 1773,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/PUBLIC_TIMING_CLI_CONTRACT.json",
++      "sha256": "bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e"
++    },
++    {
++      "bytes": 1297,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/ROOT_OPERATIONAL_CLARIFICATIONS.json",
++      "sha256": "c26dd11968f707e007d67907372f4004248a0b7b9dca335ee15612a77bdceef6"
++    },
++    {
++      "bytes": 6410,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/cpu-metadata-freeze-r1/ROOT_AUTHENTICATION.json",
++      "sha256": "e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f"
++    },
++    {
++      "bytes": 4884,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/NODE_TOOLCHAIN_FREEZE.txt",
++      "sha256": "a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87"
++    },
++    {
++      "bytes": 1967,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/PYTHON_IDENTITY_NATIVE.json",
++      "sha256": "b814191d162dc1cf787c17807333737945ffe8135637ffd6e2565bf784496434"
++    },
++    {
++      "bytes": 2188,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/DEFAULT_PYTHON_IDENTITY_NATIVE.json",
++      "sha256": "571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051"
++    }
++  ],
++  "state": "STATIC_INPUT_AUTHENTICATION_ONLY_NO_EXECUTION_OR_GO"
++}
+--- /dev/null
++++ b/CPU_METADATA_AUTHENTICATION.json
+@@ -0,0 +1,72 @@
++{
++  "at_utc": "2026-10-25T02:21:39.877049+00:00",
++  "state": "AUTHENTICATED_REPRESENTATIVE_CPU_CLASS_TOOLCHAIN_AND_EXISTING_BUILD_IDS_FROZEN",
++  "partition": "norm",
++  "constraint": "x6342",
++  "cpu_model": "Intel(R) Xeon(R) Gold 6342 CPU @ 2.80GHz",
++  "representative_node": "cn131",
++  "filesystem_path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024",
++  "compiler_path": "/usr/bin/g++",
++  "compiler_sha256": "300a40555cfe820333187a6ed41b732af4905b011fd485bcaf9d9cc7a4facfdb",
++  "compiler_version": "g++ (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28.0.1)\nCopyright (C) 2018 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
++  "actual_per_binary_build_flags": {
++    "producer_analyzer": "-Isrc -std=c++17 -O3 -Wall -Wextra -Wconversion -Wshadow -fno-fast-math -pthread; link -pthread -lstdc++fs",
++    "auditor": "-Isrc -std=c++17 -O2 -Wall -Wextra -Wpedantic -fno-fast-math; link -lstdc++fs"
++  },
++  "flags_evidence": [
++    {
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/build-g2/remote-evidence/producer.build.stdout",
++      "sha256": "4582ad4d053d46b8348b23fec059af4034ab7a5f3ef0168e4d0b746b22d71317"
++    },
++    {
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/implementation-readiness-120m/auditor-v3-build-own/remote-evidence/build.stdout",
++      "sha256": "9b077a55ca0d9b5280d4c16afedebf0e2e5ee513d9b005fb495658ad2cb2fcf9"
++    }
++  ],
++  "metadata_hardcoded_flags_correction": "OriginalmetadatareportedonecombinedO2flagstring; producer/analyzeractualexistingbuildusesO3/-Wconversion/-Wshadow. Exactnativebuildcommandscontrol; no rebuild/change. Originalcandidatefieldpreservedasreported. Thisfreeze statesaccurateperbinaryflagsbeforebenchmark.",
++  "binaries": [
++    {
++      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce",
++      "sha256": "bc597d652bfab0f05cab7e9ca52e53ea7ddc365e304a7fe4588d7386fc4031f0",
++      "bytes": 279936,
++      "mode": "0o550",
++      "ldd_stdout": "\tlinux-vdso.so.1 (0x00007fffc1a98000)\n\tlibstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007fbfb316d000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007fbfb2deb000)\n\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fbfb2bd2000)\n\tlibpthread.so.0 => /lib64/libpthread.so.0 (0x00007fbfb29b2000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007fbfb25dc000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fbfb3502000)\n",
++      "ldd_stderr": "",
++      "file": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=f5f79886f738160b21f3a7ae4050f528c807ad87, not stripped\n"
++    },
++    {
++      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_analyze",
++      "sha256": "0af66a01615414129be30df2d75df9efbfa724660d4c1701b9799982ea367721",
++      "bytes": 390440,
++      "mode": "0o550",
++      "ldd_stdout": "\tlinux-vdso.so.1 (0x00007fff10730000)\n\tlibstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007f93a5658000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007f93a52d6000)\n\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f93a50bd000)\n\tlibpthread.so.0 => /lib64/libpthread.so.0 (0x00007f93a4e9d000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007f93a4ac7000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f93a59ed000)\n",
++      "ldd_stderr": "",
++      "file": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_analyze: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=8631c8480183ac9350915be9a44a7379f0d5a681, not stripped\n"
++    },
++    {
++      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/auditor-v3-own-r1/auditor/bin/brc2_audit",
++      "sha256": "950ac9ffb49faaca3ec6568c8b55cdd9b8349e1f2782bcfe33c7d07fa3182eca",
++      "bytes": 370504,
++      "mode": "0o550",
++      "ldd_stdout": "\tlinux-vdso.so.1 (0x00007ffdf2ba5000)\n\tlibstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007ff7c0481000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007ff7c00ff000)\n\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007ff7bfee6000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007ff7bfb10000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007ff7c0816000)\n",
++      "ldd_stderr": "",
++      "file": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/auditor-v3-own-r1/auditor/bin/brc2_audit: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=9aa726e620ac33153dc6c4de5c3be7a21a153531, not stripped\n"
++    }
++  ],
++  "same_binaries_shared_and_dependencies_found": true,
++  "no_march_native": true,
++  "cpu_metadata_allocation_only": true,
++  "metadata_job_id": "54219069",
++  "metadata_runtime_seconds": 0.21654260397190228,
++  "sacct": "54219069|bit002-metadata-freeze-r1|short|COMPLETED|0:0|00:00:01|1||cn131\n54219069.extern|extern||COMPLETED|0:0|00:00:01|1|288K|cn131\n54219069.0|bit002-metadata-freeze-r1||COMPLETED|0:0|00:00:01|1|24444K|cn131\n",
++  "original_receipt": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/cpu-metadata-freeze-r1/remote-evidence/METADATA_TERMINAL.json",
++    "sha256": "734abc8fff1fc1c9656fb41c7e4d9a262eaca2173e85d17149b334ab543953de"
++  },
++  "G4_acceptance": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/G4_ACCEPTANCE.json",
++    "sha256": "a8613078265e7214d8b9e57d9e3685a604a338fb3f242a35f79aeba51e3a3645"
++  },
++  "benchmark_or_scientific_submission": false,
++  "qualification_benchmark_remains_pending": true
++}
+--- /dev/null
++++ b/DEFAULT_PYTHON_IDENTITY_NATIVE.json
+@@ -0,0 +1,7 @@
++{
++  "at_utc": "2026-10-25T02:50:43.535701+00:00",
++  "rc": 0,
++  "stdout": "{\"sys_version\": \"3.11.4 (main, Jul  5 2023, 13:45:01) [GCC 11.2.0]\", \"executable\": \"/home/chenx3/miniconda3/bin/python3.11\", \"sha256\": \"90ebd62efa611953ec39804a827a8df12e743b70b0a7435536bb053e0e1a6ae5\", \"monotonic_ns_available\": true}\n",
++  "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n* This warning banner provides privacy and security notices consistent with\n  applicable federal laws, directives, and other federal guidance for accessing\n  this Government system, which includes (1) this computer network, (2) all\n  computers connected to this network, and (3) all devices and storage media\n  attached to this network or to a computer on this network.\n* This system is provided for Government-authorized use only.\n* Authorized uses only. All activity may be monitored and reported.\n* Unauthorized or improper use of this system is prohibited and may result in\n  disciplinary action and/or civil and criminal penalties.\n* Personal use of social media and networking sites on this system is limited as\n  to not interfere with official work duties and is subject to monitoring.\n  By using this system, you understand and consent to the following:\n  * The Government may monitor, record, and audit your system usage, including\n    usage of personal devices and email systems for official duties or to\n    conduct HHS business. Therefore, you have no reasonable expectation of\n    privacy regarding any communication or data transiting or stored on this\n    system. At any time, and for any lawful Government purpose, the government\n    may monitor, intercept, and search and seize any communication or data\n    transiting or stored on this system.\n  * Any communication or data transiting or stored on this system may be\n    disclosed or used for any lawful Government purpose.\n",
++  "scope": "Readonlyexistingheadinterpretermetadata,fileSHAonly,nocomputation/performance/newallocation."
++}
+--- /dev/null
++++ b/NODE_TOOLCHAIN_FREEZE.json
+@@ -0,0 +1,70 @@
++{
++  "binaries": {
++    "analyzer": {
++      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_analyze",
++      "sha256": "0af66a01615414129be30df2d75df9efbfa724660d4c1701b9799982ea367721"
++    },
++    "auditor": {
++      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/auditor-v3-own-r1/auditor/bin/brc2_audit",
++      "sha256": "950ac9ffb49faaca3ec6568c8b55cdd9b8349e1f2782bcfe33c7d07fa3182eca"
++    },
++    "producer": {
++      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce",
++      "sha256": "bc597d652bfab0f05cab7e9ca52e53ea7ddc365e304a7fe4588d7386fc4031f0"
++    }
++  },
++  "compiler": {
++    "flags": {
++      "auditor": "-Isrc -std=c++17 -O2 -Wall -Wextra -Wpedantic -fno-fast-math; link -lstdc++fs",
++      "producer_analyzer": "-Isrc -std=c++17 -O3 -Wall -Wextra -Wconversion -Wshadow -fno-fast-math -pthread; link -pthread -lstdc++fs"
++    },
++    "path": "/usr/bin/g++",
++    "sha256": "300a40555cfe820333187a6ed41b732af4905b011fd485bcaf9d9cc7a4facfdb",
++    "version": "g++ (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28.0.1)"
++  },
++  "evidence_sha256": {
++    "CPU_METADATA_AUTHENTICATION.json": "e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f",
++    "DEFAULT_PYTHON_IDENTITY_NATIVE.json": "571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051",
++    "NODE_TOOLCHAIN_FREEZE.txt": "a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87",
++    "PUBLIC_TIMING_CLI_CONTRACT.json": "bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e"
++  },
++  "filesystem_path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024",
++  "hardware_class": {
++    "active_features": [
++      "u467",
++      "x6342"
++    ],
++    "constraint": "x6342",
++    "cpu_model": "Intel(R) Xeon(R) Gold 6342 CPU @ 2.80GHz",
++    "name": "norm/short-shared-x6342",
++    "reported_partitions": [
++      "norm",
++      "short"
++    ],
++    "requested_partition": "norm"
++  },
++  "original_metadata_receipt": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/cpu-metadata-freeze-r1/remote-evidence/METADATA_TERMINAL.json",
++    "sha256": "734abc8fff1fc1c9656fb41c7e4d9a262eaca2173e85d17149b334ab543953de"
++  },
++  "package_sha256": {
++    "NODE_TOOLCHAIN_FREEZE.schema.json": "e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d",
++    "benchmark.sh": "75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263",
++    "production.sh": "4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753",
++    "runtime_helper.py": "53cb5d9336d96bde47752ec76e7866639edeb8f55a51143644d45c6b719bf271"
++  },
++  "protocol": {
++    "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r1/PROTOCOL_V0_4_ACCEPTED.txt",
++    "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
++  },
++  "python": {
++    "path": "/home/chenx3/miniconda3/bin/python3.11",
++    "sha256": "90ebd62efa611953ec39804a827a8df12e743b70b0a7435536bb053e0e1a6ae5",
++    "version": "3.11.4"
++  },
++  "schema": "BIT002-NODE-TOOLCHAIN-FREEZE-V2",
++  "timing_source_sha256": {
++    "auditor": "c25fc2680074a30ab4aa08ca0d1fd5351e6b60522c253d815b1a89040f383d82",
++    "producer_analyzer": "e84d1f195a4c065fc31a393be051291103e01f8e51b58b08dc489426a7ff918a"
++  }
++}
+--- /dev/null
++++ b/NODE_TOOLCHAIN_FREEZE.schema.json
+@@ -0,0 +1,131 @@
++{
++  "$schema": "https://json-schema.org/draft/2020-12/schema",
++  "additionalProperties": false,
++  "properties": {
++    "binaries": {
++      "const": {
++        "analyzer": {
++          "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_analyze",
++          "sha256": "0af66a01615414129be30df2d75df9efbfa724660d4c1701b9799982ea367721"
++        },
++        "auditor": {
++          "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/auditor-v3-own-r1/auditor/bin/brc2_audit",
++          "sha256": "950ac9ffb49faaca3ec6568c8b55cdd9b8349e1f2782bcfe33c7d07fa3182eca"
++        },
++        "producer": {
++          "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce",
++          "sha256": "bc597d652bfab0f05cab7e9ca52e53ea7ddc365e304a7fe4588d7386fc4031f0"
++        }
++      }
++    },
++    "compiler": {
++      "const": {
++        "flags": {
++          "auditor": "-Isrc -std=c++17 -O2 -Wall -Wextra -Wpedantic -fno-fast-math; link -lstdc++fs",
++          "producer_analyzer": "-Isrc -std=c++17 -O3 -Wall -Wextra -Wconversion -Wshadow -fno-fast-math -pthread; link -pthread -lstdc++fs"
++        },
++        "path": "/usr/bin/g++",
++        "sha256": "300a40555cfe820333187a6ed41b732af4905b011fd485bcaf9d9cc7a4facfdb",
++        "version": "g++ (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28.0.1)"
++      }
++    },
++    "evidence_sha256": {
++      "const": {
++        "CPU_METADATA_AUTHENTICATION.json": "e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f",
++        "DEFAULT_PYTHON_IDENTITY_NATIVE.json": "571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051",
++        "NODE_TOOLCHAIN_FREEZE.txt": "a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87",
++        "PUBLIC_TIMING_CLI_CONTRACT.json": "bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e"
++      }
++    },
++    "filesystem_path": {
++      "const": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024"
++    },
++    "hardware_class": {
++      "const": {
++        "active_features": [
++          "u467",
++          "x6342"
++        ],
++        "constraint": "x6342",
++        "cpu_model": "Intel(R) Xeon(R) Gold 6342 CPU @ 2.80GHz",
++        "name": "norm/short-shared-x6342",
++        "reported_partitions": [
++          "norm",
++          "short"
++        ],
++        "requested_partition": "norm"
++      }
++    },
++    "original_metadata_receipt": {
++      "const": {
++        "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/cpu-metadata-freeze-r1/remote-evidence/METADATA_TERMINAL.json",
++        "sha256": "734abc8fff1fc1c9656fb41c7e4d9a262eaca2173e85d17149b334ab543953de"
++      }
++    },
++    "package_sha256": {
++      "additionalProperties": false,
++      "properties": {
++        "NODE_TOOLCHAIN_FREEZE.schema.json": {
++          "pattern": "^[0-9a-f]{64}$",
++          "type": "string"
++        },
++        "benchmark.sh": {
++          "pattern": "^[0-9a-f]{64}$",
++          "type": "string"
++        },
++        "production.sh": {
++          "pattern": "^[0-9a-f]{64}$",
++          "type": "string"
++        },
++        "runtime_helper.py": {
++          "pattern": "^[0-9a-f]{64}$",
++          "type": "string"
++        }
++      },
++      "required": [
++        "benchmark.sh",
++        "production.sh",
++        "runtime_helper.py",
++        "NODE_TOOLCHAIN_FREEZE.schema.json"
++      ],
++      "type": "object"
++    },
++    "protocol": {
++      "const": {
++        "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r1/PROTOCOL_V0_4_ACCEPTED.txt",
++        "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
++      }
++    },
++    "python": {
++      "const": {
++        "path": "/home/chenx3/miniconda3/bin/python3.11",
++        "sha256": "90ebd62efa611953ec39804a827a8df12e743b70b0a7435536bb053e0e1a6ae5",
++        "version": "3.11.4"
++      }
++    },
++    "schema": {
++      "const": "BIT002-NODE-TOOLCHAIN-FREEZE-V2"
++    },
++    "timing_source_sha256": {
++      "const": {
++        "auditor": "c25fc2680074a30ab4aa08ca0d1fd5351e6b60522c253d815b1a89040f383d82",
++        "producer_analyzer": "e84d1f195a4c065fc31a393be051291103e01f8e51b58b08dc489426a7ff918a"
++      }
++    }
++  },
++  "required": [
++    "binaries",
++    "compiler",
++    "evidence_sha256",
++    "filesystem_path",
++    "hardware_class",
++    "original_metadata_receipt",
++    "package_sha256",
++    "protocol",
++    "python",
++    "schema",
++    "timing_source_sha256"
++  ],
++  "title": "BIT002 exact V2 operational freeze",
++  "type": "object"
++}
+--- /dev/null
++++ b/NODE_TOOLCHAIN_FREEZE.txt
+@@ -0,0 +1,51 @@
++BIT002 NODE AND TOOLCHAIN FREEZE
++Recorded before benchmark submission.
++{
++  "at_utc": "2026-10-25T02:21:39.877049+00:00",
++  "partition": "norm",
++  "constraint": "x6342",
++  "cpu_model": "Intel(R) Xeon(R) Gold 6342 CPU @ 2.80GHz",
++  "representative_node": "cn131",
++  "filesystem_path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024",
++  "compiler_path": "/usr/bin/g++",
++  "compiler_sha256": "300a40555cfe820333187a6ed41b732af4905b011fd485bcaf9d9cc7a4facfdb",
++  "compiler_version": "g++ (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28.0.1)\nCopyright (C) 2018 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
++  "actual_per_binary_build_flags": {
++    "producer_analyzer": "-Isrc -std=c++17 -O3 -Wall -Wextra -Wconversion -Wshadow -fno-fast-math -pthread; link -pthread -lstdc++fs",
++    "auditor": "-Isrc -std=c++17 -O2 -Wall -Wextra -Wpedantic -fno-fast-math; link -lstdc++fs"
++  },
++  "binaries": [
++    {
++      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce",
++      "sha256": "bc597d652bfab0f05cab7e9ca52e53ea7ddc365e304a7fe4588d7386fc4031f0",
++      "bytes": 279936,
++      "mode": "0o550",
++      "ldd_stdout": "\tlinux-vdso.so.1 (0x00007fffc1a98000)\n\tlibstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007fbfb316d000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007fbfb2deb000)\n\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fbfb2bd2000)\n\tlibpthread.so.0 => /lib64/libpthread.so.0 (0x00007fbfb29b2000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007fbfb25dc000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fbfb3502000)\n",
++      "ldd_stderr": "",
++      "file": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=f5f79886f738160b21f3a7ae4050f528c807ad87, not stripped\n"
++    },
++    {
++      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_analyze",
++      "sha256": "0af66a01615414129be30df2d75df9efbfa724660d4c1701b9799982ea367721",
++      "bytes": 390440,
++      "mode": "0o550",
++      "ldd_stdout": "\tlinux-vdso.so.1 (0x00007fff10730000)\n\tlibstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007f93a5658000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007f93a52d6000)\n\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f93a50bd000)\n\tlibpthread.so.0 => /lib64/libpthread.so.0 (0x00007f93a4e9d000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007f93a4ac7000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f93a59ed000)\n",
++      "ldd_stderr": "",
++      "file": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_analyze: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=8631c8480183ac9350915be9a44a7379f0d5a681, not stripped\n"
++    },
++    {
++      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/auditor-v3-own-r1/auditor/bin/brc2_audit",
++      "sha256": "950ac9ffb49faaca3ec6568c8b55cdd9b8349e1f2782bcfe33c7d07fa3182eca",
++      "bytes": 370504,
++      "mode": "0o550",
++      "ldd_stdout": "\tlinux-vdso.so.1 (0x00007ffdf2ba5000)\n\tlibstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007ff7c0481000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007ff7c00ff000)\n\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007ff7bfee6000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007ff7bfb10000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007ff7c0816000)\n",
++      "ldd_stderr": "",
++      "file": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/auditor-v3-own-r1/auditor/bin/brc2_audit: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=9aa726e620ac33153dc6c4de5c3be7a21a153531, not stripped\n"
++    }
++  ],
++  "G4_acceptance": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/G4_ACCEPTANCE.json",
++    "sha256": "a8613078265e7214d8b9e57d9e3685a604a338fb3f242a35f79aeba51e3a3645"
++  }
++}
++Production must use same norm/x6342 CPU model, same shared binaries and exact build IDs. Metadata-only allocation54219069 generated no population, keys or performance measurements. Original engineering metadata flag summary corrected against exact native build commands; original record preserved.
+--- /dev/null
++++ b/PUBLIC_TIMING_CLI_CONTRACT.json
+@@ -0,0 +1,23 @@
++{
++  "at_utc": "2026-10-25T02:50:34.909123+00:00",
++  "state": "AUTHENTICATED_PUBLIC_TIMING_CLI_SERIALIZATION_FROM_ACCEPTED_SOURCE",
++  "protocol_no_change": true,
++  "no_execution_or_population_output_read": true,
++  "producer_analyzer_source_file_sha256": "e84d1f195a4c065fc31a393be051291103e01f8e51b58b08dc489426a7ff918a",
++  "auditor_source_file_sha256": "c25fc2680074a30ab4aa08ca0d1fd5351e6b60522c253d815b1a89040f383d82",
++  "analyzer": {
++    "stdout_literal": "total_ns=<unsigned integer> K_ns=<unsigned integer> <PASS|FAIL>\n",
++    "wall_unit": "nanoseconds",
++    "K_unit": "nanoseconds",
++    "PASS_means": "a.valid==true, exit0; equivalent VALIDform underprotocol",
++    "FAIL_means": "a.valid==false, exit1; INVALIDform",
++    "source_excerpt": " try{auto start=std::chrono::steady_clock::now();auto a=analyze(t,data);if(timing){auto digest=sha(a.result);volatile u8 keep=digest[0];(void)keep;a.result.clear();u64 ns=u64(std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::steady_clock::now()-start).count());std::cout<<\"total_ns=\"<<ns<<\" K_ns=\"<<a.k_ns<<\" \"<<(a.valid?\"PASS\":\"FAIL\")<<\"\\n\";}else atomictext(out,a.result,0400);return a.valid?0:1;}catch(...){std::cerr<<\"environment error\\n\";return 2;}"
++  },
++  "auditor": {
++    "stdout_literal": "status=<VALID|INVALID> total_seconds=<decimal> K_seconds=<decimal>\n",
++    "wall_unit": "seconds",
++    "K_unit": "seconds",
++    "source_excerpt": " std::cout<<\"status=\"<<(pass?\"VALID\":\"INVALID\")<<\" total_seconds=\"<<std::fixed<<std::setprecision(9)<<seconds(begin,Clock::now())<<\" K_seconds=\"<<r.k_seconds<<'\\n';return pass?0:1;"
++  },
++  "allowed_use": "Operationalorchestrationauthor/reviewer exactpublicCLIformat only; notproducerinternals/referenceanswers toscientificauditorauthor."
++}
+--- a/README.txt
++++ b/README.txt
+@@ -1,4 +1,9 @@
+-BIT002 runtime-package-r1 — SOURCE AUTHOR DELIVERY ONLY
++BIT002 runtime-package-r1 — V2 INTEGRATED SOURCE CANDIDATE
++
++CURRENT STATUS: V2 source completion only; no independent GO or execution.
++SOURCE_AUTHOR_REPORT.txt is the unchanged historical v1 report. Its unknown-CLI,
++pending-metadata and interpreter statements are superseded here and in
++V2_COMPLETION_REPORT.txt; they are not current blockers.
+ 
+ The two plain Slurm batch scripts implement the accepted v0.4 job sequence.
+ Nothing in this delivery has been executed, imported, syntax checked, built,
+@@ -16,7 +21,9 @@
+ PROTOCOL_V0_4_ACCEPTED.txt, and Root's immutable NODE_TOOLCHAIN_FREEZE.txt and
+ NODE_TOOLCHAIN_FREEZE.json. There is one configuration path; there are no runtime
+ arguments, alternate configurations, fallback jobs, rebuilds, or alternate tiers.
+-Python is /usr/bin/python3 (Linux Python >=3.8, standard library only); native
++Python is the existing /home/chenx3/miniconda3/bin/python3.11, version 3.11.4,
++SHA-256 90ebd62efa611953ec39804a827a8df12e743b70b0a7435536bb053e0e1a6ae5.
++It is pinned in both scripts, helper and freeze (standard library only); native
+ hash verification is /usr/bin/sha256sum. Bash, chmod and ordinary Linux /proc,
+ POSIX rename/fsync, Slurm cgroups, and the shared filesystem are required.
+ Dependency existence/compatibility is NOT asserted by this source delivery.
+@@ -61,73 +68,101 @@
+ Protocol: STUDY/runtime-package-r1/PROTOCOL_V0_4_ACCEPTED.txt
+ 71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
+ 
+-Freeze JSON schema (no fabricated configuration is delivered)
+-
+-Root writes one ASCII JSON object with unique keys, no extra top-level keys,
+-<=1 MiB, mode 0400 or 0444. The adjacent TXT must also have all write bits removed.
+-Its contents and metadata receipt are supplied from the authenticated actual
+-CPU/toolchain freeze, not inferred here. The following keys are all mandatory:
+-
+-schema: literal BIT002-NODE-TOOLCHAIN-FREEZE-R1.
+-partition: literal norm.
+-constraint: literal x6342.
+-cpu_model: exact /proc/cpuinfo 'model name' string from the qualified class.
+-cpu_flags: ASCII-sorted unique array of actual /proc/cpuinfo flag tokens. Every
+-  visible CPU must have that exact model and flags. No node model is guessed.
+-filesystem: object with exactly path, realpath, mount_point, mount_source,
+-  filesystem_type. path is the exact STUDY above; realpath is its authenticated
+-  resolved absolute path. The other fields identify the longest enclosing
+-  /proc/self/mountinfo mount, with octal path escapes decoded. Runtime checks
+-  exact equality on the production and benchmark nodes.
+-compiler: object with exactly producer, analyzer, auditor; each is an object
+-  with exactly identity (nonempty actual compiler/version string) and flags
+-  (nonempty array of actual individual build flags, preserving order). These
+-  describe the existing accepted builds; they are never compilation commands.
+-  -ffast-math, -Ofast and -march=native are prohibited. -fno-fast-math is allowed.
+-binaries: object with exactly producer, analyzer, auditor; each has exactly
+-  path and sha256 equal to the full absolute paths and hashes listed above.
+-  These binary hashes are the protocol build IDs, with no substitute build.
+-protocol: exactly path and sha256 for the full package protocol path/hash above.
+-package_sha256: object with exactly benchmark.sh, production.sh,
+-  runtime_helper.py; values are their final reviewed lowercase SHA-256 strings.
+-node_freeze_txt_sha256: SHA-256 of Root's immutable adjacent TXT receipt.
+-metadata_receipt: object with exactly path and sha256. path names the actual
+-  authenticated immutable metadata receipt beneath STUDY/cpu-metadata-freeze-r1;
+-  sha256 is its exact digest. The helper checks that path and digest. Root's
+-  authenticity and gate review remain external ordinary-file responsibilities.
+-timing_stdout_templates: object with exactly analyzer and auditor. Each value
+-  is the single exact documented timing-only stdout byte format, represented
+-  as an ASCII JSON string ending in LF, with exactly one occurrence each of
+-  {status}, {wall_seconds}, {k_seconds}. These are literal substitution tokens
+-  for the interface contract, NOT shell expansion or configuration placeholders
+-  left in code. All other characters must be letters, underscore, whitespace
+-  (space/tab/LF), equals, colon, comma, semicolon, parentheses, or hyphen. Each
+-  complete stdout must match the one frozen template; there is no alternative
+-  format or best-effort extraction. status is exactly VALID or INVALID; each
+-  seconds field is a nonnegative decimal, optionally with an exponent, with
+-  canonical integer digits. K must be finite, <= reported wall, and <= actual
+-  measured process wall. T_an_K/T_aud_K use those actual printed K values;
+-  T_an/T_aud use the independent whole-process monotonic measurements.
+-
+-OPEN INTERFACE BLOCKER: The permitted CLI documents specify status, wall seconds
+-and separate K seconds but do not specify their exact stdout spelling, ordering,
+-separators, or numeric rendering. Root must obtain an authenticated PUBLIC CLI
+-format clarification before freezing these two template strings and before any
+-benchmark submission. Do not guess them or run a diagnostic population job to
+-learn them. Their inclusion freezes serialization metadata only; no scientific
+-quantity, algorithm, timing partition or CLI option is configurable. If the
+-actual format cannot be expressed by this strict contract, independent review
+-must STOP and identify that mismatch; there is no fallback parser or rerun.
+-
+-The immutable freeze JSON/TXT hashes and reviewed source hashes must be bound
+-externally in Root's exact submission intent. Package-generated identities
+-record those hashes, compiler metadata, protocol/binary hashes, actual CPU,
+-filesystem, hostname, job ID, and Slurm environment. Compiler executables are
+-never invoked; this runtime uses only the exact already accepted binaries.
+-SLURM_JOB_CONSTRAINTS is checked if exported; when absent the requested feature
+-is not falsely reported as observed. CPU/class verification and Root's actual
+-allocation record provide the evidence. Native accounting confirms the actual
+-allocation/time rather than relying solely on environment variables.
++Authenticated operational freeze and exact interfaces
++
++NODE_TOOLCHAIN_FREEZE.json is a complete actual freeze, not a template. Its
++closed schema is NODE_TOOLCHAIN_FREEZE.schema.json. The helper enforces these
++same exact keys/values directly without a third-party validator or network.
++There are no configurable timing formats, runtime modes or alternate classes.
++The immutable TXT copy is byte-identical to Root's accepted metadata freeze.
++CPU_METADATA_AUTHENTICATION.json corrects the original combined O2 shorthand
++using the native build commands: producer/analyzer O3, Wconversion, Wshadow,
++pthread; auditor O2, Wpedantic; GCC 8.5 and no fast-math. Nothing is rebuilt.
++Each full binary SHA-256 remains its protocol build ID; original ELF BuildIDs
++are also preserved in that authentication copy. Original evidence is unchanged.
++
++Freeze fields (all required, no others):
++- schema: BIT002-NODE-TOOLCHAIN-FREEZE-V2.
++- hardware_class: the single norm/short-shared-x6342 class, requested_partition
++  norm, reported_partitions [norm, short], constraint x6342, exact active_features
++  [u467, x6342], and Intel(R) Xeon(R) Gold 6342 CPU @ 2.80GHz.
++- filesystem_path: exact STUDY, as printed above. Runtime records realpath and
++  mountinfo for provenance; no unavailable mount-server literal is required.
++- compiler: exact path, executable hash, GCC version line, and actual per-build
++  flags from the authenticated native commands, frozen as identity metadata.
++- binaries: exactly producer, analyzer, auditor, each exact path and sha256.
++- python: exactly path, version, sha256 of the existing 3.11.4 interpreter.
++- protocol: exact accepted package protocol path and sha256.
++- package_sha256: exactly benchmark.sh, production.sh, runtime_helper.py and
++  NODE_TOOLCHAIN_FREEZE.schema.json, with their final source hashes.
++- evidence_sha256: exactly the adjacent immutable TXT, CPU authentication,
++  PUBLIC_TIMING_CLI_CONTRACT.json and DEFAULT_PYTHON_IDENTITY_NATIVE.json hashes.
++- original_metadata_receipt: exact original receipt path and hash from CPU
++  authentication. This is a provenance reference to Root's preserved local
++  evidence, not a fabricated remote deployment path or a new runtime input.
++  The helper checks its authenticated binding, without opening that original.
++- timing_source_sha256: exact accepted producer/analyzer and auditor source
++  hashes from the public contract. Source implementation is never loaded.
++
++Root deploys the delivered JSON/schema and four authority copies along with the
++package source. JSON and authority copies must have all write bits removed;
++this workspace delivers them mode 0444. The JSON hash and SOURCE_INVENTORY hash
++must be bound externally in the exact submission intent and independent GO.
++
++Both jobs still REQUEST norm, x6342, 32 CPUs and 64 GiB. Reported norm OR short
++is accepted only after exact CPU model, native ActiveFeatures=x6342,u467,
++shared norm/short node membership, filesystem PATH, compiler hash/flags and all
++three unchanged binary hashes match. Every identity receipt records requested
++and reported partitions separately plus the original native node description.
++No other model, feature class or reported partition is accepted. Native
++scontrol --oneliner show node is a read-only identity observation in P1/B1
++preparation, not another allocation. Full observed ISA flag sets and mountinfo
++are informational: qualified metadata did not freeze their exact literals.
++SLURM_JOB_CONSTRAINTS is checked if exported, and absence is recorded honestly.
++Root's native allocation/accounting and independent resource review must confirm
++routing and enforcement; the norm/short mismatch is never silently waived.
++
++Before ANY helper execution or syntax check, a genuinely fresh non-author must
++return GO on the exact source inventory AND exact job/resource freeze, including
++norm/short routing. No such GO is claimed here. After that GO, separately
++licensed engineering checks must establish this pinned interpreter, shared
++libraries and required standard modules on the representative existing class,
++plus Bash, scontrol, sha256sum, fsync and cgroup behavior before the benchmark.
++No installation, new CPU metadata allocation, recompile or population probe is
++needed or authorized by this package. Missing runtime evidence is not a pass.
++
++Fixed exact timing parsers
++
++Analyzer stdout is exactly (one ASCII LF-terminated line):
++  total_ns=<uint64 decimal> K_ns=<uint64 decimal> <PASS|FAIL>\n
++
++Auditor stdout is exactly (one ASCII LF-terminated line):
++  status=<VALID|INVALID> total_seconds=<decimal with 9 places> K_seconds=<decimal with 9 places>\n
++
++The displayed escape denotes LF, not two literal backslash/n bytes. Matching is
++against raw bytes: CRLF, extra lines/spaces, exponent notation, aliases, banners
++and partial output fail. There is no fallback grammar. Analyzer unsigned
++integers use canonical decimal as the accepted ostream emits. Values are
++normalized by exact Decimal integer-nanoseconds / 1000000000; no float path.
++Auditor decimals are read exactly as printed. Original stdout is retained.
++Internal VALID requires analyzer PASS+exit0 or auditor VALID+exit0; FAIL+exit1
++and INVALID+exit1 stay INVALID. Any status/exit inconsistency or missing stdout
++fails; neither failure nor missing K is converted to success or zero.
++
++T_an and T_aud are independent whole-process monotonic measurements. K is the
++actual printed duration, never inferred from results or the total. All values
++must be finite/nonnegative. Analyzer enforces K <= source wall <= whole wall
++exactly in decimal nanoseconds. Auditor checks the same ordering with only a
++fixed 2 ns allowance for K versus separately rendered source wall and 1 ns for
++rendered source wall versus measured whole wall. A fixed9 nearest decimal
++rounding contributes at most 0.5 ns per field; binary64 conversion at <=600 s
++has absolute error below 0.00012 ns, so 1 ns per field is conservative. No
++clock/scheduler/performance allowance is added. K <= measured whole wall is
++also required strictly, keeping the projection's linear remainder nonnegative.
++The exact printed K is retained, without clamping or inventing a correction;
++there is no projection reduction beyond that actual serialized duration.
++Allowances are recorded with each timing receipt. Whole process intervals are
++integer monotonic nanoseconds and are not reconstructed from printed totals.
+ 
+ Benchmark sequence and exact timing partition
+ 
+@@ -156,7 +191,7 @@
+ after waiting/draining child pipes. Launch/wait/monitor/capture overhead inside
+ these intervals belongs to their respective T terms. It is conservatively
+ included once, not subtracted. Log fsync, step metadata serialization, binary
+-rechecks, template parsing, source/config hashing, directory preparation, shell
++rechecks, fixed timing parsing, source/config hashing, directory preparation, shell
+ progress, final receipts and final resource sampling outside these intervals
+ are script work covered by the fixed unscaled 120-second allowance. B2–B4 have
+ one monotonic start/end each; their step-receipt writes follow that interval.
+@@ -174,8 +209,9 @@
+ Require 2*(C+IO+V) <= 14400 seconds. Decimal arithmetic uses integer-nanosecond
+ wall values and actual printed K seconds; no K estimate is synthesized. Each
+ term, scale, allowance and projection is stored in BENCH_MEASUREMENTS.json.
+-Missing measurements are null, never zero. That immutable mode-0400 artifact
+-records only engineering status/timing/resource/hash metadata. G5 is NEVER
++Missing measurements are null, never zero. All T terms and projection fields
++are decimal strings, preserving exact seconds; source wall is evidence only.
++That immutable mode-0400 artifact records only engineering status/timing/resource/hash metadata. G5 is NEVER
+ claimed from inside the allocation.
+ 
+ The projected production output upper bound is the sum of 87,698,688 chunk
+@@ -279,7 +315,101 @@
+ 
+ Source inventory
+ 
+-SOURCE_INVENTORY.tsv records bytes and SHA-256 for every other delivered file.
+-It excludes itself to avoid a circular digest. Root separately records the
+-inventory's SHA-256 when freezing this source review snapshot. NODE_TOOLCHAIN
+-freeze files are prospective Root inputs and are deliberately absent here.
++SOURCE_INVENTORY.tsv records bytes and SHA-256 for all payloads and the
++completion report. It excludes itself and V2_DIFF.patch to avoid circular
++digests; the full diff then includes this inventory and the report. Root separately records the
++inventory's SHA-256 when freezing this source review snapshot. The complete
++actual NODE_TOOLCHAIN freeze and schema are delivered. See V2_COMPLETION_REPORT
++for the acyclic inventory/diff hash scope and all remaining gates.
++
++Exact review and completion handoff (ordinary artifacts, no controller)
++
++The completion is a new operational job package under the existing cumulative
++16 h readiness understanding and human authority. G4 scientific correctness
++remains accepted, the implementation 120-minute phase remains closed, and no
++budget, correction count, scientific population, protocol or accepted binary
++is changed. This source completion consumes no benchmark/scientific submission.
++Root must append actual author/reviewer time to the existing ledger, without
++resetting prior rows. AUTHENTICATED_INPUTS.json records the eleven named input
++identities and the seven workspace baseline hashes verified before editing.
++No unprovided implementation source or original metadata result was opened.
++
++Remaining milestones, in dependency order:
++1. Fresh non-author exact-source AND job/resource GO: bind inventory, actual
++   JSON/schema and immutable TXT, exact CLI/source hashes, Python, scripts and
++   helper; explicitly decide the authenticated requested-norm/reported-short
++   routing on the shared 6342/x6342,u467 class. This GO precedes all helper
++   execution, syntax checks, engineering exercise and the benchmark. Source
++   authors cannot provide it. Review may return GO or STOP; no repair chain.
++2. Authorized engineering checks after that GO: exact Python executable hash,
++   version and executable path, dynamic dependencies and modules datetime,
++   decimal, hashlib, json, os, pathlib, re, resource, selectors, signal, stat,
++   subprocess, sys and time on the representative class; Bash/Slurm/native hash
++   tools, /proc/cgroup scope, filesystem atomic rename/fsync and output/log
++   enforcement. Syntax/environment checks are engineering evidence, not G4
++   repetition, benchmark qualification or permission to run population probes.
++3. G5: one recorded benchmark intent, one original benchmark submission only,
++   then the external post-terminal binding receipt below. No benchmark has
++   been consumed here. A failed/missing criterion closes the route.
++4. G6: independent readiness GO on all receipts, exact production package,
++   native resources/routing, ledger totals and unchanged cumulative caps.
++5. G7: Root exact-hash scientific authority and separate one-submission intent,
++   then the single original scientific job. No scientific submission has been
++   consumed here. No retry, resume, requeue or alternate configuration.
++6. G8: genuine independent EA of the original job under every §13.2 condition,
++   including native job/all-step success, both peak sources, independent DC,
++   original agreement, recomputed result hashes and only the allowed analyzer
++   validity line. No estimates before EA; no replacement artifacts or reruns.
++7. G9: only after EA, scientific interpretation and the focused §20 update,
++   including all required estimates/intervals/adverse findings, provenance and
++   legacy failure history; then independent publication review. Failure gives
++   an uninterpreted feasibility/failure report, never a scientific negative.
++
++External BENCH_RECEIPT.txt completion contract
++
++After the original benchmark is terminal, Root preserves the native accounting
++stdout and query/collection provenance as immutable ordinary evidence. Include
++job and EVERY native step, not merely the parent allocation or a selected best
++row. Bind exact SHA-256 for the original BENCH_MEASUREMENTS.json, IDENTITIES,
++B1-B6 step receipts, original bounded logs and native accounting. Query original
++IDs only; no new invocation of this helper or any scientific program occurs.
++Preserve native State, ExitCode, Elapsed/ElapsedRaw, AllocCPUS, NNodes, NodeList,
++Partition, ReqMem/allocated memory, MaxRSS and units for job and all steps. Root
++normalizes native memory quantities with explicitly stated unit conversion;
++missing MaxRSS remains unavailable, never numeric zero. The maximum observed
++required-step MaxRSS is combined with the measured cgroup high water using max,
++with both sources and cgroup scope reported separately. Both sources must be
++available and cover the original execution for a positive acceptance decision;
++reviewer must reject inadequate scope or unresolved scheduler evidence.
++
++The immutable receipt contains: exact job ID and one-submission intent hash;
++source inventory/freeze/TXT hashes and every hardware/software identity; requested
++and reported partitions; the following definition/value pairs in decimal seconds:
++T_prod=B1 whole wall, T_ioS=B2 raw I/O+fsync+SHA whole wall, T_hashS=B3 whole
++wall, T_P3=B4 DC whole wall, T_an=B5 independent process wall,
++T_an_K=B5 printed K normalized exactly, T_aud=B6 independent process wall,
++T_aud_K=B6 printed K exactly; raw source timing stdout hashes, source totals,
++status and fixed rounding allowances; interval/overhead evidence;
++s=42000/1024=41.015625, C, IO, V, total, twice_total and the exact displayed
++formula; both peak sources/max and availability; actual benchmark output with
++all partial/temp/log/receipt/marker bytes; production output upper bound;
++all B1-B6 success, original parent/all-native-step states and exit codes,
++original elapsed/allocation, each individual criterion and final PASS/FAIL.
++
++Recompute the binding projection from immutable measurements without replacing
++any term, using the actual printed K. Require 2*total <=14400 s; peak <=32 GiB;
++projected production and actual benchmark output each <=1 GiB; analyzer
++PASS+exit0 and auditor VALID+exit0; all original logical/native steps successful;
++original job within 600 s, one node, 32 CPUs and requested 64 GiB. Hash and seal
++the resulting receipt once, as an ordinary post-terminal G5 artifact outside
++this helper. If stored inside BENCH, include its final size in the output bound.
++The in-job pending G5 string is not a qualification pass. Any unavailable source
++or failed criterion produces FAIL and preserves the route's original evidence.
++No favorable number is inferred from committed data alone.
++
++For production G8, preserve analogous JOB_MEASUREMENTS/native evidence and
++all partial outputs, enforce <=28800 s, one node, <=32 CPUs, both peaks <=64 GiB,
++RUN <=2 GiB and logs <=16 MiB. Independently validate each original P1-P6 outcome
++including successful P3 chmod, without generating another agreement. An empty
++or missing native field is not success. Timeout/OOM/node-loss evidence remains
++a failure even if data is DC. Only the independent EA decision permits unseal.
+--- a/SOURCE_INVENTORY.tsv
++++ b/SOURCE_INVENTORY.tsv
+@@ -1,7 +1,15 @@
+ path	bytes	sha256
+-benchmark.sh	2038	268ad8fd02859a63457b53537680b848594c059e5ffbadbe5291569dc0e35481
+-production.sh	2040	7cd92c4ca88697efe6f8554525d4caf0bc6215fe80b9567cb5dbbd028441f040
+-runtime_helper.py	36452	2141233cb25460768fea906949b4d66de4f22ab4195518e4e5eaa106c665c837
+-README.txt	18588	4b03e5d25f6189bc64fb63d5d302e73bc012d10aff1fc3eb092b6ebd251112fc
++AUTHENTICATED_INPUTS.json	4663	3daf3ce48966fd307f5021017313c01fe86679de85da4ffe5007b3dbf33d0441
++CPU_METADATA_AUTHENTICATION.json	6410	e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f
++DEFAULT_PYTHON_IDENTITY_NATIVE.json	2188	571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051
++NODE_TOOLCHAIN_FREEZE.json	3586	7656397813c15cdc430b72482874819728e6aa20f87f4ca0f3c9fa7b683a9770
++NODE_TOOLCHAIN_FREEZE.schema.json	4782	e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d
++NODE_TOOLCHAIN_FREEZE.txt	4884	a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87
++PROTOCOL_V0_4_ACCEPTED.txt	81247	71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
++PUBLIC_TIMING_CLI_CONTRACT.json	1773	bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e
++README.txt	27377	e6c9b175c42a7e64c707e9407eba02f897a62648028b5fc386305d182ceac4ce
+ SOURCE_AUTHOR_REPORT.txt	6904	6100e2fbdc7e1f1fdb72ad326a11ddfdb81faa22d5b2c84c43ed64610acd81ed
+-PROTOCOL_V0_4_ACCEPTED.txt	81247	71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
++V2_COMPLETION_REPORT.txt	12768	894a591ce7089b06a7c7f488546ab1d3a8ac43c8b87ecbd3c5719a18b8ccaf8b
++benchmark.sh	2060	75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263
++production.sh	2062	4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753
++runtime_helper.py	40724	53cb5d9336d96bde47752ec76e7866639edeb8f55a51143644d45c6b719bf271
+--- /dev/null
++++ b/V2_COMPLETION_REPORT.txt
+@@ -0,0 +1,182 @@
++BIT002 V2 INTEGRATED OPERATIONAL COMPLETION REPORT
++
++Disposition: COMPLETE SOURCE CANDIDATE, preserved-source-only, NOT EXECUTED,
++NOT INDEPENDENTLY ACCEPTED, NO SOURCE/RESOURCE GO, NO BENCHMARK OR SCIENCE.
++This author is not the required independent reviewer. No gate is self-approved.
++The v1 partial package remains unchanged at its original source/snapshot/report
++locations. Only this workspace was written. The unchanged historical
++SOURCE_AUTHOR_REPORT.txt does not describe current V2 status; README supersedes
++its old timing/interface, pending metadata and interpreter statements.
++
++Authentication before edit
++
++The named ROOT_FROZEN_CANDIDATE.json authenticated at 1487 bytes and
++fcbaeff0f30f9315911bc46db26b6f2e238c36c568435d98c3e5451587e411eb.
++All seven initial workspace files matched its exact bytes and SHA-256 BEFORE
++any edit. All eleven user-named authority inputs matched supplied sizes/hashes;
++AUTHENTICATED_INPUTS.json records their exact identities and the baseline table.
++The preserved external seven-file v1 source was re-read for the diff and every
++file still matched that original manifest. No outside source/snapshot/report
++was altered. The public protocol copy remains byte-for-byte accepted.
++
++Integrated completion, no scientific change
++
++1. runtime_helper.py now has two fixed raw-byte exact literal timing parsers.
++   Analyzer PASS/FAIL integer nanoseconds and auditor VALID/INVALID fixed-nine
++   decimal seconds use only the authenticated public CLI extract. Full stdout
++   must match one role-specific grammar. Analyzer uint64 conversion to Decimal
++   seconds is exact. Original status/exit consistency is checked; internal VALID
++   means original PASS/VALID AND exit0. Invalid/crash/missing output cannot pass.
++   Separate measured process walls remain T_an/T_aud. Actual printed K remains
++   T_an_K/T_aud_K. No estimates or scientific result lines are parsed.
++   Finite/nonnegative/order checks compare K, source wall and whole wall. The
++   analyzer has zero serialization allowance; the auditor has only 1 ns for
++   source wall versus measured wall, 2 ns for two separately rounded values,
++   and strict K<=whole wall. At <=600 s binary64 conversion plus fixed9 rounding
++   is below 1 ns per field. Values are never clamped, synthesized or substituted.
++   Exact allowances and original timing bytes are retained. README gives bounds.
++   Configurable templates, guessed/fallback formats and interface uncertainty
++   are removed. Accepted scientific source hashes are fixed in source/freeze.
++2. Both batch scripts pin the existing authenticated Python 3.11.4 executable
++   rather than incompatible /usr/bin/python3 3.6.8. The helper verifies executable
++   path, exact version and SHA-256; JSON freezes all three. This session did not
++   measure the current interpreter or run any package program. Later authorized
++   engineering checks must verify exact interpreter/shared libraries/modules
++   on the representative class AFTER fresh exact-source/job/resource GO.
++3. The sole hardware class is norm/short-shared-x6342: still request norm and
++   x6342; accept reported norm or short only with exact Gold 6342 CPU, native
++   x6342/u467 feature class and shared norm/short node membership, exact STUDY
++   filesystem path and unchanged compiler/binaries/build flag identities.
++   Native read-only node identity is recorded at job preparation. Requested and
++   reported partitions are explicit receipt fields. Other reported partitions,
++   CPU models and feature classes fail. Independent resource review MUST assess
++   observed scheduler routing before the benchmark, not silently waive it.
++4. Complete actual NODE_TOOLCHAIN_FREEZE.json and a closed exact-value schema
++   replace unavailable v1 flags/mount requirements and timing templates. CPU ISA
++   flag sets and resolved mount information are observed provenance, not exact
++   unavailable freeze barriers. Necessary model/class/path/compiler/flags/build
++   and protocol identity checks remain. The byte-identical immutable original
++   TXT, CPU authentication, public timing contract and Python identity copies
++   are bound by hash. The original metadata receipt path/hash is preserved from
++   authentication as a provenance reference; no fabricated remote receipt path
++   or new allocation is required. The original receipt itself was not opened.
++   GCC 8.5 actual producer/analyzer O3/Wconversion/Wshadow/pthread and auditor
++   O2/Wpedantic commands govern; the old combined O2 receipt remains preserved.
++5. README now gives current status, actual schema and deployment requirements,
++   exact timing semantics/roundoff, norm/short review, all remaining gates and
++   the full ordinary post-terminal BENCH_RECEIPT/native accounting contract.
++   AUTHENTICATED_INPUTS records input authentication, not a runtime acceptance.
++   Inventory uses physical tabs and the full diff preserves all changed/new
++   source text, without executing a syntax checker or a package artifact.
++
++Connected workflow retained and statically inspected
++
++B1-B6 stay one sequential benchmark workflow: exact producer once; 42 opaque
++full-size chunk copies plus trace outside data, each temp/write/fsync/rename/
++dir-fsync/SHA; native rehash; exact DC inventory/canonical manifest and native
++sha256sum -c; analyzer/auditor timing-only once each with discarded results.
++B2 mechanical byte access is required by its explicit frozen copy operation;
++no records/numerators are decoded. Benchmark namespace remains benchmark-only.
++T terms use independent monotonic integer-nanosecond, nonoverlapping whole-step
++intervals. Process creation/draining/monitoring belongs to process walls;
++script/fsync/receipt work outside them belongs to the fixed unscaled 120 s.
++Projection remains EXACT s=42000/1024, C=s*T_prod, IO=T_ioS,
++V=T_hashS+s*T_P3+s*(T_an-T_an_K)+s*(T_aud-T_aud_K)+T_an_K+T_aud_K+120.
++Require 2*(C+IO+V)<=14400, both timing statuses VALID, cgroup/native maximum
++<=32 GiB, own/projected output <=1 GiB, successful original job <=600 s.
++No missing measurement becomes zero. In-job measurements never award G5.
++
++P1-P6 stay the only plain-shell production workflow: new exclusive run/once
++marker; producer-owned absent data child (correct --out new-directory semantics);
++producer once; full DC verification and chmod a-w; analyzer and auditor once
++with both original failures captured; content-blind sealing/hashes and original
++agreement. P2/P3 failure stops. P6 retains header plus FIVE key-value fields,
++SIX physical LF lines exactly. No field/header is removed. Native signal exits
++are retained; missing step output is failure, never fabricated success.
++Original P1-P3, both P4/P5 and P6 must succeed, required outputs must exist and
++hashes must agree before script exit0. Result/report/temp outputs remain sealed.
++There is no post-job results parser/unsealer, replacement agreement or rerun.
++
++Allocation requests stay benchmark 10 min and production 8 h, each norm/x6342,
++one node/task, 32 CPUs, 64 GiB. Native cgroup high-water discovery/scope,
++explicit unavailable/null evidence and all-job/all-step native accounting remain
++required. Benchmark max(cgroup, Slurm MaxRSS) <=32 GiB; production BOTH <=64 GiB.
++Bounded streams/total logs <=16 MiB, fixed raw output inventory, monitored output
++and memory, projected production <=1 GiB and production actual <=2 GiB remain.
++Monitoring is not presented as an atomic filesystem quota. Final acceptance
++needs adequate cgroup scope and original terminal native evidence; unknowns
++cannot be accepted. Partial/temp/receipt/marker bytes count in output evidence.
++
++There are exactly two batch workflows, no auxiliary controller or optional
++modes. They contain no submission command, retry, resume, array, requeue,
++rebuild, new tier or alternate resource request. Root's ordinary exact-hash
++submission intents bind the single original submission of each kind. Uncertain
++submission is inspected in original native records, never resubmitted. Any
++failed/missing required condition preserves evidence and closes the route.
++
++Remaining independent milestones
++
++A. Fresh genuine NON-AUTHOR GO on this exact source/inventory and job/resource
++   freeze, explicitly including norm/short class routing; required BEFORE any
++   helper execution, syntax check, engineering exercise or benchmark.
++B. Separately authorized engineering/syntax and representative-class environment
++   checks after A; exact Python/shared libraries/modules/native tools/cgroups/
++   filesystem behavior. No scientific or fixture probe is implied.
++C. G5: one original benchmark and complete post-terminal binding receipt,
++   original native job/all steps COMPLETED/0:0, all timing/resource/output tests.
++D. G6: independent readiness GO, exact production source/receipt/resource review
++   and original cumulative ledger/cap review.
++E. G7: Root exact-hash science authority and one original scientific submission.
++F. G8: independent EA by a non-author of producer/analyzer/auditor, original
++   job/all steps COMPLETED/0:0 and every §13.2 resource/DC/agreement/hash test;
++   only the permitted analyzer line-2 validity check before acceptance, then
++   unseal ONLY if EA holds. Failed/partial estimates remain uninterpreted.
++G. G9: focused scientific/publication update after EA, all §20 content and
++   independent publication review. Failure produces feasibility disposition only.
++
++G4 science correctness stays accepted; implementation 120-minute phase remains
++closed. Completing this necessary operational package does not reopen G4,
++change population/design/source implementation, count a new scientific result,
++consume either submission, reset any budget or waive any gate. Work remains
++inside the unchanged cumulative 16 h readiness understanding and human authority;
++Root must append actual transcript-backed author/reviewer time to the ledger.
++
++This session performed static ordinary reads/writes/diff/SHA and JSON metadata
++serialization only. No helper was run/imported; no code compilation, syntax
++checking, bash -n, py_compile, compile(), compiler/scientific program, DC,
++fixture/RNG/cohort operation, network/SSH/config/credential/session/MCP access,
++subagent/model/job dispatch or submission occurred. No tests or performance
++results are claimed. No unresolved scientific protocol discrepancy was found
++in the operational paths reviewed; independent GO is still outstanding.
++
++Final file accounting and acyclic hashes
++
++The following table gives every payload file's current bytes/hash and its v1
++status. SOURCE_INVENTORY.tsv then hashes all payloads AND this report, excluding
++itself and V2_DIFF.patch. The patch is generated LAST and includes every changed
++or new file other than its own bytes, including this report and the inventory;
++unchanged protocol/historical report naturally have no diff. It has no omitted
++or truncated hunks. Hashing a file inside itself or a circular report/inventory/
++patch chain is not possible; the final handoff separately supplies inventory
++and patch digests. The inventory binds this report; the patch binds its complete
++text and the inventory. Both must be externally frozen for independent review.
++No hidden checkpoint or alternate source snapshot was created in this workspace.
++
++path	status	bytes	sha256
++AUTHENTICATED_INPUTS.json	NEW	4663	3daf3ce48966fd307f5021017313c01fe86679de85da4ffe5007b3dbf33d0441
++CPU_METADATA_AUTHENTICATION.json	NEW	6410	e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f
++DEFAULT_PYTHON_IDENTITY_NATIVE.json	NEW	2188	571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051
++NODE_TOOLCHAIN_FREEZE.json	NEW	3586	7656397813c15cdc430b72482874819728e6aa20f87f4ca0f3c9fa7b683a9770
++NODE_TOOLCHAIN_FREEZE.schema.json	NEW	4782	e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d
++NODE_TOOLCHAIN_FREEZE.txt	NEW	4884	a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87
++PROTOCOL_V0_4_ACCEPTED.txt	UNCHANGED	81247	71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
++PUBLIC_TIMING_CLI_CONTRACT.json	NEW	1773	bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e
++README.txt	CHANGED	27377	e6c9b175c42a7e64c707e9407eba02f897a62648028b5fc386305d182ceac4ce
++SOURCE_AUTHOR_REPORT.txt	UNCHANGED	6904	6100e2fbdc7e1f1fdb72ad326a11ddfdb81faa22d5b2c84c43ed64610acd81ed
++benchmark.sh	CHANGED	2060	75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263
++production.sh	CHANGED	2062	4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753
++runtime_helper.py	CHANGED	40724	53cb5d9336d96bde47752ec76e7866639edeb8f55a51143644d45c6b719bf271
++
++SOURCE_INVENTORY.tsv	CHANGED: complete final payload/report inventory; hash in final handoff.
++V2_COMPLETION_REPORT.txt	NEW: this current report; exact hash in SOURCE_INVENTORY.tsv.
++V2_DIFF.patch	NEW: full v1-to-V2 delivery diff; exact hash in final handoff.
+--- a/benchmark.sh
++++ b/benchmark.sh
+@@ -15,7 +15,7 @@
+ readonly STUDY=/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024
+ readonly PACKAGE="$STUDY/runtime-package-r1"
+ readonly RUN="$STUDY/benchmark-r1"
+-readonly PY=/usr/bin/python3
++readonly PY=/home/chenx3/miniconda3/bin/python3.11
+ readonly HELPER="$PACKAGE/runtime_helper.py"
+ readonly PRODUCER="$STUDY/build-g2-r1/producer/bin/brc2_produce"
+ readonly ANALYZER="$STUDY/build-g2-r1/producer/bin/brc2_analyze"
+--- a/production.sh
++++ b/production.sh
+@@ -15,7 +15,7 @@
+ readonly STUDY=/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024
+ readonly PACKAGE="$STUDY/runtime-package-r1"
+ readonly RUN="$STUDY/scientific-r1"
+-readonly PY=/usr/bin/python3
++readonly PY=/home/chenx3/miniconda3/bin/python3.11
+ readonly HELPER="$PACKAGE/runtime_helper.py"
+ readonly PRODUCER="$STUDY/build-g2-r1/producer/bin/brc2_produce"
+ readonly ANALYZER="$STUDY/build-g2-r1/producer/bin/brc2_analyze"
+--- a/runtime_helper.py
++++ b/runtime_helper.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python3
++#!/home/chenx3/miniconda3/bin/python3.11
+ """BIT002 filesystem, identity, monotonic timing and receipt primitives.
+ 
+ Invoked only by the two batch scripts. No submission, scientific computation,
+@@ -30,6 +30,29 @@
+     'auditor': {'path': str(STUDY / 'auditor-v3-own-r1/auditor/bin/brc2_audit'),
+                 'sha256': '950ac9ffb49faaca3ec6568c8b55cdd9b8349e1f2782bcfe33c7d07fa3182eca'},
+ }
++PYTHON = {'path': '/home/chenx3/miniconda3/bin/python3.11', 'version': '3.11.4',
++          'sha256': '90ebd62efa611953ec39804a827a8df12e743b70b0a7435536bb053e0e1a6ae5'}
++CPU_MODEL = 'Intel(R) Xeon(R) Gold 6342 CPU @ 2.80GHz'
++HARDWARE_CLASS = {'name': 'norm/short-shared-x6342', 'requested_partition': 'norm',
++                  'reported_partitions': ['norm', 'short'], 'constraint': 'x6342',
++                  'active_features': ['u467', 'x6342'], 'cpu_model': CPU_MODEL}
++COMPILER = {'path': '/usr/bin/g++',
++            'sha256': '300a40555cfe820333187a6ed41b732af4905b011fd485bcaf9d9cc7a4facfdb',
++            'version': 'g++ (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28.0.1)',
++            'flags': {
++                'producer_analyzer': '-Isrc -std=c++17 -O3 -Wall -Wextra -Wconversion -Wshadow -fno-fast-math -pthread; link -pthread -lstdc++fs',
++                'auditor': '-Isrc -std=c++17 -O2 -Wall -Wextra -Wpedantic -fno-fast-math; link -lstdc++fs'}}
++TIMING_SOURCE_HASHES = {
++    'producer_analyzer': 'e84d1f195a4c065fc31a393be051291103e01f8e51b58b08dc489426a7ff918a',
++    'auditor': 'c25fc2680074a30ab4aa08ca0d1fd5351e6b60522c253d815b1a89040f383d82'}
++EVIDENCE_HASHES = {
++    'NODE_TOOLCHAIN_FREEZE.txt': 'a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87',
++    'CPU_METADATA_AUTHENTICATION.json': 'e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f',
++    'PUBLIC_TIMING_CLI_CONTRACT.json': 'bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e',
++    'DEFAULT_PYTHON_IDENTITY_NATIVE.json': '571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051'}
++ORIGINAL_METADATA_RECEIPT = {
++    'path': '/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/cpu-metadata-freeze-r1/remote-evidence/METADATA_TERMINAL.json',
++    'sha256': '734abc8fff1fc1c9656fb41c7e4d9a262eaca2173e85d17149b334ab543953de'}
+ GIB = 1024 ** 3
+ LOG_STREAM_LIMIT = 1024 ** 2
+ D = decimal.Decimal
+@@ -104,7 +127,7 @@
+ def allocation():
+     env = os.environ
+     require(re.fullmatch(r'[1-9][0-9]*', env.get('SLURM_JOB_ID', '')) is not None, 'not_slurm')
+-    require(env.get('SLURM_JOB_PARTITION') == 'norm', 'partition')
++    require(env.get('SLURM_JOB_PARTITION') in ('norm', 'short'), 'partition')
+     require(env.get('SLURM_JOB_NUM_NODES', env.get('SLURM_NNODES')) == '1', 'nodes')
+     require(env.get('SLURM_NTASKS') == '1', 'tasks')
+     require(env.get('SLURM_CPUS_PER_TASK') == '32', 'cpus_per_task')
+@@ -151,8 +174,27 @@
+         clean = {k.strip(): v.strip() for k, v in fields.items()}
+         models.add(clean.get('model name', ''))
+         flags.add(tuple(sorted(set(clean.get('flags', '').split()))))
+-    require(len(models) == 1 and '' not in models and len(flags) == 1, 'heterogeneous_cpu')
+-    return {'model': next(iter(models)), 'flags': list(next(iter(flags)))}
++    require(len(models) == 1 and '' not in models, 'heterogeneous_cpu_model')
++    return {'model': next(iter(models)), 'observed_isa_flag_sets': [list(x) for x in sorted(flags)]}
++
++
++def node_class():
++    # Native read-only scheduler identity, not an allocation or a measurement.
++    result = subprocess.run(['scontrol', '--oneliner', 'show', 'node', os.uname().nodename],
++                            stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
++                            stderr=subprocess.PIPE, check=False)
++    require(result.returncode == 0 and len(result.stdout) <= LOG_STREAM_LIMIT and
++            len(result.stderr) <= LOG_STREAM_LIMIT, 'native_node_identity_unavailable')
++    body = result.stdout.decode('ascii')
++    fields = dict(re.findall(r'(?:^|\s)([A-Za-z][A-Za-z0-9_]*)=([^\s]+)', body))
++    require(fields.get('NodeName') == os.uname().nodename, 'native_node_name')
++    features = sorted(fields.get('ActiveFeatures', '').split(','))
++    require(features == HARDWARE_CLASS['active_features'], 'native_node_feature_class')
++    partitions = fields.get('Partitions', '').split(',')
++    require(all(p in partitions for p in ('norm', 'short')), 'native_shared_class_routing')
++    return {'requested_partition': 'norm', 'reported_partition': os.environ['SLURM_JOB_PARTITION'],
++            'class': HARDWARE_CLASS['name'], 'active_features': features,
++            'native_scontrol_node': body, 'native_stderr': result.stderr.decode('ascii')}
+ 
+ 
+ def peak():
+@@ -227,42 +269,58 @@
+     p = PACKAGE / 'NODE_TOOLCHAIN_FREEZE.json'
+     require(p.is_file() and not p.is_symlink() and not p.stat().st_mode & 0o222, 'freeze_not_sealed')
+     f = read_json(p)
+-    require(set(f) == {'schema', 'partition', 'constraint', 'cpu_model', 'cpu_flags',
+-                      'filesystem', 'compiler', 'binaries', 'protocol', 'package_sha256',
+-                      'node_freeze_txt_sha256', 'metadata_receipt', 'timing_stdout_templates'}, 'freeze_keys')
+-    require(f['schema'] == 'BIT002-NODE-TOOLCHAIN-FREEZE-R1', 'freeze_schema')
+-    require(f['partition'] == 'norm' and f['constraint'] == 'x6342', 'freeze_class')
+-    require(f['binaries'] == BINARIES, 'freeze_binaries')
++    require(set(f) == {'schema', 'hardware_class', 'filesystem_path', 'compiler', 'binaries',
++                      'python', 'protocol', 'package_sha256', 'evidence_sha256',
++                      'original_metadata_receipt', 'timing_source_sha256'}, 'freeze_keys')
++    require(f['schema'] == 'BIT002-NODE-TOOLCHAIN-FREEZE-V2', 'freeze_schema')
++    require(f['hardware_class'] == HARDWARE_CLASS, 'freeze_class')
++    require(f['filesystem_path'] == str(STUDY), 'freeze_filesystem_path')
++    require(f['binaries'] == BINARIES and f['compiler'] == COMPILER, 'freeze_build_identity')
++    require(f['python'] == PYTHON, 'freeze_python')
+     require(f['protocol'] == {'path': str(PACKAGE / 'PROTOCOL_V0_4_ACCEPTED.txt'),
+                               'sha256': PROTO_HASH}, 'freeze_protocol')
+-    require(set(f['compiler']) == set(BINARIES), 'compiler_roles')
+-    for toolchain in f['compiler'].values():
+-        require(set(toolchain) == {'identity', 'flags'}, 'compiler_fields')
+-        require(isinstance(toolchain['identity'], str) and toolchain['identity'], 'compiler_identity')
+-        require(isinstance(toolchain['flags'], list) and toolchain['flags'] and
+-                all(isinstance(x, str) and x for x in toolchain['flags']), 'compiler_flags')
+-        require(not any(x in ('-ffast-math', '-Ofast') or 'march=native' in x
+-                        for x in toolchain['flags']), 'forbidden_flags')
+-    require(set(f['package_sha256']) == {'benchmark.sh', 'production.sh', 'runtime_helper.py'}, 'source_fields')
+-    require(set(f['timing_stdout_templates']) == {'analyzer', 'auditor'}, 'stdout_template_fields')
+-    for template in f['timing_stdout_templates'].values():
+-        timing_pattern(template)
++    require(set(f['package_sha256']) == {'benchmark.sh', 'production.sh', 'runtime_helper.py',
++                                      'NODE_TOOLCHAIN_FREEZE.schema.json'}, 'source_fields')
++    require(f['evidence_sha256'] == EVIDENCE_HASHES, 'freeze_evidence')
++    require(f['original_metadata_receipt'] == ORIGINAL_METADATA_RECEIPT, 'freeze_original_receipt')
++    require(f['timing_source_sha256'] == TIMING_SOURCE_HASHES, 'freeze_timing_sources')
+     return f
+ 
+ 
+-def timing_pattern(template):
+-    require(isinstance(template, str) and len(template) <= 512 and template.endswith('\n'), 'timing_template')
+-    for token in ('{status}', '{wall_seconds}', '{k_seconds}'):
+-        require(template.count(token) == 1, 'timing_template_tokens')
+-    literal = template
+-    for token in ('{status}', '{wall_seconds}', '{k_seconds}'):
+-        literal = literal.replace(token, '')
+-    require(re.fullmatch(r'[A-Za-z_ =:\t\n,;()\-]*', literal) is not None, 'timing_template_literal')
+-    number = r'(?:0|[1-9][0-9]*)(?:\.[0-9]+)?(?:[eE][+-]?[0-9]+)?'
+-    pattern = re.escape(template)
+-    for name, value in (('status', 'VALID|INVALID'), ('wall_seconds', number), ('k_seconds', number)):
+-        pattern = pattern.replace(re.escape('{' + name + '}'), '(?P<' + name + '>' + value + ')')
+-    return pattern
++def parse_timing(role, body, returncode, measured_ns):
++    """Two fixed public interfaces; no templates, aliases or result parsing."""
++    if role == 'analyzer':
++        match = re.fullmatch(rb'total_ns=(0|[1-9][0-9]*) K_ns=(0|[1-9][0-9]*) (PASS|FAIL)\n', body)
++        require(match is not None, 'analyzer_timing_literal')
++        wall_ns, k_ns = int(match[1]), int(match[2])
++        require(max(wall_ns, k_ns) <= 2 ** 64 - 1, 'analyzer_timing_uint64')
++        wall, k = D(wall_ns) / D(10 ** 9), D(k_ns) / D(10 ** 9)
++        source_status = match[3].decode('ascii')
++        valid = source_status == 'PASS' and returncode == 0
++        consistent = (source_status, returncode) in (('PASS', 0), ('FAIL', 1))
++        wall_allowance, order_allowance = D(0), D(0)
++    else:
++        require(role == 'auditor', 'unknown_timing_role')
++        match = re.fullmatch(rb'status=(VALID|INVALID) total_seconds=((?:0|[1-9][0-9]*)\.[0-9]{9}) K_seconds=((?:0|[1-9][0-9]*)\.[0-9]{9})\n', body)
++        require(match is not None, 'auditor_timing_literal')
++        source_status = match[1].decode('ascii')
++        wall, k = D(match[2].decode('ascii')), D(match[3].decode('ascii'))
++        valid = source_status == 'VALID' and returncode == 0
++        consistent = (source_status, returncode) in (('VALID', 0), ('INVALID', 1))
++        # Fixed nine-place rendering: <=1 ns per displayed duration (including
++        # binary64 conversion below the allocation's 600 s timing limit).
++        # Two independently rendered values need <=2 ns for their ordering.
++        wall_allowance, order_allowance = D('0.000000001'), D('0.000000002')
++    measured = D(measured_ns) / D(10 ** 9)
++    require(consistent, 'timing_status_exit_inconsistent')
++    require(wall.is_finite() and k.is_finite() and 0 <= k and 0 <= wall and
++            wall <= D(600) and k <= wall + order_allowance and
++            wall <= measured + wall_allowance and k <= measured, 'timing_duration_order')
++    return {'source_status': source_status, 'status': 'VALID' if valid else 'INVALID',
++            'wall_seconds': format(wall, 'f'), 'k_seconds': format(k, 'f'),
++            'measured_whole_wall_seconds': format(measured, 'f'),
++            'source_wall_vs_measured_allowance_seconds': str(wall_allowance),
++            'K_vs_source_wall_allowance_seconds': str(order_allowance)}
+ 
+ 
+ def prepare(kind):
+@@ -270,21 +328,22 @@
+     allocation_info = allocation()
+     require(Path(__file__).resolve() == PACKAGE / 'runtime_helper.py', 'package_location')
+     f = load_freeze()
+-    actual_cpu, actual_fs = cpu(), filesystem()
+-    require(actual_cpu == {'model': f['cpu_model'], 'flags': f['cpu_flags']}, 'cpu_freeze_mismatch')
+-    require(actual_fs == f['filesystem'], 'filesystem_freeze_mismatch')
++    actual_cpu, actual_fs, actual_class = cpu(), filesystem(), node_class()
++    require(actual_cpu['model'] == CPU_MODEL, 'cpu_freeze_mismatch')
++    require(actual_fs['path'] == f['filesystem_path'], 'filesystem_freeze_mismatch')
++    require(sys.executable == PYTHON['path'] and
++            '.'.join(str(x) for x in sys.version_info[:3]) == PYTHON['version'] and
++            digest(sys.executable) == PYTHON['sha256'], 'python_identity')
++    require(digest(COMPILER['path']) == COMPILER['sha256'], 'compiler_executable_identity')
+     for obj in list(BINARIES.values()) + [f['protocol']]:
+         require(digest(obj['path']) == obj['sha256'], 'binary_or_protocol_hash')
+     for name, expected in f['package_sha256'].items():
+         require(re.fullmatch(r'[0-9a-f]{64}', expected) is not None and digest(PACKAGE / name) == expected,
+                 'package_source_hash')
+-    txt = PACKAGE / 'NODE_TOOLCHAIN_FREEZE.txt'
+-    require(not txt.stat().st_mode & 0o222 and digest(txt) == f['node_freeze_txt_sha256'], 'freeze_txt_hash')
+-    receipt = f['metadata_receipt']
+-    require(set(receipt) == {'path', 'sha256'}, 'metadata_receipt_fields')
+-    rp = Path(receipt['path'])
+-    require(STUDY / 'cpu-metadata-freeze-r1' in rp.resolve(strict=True).parents, 'metadata_receipt_location')
+-    require(digest(rp) == receipt['sha256'], 'metadata_receipt_hash')
++    for name, expected in EVIDENCE_HASHES.items():
++        evidence = PACKAGE / name
++        require(evidence.is_file() and not evidence.is_symlink() and
++                not evidence.stat().st_mode & 0o222 and digest(evidence) == expected, 'authority_evidence_hash')
+     run = root(kind)
+     require(not run.exists() and not run.is_symlink(), 'run_exists')
+     marker = STUDY / ('.' + run.name + '.once')
+@@ -297,9 +356,11 @@
+     put_json(run / 'logs/IDENTITIES.json', {
+         'schema': 'BIT002-RUNTIME-IDENTITIES-R1', 'kind': kind, 'job': allocation_info,
+         'node': os.uname().nodename, 'cpu': actual_cpu, 'filesystem': actual_fs,
++        'hardware_class': actual_class, 'python': PYTHON,
+         'compiler': f['compiler'], 'binaries': BINARIES, 'protocol': f['protocol'],
+         'package_sha256': f['package_sha256'], 'freeze_json_sha256': digest(PACKAGE / 'NODE_TOOLCHAIN_FREEZE.json'),
+-        'freeze_txt_sha256': f['node_freeze_txt_sha256'], 'metadata_receipt': receipt,
++        'evidence_sha256': EVIDENCE_HASHES, 'original_metadata_receipt': ORIGINAL_METADATA_RECEIPT,
++        'timing_source_sha256': TIMING_SOURCE_HASHES,
+         'cgroup_initial': peak(), 'created_utc': utc(), 'prepare_start_monotonic_ns': prepare_start,
+         'native_accounting': 'Root must obtain original job and every step after terminal state'})
+     fsync_dir(run)
+@@ -397,13 +458,8 @@
+     timing = None
+     if kind == 'benchmark' and role != 'producer':
+         try:
+-            body = (run / ('logs/' + step + '.stdout')).read_text(encoding='ascii')
+-            match = re.fullmatch(timing_pattern(load_freeze()['timing_stdout_templates'][role]), body)
+-            require(match is not None, 'timing_stdout_not_exact_contract')
+-            timing = match.groupdict()
+-            k, wall = D(timing['k_seconds']), D(timing['wall_seconds'])
+-            require(k.is_finite() and wall.is_finite() and 0 <= k <= wall and
+-                    k <= D(t1 - t0) / D(10 ** 9), 'timing_K_out_of_range')
++            body = (run / ('logs/' + step + '.stdout')).read_bytes()
++            timing = parse_timing(role, body, code, t1 - t0)
+             # Timing-only must not commit any results or audit report.
+             require(all(not list((run / d).iterdir()) for d in ('results', 'audit')), 'timing_only_wrote_results')
+         except (OSError, ValueError, decimal.InvalidOperation):
+@@ -413,7 +469,7 @@
+             seal_outputs(run)
+         except (OSError, ValueError):
+             violation = violation or 'output_sealing_failed'
+-    success = code == 0 and violation is None
++    success = code == 0 and violation is None and (timing is None or timing['status'] == 'VALID')
+     step_info(run, step, t0, t1, success, command=command, start_utc=start_utc,
+               end_utc=utc(), returncode=code, stdout_bytes_seen=counts[0], stderr_bytes_seen=counts[1],
+               stdout_bytes_saved=min(counts[0], LOG_STREAM_LIMIT),

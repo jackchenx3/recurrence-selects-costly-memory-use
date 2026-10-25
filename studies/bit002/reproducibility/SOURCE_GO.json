@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-10-25T15:19:46.411831+00:00",
+  "state": "ACCEPTED_GO_SOURCE_ONLY",
+  "candidate_manifest": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/ROOT_FROZEN_R2_V2_CANDIDATE.json",
+    "bytes": 32240,
+    "sha256": "c4a0acaf9327281b75b36ec5f515fbc0f5d7ea9e8fc8bd06eeb2b53e492cc34f"
+  },
+  "independent_nonauthor_review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/independent-source-review-v2/REVIEW.txt",
+    "bytes": 11701,
+    "sha256": "b52d954a365428d140cac65ef9e88379c69db8ac1c9152e608d21b0dfac778ae"
+  },
+  "authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/independent-source-review-v2/ROOT_AUTHENTICATION.json",
+    "bytes": 14700,
+    "sha256": "7b1c0bf95d54e195f41f128a98f1a2cf23d48a671e794477107340275c9201de"
+  },
+  "human_authority": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/USER_RERUN_AUTHORITY.json",
+    "bytes": 2463,
+    "sha256": "25da3733425a1a27292f7726c384d9ea6ae701582cd3c7f6c52611f69948f4ff"
+  },
+  "prior_v1_STOP_preserved": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/RUNTIME_R2_SOURCE_REVIEW_V1_STOP.json",
+    "bytes": 1431,
+    "sha256": "6b331186cdf6666f1e8deaab11664fb911f29859cee367ac26d18fd56ba82e43"
+  },
+  "scope": "Exact v2 complete runtime/fixture/source integration only; permits separately bounded FRCE Slurm synthetic engineering under ROOT authority, not scientific execution.",
+  "original_science_protocol_unchanged": true,
+  "fixture_runtime_PASS": false,
+  "scientific_r2_submitted": false,
+  "benchmark_repeated": false
+}

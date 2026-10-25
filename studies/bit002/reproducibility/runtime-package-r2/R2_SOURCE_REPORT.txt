@@ -1,0 +1,195 @@
+R2 V2 CURRENT INTEGRATED SOURCE AUTHOR REPORT
+STATE: COMPLETE SOURCE CANDIDATE; UNEXECUTED; NO SELF-ISSUED GO/PASS
+Candidate: /tmp/bit002-runtime-r2-fixture-repair-v2-20261025/candidate-runtime-r2-v2
+Deployment package after applicable GO/authority: STUDY/runtime-package-r2
+STUDY=/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024
+
+CURRENT V2 STATUS
+This report supersedes the rejected R2-v1 current report. Exact prior report and
+README are retained in history/rejected-r2-v1/. See V2_FIXTURE_CORRECTION_REPORT.txt
+for the independent STOP, all 60 authenticated inputs, five changed / thirty
+unchanged prior paths, complete handshake argument, preserved tests and all gates.
+Identity is limited to this actual nativeCLI SOURCE-author request boundary;
+canonical returned-model identity is unavailable and not asserted.
+All 35 rejected files were copied FIRST; all 18 original baseline files are
+preserved byte-identically under history/original18/. Rejected v1 remains STOP.
+
+Original 54254461/P2: returncode -9, violation output_monitor_failed, zero stdout
+and stderr bytes; no scientific results, DC, agreement or EA. All 46 frozen partial
+files remain outside this work. An enumerated temporary pathname disappearing
+before lstat is a source-evident robustness defect, consistent with trusted atomic
+rename, but NOT a confirmed cause of that old failure. The exact old exception,
+pathname and event sequence remain unresolved. No scientific negative finding or
+infeasibility inference is made, and no observed runtime PASS is claimed.
+
+The exact brief and USER_RERUN_AUTHORITY authorize necessary integrated runtime
+source correction, then one complete synthetic engineering validation after genuine
+nonauthor SOURCE GO, fresh readiness GO and Root exact-hash authority before ONE
+fresh complete scientific-r2 submission. Original failure/history/consumed slots,
+16-hour cumulative readiness, closed G2-G4 allowance, measured caps and all EA/
+publication requirements persist. No budget/slot reset, resume, overwrite, partial
+aggregation, automatic extra benchmark or scientific redesign is authorized.
+
+BOUNDED CORRECTION AND DIAGNOSTICS
+sizes(run) now performs at most THREE full scans (initial plus two rescans),
+resetting total/log counts on each attempt. Only FileNotFoundError for a descendant
+permits rescan; a completed traversal returns the full current regular/log byte
+counts. It never skips an entry and never returns partial counts after an error.
+Each attempt explicitly lstats/validates the run root. A missing/non-directory/
+symlink root fails immediately; root ENOENT does not consume additional attempts.
+Every os.walk traversal error is raised by onerror, preventing silent omission.
+Permission and other OS errors, symlinks and nonregular objects fail immediately;
+persistent descendant disappearance fails on attempt 3 with its original exception.
+There is no delay, unbounded retry, child rerun, controller/security/taxonomy
+redesign or scientific code change. Three attempts bound retries, not per-scan
+filesystem latency or an atomic snapshot: continuous churn may still fail closed,
+and live growth is governed by unchanged trusted-writer bounds/final criteria.
+
+sizes attaches output_monitor_context to the ORIGINAL exception and re-raises it:
+exception_type, message, path, operation, filename, filename2, errno, scan_attempt,
+scan_attempt_limit. Native OS filenames and validation path are retained. timed()
+retains the FIRST fatal context as output_monitor_error in structured step JSON;
+null means no caught fatal size-scan error. Its output_monitor_failed violation,
+SIGKILL/process-group logic, code/success behavior and all caps remain unchanged.
+No new scientific record fields or frozen configuration keys are added. The new
+field is operational step metadata only. If the filesystem prevents evidence
+commit itself, that evidence cannot be guaranteed; native Root records remain
+required. The fixture validates scan exceptions/context, not the production child
+kill loop or step commit, whose wiring is source-reviewed and remains unexecuted.
+
+INTEGRATION AND SCIENTIFIC INVARIANCE
+production.sh job name BIT002-scientific-r1 -> BIT002-scientific-r2.
+production.sh PACKAGE STUDY/runtime-package-r1 -> STUDY/runtime-package-r2.
+production.sh RUN STUDY/scientific-r1 -> STUDY/scientific-r2.
+Helper PACKAGE and production root change to the identical R2 names. The unchanged
+prepare marker expression therefore derives STUDY/.scientific-r2.once, never the
+old marker. Existing run/marker guards and data creation behavior remain intact.
+Freeze JSON protocol.path and schema protocol.const.path change exactly from
+STUDY/runtime-package-r1/PROTOCOL_V0_4_ACCEPTED.txt to
+STUDY/runtime-package-r2/PROTOCOL_V0_4_ACCEPTED.txt. The schema remains closed with
+the same required/allowed keys. Existing JSON package_sha256 fields are resealed.
+No blanket textual substitution is applied to science tiers or historical files.
+The benchmark branch and benchmark.sh remain archival R1 references with NO run
+authority. Benchmark 54251116 is consumed; readiness must assess reuse, not rerun.
+
+Base protocol bytes/hash remain
+71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa.
+All science binary paths/hashes, compiler/timing-source/Python/hardware identities,
+33 keys, production-r1 tier, 42000 blocks, cohorts, six endpoints/inference remain
+unchanged. DC, timing parser, direct science commands, agreement, receipt criteria,
+32 CPUs/64 GiB request, log/output/file/time limits and postterminal checks remain.
+The memory amendment removes only a mandatory <=64 GiB kernel hard ceiling; actual
+job-wide cgroup peak and original-step MaxRSS accounting and measured caps remain.
+Full operational identity must be bound EXTERNALLY: base protocol + memory
+amendment + original amendment human/independent acceptance + USER_RERUN_AUTHORITY
++ exact R2 source/engineering/readiness acceptances + Root G7R2 authority. Future
+hashes do not yet exist here. Never present the base hash alone as full operating
+conditions. No scientific manifest/record/config-schema additions are introduced.
+
+AFTER-GO ENGINEERING FIXTURE SOURCE AND LIMITS
+Exact invocation pattern, NOT executed:
+/home/chenx3/miniconda3/bin/python3.11 -B /ABS/CANDIDATE/engineering_fixture.py /ABS/NEW/engineering-size-scan-r2 /ABS/CANDIDATE/runtime_helper.py
+Use accepted existing Python 3.11.4 and an absent absolute scratch root with an
+existing parent, outside package/benchmark/scientific namespaces. The helper path
+must identify the exact reviewed new helper. Root must verify fixture/helper hashes
+and native tool/environment/FS identities before executing after SOURCE GO.
+The fixture imports only that helper and calls only sizes(), never prepare/timed/
+iovol/DC/receipt/main, scientific programs, Philox/cohort/keys/records or markers.
+It uses standard library only, with no network/scheduler/submission activity.
+
+It checks regular/log totals; deterministic real rename after enumeration before
+entry-lstat and complete-count recovery on scan 2; persistent real rename failure
+on scan 3; fatal traversal and entry permission errors without retry; traversal
+ENOENT exhaustion; other OS I/O errors without retry; native chmod(0) traversal
+permission when non-root; file/directory symlinks; FIFO; missing/root-file/root-link;
+retained original error type/message/path/operation/errno/attempt bound. Injected
+cases are explicitly synthetic, use narrowly scoped standard-library mocks, and
+restore bindings. Privileged UID reports native permission NOT_APPLICABLE rather
+than claiming a native denial; synthetic fatal-permission checks remain required.
+
+The corrected concurrent writer holds .temporary_000 open after writing/flushing/
+fsyncing exactly 65536 bytes, before the first write/commit finishes. Only a scanner
+confirmation following exact live regular-file identity/size/content checks and a
+successful sizes() count of 65536 regular bytes / 0 log bytes can release it. The
+scanner requires zero commits and no final pathname before release. Empty scans
+cannot release the writer. Phase readiness, scan, confirmation, first commit and
+writer completion bounds are checked and reported. The protected partial phase
+expires after 5 seconds; overall concurrent work deadline is 35 seconds. Cleanup
+never sets the confirmation event. The writer then completes its first 128-KiB
+file and the remaining 63 real write/fsync/rename/directory-fsync commits.
+One required deterministic protected scan is distinguished from later unsynchronized
+free_running_scan_opportunities (possibly zero); no free-running scheduling overlap
+is guaranteed. Final acceptance still requires exactly 64 commits, 8 MiB final
+usage, no temporary files and no writer failure. All other regression cases are
+unchanged. Fixed literal bytes, no RNG; total payload is 8 MiB plus <1 KiB, below
+16 MiB. A 55-second alarm bounds normal execution below 60 seconds, subject to
+native uninterruptible filesystem stalls. This is engineering correctness only.
+
+All future actual engineering and science execution is FRCE Slurm ONLY. The command
+shape above must run inside the future authorized engineering allocation, never
+locally. No execution or source parsing/syntax/import check was performed here.
+
+Expected stdout is ONE finite JSON object with scope
+synthetic_size_scan_engineering_only, status PASS/FAIL, named checks with details,
+helper SHA/path, Python identity, scratch path and elapsed seconds; exit 0 for all
+checks PASS, else 1. This is an expected interface only, not observed output.
+Root must bind actual native runtime/FS/tool/all-step receipt. A fixture PASS alone
+cannot certify production resource qualification, original EA or scientific validity.
+
+UNPERFORMED GATES
+Genuine fresh nonauthor exact SOURCE GO; any permitted later syntax/import checks;
+complete AFTER-GO synthetic engineering execution/native receipt; independent fresh
+readiness GO including benchmark reuse/resource scope; Root exact-hash G7R2 authority;
+one complete fresh original scientific-r2 submission; successful original steps and
+native all-step accounting; independent G8R2/EA before unseal; G9 publication review.
+No build, py_compile, bash -n, old/new helper import, fixture run, model invocation,
+science/RNG/data/results, scheduler/network/SSH or auxiliary runtime program occurred.
+Only ordinary local Python file/text/JSON/hash/diff construction was used. No
+skills, AGENTS, config, credentials, sessions, unlisted inputs or delegation used.
+
+BASELINE CHANGES (6):
+NODE_TOOLCHAIN_FREEZE.json
+NODE_TOOLCHAIN_FREEZE.schema.json
+README.txt
+SOURCE_INVENTORY.tsv
+production.sh
+runtime_helper.py
+
+BASELINE UNCHANGED (12), byte-for-byte:
+AUTHENTICATED_INPUTS.json
+CPU_METADATA_AUTHENTICATION.json
+DEFAULT_PYTHON_IDENTITY_NATIVE.json
+NODE_TOOLCHAIN_FREEZE.txt
+PROTOCOL_V0_4_ACCEPTED.txt
+PUBLIC_TIMING_CLI_CONTRACT.json
+SOURCE_AUTHOR_REPORT.txt
+V2_COMPLETION_REPORT.txt
+V2_DIFF.patch
+V3_DIFF.patch
+V3_NODE_MAPPING_REPORT.txt
+benchmark.sh
+
+SEALING ORDER AND FULL DIFF COVERAGE
+SOURCE_INVENTORY.tsv covers every payload, document, evidence and history file,
+including the preserved historical R2_FULL_DIFF.patch, except SOURCE_INVENTORY.tsv,
+CANDIDATE_INVENTORY.tsv, V2_FULL_BASELINE_DIFF.patch and V1_TO_V2_FULL_DIFF.patch.
+V2_FULL_BASELINE_DIFF.patch compares ALL 18 original baseline paths, with complete
+/dev/null additions for every new file in that source set plus SOURCE_INVENTORY.tsv.
+V1_TO_V2_FULL_DIFF.patch compares ALL 35 prior rejected paths and every addition in
+the same set. Unchanged files naturally have no hunks; comparison coverage is also
+listed in V2_COMPARISON.tsv. Both diffs exclude themselves, each other and the final
+CANDIDATE_INVENTORY.tsv, preventing circular content or hash dependencies.
+CANDIDATE_INVENTORY.tsv covers EVERY other candidate file, including both new full
+diffs and SOURCE_INVENTORY.tsv. The outside CLI-managed REPORT.txt binds its final
+size/hash and supplies full /dev/null-to-final and v1-to-final inventory seal hunks.
+Thus the external report completes the old/new diff coverage for the final seal;
+no inventory claims to hash itself and neither diff claims to include itself.
+The unchanged R2_FULL_DIFF.patch, V2_DIFF.patch and V3_DIFF.patch are HISTORY only.
+
+EXACT EXISTING PACKAGE HASH REPLACEMENTS (old -> new)
+runtime_helper.py: 77951448572ceb59c7b3f5663f7a19d5b7e17606a57f1fa72218e6b83257a5a1 -> a9dd7343d4460386073bd758bffe42be1d76dbe05e62522afff22818feb4afc3
+production.sh: 4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753 -> 13fb0c3fdb97e2b0ed9b7830a461ee8f35b2c782a916a433f93986282bfaad1e
+NODE_TOOLCHAIN_FREEZE.schema.json: e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d -> 475af868f308444051466837db75f3c78a59a592d7ed5615403c77c4e9b02202
+benchmark.sh: 75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263 -> 75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263
+NODE_TOOLCHAIN_FREEZE.json: 33440895fb87e6ea3709c65c741c7136480200947e42c2c6c74c9ff145f5339f -> 5a061f5eda5ae1263b75b6b62401fb9a6f2531366191b619a8ffc9119f7b0522
+engineering_fixture.py (v1 rejected -> v2 SOURCE): a2ce860c77ac27c98bd70a6911c3c73c5205b970dbfe2cfb0a4d6ed2d0872179 -> c474f0436124c539a8edd2f456eb3cd86484a0b01d729e45830f10349b9fe6b5

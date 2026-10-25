@@ -1,0 +1,42 @@
+{
+  "at_utc": "2026-10-25T17:11:45.970807+00:00",
+  "decision": "GO_INTEGRATED_MANUSCRIPT_CONTENT_ACCEPTED",
+  "scope": "Unpublishedfullmanuscriptworkingrevision1.3.0 integratesacceptedv1.2Studies001-003andacceptedBIT002; editorialclaim/contentacceptanceonly",
+  "candidate_manifest": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/manuscript-integration-20261025/FROZEN_INTEGRATED_CANDIDATE_V1.json",
+    "bytes": 16876,
+    "sha256": "a3069da00a8f4c6afaef5b900fe4327151fa0287ab1cbae977d2699c490b80df"
+  },
+  "review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/manuscript-integration-20261025/independent-integration-review-v1/REVIEW.txt",
+    "bytes": 9909,
+    "sha256": "60790eccfa41bb6533f5688d69d330d55a7df87e45448024e91a277208d27dbb"
+  },
+  "authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/manuscript-integration-20261025/independent-integration-review-v1/ROOT_AUTHENTICATION.json",
+    "bytes": 4766,
+    "sha256": "ad299214aa494018d6a613c90877cbe41e516d3c2d133cc09c2141364b39fab3"
+  },
+  "visual_QA": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/manuscript-integration-20261025/working-v1.3.0/provenance/INTEGRATION_VISUAL_QA.json",
+    "bytes": 866,
+    "sha256": "ff6afe8f64c185d0d684c09968a6db72779c67ff74f0698b9fd87b7457bad35a"
+  },
+  "retention_check": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/manuscript-integration-20261025/ROOT_RETENTION_AND_INTEGRITY_CHECK.json",
+    "bytes": 548,
+    "sha256": "8d2ee8d64f7b8ef5591ef9a5b0c76c2dd876cc808c1b3708770c0703a42af899"
+  },
+  "main_pages": 33,
+  "supplement_pages": 36,
+  "all_original_main_six_tables_and_references_unchanged": true,
+  "supplement_PartsA_C_verbatim": true,
+  "all_six_BIT002_results_and_limits_retained": true,
+  "candidate40files_unchanged": true,
+  "no_scientific_runs_or_new_tests": true,
+  "no_longrun_mediation_or_TORUS_retrieval_or_recurrence_intervention_established": true,
+  "original_Phase3_protocol_stays_incomplete": true,
+  "original_releases_preserved": true,
+  "external_deposit_submission_or_acceptance": false,
+  "completion_delivery_rule": "Wrap identical40filecandidate with this receipt, independentreview/authentication and cumulativeaccounting; do not mutate frozen reviewed text."
+}

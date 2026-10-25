@@ -21,10 +21,10 @@ import reportlab
 
 ROOT=Path(__file__).resolve().parents[1]
 TITLE='Environmental recurrence selects a costly memory-use policy across two operator bundles without a resolved one-bit population benefit'
-SHORT_TITLE='Recurrence and a costly memory-use policy in two operator bundles'
-PACKAGE_VERSION='1.2.0'
-VERSION_TEXT='Research preprint draft, version '+PACKAGE_VERSION+'; not externally peer reviewed'
-FIGURE_STEMS=['figure1_design','figure2_allele','figure3_accuracy','figure4_information','figure5_operator_bundles']
+SHORT_TITLE='Memory-use selection and immediate retrieval effects'
+PACKAGE_VERSION='1.3.0'
+VERSION_TEXT='Research preprint v'+PACKAGE_VERSION+'; not externally peer reviewed'
+FIGURE_STEMS=['figure1_design','figure2_allele','figure3_accuracy','figure4_information','figure5_operator_bundles','figure6_immediate_retrieval']
 FONTROOT=Path(reportlab.__file__).parent/'fonts'
 for name,file in [('Research','Vera.ttf'),('ResearchBold','VeraBd.ttf'),
                   ('ResearchItalic','VeraIt.ttf'),('ResearchMono','Vera.ttf')]:
@@ -32,7 +32,7 @@ for name,file in [('Research','Vera.ttf'),('ResearchBold','VeraBd.ttf'),
 pdfmetrics.registerFontFamily('Research',normal='Research',bold='ResearchBold',italic='ResearchItalic',boldItalic='ResearchBold')
 NAVY=colors.HexColor('#17354b');GRAY=colors.HexColor('#55636e')
 S={
- 'body':ParagraphStyle('body',fontName='Research',fontSize=9.8,leading=14.7,spaceAfter=8,textColor=colors.HexColor('#20262c')),
+ 'body':ParagraphStyle('body',fontName='Research',fontSize=9.8,leading=14.7,spaceAfter=8,textColor=colors.HexColor('#20262c'),splitLongWords=True),
  'title':ParagraphStyle('title',fontName='ResearchBold',fontSize=18,leading=23,spaceAfter=18,textColor=NAVY),
  'h2':ParagraphStyle('h2',fontName='ResearchBold',fontSize=13,leading=17,spaceBefore=16,spaceAfter=8,textColor=NAVY,keepWithNext=True),
  'h3':ParagraphStyle('h3',fontName='ResearchBold',fontSize=11,leading=15,spaceBefore=13,spaceAfter=7,textColor=NAVY,keepWithNext=True),
@@ -65,7 +65,7 @@ def inline(text):
 def footer(canvas,doc):
     canvas.saveState();canvas.setStrokeColor(colors.HexColor('#d5dde3'))
     canvas.line(50,37,A4[0]-50,37);canvas.setFont('Research',7.3);canvas.setFillColor(GRAY)
-    canvas.drawString(50,25,SHORT_TITLE+' | '+VERSION_TEXT)
+    canvas.drawString(50,27,SHORT_TITLE);canvas.setFont('Research',6.5);canvas.drawString(50,16,VERSION_TEXT)
     canvas.drawRightString(A4[0]-50,25,str(doc.page));canvas.restoreState()
 
 def column_widths(rows):

@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-10-25T15:50:27.638973+00:00",
+  "argv": [
+    "sbatch",
+    "--parsable",
+    "--nodelist=cn136",
+    "--output=/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-authority-r2/slurm-%j.stdout",
+    "--error=/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-authority-r2/slurm-%j.stderr",
+    "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r2/production.sh"
+  ],
+  "returncode": 0,
+  "stdout": "54269109\n",
+  "stderr": "",
+  "remote_authority_directory": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-authority-r2",
+  "remote_run_directory": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-r2",
+  "authority_sha256": "a2424de5eac1aee1da3f28060441f1439cc126de294e6929f9028350f39142a1",
+  "job_id": "54269109"
+}

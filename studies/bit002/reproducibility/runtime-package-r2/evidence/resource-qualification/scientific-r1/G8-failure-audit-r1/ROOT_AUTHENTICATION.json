@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-10-25T13:33:15.372858+00:00",
+  "state": "AUTHENTICATED_GENUINE_NONAUTHOR_G8_ORIGINAL_EXECUTION_STOP_INVALID_EA",
+  "verdict": "STOP",
+  "exact_inputs_verified": 31,
+  "native_completed_commands": 6,
+  "reported_invocations_including_denied_heredoc": 7,
+  "bounds_disposition": "All6completedcommands were namedstaticread/hash/JSON/text; no network,scientific/helperexecution,rawdata/outcomes,sourcewritesordelegation. Nativewarnings/deniedcacheattemptspreserved.",
+  "review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/REVIEW.txt",
+    "sha256": "e9f385731afc73845798180d2cacfe1d95e5258c41e31794d65aab21d6e3232e"
+  },
+  "native_terminal": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/PROCESS_TERMINAL.json",
+    "sha256": "79008dcff63cab11a9c6b726334ec99c42640d66898ec8aa7172394b7e915930"
+  },
+  "native_stdout": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/native_stdout.jsonl",
+    "sha256": "e0d26a1a0372fd8d3a8914d42e7a92052faf963e4a3816f60177b463ca202c27"
+  },
+  "native_stderr": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/native_stderr.txt",
+    "sha256": "85df5abe0c7a81cc014ca4ebf7b0da7028a66051747a57c464a15b5b40c05b2e"
+  },
+  "command_audit": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/ROOT_COMMAND_AUDIT_DATA.json",
+    "sha256": "321c1d8ff828c1fcd46cc9681134b387ecab2f70d69b563e9c9952dff3196d95"
+  },
+  "requested_model": "gpt-6.1-sol",
+  "canonical_returned_model_exposed": false,
+  "identity_limit": "GenuineCLIexplicitrequestboundaryonly",
+  "full_generation_seconds": 189.453297247,
+  "ROOT_concurrence": "Original54254461failedP2/runtimeoutputmonitor; EAinvalid, noDC/results/agreement; partialfilesfrozen/hashonly; no memory/time/outputcapexceedanceestablished. Underlyingexceptionunresolved. No scientificnegative/infeasibilityclaim. Anynewexecution requiresnewhumanrerunauthority,notretroactiveacceptance."
+}

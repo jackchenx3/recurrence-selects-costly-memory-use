@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-10-25T15:50:26.216939+00:00",
+  "completed_cumulative_active_seconds": "23406.078296",
+  "completed_cumulative_active_hours": "6.501688415555555555555555556",
+  "cap_seconds": 57600,
+  "reviewer_full_seconds": "447.252162916",
+  "ROOT_current_interval_seconds": "147.139939",
+  "pre_submission_ledger": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/scientific-r2/ACTIVE_TIME_LEDGER_AT_G7R2.tsv",
+    "bytes": 23294,
+    "sha256": "8ab58afe75896afef8538a2f266fe71f20420cd7d93baddc9443f29d86718115"
+  },
+  "16h_remaining_seconds": "34193.921704",
+  "8h_scientific_wall_reservation_still_inside16h": true,
+  "prior_times_all_preserved": true,
+  "closed_implementation_phase_not_reopened": true,
+  "usage_last_checked_remaining_percent": 96,
+  "reset_credits_purchased_or_used": false,
+  "credits_automatically_consumed": false
+}

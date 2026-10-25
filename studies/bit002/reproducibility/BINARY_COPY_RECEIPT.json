@@ -1,0 +1,53 @@
+{
+  "at_utc": "2026-10-25T16:25:37.552605+00:00",
+  "scope": "ExactacceptedLinuxbinariesarchivedforreproducibility, neverexecutedlocally",
+  "native_readonly_transfers": [
+    {
+      "argv": [
+        "scp",
+        "-p",
+        "chenx3@batch.ncifcrf.gov:/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_analyze",
+        "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/candidate-v1/reproducibility/linux-accepted-binaries/brc2_analyze"
+      ],
+      "rc": 0,
+      "stdout": "",
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgraded. See https://openssh.com/pq.html\r\n* This warning banner provides privacy and security notices consistent with\n  applicable federal laws, directives, and other federal guidance for accessing\n  this Government system, which includes (1) this computer network, (2) all\n  computers connected to this network, and (3) all devices and storage media\n  attached to this network or to a computer on this network.\n* This system is provided for Government-authorized use only.\n* Authorized uses only. All activity may be monitored and reported.\n* Unauthorized or improper use of this system is prohibited and may result in\n  disciplinary action and/or civil and criminal penalties.\n* Personal use of social media and networking sites on this system is limited as\n  to not interfere with official work duties and is subject to monitoring.\n  By using this system, you understand and consent to the following:\n  * The Government may monitor, record, and audit your system usage, including\n    usage of personal devices and email systems for official duties or to\n    conduct HHS business. Therefore, you have no reasonable expectation of\n    privacy regarding any communication or data transiting or stored on this\n    system. At any time, and for any lawful Government purpose, the government\n    may monitor, intercept, and search and seize any communication or data\n    transiting or stored on this system.\n  * Any communication or data transiting or stored on this system may be\n    disclosed or used for any lawful Government purpose.\n"
+    },
+    {
+      "argv": [
+        "scp",
+        "-p",
+        "chenx3@batch.ncifcrf.gov:/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/auditor-v3-own-r1/auditor/bin/brc2_audit",
+        "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/candidate-v1/reproducibility/linux-accepted-binaries/brc2_audit"
+      ],
+      "rc": 0,
+      "stdout": "",
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgraded. See https://openssh.com/pq.html\r\n* This warning banner provides privacy and security notices consistent with\n  applicable federal laws, directives, and other federal guidance for accessing\n  this Government system, which includes (1) this computer network, (2) all\n  computers connected to this network, and (3) all devices and storage media\n  attached to this network or to a computer on this network.\n* This system is provided for Government-authorized use only.\n* Authorized uses only. All activity may be monitored and reported.\n* Unauthorized or improper use of this system is prohibited and may result in\n  disciplinary action and/or civil and criminal penalties.\n* Personal use of social media and networking sites on this system is limited as\n  to not interfere with official work duties and is subject to monitoring.\n  By using this system, you understand and consent to the following:\n  * The Government may monitor, record, and audit your system usage, including\n    usage of personal devices and email systems for official duties or to\n    conduct HHS business. Therefore, you have no reasonable expectation of\n    privacy regarding any communication or data transiting or stored on this\n    system. At any time, and for any lawful Government purpose, the government\n    may monitor, intercept, and search and seize any communication or data\n    transiting or stored on this system.\n  * Any communication or data transiting or stored on this system may be\n    disclosed or used for any lawful Government purpose.\n"
+    },
+    {
+      "argv": [
+        "scp",
+        "-p",
+        "chenx3@batch.ncifcrf.gov:/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce",
+        "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/candidate-v1/reproducibility/linux-accepted-binaries/brc2_produce"
+      ],
+      "rc": 0,
+      "stdout": "",
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\r\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\r\n** The server may need to be upgraded. See https://openssh.com/pq.html\r\n* This warning banner provides privacy and security notices consistent with\n  applicable federal laws, directives, and other federal guidance for accessing\n  this Government system, which includes (1) this computer network, (2) all\n  computers connected to this network, and (3) all devices and storage media\n  attached to this network or to a computer on this network.\n* This system is provided for Government-authorized use only.\n* Authorized uses only. All activity may be monitored and reported.\n* Unauthorized or improper use of this system is prohibited and may result in\n  disciplinary action and/or civil and criminal penalties.\n* Personal use of social media and networking sites on this system is limited as\n  to not interfere with official work duties and is subject to monitoring.\n  By using this system, you understand and consent to the following:\n  * The Government may monitor, record, and audit your system usage, including\n    usage of personal devices and email systems for official duties or to\n    conduct HHS business. Therefore, you have no reasonable expectation of\n    privacy regarding any communication or data transiting or stored on this\n    system. At any time, and for any lawful Government purpose, the government\n    may monitor, intercept, and search and seize any communication or data\n    transiting or stored on this system.\n  * Any communication or data transiting or stored on this system may be\n    disclosed or used for any lawful Government purpose.\n"
+    }
+  ],
+  "build_IDs": {
+    "analyzer": {
+      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_analyze",
+      "sha256": "0af66a01615414129be30df2d75df9efbfa724660d4c1701b9799982ea367721"
+    },
+    "auditor": {
+      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/auditor-v3-own-r1/auditor/bin/brc2_audit",
+      "sha256": "950ac9ffb49faaca3ec6568c8b55cdd9b8349e1f2782bcfe33c7d07fa3182eca"
+    },
+    "producer": {
+      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce",
+      "sha256": "bc597d652bfab0f05cab7e9ca52e53ea7ddc365e304a7fe4588d7386fc4031f0"
+    }
+  }
+}

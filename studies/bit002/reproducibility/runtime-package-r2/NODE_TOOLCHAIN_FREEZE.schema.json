@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "binaries": {
+      "const": {
+        "analyzer": {
+          "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_analyze",
+          "sha256": "0af66a01615414129be30df2d75df9efbfa724660d4c1701b9799982ea367721"
+        },
+        "auditor": {
+          "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/auditor-v3-own-r1/auditor/bin/brc2_audit",
+          "sha256": "950ac9ffb49faaca3ec6568c8b55cdd9b8349e1f2782bcfe33c7d07fa3182eca"
+        },
+        "producer": {
+          "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce",
+          "sha256": "bc597d652bfab0f05cab7e9ca52e53ea7ddc365e304a7fe4588d7386fc4031f0"
+        }
+      }
+    },
+    "compiler": {
+      "const": {
+        "flags": {
+          "auditor": "-Isrc -std=c++17 -O2 -Wall -Wextra -Wpedantic -fno-fast-math; link -lstdc++fs",
+          "producer_analyzer": "-Isrc -std=c++17 -O3 -Wall -Wextra -Wconversion -Wshadow -fno-fast-math -pthread; link -pthread -lstdc++fs"
+        },
+        "path": "/usr/bin/g++",
+        "sha256": "300a40555cfe820333187a6ed41b732af4905b011fd485bcaf9d9cc7a4facfdb",
+        "version": "g++ (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28.0.1)"
+      }
+    },
+    "evidence_sha256": {
+      "const": {
+        "CPU_METADATA_AUTHENTICATION.json": "e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f",
+        "DEFAULT_PYTHON_IDENTITY_NATIVE.json": "571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051",
+        "NODE_TOOLCHAIN_FREEZE.txt": "a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87",
+        "PUBLIC_TIMING_CLI_CONTRACT.json": "bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e"
+      }
+    },
+    "filesystem_path": {
+      "const": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024"
+    },
+    "hardware_class": {
+      "const": {
+        "active_features": [
+          "u467",
+          "x6342"
+        ],
+        "constraint": "x6342",
+        "cpu_model": "Intel(R) Xeon(R) Gold 6342 CPU @ 2.80GHz",
+        "name": "norm/short-shared-x6342",
+        "reported_partitions": [
+          "norm",
+          "short"
+        ],
+        "requested_partition": "norm"
+      }
+    },
+    "original_metadata_receipt": {
+      "const": {
+        "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/cpu-metadata-freeze-r1/remote-evidence/METADATA_TERMINAL.json",
+        "sha256": "734abc8fff1fc1c9656fb41c7e4d9a262eaca2173e85d17149b334ab543953de"
+      }
+    },
+    "package_sha256": {
+      "additionalProperties": false,
+      "properties": {
+        "NODE_TOOLCHAIN_FREEZE.schema.json": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "benchmark.sh": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "production.sh": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "runtime_helper.py": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "benchmark.sh",
+        "production.sh",
+        "runtime_helper.py",
+        "NODE_TOOLCHAIN_FREEZE.schema.json"
+      ],
+      "type": "object"
+    },
+    "protocol": {
+      "const": {
+        "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r2/PROTOCOL_V0_4_ACCEPTED.txt",
+        "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
+      }
+    },
+    "python": {
+      "const": {
+        "path": "/home/chenx3/miniconda3/bin/python3.11",
+        "sha256": "90ebd62efa611953ec39804a827a8df12e743b70b0a7435536bb053e0e1a6ae5",
+        "version": "3.11.4"
+      }
+    },
+    "schema": {
+      "const": "BIT002-NODE-TOOLCHAIN-FREEZE-V2"
+    },
+    "timing_source_sha256": {
+      "const": {
+        "auditor": "c25fc2680074a30ab4aa08ca0d1fd5351e6b60522c253d815b1a89040f383d82",
+        "producer_analyzer": "e84d1f195a4c065fc31a393be051291103e01f8e51b58b08dc489426a7ff918a"
+      }
+    }
+  },
+  "required": [
+    "binaries",
+    "compiler",
+    "evidence_sha256",
+    "filesystem_path",
+    "hardware_class",
+    "original_metadata_receipt",
+    "package_sha256",
+    "protocol",
+    "python",
+    "schema",
+    "timing_source_sha256"
+  ],
+  "title": "BIT002 exact V2 operational freeze",
+  "type": "object"
+}

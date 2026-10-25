@@ -2,7 +2,7 @@
   {
     "query": "\"evolution of memory\" changing environments",
     "service": "OpenAlex",
-    "url": "https://api.openalex.org/works?search=%22evolution%20of%20memory%22%20changing%20environments&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+    "url": "https://api.openalex.org/works?search=%22evolution%20of%20memory%22%20changing%20environments&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50"
   },
   {
     "query": "\"evolution of memory\" changing environments",
@@ -12,7 +12,7 @@
   {
     "query": "\"phenotypic memory\" evolution fluctuating environment",
     "service": "OpenAlex",
-    "url": "https://api.openalex.org/works?search=%22phenotypic%20memory%22%20evolution%20fluctuating%20environment&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+    "url": "https://api.openalex.org/works?search=%22phenotypic%20memory%22%20evolution%20fluctuating%20environment&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50"
   },
   {
     "query": "\"phenotypic memory\" evolution fluctuating environment",
@@ -22,7 +22,7 @@
   {
     "query": "memory exploration evolution changing environments",
     "service": "OpenAlex",
-    "url": "https://api.openalex.org/works?search=memory%20exploration%20evolution%20changing%20environments&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+    "url": "https://api.openalex.org/works?search=memory%20exploration%20evolution%20changing%20environments&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50"
   },
   {
     "query": "memory exploration evolution changing environments",
@@ -32,7 +32,7 @@
   {
     "query": "learning memory evolution cost environmental predictability",
     "service": "OpenAlex",
-    "url": "https://api.openalex.org/works?search=learning%20memory%20evolution%20cost%20environmental%20predictability&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+    "url": "https://api.openalex.org/works?search=learning%20memory%20evolution%20cost%20environmental%20predictability&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50"
   },
   {
     "query": "learning memory evolution cost environmental predictability",
@@ -42,7 +42,7 @@
   {
     "query": "\"memory use\" digital organisms evolution",
     "service": "OpenAlex",
-    "url": "https://api.openalex.org/works?search=%22memory%20use%22%20digital%20organisms%20evolution&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+    "url": "https://api.openalex.org/works?search=%22memory%20use%22%20digital%20organisms%20evolution&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50"
   },
   {
     "query": "\"memory use\" digital organisms evolution",
@@ -52,7 +52,7 @@
   {
     "query": "adaptation cost memory fluctuating environments",
     "service": "OpenAlex",
-    "url": "https://api.openalex.org/works?search=adaptation%20cost%20memory%20fluctuating%20environments&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+    "url": "https://api.openalex.org/works?search=adaptation%20cost%20memory%20fluctuating%20environments&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50"
   },
   {
     "query": "adaptation cost memory fluctuating environments",
@@ -62,7 +62,7 @@
   {
     "query": "environmental memory allele selection",
     "service": "OpenAlex",
-    "url": "https://api.openalex.org/works?search=environmental%20memory%20allele%20selection&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+    "url": "https://api.openalex.org/works?search=environmental%20memory%20allele%20selection&filter=from_publication_date:1990-01-01,type:article&sort=relevance_score:desc&per-page=50"
   },
   {
     "query": "environmental memory allele selection",

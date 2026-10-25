@@ -1,0 +1,51 @@
+BIT002 NODE AND TOOLCHAIN FREEZE
+Recorded before benchmark submission.
+{
+  "at_utc": "2026-10-25T02:21:39.877049+00:00",
+  "partition": "norm",
+  "constraint": "x6342",
+  "cpu_model": "Intel(R) Xeon(R) Gold 6342 CPU @ 2.80GHz",
+  "representative_node": "cn131",
+  "filesystem_path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024",
+  "compiler_path": "/usr/bin/g++",
+  "compiler_sha256": "300a40555cfe820333187a6ed41b732af4905b011fd485bcaf9d9cc7a4facfdb",
+  "compiler_version": "g++ (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28.0.1)\nCopyright (C) 2018 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+  "actual_per_binary_build_flags": {
+    "producer_analyzer": "-Isrc -std=c++17 -O3 -Wall -Wextra -Wconversion -Wshadow -fno-fast-math -pthread; link -pthread -lstdc++fs",
+    "auditor": "-Isrc -std=c++17 -O2 -Wall -Wextra -Wpedantic -fno-fast-math; link -lstdc++fs"
+  },
+  "binaries": [
+    {
+      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce",
+      "sha256": "bc597d652bfab0f05cab7e9ca52e53ea7ddc365e304a7fe4588d7386fc4031f0",
+      "bytes": 279936,
+      "mode": "0o550",
+      "ldd_stdout": "\tlinux-vdso.so.1 (0x00007fffc1a98000)\n\tlibstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007fbfb316d000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007fbfb2deb000)\n\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fbfb2bd2000)\n\tlibpthread.so.0 => /lib64/libpthread.so.0 (0x00007fbfb29b2000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007fbfb25dc000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007fbfb3502000)\n",
+      "ldd_stderr": "",
+      "file": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=f5f79886f738160b21f3a7ae4050f528c807ad87, not stripped\n"
+    },
+    {
+      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_analyze",
+      "sha256": "0af66a01615414129be30df2d75df9efbfa724660d4c1701b9799982ea367721",
+      "bytes": 390440,
+      "mode": "0o550",
+      "ldd_stdout": "\tlinux-vdso.so.1 (0x00007fff10730000)\n\tlibstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007f93a5658000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007f93a52d6000)\n\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007f93a50bd000)\n\tlibpthread.so.0 => /lib64/libpthread.so.0 (0x00007f93a4e9d000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007f93a4ac7000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f93a59ed000)\n",
+      "ldd_stderr": "",
+      "file": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_analyze: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=8631c8480183ac9350915be9a44a7379f0d5a681, not stripped\n"
+    },
+    {
+      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/auditor-v3-own-r1/auditor/bin/brc2_audit",
+      "sha256": "950ac9ffb49faaca3ec6568c8b55cdd9b8349e1f2782bcfe33c7d07fa3182eca",
+      "bytes": 370504,
+      "mode": "0o550",
+      "ldd_stdout": "\tlinux-vdso.so.1 (0x00007ffdf2ba5000)\n\tlibstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007ff7c0481000)\n\tlibm.so.6 => /lib64/libm.so.6 (0x00007ff7c00ff000)\n\tlibgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007ff7bfee6000)\n\tlibc.so.6 => /lib64/libc.so.6 (0x00007ff7bfb10000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007ff7c0816000)\n",
+      "ldd_stderr": "",
+      "file": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/auditor-v3-own-r1/auditor/bin/brc2_audit: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=9aa726e620ac33153dc6c4de5c3be7a21a153531, not stripped\n"
+    }
+  ],
+  "G4_acceptance": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/G4_ACCEPTANCE.json",
+    "sha256": "a8613078265e7214d8b9e57d9e3685a604a338fb3f242a35f79aeba51e3a3645"
+  }
+}
+Production must use same norm/x6342 CPU model, same shared binaries and exact build IDs. Metadata-only allocation54219069 generated no population, keys or performance measurements. Original engineering metadata flag summary corrected against exact native build commands; original record preserved.

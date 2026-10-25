@@ -1,0 +1,13 @@
+CHECK A status=PASS failing_blocks=0 first_ids=NONE
+CHECK B status=PASS failing_blocks=0 first_ids=NONE
+CHECK C status=PASS failing_blocks=0 first_ids=NONE
+CHECK D status=PASS failing_blocks=0 first_ids=NONE
+CHECK E status=PASS failing_blocks=0 first_ids=NONE
+CHECK F status=PASS failing_blocks=0 first_ids=NONE
+CHECK G status=PASS failing_blocks=0 first_ids=NONE
+CHECK H status=PASS failing_blocks=0 first_ids=NONE
+CHECK I status=PASS failing_blocks=0 first_ids=NONE
+CHECK J status=PASS failing_blocks=0 first_ids=NONE
+CHECK K status=PASS failing_blocks=0 first_ids=NONE
+CHECK L status=PASS failing_blocks=0 first_ids=NONE
+AUDITOR_RESULT=PASS

@@ -1,0 +1,42 @@
+{
+  "at_utc": "2026-10-25T13:25:32.726521+00:00",
+  "state": "AUTHENTICATED_ORIGINAL_SCIENTIFIC_JOB_FAILURE_INDEPENDENT_G8_DISPOSITION_PENDING",
+  "job_id": "54254461",
+  "native_failure_fetch": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/FAILURE_NATIVE_FETCH.json",
+    "sha256": "f5aad941fdc43d59215cbb938e1b40f25dd1374361f68abde64c61cf5fad4b0c"
+  },
+  "native_terminal_first_check": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/STATUS_NATIVE_1.json",
+    "sha256": "231dca54f38ae05c0061b1423d221b319aa5e0124ec5f64ab1514e698766aca2"
+  },
+  "partial_evidence_preservation": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/FAILURE_PRESERVATION_NATIVE.json",
+    "sha256": "14394220c67363193dcc71ddf22b8932aadf8e8bc6a0592336aff2864f806e8b"
+  },
+  "P2_step": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/original-job-failure-evidence/logs/P2.json",
+    "sha256": "87da4c06095a34bcd4b58c3e12daf6cf68a1ef5b7f856061c835163fb18621ea"
+  },
+  "P2_recorded_violation": "output_monitor_failed",
+  "producer_return_code": -9,
+  "original_job_and_batch": "FAILED1:0",
+  "extern": "COMPLETED0:0",
+  "original_elapsed_seconds": 15,
+  "cgroup_job_peak_bytes": 114257920,
+  "Slurm_batch_MaxRSS_bytes": 113004544,
+  "max_two_peaks_bytes": 114257920,
+  "memory_output_time_caps_not_exceeded_in_recorded_evidence": true,
+  "failure_category": "Runtimeoutputmonitorfailure; no specificunderlyingOSError/ValueErrordetailwaslogged. Exactunderlyingcauseunresolved; do notasserttestedfix orscientificoperatorfailure.",
+  "P3_DC_P4_P5_P6_not_reached": true,
+  "scientific_results_audit_report_agreement_absent": true,
+  "partial_files_hashed_frozen": 46,
+  "partial_run_bytes": 81457796,
+  "data_manifest_not_committed": true,
+  "science_binary_hashes_unchanged": true,
+  "scientific_submission_consumed": true,
+  "benchmark_submission_consumed": true,
+  "program_rerun_reanalysis_retry_or_replacement_not_authorized": true,
+  "scientific_estimates_unsealed_read_or_interpreted": false,
+  "original_study_and_prior_evidence_preserved": true
+}

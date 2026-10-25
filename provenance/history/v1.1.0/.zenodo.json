@@ -4,8 +4,7 @@
   "publication_type": "preprint",
   "creators": [
     {
-      "name": "Chen, Jack",
-      "affiliation": "Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health"
+      "name": "Chen, Jack"
     }
   ],
   "description": "Two prospective abstract computational studies of one model ask whether lag-two environmental recurrence, and then directional cache information, selectively enrich a mutable allele for using a supplied one-record private cache when each retrieval replaces one of two fresh proposals. In Study 001, recurrence strongly enriched the allele above its exact neutral benchmark, while the recurrent ACTIVE-minus-SHAM population-accuracy contrast was bounded below the prespecified one-correct-bit scale with sign unresolved, the recurrence performance interaction was unresolved and the ZERO-law contrast was descriptively adverse. In Study 002, directional retrieval further amplified selection on the allele relative to a recurrence-gated, parent-distance-matched noninformative control, but its total population-accuracy effect through evolved policy use was bounded below the prespecified positive one-bit scale with sign unresolved. The result separates selection on a policy allele from demonstrated population performance. The memory architecture was supplied; retention and retrieval were not separated; one aligned HALF law, one fixed cost, one mutation rate, one horizon and one model class were tested. The 22 and 19 saved estimate records are separate families, not independent replications. Audits were internal. Research preprint; not externally peer reviewed. Manuscript/data CC BY 4.0; original code MIT; AI assistance disclosed.",

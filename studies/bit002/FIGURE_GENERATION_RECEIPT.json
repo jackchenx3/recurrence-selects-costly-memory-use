@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-10-25T16:28:49.628431+00:00",
+  "scope": "PresentationonlyofalreadyEAacceptedcanonicalresults; no newtests/statistics/rawrecords/scientificprogramruns",
+  "input_tsv_sha256": "b9f404a56ed3f5cdd4d613ed8cac5d4d3c5ee8c60caf53f75716f6c7ca9bccbf",
+  "plot_source_sha256": "88c212eb4b402b1a447659a426180b3ff5c6c9b3911f7c9fa1bb7f32a7c6a3ab",
+  "matplotlib_version": "3.9.4",
+  "isolated_plot_environment": "/tmp/bit002-publication-plot-env-20261025",
+  "outputs": {
+    "pdf": "6de1a5d34552c04c8ee2fcc0abe9ff43d557531d0aa382cc3db39ca9fa27e763",
+    "svg": "5824259c1e263b23890071e24c09d4a37eb9fa9b40e0cea3041f3262666cd747",
+    "png": "7f61087d56e2a36c65ef5064c5dbe892d63ddd3a9a0937cba6e664cf0829b172"
+  }
+}

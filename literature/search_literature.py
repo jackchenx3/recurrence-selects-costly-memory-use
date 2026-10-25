@@ -28,7 +28,7 @@ QUERIES = [
     'environmental memory allele selection',
 ]
 
-UA = "Phase2 mutable-memory literature audit (mailto:chenx3@nih.gov)"
+UA = "Phase2 mutable-memory literature audit ()"
 
 
 def fetch(url):
@@ -48,7 +48,7 @@ for q_index, query in enumerate(QUERIES, 1):
         "https://api.openalex.org/works?search="
         + urllib.parse.quote(query)
         + "&filter=from_publication_date:1990-01-01,type:article"
-        + "&sort=relevance_score:desc&per-page=50&mailto=chenx3@nih.gov"
+        + "&sort=relevance_score:desc&per-page=50"
     )
     oa = fetch(oa_url)
     (RAW / f"openalex_{q_index:02d}.json").write_text(

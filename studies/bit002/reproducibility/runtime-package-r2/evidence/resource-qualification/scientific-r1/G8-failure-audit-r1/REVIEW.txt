@@ -1,0 +1,103 @@
+VERDICT: STOP
+
+The single original BIT002 scientific execution, **job 54254461**, is authenticated as an authorized execution that failed during P2. **EA is unmet; the execution is INVALID under §13.2.** Sections 18.4 and 19.5 close the current route with this failure/feasibility disposition. Correctly passed G6 readiness and G7 submission authority do not imply G8 acceptance.
+
+I am a fresh nonauthor reviewer and authored none of the scientific, runtime, design, receipt or previous-review artifacts. I reuse accepted G0–G6 at their existing scopes. This assessment uses only the named local originals and preserved native records; I performed no direct cluster inspection.
+
+All **31 named inputs** match their supplied byte counts and SHA-256 values. The decision binds the following identities; paths are relative to the supplied BIT002 output directory.
+
+| Artifact | SHA-256 |
+|---|---|
+| `design/PROTOCOL_V0_4_ACCEPTED.txt` | `71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa` |
+| `resource-qualification/memory-enforcement-amendment-r1/RESOURCE_AMENDMENT_R1.txt` | `65e9c36b40c53f9e438843707a74ff19c5eb44c2a9ee5ce1d48d34b09e723407` |
+| Amendment `USER_APPROVAL_AUTHORITY.json` | `58dc1ad6699215895d9371e1cf34609679a29ef6442c6960661f7ca892f1d877` |
+| `gates/MEMORY_AMENDMENT_R1_ACCEPTANCE.json` | `2be5521ed34d747bc83050c5633787d8d757aac41a459dcebecf9cdfb16134f7` |
+| `gates/G6_ACCEPTANCE.json` | `5e3045f467ddb21601db572564c79312da7fa0f2fec9a9e79d38d491383141b2` |
+| G6 independent `REVIEW.txt` | `4fccea3a63ae449d0e4ef0f6194fde147c3e3fd29316c5d5d285dce1789933fd` |
+| G6 `ROOT_AUTHENTICATION.json` | `6ba8a8e2382871a75dd31249dfae7420a2756ad65dc43ac849a3942a955c8fbb` |
+| `scientific-r1/ROOT_SCIENTIFIC_AUTHORITY.json` | `00734ea03f35d41784be8ed2ef57432c17799201e8d8331910f506e827646a4e` |
+| `gates/G7_EXECUTION_AUTHORITY.json` | `334c96cfd5c1a7c836181169fddadf3fd036339e6dd1cbfd27704a398fbb4dd9` |
+| `scientific-r1/FAILURE_NATIVE_FETCH.json` | `f5aad941fdc43d59215cbb938e1b40f25dd1374361f68abde64c61cf5fad4b0c` |
+| `scientific-r1/FAILURE_PRESERVATION_NATIVE.json` | `14394220c67363193dcc71ddf22b8932aadf8e8bc6a0592336aff2864f806e8b` |
+| Original `logs/P2.json` | `87da4c06095a34bcd4b58c3e12daf6cf68a1ef5b7f856061c835163fb18621ea` |
+
+The full governing contract is the base protocol **plus** the exact amendment, human authority, accepted amendment review and Root submission authority. The accepted amendment-review/authentication hashes recorded in that chain are respectively `1fd52944e5d94cfc8314d38e09cc0797297d33a2d959086b51d19d60866864de` and `6fe88b6e121713f4991b22b30430f8f5ecc09651e64b5fea6fcf034ffabea15e`; their unlisted files were not opened. The base hash alone does not identify the amended operational contract.
+
+The preserved native submission is exactly:
+
+```text
+sbatch --parsable --nodelist=cn136 /mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r1/production.sh
+```
+
+It returned transport/submission code 0 and job ID `54254461`. Intent, handle, G7 authority, exclusive marker and native accounting consistently identify **one actual scientific submission**. Native control records show `Requeue=0`, `Restarts=0`, cn136, one node/task, 32 CPUs, 64G requested/allocated and an eight-hour limit. Parent and `.batch` are **FAILED/1:0**, elapsed **15 seconds**; `.extern` is **COMPLETED/0:0**. Native timestamps are 2026-10-25 09:20:32–09:20:47, consistent with the UTC metadata. Extern completion does not establish scientific success.
+
+G7 accounting binds the 68-row ledger at SHA-256 `04f1014995f489eb67f502bc8c030119ba52637d3ca68f22267f1a0355b7bc18`. Its non-wait sum is **19,581.751481 seconds**, matching the authority record and retaining the full G6 review duration and prior debits.
+
+P1 completed sufficiently to establish identities and the exclusive namespace. P2 invoked:
+
+```text
+/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce --tier production-r1 --out /mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-r1/data --threads 32
+```
+
+The accepted binary hashes match in the frozen configuration, original identities, G7 authority and preserved postfailure hash evidence:
+
+| Binary | SHA-256 |
+|---|---|
+| Producer | `bc597d652bfab0f05cab7e9ca52e53ea7ddc365e304a7fe4588d7386fc4031f0` |
+| Analyzer | `0af66a01615414129be30df2d75df9efbfa724660d4c1701b9799982ea367721` |
+| Auditor | `950ac9ffb49faaca3ec6568c8b55cdd9b8349e1f2782bcfe33c7d07fa3182eca` |
+
+Accepted scientific-source identities remain reused through G6; no source or binary alteration is established. Native identities confirm cn136’s accepted Gold 6342/x6342/u467 class, frozen toolchain/Python and NFS filesystem.
+
+P2 records **13.696835370 seconds**, child return code **−9**, `success=false`, and `violation=output_monitor_failed`. Both child streams are empty; `job.log` contains only `P2 producer start`. The shell then stopped and its original EXIT trap produced failure measurements. **P3/DC, P4 analyzer, P5 auditor and P6 agreement were never reached.** No analyzer results, auditor results, audit report or agreement files exist.
+
+Resource evidence supports no reported cap exceedance:
+
+| Measurement | Preserved value |
+|---|---:|
+| Legitimate job-wide cgroup peak | 114,257,920 bytes |
+| Original batch MaxRSS | 110,356 KiB = 113,004,544 bytes |
+| Original extern MaxRSS | 256 KiB |
+| Run files | 81,457,796 bytes |
+| Exclusive marker | 61 bytes |
+| Conservative output including marker | 81,457,857 bytes |
+| Native elapsed | 15 seconds |
+
+Both memory peaks are below 64 GiB, output is below 2 GiB and elapsed is below 28,800 seconds. The original in-job receipt correctly left native MaxRSS/accounting pending; preserved terminal accounting supplies them. The accepted amendment removed the mandatory **kernel hard ceiling of 64 GiB**, retaining measured limits and failure rules. This failure cannot be attributed to that superseded requirement.
+
+Bounded static fault localization uses only:
+
+```text
+resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/runtime_helper.py
+SHA-256 77951448572ceb59c7b3f5663f7a19d5b7e17606a57f1fa72218e6b83257a5a1
+```
+
+The production script is SHA-256 `4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753`, under frozen runtime manifest `cf4ea061d5e016b8bf24966fc6cd50ac142e06a2a86d54e1fcdfa27037d110a1`.
+
+In helper lines 256–269, `sizes(run)` walks the live namespace and calls `lstat`, with validation capable of raising `ValueError`. Lines 437–449 catch `OSError`/`ValueError`, retain only `output_monitor_failed`, and SIGKILL a still-running child process group. This provides a source-supported explanation consistent with recorded −9 termination.
+
+A rename/stat race involving a temporary filename during concurrent production, or an NFS/filesystem error, is plausible. Neither is established. Validation rejection is another source-permitted possibility. **The actual exception class, message, pathname and event sequence were not captured.** No specific root cause, tested fix or inevitable recurrence is established; −9 alone would not identify who sent the signal.
+
+The EA conditions resolve as follows:
+
+| §13.2 condition | Disposition |
+|---|---|
+| Original job and every step COMPLETED/0:0 | **Failed:** parent/batch FAILED/1:0; P2 unsuccessful |
+| Resource limits | Recorded measurements within retained limits |
+| Independent DC verification | **Unmet:** producer nonzero; incomplete inventory; no manifest/data commit |
+| Original successful agreement and equal recomputed result hashes | **Unmet:** agreement and both results absent |
+| Analyzer line 2 `status=VALID` | **Unmet:** analyzer result absent |
+
+No raw-data inspection is needed to establish these failures.
+
+All seven base64-encoded metadata/log files in `FAILURE_NATIVE_FETCH.json` decode byte-for-byte to the named local originals, matching lengths and hashes. Fetch and preservation inventories agree. Preservation records **46 unique files: 39 chunk files and seven metadata/log files**, totaling 81,457,796 bytes. Their recorded frozen modes are `0400`; directories are recorded read-only. Preservation occurred after terminal failure.
+
+These partial-file hashes were produced by **Root’s mechanical preservation**, not by the scientific program. They preserve identity evidence and do not establish DC, scientific completeness or validity. I verified inventory metadata and copied-original correspondence without reading raw chunks or claiming independent cluster/raw-file inspection. Postfailure freezing cannot substitute for P3.
+
+The scientific slot is consumed. Standing continuation approval expressly preserves submission and EA gates. There is no authority for retry, resume, new blocks, replay, reanalysis, replacement agreement or replacement submission. Unsealing is forbidden, and no estimates exist to unseal. No partial records were aggregated or interpreted.
+
+This execution establishes a failed runtime route, **not scientific or computational infeasibility and not a negative mechanism finding**. Accepted benchmark feasibility remains at its original qualification scope and provides no production guarantee. All prior failures, STOPs, accounting history and the old incomplete study remain preserved; this attempt completes none of them. Only a focused failure/feasibility report is supported. Accepted scientific results, a publication claim, favorable findings and journal acceptance are not supported or promised.
+
+Any future reopening would require **separate explicit human authority** defining a new bounded scope and addressing the consumed slot, closed correction allowance, preserved history and applicable budgets. Any authorized artifact change would require its applicable independent acceptance, followed by readiness, exact execution authority, successful original execution and independent EA before outcome access; publication would retain its own review gate. No such work is initiated or authorized here, and no re-review to seek another verdict follows.
+
+Review bounds: **7 local command invocations, including one denied here-document attempt; 6 completed static read/hash/JSON/text commands.** No network, scheduler action, delegation, helper import, build, fixture, scientific-program invocation, raw outcome access or successful file write occurred. Automatic Python cache writes were denied. No canonical returned-model identity is exposed or claimed.

@@ -1,0 +1,263 @@
+--- v2/NODE_TOOLCHAIN_FREEZE.json
++++ v3/NODE_TOOLCHAIN_FREEZE.json
+@@ -51,7 +51,7 @@
+     "NODE_TOOLCHAIN_FREEZE.schema.json": "e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d",
+     "benchmark.sh": "75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263",
+     "production.sh": "4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753",
+-    "runtime_helper.py": "53cb5d9336d96bde47752ec76e7866639edeb8f55a51143644d45c6b719bf271"
++    "runtime_helper.py": "77951448572ceb59c7b3f5663f7a19d5b7e17606a57f1fa72218e6b83257a5a1"
+   },
+   "protocol": {
+     "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r1/PROTOCOL_V0_4_ACCEPTED.txt",
+--- v2/README.txt
++++ v3/README.txt
+@@ -413,3 +413,42 @@
+ including successful P3 chmod, without generating another agreement. An empty
+ or missing native field is not success. Timeout/OOM/node-loss evidence remains
+ a failure even if data is DC. Only the independent EA decision permits unseal.
++
++V3 NODE MAPPING SOURCE CORRECTION — UNEXECUTED / NOT SOURCE GO
++
++This addendum describes the current workspace candidate. Earlier V2 reports,
++diff, evidence and README text are preserved historical material. The external
++16-file V2 STOP snapshot remains untouched and must never be executed.
++All 16 starting files matched ROOT_FROZEN_CANDIDATE.json before editing
++(manifest SHA-256 4ff2648f22afe5cb45f7805801018c144ab70378742de52490cb4b8235d2fb20).
++
++Only node_class() behavior changes: require SLURMD_NODENAME to match the ASCII
++single-token grammar [A-Za-z0-9][A-Za-z0-9_.-]{0,254} (1..255 characters), query
++that canonical scheduler name with the existing single scontrol command, and
++compare returned NodeName to that name. Empty, whitespace, host-list, leading
++option, and other non-token input is rejected before querying; no trimming,
++alias, alternate query or OS-name fallback is provided. OS hostname remains
++independent provenance, both in IDENTITIES.node and hardware_class.os_hostname;
++hardware_class.slurmd_node_name records the canonical scheduler name. Native
++NodeHostName/NodeAddr remain available in the unchanged raw scontrol receipt.
++The authenticated native example is OS fsitgl-hpc131p.ncifcrf.gov, Slurm cn131,
++and NodeHostName/NodeAddr fsitgl-hpc131p. These are distinct identities.
++
++The genuine independent V2 review's nonblocking benchmark, production, DC,
++resource and norm/short hardware-class findings are reused proportionately.
++All class/resource/path/compiler/binary/config guards remain. Only the helper
++package digest in NODE_TOOLCHAIN_FREEZE.json is resealed; schema is unchanged.
++Timing, B1-B6, P1-P6, DC, memory, output and scientific logic outside node_class()
++are byte-identical, as are both batch scripts and the accepted protocol.
++
++Fresh non-author exact-candidate SOURCE GO/STOP is required before ANY helper
++import/execution, syntax check, engineering exercise or runtime. The author
++cannot issue that GO. Engineering, G5, G6, G7 and independent G8/EA remain
++unperformed; no submission, data, results or unseal is authorized by this edit.
++G4 science remains accepted; the 120-minute G4 allowance is closed; the original
++cumulative 16-hour readiness budget is unchanged, with no reset or new budget.
++See V3_NODE_MAPPING_REPORT.txt and V3_DIFF.patch for exact change evidence.
++The V3 inventory includes all payloads and both preserved V2 artifacts plus the
++V3 report, excluding itself and V3_DIFF.patch to avoid circular hashes. The V3
++diff includes all changed originals and the complete new report, including the
++inventory change; it excludes its own bytes. No new infrastructure is added.
+--- v2/SOURCE_INVENTORY.tsv
++++ v3/SOURCE_INVENTORY.tsv
+@@ -2,14 +2,16 @@
+ AUTHENTICATED_INPUTS.json	4663	3daf3ce48966fd307f5021017313c01fe86679de85da4ffe5007b3dbf33d0441
+ CPU_METADATA_AUTHENTICATION.json	6410	e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f
+ DEFAULT_PYTHON_IDENTITY_NATIVE.json	2188	571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051
+-NODE_TOOLCHAIN_FREEZE.json	3586	7656397813c15cdc430b72482874819728e6aa20f87f4ca0f3c9fa7b683a9770
++NODE_TOOLCHAIN_FREEZE.json	3586	33440895fb87e6ea3709c65c741c7136480200947e42c2c6c74c9ff145f5339f
+ NODE_TOOLCHAIN_FREEZE.schema.json	4782	e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d
+ NODE_TOOLCHAIN_FREEZE.txt	4884	a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87
+ PROTOCOL_V0_4_ACCEPTED.txt	81247	71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
+ PUBLIC_TIMING_CLI_CONTRACT.json	1773	bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e
+-README.txt	27377	e6c9b175c42a7e64c707e9407eba02f897a62648028b5fc386305d182ceac4ce
++README.txt	30010	878decc97a030776bb2a998f5c3379e5662ce095169e0b78bd91d54c5208fac1
+ SOURCE_AUTHOR_REPORT.txt	6904	6100e2fbdc7e1f1fdb72ad326a11ddfdb81faa22d5b2c84c43ed64610acd81ed
+ V2_COMPLETION_REPORT.txt	12768	894a591ce7089b06a7c7f488546ab1d3a8ac43c8b87ecbd3c5719a18b8ccaf8b
++V2_DIFF.patch	82527	d352e2b04896b36956c25a3daf6e2e1a8a70bc9e042863e09c85c27afe3e5eb1
++V3_NODE_MAPPING_REPORT.txt	12580	921d06f9462bc49d90a3a283cdd772cff1098660dbd942a19b5dc20b9f4a5a2c
+ benchmark.sh	2060	75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263
+ production.sh	2062	4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753
+-runtime_helper.py	40724	53cb5d9336d96bde47752ec76e7866639edeb8f55a51143644d45c6b719bf271
++runtime_helper.py	40963	77951448572ceb59c7b3f5663f7a19d5b7e17606a57f1fa72218e6b83257a5a1
+--- /dev/null
++++ v3/V3_NODE_MAPPING_REPORT.txt
+@@ -0,0 +1,153 @@
++V3 NODE MAPPING REPORT
++STATE: SOURCE-ONLY CANDIDATE; UNEXECUTED; NOT SOURCE GO.
++Author of this correction only; this is not the required fresh non-author review.
++
++AUTHORITY AND LIMITS
++Ordinary operational source completion under the named human continuation
++authority. Exactly one demonstrated hostname/Slurm-NodeName defect is addressed.
++No scientific/G4 reopening. Original cumulative 16-hour readiness is unchanged;
++120-minute G4 allowance remains closed. No budget reset, benchmark/scientific
++submission, allocation or consumption occurred here. All reads were own source,
++protocol, review and the six named metadata inputs; all writes are in WORKSPACE.
++External V2 STOP snapshot, original root manifest, review and gates are untouched.
++V2 must never execute. Fresh non-author exact-candidate SOURCE GO/STOP must occur
++before ANY helper/syntax/engineering/runtime activity on this V3 candidate.
++No delegation, other workers, model invocation, session/workspace discovery,
++network, SSH, node query, config/credential access or infrastructure was used.
++
++AUTHENTICATION BEFORE EDITING
++All six supplied inputs were verified against their declared bytes/SHA-256.
++All 16 baseline package files were verified against ROOT_FROZEN_CANDIDATE.json
++before any edits (and reverified at the start of the write action). Baseline
++identity and current payload hashes are recorded below. No external source was
++modified. The independent REVIEW is STOP for one material node-name defect;
++ROOT_AUTHENTICATION authenticates that genuine non-author review. Its native
++20 completed commands versus report's 21 is already disclosed there; no new
++review or returned-model identity is claimed by this author.
++
++KNOWN FROZEN FACTS AND FIX
++Authenticated METADATA_TERMINAL.json records:
++  host (OS FQDN): fsitgl-hpc131p.ncifcrf.gov
++  node_name (canonical Slurm NodeName): cn131
++  raw NodeHostName: fsitgl-hpc131p; NodeAddr: fsitgl-hpc131p
++The supplied original-runner fact and independent review establish that the
++metadata query using SLURMD_NODENAME succeeded. That runner was not reopened.
++V2 queried os.uname().nodename and required NodeName to equal it, contradicting
++this receipt. V3 node_class() reads SLURMD_NODENAME without stripping or fallback;
++requires ASCII [A-Za-z0-9][A-Za-z0-9_.-]{0,254} via fullmatch, exactly 1..255
++characters starting alphanumeric; then uses that one argument in the unchanged
++scontrol --oneliner show node command. It compares returned NodeName to the
++validated Slurmd name. Missing/empty, whitespace, comma/bracket lists, leading
++options, path/shell punctuation, newline and overlong input fail before query.
++No alias, fallback query format, controller or additional network is introduced.
++OS hostname is independent provenance: existing IDENTITIES.node is unchanged;
++node_class() also returns os_hostname and slurmd_node_name as distinct fields.
++Raw native NodeHostName/NodeAddr remain provenance; no equality to OS is assumed.
++
++UNCHANGED GUARDS AND REVIEW REUSE
++ActiveFeatures exact sorted [u467,x6342], membership in both norm and short,
++requested/reported partition guards, exact Gold 6342 CPU model, 32-CPU/64-GiB
++single-node/single-task resources, time requests and all source/compiler/binary/
++Python/protocol/config/evidence identity checks are preserved. The JSON helper
++package hash alone is resealed; schema constants require no update. No check
++is skipped, weakened, or generalized to a new hardware or build class.
++Reuse all nonblocking findings of the authenticated independent REVIEW:
++- B1-B6 exact tier commands, monotonic whole-process timing, strict analyzer ns
++  and fixed-nine auditor parsing, status/exit normalization, actual printed K,
++  fixed auditor serialization allowances and s=42000/1024 with C/IO/V,
++  120-second allowance and 2(C+IO+V)<=14400 remain as reviewed.
++- I/O retains 42 full 2,088,064-byte copies plus the 524,832-byte trace, temporary
++  writes/fsync/rename/directory-fsync/SHA and native full-volume rehash. DC retains
++  exact inventory/canonical manifest/sizes/build/protocol/tier/query counts and
++  native sha256sum -c; raw B2 copying remains the documented exception.
++- Production retains producer-owned new data, DC before chmod, both original
++  P4/P5 attempts with failures captured, content-blind sealing, six-line agreement
++  and FAIL/CRASH/exit handling; no retry, resume, partial aggregation, replacement
++  agreement or post-production program rerun is introduced.
++- Both scripts retain 32 CPUs/64 GiB, benchmark ten minutes, science eight hours;
++  file/log/output limits, cgroup scope, all-step MaxRSS/native accounting,
++  terminal success, external G5, independent G6, Root G7 and independent G8 before
++  unseal remain explicit. Norm/x6342 requested and shared short/norm native class
++  remains the review-accepted protocol 17.2 interpretation, with native 48 cores,
++  exact Gold 6342 model and x6342/u467; no allocation-limit waiver follows.
++These are reused source findings, not new execution evidence or acceptance.
++
++STATIC VERIFICATION ONLY; UNPERFORMED GATES
++Byte comparison isolates the entire source edit inside node_class(); every byte
++before it and from def peak() onward is unchanged. Both batch scripts, protocol,
++previous reports/diff and all evidence copies remain byte-identical. JSON parsing
++and direct comparisons confirm the only freeze change is helper package SHA;
++all package hashes and all schema const values match. No candidate helper was
++imported/executed, no syntax checker/bash -n/compiler/py_compile/builtins compile
++ran, and no scientific code/RNG/fixtures/data/results/DC/runtime was accessed.
++No on-node behavior is certified. Required engineering remains unperformed:
++exact Python executable/version/libraries/modules, shell/helper syntax, native
++utilities and scheduler mapping, actual cgroup high-water scope/enforcement,
++all-step accounting, fsync/rename/sealing behavior, and CPU/memory/time limits.
++Fresh independent exact-source GO is the next required gate; thereafter the
++already specified engineering/G5/G6/G7/G8/EA/unseal gates still apply. No automatic
++repair loop or self-issued GO is granted. No further material issue was found in
++this narrow static correction; out-of-scope findings would be reported, not fixed.
++
++EXACT CHANGE LOCATIONS (old -> new line spans, inclusive)
++runtime_helper.py: replace; old 183..183; new 183..186
++runtime_helper.py: replace; old 190..190; new 193..193
++runtime_helper.py: insert; old 197..196; new 200..200
++NODE_TOOLCHAIN_FREEZE.json: replace; old 54..54; new 54..54
++README.txt: insert; old 416..415; new 416..454
++SOURCE_INVENTORY.tsv is regenerated from the final payload/report bytes.
++V3_DIFF.patch gives full unified source/metadata/addendum/report/inventory evidence.
++
++AUTHENTICATED NAMED INPUTS (absolute path | bytes | SHA-256)
++/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-package-completion-v2/ROOT_FROZEN_CANDIDATE.json | 3586 | 4ff2648f22afe5cb45f7805801018c144ab70378742de52490cb4b8235d2fb20
++/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-v2-independent-source-resource-review/REVIEW.txt | 7664 | dbf6d70b3f9c4f17f371f762787e9568dd38c95f076600a32b9bd9e4db380f8d
++/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-v2-independent-source-resource-review/ROOT_AUTHENTICATION.json | 1528 | 4947fa0df81c09943b220baea41df2ef739bbc06dbf2de7e0b2f4ea26c3c8c6c
++/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/RUNTIME_V2_SOURCE_STOP.json | 554 | 92f6b7c1d7d5ac6d384b3209e1a26197fa7b1fbe791c52b5b8e68c2d1dcc29f5
++/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/implementation-readiness-120m/AUTONOMOUS_CONTINUATION_AUTHORITY.json | 1014 | bf0d76e39eeb64cfffd3da9fcae95a7387940166b20cdef6fdb42de919dfd536
++/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/cpu-metadata-freeze-r1/remote-evidence/METADATA_TERMINAL.json | 5564 | 734abc8fff1fc1c9656fb41c7e4d9a262eaca2173e85d17149b334ab543953de
++
++BASELINE ALL 16 (path | bytes | SHA-256)
++AUTHENTICATED_INPUTS.json | 4663 | 3daf3ce48966fd307f5021017313c01fe86679de85da4ffe5007b3dbf33d0441
++CPU_METADATA_AUTHENTICATION.json | 6410 | e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f
++DEFAULT_PYTHON_IDENTITY_NATIVE.json | 2188 | 571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051
++NODE_TOOLCHAIN_FREEZE.json | 3586 | 7656397813c15cdc430b72482874819728e6aa20f87f4ca0f3c9fa7b683a9770
++NODE_TOOLCHAIN_FREEZE.schema.json | 4782 | e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d
++NODE_TOOLCHAIN_FREEZE.txt | 4884 | a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87
++PROTOCOL_V0_4_ACCEPTED.txt | 81247 | 71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
++PUBLIC_TIMING_CLI_CONTRACT.json | 1773 | bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e
++README.txt | 27377 | e6c9b175c42a7e64c707e9407eba02f897a62648028b5fc386305d182ceac4ce
++SOURCE_AUTHOR_REPORT.txt | 6904 | 6100e2fbdc7e1f1fdb72ad326a11ddfdb81faa22d5b2c84c43ed64610acd81ed
++SOURCE_INVENTORY.tsv | 1349 | 8e49c5d4be57b21b4eeb9ed8596a7cc6bdd4b496dc5c0a7132a511eddfbe73f9
++V2_COMPLETION_REPORT.txt | 12768 | 894a591ce7089b06a7c7f488546ab1d3a8ac43c8b87ecbd3c5719a18b8ccaf8b
++V2_DIFF.patch | 82527 | d352e2b04896b36956c25a3daf6e2e1a8a70bc9e042863e09c85c27afe3e5eb1
++benchmark.sh | 2060 | 75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263
++production.sh | 2062 | 4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753
++runtime_helper.py | 40724 | 53cb5d9336d96bde47752ec76e7866639edeb8f55a51143644d45c6b719bf271
++
++CURRENT PAYLOAD (path | bytes | SHA-256)
++AUTHENTICATED_INPUTS.json | 4663 | 3daf3ce48966fd307f5021017313c01fe86679de85da4ffe5007b3dbf33d0441
++CPU_METADATA_AUTHENTICATION.json | 6410 | e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f
++DEFAULT_PYTHON_IDENTITY_NATIVE.json | 2188 | 571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051
++NODE_TOOLCHAIN_FREEZE.json | 3586 | 33440895fb87e6ea3709c65c741c7136480200947e42c2c6c74c9ff145f5339f
++NODE_TOOLCHAIN_FREEZE.schema.json | 4782 | e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d
++NODE_TOOLCHAIN_FREEZE.txt | 4884 | a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87
++PROTOCOL_V0_4_ACCEPTED.txt | 81247 | 71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
++PUBLIC_TIMING_CLI_CONTRACT.json | 1773 | bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e
++README.txt | 30010 | 878decc97a030776bb2a998f5c3379e5662ce095169e0b78bd91d54c5208fac1
++SOURCE_AUTHOR_REPORT.txt | 6904 | 6100e2fbdc7e1f1fdb72ad326a11ddfdb81faa22d5b2c84c43ed64610acd81ed
++V2_COMPLETION_REPORT.txt | 12768 | 894a591ce7089b06a7c7f488546ab1d3a8ac43c8b87ecbd3c5719a18b8ccaf8b
++V2_DIFF.patch | 82527 | d352e2b04896b36956c25a3daf6e2e1a8a70bc9e042863e09c85c27afe3e5eb1
++benchmark.sh | 2060 | 75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263
++production.sh | 2062 | 4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753
++runtime_helper.py | 40963 | 77951448572ceb59c7b3f5663f7a19d5b7e17606a57f1fa72218e6b83257a5a1
++
++CHANGED ORIGINALS: runtime_helper.py, NODE_TOOLCHAIN_FREEZE.json, README.txt, SOURCE_INVENTORY.tsv
++UNCHANGED ORIGINALS (12): AUTHENTICATED_INPUTS.json, CPU_METADATA_AUTHENTICATION.json, DEFAULT_PYTHON_IDENTITY_NATIVE.json, NODE_TOOLCHAIN_FREEZE.schema.json, NODE_TOOLCHAIN_FREEZE.txt, PROTOCOL_V0_4_ACCEPTED.txt, PUBLIC_TIMING_CLI_CONTRACT.json, SOURCE_AUTHOR_REPORT.txt, V2_COMPLETION_REPORT.txt, V2_DIFF.patch, benchmark.sh, production.sh
++ADDED: V3_NODE_MAPPING_REPORT.txt, V3_DIFF.patch.
++The 18-file candidate is bound acyclically: inventory hashes the 16 other files
++(all baseline payloads except inventory, plus this report), excluding itself and
++V3_DIFF.patch. The new diff covers all four changed originals and this report,
++excluding its own bytes. This report records all 15 non-inventory original
++payload hashes; its own digest and the final inventory/diff digests are supplied
++by the final static verification output/handoff, avoiding self hashes. Prior V2
++inventory/diff descriptions remain historical; the README addendum is current.
+--- v2/runtime_helper.py
++++ v3/runtime_helper.py
+@@ -180,20 +180,24 @@
+ 
+ def node_class():
+     # Native read-only scheduler identity, not an allocation or a measurement.
+-    result = subprocess.run(['scontrol', '--oneliner', 'show', 'node', os.uname().nodename],
++    node_name = os.environ.get('SLURMD_NODENAME', '')
++    require(re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,254}', node_name) is not None,
++            'invalid_slurmd_node_name')
++    result = subprocess.run(['scontrol', '--oneliner', 'show', 'node', node_name],
+                             stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
+                             stderr=subprocess.PIPE, check=False)
+     require(result.returncode == 0 and len(result.stdout) <= LOG_STREAM_LIMIT and
+             len(result.stderr) <= LOG_STREAM_LIMIT, 'native_node_identity_unavailable')
+     body = result.stdout.decode('ascii')
+     fields = dict(re.findall(r'(?:^|\s)([A-Za-z][A-Za-z0-9_]*)=([^\s]+)', body))
+-    require(fields.get('NodeName') == os.uname().nodename, 'native_node_name')
++    require(fields.get('NodeName') == node_name, 'native_node_name')
+     features = sorted(fields.get('ActiveFeatures', '').split(','))
+     require(features == HARDWARE_CLASS['active_features'], 'native_node_feature_class')
+     partitions = fields.get('Partitions', '').split(',')
+     require(all(p in partitions for p in ('norm', 'short')), 'native_shared_class_routing')
+     return {'requested_partition': 'norm', 'reported_partition': os.environ['SLURM_JOB_PARTITION'],
+             'class': HARDWARE_CLASS['name'], 'active_features': features,
++            'slurmd_node_name': node_name, 'os_hostname': os.uname().nodename,
+             'native_scontrol_node': body, 'native_stderr': result.stderr.decode('ascii')}
+ 
+ 

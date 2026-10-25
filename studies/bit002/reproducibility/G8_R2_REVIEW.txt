@@ -1,0 +1,125 @@
+VERDICT: GO (EA ACCEPTED; ESTIMATES STILL UNREAD)
+
+This decision applies exclusively to original R2 job **54269109** under the authenticated composite operating authority. All scientific estimates remained **UNREAD** throughout this review.
+
+I am a fresh nonauthor postchecker at this request boundary, with no producer, analyzer, auditor, runtime, fixture, source-review, readiness-review or operator role. The caller must authenticate my actual native invocation and permissions. I assert no canonical returned-model or provider identity.
+
+1. **Exact inputs authenticated.** All **105 named inputs** matched: 58 metadata/script files matched their supplied sizes and SHA-256 values; all 47 opaque copies were independently stream-hashed. A second complete stream-hash pass bound those copies to the copy receipt and original remote inventory. All 24 embedded native administrative evidence copies matched their named local originals byte-for-byte.
+
+2. **Original scheduler accounting passes.** Native accounting contains exactly the parent, batch and extern records:
+
+   | Record | State | Exit | Elapsed |
+   |---|---|---|---:|
+   | 54269109 | COMPLETED | 0:0 | 34 s |
+   | 54269109.batch | COMPLETED | 0:0 | 34 s |
+   | 54269109.extern | COMPLETED | 0:0 | 34 s |
+
+   Native control reports `Requeue=0`, `Restarts=0`, one node/task, 32 CPUs, cn136, norm, 64G requested and allocated, and an eight-hour limit. Original IDENTITIES evidence establishes Gold 6342, x6342/u467 and the frozen filesystem/toolchain identities. Original P2–P6 receipts all succeed; producer, analyzer and auditor returned zero. Production stdout was assessed under production requirements, without imposing benchmark timing grammar.
+
+3. **Actual resources pass.**
+
+   | Quantity | Independently verified | Limit |
+   |---|---:|---:|
+   | Elapsed | 34 s | 28,800 s |
+   | CPUs/nodes | 32 / 1 | 32 / 1 |
+   | Batch MaxRSS | 269,740 KiB = 276,213,760 B | 68,719,476,736 B |
+   | Job cgroup peak | 277,540,864 B | 68,719,476,736 B |
+   | Run files | 88,202,036 B | Included below |
+   | All external authority files/logs | 257,600 B | Included below |
+   | Exclusive marker | 61 B | Included below |
+   | **Combined output** | **88,459,697 B** | **2,147,483,648 B** |
+   | **Combined logs** | **14,747 B** | **16,777,216 B** |
+
+   Output totals were recomputed from all 64 run inventory entries, 26 external entries and the marker, rather than accepted from Root’s summary.
+
+   All 11 memory samples identify legitimate job-scope cgroup-v1 accounting at:
+
+   `/sys/fs/cgroup/memory/slurm_cn136/uid_1337049/job_54269109/memory.max_usage_in_bytes`
+
+   The initial high-water value was 17,022,976 B at `15:50:28.151900Z`; the final value was 277,540,864 B at `15:51:01.284354Z`. Samples are consistent with a monotonic high-water counter and the original step receipts.
+
+   I reuse the accepted hierarchical-cgroup qualification at its authenticated scope. The amendment records a site hard ceiling of **178,670,637,056 B**, approximately **166.4 GiB**, observed on cn136 in prior batch 54220499. The supplied R2 evidence does not separately measure its numeric hard ceiling. I do **not** claim kernel enforcement at 64 GiB. The amendment removes that requirement alone; the 64 GiB request and both measured-peak limits remain satisfied.
+
+4. **Protocol §13.1 DC independently passes.** The local data directory contains exactly **45 regular files**: 42 prescribed chunks, trace and two bookkeeping manifests, with no extra entries, subdirectories, symlinks or temporary files. Native inventory agrees.
+
+   I checked complete manifest ordering, ASCII/LF grammar, decimal and hash syntax, expected protocol/build identities, `production-r1`, 42,000 blocks, 1,000-block chunks, 2,088-byte records and `complete=1`. Every actual file size and hash agrees with the manifest, native inventory and copy map. Chunk bytes total 87,698,688; trace size is 458,816 B within its prescribed bounds. Administrative total queries, 1,233,623,936, satisfy the production bounds.
+
+   Root’s original independent postjob `/usr/bin/sha256sum -c MANIFEST.sha256` succeeded. Its separate 43-file checksum stream exactly matches the manifest-derived list; its input hash and all successful output lines also verify. This provenance check executed no scientific/helper program.
+
+5. **Protocol §13.2 agreement and validity pass.** The original agreement has exactly the prescribed V3 format and values:
+
+   ```text
+   BRC2-AGREEMENT-V3
+   data_committed=1
+   analyzer_exit=0
+   auditor_exit=0
+   results_sha256_equal=1
+   auditor_status=PASS
+   ```
+
+   Both actual sealed results are 2,578 B and have identical recomputed SHA-256 values matching P6 and native original-file hashes. Each permitted line-2 read returned exactly `status=VALID`; line 1 was discarded without printing. AUDIT_REPORT records all A–L checks, including K, PASS. No replacement agreement, postjob analysis or auditor rerun was used.
+
+6. **Composite authority and original execution identity pass.** The immutable base protocol is bound together with the memory amendment, recorded human approval, independent amendment acceptance, USER_RERUN_AUTHORITY, exact SOURCE GO, engineering acceptance, fresh readiness GO, accepted benchmark reuse and Root G7R2.
+
+   All **67 package hashes** match the frozen manifest both before and after execution. Three scientific binaries, compiler/flags and Python identities agree across native proofs, original IDENTITIES, toolchain freeze and G7. No rebuild, tuning or scientific change was performed here.
+
+   All 21 external full-content manifest entries match original native hashes and the exact G7 authority references; all 26 external filenames are accounted for. The reviewed command, submission intent, native returned handle, original job identities and marker agree on job 54269109. G7 precedes submission and in-job execution. External stdout/stderr overrides match the reviewed command, and both retained Slurm streams are empty.
+
+   Sole benchmark **54251116** remains consumed and was explicitly accepted for reuse by fresh readiness review. Original R1 **54254461** remains INVALID and separate; no R1 partial data was opened or incorporated.
+
+7. **Accounting remains cumulative.** The 85-row G7 ledger independently sums to **23,406.078296 active seconds**, leaving **34,193.921704 seconds** under the unchanged 57,600-second cap. The G2–G4 implementation phase remains closed. After this reviewer terminates, the caller must append my **complete native generation duration**, all post-G7 Root work and the actual **34-second scientific run**, including overlapping work conservatively. This review does not reset time, supply automatic credits or assert that pending accounting is already closed.
+
+Principal exact SHA-256 identities are:
+
+| Evidence | SHA-256 |
+|---|---|
+| Base protocol | `71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa` |
+| Memory amendment | `65e9c36b40c53f9e438843707a74ff19c5eb44c2a9ee5ce1d48d34b09e723407` |
+| Recorded human memory approval | `58dc1ad6699215895d9371e1cf34609679a29ef6442c6960661f7ca892f1d877` |
+| Amendment acceptance | `2be5521ed34d747bc83050c5633787d8d757aac41a459dcebecf9cdfb16134f7` |
+| USER_RERUN_AUTHORITY | `25da3733425a1a27292f7726c384d9ea6ae701582cd3c7f6c52611f69948f4ff` |
+| Frozen R2 manifest | `c4a0acaf9327281b75b36ec5f515fbc0f5d7ea9e8fc8bd06eeb2b53e492cc34f` |
+| SOURCE acceptance | `42059fb02bb5e91aaa29a1fb209eef1a84454b84d65a5f26515aa5d026ca6858` |
+| Engineering acceptance | `22730435f173e4841da1ffd591825f197562bce40f71ea690e4a1127d4c7f9ea` |
+| G6R2 acceptance | `0ed20f4be83d35ceb8b28780cfaf14b6c2d769a3e3cb6b14a7812c26fe2584da` |
+| Readiness review | `33be6e0b3a62035ab7596e7303994002c244cf0dde7977f60e9ee3936be733f7` |
+| Root G7R2 authority | `a2424de5eac1aee1da3f28060441f1439cc126de294e6929f9028350f39142a1` |
+| External content manifest | `2639b9e4a9dc10f0ce98a81b4f50bf69bc5e61b5665d61903180363092a42b2c` |
+| Original terminal native evidence | `2985dd0a90e933f1b261332be66b0eefa7565ddc2e474e9ae059ff36bb3ea90f` |
+| Postexecution identity proof | `d4aebed0724e65aa649c606fddd131b2945c7a95de843139a5420c5a87da7244` |
+| Independent native DC proof | `01a7af0ee5b9f055b0aa0fd3140c2e43af0d050bfeddc5a2f78642c269e118f9` |
+| Copy receipt | `32b5afed1e5fc4b71caa7c7652a57325cabc2896b8c1edde105b9a3e11ede03b` |
+| MANIFEST.txt | `cc53f20085657e88855d9dd008b55f401362ac1c0eddc884917c3a1f76cd1574` |
+| Both actual sealed results | `190dd7f33dc48ff5a2b8f61c4650257cda435b026eb16ea8ec34a763152d9cb2` |
+| Original agreement | `8e3495049d4c2430508495c452aebdf07ac43a5b0f401323150af9c8661a2b1a` |
+
+There were **18 shell invocations**, all `python3 -c` static provenance readers: **17 exited zero; one exited nonzero**. Their complete commands remain in the native tool transcript. In invocation order, they performed:
+
+1. Initial protocol/authority/receipt authentication and reading.
+2. Protocol requirements and evidence-schema inspection.
+3. All 58 metadata hashes, 47 opaque hashes and permitted status reads.
+4. Manifest, original agreement, audit and P2–P6 inspection.
+5. Native accounting/preflight/postjob evidence inspection.
+6. Original measurements, identities and metadata inventory inspection.
+7. Amendment and gate-chain inspection.
+8. Preflight, submission, external manifest and accounting inspection.
+9. Readiness review, plan and authentication inspection.
+10. Original run inventory and readiness authentication inspection.
+11. Protocol grammar and earlier accepted-gate inspection.
+12. Query-bound and ledger inspection.
+13. Complete copy rehash/cross-binding, DC validation, inventory sums and ledger arithmetic.
+14. Before/after identity comparison; then an overstrict submission-object equality assertion failed.
+15. Diagnostic comparison established that raw submission evidence omits only the later parsed `job_id` field.
+16. Corrected provenance comparison confirmed every original submission field and the returned job ID, plus all external authority bindings.
+17. Named-metadata search checked hierarchy/hard-ceiling disclosures.
+18. Final native accounting, resource, original-step, agreement and audit validation.
+
+The failed assertion was a checker assumption, not changed evidence. No repair or execution retry followed.
+
+Every Python launcher reported two denied `/tmp/xcrun_db-*` cache-creation attempts: **36 reported denials**. No successful write was observed. Invocations 1 and 5 had truncated displays; targeted subsequent reads and complete comparisons recovered the decision-relevant evidence. The first ten shell invocations used the tool’s default login setting; subsequent invocations explicitly disabled it. No explicit configuration or credential read occurred.
+
+No scientific records or estimate bodies were decoded. No source/helper/scientific program was imported, parsed, executed or built. No network, SSH, scheduler operation, additional model, subagent, MCP service, skill, AGENTS file, session data or unlisted task path was accessed.
+
+This response supplies the report for **CLI-managed `REVIEW.txt`**; I did not directly create a report file.
+
+Root may unseal only after authenticating and accepting this genuine EA verdict. Subsequent reporting of **all six prespecified estimates**, limitations and null/adverse/bounded/unresolved findings, followed by independent **G9 publication review**, remains required. This acceptance makes no scientific mechanism claim, promises no journal acceptance and does not complete the original study.

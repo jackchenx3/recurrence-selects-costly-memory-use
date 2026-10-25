@@ -1,0 +1,9 @@
+BIT002 focused manuscript/repository update — candidate v1
+
+Read MANUSCRIPT_UPDATE.txt for the complete scientific update, all six estimates and limits. SIX_ENDPOINTS.tsv and DERIVED_INTERVALS.tsv retain exact fractions beside display decimals. ELIGIBILITY_DISTRIBUTION.tsv contains every e=0..32 bin; ALL_ORIGINAL_DESCRIPTIVES.txt is unmodified. ORIGINAL_ACCEPTED_RESULTS.txt is the exact byte-identical original analyzer/auditor result accepted at G8.
+
+SIX_ENDPOINTS_FOREST.pdf, .svg and .png provide the three-panel scientific figure. FIGURE_CAPTION.txt preserves scale, pairing, inference and intervention caveats; PLOT_PRESENTATION.py regenerates only the display from the accepted table. Figure-generation identity is recorded in FIGURE_GENERATION_RECEIPT.json. ROOT inspected the PNG for legibility and scope; no simulation ran locally.
+
+HOW_TO_REPRODUCE.txt explains archival commands and once-only namespace integrity. The reproducibility/ directory includes all 45 accepted data files in a deterministic archive; complete accepted producer/analyzer and independent-auditor source archives and manifests; the complete accepted G1F public inputs and 33 keys; exact accepted Linux executables; all67 accepted runtime package files; protocol/amendment/build identities/data manifest/audit/agreement/native execution/G7/G8/benchmark/ledger receipts. Nothing authorizes another agent scientific attempt or overwriting a frozen namespace.
+
+The final release acceptance receipt governs G9 disposition. This directory alone does not assert independent publication acceptance or external journal submission. It preserves the incomplete original study, all failed attempts and all adverse/bounded/unresolved findings. No favorable mechanism or journal acceptance is promised.

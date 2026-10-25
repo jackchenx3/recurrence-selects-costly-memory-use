@@ -1,25 +1,21 @@
 cff-version: 1.2.0
 message: "Please cite the research preprint and versioned evidence package."
 type: software
-title: "Environmental recurrence selects a costly memory-use policy across two operator bundles without a resolved one-bit population benefit: research artifacts"
+title: "Environmental recurrence selects a costly memory-use policy: long-run population effects and immediate retrieval effects: research artifacts"
 authors:
   - family-names: Chen
     given-names: Jack
-    affiliation: "Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health"
-version: 1.2.0
-date-released: '2026-10-06'
+version: 1.3.0
+date-released: '2026-10-25'
 repository-code: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use"
-doi: "10.5281/zenodo.23085659"
 license: MIT
 preferred-citation:
   type: unpublished
-  title: "Environmental recurrence selects a costly memory-use policy across two operator bundles without a resolved one-bit population benefit"
+  title: "Environmental recurrence selects a costly memory-use policy: long-run population effects and immediate retrieval effects"
   authors:
     - family-names: Chen
       given-names: Jack
-      affiliation: "Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health"
   year: 2026
-  version: 1.2.0
-  doi: "10.5281/zenodo.23085659"
-  url: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/blob/v1.2.0/paper/MANUSCRIPT.md"
-  notes: "Research preprint; not externally peer reviewed. Manuscript and data are CC BY 4.0; original code is MIT."
+  version: 1.3.0
+  url: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/blob/v1.3.0/paper/MANUSCRIPT.md"
+  notes: "Research preprint; not externally peer reviewed. Manuscript and data CC BY 4.0."

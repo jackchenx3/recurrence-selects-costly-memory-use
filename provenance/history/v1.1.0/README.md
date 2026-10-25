@@ -3,8 +3,6 @@
 Research preprint and reproducibility package, version **1.1.0** (2026-10-02). Not externally peer reviewed.
 
 **Author:** Jack Chen\
-**Affiliation:** Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health
-
 Version 1.1.0 revises the v1.0.0 paper by integrating one accepted post-v1.0 prospective extension. The package covers two accepted prospective studies of one abstract model:
 
 - **Study 001**, PHASE2-MUTABLE-MEMORY-001: 22 saved estimate records (unchanged from v1.0.0).

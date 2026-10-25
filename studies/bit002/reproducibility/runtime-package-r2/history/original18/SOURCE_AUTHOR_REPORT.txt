@@ -1,0 +1,110 @@
+BIT002 COMPLETE JOB PACKAGE — SOURCE AUTHOR REPORT
+
+Disposition: source authored; NOT runtime tested; NOT independently reviewed;
+NOT resource qualified; NOT ready or authorized for submission. All files were
+written only in /tmp/bit002-runtime-package-20261025. This is ordinary scientific
+simulation orchestration for already accepted code. No scientific definitions,
+producer, analyzer, auditor, tier, RNG, endpoint, inference or classification
+were modified. No population or fixture data/results were accessed.
+
+Delivered: benchmark.sh and production.sh are the sole batch workflows;
+runtime_helper.py contains narrowly related standard-library filesystem,
+identity/hash, resource, child-timing/logging, DC and receipt primitives;
+README.txt specifies deployment, freeze schema, timing partition, output bounds,
+external accounting/final receipts and original-job acceptance. The accepted
+protocol is copied byte-for-byte. SOURCE_INVENTORY.tsv binds the final files.
+No auxiliary controller, approval system, test harness, installation, retry,
+resume, arrays, fallback run, or model/job dispatch was introduced.
+
+Permitted inputs consulted
+
+1. Entire accepted PROTOCOL_V0_4_ACCEPTED.txt (81247 bytes), including §§12–13,
+17–19 and the public CLI, DC/EA and agreement definitions. Exact supplied hash:
+71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
+2. Exact G4_ACCEPTANCE.json metadata, accepted complete correctness G4:
+a8613078265e7214d8b9e57d9e3685a604a338fb3f242a35f79aeba51e3a3645
+This receipt explicitly does not authorize benchmark/scientific execution.
+3. AUTONOMOUS_CONTINUATION_AUTHORITY.json metadata:
+bf0d76e39eeb64cfffd3da9fcae95a7387940166b20cdef6fdb42de919dfd536
+4. CPU metadata-only AUTHORITY.json:
+f394af82f222f669b006a9188f329de3cd26f94132a2ae1fd708084ade1be5b8
+5. The two specifically allowed accepted READMEs, for public CLI/output-parent/
+timing-only interface statements only. No producer/auditor source, private
+expectations, other workspace/session material, fixture outputs or scientific
+outputs were accessed. No metadata allocation receipt or actual CPU freeze was
+claimed to exist or inspected beyond the named authority.
+
+The four supplied input hashes were checked using ordinary system shasum and
+matched. The delivered protocol hash is separately included in the inventory.
+Own authored text was read for source-author inspection only. No authored helper
+was run or imported. No bash -n, syntax checker, compiler, fixture, RNG, DC
+invocation, benchmark, simulation, scientific executable or network/SSH/MCP
+operation was performed. No credentials/config/session reads, outside writes,
+subagents, additional models, installations or dispatches occurred.
+
+Interface dispositions and unresolved blocker
+
+P1's empty-data intent is mapped to a new exclusive run parent and an absent
+producer-owned data child. The exact producer creates that new empty directory;
+precreating data would contradict its accepted CLI. README describes the mapping.
+
+§18.2's agreement block has a header and FIVE FIELDS, therefore six physical
+lines. The package preserves those exact bytes/field order; it does not silently
+remove the header or a field to satisfy the request's compressed '5 line' phrase.
+
+UNRESOLVED PUBLIC INTERFACE: the permitted CLI text does not give exact timing
+stdout spelling, separators, order or numeric serialization. The helper cannot
+honestly hardcode an unobserved grammar. The one immutable freeze JSON therefore
+requires exact public analyzer/auditor timing-only stdout templates, with only
+status, wall_seconds and k_seconds substitutions. Root must obtain authenticated
+public interface clarification and bind it before submission; no diagnostic
+execution or guessing is authorized. Any mismatch requires independent STOP,
+not a permissive parse, alternative representation, benchmark retry, code edit
+based on an outcome, or post-job rerun. This is a concrete readiness blocker.
+
+The actual CPU model/flags, mount identity, per-binary compiler metadata and
+immutable metadata receipt are also pending Root's actual authenticated freeze.
+The schema is complete; no dummy configuration or guessed values were supplied.
+The stdlib helper is deliberately Linux/POSIX/Slurm-specific. Python/native hash
+tool availability, cgroup paths/scope, site environment fields, fsync behavior,
+output enforcement and the stated resource limits require genuine independent
+engineering/resource review. Monitoring is not represented as an atomic disk
+quota. Missing cgroup peaks or native accounting are explicit unknowns, not zero.
+
+Gate status and unperformed work
+
+Existing G4 acceptance is treated as supplied authority for correctness, not
+re-reviewed or reproduced here. Earlier accepted G0/G1F/G1/G2/G3/G4a artifacts
+were not reopened or independently audited. This author did not repeat any prior
+fixture/build/correctness gate or claim a new pass for them.
+
+UNPERFORMED in this source-author task:
+- Genuine independent exact-source review of this package (non-author).
+- Separate engineering/syntax/runtime-environment checks of this package.
+- Actual CPU metadata allocation, immutable TXT/JSON freeze and authentication.
+- Independent job/resource review, including cgroups/native accounting scope.
+- Public timing stdout interface clarification and frozen serialization values.
+- Benchmark execution and final binding G5 feasibility receipt.
+- Independent G6 readiness GO and cumulative ledger/cap review.
+- Root exact-hash G7 scientific authority and separate one-submission intent.
+- Scientific job execution, original-step accounting, independent G8 EA and
+  permitted post-terminal validity-line check/unsealing.
+- Scientific interpretation, reporting/publication and independent G9 review.
+
+No gate failure is repaired or waived by this source report. Exactly one
+benchmark and one scientific submission remain prospective gated actions; none
+was made here. Any failed measurement, required step, resource check, agreement,
+native success condition, or unresolved evidence closes the route under the
+frozen policy. Missing final artifacts after termination are failures, not
+permission to rerun. No results are read by the source author.
+
+Source-author boundaries: this session was limited to 900 seconds and at most
+45 local commands. Only ordinary input/source reads, source writes/edits, and
+metadata/hash operations were used. The transcript is the command/time evidence;
+no runtime or independent review success is inferred from source inspection.
+
+Inventory scope: every delivered file other than SOURCE_INVENTORY.tsv itself is
+listed with exact bytes and SHA-256. The inventory hash is reported separately
+in the source-author handoff, avoiding circular self-hashing. Runtime freeze
+files, measurements, receipts, agreement, logs, and scientific outputs are not
+source artifacts and were not fabricated in this workspace.

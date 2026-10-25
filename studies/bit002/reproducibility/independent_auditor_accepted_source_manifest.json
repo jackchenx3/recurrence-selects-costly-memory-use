@@ -1,0 +1,150 @@
+{
+  "at_utc": "2026-10-25T00:18:08.080359+00:00",
+  "state": "FROZEN_AUDITOR_V3_SOURCE_ONLY_REVIEW_PENDING",
+  "source_directory": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/implementation-readiness-120m/auditor-repair-v3/candidate-source-v3",
+  "files": [
+    {
+      "path": "ACTIVE_TIME_LEDGER.tsv",
+      "bytes": 271,
+      "sha256": "a80b97c154d479637121a423a948f79aace8ad256c893b801396592a20841c2c"
+    },
+    {
+      "path": "AUDITOR_V2_DIFF.patch",
+      "bytes": 9654,
+      "sha256": "4071032962c5597acf8feeeacf38976a6c8b2f472b0b70c36777c232aefdb2b9"
+    },
+    {
+      "path": "AUDITOR_V2_REPAIR_REPORT.txt",
+      "bytes": 7284,
+      "sha256": "e6948285a217703fbaea088efaaa877c78e6ce7496460516e2e3b66b0d7f5dff"
+    },
+    {
+      "path": "AUDITOR_V3_DIFF.patch",
+      "bytes": 20049,
+      "sha256": "bdd9d5bcd0e668b27e677538ed9ab251675d5e64514d4c1a58fccd7395ff60d4"
+    },
+    {
+      "path": "AUDITOR_V3_REPAIR_REPORT.txt",
+      "bytes": 13168,
+      "sha256": "207e515e5c46dbc8aa33cda9c8f96e584ca3d60ae0e525756c529694bbba2c31"
+    },
+    {
+      "path": "INDEPENDENT_33_KEYS.tsv",
+      "bytes": 6275,
+      "sha256": "4dfad444018426164ae47f96fbc86a80c52b697cdb859fc44e8b3589895f4fa3"
+    },
+    {
+      "path": "INPUTS.sha256",
+      "bytes": 320,
+      "sha256": "979de84e5d78cc6bdc8b90daa382bf912402f6d753738fde117d7b4f2abc52a2"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 919,
+      "sha256": "2f38dcca5d04c31d4788feeaaf2a9374b11a7029b188ae36cb2714cf3e9aca2a"
+    },
+    {
+      "path": "PACKAGE_METADATA.txt",
+      "bytes": 1393,
+      "sha256": "1612ca1d5edb007bbd00a7e92066f2d0a6ffceecfe6ace4034ab9ce3d9e2c251"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9162,
+      "sha256": "bca2fefb1cfea120a4a9d90ac6579439248d7010b5c884f02cc3a5b81c3d200a"
+    },
+    {
+      "path": "SOURCE_CONSTRUCTION_REPORT.txt",
+      "bytes": 13784,
+      "sha256": "0b46ebb474c79bf967004834bceffd80f535650ea02e50fa64368635076ad50c"
+    },
+    {
+      "path": "SOURCE_INVENTORY.tsv",
+      "bytes": 1605,
+      "sha256": "59456dc7ed5a9580f5cee4525c5622692744ca3433efde7d30f2622119a6da19"
+    },
+    {
+      "path": "audit_keys.py",
+      "bytes": 1657,
+      "sha256": "832e1532bd0302c2a4fa93a6c6781e552f4127d0a1c948c7d23339aede8cd23a"
+    },
+    {
+      "path": "public_reference/OPERATOR_REV1.txt",
+      "bytes": 17228,
+      "sha256": "c17a3a1e9ac9cf2260f6743eaf08e4c2808080a767af16d2f9e9d2b9ad3e821d"
+    },
+    {
+      "path": "public_reference/PROTOCOL_V0_4_ACCEPTED.txt",
+      "bytes": 81247,
+      "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
+    },
+    {
+      "path": "public_reference/Random123_kat_vectors.txt",
+      "bytes": 8885,
+      "sha256": "aab5ebabf40003f63d6d87b24cbd2c8a02652e00cf8bad64226fd50586929183"
+    },
+    {
+      "path": "src/audit.hpp",
+      "bytes": 12744,
+      "sha256": "0c1ac4823d10e500fef063d0cd9b9c468226545170d46d4fe08372d5096c99a1"
+    },
+    {
+      "path": "src/audit_main.cpp",
+      "bytes": 1764,
+      "sha256": "c25fc2680074a30ab4aa08ca0d1fd5351e6b60522c253d815b1a89040f383d82"
+    },
+    {
+      "path": "src/base.hpp",
+      "bytes": 8990,
+      "sha256": "8ccaf50d2884ac7cfc19bd412bcf21560c7d91aa3d5761bef94b1872a6bacf9f"
+    },
+    {
+      "path": "src/corruption.hpp",
+      "bytes": 6729,
+      "sha256": "9dfa6be1034136e8e004347f83cca219ae806c24ba003671165b4fbecd23a408"
+    },
+    {
+      "path": "src/fix_main.cpp",
+      "bytes": 1007,
+      "sha256": "0a4c864c3078f956e085e649c23edd526a0c9721236baa14509d928e0b301cca"
+    },
+    {
+      "path": "src/fixture.hpp",
+      "bytes": 15480,
+      "sha256": "8c94f3931ba3f9fd03246807b9671890263e7523528d1c853db1523af640800f"
+    },
+    {
+      "path": "src/harness_main.cpp",
+      "bytes": 1742,
+      "sha256": "50eb2a6b241d93753ba417b073f447781933c23d98b28ca10aaca8f8376570a4"
+    },
+    {
+      "path": "src/inference.hpp",
+      "bytes": 7580,
+      "sha256": "db4c43bc5ad11bb4158fa1fdd07e9211ccd36cfa2ae32e6f001e92278625cfed"
+    },
+    {
+      "path": "src/operator.hpp",
+      "bytes": 9918,
+      "sha256": "dd241e36fa3a5a514228a72c53133caeb06483e74523b822d503eda1fede8fc2"
+    },
+    {
+      "path": "src/selfcheck.hpp",
+      "bytes": 8345,
+      "sha256": "0f6ba4a7befabe7470642af8fd25149deeb601513539ce4857fb0667c12ebbe9"
+    }
+  ],
+  "changed_original_files": [
+    "SOURCE_INVENTORY.tsv",
+    "src/harness_main.cpp",
+    "src/selfcheck.hpp"
+  ],
+  "added_files": [
+    "AUDITOR_V3_DIFF.patch",
+    "AUDITOR_V3_REPAIR_REPORT.txt"
+  ],
+  "unchanged_original_files": 21,
+  "base_manifest_sha256": "d93282949528ab165a87e5f3f522a8c4aad8a5d5b078f883f28f3094567c6d5f",
+  "diff_sha256": "bdd9d5bcd0e668b27e677538ed9ab251675d5e64514d4c1a58fccd7395ff60d4",
+  "producer_information_supplied": false
+}

@@ -1,0 +1,22 @@
+{
+  "at_utc": "2026-10-25T14:19:13.719113+00:00",
+  "verdict": "STOP_SOURCE_ONLY",
+  "candidate": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/ROOT_FROZEN_R2_CANDIDATE.json",
+    "bytes": 16435,
+    "sha256": "386fc6d16a3f95c2a21c633f2d73716ddc0bef964effc1aa7e46de20710536af"
+  },
+  "review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/independent-source-review/REVIEW.txt",
+    "bytes": 9359,
+    "sha256": "dceac1f724f87e1705f3bf3c08880a461770544d22d0c99094b06777cadbfa05"
+  },
+  "authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/independent-source-review/ROOT_AUTHENTICATION.json",
+    "bytes": 2874,
+    "sha256": "2c7a71556853a50edcdb388d7fe8ccf5950b9d2544fd9236dabdb9873efc35b1"
+  },
+  "execution_authorized": false,
+  "science_submitted": false,
+  "interpretation": "Implementation fixture acceptance gap, no scientific result or infeasibility conclusion. Latest human rerun permits necessary in-scope ordinary correction plus fresh source review; rejected candidate never executes."
+}

@@ -1,0 +1,39 @@
+{
+  "at_utc": "2026-10-25T15:49:14.369995+00:00",
+  "state": "ACCEPTED_GENUINE_INDEPENDENT_R2_READINESS_PLAN_GO",
+  "review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/G6-readiness-r2/independent-review/REVIEW.txt",
+    "bytes": 15815,
+    "sha256": "33be6e0b3a62035ab7596e7303994002c244cf0dde7977f60e9ee3936be733f7"
+  },
+  "authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/G6-readiness-r2/independent-review/ROOT_AUTHENTICATION.json",
+    "bytes": 15817,
+    "sha256": "af8b0d8832a43b48c5a54ca59ba7d3ec9c5af33b1cd99ac82a0c482e6fa183a6"
+  },
+  "plan": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/G6-readiness-r2/SCIENTIFIC_R2_JOB_PLAN.json",
+    "bytes": 5429,
+    "sha256": "cc56e1e94a7d624bdd765e39e29587e20b391594b1f8cc3160c6485bbf05512c"
+  },
+  "source_GO": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/RUNTIME_R2_V2_SOURCE_ACCEPTANCE.json",
+    "bytes": 2163,
+    "sha256": "42059fb02bb5e91aaa29a1fb209eef1a84454b84d65a5f26515aa5d026ca6858"
+  },
+  "engineering": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/RUNTIME_R2_ENGINEERING_ACCEPTANCE.json",
+    "bytes": 1100,
+    "sha256": "22730435f173e4841da1ffd591825f197562bce40f71ea690e4a1127d4c7f9ea"
+  },
+  "benchmark_reuse_explicitly_accepted": true,
+  "benchmark_consumed_not_repeated": "54251116",
+  "originalR1INVALID_preserved": true,
+  "human_rerun_authority": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/USER_RERUN_AUTHORITY.json",
+    "bytes": 2463,
+    "sha256": "25da3733425a1a27292f7726c384d9ea6ae701582cd3c7f6c52611f69948f4ff"
+  },
+  "execution_authority": "ROOTexactG7R2 required after allcurrentchecks; thisrecord alone is notscientificexecutionauthority.",
+  "unseal_authorized": false
+}

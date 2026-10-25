@@ -1,0 +1,98 @@
+{
+  "at_utc": "2026-10-25T17:00:28.658762+00:00",
+  "baseline_manuscript_sha256": "f00d64ef75db4bba8d10f7dfcd8eacaba0165a3ac58d989d418e1f6883aab4ae",
+  "BIT002_original_results_sha256": "190dd7f33dc48ff5a2b8f61c4650257cda435b026eb16ea8ec34a763152d9cb2",
+  "claims": [
+    {
+      "id": "prior_selection",
+      "claim": "Studies 001-003 recurrence-attributable long-run enrichment",
+      "evidence": "accepted-v1.2 manuscript Sections 3.3,3.9,3.13-3.15",
+      "boundary": "Studies 001-003; not BIT002 allele intervention"
+    },
+    {
+      "id": "prior_performance",
+      "claim": "Long-run recurrent population contrasts bounded below positive declared scale with sign unresolved",
+      "evidence": "accepted-v1.2 Tables 1,3,5",
+      "boundary": "Different scales across bundles; no pooling or absence claim"
+    },
+    {
+      "id": "immediate_lineage",
+      "claim": "BIT002 L_rec material positive, 5.041741 pp [3.480912,6.602570]",
+      "evidence": "BIT002 SIX_ENDPOINTS.tsv L_rec",
+      "boundary": "CACHE-ALL_FRESH; one turnover/equal-start late HALF BIT/PL"
+    },
+    {
+      "id": "immediate_focal",
+      "claim": "BIT002 F_rec material positive,1.239360 pp [1.001549,1.477172]",
+      "evidence": "BIT002 SIX_ENDPOINTS.tsv F_rec",
+      "boundary": "CACHE-FOCAL_FRESH; unconditional/32; hashed family; not per-carrier"
+    },
+    {
+      "id": "immediate_accuracy",
+      "claim": "BIT002 P_rec positive with magnitude unresolved,2.484087 pp [0.923257,4.044916]",
+      "evidence": "BIT002 SIX_ENDPOINTS.tsv P_rec",
+      "boundary": "Not long-run P_rec recurrence interaction; not resolved material or negligible"
+    },
+    {
+      "id": "innovation_bounds",
+      "claim": "All three innovation effects within prespecified margins",
+      "evidence": "BIT002 SIX_ENDPOINTS.tsv L_inn/P_inn/F_inn",
+      "boundary": "Negative point estimates retained; intervals containzero; not established nulls"
+    },
+    {
+      "id": "target_differences",
+      "claim": "L/F differences resolved; P difference unresolved",
+      "evidence": "BIT002 DERIVED_INTERVALS.tsv",
+      "boundary": "Fixed endpoint transforms; heterogeneity, not effect of recurrence intervention"
+    },
+    {
+      "id": "eligibility",
+      "claim": "H=0 nine blocks/e32=2551;33-bin histograms complete",
+      "evidence": "BIT002 ELIGIBILITY_DISTRIBUTION.tsv and ORIGINAL_ACCEPTED_RESULTS.txt",
+      "boundary": "No e/H normalization or stratified analysis"
+    },
+    {
+      "id": "family_control",
+      "claim": "BIT002 six intervals jointly >=95% under independent-uniform-word idealization",
+      "evidence": "accepted v0.4 and addendum design/inference",
+      "boundary": "Not PRNG proof or manuscript-wide error control"
+    },
+    {
+      "id": "execution",
+      "claim": "R2 FRCE Slurm54269109 all original steps passed",
+      "evidence": "G8_R2_ACCEPTANCE.json",
+      "boundary": "Earlier R1 remainsINVALID, no originalpartialaggregation/postproductionreruns"
+    },
+    {
+      "id": "history_scope",
+      "claim": "Independent factual history replay limited to blocks0-63",
+      "evidence": "accepted addendum Identification/provenance limits",
+      "boundary": "Self-consistent forged-state C-J limitation applies"
+    },
+    {
+      "id": "mediation",
+      "claim": "Long-run mediation remains unresolved",
+      "evidence": "difference of frozen designs/accepted claims",
+      "boundary": "No numerical causal decomposition or mechanism claim"
+    },
+    {
+      "id": "retention",
+      "claim": "Retention selection not separated by BIT002",
+      "evidence": "accepted v0.4/identical-state design",
+      "boundary": "Retrieval intervention fixes existing cache/policy/history"
+    },
+    {
+      "id": "original_protocol",
+      "claim": "Broader Phase3 original study remains incomplete",
+      "evidence": "accepted addendum scope limits",
+      "boundary": "Reduced BIT002 doesnotcompleteoriginal46estimateprotocol"
+    },
+    {
+      "id": "external_status",
+      "claim": "New integrated revision unpublished/not externally peer reviewed",
+      "evidence": "new integration authority and local artifacts",
+      "boundary": "Prior internal G9 applies addendumonly; integratedreviewseparate"
+    }
+  ],
+  "new_simulation_reanalysis_tests": false
+}

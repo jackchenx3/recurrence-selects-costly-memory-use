@@ -1,0 +1,1617 @@
+--- baseline/NODE_TOOLCHAIN_FREEZE.json
++++ candidate/NODE_TOOLCHAIN_FREEZE.json
+@@ -48,13 +48,13 @@
+     "sha256": "734abc8fff1fc1c9656fb41c7e4d9a262eaca2173e85d17149b334ab543953de"
+   },
+   "package_sha256": {
+-    "NODE_TOOLCHAIN_FREEZE.schema.json": "e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d",
++    "NODE_TOOLCHAIN_FREEZE.schema.json": "475af868f308444051466837db75f3c78a59a592d7ed5615403c77c4e9b02202",
+     "benchmark.sh": "75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263",
+-    "production.sh": "4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753",
+-    "runtime_helper.py": "77951448572ceb59c7b3f5663f7a19d5b7e17606a57f1fa72218e6b83257a5a1"
++    "production.sh": "13fb0c3fdb97e2b0ed9b7830a461ee8f35b2c782a916a433f93986282bfaad1e",
++    "runtime_helper.py": "a9dd7343d4460386073bd758bffe42be1d76dbe05e62522afff22818feb4afc3"
+   },
+   "protocol": {
+-    "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r1/PROTOCOL_V0_4_ACCEPTED.txt",
++    "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r2/PROTOCOL_V0_4_ACCEPTED.txt",
+     "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
+   },
+   "python": {
+--- baseline/NODE_TOOLCHAIN_FREEZE.schema.json
++++ candidate/NODE_TOOLCHAIN_FREEZE.schema.json
+@@ -92,7 +92,7 @@
+     },
+     "protocol": {
+       "const": {
+-        "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r1/PROTOCOL_V0_4_ACCEPTED.txt",
++        "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r2/PROTOCOL_V0_4_ACCEPTED.txt",
+         "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
+       }
+     },
+--- baseline/README.txt
++++ candidate/README.txt
+@@ -1,3 +1,56 @@
++BIT002 runtime-package-r2 INTEGRATED SOURCE CANDIDATE — UNEXECUTED
++
++This R2 notice supersedes operational instructions/status in the archival R1/V2/V3
++text below and in preserved historical reports. R2_SOURCE_REPORT.txt gives the
++current exact change list, authority chain, paths, hash replacements, fixture
++invocation, source-only limits and outstanding gates. None of this candidate has
++been imported, syntax checked, built, fixture tested or run.
++
++Current deployment (only after independent acceptance and Root authority):
++  STUDY=/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024
++  PACKAGE=$STUDY/runtime-package-r2
++  production run=$STUDY/scientific-r2
++  exclusive marker=$STUDY/.scientific-r2.once
++Production tier remains production-r1, with the same three accepted binaries,
++32 CPUs, 64 GiB Slurm request, eight-hour limit and all measured acceptance caps.
++The base protocol remains byte-identical. Composite external authority must bind
++that protocol, memory amendment/acceptance, USER_RERUN_AUTHORITY, future exact R2
++source/engineering/readiness acceptances and Root execution authority. No new
++scientific record/config fields are introduced. The closed schema's protocol PATH
++and existing package SHA keys are resealed for the new package.
++
++sizes() discards an incomplete full scan and retries ONLY FileNotFoundError for a
++vanished descendant, at most three complete attempts. Missing roots, permission,
++other OS errors, symlinks and nonregular objects remain fatal. os.walk onerror is
++explicitly fatal (subject only to the same bounded descendant ENOENT policy).
++Fatal scan errors retain original type/message/path/errno/operation/attempts;
++timed() preserves the first such context as output_monitor_error in step metadata
++and retains its original fail-closed kill/step-failure behavior. Live measurements
++are not atomic filesystem quotas. Trusted-writer bounds and final checks remain.
++The original failure's specific exception/root cause is UNRESOLVED.
++
++benchmark.sh is preserved byte-for-byte as ARCHIVAL R1 REFERENCE ONLY: it still
++points at runtime-package-r1/benchmark-r1 and has NO authority to run. The benchmark
++slot was consumed by 54251116. Do not submit it or invoke the helper's benchmark
++route. Fresh readiness review must assess proportionate reuse of the accepted
++benchmark on the same CPU class and unchanged scientific binaries. No replacement
++benchmark is created here. Original scientific job 54254461 is INVALID; all 46
++partial files remain frozen, with no recovery/resume/aggregation.
++
++engineering_fixture.py is the single synthetic engineering fixture SOURCE. Only
++AFTER genuine nonauthor exact-source GO, run under accepted existing Python 3.11:
++  /home/chenx3/miniconda3/bin/python3.11 -B /ABS/CANDIDATE/engineering_fixture.py /ABS/NEW/engineering-size-scan-r2 /ABS/CANDIDATE/runtime_helper.py
++The scratch parent must exist; the scratch root must be absent and outside the
++package and all benchmark/scientific namespaces. It emits one JSON PASS/FAIL
++engineering report and exit 0/1, retains synthetic scratch, writes an 8 MiB
++concurrent workload plus less than 1 KiB auxiliary synthetic payload, and uses a
++55-second alarm with a 35-second concurrent phase bound. This is correctness,
++not resource qualification. Root must bind actual runtime/FS/tool/native receipt.
++No candidate execution or fixture PASS is claimed at this SOURCE stage.
++
++Preserved historical README follows verbatim:
++============================================================
++
+ BIT002 runtime-package-r1 — V2 INTEGRATED SOURCE CANDIDATE
+ 
+ CURRENT STATUS: V2 source completion only; no independent GO or execution.
+--- baseline/SOURCE_INVENTORY.tsv
++++ candidate/SOURCE_INVENTORY.tsv
+@@ -2,16 +2,32 @@
+ AUTHENTICATED_INPUTS.json	4663	3daf3ce48966fd307f5021017313c01fe86679de85da4ffe5007b3dbf33d0441
+ CPU_METADATA_AUTHENTICATION.json	6410	e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f
+ DEFAULT_PYTHON_IDENTITY_NATIVE.json	2188	571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051
+-NODE_TOOLCHAIN_FREEZE.json	3586	33440895fb87e6ea3709c65c741c7136480200947e42c2c6c74c9ff145f5339f
+-NODE_TOOLCHAIN_FREEZE.schema.json	4782	e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d
++NODE_TOOLCHAIN_FREEZE.json	3586	5a061f5eda5ae1263b75b6b62401fb9a6f2531366191b619a8ffc9119f7b0522
++NODE_TOOLCHAIN_FREEZE.schema.json	4782	475af868f308444051466837db75f3c78a59a592d7ed5615403c77c4e9b02202
+ NODE_TOOLCHAIN_FREEZE.txt	4884	a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87
+ PROTOCOL_V0_4_ACCEPTED.txt	81247	71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
+ PUBLIC_TIMING_CLI_CONTRACT.json	1773	bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e
+-README.txt	30010	878decc97a030776bb2a998f5c3379e5662ce095169e0b78bd91d54c5208fac1
++R2_AUTHENTICATED_INPUTS.json	13529	86e0828498de778178cc4940a20c50c8401b56fd73021d0774239dfc9f73ae87
++R2_SOURCE_REPORT.txt	12235	5ef1ae555a4eed67d84e9428735aca1507773dffb4d82255c0bbc73790b065ae
++README.txt	33544	e57ae71e487de6291ef2006a76761164851c2b494ace1f4b543e802de2aab7ed
+ SOURCE_AUTHOR_REPORT.txt	6904	6100e2fbdc7e1f1fdb72ad326a11ddfdb81faa22d5b2c84c43ed64610acd81ed
+ V2_COMPLETION_REPORT.txt	12768	894a591ce7089b06a7c7f488546ab1d3a8ac43c8b87ecbd3c5719a18b8ccaf8b
+ V2_DIFF.patch	82527	d352e2b04896b36956c25a3daf6e2e1a8a70bc9e042863e09c85c27afe3e5eb1
++V3_DIFF.patch	20169	2e9d1f60675dc9da72ca20dea0f36eae9d0477383a1ad3fb757613c76ac9ce02
+ V3_NODE_MAPPING_REPORT.txt	12580	921d06f9462bc49d90a3a283cdd772cff1098660dbd942a19b5dc20b9f4a5a2c
+ benchmark.sh	2060	75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263
+-production.sh	2062	4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753
+-runtime_helper.py	40963	77951448572ceb59c7b3f5663f7a19d5b7e17606a57f1fa72218e6b83257a5a1
++engineering_fixture.py	14505	a2ce860c77ac27c98bd70a6911c3c73c5205b970dbfe2cfb0a4d6ed2d0872179
++evidence/gates/G8_ORIGINAL_R1_STOP.json	1221	5ee7e743a5c8604825501522732d7ffcc91853d0cb5af4f63ab0d44793f1c4ed
++evidence/gates/MEMORY_AMENDMENT_R1_ACCEPTANCE.json	4119	2be5521ed34d747bc83050c5633787d8d757aac41a459dcebecf9cdfb16134f7
++evidence/gates/RUNTIME_V3_SOURCE_ACCEPTANCE.json	1709	6035807d2cd06a84dc4762cc7ce4643cecad315c9e95ed9ba3fa5ad0a8071cb5
++evidence/resource-qualification/benchmark-r1/BENCH_RECEIPT.txt	1288	bb9638206eecfb069f168b052b3d4e163381171a80a0d8d6f402bc56de1013a8
++evidence/resource-qualification/memory-enforcement-amendment-r1/RESOURCE_AMENDMENT_R1.txt	5320	65e9c36b40c53f9e438843707a74ff19c5eb44c2a9ee5ce1d48d34b09e723407
++evidence/resource-qualification/runtime-node-mapping-fix-v3/ROOT_FROZEN_CANDIDATE.json	3741	cf4ea061d5e016b8bf24966fc6cd50ac142e06a2a86d54e1fcdfa27037d110a1
++evidence/resource-qualification/scientific-r1/G8-failure-audit-r1/REVIEW.txt	10596	e9f385731afc73845798180d2cacfe1d95e5258c41e31794d65aab21d6e3232e
++evidence/resource-qualification/scientific-r1/G8-failure-audit-r1/ROOT_AUTHENTICATION.json	2612	6f47a98ed25da35c5e5bb0aaa5584c00d3cc6f451da2b7f7daebea5800b409de
++evidence/resource-qualification/scientific-r1/ROOT_FAILURE_AUTHENTICATION_PROVISIONAL.json	2540	6dcc79179fd18d6de28285f06f74d1aa483d50ac540aad719ef597a81ae446b5
++evidence/resource-qualification/scientific-r1/original-job-failure-evidence/logs/P2.json	1593	87da4c06095a34bcd4b58c3e12daf6cf68a1ef5b7f856061c835163fb18621ea
++evidence/resource-qualification/scientific-r2-reopening/INTEGRATED_RUNTIME_REPAIR_BRIEF.txt	4461	37685f354a3bf16921cfedb75acd552a3dfc26ee9144400211516045e00ee1bf
++evidence/resource-qualification/scientific-r2-reopening/USER_RERUN_AUTHORITY.json	2463	25da3733425a1a27292f7726c384d9ea6ae701582cd3c7f6c52611f69948f4ff
++production.sh	2062	13fb0c3fdb97e2b0ed9b7830a461ee8f35b2c782a916a433f93986282bfaad1e
++runtime_helper.py	43223	a9dd7343d4460386073bd758bffe42be1d76dbe05e62522afff22818feb4afc3
+--- baseline/production.sh
++++ candidate/production.sh
+@@ -1,5 +1,5 @@
+ #!/bin/bash
+-#SBATCH --job-name=BIT002-scientific-r1
++#SBATCH --job-name=BIT002-scientific-r2
+ #SBATCH --partition=norm
+ #SBATCH --constraint=x6342
+ #SBATCH --nodes=1
+@@ -13,8 +13,8 @@
+ set -euo pipefail
+ umask 077
+ readonly STUDY=/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024
+-readonly PACKAGE="$STUDY/runtime-package-r1"
+-readonly RUN="$STUDY/scientific-r1"
++readonly PACKAGE="$STUDY/runtime-package-r2"
++readonly RUN="$STUDY/scientific-r2"
+ readonly PY=/home/chenx3/miniconda3/bin/python3.11
+ readonly HELPER="$PACKAGE/runtime_helper.py"
+ readonly PRODUCER="$STUDY/build-g2-r1/producer/bin/brc2_produce"
+--- baseline/runtime_helper.py
++++ candidate/runtime_helper.py
+@@ -20,7 +20,7 @@
+ import time
+ 
+ STUDY = Path('/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024')
+-PACKAGE = STUDY / 'runtime-package-r1'
++PACKAGE = STUDY / 'runtime-package-r2'
+ PROTO_HASH = '71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa'
+ BINARIES = {
+     'producer': {'path': str(STUDY / 'build-g2-r1/producer/bin/brc2_produce'),
+@@ -121,7 +121,7 @@
+ 
+ def root(kind):
+     require(kind in ('benchmark', 'production'), 'bad_kind')
+-    return STUDY / ('benchmark-r1' if kind == 'benchmark' else 'scientific-r1')
++    return STUDY / ('benchmark-r1' if kind == 'benchmark' else 'scientific-r2')
+ 
+ 
+ def allocation():
+@@ -254,19 +254,57 @@
+ 
+ 
+ def sizes(run):
+-    total = logs = 0
+-    for parent, directories, files in os.walk(run, followlinks=False):
+-        for name in directories + files:
+-            p = Path(parent) / name
+-            st = p.lstat()
++    """Up to three complete scans; only vanished descendants allow a rescan.
++
++    A trusted writer may rename an enumerated temporary file before lstat.
++    Discard the entire incomplete count, never just the vanished entry. This
++    is bounded usage monitoring, not an atomic snapshot or filesystem quota.
++    """
++    run = Path(run)
++    attempt_limit = 3
++    for attempt in range(1, attempt_limit + 1):
++        current, operation = run, 'root_lstat'
++
++        def walk_error(error):
++            nonlocal current, operation
++            current = Path(error.filename) if error.filename is not None else run
++            operation = 'walk_scandir'
++            raise error
++
++        try:
++            st = run.lstat()
+             require(not stat.S_ISLNK(st.st_mode), 'run_symlink')
+-            if stat.S_ISREG(st.st_mode):
+-                total += st.st_size
+-                if run / 'logs' in p.parents:
+-                    logs += st.st_size
+-            else:
+-                require(stat.S_ISDIR(st.st_mode), 'run_special_file')
+-    return {'regular_file_bytes': total, 'logs_bytes': logs}
++            require(stat.S_ISDIR(st.st_mode), 'run_not_directory')
++            total = logs = 0
++            operation = 'walk_scandir'
++            for parent, directories, files in os.walk(run, followlinks=False,
++                                                       onerror=walk_error):
++                for name in directories + files:
++                    current, operation = Path(parent) / name, 'entry_lstat'
++                    st = current.lstat()
++                    require(not stat.S_ISLNK(st.st_mode), 'run_symlink')
++                    if stat.S_ISREG(st.st_mode):
++                        total += st.st_size
++                        if run / 'logs' in current.parents:
++                            logs += st.st_size
++                    else:
++                        require(stat.S_ISDIR(st.st_mode), 'run_special_file')
++            return {'regular_file_bytes': total, 'logs_bytes': logs}
++        except (OSError, ValueError) as error:
++            # Preserve the original exception, including its native pathname(s).
++            error.output_monitor_context = {
++                'exception_type': type(error).__name__, 'message': str(error),
++                'path': str(current), 'operation': operation,
++                'filename': str(error.filename) if isinstance(error, OSError) and
++                            error.filename is not None else None,
++                'filename2': str(error.filename2) if isinstance(error, OSError) and
++                             error.filename2 is not None else None,
++                'errno': error.errno if isinstance(error, OSError) else None,
++                'scan_attempt': attempt, 'scan_attempt_limit': attempt_limit}
++            if (isinstance(error, FileNotFoundError) and current != run and
++                    attempt < attempt_limit):
++                continue
++            raise
+ 
+ 
+ def load_freeze():
+@@ -405,6 +443,7 @@
+                for name in ('stdout', 'stderr')]
+     counts = [0, 0]
+     violation = None
++    output_monitor_error = None
+     initial = peak()
+     observed = [initial] if initial['available'] else []
+     start_utc = utc()
+@@ -442,7 +481,9 @@
+                     violation = 'total_output_limit_exceeded'
+                 if sample['available'] and sample['bytes'] > 64 * GIB:
+                     violation = 'allocation_memory_limit_exceeded'
+-            except (OSError, ValueError):
++            except (OSError, ValueError) as error:
++                if output_monitor_error is None:
++                    output_monitor_error = error.output_monitor_context
+                 violation = 'output_monitor_failed'
+         if violation and proc.poll() is None:
+             try:
+@@ -478,6 +519,7 @@
+               end_utc=utc(), returncode=code, stdout_bytes_seen=counts[0], stderr_bytes_seen=counts[1],
+               stdout_bytes_saved=min(counts[0], LOG_STREAM_LIMIT),
+               stderr_bytes_saved=min(counts[1], LOG_STREAM_LIMIT), violation=violation,
++              output_monitor_error=output_monitor_error,
+               cgroup_initial=initial, cgroup_final=ending,
+               cgroup_peak_observed=max(observed, key=lambda row: row['bytes']) if observed else
+               {'available': False, 'bytes': None, 'reason': 'unavailable_throughout_step'}, timing_stdout=timing)
+--- /dev/null
++++ candidate/R2_AUTHENTICATED_INPUTS.json
+@@ -0,0 +1,253 @@
++{
++  "baseline_files": [
++    {
++      "bytes": 4663,
++      "path": "AUTHENTICATED_INPUTS.json",
++      "sha256": "3daf3ce48966fd307f5021017313c01fe86679de85da4ffe5007b3dbf33d0441"
++    },
++    {
++      "bytes": 6410,
++      "path": "CPU_METADATA_AUTHENTICATION.json",
++      "sha256": "e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f"
++    },
++    {
++      "bytes": 2188,
++      "path": "DEFAULT_PYTHON_IDENTITY_NATIVE.json",
++      "sha256": "571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051"
++    },
++    {
++      "bytes": 3586,
++      "path": "NODE_TOOLCHAIN_FREEZE.json",
++      "sha256": "33440895fb87e6ea3709c65c741c7136480200947e42c2c6c74c9ff145f5339f"
++    },
++    {
++      "bytes": 4782,
++      "path": "NODE_TOOLCHAIN_FREEZE.schema.json",
++      "sha256": "e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d"
++    },
++    {
++      "bytes": 4884,
++      "path": "NODE_TOOLCHAIN_FREEZE.txt",
++      "sha256": "a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87"
++    },
++    {
++      "bytes": 81247,
++      "path": "PROTOCOL_V0_4_ACCEPTED.txt",
++      "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
++    },
++    {
++      "bytes": 1773,
++      "path": "PUBLIC_TIMING_CLI_CONTRACT.json",
++      "sha256": "bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e"
++    },
++    {
++      "bytes": 30010,
++      "path": "README.txt",
++      "sha256": "878decc97a030776bb2a998f5c3379e5662ce095169e0b78bd91d54c5208fac1"
++    },
++    {
++      "bytes": 6904,
++      "path": "SOURCE_AUTHOR_REPORT.txt",
++      "sha256": "6100e2fbdc7e1f1fdb72ad326a11ddfdb81faa22d5b2c84c43ed64610acd81ed"
++    },
++    {
++      "bytes": 1532,
++      "path": "SOURCE_INVENTORY.tsv",
++      "sha256": "e4567cecbd5512309baca9cc5fa26a9ad0168eb4d60db25910c276740fbb140f"
++    },
++    {
++      "bytes": 12768,
++      "path": "V2_COMPLETION_REPORT.txt",
++      "sha256": "894a591ce7089b06a7c7f488546ab1d3a8ac43c8b87ecbd3c5719a18b8ccaf8b"
++    },
++    {
++      "bytes": 82527,
++      "path": "V2_DIFF.patch",
++      "sha256": "d352e2b04896b36956c25a3daf6e2e1a8a70bc9e042863e09c85c27afe3e5eb1"
++    },
++    {
++      "bytes": 20169,
++      "path": "V3_DIFF.patch",
++      "sha256": "2e9d1f60675dc9da72ca20dea0f36eae9d0477383a1ad3fb757613c76ac9ce02"
++    },
++    {
++      "bytes": 12580,
++      "path": "V3_NODE_MAPPING_REPORT.txt",
++      "sha256": "921d06f9462bc49d90a3a283cdd772cff1098660dbd942a19b5dc20b9f4a5a2c"
++    },
++    {
++      "bytes": 2060,
++      "path": "benchmark.sh",
++      "sha256": "75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263"
++    },
++    {
++      "bytes": 2062,
++      "path": "production.sh",
++      "sha256": "4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753"
++    },
++    {
++      "bytes": 40963,
++      "path": "runtime_helper.py",
++      "sha256": "77951448572ceb59c7b3f5663f7a19d5b7e17606a57f1fa72218e6b83257a5a1"
++    }
++  ],
++  "original_inputs_modified": false,
++  "state": "SOURCE_ONLY_BYTES_HASH_AUTHENTICATION",
++  "verified_named_inputs": [
++    {
++      "bytes": 2463,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/USER_RERUN_AUTHORITY.json",
++      "sha256": "25da3733425a1a27292f7726c384d9ea6ae701582cd3c7f6c52611f69948f4ff"
++    },
++    {
++      "bytes": 4461,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/INTEGRATED_RUNTIME_REPAIR_BRIEF.txt",
++      "sha256": "37685f354a3bf16921cfedb75acd552a3dfc26ee9144400211516045e00ee1bf"
++    },
++    {
++      "bytes": 81247,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/design/PROTOCOL_V0_4_ACCEPTED.txt",
++      "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
++    },
++    {
++      "bytes": 1221,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/G8_ORIGINAL_R1_STOP.json",
++      "sha256": "5ee7e743a5c8604825501522732d7ffcc91853d0cb5af4f63ab0d44793f1c4ed"
++    },
++    {
++      "bytes": 10596,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/REVIEW.txt",
++      "sha256": "e9f385731afc73845798180d2cacfe1d95e5258c41e31794d65aab21d6e3232e"
++    },
++    {
++      "bytes": 2612,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/ROOT_AUTHENTICATION.json",
++      "sha256": "6f47a98ed25da35c5e5bb0aaa5584c00d3cc6f451da2b7f7daebea5800b409de"
++    },
++    {
++      "bytes": 2540,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/ROOT_FAILURE_AUTHENTICATION_PROVISIONAL.json",
++      "sha256": "6dcc79179fd18d6de28285f06f74d1aa483d50ac540aad719ef597a81ae446b5"
++    },
++    {
++      "bytes": 1593,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/original-job-failure-evidence/logs/P2.json",
++      "sha256": "87da4c06095a34bcd4b58c3e12daf6cf68a1ef5b7f856061c835163fb18621ea"
++    },
++    {
++      "bytes": 3741,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/ROOT_FROZEN_CANDIDATE.json",
++      "sha256": "cf4ea061d5e016b8bf24966fc6cd50ac142e06a2a86d54e1fcdfa27037d110a1"
++    },
++    {
++      "bytes": 1709,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/RUNTIME_V3_SOURCE_ACCEPTANCE.json",
++      "sha256": "6035807d2cd06a84dc4762cc7ce4643cecad315c9e95ed9ba3fa5ad0a8071cb5"
++    },
++    {
++      "bytes": 1288,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/benchmark-r1/BENCH_RECEIPT.txt",
++      "sha256": "bb9638206eecfb069f168b052b3d4e163381171a80a0d8d6f402bc56de1013a8"
++    },
++    {
++      "bytes": 5320,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/memory-enforcement-amendment-r1/RESOURCE_AMENDMENT_R1.txt",
++      "sha256": "65e9c36b40c53f9e438843707a74ff19c5eb44c2a9ee5ce1d48d34b09e723407"
++    },
++    {
++      "bytes": 4119,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/MEMORY_AMENDMENT_R1_ACCEPTANCE.json",
++      "sha256": "2be5521ed34d747bc83050c5633787d8d757aac41a459dcebecf9cdfb16134f7"
++    },
++    {
++      "bytes": 4663,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/AUTHENTICATED_INPUTS.json",
++      "sha256": "3daf3ce48966fd307f5021017313c01fe86679de85da4ffe5007b3dbf33d0441"
++    },
++    {
++      "bytes": 6410,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/CPU_METADATA_AUTHENTICATION.json",
++      "sha256": "e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f"
++    },
++    {
++      "bytes": 2188,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/DEFAULT_PYTHON_IDENTITY_NATIVE.json",
++      "sha256": "571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051"
++    },
++    {
++      "bytes": 3586,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/NODE_TOOLCHAIN_FREEZE.json",
++      "sha256": "33440895fb87e6ea3709c65c741c7136480200947e42c2c6c74c9ff145f5339f"
++    },
++    {
++      "bytes": 4782,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/NODE_TOOLCHAIN_FREEZE.schema.json",
++      "sha256": "e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d"
++    },
++    {
++      "bytes": 4884,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/NODE_TOOLCHAIN_FREEZE.txt",
++      "sha256": "a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87"
++    },
++    {
++      "bytes": 81247,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/PROTOCOL_V0_4_ACCEPTED.txt",
++      "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
++    },
++    {
++      "bytes": 1773,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/PUBLIC_TIMING_CLI_CONTRACT.json",
++      "sha256": "bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e"
++    },
++    {
++      "bytes": 30010,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/README.txt",
++      "sha256": "878decc97a030776bb2a998f5c3379e5662ce095169e0b78bd91d54c5208fac1"
++    },
++    {
++      "bytes": 6904,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/SOURCE_AUTHOR_REPORT.txt",
++      "sha256": "6100e2fbdc7e1f1fdb72ad326a11ddfdb81faa22d5b2c84c43ed64610acd81ed"
++    },
++    {
++      "bytes": 1532,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/SOURCE_INVENTORY.tsv",
++      "sha256": "e4567cecbd5512309baca9cc5fa26a9ad0168eb4d60db25910c276740fbb140f"
++    },
++    {
++      "bytes": 12768,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/V2_COMPLETION_REPORT.txt",
++      "sha256": "894a591ce7089b06a7c7f488546ab1d3a8ac43c8b87ecbd3c5719a18b8ccaf8b"
++    },
++    {
++      "bytes": 82527,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/V2_DIFF.patch",
++      "sha256": "d352e2b04896b36956c25a3daf6e2e1a8a70bc9e042863e09c85c27afe3e5eb1"
++    },
++    {
++      "bytes": 20169,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/V3_DIFF.patch",
++      "sha256": "2e9d1f60675dc9da72ca20dea0f36eae9d0477383a1ad3fb757613c76ac9ce02"
++    },
++    {
++      "bytes": 12580,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/V3_NODE_MAPPING_REPORT.txt",
++      "sha256": "921d06f9462bc49d90a3a283cdd772cff1098660dbd942a19b5dc20b9f4a5a2c"
++    },
++    {
++      "bytes": 2060,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/benchmark.sh",
++      "sha256": "75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263"
++    },
++    {
++      "bytes": 2062,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/production.sh",
++      "sha256": "4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753"
++    },
++    {
++      "bytes": 40963,
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/runtime_helper.py",
++      "sha256": "77951448572ceb59c7b3f5663f7a19d5b7e17606a57f1fa72218e6b83257a5a1"
++    }
++  ]
++}
+--- /dev/null
++++ candidate/R2_SOURCE_REPORT.txt
+@@ -0,0 +1,182 @@
++R2 INTEGRATED SOURCE AUTHOR REPORT
++STATE: COMPLETE SOURCE CANDIDATE; UNEXECUTED; NO SELF-ISSUED GO/PASS
++Candidate: /tmp/bit002-runtime-r2-source-repair-20261025/candidate-runtime-r2
++Deployment package after applicable GO/authority: STUDY/runtime-package-r2
++STUDY=/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024
++
++ROLE, EVIDENCE AND AUTHORITY
++I authored this operational correction and the single engineering fixture source;
++I am not a scientific producer/auditor author or independent source reviewer.
++Identity is limited to this actual integrated CLI request boundary. No canonical
++returned-model identity is exposed or asserted; no extra model/agent was invoked.
++All 31 explicitly named inputs matched supplied bytes and SHA-256 before editing.
++All 18 accepted V3 baseline files were copied first; every original input remains
++untouched. R2_AUTHENTICATED_INPUTS.json records all absolute input identities.
++The 12 external named authority/evidence files are copied unchanged under evidence/
++with their original relative paths. The separately supplied design protocol equals
++the retained package protocol byte-for-byte. Referenced but unlisted artifacts
++were not opened. Historical reports and evidence remain historical, not current GO.
++
++Original 54254461/P2: returncode -9, violation output_monitor_failed, zero stdout
++and stderr bytes; no scientific results, DC, agreement or EA. All 46 frozen partial
++files remain outside this work. An enumerated temporary pathname disappearing
++before lstat is a source-evident robustness defect, consistent with trusted atomic
++rename, but NOT a confirmed cause of that old failure. The exact old exception,
++pathname and event sequence remain unresolved. No scientific negative finding or
++infeasibility inference is made, and no observed runtime PASS is claimed.
++
++The exact brief and USER_RERUN_AUTHORITY authorize necessary integrated runtime
++source correction, then one complete synthetic engineering validation after genuine
++nonauthor SOURCE GO, fresh readiness GO and Root exact-hash authority before ONE
++fresh complete scientific-r2 submission. Original failure/history/consumed slots,
++16-hour cumulative readiness, closed G2-G4 allowance, measured caps and all EA/
++publication requirements persist. No budget/slot reset, resume, overwrite, partial
++aggregation, automatic extra benchmark or scientific redesign is authorized.
++
++BOUNDED CORRECTION AND DIAGNOSTICS
++sizes(run) now performs at most THREE full scans (initial plus two rescans),
++resetting total/log counts on each attempt. Only FileNotFoundError for a descendant
++permits rescan; a completed traversal returns the full current regular/log byte
++counts. It never skips an entry and never returns partial counts after an error.
++Each attempt explicitly lstats/validates the run root. A missing/non-directory/
++symlink root fails immediately; root ENOENT does not consume additional attempts.
++Every os.walk traversal error is raised by onerror, preventing silent omission.
++Permission and other OS errors, symlinks and nonregular objects fail immediately;
++persistent descendant disappearance fails on attempt 3 with its original exception.
++There is no delay, unbounded retry, child rerun, controller/security/taxonomy
++redesign or scientific code change. Three attempts bound retries, not per-scan
++filesystem latency or an atomic snapshot: continuous churn may still fail closed,
++and live growth is governed by unchanged trusted-writer bounds/final criteria.
++
++sizes attaches output_monitor_context to the ORIGINAL exception and re-raises it:
++exception_type, message, path, operation, filename, filename2, errno, scan_attempt,
++scan_attempt_limit. Native OS filenames and validation path are retained. timed()
++retains the FIRST fatal context as output_monitor_error in structured step JSON;
++null means no caught fatal size-scan error. Its output_monitor_failed violation,
++SIGKILL/process-group logic, code/success behavior and all caps remain unchanged.
++No new scientific record fields or frozen configuration keys are added. The new
++field is operational step metadata only. If the filesystem prevents evidence
++commit itself, that evidence cannot be guaranteed; native Root records remain
++required. The fixture validates scan exceptions/context, not the production child
++kill loop or step commit, whose wiring is source-reviewed and remains unexecuted.
++
++INTEGRATION AND SCIENTIFIC INVARIANCE
++production.sh job name BIT002-scientific-r1 -> BIT002-scientific-r2.
++production.sh PACKAGE STUDY/runtime-package-r1 -> STUDY/runtime-package-r2.
++production.sh RUN STUDY/scientific-r1 -> STUDY/scientific-r2.
++Helper PACKAGE and production root change to the identical R2 names. The unchanged
++prepare marker expression therefore derives STUDY/.scientific-r2.once, never the
++old marker. Existing run/marker guards and data creation behavior remain intact.
++Freeze JSON protocol.path and schema protocol.const.path change exactly from
++STUDY/runtime-package-r1/PROTOCOL_V0_4_ACCEPTED.txt to
++STUDY/runtime-package-r2/PROTOCOL_V0_4_ACCEPTED.txt. The schema remains closed with
++the same required/allowed keys. Existing JSON package_sha256 fields are resealed.
++No blanket textual substitution is applied to science tiers or historical files.
++The benchmark branch and benchmark.sh remain archival R1 references with NO run
++authority. Benchmark 54251116 is consumed; readiness must assess reuse, not rerun.
++
++Base protocol bytes/hash remain
++71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa.
++All science binary paths/hashes, compiler/timing-source/Python/hardware identities,
++33 keys, production-r1 tier, 42000 blocks, cohorts, six endpoints/inference remain
++unchanged. DC, timing parser, direct science commands, agreement, receipt criteria,
++32 CPUs/64 GiB request, log/output/file/time limits and postterminal checks remain.
++The memory amendment removes only a mandatory <=64 GiB kernel hard ceiling; actual
++job-wide cgroup peak and original-step MaxRSS accounting and measured caps remain.
++Full operational identity must be bound EXTERNALLY: base protocol + memory
++amendment + original amendment human/independent acceptance + USER_RERUN_AUTHORITY
+++ exact R2 source/engineering/readiness acceptances + Root G7R2 authority. Future
++hashes do not yet exist here. Never present the base hash alone as full operating
++conditions. No scientific manifest/record/config-schema additions are introduced.
++
++AFTER-GO ENGINEERING FIXTURE SOURCE AND LIMITS
++Exact invocation pattern, NOT executed:
++/home/chenx3/miniconda3/bin/python3.11 -B /ABS/CANDIDATE/engineering_fixture.py /ABS/NEW/engineering-size-scan-r2 /ABS/CANDIDATE/runtime_helper.py
++Use accepted existing Python 3.11.4 and an absent absolute scratch root with an
++existing parent, outside package/benchmark/scientific namespaces. The helper path
++must identify the exact reviewed new helper. Root must verify fixture/helper hashes
++and native tool/environment/FS identities before executing after SOURCE GO.
++The fixture imports only that helper and calls only sizes(), never prepare/timed/
++iovol/DC/receipt/main, scientific programs, Philox/cohort/keys/records or markers.
++It uses standard library only, with no network/scheduler/submission activity.
++
++It checks regular/log totals; deterministic real rename after enumeration before
++entry-lstat and complete-count recovery on scan 2; persistent real rename failure
++on scan 3; fatal traversal and entry permission errors without retry; traversal
++ENOENT exhaustion; other OS I/O errors without retry; native chmod(0) traversal
++permission when non-root; file/directory symlinks; FIFO; missing/root-file/root-link;
++retained original error type/message/path/operation/errno/attempt bound. Injected
++cases are explicitly synthetic, use narrowly scoped standard-library mocks, and
++restore bindings. Privileged UID reports native permission NOT_APPLICABLE rather
++than claiming a native denial; synthetic fatal-permission checks remain required.
++
++A real concurrent thread commits exactly 64 synthetic 128-KiB files by temporary
++write/flush/fsync/rename/directory-fsync, while actual corrected sizes() repeatedly
++scans (max 4096 live calls). The first commit waits for a live observation to avoid
++a vacuous completed-writer case. It then checks all 64 commits and exact final
++8-MiB count, no residual temporaries. Payload is fixed literal bytes, no RNG. Total
++synthetic payload is 8 MiB plus <1 KiB for auxiliary cases, below 16 MiB; root is
++retained for inspection. A 35-second concurrent phase deadline and 55-second POSIX
++alarm bound normal execution below 60 seconds; native uninterruptible filesystem
++stalls cannot be certified away by source. This is engineering correctness, no
++population/performance benchmark or resource qualification.
++
++Expected stdout is ONE finite JSON object with scope
++synthetic_size_scan_engineering_only, status PASS/FAIL, named checks with details,
++helper SHA/path, Python identity, scratch path and elapsed seconds; exit 0 for all
++checks PASS, else 1. This is an expected interface only, not observed output.
++Root must bind actual native runtime/FS/tool/all-step receipt. A fixture PASS alone
++cannot certify production resource qualification, original EA or scientific validity.
++
++UNPERFORMED GATES
++Genuine fresh nonauthor exact SOURCE GO; any permitted later syntax/import checks;
++complete AFTER-GO synthetic engineering execution/native receipt; independent fresh
++readiness GO including benchmark reuse/resource scope; Root exact-hash G7R2 authority;
++one complete fresh original scientific-r2 submission; successful original steps and
++native all-step accounting; independent G8R2/EA before unseal; G9 publication review.
++No build, py_compile, bash -n, old/new helper import, fixture run, model invocation,
++science/RNG/data/results, scheduler/network/SSH or auxiliary runtime program occurred.
++Only ordinary local Python file/text/JSON/hash/diff construction was used. No
++skills, AGENTS, config, credentials, sessions, unlisted inputs or delegation used.
++
++BASELINE CHANGES (6):
++NODE_TOOLCHAIN_FREEZE.json
++NODE_TOOLCHAIN_FREEZE.schema.json
++README.txt
++SOURCE_INVENTORY.tsv
++production.sh
++runtime_helper.py
++
++BASELINE UNCHANGED (12), byte-for-byte:
++AUTHENTICATED_INPUTS.json
++CPU_METADATA_AUTHENTICATION.json
++DEFAULT_PYTHON_IDENTITY_NATIVE.json
++NODE_TOOLCHAIN_FREEZE.txt
++PROTOCOL_V0_4_ACCEPTED.txt
++PUBLIC_TIMING_CLI_CONTRACT.json
++SOURCE_AUTHOR_REPORT.txt
++V2_COMPLETION_REPORT.txt
++V2_DIFF.patch
++V3_DIFF.patch
++V3_NODE_MAPPING_REPORT.txt
++benchmark.sh
++
++INVENTORY/DIFF SEALING
++SOURCE_INVENTORY.tsv hashes all payload/docs/evidence except itself,
++R2_FULL_DIFF.patch and CANDIDATE_INVENTORY.tsv. R2_FULL_DIFF.patch contains exact
++unified old/new content against all 18 baseline files (unchanged files have no
++hunks) plus /dev/null additions for all new payload/docs/evidence files, excluding
++the diff itself and the final inventory to avoid circular hashes.
++CANDIDATE_INVENTORY.tsv hashes every candidate file except itself, including
++SOURCE_INVENTORY.tsv and R2_FULL_DIFF.patch. CLI-managed ../REPORT.txt supplies the
++final inventory hash and complete changed/unchanged inventory; it is outside the
++candidate and does not alter any original input. These explicit self/diff sealing
++exclusions avoid circular identities, without excluding any baseline comparison.
++
++EXACT EXISTING PACKAGE HASH REPLACEMENTS (old -> new)
++runtime_helper.py: 77951448572ceb59c7b3f5663f7a19d5b7e17606a57f1fa72218e6b83257a5a1 -> a9dd7343d4460386073bd758bffe42be1d76dbe05e62522afff22818feb4afc3
++production.sh: 4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753 -> 13fb0c3fdb97e2b0ed9b7830a461ee8f35b2c782a916a433f93986282bfaad1e
++NODE_TOOLCHAIN_FREEZE.schema.json: e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d -> 475af868f308444051466837db75f3c78a59a592d7ed5615403c77c4e9b02202
++benchmark.sh: 75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263 -> 75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263
++NODE_TOOLCHAIN_FREEZE.json: 33440895fb87e6ea3709c65c741c7136480200947e42c2c6c74c9ff145f5339f -> 5a061f5eda5ae1263b75b6b62401fb9a6f2531366191b619a8ffc9119f7b0522
++engineering_fixture.py (new SOURCE): a2ce860c77ac27c98bd70a6911c3c73c5205b970dbfe2cfb0a4d6ed2d0872179
+--- /dev/null
++++ candidate/engineering_fixture.py
+@@ -0,0 +1,336 @@
++#!/home/chenx3/miniconda3/bin/python3.11
++"""AFTER independent SOURCE GO only. Synthetic size-scan engineering checks.
++
++Usage: python3.11 -B engineering_fixture.py NEW_SCRATCH_ROOT HELPER_PATH
++No helper entry points other than sizes() are called. No scientific programs,
++records, keys, benchmark, scheduler, network, receipts or once markers are used.
++The new scratch tree is retained for Root's inspection; never reuse it.
++"""
++import errno
++import hashlib
++import importlib.util
++import json
++import os
++from pathlib import Path
++import signal
++import sys
++import threading
++import time
++from unittest import mock
++
++
++class FixtureTimeout(Exception):
++    pass
++
++
++def require(condition, message):
++    if not condition:
++        raise AssertionError(message)
++
++
++def write_syn(path, body):
++    with open(path, 'xb') as stream:
++        stream.write(body)
++        stream.flush()
++        os.fsync(stream.fileno())
++
++
++def sync_directory(path):
++    fd = os.open(path, os.O_RDONLY | os.O_DIRECTORY)
++    try:
++        os.fsync(fd)
++    finally:
++        os.close(fd)
++
++
++def expect_error(helper, run, cls, path, operation, attempt, text=None):
++    try:
++        helper.sizes(run)
++    except cls as error:
++        context = error.output_monitor_context
++        require(context['exception_type'] == cls.__name__, 'lost exception type')
++        require(context['message'] == str(error), 'lost original message')
++        require(context['path'] == str(path), 'lost path')
++        require(context['operation'] == operation, 'lost operation')
++        require(context['scan_attempt'] == attempt and
++                context['scan_attempt_limit'] == 3, 'wrong scan bound')
++        if isinstance(error, OSError):
++            require(context['errno'] == error.errno, 'lost errno')
++            require(context['filename'] == (str(error.filename) if
++                    error.filename is not None else None), 'lost native filename')
++        if text is not None:
++            require(text in context['message'], 'wrong validation rejection')
++        return context
++    raise AssertionError('required fatal exception was not raised')
++
++
++def exercise(helper, scratch, checks):
++    def check(name, action):
++        try:
++            details = action()
++            checks.append({'check': name, 'status': 'PASS', 'details': details})
++        except FixtureTimeout:
++            raise
++        except Exception as error:
++            checks.append({'check': name, 'status': 'FAIL',
++                           'exception_type': type(error).__name__, 'message': str(error)})
++
++    def stable():
++        run = scratch / 'stable'
++        (run / 'logs').mkdir(parents=True)
++        (run / 'empty').mkdir()
++        write_syn(run / 'a', b'a' * 17)
++        write_syn(run / 'logs' / 'b', b'b' * 23)
++        used = helper.sizes(run)
++        require(used == {'regular_file_bytes': 40, 'logs_bytes': 23}, 'wrong stable count')
++        return used
++    check('complete_regular_and_log_counts', stable)
++
++    def vanished(exhaust):
++        run = scratch / ('persistent' if exhaust else 'one_rename')
++        run.mkdir()
++        anchor, temporary, final = run / 'anchor', run / 'temporary', run / 'final'
++        write_syn(anchor, b'a' * 37)
++        write_syn(temporary, b'z' * 71)
++        real_walk = os.walk
++        walks = [0]
++
++        def racing_walk(*args, **kwargs):
++            walks[0] += 1
++            if exhaust and final.exists():
++                final.rename(temporary)
++            for parent, directories, files in real_walk(*args, **kwargs):
++                files.sort()  # anchor is counted before the vanished entry.
++                if Path(parent) == run and temporary.name in files:
++                    temporary.rename(final)  # real rename AFTER enumeration, BEFORE lstat
++                    sync_directory(run)
++                yield parent, directories, files
++
++        with mock.patch.object(helper.os, 'walk', racing_walk):
++            if exhaust:
++                context = expect_error(helper, run, FileNotFoundError, temporary,
++                                       'entry_lstat', 3)
++                require(walks[0] == 3, 'persistent rename did not exhaust exactly 3 scans')
++                return context
++            used = helper.sizes(run)
++        require(walks[0] == 2, 'single vanished entry did not cause exactly one full rescan')
++        require(used == {'regular_file_bytes': 108, 'logs_bytes': 0},
++                'rescan skipped final file or retained partial count')
++        return {'walks': walks[0], 'usage': used, 'boundary': 'enumeration/entry_lstat'}
++    check('deterministic_real_rename_complete_rescan', lambda: vanished(False))
++    check('persistent_real_rename_exhaustion_context', lambda: vanished(True))
++
++    def walk_failure(cls, attempts):
++        run = scratch / ('walk_' + cls.__name__)
++        run.mkdir()
++        victim = run / 'unreadable_or_vanished_directory'
++        calls = [0]
++
++        def broken_walk(*args, **kwargs):
++            calls[0] += 1
++            error_number = errno.ENOENT if cls is FileNotFoundError else errno.EACCES
++            kwargs['onerror'](cls(error_number, 'synthetic traversal failure', str(victim)))
++            return iter(())
++
++        with mock.patch.object(helper.os, 'walk', broken_walk):
++            context = expect_error(helper, run, cls, victim, 'walk_scandir', attempts)
++        require(calls[0] == attempts, 'wrong traversal retry policy')
++        return context
++    check('traversal_permission_fatal_no_retry', lambda: walk_failure(PermissionError, 1))
++    check('persistent_traversal_disappearance_bounded', lambda: walk_failure(FileNotFoundError, 3))
++
++    def lstat_permission():
++        run = scratch / 'lstat_permission'
++        run.mkdir()
++        victim = run / 'blocked'
++        write_syn(victim, b'p')
++        real_lstat = Path.lstat
++        calls = [0]
++
++        def denied(path, *args, **kwargs):
++            if path == victim:
++                calls[0] += 1
++                raise PermissionError(errno.EACCES, 'synthetic lstat failure', str(path))
++            return real_lstat(path, *args, **kwargs)
++
++        with mock.patch.object(Path, 'lstat', denied):
++            context = expect_error(helper, run, PermissionError, victim, 'entry_lstat', 1)
++        require(calls[0] == 1, 'permission failure was retried')
++        return context
++    check('entry_permission_fatal_no_retry', lstat_permission)
++
++    def other_os_error():
++        run = scratch / 'fatal_io_error'
++        run.mkdir()
++        victim = run / 'failed_io'
++        calls = [0]
++
++        def failed_walk(*args, **kwargs):
++            calls[0] += 1
++            kwargs['onerror'](OSError(errno.EIO, 'synthetic I/O failure', str(victim)))
++            return iter(())
++
++        with mock.patch.object(helper.os, 'walk', failed_walk):
++            context = expect_error(helper, run, OSError, victim, 'walk_scandir', 1)
++        require(calls[0] == 1, 'non-ENOENT operating-system error was retried')
++        return context
++    check('other_os_error_fatal_without_retry', other_os_error)
++
++    def native_permission():
++        if os.geteuid() == 0:
++            return {'native_case': 'NOT_APPLICABLE_PRIVILEGED_UID',
++                    'injected_permission_cases': 'required separately'}
++        run = scratch / 'native_permission'
++        victim = run / 'closed'
++        victim.mkdir(parents=True)
++        write_syn(victim / 'payload', b'p')
++        victim.chmod(0)
++        try:
++            return expect_error(helper, run, PermissionError, victim, 'walk_scandir', 1)
++        finally:
++            victim.chmod(0o700)
++    check('native_unreadable_directory_fatal_when_applicable', native_permission)
++
++    def rejected_object(kind):
++        run = scratch / kind
++        run.mkdir()
++        victim = run / 'rejected'
++        if kind == 'file_symlink':
++            write_syn(run / 'target', b'x')
++            victim.symlink_to('target')
++        elif kind == 'directory_symlink':
++            (run / 'target').mkdir()
++            victim.symlink_to('target', target_is_directory=True)
++        else:
++            os.mkfifo(victim, 0o600)
++        text = 'run_special_file' if kind == 'fifo' else 'run_symlink'
++        return expect_error(helper, run, ValueError, victim, 'entry_lstat', 1, text)
++    for kind in ('file_symlink', 'directory_symlink', 'fifo'):
++        check(kind + '_fatal', lambda kind=kind: rejected_object(kind))
++
++    def missing_root():
++        run = scratch / 'absent'
++        return expect_error(helper, run, FileNotFoundError, run, 'root_lstat', 1)
++    check('missing_root_fatal_without_rescan', missing_root)
++
++    def bad_root(symlink):
++        run = scratch / ('root_link' if symlink else 'root_file')
++        if symlink:
++            run.symlink_to('stable', target_is_directory=True)
++        else:
++            write_syn(run, b'x')
++        return expect_error(helper, run, ValueError, run, 'root_lstat', 1,
++                            'run_symlink' if symlink else 'run_not_directory')
++    check('root_symlink_fatal', lambda: bad_root(True))
++    check('root_non_directory_fatal', lambda: bad_root(False))
++
++    def concurrent_writer():
++        run = scratch / 'concurrent'
++        (run / 'logs').mkdir(parents=True)
++        payload = b'x' * (128 * 1024)
++        ready, go, done, stop, observed = (threading.Event() for _ in range(5))
++        failures = []
++        progress = [0]
++        deadline = time.monotonic() + 35
++
++        def writer():
++            try:
++                ready.set()
++                require(go.wait(2), 'writer start timeout')
++                for index in range(64):
++                    if stop.is_set() or time.monotonic() >= deadline:
++                        raise TimeoutError('writer stopped before completing fixed workload')
++                    temporary = run / ('.temporary_%03d' % index)
++                    final = run / ('synthetic_%03d' % index)
++                    write_syn(temporary, payload)
++                    temporary.rename(final)
++                    sync_directory(run)
++                    progress[0] += 1
++                    if index == 0:
++                        require(observed.wait(2), 'no live scan observed')
++            except Exception as error:
++                failures.append({'exception_type': type(error).__name__, 'message': str(error)})
++            finally:
++                done.set()
++
++        worker = threading.Thread(target=writer, name='synthetic-rename-writer', daemon=True)
++        worker.start()
++        scans = 0
++        try:
++            require(ready.wait(2), 'writer not ready')
++            go.set()
++            while not done.is_set():
++                require(time.monotonic() < deadline and scans < 4096, 'live scan bound exceeded')
++                used = helper.sizes(run)
++                require(used['logs_bytes'] == 0 and
++                        0 <= used['regular_file_bytes'] <= 8 * 1024 ** 2,
++                        'invalid concurrent byte count')
++                scans += 1
++                observed.set()
++                done.wait(0.001)
++            worker.join(timeout=1)
++            require(not worker.is_alive() and not failures, 'writer failed: ' + str(failures))
++            require(scans > 0 and progress[0] == 64, 'no concurrent observation or incomplete writer')
++            used = helper.sizes(run)
++            require(used == {'regular_file_bytes': 8 * 1024 ** 2, 'logs_bytes': 0},
++                    'final complete count differs')
++            require(len(list(run.glob('synthetic_*'))) == 64 and
++                    not list(run.glob('.temporary_*')), 'incomplete synthetic commits')
++            return {'live_scans': scans, 'committed_files': progress[0],
++                    'synthetic_writer_bytes': 8 * 1024 ** 2, 'final_usage': used}
++        finally:
++            stop.set()
++            go.set()
++            observed.set()
++            worker.join(timeout=1)
++    check('real_concurrent_write_fsync_rename_and_final_count', concurrent_writer)
++
++
++def main():
++    checks = []
++    report = {'scope': 'synthetic_size_scan_engineering_only', 'status': 'FAIL',
++              'checks': checks, 'time_limit_seconds': 55,
++              'writer_payload_limit_bytes': 8 * 1024 ** 2,
++              'total_synthetic_payload_limit_bytes': 16 * 1024 ** 2}
++    started = time.monotonic()
++
++    def expired(signum, frame):
++        raise FixtureTimeout('55 second fixture deadline')
++
++    signal.signal(signal.SIGALRM, expired)
++    signal.alarm(55)
++    try:
++        require(len(sys.argv) == 3, 'expected NEW_SCRATCH_ROOT HELPER_PATH')
++        require(sys.version_info[:2] == (3, 11), 'existing Python 3.11 required')
++        scratch, helper_path = (Path(value) for value in sys.argv[1:])
++        require(scratch.is_absolute() and helper_path.is_absolute(), 'absolute paths required')
++        require(helper_path.name == 'runtime_helper.py', 'expected reviewed helper path')
++        helper_path = helper_path.resolve(strict=True)
++        scratch = scratch.parent.resolve(strict=True) / scratch.name
++        require(scratch.name not in ('', '.', '..') and
++                all(not part.lstrip('.').startswith(('scientific-', 'benchmark-'))
++                    for part in scratch.parts), 'scratch overlaps scientific/benchmark namespace')
++        require(scratch != helper_path.parent and helper_path.parent not in scratch.parents,
++                'scratch must be outside the reviewed package')
++        scratch.mkdir(mode=0o700)  # exclusive NEW root, never exist_ok/resume
++        sys.dont_write_bytecode = True
++        report.update({'scratch_root': str(scratch), 'helper_path': str(helper_path),
++                       'helper_sha256': hashlib.sha256(helper_path.read_bytes()).hexdigest(),
++                       'python_executable': sys.executable, 'python_version': sys.version})
++        spec = importlib.util.spec_from_file_location('reviewed_r2_size_scan', helper_path)
++        require(spec is not None and spec.loader is not None, 'helper import spec unavailable')
++        helper = importlib.util.module_from_spec(spec)
++        spec.loader.exec_module(helper)  # permitted ONLY AFTER nonauthor SOURCE GO
++        exercise(helper, scratch, checks)
++        report['status'] = 'PASS' if checks and all(c['status'] == 'PASS' for c in checks) else 'FAIL'
++    except Exception as error:
++        report['error'] = {'exception_type': type(error).__name__, 'message': str(error)}
++    finally:
++        signal.alarm(0)
++        report['elapsed_seconds'] = round(time.monotonic() - started, 6)
++    print(json.dumps(report, sort_keys=True))
++    return 0 if report['status'] == 'PASS' else 1
++
++
++if __name__ == '__main__':
++    sys.exit(main())
+--- /dev/null
++++ candidate/evidence/gates/G8_ORIGINAL_R1_STOP.json
+@@ -0,0 +1,21 @@
++{
++  "at_utc": "2026-10-25T13:33:15.379397+00:00",
++  "gate": "G8",
++  "state": "ORIGINAL_R1_STOP_EA_INVALID",
++  "job_id": "54254461",
++  "review": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/REVIEW.txt",
++    "sha256": "e9f385731afc73845798180d2cacfe1d95e5258c41e31794d65aab21d6e3232e"
++  },
++  "authentication": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/ROOT_AUTHENTICATION.json",
++    "sha256": "6f47a98ed25da35c5e5bb0aaa5584c00d3cc6f451da2b7f7daebea5800b409de"
++  },
++  "failure_preservation": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/FAILURE_PRESERVATION_NATIVE.json",
++    "sha256": "14394220c67363193dcc71ddf22b8932aadf8e8bc6a0592336aff2864f806e8b"
++  },
++  "no_scientific_results": true,
++  "original_submission_consumed": true,
++  "not_retroactively_waived_by_future_reopening": true
++}
+--- /dev/null
++++ candidate/evidence/gates/MEMORY_AMENDMENT_R1_ACCEPTANCE.json
+@@ -0,0 +1,56 @@
++{
++  "at_utc": "2026-10-25T12:49:04.835249+00:00",
++  "state": "ACCEPTED_GO_AMENDMENT_AND_PREBENCHMARK_ENGINEERING_RESOURCE",
++  "scope": "Removefixed64GiBkernelhardceilingrequirementonly; retain64GiBSlurmrequest/measuredbenchmarkpeak<=32GiB/sciencebothpeaks<=64GiB/accountingscope/remaininggates. No source/sciencedefinitionchange.",
++  "base_protocol": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/design/PROTOCOL_V0_4_ACCEPTED.txt",
++    "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
++  },
++  "amendment": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/memory-enforcement-amendment-r1/RESOURCE_AMENDMENT_R1.txt",
++    "sha256": "65e9c36b40c53f9e438843707a74ff19c5eb44c2a9ee5ce1d48d34b09e723407"
++  },
++  "human_authority": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/memory-enforcement-amendment-r1/USER_APPROVAL_AUTHORITY.json",
++    "sha256": "58dc1ad6699215895d9371e1cf34609679a29ef6442c6960661f7ca892f1d877"
++  },
++  "independent_review": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/memory-enforcement-amendment-r1/independent-review/REVIEW.txt",
++    "sha256": "1fd52944e5d94cfc8314d38e09cc0797297d33a2d959086b51d19d60866864de"
++  },
++  "authentication": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/memory-enforcement-amendment-r1/independent-review/ROOT_AUTHENTICATION.json",
++    "sha256": "6fe88b6e121713f4991b22b30430f8f5ecc09651e64b5fea6fcf034ffabea15e"
++  },
++  "unchanged_source_manifest": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/ROOT_FROZEN_CANDIDATE.json",
++    "sha256": "cf4ea061d5e016b8bf24966fc6cd50ac142e06a2a86d54e1fcdfa27037d110a1"
++  },
++  "unchanged_runtime_source_acceptance": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/RUNTIME_V3_SOURCE_ACCEPTANCE.json",
++    "sha256": "6035807d2cd06a84dc4762cc7ce4643cecad315c9e95ed9ba3fa5ad0a8071cb5"
++  },
++  "engineering_evidence": [
++    {
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-v3-engineering-r1/ROOT_PARTIAL_AUTHENTICATION.json",
++      "sha256": "bc177b686958683798dafed73ff75af6ea65002338cef7b9331d5a86ddd368a6"
++    },
++    {
++      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/batch-native-resource-evidence-r2/ROOT_AUTHENTICATION.json",
++      "sha256": "911c2183d1d8497c7edf058dd0ffa80d46428603f45cd41e78bde6618872ff5e"
++    }
++  ],
++  "prior_STOP_preserved": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/ACTUAL_RESOURCE_STOP.json",
++    "sha256": "a8a5b5f211ad1285dfa52d707915507409e07464ccd77415e34b73261874bf0a"
++  },
++  "composite_identity_required_externally": true,
++  "cn136_pin_for_both_jobs": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/PINNED_NODE_SUBMISSION_PLAN.json",
++    "sha256": "05ba220a94e5ad8f518b1c31b2c438658513d52f1f1a85bd59e9f6c812fcc2aa"
++  },
++  "benchmark_G5_science_G6_G7_G8_G9_not_accepted": true,
++  "benchmark_scientific_submission_authorized_by_this_receipt": false,
++  "new_source_or_binary_compilation_required": false,
++  "caps_not_reset": true
++}
+--- /dev/null
++++ candidate/evidence/gates/RUNTIME_V3_SOURCE_ACCEPTANCE.json
+@@ -0,0 +1,25 @@
++{
++  "at_utc": "2026-10-25T04:49:20.279810+00:00",
++  "state": "ACCEPTED_GO_SOURCE_ONLY",
++  "scope": "ExactV3operationalSOURCE/job-resourcePLAN; separatelyscopedengineeringonlynext, no benchmark/scienceapproval.",
++  "source_manifest": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/ROOT_FROZEN_CANDIDATE.json",
++    "sha256": "cf4ea061d5e016b8bf24966fc6cd50ac142e06a2a86d54e1fcdfa27037d110a1"
++  },
++  "nonauthor_review": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-v3-independent-source-resource-review/REVIEW.txt",
++    "sha256": "b0362f7b3fd896410e870249d4a5aded2c918240635e15f8487691ab7f740d7b"
++  },
++  "review_authentication": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-v3-independent-source-resource-review/ROOT_AUTHENTICATION.json",
++    "sha256": "a8265b5a29d4bee2a6f9c8a8fb62d5279d1e4aa68627583193641a0511489ec2"
++  },
++  "review_deviation_disposition_explicit": true,
++  "human_standing_authority": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/implementation-readiness-120m/AUTONOMOUS_CONTINUATION_AUTHORITY.json",
++    "sha256": "bf0d76e39eeb64cfffd3da9fcae95a7387940166b20cdef6fdb42de919dfd536"
++  },
++  "engineering_passed": false,
++  "benchmark_scientific_submitted": false,
++  "G4_scientific_accepted_unchanged": true
++}
+--- /dev/null
++++ candidate/evidence/resource-qualification/benchmark-r1/BENCH_RECEIPT.txt
+@@ -0,0 +1,36 @@
++BIT002 BENCH_RECEIPT R1
++decision=PASS
++job_id=54251116
++base_protocol_sha256=71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
++resource_amendment_sha256=65e9c36b40c53f9e438843707a74ff19c5eb44c2a9ee5ce1d48d34b09e723407
++human_amendment_authority_sha256=58dc1ad6699215895d9371e1cf34609679a29ef6442c6960661f7ca892f1d877
++independent_amendment_acceptance_sha256=2be5521ed34d747bc83050c5633787d8d757aac41a459dcebecf9cdfb16134f7
++root_benchmark_authority_sha256=ae81ab25e5b2fdcad0a632d3d1a5315417e054863dcd7ffaa67e6834d1bfaaee
++T_prod=0.436888669
++T_ioS=1.14102081
++T_hashS=0.153146746
++T_P3=0.016280129
++T_an=0.836796009
++T_aud=1.864260882
++T_an_K=0.631900023
++T_aud_K=1.659840186
++s=41.015625
++C_seconds=17.919261814453125
++IO_seconds=1.14102081
++V_seconds=139.901006156171875
++total_seconds=158.961288780625000
++twice_total_seconds=317.922577561250000
++cgroup_peak_bytes=113963008
++Slurm_MaxRSS_bytes=112676864
++max_peak_bytes=113963008
++benchmark_total_bytes=90939654
++projected_production_output_upper_bytes=107106080
++original_parent_batch_extern=COMPLETED_0:0
++native_elapsed_seconds=7
++node=cn136
++CPUs=32
++requested_memory_GiB=64
++both_timing_status=VALID
++all_G5_criteria=PASS
++full_receipt_json_sha256=6eee853b28b30ad521ab92ff3ec3bdaee2b40131c91fe52cf4d56e2a39e4e234
++independent_G6=NOT_YET_PERFORMED
+--- /dev/null
++++ candidate/evidence/resource-qualification/memory-enforcement-amendment-r1/RESOURCE_AMENDMENT_R1.txt
+@@ -0,0 +1,23 @@
++PHASE3-BIT-RETRIEVAL-CAUSALITY-002 — OPERATIONAL RESOURCE AMENDMENT R1
++
++Status: exact candidate for one genuine independent GO/STOP review.
++Base scientific protocol: PROTOCOL_V0_4_ACCEPTED.txt, SHA25671ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa.
++Human authority: USER_APPROVAL_AUTHORITY.json beside this addendum, preserving the exact latest human approval.
++
++1. Scope and precedence
++This addendum changes only the operational interpretation of section18.1's64GiB/cgroups-enforced requirement. It removes the requirement that the operating system's effective cgroup hard ceiling must be at or below64GiB. Cgroups must remain active with legitimate job-wide memory high-water accounting. A scheduler-installed hard ceiling above64GiB is allowed and must be recorded honestly; a64GiB soft limit is not described as a hard64GiB limit. No privileged cgroup or site configuration change is requested.
++
++2. Binding limits retained
++Both benchmark and production still request32CPUs/one node/one task/64GiB Slurm memory, with10minute benchmark and8hour production limits. Actual job-wide cgroup peak and original-step Slurm MaxRSS must both be available and have appropriate scope. Benchmark acceptance still requires the larger peak<=32GiB. Scientific execution acceptance still requires BOTH peaks<=64GiB. Existing fail-closed polling/kill-on-observed-excess behavior is retained, including any between-sample excess making the execution fail. Monitoring does not claim atomic kernel enforcement; that requirement alone has been removed. An OOM, missing accounting, exceeded measuredlimit or failed required original step still fails the corresponding gate. All output and timing/projection limits are unchanged.
++
++3. Existing evidence and review
++Observed batch54220499 oncn136 had64GiB requested/softallocation, hard178670637056bytes (~166.4GiB), active hierarchical cgroupv1 and legitimatejobpeak accounting. Exact observed values remain disclosed. Prior SOURCEGO/G4 and passed engineering identity/runtime/filesystem/timing checks may be reused at their authenticated scope. Original engineering54220374FAILED40:0 and metadata54220450FAILED1:0 are preserved as failures; they are not retroactively renamed successful jobs. The hard64GiB assertion that blocked engineering is no longer an applicable positive gate under this addendum. The new independent review must decide whether the unchanged accepted runtime package and accumulated engineering evidence satisfy the amended pre-benchmark milestone. Native environment/resource/package identities must still be revalidated before actual submission. The proposed cn136 pin for both benchmark and production selects a known member of the already frozen class; it is not a new CPUclass.
++
++4. Exact identity without scientific rebuild
++The original protocol file remains byte-for-byte immutable and its SHA256 remains the scientific protocol identity embedded in binaries/manifests/records. The FULL governing operational contract is now that original file PLUS this exact addendum and its human authority, independent acceptance and exact ROOT submission authority hashes. This composite identity must be bound externally in the pre-submission authority, benchmark receipt, scientific authority, independent execution-acceptance record and publication reproducibility material. An original base-protocol hash alone must never be claimed to identify the amended operational conditions. Existing accepted source, binaries, scripts, helper, schema and configuration remain unchanged. The addendum need not be inserted into scientific data inventories or runtime configuration whose schema forbids extra fields. Any required source change would need its own applicable review and is not automatically authorized by the addendum review.
++
++5. Reopening and remaining gates
++The old genuine resource STOP remains correct under the unamended requirement and all its native evidence is preserved. Latest human approval permits this one concrete amendment/reopening despite historical correction-count or closed-route text; there is no reset of prior counts/time, no general source-repair allowance and no prospective fourth/fifth blanket correction authority. G2-G4implementation allowance remains closed. Work counts inside unchanged16activehour cumulative readiness; sum ROOT and full model durations conservatively including parallel time. No benchmark or scientific slot has been consumed. One fresh independent amendment/resource GO is necessary before ROOT can authorize the SINGLE outcome-blind B1-B6 benchmark. All G5qualification requirements, independentG6readiness, ROOTG7exact-hash authority for SINGLE production submission, independentG8EA BEFORE unsealing and independentG9publication review remain. No arrays/retry/resume/postproduction program reruns or favorable scientific/journal promises.
++
++6. Scientific invariance and reporting
++No endpoint, target, checkpoint, cohort, key, random tape, operator, record serialization, inferential calculation, scientific source or binary changes. All six prespecified estimates and limitations, null/adverse/bounded/unresolved findings and legacy failures remain required. No scientific outcomes have been observed to motivate this amendment. ReducedBIT002does not complete the original frozen incomplete study.
+--- /dev/null
++++ candidate/evidence/resource-qualification/runtime-node-mapping-fix-v3/ROOT_FROZEN_CANDIDATE.json
+@@ -0,0 +1,112 @@
++{
++  "at_utc": "2026-10-25T04:18:31.014729+00:00",
++  "state": "FROZEN_RUNTIME_V3_SOURCE_ONLY_EXACT_RE_REVIEW_PENDING",
++  "source_directory": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3",
++  "files": [
++    {
++      "path": "AUTHENTICATED_INPUTS.json",
++      "bytes": 4663,
++      "sha256": "3daf3ce48966fd307f5021017313c01fe86679de85da4ffe5007b3dbf33d0441"
++    },
++    {
++      "path": "CPU_METADATA_AUTHENTICATION.json",
++      "bytes": 6410,
++      "sha256": "e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f"
++    },
++    {
++      "path": "DEFAULT_PYTHON_IDENTITY_NATIVE.json",
++      "bytes": 2188,
++      "sha256": "571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051"
++    },
++    {
++      "path": "NODE_TOOLCHAIN_FREEZE.json",
++      "bytes": 3586,
++      "sha256": "33440895fb87e6ea3709c65c741c7136480200947e42c2c6c74c9ff145f5339f"
++    },
++    {
++      "path": "NODE_TOOLCHAIN_FREEZE.schema.json",
++      "bytes": 4782,
++      "sha256": "e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d"
++    },
++    {
++      "path": "NODE_TOOLCHAIN_FREEZE.txt",
++      "bytes": 4884,
++      "sha256": "a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87"
++    },
++    {
++      "path": "PROTOCOL_V0_4_ACCEPTED.txt",
++      "bytes": 81247,
++      "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
++    },
++    {
++      "path": "PUBLIC_TIMING_CLI_CONTRACT.json",
++      "bytes": 1773,
++      "sha256": "bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e"
++    },
++    {
++      "path": "README.txt",
++      "bytes": 30010,
++      "sha256": "878decc97a030776bb2a998f5c3379e5662ce095169e0b78bd91d54c5208fac1"
++    },
++    {
++      "path": "SOURCE_AUTHOR_REPORT.txt",
++      "bytes": 6904,
++      "sha256": "6100e2fbdc7e1f1fdb72ad326a11ddfdb81faa22d5b2c84c43ed64610acd81ed"
++    },
++    {
++      "path": "SOURCE_INVENTORY.tsv",
++      "bytes": 1532,
++      "sha256": "e4567cecbd5512309baca9cc5fa26a9ad0168eb4d60db25910c276740fbb140f"
++    },
++    {
++      "path": "V2_COMPLETION_REPORT.txt",
++      "bytes": 12768,
++      "sha256": "894a591ce7089b06a7c7f488546ab1d3a8ac43c8b87ecbd3c5719a18b8ccaf8b"
++    },
++    {
++      "path": "V2_DIFF.patch",
++      "bytes": 82527,
++      "sha256": "d352e2b04896b36956c25a3daf6e2e1a8a70bc9e042863e09c85c27afe3e5eb1"
++    },
++    {
++      "path": "V3_DIFF.patch",
++      "bytes": 20169,
++      "sha256": "2e9d1f60675dc9da72ca20dea0f36eae9d0477383a1ad3fb757613c76ac9ce02"
++    },
++    {
++      "path": "V3_NODE_MAPPING_REPORT.txt",
++      "bytes": 12580,
++      "sha256": "921d06f9462bc49d90a3a283cdd772cff1098660dbd942a19b5dc20b9f4a5a2c"
++    },
++    {
++      "path": "benchmark.sh",
++      "bytes": 2060,
++      "sha256": "75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263"
++    },
++    {
++      "path": "production.sh",
++      "bytes": 2062,
++      "sha256": "4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753"
++    },
++    {
++      "path": "runtime_helper.py",
++      "bytes": 40963,
++      "sha256": "77951448572ceb59c7b3f5663f7a19d5b7e17606a57f1fa72218e6b83257a5a1"
++    }
++  ],
++  "base_manifest_sha256": "4ff2648f22afe5cb45f7805801018c144ab70378742de52490cb4b8235d2fb20",
++  "changed_original_files": [
++    "NODE_TOOLCHAIN_FREEZE.json",
++    "README.txt",
++    "SOURCE_INVENTORY.tsv",
++    "runtime_helper.py"
++  ],
++  "unchanged_original_files": 12,
++  "added_files": [
++    "V3_DIFF.patch",
++    "V3_NODE_MAPPING_REPORT.txt"
++  ],
++  "only_behavior_change": "node_class canonicalSLURMD_NODENAME query/match; OS hostname separateprovenance; resthelperbytesidentical",
++  "source_GO": false,
++  "source_or_benchmark_executed": false
++}
+--- /dev/null
++++ candidate/evidence/resource-qualification/scientific-r1/G8-failure-audit-r1/REVIEW.txt
+@@ -0,0 +1,103 @@
++VERDICT: STOP
++
++The single original BIT002 scientific execution, **job 54254461**, is authenticated as an authorized execution that failed during P2. **EA is unmet; the execution is INVALID under §13.2.** Sections 18.4 and 19.5 close the current route with this failure/feasibility disposition. Correctly passed G6 readiness and G7 submission authority do not imply G8 acceptance.
++
++I am a fresh nonauthor reviewer and authored none of the scientific, runtime, design, receipt or previous-review artifacts. I reuse accepted G0–G6 at their existing scopes. This assessment uses only the named local originals and preserved native records; I performed no direct cluster inspection.
++
++All **31 named inputs** match their supplied byte counts and SHA-256 values. The decision binds the following identities; paths are relative to the supplied BIT002 output directory.
++
++| Artifact | SHA-256 |
++|---|---|
++| `design/PROTOCOL_V0_4_ACCEPTED.txt` | `71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa` |
++| `resource-qualification/memory-enforcement-amendment-r1/RESOURCE_AMENDMENT_R1.txt` | `65e9c36b40c53f9e438843707a74ff19c5eb44c2a9ee5ce1d48d34b09e723407` |
++| Amendment `USER_APPROVAL_AUTHORITY.json` | `58dc1ad6699215895d9371e1cf34609679a29ef6442c6960661f7ca892f1d877` |
++| `gates/MEMORY_AMENDMENT_R1_ACCEPTANCE.json` | `2be5521ed34d747bc83050c5633787d8d757aac41a459dcebecf9cdfb16134f7` |
++| `gates/G6_ACCEPTANCE.json` | `5e3045f467ddb21601db572564c79312da7fa0f2fec9a9e79d38d491383141b2` |
++| G6 independent `REVIEW.txt` | `4fccea3a63ae449d0e4ef0f6194fde147c3e3fd29316c5d5d285dce1789933fd` |
++| G6 `ROOT_AUTHENTICATION.json` | `6ba8a8e2382871a75dd31249dfae7420a2756ad65dc43ac849a3942a955c8fbb` |
++| `scientific-r1/ROOT_SCIENTIFIC_AUTHORITY.json` | `00734ea03f35d41784be8ed2ef57432c17799201e8d8331910f506e827646a4e` |
++| `gates/G7_EXECUTION_AUTHORITY.json` | `334c96cfd5c1a7c836181169fddadf3fd036339e6dd1cbfd27704a398fbb4dd9` |
++| `scientific-r1/FAILURE_NATIVE_FETCH.json` | `f5aad941fdc43d59215cbb938e1b40f25dd1374361f68abde64c61cf5fad4b0c` |
++| `scientific-r1/FAILURE_PRESERVATION_NATIVE.json` | `14394220c67363193dcc71ddf22b8932aadf8e8bc6a0592336aff2864f806e8b` |
++| Original `logs/P2.json` | `87da4c06095a34bcd4b58c3e12daf6cf68a1ef5b7f856061c835163fb18621ea` |
++
++The full governing contract is the base protocol **plus** the exact amendment, human authority, accepted amendment review and Root submission authority. The accepted amendment-review/authentication hashes recorded in that chain are respectively `1fd52944e5d94cfc8314d38e09cc0797297d33a2d959086b51d19d60866864de` and `6fe88b6e121713f4991b22b30430f8f5ecc09651e64b5fea6fcf034ffabea15e`; their unlisted files were not opened. The base hash alone does not identify the amended operational contract.
++
++The preserved native submission is exactly:
++
++```text
++sbatch --parsable --nodelist=cn136 /mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r1/production.sh
++```
++
++It returned transport/submission code 0 and job ID `54254461`. Intent, handle, G7 authority, exclusive marker and native accounting consistently identify **one actual scientific submission**. Native control records show `Requeue=0`, `Restarts=0`, cn136, one node/task, 32 CPUs, 64G requested/allocated and an eight-hour limit. Parent and `.batch` are **FAILED/1:0**, elapsed **15 seconds**; `.extern` is **COMPLETED/0:0**. Native timestamps are 2026-10-25 09:20:32–09:20:47, consistent with the UTC metadata. Extern completion does not establish scientific success.
++
++G7 accounting binds the 68-row ledger at SHA-256 `04f1014995f489eb67f502bc8c030119ba52637d3ca68f22267f1a0355b7bc18`. Its non-wait sum is **19,581.751481 seconds**, matching the authority record and retaining the full G6 review duration and prior debits.
++
++P1 completed sufficiently to establish identities and the exclusive namespace. P2 invoked:
++
++```text
++/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce --tier production-r1 --out /mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-r1/data --threads 32
++```
++
++The accepted binary hashes match in the frozen configuration, original identities, G7 authority and preserved postfailure hash evidence:
++
++| Binary | SHA-256 |
++|---|---|
++| Producer | `bc597d652bfab0f05cab7e9ca52e53ea7ddc365e304a7fe4588d7386fc4031f0` |
++| Analyzer | `0af66a01615414129be30df2d75df9efbfa724660d4c1701b9799982ea367721` |
++| Auditor | `950ac9ffb49faaca3ec6568c8b55cdd9b8349e1f2782bcfe33c7d07fa3182eca` |
++
++Accepted scientific-source identities remain reused through G6; no source or binary alteration is established. Native identities confirm cn136’s accepted Gold 6342/x6342/u467 class, frozen toolchain/Python and NFS filesystem.
++
++P2 records **13.696835370 seconds**, child return code **−9**, `success=false`, and `violation=output_monitor_failed`. Both child streams are empty; `job.log` contains only `P2 producer start`. The shell then stopped and its original EXIT trap produced failure measurements. **P3/DC, P4 analyzer, P5 auditor and P6 agreement were never reached.** No analyzer results, auditor results, audit report or agreement files exist.
++
++Resource evidence supports no reported cap exceedance:
++
++| Measurement | Preserved value |
++|---|---:|
++| Legitimate job-wide cgroup peak | 114,257,920 bytes |
++| Original batch MaxRSS | 110,356 KiB = 113,004,544 bytes |
++| Original extern MaxRSS | 256 KiB |
++| Run files | 81,457,796 bytes |
++| Exclusive marker | 61 bytes |
++| Conservative output including marker | 81,457,857 bytes |
++| Native elapsed | 15 seconds |
++
++Both memory peaks are below 64 GiB, output is below 2 GiB and elapsed is below 28,800 seconds. The original in-job receipt correctly left native MaxRSS/accounting pending; preserved terminal accounting supplies them. The accepted amendment removed the mandatory **kernel hard ceiling of 64 GiB**, retaining measured limits and failure rules. This failure cannot be attributed to that superseded requirement.
++
++Bounded static fault localization uses only:
++
++```text
++resource-qualification/runtime-node-mapping-fix-v3/candidate-source-v3/runtime_helper.py
++SHA-256 77951448572ceb59c7b3f5663f7a19d5b7e17606a57f1fa72218e6b83257a5a1
++```
++
++The production script is SHA-256 `4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753`, under frozen runtime manifest `cf4ea061d5e016b8bf24966fc6cd50ac142e06a2a86d54e1fcdfa27037d110a1`.
++
++In helper lines 256–269, `sizes(run)` walks the live namespace and calls `lstat`, with validation capable of raising `ValueError`. Lines 437–449 catch `OSError`/`ValueError`, retain only `output_monitor_failed`, and SIGKILL a still-running child process group. This provides a source-supported explanation consistent with recorded −9 termination.
++
++A rename/stat race involving a temporary filename during concurrent production, or an NFS/filesystem error, is plausible. Neither is established. Validation rejection is another source-permitted possibility. **The actual exception class, message, pathname and event sequence were not captured.** No specific root cause, tested fix or inevitable recurrence is established; −9 alone would not identify who sent the signal.
++
++The EA conditions resolve as follows:
++
++| §13.2 condition | Disposition |
++|---|---|
++| Original job and every step COMPLETED/0:0 | **Failed:** parent/batch FAILED/1:0; P2 unsuccessful |
++| Resource limits | Recorded measurements within retained limits |
++| Independent DC verification | **Unmet:** producer nonzero; incomplete inventory; no manifest/data commit |
++| Original successful agreement and equal recomputed result hashes | **Unmet:** agreement and both results absent |
++| Analyzer line 2 `status=VALID` | **Unmet:** analyzer result absent |
++
++No raw-data inspection is needed to establish these failures.
++
++All seven base64-encoded metadata/log files in `FAILURE_NATIVE_FETCH.json` decode byte-for-byte to the named local originals, matching lengths and hashes. Fetch and preservation inventories agree. Preservation records **46 unique files: 39 chunk files and seven metadata/log files**, totaling 81,457,796 bytes. Their recorded frozen modes are `0400`; directories are recorded read-only. Preservation occurred after terminal failure.
++
++These partial-file hashes were produced by **Root’s mechanical preservation**, not by the scientific program. They preserve identity evidence and do not establish DC, scientific completeness or validity. I verified inventory metadata and copied-original correspondence without reading raw chunks or claiming independent cluster/raw-file inspection. Postfailure freezing cannot substitute for P3.
++
++The scientific slot is consumed. Standing continuation approval expressly preserves submission and EA gates. There is no authority for retry, resume, new blocks, replay, reanalysis, replacement agreement or replacement submission. Unsealing is forbidden, and no estimates exist to unseal. No partial records were aggregated or interpreted.
++
++This execution establishes a failed runtime route, **not scientific or computational infeasibility and not a negative mechanism finding**. Accepted benchmark feasibility remains at its original qualification scope and provides no production guarantee. All prior failures, STOPs, accounting history and the old incomplete study remain preserved; this attempt completes none of them. Only a focused failure/feasibility report is supported. Accepted scientific results, a publication claim, favorable findings and journal acceptance are not supported or promised.
++
++Any future reopening would require **separate explicit human authority** defining a new bounded scope and addressing the consumed slot, closed correction allowance, preserved history and applicable budgets. Any authorized artifact change would require its applicable independent acceptance, followed by readiness, exact execution authority, successful original execution and independent EA before outcome access; publication would retain its own review gate. No such work is initiated or authorized here, and no re-review to seek another verdict follows.
++
++Review bounds: **7 local command invocations, including one denied here-document attempt; 6 completed static read/hash/JSON/text commands.** No network, scheduler action, delegation, helper import, build, fixture, scientific-program invocation, raw outcome access or successful file write occurred. Automatic Python cache writes were denied. No canonical returned-model identity is exposed or claimed.--- /dev/null
++++ candidate/evidence/resource-qualification/scientific-r1/G8-failure-audit-r1/ROOT_AUTHENTICATION.json
+@@ -0,0 +1,34 @@
++{
++  "at_utc": "2026-10-25T13:33:15.372858+00:00",
++  "state": "AUTHENTICATED_GENUINE_NONAUTHOR_G8_ORIGINAL_EXECUTION_STOP_INVALID_EA",
++  "verdict": "STOP",
++  "exact_inputs_verified": 31,
++  "native_completed_commands": 6,
++  "reported_invocations_including_denied_heredoc": 7,
++  "bounds_disposition": "All6completedcommands were namedstaticread/hash/JSON/text; no network,scientific/helperexecution,rawdata/outcomes,sourcewritesordelegation. Nativewarnings/deniedcacheattemptspreserved.",
++  "review": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/REVIEW.txt",
++    "sha256": "e9f385731afc73845798180d2cacfe1d95e5258c41e31794d65aab21d6e3232e"
++  },
++  "native_terminal": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/PROCESS_TERMINAL.json",
++    "sha256": "79008dcff63cab11a9c6b726334ec99c42640d66898ec8aa7172394b7e915930"
++  },
++  "native_stdout": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/native_stdout.jsonl",
++    "sha256": "e0d26a1a0372fd8d3a8914d42e7a92052faf963e4a3816f60177b463ca202c27"
++  },
++  "native_stderr": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/native_stderr.txt",
++    "sha256": "85df5abe0c7a81cc014ca4ebf7b0da7028a66051747a57c464a15b5b40c05b2e"
++  },
++  "command_audit": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/ROOT_COMMAND_AUDIT_DATA.json",
++    "sha256": "321c1d8ff828c1fcd46cc9681134b387ecab2f70d69b563e9c9952dff3196d95"
++  },
++  "requested_model": "gpt-6.1-sol",
++  "canonical_returned_model_exposed": false,
++  "identity_limit": "GenuineCLIexplicitrequestboundaryonly",
++  "full_generation_seconds": 189.453297247,
++  "ROOT_concurrence": "Original54254461failedP2/runtimeoutputmonitor; EAinvalid, noDC/results/agreement; partialfilesfrozen/hashonly; no memory/time/outputcapexceedanceestablished. Underlyingexceptionunresolved. No scientificnegative/infeasibilityclaim. Anynewexecution requiresnewhumanrerunauthority,notretroactiveacceptance."
++}
+--- /dev/null
++++ candidate/evidence/resource-qualification/scientific-r1/ROOT_FAILURE_AUTHENTICATION_PROVISIONAL.json
+@@ -0,0 +1,42 @@
++{
++  "at_utc": "2026-10-25T13:25:32.726521+00:00",
++  "state": "AUTHENTICATED_ORIGINAL_SCIENTIFIC_JOB_FAILURE_INDEPENDENT_G8_DISPOSITION_PENDING",
++  "job_id": "54254461",
++  "native_failure_fetch": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/FAILURE_NATIVE_FETCH.json",
++    "sha256": "f5aad941fdc43d59215cbb938e1b40f25dd1374361f68abde64c61cf5fad4b0c"
++  },
++  "native_terminal_first_check": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/STATUS_NATIVE_1.json",
++    "sha256": "231dca54f38ae05c0061b1423d221b319aa5e0124ec5f64ab1514e698766aca2"
++  },
++  "partial_evidence_preservation": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/FAILURE_PRESERVATION_NATIVE.json",
++    "sha256": "14394220c67363193dcc71ddf22b8932aadf8e8bc6a0592336aff2864f806e8b"
++  },
++  "P2_step": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/original-job-failure-evidence/logs/P2.json",
++    "sha256": "87da4c06095a34bcd4b58c3e12daf6cf68a1ef5b7f856061c835163fb18621ea"
++  },
++  "P2_recorded_violation": "output_monitor_failed",
++  "producer_return_code": -9,
++  "original_job_and_batch": "FAILED1:0",
++  "extern": "COMPLETED0:0",
++  "original_elapsed_seconds": 15,
++  "cgroup_job_peak_bytes": 114257920,
++  "Slurm_batch_MaxRSS_bytes": 113004544,
++  "max_two_peaks_bytes": 114257920,
++  "memory_output_time_caps_not_exceeded_in_recorded_evidence": true,
++  "failure_category": "Runtimeoutputmonitorfailure; no specificunderlyingOSError/ValueErrordetailwaslogged. Exactunderlyingcauseunresolved; do notasserttestedfix orscientificoperatorfailure.",
++  "P3_DC_P4_P5_P6_not_reached": true,
++  "scientific_results_audit_report_agreement_absent": true,
++  "partial_files_hashed_frozen": 46,
++  "partial_run_bytes": 81457796,
++  "data_manifest_not_committed": true,
++  "science_binary_hashes_unchanged": true,
++  "scientific_submission_consumed": true,
++  "benchmark_submission_consumed": true,
++  "program_rerun_reanalysis_retry_or_replacement_not_authorized": true,
++  "scientific_estimates_unsealed_read_or_interpreted": false,
++  "original_study_and_prior_evidence_preserved": true
++}
+--- /dev/null
++++ candidate/evidence/resource-qualification/scientific-r1/original-job-failure-evidence/logs/P2.json
+@@ -0,0 +1,49 @@
++{
++  "cgroup_final": {
++    "available": true,
++    "bytes": 114257920,
++    "path": "/sys/fs/cgroup/memory/slurm_cn136/uid_1337049/job_54254461/memory.max_usage_in_bytes",
++    "sample_utc": "2026-10-25T13:20:47.346480+00:00",
++    "scope": "job",
++    "version": 1
++  },
++  "cgroup_initial": {
++    "available": true,
++    "bytes": 16216064,
++    "path": "/sys/fs/cgroup/memory/slurm_cn136/uid_1337049/job_54254461/memory.max_usage_in_bytes",
++    "sample_utc": "2026-10-25T13:20:33.648904+00:00",
++    "scope": "job",
++    "version": 1
++  },
++  "cgroup_peak_observed": {
++    "available": true,
++    "bytes": 114257920,
++    "path": "/sys/fs/cgroup/memory/slurm_cn136/uid_1337049/job_54254461/memory.max_usage_in_bytes",
++    "sample_utc": "2026-10-25T13:20:46.327820+00:00",
++    "scope": "job",
++    "version": 1
++  },
++  "command": [
++    "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce",
++    "--tier",
++    "production-r1",
++    "--out",
++    "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-r1/data",
++    "--threads",
++    "32"
++  ],
++  "end_monotonic_ns": 144797092052362,
++  "end_utc": "2026-10-25T13:20:47.346499+00:00",
++  "returncode": -9,
++  "start_monotonic_ns": 144783395216992,
++  "start_utc": "2026-10-25T13:20:33.648920+00:00",
++  "stderr_bytes_saved": 0,
++  "stderr_bytes_seen": 0,
++  "stdout_bytes_saved": 0,
++  "stdout_bytes_seen": 0,
++  "step": "P2",
++  "success": false,
++  "timing_stdout": null,
++  "violation": "output_monitor_failed",
++  "wall_ns": 13696835370
++}
+--- /dev/null
++++ candidate/evidence/resource-qualification/scientific-r2-reopening/INTEGRATED_RUNTIME_REPAIR_BRIEF.txt
+@@ -0,0 +1,15 @@
++BIT002 R2 INTEGRATED RUNTIME CORRECTION BRIEF — SOURCE ONLY
++
++User authorized one fresh full rerun after the original monitor failure. Originaljob54254461isINVALIDandall46partialfilesfrozen. No originalresult/manifest/agreementexists. Preserveallhistory; no recovery/resume/partialaggregation.
++
++Deliver one complete new runtime-package-r2 SOURCEcandidate plus one finite self-contained engineering regression fixture SOURCE, before any execution. Reuse exactscientificprotocol/source/binaries/keys/counts/endpoints/inference untouched. Old accepted18filepackage is baseline; copyall18files first anddeclarechanges. Changes only for robustliveoutputsize scan, retained diagnostics, scientific-r2/runtime-package-r2 paths and necessary config/hash/inventory/docs reseal. Do not redesigncontroller/security/error taxonomy orscientificsoftware.
++
++Actualfailure: P2 returncode-9; violationoutput_monitor_failed; childstdout/stderrempty. Genericcatchdoesnotretainactualexception/path, so specificrootcauseUNRESOLVED. Existing sizes(run) os.walk listsdirectories/files andthenlstat; a trustedwriteratomicrename between enumeration andstat legitimatelyraisesFileNotFoundError. OSError/ValueErrorcatchthenkillchild. This is source-evident robustnessdefect worthcorrecting, not proofitcausedthisexactoldfailure. OtherOS/validationerrorsmustremainfatalandprovideusefuloriginalexceptiontype/message/path in structuredstepmetadata.
++
++Correction should obtain a bounded complete usage scan despite legitimateconcurrenttemp-to-finalrename, e.gboundedfullrescanonFileNotFoundErrorONLY. No silent skippingofunreadablefiles, no unboundedretry or swallowingpersistent errors, no ignoringpermission errors/symlinks/nonregularobjects or missingrunroot. Keep measuredmemory/output/log caps and all postterminalcriteria. os.walk traversalerrorsmustnotbe silentlyignored. Sourceauthor chooses a small clear implementation. On failure retain concreteexceptioncontext; preserve fail-closedkilling/stepfailure. Do not claimatomicfilesystemquota; existingtrustedwriterbounds+finalchecksremain. Preserveothermonitor/timing/directexecution/DC/agreement/scientificlogic byte-for-byte except strictlynecessarywiring/context.
++
++Freshoutputpaths are REQUIRED: PACKAGE=.../runtime-package-r2, productionrun=.../scientific-r2; once marker.scientific-r2.once derivesfromnewrun. production.sh pointsnewpackage/newrun butsameacceptedC++binaries/tierproduction-r1/allresourceargs/CPUclass. Frozenconfig protocol PATH updatesnewpackage but baseprotocolBYTES/hashremain71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa; resealnewhelper/scriptSHAkeys inexistingclosedschema. Externalcompositebase+memoryamendment+USER_RERUN_AUTHORITY+futureindependentacceptances/Rootauthority mustidentifyoperatingconditions; no new scientificrecordfields. Oldbenchmarkconsumed; benchmark.sh mayremainarchivaloldr1reference withnoauthoritytorun it; do notcreate/executeanotherbenchmark. Explain this explicitly. Alloldr1sources/remoteevidenceuntouched.
++
++Deliver one engineering_fixture.py SOURCE self-contained for AFTERnonauthorSOURCEGO onnewcandidate. It usesacceptedexistingPython3.11, standardlibrary, NEWscratchoutsidebenchmark/scientificnamespaces, smallboundedruntime/storage. It must meaningfullycheckactualcorrectedsize-scan against real concurrenttrustedtemp-write/fsync/rename activity, deterministicvanishingentryregression at enumeration/stat boundary withcompletecountafterboundedrecovery, exhaustion/persistentfailure, and retained fatalpermission/symlink/nonregular/missingroot behavior as applicable. No scientificprograms/Philox/cohort/productionkeys/rawrecordfixtures/data/results, no newpopulation/performancebenchmark, no helperprepare/timed/iovol/DC/receipt/main or scientificmarkers. Importnewhelperfor itssize-scan only AFTERSOURCEGO (notnow); inputARGUMENTSroot+helperpath, emitsfiniteJSONPASS/FAILengineeringchecks soROOTcanbindownruntime/FS/tool/nativeallstepsreceipt. Keepfixturesyntheticconcurrentwriterworkload<=16MiB and<=60s; thisisengineeringcorrectnessnotresourcequalification. No sourceexec/fixture execution now.
++
++Reportcompletechanged/unchangedfilelist, fullunifieddiffversusall18baselinefiles, fullcandidateinventoryhashes, exact operationalpath/hashreplacements, boundedcorrectionrationaleandresidualuncertainty, fixture invocation andexpectedengineering-onlyoutputs. Includeunmodifiedprotocol andevidencefiles innewcandidate. No testedruntimePASSclaim atSOURCEstage.
+--- /dev/null
++++ candidate/evidence/resource-qualification/scientific-r2-reopening/USER_RERUN_AUTHORITY.json
+@@ -0,0 +1,19 @@
++{
++  "at_utc": "2026-10-25T13:34:53.147028+00:00",
++  "human_request": "rerun",
++  "context": "User responded to authenticated originalsciencefailedP2outputmonitorreport; assistant stated oneadditionalfullscientificrun aftercorrectingandindependentlyvalidatingmonitorfailure, preservingfailedattempt/design.",
++  "scope": "ExactlyONEadditionalcompleteoriginal scientific submission in freshscientific-r2namespace, preceded by necessary integrated runtime monitor correction, genuine nonauthor sourceGO, one complete synthetic concurrent-writer engineering validation and fresh independent readinessGO/Rootexacthash authority. No resume/overwrite/partialaggregation fromscientific-r1.",
++  "explicit_override": "Latesthumanrerunrequestsupersedes consumedone-scientific-submissionlimit and closedroute ONLYtoauthorizeoneadditionalfreshfullr2attempt and necessaryordinaryruntimeimplementationvalidation. Historicalslots/corrections/timeandfailedr1remainpreserved; no blanketfutureattempts.",
++  "unchanged": "All scientificC++sources/binaries/baseprotocol/33keys/tierproduction-r1/42000blocks/cohorts/6endpoints/inference; memoryamendment andactualmeasuredresource/output/time/EA/publicationgates; original16hbudget, closedG2-G4implementationallowance,noautomaticcredits/reset.",
++  "benchmark": "ExistingONEbenchmark54251116validatessameCPUclassandunchangedsciencebinaries. Do notrerunbenchmark automatically; freshreadinessreviewmustassessproportionatereuseafterboundedmonitorfix. Anygenuineneedforadditionalbenchmarkor scientificdesignchangeisnot silentlywaived.",
++  "old_invalid_execution": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/G8_ORIGINAL_R1_STOP.json",
++    "sha256": "5ee7e743a5c8604825501522732d7ffcc91853d0cb5af4f63ab0d44793f1c4ed"
++  },
++  "old_original_failure_preservation": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/FAILURE_PRESERVATION_NATIVE.json",
++    "sha256": "14394220c67363193dcc71ddf22b8932aadf8e8bc6a0592336aff2864f806e8b"
++  },
++  "future_gates": "SourceGO BEFOREchangedsourceimport/compile/fixtures; completeengineeringvalidation thenfreshindependentreadinessGO thenRootexactG7R2 thenONEadditional science;independentEA/G8R2 beforeunseal;G9publication.",
++  "scientific_execution_immediately_authorized": false
++}

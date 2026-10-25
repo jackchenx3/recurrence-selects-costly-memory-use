@@ -1,0 +1,182 @@
+BIT002 V2 INTEGRATED OPERATIONAL COMPLETION REPORT
+
+Disposition: COMPLETE SOURCE CANDIDATE, preserved-source-only, NOT EXECUTED,
+NOT INDEPENDENTLY ACCEPTED, NO SOURCE/RESOURCE GO, NO BENCHMARK OR SCIENCE.
+This author is not the required independent reviewer. No gate is self-approved.
+The v1 partial package remains unchanged at its original source/snapshot/report
+locations. Only this workspace was written. The unchanged historical
+SOURCE_AUTHOR_REPORT.txt does not describe current V2 status; README supersedes
+its old timing/interface, pending metadata and interpreter statements.
+
+Authentication before edit
+
+The named ROOT_FROZEN_CANDIDATE.json authenticated at 1487 bytes and
+fcbaeff0f30f9315911bc46db26b6f2e238c36c568435d98c3e5451587e411eb.
+All seven initial workspace files matched its exact bytes and SHA-256 BEFORE
+any edit. All eleven user-named authority inputs matched supplied sizes/hashes;
+AUTHENTICATED_INPUTS.json records their exact identities and the baseline table.
+The preserved external seven-file v1 source was re-read for the diff and every
+file still matched that original manifest. No outside source/snapshot/report
+was altered. The public protocol copy remains byte-for-byte accepted.
+
+Integrated completion, no scientific change
+
+1. runtime_helper.py now has two fixed raw-byte exact literal timing parsers.
+   Analyzer PASS/FAIL integer nanoseconds and auditor VALID/INVALID fixed-nine
+   decimal seconds use only the authenticated public CLI extract. Full stdout
+   must match one role-specific grammar. Analyzer uint64 conversion to Decimal
+   seconds is exact. Original status/exit consistency is checked; internal VALID
+   means original PASS/VALID AND exit0. Invalid/crash/missing output cannot pass.
+   Separate measured process walls remain T_an/T_aud. Actual printed K remains
+   T_an_K/T_aud_K. No estimates or scientific result lines are parsed.
+   Finite/nonnegative/order checks compare K, source wall and whole wall. The
+   analyzer has zero serialization allowance; the auditor has only 1 ns for
+   source wall versus measured wall, 2 ns for two separately rounded values,
+   and strict K<=whole wall. At <=600 s binary64 conversion plus fixed9 rounding
+   is below 1 ns per field. Values are never clamped, synthesized or substituted.
+   Exact allowances and original timing bytes are retained. README gives bounds.
+   Configurable templates, guessed/fallback formats and interface uncertainty
+   are removed. Accepted scientific source hashes are fixed in source/freeze.
+2. Both batch scripts pin the existing authenticated Python 3.11.4 executable
+   rather than incompatible /usr/bin/python3 3.6.8. The helper verifies executable
+   path, exact version and SHA-256; JSON freezes all three. This session did not
+   measure the current interpreter or run any package program. Later authorized
+   engineering checks must verify exact interpreter/shared libraries/modules
+   on the representative class AFTER fresh exact-source/job/resource GO.
+3. The sole hardware class is norm/short-shared-x6342: still request norm and
+   x6342; accept reported norm or short only with exact Gold 6342 CPU, native
+   x6342/u467 feature class and shared norm/short node membership, exact STUDY
+   filesystem path and unchanged compiler/binaries/build flag identities.
+   Native read-only node identity is recorded at job preparation. Requested and
+   reported partitions are explicit receipt fields. Other reported partitions,
+   CPU models and feature classes fail. Independent resource review MUST assess
+   observed scheduler routing before the benchmark, not silently waive it.
+4. Complete actual NODE_TOOLCHAIN_FREEZE.json and a closed exact-value schema
+   replace unavailable v1 flags/mount requirements and timing templates. CPU ISA
+   flag sets and resolved mount information are observed provenance, not exact
+   unavailable freeze barriers. Necessary model/class/path/compiler/flags/build
+   and protocol identity checks remain. The byte-identical immutable original
+   TXT, CPU authentication, public timing contract and Python identity copies
+   are bound by hash. The original metadata receipt path/hash is preserved from
+   authentication as a provenance reference; no fabricated remote receipt path
+   or new allocation is required. The original receipt itself was not opened.
+   GCC 8.5 actual producer/analyzer O3/Wconversion/Wshadow/pthread and auditor
+   O2/Wpedantic commands govern; the old combined O2 receipt remains preserved.
+5. README now gives current status, actual schema and deployment requirements,
+   exact timing semantics/roundoff, norm/short review, all remaining gates and
+   the full ordinary post-terminal BENCH_RECEIPT/native accounting contract.
+   AUTHENTICATED_INPUTS records input authentication, not a runtime acceptance.
+   Inventory uses physical tabs and the full diff preserves all changed/new
+   source text, without executing a syntax checker or a package artifact.
+
+Connected workflow retained and statically inspected
+
+B1-B6 stay one sequential benchmark workflow: exact producer once; 42 opaque
+full-size chunk copies plus trace outside data, each temp/write/fsync/rename/
+dir-fsync/SHA; native rehash; exact DC inventory/canonical manifest and native
+sha256sum -c; analyzer/auditor timing-only once each with discarded results.
+B2 mechanical byte access is required by its explicit frozen copy operation;
+no records/numerators are decoded. Benchmark namespace remains benchmark-only.
+T terms use independent monotonic integer-nanosecond, nonoverlapping whole-step
+intervals. Process creation/draining/monitoring belongs to process walls;
+script/fsync/receipt work outside them belongs to the fixed unscaled 120 s.
+Projection remains EXACT s=42000/1024, C=s*T_prod, IO=T_ioS,
+V=T_hashS+s*T_P3+s*(T_an-T_an_K)+s*(T_aud-T_aud_K)+T_an_K+T_aud_K+120.
+Require 2*(C+IO+V)<=14400, both timing statuses VALID, cgroup/native maximum
+<=32 GiB, own/projected output <=1 GiB, successful original job <=600 s.
+No missing measurement becomes zero. In-job measurements never award G5.
+
+P1-P6 stay the only plain-shell production workflow: new exclusive run/once
+marker; producer-owned absent data child (correct --out new-directory semantics);
+producer once; full DC verification and chmod a-w; analyzer and auditor once
+with both original failures captured; content-blind sealing/hashes and original
+agreement. P2/P3 failure stops. P6 retains header plus FIVE key-value fields,
+SIX physical LF lines exactly. No field/header is removed. Native signal exits
+are retained; missing step output is failure, never fabricated success.
+Original P1-P3, both P4/P5 and P6 must succeed, required outputs must exist and
+hashes must agree before script exit0. Result/report/temp outputs remain sealed.
+There is no post-job results parser/unsealer, replacement agreement or rerun.
+
+Allocation requests stay benchmark 10 min and production 8 h, each norm/x6342,
+one node/task, 32 CPUs, 64 GiB. Native cgroup high-water discovery/scope,
+explicit unavailable/null evidence and all-job/all-step native accounting remain
+required. Benchmark max(cgroup, Slurm MaxRSS) <=32 GiB; production BOTH <=64 GiB.
+Bounded streams/total logs <=16 MiB, fixed raw output inventory, monitored output
+and memory, projected production <=1 GiB and production actual <=2 GiB remain.
+Monitoring is not presented as an atomic filesystem quota. Final acceptance
+needs adequate cgroup scope and original terminal native evidence; unknowns
+cannot be accepted. Partial/temp/receipt/marker bytes count in output evidence.
+
+There are exactly two batch workflows, no auxiliary controller or optional
+modes. They contain no submission command, retry, resume, array, requeue,
+rebuild, new tier or alternate resource request. Root's ordinary exact-hash
+submission intents bind the single original submission of each kind. Uncertain
+submission is inspected in original native records, never resubmitted. Any
+failed/missing required condition preserves evidence and closes the route.
+
+Remaining independent milestones
+
+A. Fresh genuine NON-AUTHOR GO on this exact source/inventory and job/resource
+   freeze, explicitly including norm/short class routing; required BEFORE any
+   helper execution, syntax check, engineering exercise or benchmark.
+B. Separately authorized engineering/syntax and representative-class environment
+   checks after A; exact Python/shared libraries/modules/native tools/cgroups/
+   filesystem behavior. No scientific or fixture probe is implied.
+C. G5: one original benchmark and complete post-terminal binding receipt,
+   original native job/all steps COMPLETED/0:0, all timing/resource/output tests.
+D. G6: independent readiness GO, exact production source/receipt/resource review
+   and original cumulative ledger/cap review.
+E. G7: Root exact-hash science authority and one original scientific submission.
+F. G8: independent EA by a non-author of producer/analyzer/auditor, original
+   job/all steps COMPLETED/0:0 and every §13.2 resource/DC/agreement/hash test;
+   only the permitted analyzer line-2 validity check before acceptance, then
+   unseal ONLY if EA holds. Failed/partial estimates remain uninterpreted.
+G. G9: focused scientific/publication update after EA, all §20 content and
+   independent publication review. Failure produces feasibility disposition only.
+
+G4 science correctness stays accepted; implementation 120-minute phase remains
+closed. Completing this necessary operational package does not reopen G4,
+change population/design/source implementation, count a new scientific result,
+consume either submission, reset any budget or waive any gate. Work remains
+inside the unchanged cumulative 16 h readiness understanding and human authority;
+Root must append actual transcript-backed author/reviewer time to the ledger.
+
+This session performed static ordinary reads/writes/diff/SHA and JSON metadata
+serialization only. No helper was run/imported; no code compilation, syntax
+checking, bash -n, py_compile, compile(), compiler/scientific program, DC,
+fixture/RNG/cohort operation, network/SSH/config/credential/session/MCP access,
+subagent/model/job dispatch or submission occurred. No tests or performance
+results are claimed. No unresolved scientific protocol discrepancy was found
+in the operational paths reviewed; independent GO is still outstanding.
+
+Final file accounting and acyclic hashes
+
+The following table gives every payload file's current bytes/hash and its v1
+status. SOURCE_INVENTORY.tsv then hashes all payloads AND this report, excluding
+itself and V2_DIFF.patch. The patch is generated LAST and includes every changed
+or new file other than its own bytes, including this report and the inventory;
+unchanged protocol/historical report naturally have no diff. It has no omitted
+or truncated hunks. Hashing a file inside itself or a circular report/inventory/
+patch chain is not possible; the final handoff separately supplies inventory
+and patch digests. The inventory binds this report; the patch binds its complete
+text and the inventory. Both must be externally frozen for independent review.
+No hidden checkpoint or alternate source snapshot was created in this workspace.
+
+path	status	bytes	sha256
+AUTHENTICATED_INPUTS.json	NEW	4663	3daf3ce48966fd307f5021017313c01fe86679de85da4ffe5007b3dbf33d0441
+CPU_METADATA_AUTHENTICATION.json	NEW	6410	e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f
+DEFAULT_PYTHON_IDENTITY_NATIVE.json	NEW	2188	571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051
+NODE_TOOLCHAIN_FREEZE.json	NEW	3586	7656397813c15cdc430b72482874819728e6aa20f87f4ca0f3c9fa7b683a9770
+NODE_TOOLCHAIN_FREEZE.schema.json	NEW	4782	e1d617526e70a17dd0875300fac06da8188e8546bc5fa0e88d6cd63477e7ad9d
+NODE_TOOLCHAIN_FREEZE.txt	NEW	4884	a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87
+PROTOCOL_V0_4_ACCEPTED.txt	UNCHANGED	81247	71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
+PUBLIC_TIMING_CLI_CONTRACT.json	NEW	1773	bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e
+README.txt	CHANGED	27377	e6c9b175c42a7e64c707e9407eba02f897a62648028b5fc386305d182ceac4ce
+SOURCE_AUTHOR_REPORT.txt	UNCHANGED	6904	6100e2fbdc7e1f1fdb72ad326a11ddfdb81faa22d5b2c84c43ed64610acd81ed
+benchmark.sh	CHANGED	2060	75e526d459359694ae2b0e4d14c5eefec3f2707e6521bdfe2e5eeb696a121263
+production.sh	CHANGED	2062	4a537e0496f465ca3c8ca3d76a122e249a193738744337b0e57dfbcaa62d7753
+runtime_helper.py	CHANGED	40724	53cb5d9336d96bde47752ec76e7866639edeb8f55a51143644d45c6b719bf271
+
+SOURCE_INVENTORY.tsv	CHANGED: complete final payload/report inventory; hash in final handoff.
+V2_COMPLETION_REPORT.txt	NEW: this current report; exact hash in SOURCE_INVENTORY.tsv.
+V2_DIFF.patch	NEW: full v1-to-V2 delivery diff; exact hash in final handoff.

@@ -1,0 +1,23 @@
+{
+  "at_utc": "2026-10-25T16:34:29.351290+00:00",
+  "cumulative_completed_active_seconds_at_review_freeze": "25429.060106",
+  "cumulative_completed_active_hours_at_review_freeze": "7.063627807222222222222222222",
+  "cap_seconds": 57600,
+  "G8_reviewer_full_native_seconds": "524.068735748",
+  "ROOT_current_interval_seconds": "990.23429",
+  "ledger": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/candidate-v1/reproducibility/ACTIVE_TIME_LEDGER_AT_G9_REVIEW.tsv",
+    "bytes": 24545,
+    "sha256": "ff76acb9e45ff7de7ba67d05703160e0d0a6626e69c7b188c57c569c83b5a310"
+  },
+  "G0_design_active_seconds": 4899.729595039999,
+  "G0_design_cap_seconds": 14400,
+  "closed_G2_G4_extra_phase_seconds": 2142.576502804052,
+  "closed_extra_phase_cap_seconds": 7200,
+  "pending_G9_review_generation_not_counted_yet": true,
+  "no_resets": true,
+  "usage_remaining_percent_lastchecked": 95,
+  "automatic_credit_purchase_or_reset": false,
+  "publication_presentation_execution_only": "No population/RNG/producer/analyzer/auditor/helper/fixture reruns. Local decimal/plot/archive formatting only; original exactresults unchanged.",
+  "presentation_root_parse_failures_preserved": "Two local presentation-only script parse failures occurred before their bodies executed, preserved outsidecandidate. Spacing repaired in formatter/plot source; no scientific/source/runtimecandidate or result changed."
+}

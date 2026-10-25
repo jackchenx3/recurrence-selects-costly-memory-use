@@ -1,0 +1,29 @@
+REPRODUCIBILITY AND INTEGRITY — BIT002, ORIGINAL ACCEPTED R2
+
+Scientific simulation ran on FRCE Slurm, never on the local desktop. Source/provenance formatting and figures are local publication work, not scientific reruns. Nothing in this archive authorizes another agent execution or overwriting an original namespace. Both historical scientific slots are consumed (R1 INVALID, explicit extra R2 accepted at G8); no automatic third attempt exists.
+
+The portable accepted_production_data.tar.gz contains all 45 exact original EA-accepted data files, verified against the native inventory and archived manifest. ACCEPTED_DATA_ARCHIVE_RECEIPT.json binds all file hashes; no raw record was decoded or reanalyzed to assemble it.
+
+Accepted data: /Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/scientific-r2/SEALED_EA_INPUT_COPY/data
+Original frozen remote data: /mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-r2/data
+Exact original data manifest SHA256: cc53f20085657e88855d9dd008b55f401362ac1c0eddc884917c3a1f76cd1574
+Exact accepted analyzer/auditor result SHA256: 190dd7f33dc48ff5a2b8f61c4650257cda435b026eb16ea8ec34a763152d9cb2
+
+Sources are complete hash-verified deterministic archives of all 107 accepted producer/analyzer files and all 26 accepted independent-auditor files. Their manifests' original construction-stage state fields are historical; later source/G3/G4a/G4 acceptances establish their accepted scopes. No source file was edited or executed to assemble this update. The runtime-package-r2/ copy preserves all 67 exact source-GO files, including retained history and the reviewed production.sh/helper/config. The published 33-key table and independent table agree; key generation is SHA256 of the exact study|tier|purpose text, first 8 bytes split as little-endian k0/k1. The full protocol fixes every coordinate, parameter and compiled tier.
+
+Original toolchain (see REPRODUCIBILITY_INDEX.json for exact executable hashes): GCC8.5.0, Python3.11.4. Producer/analyzer flags: -Isrc -std=c++17 -O3 -Wall -Wextra -Wconversion -Wshadow -fno-fast-math -pthread; link -pthread -lstdc++fs. Auditor flags: -Isrc -std=c++17 -O2 -Wall -Wextra -Wpedantic -fno-fast-math; link -lstdc++fs. Use archived Makefiles/source manifests/build identity receipts to reconstruct the build; archived accepted Linux binaries, when present with BINARY_COPY_RECEIPT.json, supply exact original executable bytes. Build output must be separately identified rather than assumed byte-identical from a compiler version string.
+
+The exact original sbatch command, recorded for inspection and provenance (DO NOT execute it against preserved output/authority paths), was:
+sbatch --parsable --nodelist=cn136 --output=/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-authority-r2/slurm-%j.stdout --error=/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-authority-r2/slurm-%j.stderr /mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r2/production.sh
+
+production.sh's original P2/P4/P5 program interfaces were:
+brc2_produce --tier production-r1 --out <RUN>/data --threads 32
+brc2_analyze --tier production-r1 --data <RUN>/data --out <RUN>/results/RESULTS_ANALYZER.txt
+brc2_audit --tier production-r1 --data <RUN>/data --out <RUN>/audit/RESULTS_AUDITOR.txt
+The recorded job script is authoritative for exact spacing/argv and P1-P6 orchestration. Tier production-r1 remains the scientific tier even though the separately authorized run directory was scientific-r2. The producer alone creates the new data directory. No new keys, blocks, initial starts, endpoint definitions or inference settings are runtime options.
+
+A human considering independent reproduction must first choose a new namespace and obtain applicable resource/scientific authority. Do not remove original .scientific-r2.once, chmod/overwrite frozen outputs, resume R1, resubmit the archived once-only script or rerun an analyzer/auditor into preserved outputs. The compiled scientific definitions/tier/keys remain frozen; a distinct operational namespace requires coherent runtime-path/config/digest/authority changes and the applicable independent gates. This delivery performs none of those actions. Integrity validation of the original data is read-only: manifest checksum, the 43 listed chunk/trace hashes, exact inventory, original job/allstep receipts and accepted result hashes. It is not a new scientific program run.
+
+The figures and decimal tables are presentation-only conversions of the original exact accepted results. No raw-record endpoint recomputation, additional statistic/test, resampling, cohort exclusion or corrected-source reanalysis was performed. Exact fractions/classifications remain authoritative. To regenerate a figure from the accepted outputs, use the included PLOT_PRESENTATION.py and SIX_ENDPOINTS.tsv; this never invokes scientific software or data records.
+
+The archived original records support separate verification of all six endpoints/intervals/labels/derived intervals/patterns/summary and all original descriptives, source/G4a independence before producer-output access, G5 qualification, current operating amendment, explicit additional-attempt authority, fresh G6, exact G7, originalnativeexecution and G8 before unseal. The ledger snapshots preserve prior phases/corrections/failures and include parallel ROOT/model time conservatively; the final accepted publication receipt records updated totals through G9.

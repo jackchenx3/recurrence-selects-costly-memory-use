@@ -1,0 +1,10 @@
+The input strings are exactly column 1 of NEW_33_KEYS.tsv and LEGACY_KEYS.tsv. No LF is hashed.
+Producer used Python3 standard library hashlib.sha256(s.encode("ascii")).digest().
+k0 = int.from_bytes(d[0:4], "little"); k1 = int.from_bytes(d[4:8], "little").
+The full digest and first64 little-endian word are recorded per row.
+Independent author must reconstruct strings from the accepted protocol and legacy source definitions; merely copying these rows is not independent reconstruction.
+Alternative standard command for one input: printf %s "$purpose_string" | sha256sum
+The input variable must hold the exact literal row text; use no echo or terminating newline.
+No Philox values or outcomes were computed during metadata construction.
+Random123 KAT copied byte-for-byte from the supplied official copy; upstream commit 9545ff6413f258be2f04c1d319d99aaef7521150, tests/kat_vectors. Its BSD license is preserved beside it.
+Legacy namespace transcription was checked against the frozen constants.hpp files: Studies 001 and 002 use fixture-r1-nonscientific, Study 003 uses fixture-r1 and timing-r1, and old Phase3 BIT uses fixture-r1.

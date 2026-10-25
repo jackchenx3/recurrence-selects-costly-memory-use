@@ -1,0 +1,54 @@
+{
+  "at_utc": "2026-10-25T16:53:32.005448+00:00",
+  "state": "ACCEPTED_RELEASE_COMPLETE",
+  "study_id": "PHASE3-BIT-RETRIEVAL-CAUSALITY-002",
+  "G9_acceptance": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/G9_PUBLICATION_ACCEPTANCE.json",
+    "bytes": 2238,
+    "sha256": "f5cab9bc5a34692a5da571de453d4a28b87ddd7b50a1f186365e49f31d8284e1"
+  },
+  "G9_authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/independent-G9-review-v1/ROOT_AUTHENTICATION.json",
+    "bytes": 5575,
+    "sha256": "524f6818a55c8a0014499ef1fb49e921eb1e2500977dc9dc3bfeab5d4ab49ced"
+  },
+  "reviewed_candidate_manifest": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/ROOT_FROZEN_PUBLICATION_CANDIDATE_V1.json",
+    "bytes": 57728,
+    "sha256": "06efc615e6e0aac0bdc57d41c06c92039e6ffd3f73bf6a66510c4b41cf066238"
+  },
+  "reviewed_candidate_files_unchanged": 124,
+  "release_directory": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/release-v1",
+  "release_inventory": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/release-v1/release-acceptance/RELEASE_FILE_INVENTORY.json",
+    "bytes": 27487,
+    "sha256": "feacb5347f78bcb8725c71f22cef9571f3f9e12f12bd23ff034d6c4bea58b6bb"
+  },
+  "zip": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/BIT002_ACCEPTED_PUBLICATION_AND_REPRODUCIBILITY_20261025.zip",
+    "bytes": 45672509,
+    "sha256": "1616258c046aa94eb00b8589a94896e93d87f608724c3e6ed5fc562752556003"
+  },
+  "zip_all_members_stream_hash_verified": true,
+  "zip_members": 144,
+  "final_accounting": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/release-v1/release-acceptance/ACTIVE_TIME_ACCOUNTING_FINAL.json",
+    "bytes": 1415,
+    "sha256": "4ad5943e37db5ae87f13df8467060996ca83d6d99278e18c5acc04671665ed36"
+  },
+  "cumulative_charged_active_seconds": "26417.400678",
+  "scientific_execution_location": "FRCE Slurm",
+  "accepted_job_id": "54269109",
+  "all_original_steps_success": true,
+  "no_postproduction_scientific_program_rerun": true,
+  "no_third_attempt_authorized": true,
+  "automation": {
+    "id": "bit002-research-continuation",
+    "status": "PAUSED",
+    "tool_confirmed": true
+  },
+  "original_incomplete_study_and_failed_R1_preserved": true,
+  "external_journal_submission_or_acceptance": false,
+  "actual_finalization_seconds_through_package_verification": 2.550741,
+  "actual_completed_within_conservatively_charged_interval": true
+}

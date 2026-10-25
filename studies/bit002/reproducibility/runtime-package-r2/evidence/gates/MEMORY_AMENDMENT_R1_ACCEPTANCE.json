@@ -1,0 +1,56 @@
+{
+  "at_utc": "2026-10-25T12:49:04.835249+00:00",
+  "state": "ACCEPTED_GO_AMENDMENT_AND_PREBENCHMARK_ENGINEERING_RESOURCE",
+  "scope": "Removefixed64GiBkernelhardceilingrequirementonly; retain64GiBSlurmrequest/measuredbenchmarkpeak<=32GiB/sciencebothpeaks<=64GiB/accountingscope/remaininggates. No source/sciencedefinitionchange.",
+  "base_protocol": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/design/PROTOCOL_V0_4_ACCEPTED.txt",
+    "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
+  },
+  "amendment": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/memory-enforcement-amendment-r1/RESOURCE_AMENDMENT_R1.txt",
+    "sha256": "65e9c36b40c53f9e438843707a74ff19c5eb44c2a9ee5ce1d48d34b09e723407"
+  },
+  "human_authority": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/memory-enforcement-amendment-r1/USER_APPROVAL_AUTHORITY.json",
+    "sha256": "58dc1ad6699215895d9371e1cf34609679a29ef6442c6960661f7ca892f1d877"
+  },
+  "independent_review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/memory-enforcement-amendment-r1/independent-review/REVIEW.txt",
+    "sha256": "1fd52944e5d94cfc8314d38e09cc0797297d33a2d959086b51d19d60866864de"
+  },
+  "authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/memory-enforcement-amendment-r1/independent-review/ROOT_AUTHENTICATION.json",
+    "sha256": "6fe88b6e121713f4991b22b30430f8f5ecc09651e64b5fea6fcf034ffabea15e"
+  },
+  "unchanged_source_manifest": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/ROOT_FROZEN_CANDIDATE.json",
+    "sha256": "cf4ea061d5e016b8bf24966fc6cd50ac142e06a2a86d54e1fcdfa27037d110a1"
+  },
+  "unchanged_runtime_source_acceptance": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/RUNTIME_V3_SOURCE_ACCEPTANCE.json",
+    "sha256": "6035807d2cd06a84dc4762cc7ce4643cecad315c9e95ed9ba3fa5ad0a8071cb5"
+  },
+  "engineering_evidence": [
+    {
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-v3-engineering-r1/ROOT_PARTIAL_AUTHENTICATION.json",
+      "sha256": "bc177b686958683798dafed73ff75af6ea65002338cef7b9331d5a86ddd368a6"
+    },
+    {
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/batch-native-resource-evidence-r2/ROOT_AUTHENTICATION.json",
+      "sha256": "911c2183d1d8497c7edf058dd0ffa80d46428603f45cd41e78bde6618872ff5e"
+    }
+  ],
+  "prior_STOP_preserved": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/ACTUAL_RESOURCE_STOP.json",
+    "sha256": "a8a5b5f211ad1285dfa52d707915507409e07464ccd77415e34b73261874bf0a"
+  },
+  "composite_identity_required_externally": true,
+  "cn136_pin_for_both_jobs": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/PINNED_NODE_SUBMISSION_PLAN.json",
+    "sha256": "05ba220a94e5ad8f518b1c31b2c438658513d52f1f1a85bd59e9f6c812fcc2aa"
+  },
+  "benchmark_G5_science_G6_G7_G8_G9_not_accepted": true,
+  "benchmark_scientific_submission_authorized_by_this_receipt": false,
+  "new_source_or_binary_compilation_required": false,
+  "caps_not_reset": true
+}

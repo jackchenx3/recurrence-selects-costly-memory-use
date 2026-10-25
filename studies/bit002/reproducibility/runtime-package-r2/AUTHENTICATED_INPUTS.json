@@ -1,0 +1,97 @@
+{
+  "baseline_seven_files_verified_before_edit": [
+    {
+      "bytes": 81247,
+      "path": "PROTOCOL_V0_4_ACCEPTED.txt",
+      "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
+    },
+    {
+      "bytes": 18588,
+      "path": "README.txt",
+      "sha256": "4b03e5d25f6189bc64fb63d5d302e73bc012d10aff1fc3eb092b6ebd251112fc"
+    },
+    {
+      "bytes": 6904,
+      "path": "SOURCE_AUTHOR_REPORT.txt",
+      "sha256": "6100e2fbdc7e1f1fdb72ad326a11ddfdb81faa22d5b2c84c43ed64610acd81ed"
+    },
+    {
+      "bytes": 549,
+      "path": "SOURCE_INVENTORY.tsv",
+      "sha256": "42a7fcdce4abddc4e8433b10cef8a3fa4b7008e1ab386b99b20747e357e0acbb"
+    },
+    {
+      "bytes": 2038,
+      "path": "benchmark.sh",
+      "sha256": "268ad8fd02859a63457b53537680b848594c059e5ffbadbe5291569dc0e35481"
+    },
+    {
+      "bytes": 2040,
+      "path": "production.sh",
+      "sha256": "7cd92c4ca88697efe6f8554525d4caf0bc6215fe80b9567cb5dbbd028441f040"
+    },
+    {
+      "bytes": 36452,
+      "path": "runtime_helper.py",
+      "sha256": "2141233cb25460768fea906949b4d66de4f22ab4195518e4e5eaa106c665c837"
+    }
+  ],
+  "inputs": [
+    {
+      "bytes": 81247,
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/design/PROTOCOL_V0_4_ACCEPTED.txt",
+      "sha256": "71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa"
+    },
+    {
+      "bytes": 3022,
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/G4_ACCEPTANCE.json",
+      "sha256": "a8613078265e7214d8b9e57d9e3685a604a338fb3f242a35f79aeba51e3a3645"
+    },
+    {
+      "bytes": 1014,
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/implementation-readiness-120m/AUTONOMOUS_CONTINUATION_AUTHORITY.json",
+      "sha256": "bf0d76e39eeb64cfffd3da9fcae95a7387940166b20cdef6fdb42de919dfd536"
+    },
+    {
+      "bytes": 1487,
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/codex-runtime-package/ROOT_FROZEN_CANDIDATE.json",
+      "sha256": "fcbaeff0f30f9315911bc46db26b6f2e238c36c568435d98c3e5451587e411eb"
+    },
+    {
+      "bytes": 1690,
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/codex-runtime-package/ROOT_AUTHENTICATION.json",
+      "sha256": "76dd1bd23bba60b6e8bbf205ca48485b1ae24ab4e45453bcc94e457bbf20e616"
+    },
+    {
+      "bytes": 1773,
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/PUBLIC_TIMING_CLI_CONTRACT.json",
+      "sha256": "bea130dec173f04c1d2739e1c5da7c2cffb6d5db07d60e84d6c14a32bc60ce1e"
+    },
+    {
+      "bytes": 1297,
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/ROOT_OPERATIONAL_CLARIFICATIONS.json",
+      "sha256": "c26dd11968f707e007d67907372f4004248a0b7b9dca335ee15612a77bdceef6"
+    },
+    {
+      "bytes": 6410,
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/cpu-metadata-freeze-r1/ROOT_AUTHENTICATION.json",
+      "sha256": "e3b1766f2ba2ba89bcaeb46660e1c2a55d0de066614d65d978c6d10785d1352f"
+    },
+    {
+      "bytes": 4884,
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/NODE_TOOLCHAIN_FREEZE.txt",
+      "sha256": "a5af905abc3c715db7fbdfae07b5ba4f3922b184f774ee1463b2268bea8c4f87"
+    },
+    {
+      "bytes": 1967,
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/PYTHON_IDENTITY_NATIVE.json",
+      "sha256": "b814191d162dc1cf787c17807333737945ffe8135637ffd6e2565bf784496434"
+    },
+    {
+      "bytes": 2188,
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/DEFAULT_PYTHON_IDENTITY_NATIVE.json",
+      "sha256": "571b075739fe1bb90435d9b27bf07453148b1e80fec4ba2886c64899d010e051"
+    }
+  ],
+  "state": "STATIC_INPUT_AUTHENTICATION_ONLY_NO_EXECUTION_OR_GO"
+}

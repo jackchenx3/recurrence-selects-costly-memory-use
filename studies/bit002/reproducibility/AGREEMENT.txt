@@ -1,0 +1,6 @@
+BRC2-AGREEMENT-V3
+data_committed=1
+analyzer_exit=0
+auditor_exit=0
+results_sha256_equal=1
+auditor_status=PASS

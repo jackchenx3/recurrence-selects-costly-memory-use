@@ -5,7 +5,6 @@ title: "Environmental recurrence and directional cache information select a cost
 authors:
   - family-names: Chen
     given-names: Jack
-    affiliation: "Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health"
 version: 1.1.0
 date-released: '2026-10-02'
 repository-code: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use"
@@ -16,7 +15,6 @@ preferred-citation:
   authors:
     - family-names: Chen
       given-names: Jack
-      affiliation: "Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health"
   year: 2026
   version: 1.1.0
   url: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/blob/v1.1.0/paper/MANUSCRIPT.md"

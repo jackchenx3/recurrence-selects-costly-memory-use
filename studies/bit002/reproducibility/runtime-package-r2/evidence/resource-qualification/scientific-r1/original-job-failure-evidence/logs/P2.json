@@ -1,0 +1,49 @@
+{
+  "cgroup_final": {
+    "available": true,
+    "bytes": 114257920,
+    "path": "/sys/fs/cgroup/memory/slurm_cn136/uid_1337049/job_54254461/memory.max_usage_in_bytes",
+    "sample_utc": "2026-10-25T13:20:47.346480+00:00",
+    "scope": "job",
+    "version": 1
+  },
+  "cgroup_initial": {
+    "available": true,
+    "bytes": 16216064,
+    "path": "/sys/fs/cgroup/memory/slurm_cn136/uid_1337049/job_54254461/memory.max_usage_in_bytes",
+    "sample_utc": "2026-10-25T13:20:33.648904+00:00",
+    "scope": "job",
+    "version": 1
+  },
+  "cgroup_peak_observed": {
+    "available": true,
+    "bytes": 114257920,
+    "path": "/sys/fs/cgroup/memory/slurm_cn136/uid_1337049/job_54254461/memory.max_usage_in_bytes",
+    "sample_utc": "2026-10-25T13:20:46.327820+00:00",
+    "scope": "job",
+    "version": 1
+  },
+  "command": [
+    "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce",
+    "--tier",
+    "production-r1",
+    "--out",
+    "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-r1/data",
+    "--threads",
+    "32"
+  ],
+  "end_monotonic_ns": 144797092052362,
+  "end_utc": "2026-10-25T13:20:47.346499+00:00",
+  "returncode": -9,
+  "start_monotonic_ns": 144783395216992,
+  "start_utc": "2026-10-25T13:20:33.648920+00:00",
+  "stderr_bytes_saved": 0,
+  "stderr_bytes_seen": 0,
+  "stdout_bytes_saved": 0,
+  "stdout_bytes_seen": 0,
+  "step": "P2",
+  "success": false,
+  "timing_stdout": null,
+  "violation": "output_monitor_failed",
+  "wall_ns": 13696835370
+}

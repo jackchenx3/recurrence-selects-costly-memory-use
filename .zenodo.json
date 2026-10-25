@@ -1,36 +1,34 @@
 {
-  "title": "Environmental recurrence selects a costly memory-use policy across two operator bundles without a resolved one-bit population benefit",
+  "title": "Environmental recurrence selects a costly memory-use policy: long-run population effects and immediate retrieval effects",
   "upload_type": "publication",
   "publication_type": "preprint",
   "creators": [
     {
-      "name": "Chen, Jack",
-      "affiliation": "Frederick Sequencing and Genomics Core; Advanced Biomedical Computational Science (ABCS); Frederick National Lab for Cancer Research; National Institutes of Health"
+      "name": "Chen, Jack"
     }
   ],
-  "description": "Three prospective abstract computational studies in two operator bundles ask whether lag-two environmental recurrence selectively enriches a mutable policy for using a supplied one-record private cache when each retrieval replaces a fresh proposal, and whether that selection converts into population performance. In Study 001, recurrence strongly enriched the allele while the recurrent ACTIVE-minus-SHAM population-accuracy contrast was bounded below the prespecified one-correct-bit scale with sign unresolved; the ZERO-law contrast was descriptively adverse. In Study 002, directional cache information further amplified selection, but its total population-accuracy effect through evolved policy use was bounded below the positive one-bit scale with sign unresolved. In Study 003, an independently implemented large-alphabet torus operator bundle with graded circular loss and tournament survival, recurrence-attributable selective enrichment recurred, P_abs was bounded below the positive 1/32 maximal-loss scale with sign unresolved and P_rec was unresolved. The selection/performance separation thus recurred across two operator bundles at the declared scales. The cache architecture was supplied; retention and retrieval were not separated; effects in Study 003 cannot be attributed to individual operator components. The 22, 19 and 22 saved estimate records are separate families, not independent replications. A Study 003 audit-header interface failure was resolved by a 12-byte normalization of a derived audit tree; original outputs are preserved. Audits were internal. Research preprint; not externally peer reviewed. Manuscript/data CC BY 4.0; original code MIT; AI assistance disclosed.",
+  "description": "Three accepted prospective long-run computational studies show recurrence-attributable enrichment of a costly supplied-cache-use policy, with population-performance contrasts bounded below declared positive scales or unresolved. The subsequent BIT002 identical-state, one-turnover retrieval experiment uses 42,000 independent new BIT/PL histories. At recurrent targets, cached retrieval materially increased eligible-lineage survivor share and unconditional focal-family contribution, and increased normalized accuracy with magnitude unresolved. All three innovation-target effects were bounded within prespecified margins, with negative estimates and zero-containing intervals; bounds do not establish absence. All six estimates, exact intervals and original adverse/bounded/unresolved findings are retained. Immediate effects do not establish long-run mediation, a recurrence intervention, TORUS retrieval effects or biological memory. Only 64 factual histories were independently replayed; conditional state provenance limits remain explicit. Internal AI-assisted reviews are not external peer review. Manuscript/data CC BY 4.0; original code MIT.",
   "license": "cc-by-4.0",
-  "version": "1.2.0",
-  "publication_date": "2026-10-06",
+  "version": "1.3.0",
+  "publication_date": "2026-10-25",
   "keywords": [
     "evolutionary computation",
     "environmental recurrence",
     "memory-use policy",
+    "retrieval intervention",
     "finite populations",
-    "private memory",
-    "operator bundles",
     "reproducible research"
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/releases/tag/v1.2.0",
+      "identifier": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/releases/tag/v1.3.0",
       "relation": "isIdenticalTo",
       "scheme": "url"
     },
     {
-      "identifier": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/releases/tag/v1.1.0",
+      "identifier": "10.5281/zenodo.23085659",
       "relation": "isNewVersionOf",
-      "scheme": "url"
+      "scheme": "doi"
     }
   ]
 }

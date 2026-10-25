@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-10-25T13:33:15.379397+00:00",
+  "gate": "G8",
+  "state": "ORIGINAL_R1_STOP_EA_INVALID",
+  "job_id": "54254461",
+  "review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/REVIEW.txt",
+    "sha256": "e9f385731afc73845798180d2cacfe1d95e5258c41e31794d65aab21d6e3232e"
+  },
+  "authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/G8-failure-audit-r1/ROOT_AUTHENTICATION.json",
+    "sha256": "6f47a98ed25da35c5e5bb0aaa5584c00d3cc6f451da2b7f7daebea5800b409de"
+  },
+  "failure_preservation": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r1/FAILURE_PRESERVATION_NATIVE.json",
+    "sha256": "14394220c67363193dcc71ddf22b8932aadf8e8bc6a0592336aff2864f806e8b"
+  },
+  "no_scientific_results": true,
+  "original_submission_consumed": true,
+  "not_retroactively_waived_by_future_reopening": true
+}

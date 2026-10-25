@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-10-25T16:19:32.391152+00:00",
+  "state": "ROOT_ACCEPTS_AUTHENTICATED_GENUINE_EA_AND_AUTHORIZES_FIRST_ESTIMATE_READ",
+  "G8_acceptance": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/G8_R2_ACCEPTANCE.json",
+    "bytes": 3519,
+    "sha256": "d6ffa39b5bd6777cefddfd2d7e74b6e802ba8309dfb3b31d52981455ec23fd92"
+  },
+  "original_job": "54269109",
+  "original_identical_results_sha256": "190dd7f33dc48ff5a2b8f61c4650257cda435b026eb16ea8ec34a763152d9cb2",
+  "scope": "ReadONLYoriginalEAacceptedbyte-identicalresults andreportALL6prespecifiedestimates/inference/limitations/nulladverseboundedunresolvedfindings; no scientificprogramrerun/reanalysis/outcometuning/newblocks/replacementagreement. Originalremotefilesremainreadonlyfrozen, unseal is documentedpermissiontointerpret. G9independentpublicationreview remainsrequired."
+}

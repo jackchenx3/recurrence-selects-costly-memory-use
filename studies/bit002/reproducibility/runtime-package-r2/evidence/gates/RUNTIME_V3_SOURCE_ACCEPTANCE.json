@@ -1,0 +1,25 @@
+{
+  "at_utc": "2026-10-25T04:49:20.279810+00:00",
+  "state": "ACCEPTED_GO_SOURCE_ONLY",
+  "scope": "ExactV3operationalSOURCE/job-resourcePLAN; separatelyscopedengineeringonlynext, no benchmark/scienceapproval.",
+  "source_manifest": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-node-mapping-fix-v3/ROOT_FROZEN_CANDIDATE.json",
+    "sha256": "cf4ea061d5e016b8bf24966fc6cd50ac142e06a2a86d54e1fcdfa27037d110a1"
+  },
+  "nonauthor_review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-v3-independent-source-resource-review/REVIEW.txt",
+    "sha256": "b0362f7b3fd896410e870249d4a5aded2c918240635e15f8487691ab7f740d7b"
+  },
+  "review_authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/runtime-v3-independent-source-resource-review/ROOT_AUTHENTICATION.json",
+    "sha256": "a8265b5a29d4bee2a6f9c8a8fb62d5279d1e4aa68627583193641a0511489ec2"
+  },
+  "review_deviation_disposition_explicit": true,
+  "human_standing_authority": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/implementation-readiness-120m/AUTONOMOUS_CONTINUATION_AUTHORITY.json",
+    "sha256": "bf0d76e39eeb64cfffd3da9fcae95a7387940166b20cdef6fdb42de919dfd536"
+  },
+  "engineering_passed": false,
+  "benchmark_scientific_submitted": false,
+  "G4_scientific_accepted_unchanged": true
+}

@@ -1,0 +1,89 @@
+Accepted Linux scientific binaries and build configuration, unchanged before/after original R2.
+{
+  "binaries": {
+    "analyzer": {
+      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_analyze",
+      "sha256": "0af66a01615414129be30df2d75df9efbfa724660d4c1701b9799982ea367721"
+    },
+    "auditor": {
+      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/auditor-v3-own-r1/auditor/bin/brc2_audit",
+      "sha256": "950ac9ffb49faaca3ec6568c8b55cdd9b8349e1f2782bcfe33c7d07fa3182eca"
+    },
+    "producer": {
+      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/build-g2-r1/producer/bin/brc2_produce",
+      "sha256": "bc597d652bfab0f05cab7e9ca52e53ea7ddc365e304a7fe4588d7386fc4031f0"
+    }
+  },
+  "compiler": {
+    "flags": {
+      "auditor": "-Isrc -std=c++17 -O2 -Wall -Wextra -Wpedantic -fno-fast-math; link -lstdc++fs",
+      "producer_analyzer": "-Isrc -std=c++17 -O3 -Wall -Wextra -Wconversion -Wshadow -fno-fast-math -pthread; link -pthread -lstdc++fs"
+    },
+    "path": "/usr/bin/g++",
+    "sha256": "300a40555cfe820333187a6ed41b732af4905b011fd485bcaf9d9cc7a4facfdb",
+    "version": "g++ (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28.0.1)"
+  },
+  "python": {
+    "path": "/home/chenx3/miniconda3/bin/python3.11",
+    "sha256": "90ebd62efa611953ec39804a827a8df12e743b70b0a7435536bb053e0e1a6ae5",
+    "version": "3.11.4"
+  },
+  "source_archives": [
+    {
+      "role": "producer_analyzer",
+      "archive": {
+        "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/candidate-v1/reproducibility/producer_analyzer_accepted_source.tar.gz",
+        "bytes": 134605,
+        "sha256": "43927cc574ee8d1536e3b85dab7df732edacf5930af023c7155ae6d6522737ac"
+      },
+      "accepted_source_manifest": {
+        "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/source-reopening-correction3/codex-source-repair/ROOT_FROZEN_CANDIDATE.json",
+        "bytes": 19002,
+        "sha256": "d265d28235ad907d3ea01d70a8c4e456aa9f86ad46bc24ff858b7358d29e2da3"
+      },
+      "source_file_count": 107,
+      "originals_unchanged": true
+    },
+    {
+      "role": "independent_auditor",
+      "archive": {
+        "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/candidate-v1/reproducibility/independent_auditor_accepted_source.tar.gz",
+        "bytes": 90070,
+        "sha256": "8b4be1a9f2b2284b7e1d9fdd3fbd27174f9f5265d0b5043af3696b9a88460181"
+      },
+      "accepted_source_manifest": {
+        "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/implementation-readiness-120m/auditor-repair-v3/ROOT_FROZEN_CANDIDATE.json",
+        "bytes": 4853,
+        "sha256": "6cce664d4a1df6166aab2cf6c590f985670f00b2f5aee2e0bbd1671355304d21"
+      },
+      "source_file_count": 26,
+      "originals_unchanged": true
+    }
+  ],
+  "runtime_manifest": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/ROOT_FROZEN_R2_V2_CANDIDATE.json",
+    "bytes": 32240,
+    "sha256": "c4a0acaf9327281b75b36ec5f515fbc0f5d7ea9e8fc8bd06eeb2b53e492cc34f"
+  },
+  "original_data_local": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/scientific-r2/SEALED_EA_INPUT_COPY/data",
+  "original_data_remote": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-r2/data",
+  "original_data_manifest": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/resource-qualification/scientific-r2-reopening/scientific-r2/original-job-evidence/data/MANIFEST.txt",
+    "bytes": 4259,
+    "sha256": "cc53f20085657e88855d9dd008b55f401362ac1c0eddc884917c3a1f76cd1574"
+  },
+  "original_results_sha256": "190dd7f33dc48ff5a2b8f61c4650257cda435b026eb16ea8ec34a763152d9cb2",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--nodelist=cn136",
+    "--output=/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-authority-r2/slurm-%j.stdout",
+    "--error=/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/scientific-authority-r2/slurm-%j.stderr",
+    "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_retrieval_002_20261024/runtime-package-r2/production.sh"
+  ],
+  "G8": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/G8_R2_ACCEPTANCE.json",
+    "bytes": 3519,
+    "sha256": "d6ffa39b5bd6777cefddfd2d7e74b6e802ba8309dfb3b31d52981455ec23fd92"
+  }
+}

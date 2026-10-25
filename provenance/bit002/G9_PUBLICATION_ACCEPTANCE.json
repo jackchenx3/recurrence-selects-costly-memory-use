@@ -1,0 +1,35 @@
+{
+  "at_utc": "2026-10-25T16:52:05.308838+00:00",
+  "gate": "G9",
+  "study_id": "PHASE3-BIT-RETRIEVAL-CAUSALITY-002",
+  "decision": "GO_PUBLICATION_UPDATE_ACCEPTED",
+  "reviewed_exact_candidate": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/ROOT_FROZEN_PUBLICATION_CANDIDATE_V1.json",
+    "bytes": 57728,
+    "sha256": "06efc615e6e0aac0bdc57d41c06c92039e6ffd3f73bf6a66510c4b41cf066238"
+  },
+  "candidate_files": 124,
+  "independent_review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/independent-G9-review-v1/REVIEW.txt",
+    "bytes": 10765,
+    "sha256": "6bec6ca1c3430b972f7997a7326b25fa1722a94713224a9d76b2726aacab29b2"
+  },
+  "ROOT_authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/publication-update-20261025/independent-G9-review-v1/ROOT_AUTHENTICATION.json",
+    "bytes": 5575,
+    "sha256": "524f6818a55c8a0014499ef1fb49e921eb1e2500977dc9dc3bfeab5d4ab49ced"
+  },
+  "prior_execution_acceptance": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-retrieval-002-20261024/gates/G8_R2_ACCEPTANCE.json",
+    "bytes": 3519,
+    "sha256": "d6ffa39b5bd6777cefddfd2d7e74b6e802ba8309dfb3b31d52981455ec23fd92"
+  },
+  "results_sha256": "190dd7f33dc48ff5a2b8f61c4650257cda435b026eb16ea8ec34a763152d9cb2",
+  "all_six_endpoints_derived_intervals_descriptives_and_limits_accepted": true,
+  "genuine_scientific_job": "FRCE Slurm 54269109 all original steps succeeded; accepted EA before first unseal",
+  "release_rule": "Package identical reviewed candidate bytes plus this acceptance/authentication envelope and cumulative accounting. Historical pending-state fields in frozen candidate stay immutable.",
+  "no_postproduction_scientific_program_rerun_or_new_tests": true,
+  "no_automatic_third_attempt": true,
+  "original_incomplete_study_and_all_failures_preserved": true,
+  "external_journal_submission_or_acceptance": false
+}

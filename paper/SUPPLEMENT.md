@@ -1,12 +1,14 @@
-# Supplementary Information: Environmental recurrence selects a costly memory-use policy across two operator bundles without a resolved one-bit population benefit
+# Supplementary Information: Environmental recurrence selects a costly memory-use policy: long-run population effects and immediate retrieval effects
 
 **Jack Chen**
 
-Research preprint draft, version 1.2.0; not externally peer reviewed
+Research preprint, version 1.3.0; not externally peer reviewed
 
 ## S1. Status and scope
 
-This supplement documents three prospective studies in two operator bundles. Part A (Sections S1-S15) documents Study 001; its content, values and provenance are unchanged from version 1.0 apart from this introduction and cross-references to Parts B and C. Part B (Sections S16-S26) documents Study 002, a post-v1.0 prospective extension added in version 1.1.0, and is unchanged apart from cross-references. Part C (Sections S27-S39) documents Study 003, a post-v1.1 prospective extension added in version 1.2.0 that poses the Study 001 question again in an independently implemented alternative operator bundle. The 22 Study 001, 19 Study 002 and 22 Study 003 records are three separately accepted estimate sets, 63 saved estimate records in total; none is pooled with another.
+Parts A-C document three prospective studies in two operator bundles. Part A (Sections S1-S15) documents Study 001; its content, values and provenance are unchanged from version 1.0 apart from this introduction and cross-references to Parts B and C. Part B (Sections S16-S26) documents Study 002, a post-v1.0 prospective extension added in version 1.1.0, and is unchanged apart from cross-references. Part C (Sections S27-S39) documents Study 003, a post-v1.1 prospective extension added in version 1.2.0 that poses the Study 001 question again in an independently implemented alternative operator bundle. The 22 Study 001, 19 Study 002 and 22 Study 003 records are three separately accepted estimate sets, 63 saved estimate records in total; none is pooled with another.
+
+Part D adds the subsequent prospective BIT002 experiment, PHASE3-BIT-RETRIEVAL-CAUSALITY-002, with 42,000 new histories and six one-turnover retrieval endpoints. It is distinct from the older Study 002 and is not a fourth long-run enrichment experiment. Parts A-C retain their original study-level scopes and results. Revision 1.3.0 has a separate accepted nonauthor manuscript-content review; this internal review does not constitute external peer review. Earlier acceptances remain scoped to their original artifacts.
 
 ## Part A. Study 001 (PHASE2-MUTABLE-MEMORY-001)
 
@@ -654,3 +656,142 @@ Every registered Study 003 value in the manuscript and this supplement is checke
 | Design-GO record | `e5dc485dd858f18eb9652cfe6b63f142e2d09fb6b069d640438cd8dbe63a786d` |
 
 The first eleven values are authenticated in the Study 003 acceptance record. The acceptance-record SHA-256 is bound by the post-audit source-patch receipt and is enforced by the statistics-checking script. The specification and design-GO hashes are bound in the frozen decision record and are not recomputed from the files by the checker. The source-patch receipt post-dates acceptance and has no frozen SHA-256 of its own; the checker verifies that it binds the supplied acceptance and failure records. These provenance records add or modify no scientific outcome.
+
+
+## Part D. BIT002 immediate retrieval effects (PHASE3-BIT-RETRIEVAL-CAUSALITY-002)
+
+## S40. Status and scope
+
+This is a subsequent separately frozen prospective BIT/PL experiment, not Study 002 (PHASE2-PERFORMANCE-CONVERSION-002), a fourth long-run enrichment experiment, or completion of PHASE3-SELECTION-PERFORMANCE-MECHANISM-001. Accepted protocol v0.4 fixes 42,000 new independent histories, 21,000 per initial start, and six endpoints. Earlier provisional 40,000-block/two-endpoint redesign notes are superseded. Production-tier keys retain the frozen `production-r1` names; `scientific-r2` identifies the new complete execution attempt, not another cohort to pool. Earlier failed execution is excluded, not a scientific negative.
+
+## S41. Frozen design and exact six-endpoint definitions
+
+All symbols in Part D are scoped to BIT002. Its P_rec is the immediate recurrent-target CACHE-minus-ALL_FRESH effect; P_rec in Studies 001/003 denotes a long-run recurrence interaction. They are different estimands.
+
+BIT002 uses the frozen BIT/PL operator and 42,000 independent new factual HALF-law histories: 21,000 ALL_F and 21,000 ALL_M starts, a fixed equal mixture. Before generating a history, the checkpoint is selected uniformly from updates 193-256. Only factual CACHE history generates the stored pre-target state. At that state, recurrent target `T_(t-2)` and innovation target `I_t` are each evaluated with CACHE, ALL_FRESH and FOCAL_FRESH retrieval, giving six paired complete turnovers with the same semantic operator tape. Shadow outcomes do not feed into history. Every turnover retains the 32-parent, 128-query budget; target types and arms are paired observations, not independent replicates. This target comparison measures heterogeneity across specified targets, not the causal effect of changing environmental recurrence.
+
+The pretreatment eligible set `E` contains policy-M parents with a valid cache; `e` is its size and `H` indicates that a focal eligible parent exists. ALL_FRESH replaces every eligible parent's cached policy probe with its paired fresh probe. FOCAL_FRESH changes only the eligible parent with the smallest prespecified 64-bit hashed key, with lower slot breaking ties, in an otherwise all-CACHE background; this is a hashed selection rule, not an exactly uniform focal-parent claim. The history, state, policy labels and common tape remain fixed by design. These are retrieval interventions conditional on the existing retention architecture, not interventions on the allele or cache retention.
+
+All six contrasts are CACHE minus the corresponding FRESH intervention. `L` is eligible-parent descendant count divided by 32 under CACHE minus ALL_FRESH; `P` is normalized survivor accuracy under the same contrast, with denominator 1,024. `F` is the focal family's descendant count divided by 32 under CACHE minus FOCAL_FRESH. F is unconditional, including H=0 blocks as zero; neither e nor H is used to normalize effects. L and F involve different treatment vectors and cannot be merged or read as per-carrier effects.
+
+Six frozen two-sided Hoeffding intervals use 42,000 blocks, range lengths 2 for L/P and 1/4 for F, alpha 0.012 for each L/P endpoint and 0.001 for each F endpoint (total 0.05), and exact upward-rounded rational half-widths 0.015608294208001326 and 0.002378115509733596. Joint coverage is at least 95% under the independent-uniform-Philox-word working idealization, which is not a mathematical or cryptographic proof of independence of generator outputs. Material thresholds are delta=1/64 for L/P and 1/256 for F; negligibility margins are epsilon=1/32 and 1/128. Exact fractions determine the ordered classifications before display rounding. This new six-endpoint family is separate from every Study 001-003 family; there is no joint error control or pooled sample across studies. Supplementary Part D gives all estimates, prespecified transforms, histograms and audit limits.
+
+## S42. All original results and prespecified transforms
+
+All canonical accepted results are reproduced below without alteration. Normalized-scale exact fractions in this block are authoritative over rounded percentage-point prose. Lines beginning DESC are descriptive, not new inferential endpoints. They include complete start-specific numerators, factual accuracy, factual recurrence, H and e counts. Algorithmic labels are retained literally; bounded does not mean zero, a negative innovation point estimate is not omitted, and target differences are heterogeneity rather than an intervention on recurrence.
+
+BRC2-RESULTS-V3
+
+status=VALID
+
+tier=production-r1
+
+manifest_sha256=cc53f20085657e88855d9dd008b55f401362ac1c0eddc884917c3a1f76cd1574
+
+blocks=42000
+
+ENDPOINT L_rec sum=67761 den=1344000 mean=22587/448000 lo=121831907771995359/3500000000000000000 hi=231089967228004641/3500000000000000000 label=MATERIAL_POSITIVE
+
+ENDPOINT L_inn sum=-10107 den=1344000 mean=-3369/448000 lo=-80949342228004641/3500000000000000000 hi=28308717228004641/3500000000000000000 label=NEGLIGIBLE_WITHIN_MARGIN
+
+ENDPOINT P_rec sum=1068356 den=43008000 mean=267089/10752000 lo=96942012378486077/10500000000000000000 hi=424716190746513923/10500000000000000000 label=POSITIVE_MAGNITUDE_UNRESOLVED
+
+ENDPOINT P_inn sum=-245708 den=43008000 mean=-61427/10752000 lo=-223874393871513923/10500000000000000000 hi=103899784496513923/10500000000000000000 label=NEGLIGIBLE_WITHIN_MARGIN
+
+ENDPOINT F_rec sum=16657 den=1344000 mean=16657/1344000 lo=52581299823898621/5250000000000000000 hi=77551512676101379/5250000000000000000 label=MATERIAL_POSITIVE
+
+ENDPOINT F_inn sum=-2611 den=1344000 mean=-373/192000 lo=-3240617882300197/750000000000000000 hi=326555382300197/750000000000000000 label=NEGLIGIBLE_WITHIN_MARGIN
+
+DERIVED L avg_lo=20441282771995359/3500000000000000000 avg_hi=129699342228004641/3500000000000000000 diff_lo=6680227895999337/250000000000000000 diff_hi=22288522104000663/250000000000000000 resolved_difference=1
+
+PATTERN L RECURRENT_ONLY_MATERIAL_POSITIVE
+
+DERIVED P avg_lo=-21155396915504641/3500000000000000000 avg_hi=88102662540504641/3500000000000000000 diff_lo=-3478886059013923/5250000000000000000 diff_hi=324295292309013923/5250000000000000000 resolved_difference=0
+
+PATTERN P NONMATERIAL_OTHER
+
+DERIVED F avg_lo=4982829107966207/1750000000000000000 avg_hi=13306233392033793/1750000000000000000 diff_lo=25147706073898621/2625000000000000000 diff_hi=50117918926101379/2625000000000000000 resolved_difference=1
+
+PATTERN F RECURRENT_ONLY_MATERIAL_POSITIVE
+
+SUMMARY S3_MATERIAL_POSITIVE_ONLY endpoints=L_rec,F_rec
+
+DESC H_count ALL_F=20996 ALL_M=20995
+
+DESC E_hist ALL_F=4,9,7,17,25,40,39,67,67,84,99,102,117,164,179,219,228,275,315,386,508,551,709,857,981,1210,1473,1768,2122,2266,2656,2181,1275
+
+DESC E_hist ALL_M=5,11,16,16,30,37,46,51,59,59,109,95,114,164,167,241,259,302,378,410,522,592,695,829,969,1236,1474,1704,2016,2437,2452,2229,1276
+
+DESC R1_count ALL_F=10401 ALL_M=10493
+
+DESC startsum ALL_F L_rec=33797 L_inn=-4914 P_rec=531513 P_inn=-123200 F_rec=8260 F_inn=-1161
+
+DESC startsum ALL_M L_rec=33964 L_inn=-5193 P_rec=536843 P_inn=-122508 F_rec=8397 F_inn=-1450
+
+DESC factual_A_sum ALL_F=13511332 ALL_M=13503559
+
+END
+
+## S43. Full eligibility distributions and structural qualification
+
+The e histogram has all 33 bins for each start and their combined count. No bin is removed and there is no conditional or stratified analysis. H totals are 20,996 ALL_F and 20,995 ALL_M; nine blocks have H=0, and 2,551 blocks have e=32. The structural bound is `abs(L) <= min(1, e/8, (32-e)/8)`, with L=0 at e=0 and e=32 and F=0 when H=0. Effects remain unconditional and divided by the original 32- or 1,024-unit denominators.
+
+| eligible_parents_e | ALL_F_count | ALL_M_count | combined_count |
+|---|---|---|---|
+| 0 | 4 | 5 | 9 |
+| 1 | 9 | 11 | 20 |
+| 2 | 7 | 16 | 23 |
+| 3 | 17 | 16 | 33 |
+| 4 | 25 | 30 | 55 |
+| 5 | 40 | 37 | 77 |
+| 6 | 39 | 46 | 85 |
+| 7 | 67 | 51 | 118 |
+| 8 | 67 | 59 | 126 |
+| 9 | 84 | 59 | 143 |
+| 10 | 99 | 109 | 208 |
+| 11 | 102 | 95 | 197 |
+| 12 | 117 | 114 | 231 |
+| 13 | 164 | 164 | 328 |
+| 14 | 179 | 167 | 346 |
+| 15 | 219 | 241 | 460 |
+| 16 | 228 | 259 | 487 |
+| 17 | 275 | 302 | 577 |
+| 18 | 315 | 378 | 693 |
+| 19 | 386 | 410 | 796 |
+| 20 | 508 | 522 | 1030 |
+| 21 | 551 | 592 | 1143 |
+| 22 | 709 | 695 | 1404 |
+| 23 | 857 | 829 | 1686 |
+| 24 | 981 | 969 | 1950 |
+| 25 | 1210 | 1236 | 2446 |
+| 26 | 1473 | 1474 | 2947 |
+| 27 | 1768 | 1704 | 3472 |
+| 28 | 2122 | 2016 | 4138 |
+| 29 | 2266 | 2437 | 4703 |
+| 30 | 2656 | 2452 | 5108 |
+| 31 | 2181 | 2229 | 4410 |
+| 32 | 1275 | 1276 | 2551 |
+
+## S44. Execution, failed attempt and audit limitations
+
+The accepted R2 FRCE Slurm job was 54269109 on cn136/norm: one node/task, 32 CPUs, requested 64G, eight-hour limit, no requeue or restart. It ran October 25, 2026, 11:50:27-11:51:01 America/New_York, 34 seconds. Parent, batch and extern, producer, analyzer and auditor succeeded; original A-L checks and agreement passed. Analyzer and auditor outputs were byte-identical, SHA-256 `190dd7f33dc48ff5a2b8f61c4650257cda435b026eb16ea8ec34a763152d9cb2`. G8 independent execution-audit acceptance preceded first unseal. No postproduction scientific program was rerun during release or manuscript integration.
+
+Measured job-wide cgroup peak was 277,540,864 bytes; batch MaxRSS was 276,213,760 bytes. Run plus marker plus external authority files/logs totaled 88,459,697 bytes; combined logs were 14,747 bytes. The memory amendment removed a requirement for a kernel hard ceiling exactly at 64 GiB, retaining the request and measured-peak limits. The roughly 166.4-GiB site hard ceiling was an earlier qualification observation, not a separately measured R2 limit. User-reported 700 GB is not presented as an observed R2 allocation ceiling. Sole benchmark 54251116 was not repeated; fresh readiness review accepted bounded reuse after the runtime correction, without claiming a production guarantee.
+
+Original R1 job 54254461 failed in its output monitor (return -9, `output_monitor_failed`); the specific underlying exception was not retained and remains unresolved. Its 46 partial files are preserved, unresumed, uninterpreted and uncombined. One extra complete R2 followed explicit human authority, a bounded runtime correction, genuine nonauthor SOURCE GO, complete synthetic FRCE engineering and fresh readiness/execution gates. A rejected, unexecuted runtime fixture candidate was corrected before execution. Original provider-blocked/no-code, source/compiler/fixture/resource failures and other partial evidence remain preserved. The failed job supplies no accepted estimate and is not evidence of scientific infeasibility.
+
+Auditor own source, binaries and FIXOUT were frozen before producer-output access. Cross-implementation agreement and corruption cases passed before production. However, factual histories were independently replayed for blocks 0-63 only. For the other 41,936 blocks, provenance relies on fixtures, that replay and check E. A forged but self-consistent pre-target state with consistently recomputed arms can pass C-J by design. Conditional replay establishes transitions from a stored state, not that state's historical validity. Internal AI-assisted audits can detect divergent implementations but cannot exclude a shared specification misreading or substitute for external scientific replication. Native model records identify actual requested-model boundaries, not unavailable canonical returned-provider/model identity.
+
+## S45. Interpretation boundary and remaining scientific questions
+
+The main text reports all six results and all prespecified average/difference intervals. L/F recurrent-minus-innovation differences exclude zero; the P difference includes zero despite differing individual endpoint labels. No averaging of L with F, per-carrier ratio, e/H normalization or new analysis is permitted by the accepted result. Focal hashed selection is not claimed exactly uniform. The joint six-interval coverage is conditional on the independent-uniform-Philox-word working idealization and is separate from every prior interval family.
+
+Immediate BIT/PL effects are conditional on late HALF endogenous states and the fixed equal-start mixture. They establish no long-run mediation of allele enrichment, separate selection on retention, effect of changing recurrence, TORUS retrieval intervention, equilibrium, invasion, stability, displacement mechanism, biological memory, origin of memory architecture or novelty/priority. Section 10 of the prospective protocol offers directional intuition without hypothesis, test or interpretive privilege. This integration does not reinterpret that intuition as a confirmed mechanism. Exact original null/adverse/bounded/unresolved findings remain present.
+
+The companion REMAINING_SCIENTIFIC_GAPS.txt distinguishes questions left open by the accepted evidence from requirements for reporting these narrow results. It proposes no automatic new job, cohort, top-up, changed endpoint or revived original protocol. All previous releases, Studies 001-003, attempt4, consumed CODEX059 and the original incomplete Phase 3 study remain historical evidence at their original scopes.
+
+## S46. Provenance and local reproduction
+
+The immutable BIT002 protocol hash is `71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa`; canonical results hash is `190dd7f33dc48ff5a2b8f61c4650257cda435b026eb16ea8ec34a763152d9cb2`. Accepted release, G8 execution and G9 addendum evidence are copied into provenance/bit002. The original accepted addendum, exact six-endpoint table, derived intervals, original descriptives and complete eligibility histogram are also copied there. Figure 6 is an unchanged copy of the accepted BIT002 forest figure. No scientific program, output or frozen definition is changed by copying or rendering these files.
+
+The complete BIT002 scientific reproducibility ZIP is a separately checksummed asset of the version 1.3.0 GitHub release (https://github.com/jackchenx3/recurrence-selects-costly-memory-use/releases/tag/v1.3.0). It includes all 45 accepted data files, exact runtime/job script, 33 keys, fixtures, accepted sources/binaries and build/gate/native-execution evidence. Future human reproduction requires a new namespace and applicable authority; archival recipes do not authorize an automatic third scientific attempt or overwrite. The working manuscript's integrity receipt binds the baseline, copied evidence, new text and final PDFs. The prior v1.2/G9 acceptances are not claimed as acceptance of the new integrated text.

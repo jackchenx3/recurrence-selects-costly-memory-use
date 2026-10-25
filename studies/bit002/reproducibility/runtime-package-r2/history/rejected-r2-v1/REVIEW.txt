@@ -1,0 +1,84 @@
+VERDICT: STOP
+
+Exact candidate manifest: `ROOT_FROZEN_R2_CANDIDATE.json`, 16,435 bytes, SHA-256 `386fc6d16a3f95c2a21c633f2d73716ddc0bef964effc1aa7e46de20710536af`.
+
+The complete candidate has a material fixture acceptance gap. This is a source finding; no candidate code was executed and no runtime failure or test PASS is claimed.
+
+**Blocking finding — the concurrent-writer check can pass without observing filesystem activity.**
+
+In `candidate-runtime-r2-frozen/engineering_fixture.py`, lines 249–250 accept an already-set `observed` event. Lines 264–269 set that event after any scan, including an empty scan before the first write. Line 273 requires only `scans > 0` and 64 completed commits.
+
+A permitted schedule demonstrates the gap:
+
+1. The writer sets `ready` and waits for `go` at lines 238–239.
+2. The scanning thread sets `go`, scans the still-empty tree, increments `scans`, and sets `observed`.
+3. The scanning thread is descheduled. The writer completes all 64 write/fsync/rename/directory-fsync operations within its deadline. Its first-commit wait immediately succeeds because `observed` was already set.
+4. The scanning thread resumes after `done` is set, leaves the loop, and performs the final stable count.
+
+The check can therefore report PASS with one pre-write scan and one post-completion scan, without any scan overlapping the writer’s filesystem work. It does not establish the required meaningful concurrent-writer coverage. `R2_SOURCE_REPORT.txt` lines 115–116 overstate the handshake’s protection against a vacuous observation.
+
+The deterministic enumeration/stat rename regression is useful and separately checks recovery. It does not close this concurrent-workload acceptance gap. Because this review covers the complete fixture and integration, I cannot issue SOURCE GO.
+
+**Authentication and integration evidence**
+
+All **58 named inputs** matched their supplied byte counts and SHA-256 hashes: five external manifests/authority/brief files, 35 candidate files, and all 18 baseline files.
+
+The complete baseline comparison confirmed six changed files:
+
+`NODE_TOOLCHAIN_FREEZE.json`, `NODE_TOOLCHAIN_FREEZE.schema.json`, `README.txt`, `SOURCE_INVENTORY.tsv`, `production.sh`, and `runtime_helper.py`.
+
+The remaining twelve are byte-identical:
+
+`AUTHENTICATED_INPUTS.json`, `CPU_METADATA_AUTHENTICATION.json`, `DEFAULT_PYTHON_IDENTITY_NATIVE.json`, `NODE_TOOLCHAIN_FREEZE.txt`, `PROTOCOL_V0_4_ACCEPTED.txt`, `PUBLIC_TIMING_CLI_CONTRACT.json`, `SOURCE_AUTHOR_REPORT.txt`, `V2_COMPLETION_REPORT.txt`, `V2_DIFF.patch`, `V3_DIFF.patch`, `V3_NODE_MAPPING_REPORT.txt`, and `benchmark.sh`.
+
+I independently reconstructed the full diff from the named baseline and additions. It exactly matched `R2_FULL_DIFF.patch`: 100,963 bytes, SHA-256 `403174d16422bfc3897217413b01a5394cb4a4dfecdb89c589283c9659dc5cfa`.
+
+Both inventories matched every included file’s bytes/hash and their documented exclusions. `CANDIDATE_INVENTORY.tsv` contains 34 unique entries, covering the other 34 named candidate files; its SHA-256 is `3433b01dce5ce462c01dfaa448aa98c592c4318794e97e9e2e247526faf6b6db`. This verification covered the named set; I did not enumerate unlisted filesystem contents.
+
+The unchanged G0 protocol is 81,247 bytes, SHA-256 `71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa`.
+
+**Other source-review conclusions**
+
+The requested scan correction and timed-error wiring appear coherent within the reviewed source:
+
+- `runtime_helper.py` lines 264–307 bound scanning to three attempts, reset both counts on every attempt, and rescan only caught descendant `FileNotFoundError`. Failed attempts cannot return accumulated partial counts.
+- Root validation occurs on every attempt. Missing roots fail immediately. The explicit traversal-error callback raises errors; permission and other OS failures, symlinks, and nonregular objects remain fatal through the reviewed paths.
+- Lines 295–303 retain original exception type, message, path, native filenames, errno, operation, and attempt information, followed by a bare re-raise.
+- `timed()` lines 484–487 retain the first fatal scan context; lines 518–525 include it in structured step metadata. The reviewed kill, return-code, and success logic remains fail-closed. This is source assessment, not demonstrated runtime behavior or guaranteed evidence persistence during filesystem failure.
+
+The fixture otherwise contains real filesystem operations and source cases for complete counts, deterministic disappearing-entry recovery, exhaustion, traversal and entry permission failures, other OS errors, applicable native permission denial, symlinks, FIFO, and invalid roots. Its helper calls are limited to `sizes()`. The fixed writer payload is 8 MiB; auxiliary payload remains below 1 KiB. The source includes a 35-second concurrent-phase deadline and 55-second alarm. Actual timing and filesystem behavior remain untested.
+
+The package/run paths consistently change to `runtime-package-r2` and `scientific-r2`. The unchanged marker expression derives the exclusive `.scientific-r2.once` marker. Production retains `production-r1`, the same binary identities and arguments, CPU class, 32 CPUs, 64 GiB request, eight-hour limit, and measured acceptance criteria.
+
+The configuration’s package/evidence hashes matched their named files. Its keys match the closed schema, and all schema constant fields match the configuration. The schema change is confined to the protocol package path. The complete comparison establishes no candidate change to scientific definitions, binary identities, keys, cohorts, endpoints, inference, or retained resource requirements. Scientific binaries and unlisted source files were not independently reopened or rehashed.
+
+The current README/report distinguish historical evidence from new operational authority. They preserve scientific-r1 as INVALID, leave its specific exception unresolved, identify the consumed benchmark, and require external binding of the unchanged protocol, memory amendment and acceptance, human rerun authority, future independent acceptances, and exact ROOT authority. `benchmark.sh` remains byte-identical archival material with no run authority.
+
+**Authority and limits**
+
+This STOP provides no execution authorization. No test PASS, successful repair, confirmed old root cause, scientific validity, or production readiness is established.
+
+Any future accepted SOURCE candidate must precede one complete synthetic engineering regression on **FRCE Slurm**, using new scratch. Fresh independent readiness review must explicitly justify reuse of the original sole benchmark for the unchanged binaries/class. Exact ROOT G7R2 authority must then precede the one additional full scientific submission, followed by independent EA before unsealing. There is no second benchmark or automatic third scientific attempt. If R2 fails, automatic execution stops and the human receives the exact script, dependencies, command, job ID, full errors, and log paths.
+
+I did not author any candidate and invoked no additional model or agent. My identity claim is limited to this actual reviewer request/response boundary; I did not access configuration or session records to claim a canonical returned-model identity.
+
+**Complete local-command ledger**
+
+There were **14 command invocations: 13 completed static commands and one denied invocation**. In order:
+
+1. `python3` here-document intended to read the candidate root manifest; denied before its Python body ran because Bash could not create a temporary file.
+2. `python3 -c`: read the candidate root manifest.
+3. `python3 -c`: read human rerun authority, integrated brief, source-author authentication, and baseline root manifest.
+4. `python3 -c`: authenticate all 58 named files and compare all 18 baseline files.
+5. `python3 -c`: generate textual comparisons for all six changed baseline files.
+6. `python3 -c`: display helper lines 1–540.
+7. `python3 -c`: display helper lines 541–840.
+8. `python3 -c`: display the complete engineering fixture.
+9. `python3 -c`: display the R2 report, production/benchmark scripts, configuration, schema, and candidate inventory.
+10. `python3 -c`: read authentication manifests, preserved gate records, benchmark receipt, memory amendment, and original P2 metadata.
+11. `python3 -c`: verify inventory coverage/hashes, configuration/schema correspondence, configuration hashes, and named diff/addition headers.
+12. `python3 -c`: reconstruct and compare the complete diff; read preserved failure-review/authentication records, timing contract, and toolchain record.
+13. `rg -n -C 3`: inspect protocol passages concerning gates, invariance, resources, submissions, and acceptance.
+14. `python3 -c`: read CPU/Python metadata, protocol execution/authority passages, and the fixture concurrency acceptance excerpt.
+
+The Python launcher emitted denied automatic `/tmp/xcrun_db-*` cache-write diagnostics during completed Python commands. No successful file write or candidate modification occurred. No unlisted artifact was opened; no network, SSH, scheduler, scientific/RNG program, candidate import, code parsing, syntax check, build, fixture execution, skill, AGENTS, credential, session access, or delegation occurred. This response supplies the review for CLI-managed `REVIEW.txt`; I attempted no direct report-file write.

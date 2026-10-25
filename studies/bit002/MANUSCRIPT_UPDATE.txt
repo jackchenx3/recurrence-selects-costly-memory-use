@@ -1,0 +1,100 @@
+Immediate retrieval effects at recurrent and innovation targets in BIT/PL
+Focused manuscript update for PHASE3-BIT-RETRIEVAL-CAUSALITY-002
+Execution and estimates accepted at G8. Publication-review disposition is recorded in the accompanying release acceptance receipt.
+
+MAIN RESULT
+
+In the frozen BIT/PL late HALF-law checkpoint experiment, cached rather than paired-fresh retrieval produced material positive immediate effects on eligible-lineage survivor share and on the contribution of a hashed-selected focal eligible family at recurrent targets. At innovation targets, all three effects were bounded within their prespecified negligibility margins. Recurrent-target survivor accuracy increased, while its magnitude relative to the material and negligibility thresholds remained unresolved. These are one-turnover, identical-state effects in this implemented model and fixed initial-start mixture. They do not establish long-run mediation, an effect of intervening on recurrence, or a general mechanism.
+
+DESIGN AND INFERENCE
+
+The inferential unit was a block, not a survivor, candidate, target, arm or query. All 42,000 prespecified blocks were retained: 21,000 ALL_F and 21,000 ALL_M starts. Each checkpoint t was drawn uniformly from 193 through 256 before generating its factual history. At the cloned pre-target state, six complete one-turnover evaluations paired recurrent target T_(t-2) and innovation target I_t with CACHE, ALL_FRESH and FOCAL_FRESH retrieval. They shared the frozen update-t operator tape. Every block contributed to both target types; this pairing did not double the sample size. Only CACHE factual history generated the pre-checkpoint states; branch outputs did not feed forward.
+
+The eligible set E comprised policy-M parents with a valid cache. For L and P, ALL_FRESH switched every eligible parent to fresh probes. For F, FOCAL_FRESH switched only one eligible parent in an all-CACHE background. The focal parent minimized the prespecified 64-bit hashed key, with lower slot breaking ties; the endpoint is defined under that hashed selection rule, not an exactly uniform idealization. The probability bound for any 32-key tie under the uniform-word idealization is 496/2^64. L and F are different interventions and are neither merged nor converted into per-carrier effects.
+
+Every contrast below is CACHE minus FRESH. L is the eligible parents' descendant share among 32 survivors. P is total correct bits among the 32 survivors divided by 1,024. F is the focal family's descendant count divided by 32 and is unconditional, including blocks without an eligible focal parent. F was not divided by H or by the number of eligible parents.
+
+Six prespecified bounded-mean Hoeffding intervals used exact rational arithmetic and frozen upward-rounded half-widths: 0.015608294208001326 for L/P and 0.002378115509733596 for F. Alpha was 0.012 for each L/P endpoint and 0.001 for each F endpoint, totaling 0.05. Under the prespecified independent-uniform-Philox-word working idealization, Bonferroni gives at least 95% simultaneous coverage of the six intervals. This idealization is not a mathematical or cryptographic proof of independent generator outputs. No new tests, fitted intervals, p-values, outcome-selected cohorts or postproduction record reanalysis were added.
+
+COMPLETE PRESPECIFIED RESULTS
+
+Table 1. Estimates and simultaneous intervals, in percentage points (pp) of each endpoint's normalized scale. Rounding here is for display only; canonical exact fractions, integer sums/denominators and classifications are retained in ORIGINAL_ACCEPTED_RESULTS.txt and SIX_ENDPOINTS.tsv. Classification used exact fractions before rounding.
+
+Endpoint   Estimate (pp)       Simultaneous interval (pp)          Prespecified label
+L_rec      5.041741 [   3.480912,    6.602570] MATERIAL_POSITIVE
+L_inn     -0.752009 [  -2.312838,    0.808820] NEGLIGIBLE_WITHIN_MARGIN
+P_rec      2.484087 [   0.923257,    4.044916] POSITIVE_MAGNITUDE_UNRESOLVED
+P_inn     -0.571308 [  -2.132137,    0.989522] NEGLIGIBLE_WITHIN_MARGIN
+F_rec      1.239360 [   1.001549,    1.477172] MATERIAL_POSITIVE
+F_inn     -0.194271 [  -0.432082,    0.043541] NEGLIGIBLE_WITHIN_MARGIN
+
+The material threshold delta was 1/64 = 1.5625 pp for L/P and 1/256 = 0.390625 pp for F. The negligibility margin epsilon was 1/32 = 3.125 pp for L/P and 1/128 = 0.78125 pp for F. The labels use the protocol's ordered rules; "negligible" means bounded below epsilon in magnitude, not a null effect.
+
+At recurrent checkpoint targets, all eligible carriers' cached rather than paired-fresh retrieval for one turnover increased eligible-lineage survivor share by more than 1/64 (simultaneous interval 3.480912 to 6.602570 pp for CACHE minus FRESH; estimate 5.041741 pp).
+
+At innovation checkpoint targets, all eligible carriers' cached rather than paired-fresh retrieval changed eligible-lineage survivor share by less than 1/32 in magnitude (estimate -0.752009 pp; interval -2.312838 to 0.808820 pp). This bounds, and does not establish absence of, an effect. The structural near-monomorphism qualification below applies.
+
+At recurrent checkpoint targets, all eligible carriers' cached rather than paired-fresh retrieval increased normalized survivor accuracy (estimate 2.484087 pp; interval 0.923257 to 4.044916 pp), with magnitude relative to delta=1/64 and epsilon=1/32 unresolved. It is sign-resolved, not classified as a material positive effect.
+
+At innovation checkpoint targets, all eligible carriers' cached rather than paired-fresh retrieval changed normalized survivor accuracy by less than 1/32 in magnitude (estimate -0.571308 pp; interval -2.132137 to 0.989522 pp). This bounds, and does not establish absence of, an effect.
+
+At recurrent checkpoint targets, the focal eligible parent's cached rather than paired-fresh retrieval for one turnover increased that family's contribution to the 32-survivor population by more than 1/256 (estimate 1.239360 pp; interval 1.001549 to 1.477172 pp for CACHE minus FRESH). This is the unconditional population-normalized focal-family endpoint, not a per-carrier or H-conditioned effect.
+
+At innovation checkpoint targets, the focal eligible parent's cached rather than paired-fresh retrieval changed that family's population-normalized contribution by less than 1/128 in magnitude (estimate -0.194271 pp; interval -0.432082 to 0.043541 pp). This bounds, and does not establish absence of, an effect.
+
+The three innovation point estimates are negative and their intervals include zero; these values are retained without treating bounded effects as absent. No endpoint received MATERIAL_NEGATIVE or NEGATIVE_MAGNITUDE_UNRESOLVED. That classification does not rule out adverse effects within the displayed bounds.
+
+DERIVED INTERVALS AND PREDECLARED PATTERNS
+
+These are the protocol's endpoint transforms, not additional tests. Table 2 gives interval endpoints in pp. An average is the arithmetic mean of the recurrent and innovation endpoints; a difference is recurrent minus innovation. Exact rational transforms and patterns are also in DERIVED_INTERVALS.tsv.
+
+L average [0.584037, 3.705695]   rec-minus-inn [2.672091, 8.915409]   resolved_difference=1   pattern=RECURRENT_ONLY_MATERIAL_POSITIVE
+P average [-0.604440, 2.517219]   rec-minus-inn [-0.066264, 6.177053]   resolved_difference=0   pattern=NONMATERIAL_OTHER
+F average [0.284733, 0.760356]   rec-minus-inn [0.958008, 1.909254]   resolved_difference=1   pattern=RECURRENT_ONLY_MATERIAL_POSITIVE
+
+The L and F recurrent-minus-innovation intervals exclude zero. The P difference interval includes zero: the different individual endpoint labels do not establish a resolved accuracy difference between target types. All such differences describe effect heterogeneity across checkpoint target type at the same states, not an effect of intervening on recurrence.
+
+The exact study summary is S3_MATERIAL_POSITIVE_ONLY, naming L_rec and F_rec. This is the frozen classification token, not a favorable-mechanism label and not a statement that other effects equal zero. No offsetting-material pattern was classified.
+
+ELIGIBILITY AND STRUCTURAL LIMITS
+
+H=1 occurred in 20,996/21,000 ALL_F blocks and 20,995/21,000 ALL_M blocks; H=0 occurred in nine blocks in total. Exactly 2,551/42,000 blocks had e=32. The complete 33-bin e histograms for each start, including zero and 32, are reported in ELIGIBILITY_DISTRIBUTION.tsv; every histogram sums to 21,000. All original H/e, factual-recurrence, start-specific numerator and factual-accuracy descriptives are retained verbatim in ALL_ORIGINAL_DESCRIPTIVES.txt.
+
+The L structural bound is |L| <= min(1, e/8, (32-e)/8). L is forced to zero at e=0 and e=32, and F is zero at H=0. Thus bounded aggregate L effects, including the innovation label, must be read alongside the e distribution and this near-monomorphism constraint. No normalization by e or H and no additional e-stratified inference was performed.
+
+IDENTIFICATION AND PROVENANCE LIMITS
+
+Under the frozen operator, pairing compares retrieval interventions at the same stored state and operator tape. The claim averages over the endogenous late-window state distribution and the fixed equal ALL_F/ALL_M mixture. It does not extend to SHAM or ZERO-law states, TORUS, other models, equilibrium, invasion, evolutionary stability, allele effects, biological memory, displacement as an established mechanism, or mediation of previously published long-run enrichment. No novelty or priority claim is made. This reduced study does not complete PHASE3-SELECTION-PERFORMANCE-MECHANISM-001.
+
+The audit replays factual history for blocks 0..63 only. For blocks 64..41,999, history provenance is supported by fixtures, the 64-block replay and check E, not by independent replay of every history. A forged but self-consistent pre-target state with consistently recomputed arms can pass checks C-J by design. Conditional replay establishes that arms follow from the stored state; it does not establish that the state is a valid history outcome. The accepted COND_FORGE demonstration makes this limitation explicit.
+
+The protocol's prospective directional notes have no hypothesis, test or interpretive privilege. An eligible cache's selection-history relationship to T_(t-2) does not establish any endpoint's sign: probe quality, donor changes, interference, selected endogenous states and eligibility prevalence can all matter. No monotonicity theorem was supplied. The recorded intuition is not used to call these findings expected, implied or mechanistic confirmation.
+
+EXECUTION, REPRODUCIBILITY AND FAILURE HISTORY
+
+The original accepted R2 execution was FRCE Slurm job 54269109 on cn136, norm, one node/task, 32 CPUs, 64G requested, no requeue/restart, eight-hour limit. It ran on October 25, 2026, 11:50:27-11:51:01 America/New_York (15:50:27-15:51:01 UTC): 34 seconds. Parent, batch and extern all completed 0:0. The original P2-P6 steps passed, all A-L audit checks passed, the original agreement passed and the analyzer/auditor result files were byte-identical. A fresh independent G8 postcheck accepted original accounting, DC, resource limits, original agreement, actual result hashes and line-2 validity before the first estimate read.
+
+Measured job-wide cgroup peak was 277,540,864 B and batch MaxRSS was 276,213,760 B. Run plus marker plus all external authority files/logs totaled 88,459,697 B; combined logs were 14,747 B. The operational amendment removed the requirement for a kernel hard ceiling exactly at 64 GiB; it retained the request and measured-peak limits. An earlier cn136 qualification observed a site hard ceiling of about 166.4 GiB; R2 did not separately measure its numeric hard ceiling. No 64 GiB hardware-ceiling claim is made.
+
+Sole benchmark 54251116 was not repeated. Fresh readiness review explicitly accepted proportionate reuse for the unchanged scientific binaries/CPU class after bounded monitoring and diagnostic changes. Its binding twice-total projection was 317.92257756125 s against 14,400 s. That projection and the synthetic size-scan validation were not production guarantees or new performance estimates. The original data/source/key/build/audit/benchmark/authority records and cumulative active-time snapshots accompany this update.
+
+Original R1 job 54254461 failed in its output monitor with return -9 and output_monitor_failed, leaving no accepted estimates. Its specific underlying exception was not retained and remains unresolved. Its 46 partial files remain frozen and were neither resumed, aggregated nor interpreted. Explicit human authority permitted one additional complete R2 attempt after runtime correction, independent source review, complete FRCE engineering validation and fresh readiness/G7 gates. A rejected, unexecuted fixture candidate that could pass without observing writer work was corrected and freshly reviewed before the engineering job. Earlier source, compiler, fixture, resource and provider-blocked/no-code attempts remain preserved at their actual scopes; none is renamed successful or treated as scientific evidence.
+
+The frozen incomplete original study, Studies001-003/releases, attempt4 and consumed CODEX059 remain preserved. SOURCE/engineering/readiness/EA checks used separately scoped finite native CLI roles; records identify the actual requested-model boundary and do not authenticate an unavailable canonical returned-model identity. Computational review is not journal peer review. G9 acceptance, once recorded, applies to this complete update and its preserved limitations; no journal acceptance is promised.
+
+FILES FOR MANUSCRIPT AND REPOSITORY UPDATE
+
+SIX_ENDPOINTS.tsv: all six exact fractions, sums/denominators, labels and display decimals.
+DERIVED_INTERVALS.tsv: all prespecified derived intervals, resolved-difference flags and patterns.
+ELIGIBILITY_DISTRIBUTION.tsv: complete e=0..32 counts by fixed start and combined.
+ALL_ORIGINAL_DESCRIPTIVES.txt and ORIGINAL_ACCEPTED_RESULTS.txt: unmodified accepted outputs.
+EXACT_PRESENTATION_DATA.json: machine-readable presentation conversion, no new analysis.
+reproducibility/: complete accepted producer/analyzer and independent-auditor source archives and manifests; 33 public keys and independent key table; protocol and operating amendment; exact runtime package and job script; build IDs/toolchain; original manifest/audit/agreement/native receipts; benchmark receipt; G7/G8 and cumulative ledger snapshots.
+SIX_ENDPOINTS_FOREST.pdf/.svg/.png and FIGURE_CAPTION.txt: complete six-endpoint figure and scope.
+HOW_TO_REPRODUCE.txt: archival build/run recipe, accepted data archive/locations and integrity guards.
+
+All original accepted outputs and fractions remain authoritative over rounded prose/figures. This is a focused new-study update for inclusion alongside the existing paper's frozen evidence, not a replacement or retroactive completion of its original protocol. No external journal submission or external-publication status is asserted.
+
+ACTIVE EFFORT AT PUBLICATION-REVIEW FREEZE
+
+At this review freeze, cumulative completed active effort is 25429.060106 seconds (7.063627807222222222222222222 hours), below the unchanged 57,600-second total cap. It includes complete model-generation durations and logged ROOT/engineering/scientific time conservatively, including parallel work; waiting is excluded. G0 design used 4,899.72959504 seconds under its 14,400-second cap. The separately approved G2-G4 implementation allowance closed at accepted G4 after 2,142.576502804052 seconds, below 7,200 seconds, and was not reopened. The pending G9 model generation and later ROOT work are excluded from this freeze and must be added to the final release receipt. No cap or history was reset and no reset credits were purchased or consumed. The exact ledger and accounting freeze accompany the update.
