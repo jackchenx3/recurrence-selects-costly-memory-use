@@ -1,0 +1,25 @@
+{
+  "at_utc": "2026-10-26T01:17:26.185767+00:00",
+  "gate": "G3_PUBLIC_LITERAL",
+  "verdict": "PASS_PUBLIC96_EACH_ONLY",
+  "roles": {
+    "producer": {
+      "job_id": "54308518",
+      "passed": 96,
+      "failed": 0,
+      "comparison_sha256": "65dca965d91f0420bcb066c2dd2c781ccf277a6cd0f9cc0e697f134fc439d87e"
+    },
+    "auditor": {
+      "job_id": "54308519",
+      "passed": 96,
+      "failed": 0,
+      "comparison_sha256": "d5eea672da3cd03d4e382ef644779e64c5db85e672bb171415d711df589fbb65"
+    }
+  },
+  "actual_final_bytes_and_native_exits_exact": true,
+  "all_slurm_job_and_steps_0_0": true,
+  "same_SOURCEGO_V2_binaries_and_public_inputs": true,
+  "filesystem": "Node-local/tmp qualifiedperjob, nativefinalpublish succeeds andartifactcopies verified",
+  "r1_failure_and_partial_evidence_preserved": true,
+  "not_full_G4_or_benchmark_science_acceptance": true
+}

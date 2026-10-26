@@ -1,0 +1,115 @@
+REPLACEMENT REPAIR REPORT -- 2026-10-25
+PHASE3-BIT-SUSTAINED-RETRIEVAL-003 -- SOURCE/runtime repair, metadata pending
+
+Status
+Concrete repair source is written under candidate/. NOT SOURCE/runtime GO, NOT
+benchmark/production ready. No benchmark or other runtime outcome exists here.
+G4 and every scientific definition, key, cohort, horizon, endpoint, inference,
+full-history/both-branch replay requirement and accepted executable are unchanged.
+Exactly three unchanged sequential scientific call expressions remain per mode,
+with --threads 32. Numeric RESULTS remain hash/copy only, sealed until EA.
+
+Provenance correction
+REPORT.txt is the original partial author's file, byte-for-byte preserved ONLY
+as provenance. ROOT_COMPLETION_NOTE.json is also preserved byte-for-byte and is
+the actual correction: that author completed 14 native commands, then suffered
+900-second timeout/SIGTERM -15 without a final message. Its claimed step15 and
+successful final inventory generation did not occur. This report explicitly
+supersedes those unsupported completion claims; it does not rewrite their history.
+No canonical returned model identity is asserted. An explicit CLI request boundary
+does not establish such an identity.
+
+Four integrated repairs
+1. workflow.py requires prospective_closure_qualified=true and a bound real proof
+   SHA; the authored freeze has false, empty mapped allowlist and empty proof/
+   flags/helper/extension placeholders. It fails closed. Mapped ELFs must match
+   exact qualified absolute paths, realpaths and SHA256. Qualified module hashes,
+   extension ldd transitive path sets/dependency hashes and helper binary identities
+   are checked before science. No benchmark learning is allowed. README specifies
+   the exact ROOT merge/collision rules from authenticated CLOSURE_TERMINAL.json,
+   interpreter -I -B flags, dependency/module/map schema and subsequent review.
+   Old libcrypto metadata already exists; no particular missing library is proven.
+   No new workflow imports were added; all are also in the pending probe source.
+2. Removed the unproven one-second sealing deadline without any replacement tail
+   budget. After marker copy/hash verification, sealing/fsync and final resource/
+   output checks, original native stderr receives final observed integer
+   in_job_full_workflow_us and post-marker samples. ROOT must retain/reconcile
+   terminal native logs, late bytes/peak/shutdown and original allocation elapsed.
+   Receipt schema and consumer use that same field. The gate remains exactly
+   max(native_ElapsedRaw_seconds+1,ceil(in_job_full_workflow_us/1000000)), with
+   625*binding<=14400. Native +1 retains whole-second resolution coverage.
+3. Each metadata helper persists numbered argv, raw stdout/stderr and actual
+   native exit/timeout/failure evidence before validation or later identity errors.
+   Timeout kills/reaps its process group and retains available streams. Spawn
+   failure explicitly permits null native_returncode; failure may be null when
+   no exception. Existing one archival attempt includes those regular files.
+   IDENTITY references the saved helper evidence rather than duplicating streams.
+4. README stages SOURCE_INVENTORY plus its exact filename closure, including the
+   original ROOT note and this replacement report. Newly authored freeze/inventory
+   use canonical ASCII compact sorted JSON, one LF, no floats. Threshold is exact
+   23040000 integer microseconds. All scripts and provenance bytes are preserved.
+
+Proportionate output handling and retained boundaries
+Full source/runtime/provenance evidence remains in ROOT's authenticated immutable
+readonly external deployment. DEPLOYMENT_REFERENCE.json retains the complete
+source inventory, absolute deployment path and inventory/runtime/proof hashes,
+then enters normal verified/fsynced archive copying. A matching ROOT authority
+boolean and readonly directory check require retention for reproducibility.
+Deployment is checked before and after science. The measured job avoids two bulk
+payload copies; all its actual work/archive/native output and retained copies
+remain counted. This is a prospective packaging choice, not a measured output pass.
+No cgroup sampling/peak/failure gate, scientific hash IO, data copy, audit, seal,
+new-root, inventory or authority check was removed. norm/cn038, 32 CPUs, requested
+96G, benchmark 30 minutes / production 8 hours, no requeue and the true outer
+700000000000-byte ceiling remain fixed. The 625 output rule is unchanged.
+
+Completed native command ledger BEFORE writing this report
+Each numbered entry is one exec_command shell invocation. Only candidate/ was
+written. Command2 exited 2 because its final rg named absent .agents/.codex dirs;
+all other commands listed here exited zero. No hidden successful step is inferred.
+1. pwd and rg listing of permitted metadata/source filenames.
+2. cat full SOURCE_RUNTIME_FIX, baseline README/report/ROOT note/inventory and
+   INPUT_MANIFEST; rg baseline/candidate and absent local instruction directories.
+   Combined output was truncated; later targeted reads covered needed source.
+3. Read pending probe source (without executing), both sbatch scripts, workflow
+   lines1-240, contract lines1-145 and README deployment tail.
+4. Read remaining workflow, freeze header, review authentication and contract tail.
+5. Static Python metadata inspection of freeze keys/loader/resources/modules,
+   ancestor instruction-file existence and all 24 manifest byte/SHA matches.
+6. Targeted README/contract reads and candidate/baseline directory-mode listing.
+7. Static Python copied baseline files into candidate, edited workflow closure/
+   helpers/timing and wrote canonical metadata-pending RUNTIME_FREEZE.json.
+8. Static text edits wrote README finalization, authority and deployment schemas.
+9. diff workflow/README against baseline; wc sizes; rg stale timing/closure terms.
+10. Static text edits deduplicated successful helper metadata and rejected
+    unresolved or unfrozen ldd paths.
+11. Static Python 3.6 AST/JSON/source-order/identity checks: passed; imports and
+    scientific call expressions unchanged, canonical freeze, provenance/scripts
+    identical and all 24 manifest entries verified. No candidate import.
+12. Static text edits replaced bulk deployment duplication with exact reference
+    evidence and matching ROOT retention authority/readonly-directory check.
+13. Static Python 3.6 AST/JSON/relationship checks on that source: passed; unchanged
+    imports, three exact scientific call expressions, one archival call, unchanged
+    science/data/audit/monitor/copy-fsync/ELF/inventory primitives; canonical
+    no-float pending freeze; final elapsed/helper persistence source ordering;
+    deployment reference/authority/README consistency; unchanged scripts/provenance;
+    all 24 manifest entries still match exact sizes and SHA256.
+This ledger records completed observations only. Inventory generation/final
+verification, if performed after this report write, is evidenced by its actual
+native tool output, not anticipated here. The separate final answer may cite only
+checks that have actually completed by then. No compilation check was rerun.
+
+Validation limits and remaining gates
+AST parsing establishes Python3.6 grammar compatibility, not Python3.6 runtime
+behavior. Static ordering checks establish source structure, not successful IO,
+timeout handling, archive sealing, resource compliance or scheduler behavior.
+No candidate/probe/scientific program, scientific import, fixture, RNG, worker,
+compilation, network, SSH or Slurm operation was executed. No external file was
+written. Original input/baseline hashes were checked without modifying them.
+ROOT must run only the separately reviewed metadata probe on FRCE, authenticate
+its real canonical proof and original native evidence, finalize ONLY metadata and
+inventory by the documented collision-checked rules, and obtain fresh genuine
+nonauthor review of the ENTIRE final candidate before ANY candidate execution or
+benchmark. Pending metadata is not qualification. One benchmark remains gated;
+postterminal native all-step/resource/archive checks and independent EA remain
+mandatory, followed by separate production readiness and exact ROOT authority.

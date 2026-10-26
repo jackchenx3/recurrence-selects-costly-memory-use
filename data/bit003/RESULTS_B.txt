@@ -1,0 +1,11 @@
+BIT003_RESULTS_V1
+status=VALID
+tier=production-r1
+n_blocks=20000
+n_all_f=10000
+n_all_m=10000
+policy_signed_sum=48037735
+policy_denominator=163840000
+accuracy_signed_sum=49343283
+accuracy_denominator=5242880000
+inference=PRODUCTION_ONLY

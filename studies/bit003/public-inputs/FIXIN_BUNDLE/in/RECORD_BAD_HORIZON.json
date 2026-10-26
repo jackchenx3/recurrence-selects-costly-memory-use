@@ -1,0 +1,1 @@
+{"id":"RECORD_BAD_HORIZON","kind":"RECORD","payload":{"append_hex":"","base":"FIXIN_BUNDLE/literals/SYNTHETIC_RECORD.bin","patches":[{"hex":"ff00","offset":16}],"rehash":false,"truncate":208216},"version":1}

@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-10-26T00:55:53.875857+00:00",
+  "gate": "G2_BUILD",
+  "verdict": "BUILD_SUCCESS_ONLY",
+  "role_sources": "Exact independently SOURCEGO V2 producer and auditor",
+  "jobs": [
+    54308115,
+    54308116
+  ],
+  "all_native_job_and_steps_completed_0_0": true,
+  "native_accounting_receipt": "g2-build-v2-r1/FIRST_KNOWN_JOB_OBSERVATION.json",
+  "binary_and_dependency_receipts": "g2-build-v2-r1/BUILD_ARTIFACT_FREEZE_NATIVE.json",
+  "source_and_output_hashes_verified_and_remote_builds_readonly": true,
+  "warning_policy": "Auditor misleading-indentation warnings preserved verbatim, no compile errors; no cosmetic correction introduced",
+  "compiler_and_build_CPU_class_observed_not_yet_benchmark_freeze": true,
+  "scope": "Compilation only. No scientific program executed; next public and own correctness fixtures, G4a independent freeze and G4 acceptance remain.",
+  "benchmark_or_science_authority": false
+}

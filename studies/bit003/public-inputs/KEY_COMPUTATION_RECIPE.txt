@@ -1,0 +1,21 @@
+BIT003 static SHA256 recipe; no Philox generation.
+ASCII PHASE3-BIT-SUSTAINED-RETRIEVAL-003|<tier>|<PURPOSE>, without terminator,
+BOM, spaces or LF. Tiers production-r1,fixture-r1,benchmark-r1; purposes
+INITIAL_GENOTYPE,TARGET_INNOVATION,TARGET_COPY,FRESH_MASK,SCOUT_MASK,LOCAL_BIT,
+DONOR_KEY,SURVIVAL_UNIFORM,POLICY_MUTATION. SHA256 the full literal string.
+k0=int.from_bytes(digest[0:4],little); k1=int.from_bytes(digest[4:8],little).
+key64=k0+(k1<<32). Print digest 64hex, k0/k1 8hex, key64 16hex, lowercase.
+KEYS.tsv has literal TAB columns key_string,sha256,k0,k1,key64, ASCII full-string
+sort and final LF. These use the original numeric conventions, whose header
+purpose_string,sha256,k0_le32,k1_le32,first64_le remains in LEGACY_KEYS.tsv.
+Union old rows by complete purpose_string; require identical rows for duplicates;
+sort ASCII. LEGACY_KEY_PROVENANCE.json preserves source-file membership.
+Static author check: 27 keys, 27 distinct key64, disjoint from 126 legacy
+rows (126 distinct legacy key64). This is ONE author's calculation.
+Producer and independent auditor must independently recompute; fresh G1F reviewer
+must also check every value, pairwise distinctness and full registry disjointness.
+No collision search, seed selection or RNG output generation.
+Source hashes:
+PROTOCOL.txt 30754cf9de941f09b8086e8ffb27a2b4af42882c6bfcca484928efa926ae6b98
+OLD_LEGACY_KEYS.tsv ac4adf37049dc065baf4c43b6de8a58b86e85e6edeca8f992277db0eb6026f09
+BIT002_KEYS.tsv b8b9f6277c7ab172b7b7d44fbd9b357824b874282bd58c4b7f5fa92ae27aae16

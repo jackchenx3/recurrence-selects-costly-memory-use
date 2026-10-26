@@ -1,0 +1,1 @@
+{"id":"CLI_AUDIT1","kind":"CLI","status":"OK","value":{"command":"brs3_audit","options":{"--data":"/NEW/data","--inputs":"/PUBLIC","--report":"/NEW/report","--results":"/NEW/result","--threads":"1","--tier":"fixture-r1"}},"version":1}

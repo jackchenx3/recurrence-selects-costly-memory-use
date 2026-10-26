@@ -1,0 +1,1 @@
+{"id":"CLI_FIXTURE","kind":"CLI","status":"OK","value":{"command":"brs3_fixture","options":{"--case":"/PUBLIC/case.json","--inputs":"/PUBLIC","--output":"/NEW/out"}},"version":1}

@@ -1,5 +1,5 @@
 {
-  "title": "Environmental recurrence selects a costly memory-use policy: long-run population effects and immediate retrieval effects",
+  "title": "Sustained cache access changes policy composition; survivor-accuracy benefit remains unresolved",
   "upload_type": "publication",
   "publication_type": "preprint",
   "creators": [
@@ -7,26 +7,19 @@
       "name": "Chen, Jack"
     }
   ],
-  "description": "Three accepted prospective long-run computational studies show recurrence-attributable enrichment of a costly supplied-cache-use policy, with population-performance contrasts bounded below declared positive scales or unresolved. The subsequent BIT002 identical-state, one-turnover retrieval experiment uses 42,000 independent new BIT/PL histories. At recurrent targets, cached retrieval materially increased eligible-lineage survivor share and unconditional focal-family contribution, and increased normalized accuracy with magnitude unresolved. All three innovation-target effects were bounded within prespecified margins, with negative estimates and zero-containing intervals; bounds do not establish absence. All six estimates, exact intervals and original adverse/bounded/unresolved findings are retained. Immediate effects do not establish long-run mediation, a recurrence intervention, TORUS retrieval effects or biological memory. Only 64 factual histories were independently replayed; conditional state provenance limits remain explicit. Internal AI-assisted reviews are not external peer review. Manuscript/data CC BY 4.0; original code MIT.",
+  "description": "Sustained cached retrieval changes M-policy composition; accuracy benefit remains unresolved.\n\nBIT003 adds a new prospective sustained-intervention study: 20,000 independent paired blocks, common 256-turnover history, then 256 turnovers per branch with own-state feedback and common indexed tapes. Full independent replay covers every history and both branches. Both simultaneous intervals and all unresolved findings are reported.\n\nPrimary time-averaged M-policy frequency: +29.319907 percentage points, interval [27.342023, 31.297791], MATERIAL_POSITIVE. Secondary normalized survivor accuracy: +0.941148 points, interval [-1.360659, 3.242956], UNRESOLVED; neither an accuracy benefit nor within-margin equivalence is established.\n\nThese are total sustained retrieval-intervention effects in the specified model, not natural mediation, pure selection coefficients, isolated retention benefits, or biological conclusions. The original scientific job54339475 and all steps completed0:0; independent execution acceptance preceded numeric unseal. No scientific program was rerun for publication.\n\nEarlier studies and releasev1.3.0 are unchanged and remain separately identified. The broader original protocol remains incomplete. Internal computational reviews are not external journal peer review. Author: Jack Chen, without workplace affiliation or work email. \n",
   "license": "cc-by-4.0",
-  "version": "1.3.0",
-  "publication_date": "2026-10-25",
+  "version": "1.4.0",
+  "publication_date": "2026-10-26",
   "keywords": [
     "evolutionary computation",
-    "environmental recurrence",
+    "sustained retrieval intervention",
     "memory-use policy",
-    "retrieval intervention",
-    "finite populations",
     "reproducible research"
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/releases/tag/v1.3.0",
-      "relation": "isIdenticalTo",
-      "scheme": "url"
-    },
-    {
-      "identifier": "10.5281/zenodo.23085659",
+      "identifier": "10.5281/zenodo.23649496",
       "relation": "isNewVersionOf",
       "scheme": "doi"
     }

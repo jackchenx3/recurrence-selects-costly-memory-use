@@ -1,0 +1,106 @@
+{
+  "G0": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G0_ACCEPTANCE.json",
+    "sha256": "ef7b028aa9a5230621100188610d26da0f9e0e056538f796e55a8859f888a7d9"
+  },
+  "G4": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G4_ACCEPTANCE.json",
+    "sha256": "983cf01c451b8d253cef544e6d661d4c9eb01eb301213b608fb57a06254ff985"
+  },
+  "G5": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G5_BENCHMARK_ACCEPTANCE.json",
+    "sha256": "913ac6ccc576cc3ae4bdea0be3587f7a9bcb45807d1ccd429ee6014232acb32c"
+  },
+  "G6": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G6_READINESS_ACCEPTANCE.json",
+    "sha256": "271b9cc413e6895de57f983a01951c0fced352cb5d93e687ab83733667f6046a"
+  },
+  "G8_independent_original_job_execution_acceptance_REQUIRED_BEFORE_numeric_unseal": true,
+  "G9_both_endpoints_all_null_adverse_bounded_unresolved_claims_publication_review_required": true,
+  "at_utc": "2026-10-26T05:56:42.861270+00:00",
+  "budget_gate": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g7-production-r1/G7_BUDGET_GATE.json",
+    "sha256": "be8e4ea603d24e847211d65ac0d68184d78da4eadc419c7b9a34e59b754ef85b"
+  },
+  "closure_proof_sha256": "ebe889ce805ca2d923c4fcf1b3badf54fa97ef1ab3b9568ca87f24f81cc2f91a",
+  "exact_deployment": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_sustained_retrieval_003_20261025/workflow-deployment-v5-final",
+  "fixed_science": {
+    "audit": "FULL_HISTORY_AND_BOTH_BRANCHES",
+    "benchmark_blocks": 64,
+    "production_blocks": 20000,
+    "purposes": 9,
+    "states_per_block": 769,
+    "threads": 32,
+    "turnovers_per_block": 768
+  },
+  "gate": "G7",
+  "human_authority": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/USER_AUTHORITY.json",
+    "sha256": "353a51529620ed0cd8a47b0793250d0cfcf4c3fb29da23d50b42513e991e4220"
+  },
+  "inventory_sha256": "f1e98a1a19927753d662b30ca7dc80f74895fc38c6daf99c66f77e742f98bec9",
+  "main_topic_focus": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/MAIN_TOPIC_FOCUS_AUTHORITY.json",
+    "sha256": "fd0f0466abc6710c72b6c607c2108d9a63e173ea7298b58f8cb682e114147248"
+  },
+  "mode": "production",
+  "new_runroot": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_sustained_retrieval_003_20261025/g7-production-r1",
+  "new_submission_dir": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_sustained_retrieval_003_20261025/g7-production-r1-submission",
+  "no_arrays_requeue_retries_resume_or_postproduction_scientific_program_reruns": true,
+  "no_old_study_or_publication_reopen": true,
+  "no_scientific_definition_key_endpoint_N_horizon_inference_changes": true,
+  "no_scientific_submission_consumed_before_this_authority": true,
+  "requires_once_only_consumption_lock_before_sbatch": true,
+  "requires_pre_sbatch_exact_remote_payload_authentication": true,
+  "resources": {
+    "array": false,
+    "benchmark_peak_ceiling_bytes": 350000000000,
+    "benchmark_seconds": 1800,
+    "cpus_per_task": 32,
+    "mem_request": "96G",
+    "mem_request_bytes": 103079215104,
+    "no_requeue": true,
+    "nodelist": "cn038",
+    "nodes": 1,
+    "ntasks": 1,
+    "outer_memory_ceiling_bytes": 700000000000,
+    "partition": "norm",
+    "production_seconds": 28800,
+    "scratch_min_available_bytes": 34359738368,
+    "whole_output_cap_bytes": 17179869184
+  },
+  "runtime_freeze_sha256": "662928a1a23d29f729511dc28cae0008dd743fbd2d939d85aca4f3ec90a017d0",
+  "scientific_binary_ids": {
+    "brs3_analyze": {
+      "bytes": 550440,
+      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_sustained_retrieval_003_20261025/g2-build-v2-r1/producer/build/brs3_analyze",
+      "sha256": "81c45e834208ad86a3ff6e723cb52b66e645d5cdb5f53a3b3d3eecf8bd66935b"
+    },
+    "brs3_audit": {
+      "bytes": 332144,
+      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_sustained_retrieval_003_20261025/g2-build-v2-r1/auditor/build/brs3_audit",
+      "sha256": "1e98b070bcc061deadfd7595998ba448ecad463f405e254d157909bc0910511e"
+    },
+    "brs3_produce": {
+      "bytes": 550440,
+      "path": "/mnt/ccrsf-static/Analysis/chenx3/organized-variation-transfer/phase3_bit_sustained_retrieval_003_20261025/g2-build-v2-r1/producer/build/brs3_produce",
+      "sha256": "249d35d5422a8a62c25f16ab2ff357ba7138e893599cb75bb8f87cc8e006c451"
+    }
+  },
+  "script": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/workflow-source-candidate-v5-final/production.sbatch",
+    "sha256": "c27406d7575b3ccb18e18db177ae803e4fb92098f7b7111f7138d7e95da33072"
+  },
+  "source_inventory_ids": {
+    "auditor": "772fae850bc623a9e0dbe2fcabd970f5c1241095e2e95c11c9a4a4b31a61f161",
+    "producer": "c2ef86e6217700f452c23bd55db7ea8ee8fb1fbeac6ce08f0af5e89f10bf5f00"
+  },
+  "source_runtime_GO": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/WORKFLOW_SOURCE_RUNTIME_V5_ACCEPTANCE.json",
+    "sha256": "db2330369946d330456a4869684b857fa5922fe62c38f1af61be4c4c4ad235dd"
+  },
+  "study": "PHASE3-BIT-SUSTAINED-RETRIEVAL-003",
+  "submission_ordinal": 1,
+  "tier": "production-r1",
+  "verdict": "AUTHORIZE_EXACT_ONE_SCIENTIFIC_SUBMISSION"
+}

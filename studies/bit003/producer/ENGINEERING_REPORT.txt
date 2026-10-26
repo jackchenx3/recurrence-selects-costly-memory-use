@@ -1,0 +1,134 @@
+PHASE3-BIT-SUSTAINED-RETRIEVAL-003 producer/analyzer SOURCE CANDIDATE v1
+No compilation or execution. No SOURCE GO, runtime PASS, independence claim,
+benchmark qualification, scientific outcome or gate authority is asserted.
+
+Scope and input boundary
+Only INPUT_MANIFEST.json and inputs/ were read. All323 manifest entries were
+hashed with Python standard library and matched their declared byte sizes/hash.
+All209 full-inventory entries and four core-index entries were parsed. All96
+case input JSON documents were read/parsed; expected outputs were not loaded
+for semantic selection or copied into runtime source. Hash verification of the
+input manifest necessarily hashes their supplied bytes as engineering data.
+The original-path provenance manifest is data only; no path in it was followed.
+No filesystem configuration, credentials, sessions, AGENTS, skills, other role,
+review transcript or root study source was consulted. Public author report was
+read as engineering provenance, not an independent scientific answer.
+
+Native identity disclosure
+The user explicitly requested native CLI gpt-6.1-sol/high. Canonical returned
+provider/model identity is unavailable to this agent. No claim of independently
+verified provider/model metadata is made. No subagent/model/network was used.
+
+Accepted identities embedded in base.hpp
+PUBLIC_INPUT_INDEX.json:
+e60b367dbab81dc1388f06f9d7be6da90b927e8302b4d7001be544976abe8889
+BUNDLE_INVENTORY.json:
+4cc9b10958a04c458aeba5ab3788dd54153b1ce18fc2cb83fe3847e012599bd6
+PROTOCOL.txt:
+30754cf9de941f09b8086e8ffb27a2b4af42882c6bfcca484928efa926ae6b98
+ENGINEERING_CONTRACT.txt:
+ec34610b22fdbd1e0a31523995e9ffaa201b06840fb2da4b17f4fc44386e9913
+KEYS.tsv:
+636c558fdd866cd3d4f60eeee30915d7dce1d2001fbcbd1c5773acb56bcbe522
+These are frozen source constants. No CLI/environment identity override exists.
+
+Reuse/change accounting
+Exact vendor SHA256 and Philox headers copied from own producer_analyzer
+baseline; own LICENSE-CODE and public Random123 license retained. Operator
+candidate construction, donor ties, Lemire128 product, survivor-slot mutation
+and PRE producing-parent genotype retention follow own baseline operator.hpp
+and G0-bound reference2.1-2.4,5.1,5.3,12.1. New Fenwick integer cumulative
+selection replaces repeated128-weight scans, preserving ascending candidate
+identity/rank. cpp_int rational mechanics follow own baseline inference.hpp,
+with all old halfwidths, labels, thresholds, endpoints and cohort removed.
+New source files replace old base/rng/operator/history/dataset/analyzer/fixin/
+main/harness pathways. No old source file is included or compiled at runtime.
+No old42k cohort, checkpoint selection, six-arm payload, focal/time purpose,
+old key namespace, old inference or sampled64-history audit is inherited.
+The baseline-to-candidate patch contains actual old/new file differences,
+including removed old runtime src files, vendor copies, and new source/docs/build.
+Historical private expectations and old public fixture assets are omitted from
+the source diff; they are not needed as runtime source or deployed answers.
+
+Computation coverage
+science.hpp: nine new purposes and tier ranges; independent block initialization
+by parity; all512 common targets including u-2 recurrence across256; common
+indexed masks/donor/mutation/survival addresses;256 factual CACHE turnovers;
+copy of full S256 into continuing C and fresh-substitution A; each own state,
+eligibility and caches; all769 states,768 rejected-word totals and four sums.
+No state/history trajectory was generated in this task.
+Weights are powers-of-two uint64; draws multiply in unsigned128; each draw
+starts retry0 with cap256. No floating classification or candidate deduplication.
+Every selected M survivor retains producing parent's PRE x, even when its
+mutated survivor genotype differs. Flip mask uses new survivor slot.
+
+dataset.hpp:208216-byte fixed records and64-byte chunk headers,200*100
+production records, bounded chunk RAM, ascending output independent of worker
+completion; canonical metadata and checksums; readonly/fsync/atomic publication.
+No whole cohort RAM allocation. Parallel block work uses up to32 worker threads.
+Analyzer validates closure, counts/lengths, metadata/hashes, every state's cache
+legality, S0 initialization and all512 targets; computes sums from all stored
+follow-up states and verifies stored sums. It does not simulate turnovers or
+claim to detect coherent forged history. Independent full replay remains required.
+All cohort sums and denominators use64-bit or wider, including5242880000.
+Zero contrasts and all parity-fixed blocks remain in aggregation.
+
+fixture.hpp: computes all16 case kinds from payload semantics. No case id,
+expectedpath, expected_exit, expected_sha256 or derivation controls an answer.
+KEYS derives27 table rows and rederives126 legacy registry rows; KAT computes
+actual Philox words from official rows; ADDRESS uses injected output words;
+STATE encodes/decodes; LEMIRE, OPERATOR and CHAIN use injected tapes with no
+RNG fallback; TARGET applies carry recurrence; TOTALS includes complete rows;
+INFERENCE and CLASSIFY use exact rationals and outward12decimal rounding;
+CERTIFICATE recomputes48-term log series, tail exponent97, all stored fraction
+gaps and both grid ceilings; RECORD applies literal patches and computes format,
+state and endpoint checks without RNG/replay; CHUNK/MANIFEST/CLI validate their
+isolated formats. Error outputs are computed from actual failures and retain
+specified arm/update/draw precedence. Outer input failures produce no FIXOUT.
+
+support.cpp: role-owned fixture/invariance checks and all16 exact corruption
+recipes. Last recipe toggles record0 S256.x0 at69664, regenerates both complete
+branches257..512 from that state on original fixture addresses, replaces branch
+states/retries/four sums and recomputes all specified hashes; original earlier
+history and targets remain. This is construction, not audit or independence.
+Helpers have no production-tier override and cannot inject science endpoints.
+Public synthetic record is a literal structural fixture, not a cohort outcome.
+
+io.hpp/json.hpp: strict duplicate-aware integer JSON parser, canonical byte
+comparison, LF text; exact projected allowlists and authenticated consumed bytes;
+readonly/no-symlink checks; strict absolute CLI/output paths; exclusive partial
+creation and Linux renameat2 NOREPLACE publication with file/directory fsync.
+Only designated input-view files are opened. No delegated absent inventory,
+certificate, legacy, license, expected or other full-bundle file is probed by
+science executables. ROOT must authenticate full authoritative bundle separately.
+Runtime source never dispatches from answer metadata and reads no environment.
+
+Provenance/report interfaces
+Externally frozen package source SHA supplied only at BUILD time into generated
+build_metadata.hpp, avoiding source-hash cycles. build.sh produces actual final
+executable SHA256s and ldd/compiler output in BUILD_RECEIPT.txt. Own support
+report hashes /proc/self/exe resolved final executable bytes, never argv[0] or
+an assumed receipt hash. Science results are exact11 LF lines, externally
+hashable by ROOT; no result-location-dependent text. No auditor report/binary
+is authored. The auditor's required source/binary/report identities must come
+from that independently authored final executable and original job.
+
+Untested issues and required gates
+No compiler, project script, py_compile, fixture, operator, Philox, survival,
+history, simulation, selfcheck, benchmark or model kernel was executed.
+This is a complete implementation candidate, not evidence it compiles or passes.
+Boost cpp_int header availability on FRCE must be checked/frozen at build; GCC8
+filesystem linking, Linux renameat2 support, fsync semantics, library identities,
+input closure/path races, all96 exact outputs/exits, deterministic full-fixture
+bytes at threads1..32/reverse arms, every corruption rejection, interrupted
+publication/IO errors and actual resource behavior remain runtime checks.
+Full independent replay of every original history and both continuing branches
+is not replaced by any analyzer check. No independent auditor is present here.
+Performance is unmeasured. Exactly one complete64-block workflow benchmark must
+be<=23.04seconds including analyzer/full independent audit/IO/hash/seal; failure
+stops Design1. No reduced audit, hidden timings or tuning trial was performed.
+Actual Slurm/all-step and job-cgroup peaks are ROOT's later responsibility:
+initial96G request; outer700000000000byte ceiling; no64GB hardcap imported.
+No scientific outcomes are preferred or available. Source-author assertions
+and private expectations remain this author's only. All partial artifacts and
+any later failures must be retained; no incomplete run is a completed cohort.

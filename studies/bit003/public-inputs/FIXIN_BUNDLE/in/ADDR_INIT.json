@@ -1,0 +1,1 @@
+{"id":"ADDR_INIT","kind":"ADDRESS","payload":{"b":15,"entity":31,"purpose":"INITIAL_GENOTYPE","subindex":0,"tier":"fixture-r1","u":0,"words":["89abcdef","01234567","ffffffff","ffffffff"]},"version":1}

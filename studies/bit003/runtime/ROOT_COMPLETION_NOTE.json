@@ -1,0 +1,37 @@
+{
+  "at_utc": "2026-10-26T02:41:45.950312+00:00",
+  "author_task_native_outcome": "SUPERVISOR TIMEOUT900seconds, SIGTERM exit-15; no nativefinalAUTHOR_REPORT.txt; preserve as partial, NOT successful model completion",
+  "actual_completed_native_shell_commands": 14,
+  "all_completed_shell_exits_zero": true,
+  "original_partial_files": {
+    "RUNTIME_FREEZE.json": {
+      "bytes": 156912,
+      "sha256": "547fd2c17e1902456757e4384a62970f8baf8b7abe0150c3ec2a11a36fa58829"
+    },
+    "production.sbatch": {
+      "bytes": 584,
+      "sha256": "c27406d7575b3ccb18e18db177ae803e4fb92098f7b7111f7138d7e95da33072"
+    },
+    "REPORT.txt": {
+      "bytes": 11279,
+      "sha256": "87488e1870732c86ee0606e21e272e918aea6abbbc12bef3e3846ac08616c4d0"
+    },
+    "benchmark.sbatch": {
+      "bytes": 582,
+      "sha256": "bf37a8ce3a487bf1e7c94e253fc80bb12fda0e89e2c3c2e2bde614603dd31ea0"
+    },
+    "README.txt": {
+      "bytes": 17447,
+      "sha256": "9b2cde6221165512da40fd7b69a41e48aa553f6a7a6cd893ece2cdf57e7641c6"
+    },
+    "workflow.py": {
+      "bytes": 35434,
+      "sha256": "a62b09cfed9b8e966b9fbd26f6336bc489971825836ed45dde641cde70d180e6"
+    }
+  },
+  "AUTHOR_REPORT_document_correction": "Candidate REPORT.txt anticipates a 15th final static check/inventory generation and asserts sevenfiles. That step DID NOT occur in native transcript; only six actual files existed at timeout. Its claims of final inventory/hash/closure validation are unsupported author prose and must not be cited as executed proof. Original REPORT.txt bytes preserved. Actual earlier AST/JSON static checks did occur in commands9 and12 zero-based; no candidateexecution. ROOT now genuinely static-parsedPython3.6 and JSON and creates metadata inventory; this does NOT execute or validate runtime behavior.",
+  "ROOT_completion_scope": "Exact copied six authored files unchanged, this clarification and exact SOURCE_INVENTORY metadata only; no workflow/code/science definition edits, no compilation/execution/Slurm/benchmark/scientificresults",
+  "scientific_source_unchanged": true,
+  "benchmark_scientific_submission_used": false,
+  "SOURCE_GO": false
+}

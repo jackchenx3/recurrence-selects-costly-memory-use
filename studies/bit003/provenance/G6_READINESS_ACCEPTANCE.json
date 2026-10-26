@@ -1,0 +1,38 @@
+{
+  "G0": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G0_ACCEPTANCE.json",
+    "sha256": "ef7b028aa9a5230621100188610d26da0f9e0e056538f796e55a8859f888a7d9"
+  },
+  "G4": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G4_ACCEPTANCE.json",
+    "sha256": "983cf01c451b8d253cef544e6d661d4c9eb01eb301213b608fb57a06254ff985"
+  },
+  "G5": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G5_BENCHMARK_ACCEPTANCE.json",
+    "sha256": "913ac6ccc576cc3ae4bdea0be3587f7a9bcb45807d1ccd429ee6014232acb32c"
+  },
+  "ROOT_authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g5-ea-g6-readiness-review-v1/ROOT_AUTHENTICATION.json",
+    "sha256": "194e55c106e5add6fffb09c17b0ab65de6ca7ba027b03658f943aca4dd792b0c"
+  },
+  "at_utc": "2026-10-26T05:56:42.852130+00:00",
+  "exact_production_script": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/workflow-source-candidate-v5-final/production.sbatch",
+    "sha256": "c27406d7575b3ccb18e18db177ae803e4fb92098f7b7111f7138d7e95da33072"
+  },
+  "independent_review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g5-ea-g6-readiness-review-v1/REVIEW.txt",
+    "sha256": "180c9c5dc713d325fb8e543c68fdb798161104cdebaf5b341c0200dfd92d237a"
+  },
+  "no_numeric_unseal_or_automatic_submission": true,
+  "readiness_plan": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g5-benchmark-r1/PRODUCTION_READINESS_PLAN.json",
+    "sha256": "51aebe51f738a313125b92c3bd6423916578af0b42d5cd89b3c704b439392d13"
+  },
+  "scope": "Exact unchanged accepted production-r1,20000pairedblocks,fullindependentreplayEVERYhistoryandbothbranches,32CPU96Grequest700GBouter8h,oneoriginalsubmission; requires exactROOTG7/budget beforeexecution,independentG8beforeunseal,G9bothendpoints/alloutcomes.",
+  "verdict": "GO",
+  "workflow_SOURCE_runtime_GO": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/WORKFLOW_SOURCE_RUNTIME_V5_ACCEPTANCE.json",
+    "sha256": "db2330369946d330456a4869684b857fa5922fe62c38f1af61be4c4c4ad235dd"
+  }
+}

@@ -1,0 +1,64 @@
+VERDICT_G8_EXECUTION_ACCEPTANCE: GO
+
+No concrete execution-acceptance blocker remains in the supplied evidence. This verdict precedes numeric RESULTS unseal and applies only to original production job **54339475** for **PHASE3-BIT-SUSTAINED-RETRIEVAL-003**.
+
+I authenticated all **22/22 supplied manifest entries** by actual byte length and SHA-256, then independently reconciled the raw native records, archive inventories, metadata texts, replay certificate, and resource samples.
+
+| Acceptance check | Independently verified finding |
+|---|---|
+| Original native completion | Exactly job `54339475`, `.batch`, and `.extern`; all terminal `COMPLETED 0:0`, with no additional recorded steps |
+| Resources | One node/task, 32 CPUs, cn038, norm, 96G request, 08:00:00 limit; exact script specifies no requeue |
+| Native elapsed | **168 seconds** for job, batch, and extern |
+| Scientific invocations | Exactly three recorded sequential produce/analyze/audit calls; each native return 0, production-r1, 32 threads, empty stdout/stderr |
+| Runtime helpers | **14/14** `ldd` helpers native 0, no timeout, exact frozen dependency path sets; all 20 mapped ELF paths agree |
+| Cohort | **20,000 paired blocks: 10,000 ALL_F + 10,000 ALL_M**, history 256 and follow-up 256 per branch |
+| Independent replay | Exact canonical 14-line `VALID` / `FULL_INDEPENDENT_REPLAY` certificate; **15,380,000 states**, **15,360,000 turnovers**, `first_mismatch=NONE`, accepted identity bindings |
+| Chunk manifest | Canonical 24,096-byte manifest; **200 chunks**, each `100 × 208,216 + 64 = 20,821,664` bytes; every chunk size/hash agrees across receipts |
+| Sealed results | A and B each **236 bytes**, identical SHA-256; no numeric contents accessed |
+| Archive | **284 files**, matching original marker’s **283 entries plus marker itself**; all sizes/hashes reconcile; all 79 supplied metadata texts rehash correctly; exact file set, no extra/partial/failure artifact |
+| Job memory peak | **8,375,296,000 bytes**, across all **1,629** main/archival/marker/late job-root samples |
+| Native all-step MaxRSS | Batch `8,177,448K × 1,024` = **8,373,706,752 bytes**; extern **262,144 bytes** |
+| Whole output | **8,330,494,918 bytes**, below **17,179,869,184 bytes (16 GiB)** |
+
+Whole-output accounting is:
+
+`4,165,246,478 local work + 4,165,246,478 shared archive + 981 original terminal logs + 981 retained terminal-log snapshot`.
+
+The original archived native-log copies remain **zero bytes**. The complete later **981-byte original stderr** is retained externally and hash verified; I have not invented a late copy inside the sealed archive.
+
+The separately supplied **641,589-byte original resource journal** matches both the current archive receipt and original marker. Its earlier text-fetch limit was a metadata retrieval limitation, not a scientific execution failure or rerun.
+
+Every resource sample identifies the hierarchical **v1 job-root cgroup**, with hierarchy enabled and zero failcnt, under-OOM, and OOM-kill records. Actual hard/soft limits are **268,005,957,632 / 103,079,215,104 bytes**; the 96G request is not represented as a hard ceiling. Monitoring is unprivileged and non-atomic. One main sample’s usage exceeds its earlier-read high-water value; later high-water records cover it. Both job peak and every converted native MaxRSS remain below **700,000,000,000 bytes**.
+
+Verified archival elapsed is **166,828,719 µs**. The original `BIT003_FINAL_NATIVE_EVIDENCE` records **166,876,750 µs** after sealing, including the later resource/output observation. Native **168-second** allocation elapsed supplies the whole-job bound through shutdown. No time was subtracted, retimed, or replaced with a benchmark projection. Terminal `squeue` “Invalid job id” is consistent with the completed native accounting and is not treated as job failure.
+
+Exact SHA-256 identities:
+
+| Artifact | SHA-256 |
+|---|---|
+| Protocol | `30754cf9de941f09b8086e8ffb27a2b4af42882c6bfcca484928efa926ae6b98` |
+| Workflow source | `02442d64fd91029c4533c7149f6581dc2567b90504957155785cc0b79f54965e` |
+| Workflow inventory | `f1e98a1a19927753d662b30ca7dc80f74895fc38c6daf99c66f77e742f98bec9` |
+| Producer source inventory | `c2ef86e6217700f452c23bd55db7ea8ee8fb1fbeac6ce08f0af5e89f10bf5f00` |
+| Auditor source inventory | `772fae850bc623a9e0dbe2fcabd970f5c1241095e2e95c11c9a4a4b31a61f161` |
+| Produce binary | `249d35d5422a8a62c25f16ab2ff357ba7138e893599cb75bb8f87cc8e006c451` |
+| Analyze binary | `81c45e834208ad86a3ff6e723cb52b66e645d5cdb5f53a3b3d3eecf8bd66935b` |
+| Audit binary | `1e98b070bcc061deadfd7595998ba448ecad463f405e254d157909bc0910511e` |
+| Runtime freeze | `662928a1a23d29f729511dc28cae0008dd743fbd2d939d85aca4f3ec90a017d0` |
+| Production script | `c27406d7575b3ccb18e18db177ae803e4fb92098f7b7111f7138d7e95da33072` |
+| Original archive marker | `63a8366fd16a0cde0a3873e0aa8447c2a7da691bfaf295756719c132d9c74839` |
+| G7 exact scientific authority | `f78e9f20fd9ac340e4c50faeaa3c9406317ba7b433729ddfe85b9c3733cc1be6` |
+| RUN_AUTHORITY | `5d5881c644b41eb4d1b8050db55a4169f976fa9d1fd5c43d2a6eb7acc8a7eb69` |
+| ROOT preparation authentication | `39001d359ce8ea0517e4ec02af0f0d2a86b39e4ac322cef346b21598a94f5278` |
+
+These bindings agree across accepted G0/G4/SOURCE/runtime/G5/G6/G7 evidence, ROOT preparation, native staging/submission, archived authority, deployment reference, and audit metadata. The deployment is `workflow-deployment-v5-final`; the original run is `g7-production-r1`.
+
+Both once-only slots are consumed: benchmark **54338181** and production **54339475**. The supplied authority, script, submission, and execution records support no arrays, requeue, resume, retry, replacement production, or postproduction scientific-program rerun. Neither slot is reusable.
+
+Accounting preserves **50,112.888761732 seconds** of previous completed charges, adds the original science job’s conservative **169 seconds once**, charges ROOT from **06:25:31 UTC onward**, and owes this G8 generation once, including overlapping active time. At **07:01:17 UTC**, using the observed review window, the arithmetic is **52,713.888761732 seconds**, leaving **4,886.111238268 seconds**, before subsequent finalization. Even charging the full 900-second G8 window plus ROOT through its deadline gives **53,941.888761732 seconds**, below the unchanged **57,600-second** cap. Supervisor must retain actual closing charges; no extension, credit, or reset is granted.
+
+Provenance limits: this is a fresh nonauthor static review of supplied authenticated receipts and raw metadata, reusing accepted upstream findings. Remote binaries and opaque chunk/RESULTS bytes were not locally available for independent rehashing; their hash receipts were reconciled. Postterminal retrieval supplied no scientific payload text, and no numerical outcome was sought, decoded, or inferred. The explicit genuine CLI-request boundary does not authenticate canonical returned provider/model identity, which is unavailable.
+
+Inspection ledger: **17 shell invocations**, within 900 seconds; two nonzero static checks corrected unsupported mode/atomicity assumptions. One heredoc inspection was denied by the read-only sandbox, and two macOS Python-launcher calls emitted denied cache-write attempts; later reads used the direct interpreter. No successful writes, review file, candidate import/execution, compilation, fixture/RNG/simulation, network/SSH/Slurm action, model/subagent/skill use, or rerun occurred.
+
+**The supplied evidence supports authorized numeric unseal only after ROOT authenticates this genuine G8 GO. Mandatory G9 must then review both endpoints and all null, adverse, bounded, and unresolved claims before publication acceptance.** Broader original protocol completion is not established here; old BIT002 publication remains frozen.

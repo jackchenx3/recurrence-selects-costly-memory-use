@@ -1,0 +1,286 @@
+BIT003 FIXIN/FIXOUT v1 - normative public declarative fixture grammar
+
+Scope and isolation
+This specification is part of ENGINEERING_CONTRACT section9, subordinate to G0.
+No fixture option is a scientific CLI override. Execution of this tool, including
+Philox KAT and injected operators, occurs only on FRCE Slurm after source gates.
+This file specifies meanings, not an executable controller. No execution PASS
+or independent acceptance is asserted by an expected output.
+
+Wire grammar and comparison
+A case is canonical JSON with EXACT keys version,id,kind,payload. version=1;
+id matches [A-Z][A-Z0-9_]*, at most64 ASCII characters. kind is one of KEYS,KAT,
+ADDRESS,STATE,LEMIRE,OPERATOR,CHAIN,TARGET,TOTALS,INFERENCE,CLASSIFY,CERTIFICATE,
+RECORD,CHUNK_HEADER,MANIFEST,CLI. The payload has exactly the properties given
+below; reject missing/unknown/duplicate properties, wrong types, lengths/ranges,
+noncanonical integers or hex. JSON booleans are not integers. Arrays are ordered.
+Do not fill defaults. JSON rules are contract9.1. All paths resolve relative to
+frozen input DIR only when explicitly described as bundle relative paths; reject
+absolute paths, symlinks, dot/dotdot, empty components or traversal in such fields.
+A success output is canonical JSON EXACT keys version,id,kind,status,value;
+version,id,kind echo the case, status="OK". An expected error output instead has
+EXACT keys version,id,kind,status,code,where and status="ERROR"; no value.
+where is the exact object specified by the case kind below, without extra text.
+Expectedpath is exclusively for external byte comparator; implementation must
+compute its own output and cannot read an expected file or use id to dispatch
+hard-coded answers. Case meaning comes only from kind and payload.
+The INDEX.json schema is {schema:1,cases:[entry,...]}; each entry has id,kind,
+inputpath,expectedpath,input_sha256,expected_sha256,expected_exit,coverage,
+derivation. coverage lists contract7 letters a-k. Entries and ids are unique.
+For these96 cases, compare every output byte and process exit to its frozen
+expected file/expected_exit. No error matching by substring or ignoring fields.
+All expected errors are public test results, not scientific VALID records.
+
+Common types
+H32 is exactly8 lowercase hex digits; H64 exactly16; H256 exactly64.
+BHEX is an even-length lowercase hex string (may be empty where stated).
+U32/U64 are integer values in [0,2^32-1]/[0,2^64-1]. Counts/indices use JSON
+integers with bounds below. R is a reduced rational string num/den: canonical
+signed decimal num, positive canonical decimal den, gcd1, no negative zero.
+A state object has EXACT keys x,c,policy_mask,valid_mask. x/c each have32 H32;
+masks H32. Slot bit i means slot i. Invalid caches must be zero; valid mask
+must be subset of policy. Invalid M cache is allowed in a primitive initial
+state. Every post-turnover state has valid_mask=policy_mask. Serialization is
+32 LEu32 x,32 LEu32 c,LEu32 policy,LEu32 valid, exactly264 bytes.
+An injected tape has EXACT keys fresh,scout,local,donor,survival,policy_flip.
+fresh/scout/local each have32 H32. local is the ALREADY INJECTED local XOR mask,
+not a Philox word or per-bit probability; policy_flip is an ALREADY INJECTED
+32-slot flip mask H32, not a random word. donor has96 H64 in parent-major order
+3*i+f. survival is32 arrays, one per draw, each1..256 H64 values in retry order.
+Unused literal suffixes are permitted; a draw begins retry0 independently in
+each arm, never consuming another arm's prefix. Exhausted tape before an
+accepted word and before retry256 yields TAPE_EXHAUSTED, not RNG fallback.
+This injection interface changes no production extraction or policy mutation.
+No RNG is called in any injected operator or short chain.
+
+KEYS
+payload={} exactly. Independently derive all27 G0 strings, digests, k0,k1,key64;
+check canonical KEYS.tsv and entire legacy union, 27 pairwise distinct and
+disjoint, as recipe. value exact keys keys_sha256,legacy_sha256,new_count,
+legacy_count,distinct,disjoint; counts integers27/126, booleans true only after
+all checks. Hash full table bytes, not just key pairs. Any discrepancy is INPUT
+(exit2, where={field:"keys"}). This expected hash is a compact commitment to
+all27 externally fixed table rows, not permission to skip recomputation.
+
+KAT
+payload={algorithm:"philox4x32",rounds:10}. Execute independently implemented
+Philox for the three official philox4x32 10 rows in KAT.txt. value={vectors:[
+{counter:[4 H32],key:[2 H32],words:[4 H32]},...]} in original KAT row order;
+words are actual computed words, not copied expected values at runtime.
+All other official file rows, comments, spacing and license remain byte-exact
+provenance; their algorithms are outside this study, no implementation required.
+Disagreement is MISMATCH(exit3, where={field:"kat",index:row_index}).
+
+ADDRESS
+payload exact keys tier,purpose,b,u,entity,subindex,words. tier is a G0 tier;
+b in0..15/63/19999 according to fixture/benchmark/production. words is4 H32
+injected output words; DO NOT call Philox for this primitive. Validate counter
+ranges then emit value={counter:[b,u,entity,subindex],extracted:V}.
+Purposes and valid ranges/extraction:
+INITIAL_GENOTYPE u=0 entity0..31 subindex0 -> words[0] H32;
+TARGET_INNOVATION u1..512 entity0 subindex0 -> words[0] H32;
+TARGET_COPY same ranges -> integer(word0 & 1);
+FRESH_MASK,SCOUT_MASK u1..512 entity0..31 subindex0 -> words[0] H32;
+LOCAL_BIT u1..512 entity0..31 subindex0..31 -> boolean((word0&31)==0);
+DONOR_KEY u1..512 entity0..95 subindex0 -> H64 word0|(word1<<32);
+SURVIVAL_UNIFORM u1..512 entity0..31 subindex0..255 -> same H64;
+POLICY_MUTATION u1..512 entity0..31 subindex0 -> boolean((word0&31)==0).
+No arm/policy/thread coordinate. Invalid range/purpose: RANGE exit2,
+where={field:bad_name}; validate tier,purpose,b,u,entity,subindex,words in order.
+
+STATE
+payload={state:S}. Validate primitive state, encode and decode canonical LE.
+value={state:S,bytes_hex:BHEX,bytes:264}. Illegal cache/mask returns STATE exit2
+where={field:"state"}. Wrong array length/hex/range returns FORMAT exit2 at
+same where. No implicit zeroing or cache repair.
+
+LEMIRE
+payload={w:H64,x:[1..256 H64]}. w must be1..2^39 inclusive, covering turnover
+W<=128*2^32. For each supplied x in order compute full unsigned128 product;
+threshold=2^64 mod w. Reject low64(x*w)<threshold; accept first other product,
+z=high64(product). value={threshold:H64,z:H64,rejections:integer}. If all words
+reject, count<256 -> TAPE_EXHAUSTED exit3 where={retry:count}; count=256 ->
+RETRY_CAP exit4 where={retry:256}. Invalid w -> RANGE exit2 where={field:"w"}.
+No difference between zero threshold and no rejection: x0 accepts when threshold0.
+
+OPERATOR
+payload exact keys state,u,target,tape,arm_order,threads. state is primitive
+state, u1..512, target H32, tape as above, arm_order is exactly ["C","A"] or
+["A","C"], threads integer1..32. Execute the complete G0 reference turnover
+separately from the SAME input state for C(Q=0) and A(Q=policy&valid). No cached
+probe in A; A nevertheless retains pre-parent genotype for every M survivor.
+No old focal or six-arm semantics, rec/inn choice or old L/F decisions apply.
+Value={C:R_C,A:R_A}. Arm order cannot change returned labels or canonical bytes.
+Each R has EXACT keys:
+ switched_mask:H32;
+ probe:[32 H32] (family1 genotypes);
+ donor_family:[32 integers0..2] (argmin mismatch,key,f of families0..2);
+ local_child:[32 H32] (donor genotype XOR injected local mask);
+ selected_ids:[32 distinct integers0..127] in survivor/draw order;
+ draw_rejections:[32 integers0..255];
+ state:post-state; queries:128; M:post-policy popcount; A:survivor accuracy0..1024.
+Candidates j=32*f+i, never deduplicate identical genotypes. Donor keys are indexed
+3*i+f, not family-major j. Weights 2^(32-popcount(g XOR target)). Surviving j
+inherits parent's policy, then XOR flip bit at NEW survivor slot s; cache gets
+pre-update x[j%32] for post-M, otherwise zero invalid. Local mask applied once.
+Whole fixture errors discard all partial arm values; no success value is emitted.
+On retry cap: ERROR RETRY_CAP exit4 where={arm:"C"|"A",draw:d,retry:256}.
+On injected short tape: TAPE_EXHAUSTED exit3 same where with exhausted index.
+If multiple errors, earliest absolute update then arm C before A then draw
+wins regardless requested execution order/threading. No labels depend on outcome.
+
+CHAIN
+payload exact keys state,first_u,steps,arm_order,threads. first_u1..512;
+steps1..4, first_u+len(steps)-1<=512, each step exactly {target:H32,tape:T}.
+Initialize C and A once from state; each step uses OWN prior output state,
+recomputes own switched mask, shares given tape/target, then feeds its OWN result
+forward. Never reset to common checkpoint or discard branch output. Value=
+{steps:[{u:absolute_update,C:R_C,A:R_A},...]} with same R as OPERATOR.
+On error where additionally includes u:absolute_update. PERSISTENT_2 must return
+at257 masks C=1,A=2; at258 Q_A=2, post masks C=80000000,A=40000000. A cache at
+slot30 is ffffffff despite fresh replacement; genotype there is fffffffe.
+This is a hand-derived two-step tape, not a full fixture-r1 reference trajectory.
+
+TARGET
+payload={first_u:integer,previous:array,innovations:array,copy:array}.
+first_u=1 permits previous=[]; first_u3..512 requires previous=[T_(first_u-2),
+T_(first_u-1)] H32. first_u2 is rejected to avoid a partially initialized carry.
+innovations is1..512 H32, copy same length with integer0/1, last u<=512.
+At1/2 innovation is used regardless copy; otherwise carry target u-2 if copy1
+else innovation. value={targets:[H32,...]}. One target sequence is shared by both
+branches, including257 from255 and258 from256; no branch target reset. Range
+failure exit2 RANGE where={field:bad_name}, validation field order as above.
+
+TOTALS
+payload={tier:tier_literal,rows:[[b,M_C,M_A,A_C,A_A],...]}. Exactly tier's block
+count, ascending complete b range, parity fixes start; M0..8192,A0..262144.
+No omission of zero contrasts. Accumulate all four cohort sums and contrasts
+in64-bit or arbitrary precision. value={results_text:STRING} containing EXACT
+11 result lines including final LF, denominators n*8192,n*262144, no inferred
+sample-size halfwidth. Malformed rows: RANGE exit2 where={field:"rows"}.
+Production-sized random trajectory answers are not generated by this case.
+
+INFERENCE
+payload={policy_signed_sum:integer,accuracy_signed_sum:integer}. Valid absolute
+bounds163840000,5242880000 respectively. These are injected totals with fixed
+production n=20000; no sampling or endpoint observation. For each endpoint,
+e=sum/denominator, lower=max(-1,e-h),upper=min(1,e+h), G0's fixed h. value has
+EXACT keys policy,accuracy; each maps to exact keys estimate,lower,upper (R),
+lower_decimal,upper_decimal (fixed12 outward rounded),classification (G0 literal).
+All comparison is exact rational and classification precedes rounding. RANGE
+exit2 where={field:invalid_total_name}, check policy then accuracy.
+
+CLASSIFY
+payload={lower:R,upper:R}, -1<=lower<=upper<=1. Return value={classification:C}
+using the ORDERED predicates: lower>1/32 MATERIAL_POSITIVE; upper<-1/32
+MATERIAL_NEGATIVE; lower>=-1/32 and upper<=1/32 BOUNDED_WITHIN_MARGIN; lower>0
+POSITIVE_MAGNITUDE_UNRESOLVED; upper<0 NEGATIVE_MAGNITUDE_UNRESOLVED; otherwise
+UNRESOLVED. Equality at delta is not material. Bounded precedes sign-only.
+RANGE exit2 where={field:"interval"} if bounds invalid; FORMAT if R noncanonical.
+
+CERTIFICATE
+payload={}. Independently recompute exact series certificate in
+INTERVAL_CERTIFICATE.json; verify all stored fractions, both positive differences,
+family alpha1/20 and minimal upward grid ceilings. No float log or sqrt needed.
+value exact keys certificate_sha256,family_alpha,policy_grid_ceiling,
+accuracy_grid_ceiling,both_exact_inequalities, as in expected file. A mismatch
+is MISMATCH exit3 where={field:"certificate"}. Merely hashing is insufficient.
+
+RECORD - synthetic structural/endpoint validation, no RNG or replay
+payload exact keys base,patches,truncate,append_hex,rehash. base is the normative
+literal relative path FIXIN_BUNDLE/literals/SYNTHETIC_RECORD.bin. It is NOT a
+scientific history or valid cohort. patches array has objects {offset:integer,
+hex:nonempty BHEX}; apply in listed order to the base, no extension beyond its
+208216 bytes; no overlapping patches. truncate integer0..208216 retains that
+many bytes; then append append_hex BHEX. rehash boolean: when true and length
+is208216 replace last32 bytes by SHA256 first208184 after all modifications.
+Validate final length; fixed header fields in offset order; block range and
+parity; reserved; retry range8160; record SHA; every state's legality with S0
+ALL_F/M invalid cache and postvalid=policy; recompute four sums from stored
+states/targets. This kind deliberately does not verify targets or states from
+RNG. Never invoke a scientific executable to accept it as DATA.
+Base value exact keys record_bytes,block_id,tier,record_sha256,M_C,M_A,A_C,A_A.
+Here record_sha256 is the stored hash of first208184 bytes, NOT whole record
+hash. Validation errors as frozen: FORMAT exit2 for header/length,
+RANGE exit2 for retry, HASH exit3, STATE exit3, MISMATCH exit3 for stored sums.
+where={field:field_name}, except state/retry adds index of state/retry. field
+names are magic,schema,tier,start_code,block_id,history_horizon,followup_horizon,
+record_bytes,reserved,length,record_sha256,state,retry,M_C,M_A,A_C,A_A.
+Scalar range/metadata checks precede hash; state checks follow hash; sums last.
+M sum first C then A, accuracy first C then A. The record all-zero genotypes
+and zero targets imply A_C=A_A=262144 by arithmetic only, without a simulation.
+
+CHUNK_HEADER
+payload={bytes_hex:BHEX,tier:tier_literal,chunk_index:integer}. Require exactly64
+bytes, index valid for tier, and every header field exactly as contract3. value=
+{header_bytes:64,record_count:n,first_block_id:b,expected_file_bytes:64+n*208216}.
+Validate length then fields in byte order. FORMAT exit2 where={field:bad_name};
+wrong protocol digest field is protocol_sha256. This primitive validates header
+only; complete cohort inventory and replay are later workflow requirements.
+
+MANIFEST
+payload={bytes_hex:BHEX,tier:tier_literal}. Parse bytes with duplicate-aware
+strict JSON types first (FORMAT/json), then canonical form (FORMAT/canonical),
+then exact key set (FORMAT/keys), then metadata fields in contract4 order and
+file list length, names/order, per-file byte counts, hash syntax (FORMAT/files).
+Metadata mismatch uses its field name, e.g. block_count. Check frozen protocol,
+contract,keys hashes against supplied bundle. No physical file reads beyond
+normative inputs: this is the structural manifest parser only, not DATA acceptance.
+value={block_count:n,chunk_count:k,manifest_sha256:SHA256(original manifest bytes)}.
+Errors exit2 where={field:bad_name}. The literal zero chunk hash is syntactically
+valid, not a claim that any corresponding chunk exists or passes full validation.
+
+CLI
+payload={argv:[ASCII strings,...]}, first entry one of four exact executable
+names. Dry-parse section6/9 mandatory flags, tiers, threads and lexical absolute
+path rules only; do not access paths, spawn anything or run a command. Return
+value={command:name,options:{flag:value,...}} with strings including -- in flag
+keys. Invalid argv -> CLI exit2 where={field:"argv"}. Symlink/output-existence,
+read permissions and filesystem races are later runtime tests, not guessed here.
+
+Uniform invalid-payload rule
+For a recognized kind with malformed payload fields not given a more specific
+error above: FORMAT exit2 where={field:"payload"}. Invalid outer case document
+has no FIXOUT and exits2 per contract9.3. Public negative cases use valid outer
+case grammar to exercise error results without environment-dependent output.
+
+Manual derivation notes and later scope
+For x=1 and any turnover W<2^64, high64(x*W)=0 and low=W>=threshold, hence
+select first remaining j. For x=maxuint64, Z=W-1 and low=2^64-W>=threshold,
+hence select last remaining j. Equal weights reduce to integer rank selection.
+Uniform handtrace first four IDs are0,32,65,127, followed1..28; policy flip at
+survivor slots0/1 leaves post mask14. Memory-better C selects32,96,0..29,
+A selects32,31,0..29; accuracy544 versus512. Memory-worse C selects31,33,0..29,
+A selects32,96,0..29; accuracy512 versus536. These are operator diagnostics,
+not scientific endpoint estimates or old decision imports.
+Branch rejection C initial W128 threshold0 accepts zero; A W130 rejects zero
+then max selects127, later first remaining IDs0..30. No model loop generated
+these literal answers. Binary synthetic record uses packing and hashing only.
+Coverage a-k includes exact primitive/operator/manual cases. Full random-tier
+invariance, all corruption tests, forged checkpoint+coherent branches and actual
+CLI threads1..32 are explicitly DEFERRED, not PASS. The executable authors must
+run the frozen POST_G4_REQUIREMENTS on FRCE with their independently authored
+implementations after own output/source/binary freezes; no benchmark repeated.
+
+Post-G4 corruption recipe detail
+POST_G4_REQUIREMENTS.json fixes16 exact mutations, repair scope and expected
+independent auditor exit/error code, each from pristine agreed full fixture DATA.
+These cases have no fabricated actual results. A replay forgery changes only
+S256.x0 low bit initially, then recomputes both branches and full inventories;
+its original history necessarily fails even though branches match forged state.
+The requirement for own frozen outputs before cross-access remains absolute.
+No private producer code, output or prior reviewer transcript is an input here.
+
+V2 executable-view clarification
+ENGINEERING_CONTRACT9.1.1 exclusively defines deployment/authentication.
+The public fixture tool receives FIXTURE_VIEW with INDEX and all case inputs,
+legacy/certificate/literal/core files, but no expected files or other metadata.
+It authenticates each allowed byte from compiled frozen index/inventory anchors;
+full-bundle/expected authentication and external comparison belong to ROOT.
+Missing/unreadable entries OUTSIDE the defined projection are intentionally not
+probed by the executable. In-view absence/extras or identity mismatch fail INPUT.
+The F_TO_M_ACQUIRE_AND_USE two-step literal completes F->M cache acquisition
+and next-step eligibility/probe coverage. Step257 selected F parent31 has x=1,
+child0, mutantM atslot0 caches1 valid1. Step258 own eligibilitybit0 gives probes
+C=1/A=2; survivor31 inheritsM, retains pre-parent0, validbit31 staysset. Existing
+M->F public cases are preserved. No literal model trajectory was executed here.

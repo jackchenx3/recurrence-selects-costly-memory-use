@@ -1,0 +1,1 @@
+{"id":"CLI_PRODUCE","kind":"CLI","status":"OK","value":{"command":"brs3_produce","options":{"--inputs":"/PUBLIC","--output":"/NEW/data","--threads":"1","--tier":"fixture-r1"}},"version":1}

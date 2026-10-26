@@ -1,0 +1,54 @@
+{
+  "at_utc": "2026-10-26T02:12:54.172496+00:00",
+  "study_id": "PHASE3-BIT-SUSTAINED-RETRIEVAL-003",
+  "verdict": "GO",
+  "scope": "G4 independent fixture correctness for exact unchanged V2 implementations",
+  "genuine_nonauthor_review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g4-independent-review-v2/REVIEW.txt",
+    "sha256": "7c9e24ded5fd1bca80fa3dfea71c3f88bef8a6f3088e9ffc48f55ef88294d8e7"
+  },
+  "ROOT_native_authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g4-independent-review-v2/ROOT_AUTHENTICATION.json",
+    "sha256": "c6ba3c3d23252f2f2a86cabb8ce125e84c1305f4c3f3988761a20876ec97d897"
+  },
+  "prior_FIX_preserved": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G4_V1_REVIEW_FIX.json",
+    "sha256": "b1a08873bf244978b6b38c3048f829ed69c9597ce45a7ffa78750bbee1bc6001"
+  },
+  "source_go": {
+    "producer": {
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/SOURCE_PRODUCER_V2_ACCEPTANCE.json",
+      "sha256": "4d226dc1c709590043d7272fcdceb1105392258d5a51e97fe332b29c98cedd75"
+    },
+    "auditor": {
+      "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/SOURCE_AUDITOR_V2_ACCEPTANCE.json",
+      "sha256": "ca7f776f33a8bb238415892c55ae897787cad7347d128609a77894852e086392"
+    }
+  },
+  "auditor_own_freeze": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G4A_AUDITOR_V2_OWN_FREEZE.json",
+    "sha256": "4600b000dffd727be09db304348692ca28b774dfc88a77e23e5332cd3e3bd23f"
+  },
+  "full16_cross_hash_agreement": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G4_POSTFREEZE_FIXTURE_HASH_AGREEMENT.json",
+    "sha256": "f87676d4b2c9a090718140367a46cf3dcd22849e19f80683f6652e220476cc06"
+  },
+  "corruption_runtime": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g4-cross-corruption-v2-r1/ROOT_RUNTIME_AUTHENTICATION.json",
+    "sha256": "bb2c93665ba02834713bf378af5958e8f76e5d8dd857cd7ea6a7c179bf662bba"
+  },
+  "evidence_gap_correction": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g4-evidence-gaps-v2-r1/ROOT_AUTHENTICATION.json",
+    "sha256": "bff4ded3a9610df5b122c24fcf7cdd7bb389eec447565d60c1f4e69e1b7abcd0"
+  },
+  "scope_deviation_materiality": {
+    "command_index_zero_based": 1,
+    "path": "/Users/chenx3/.agents/skills/illumina-delivery-review/SKILL.md",
+    "actual_read_retained_in_native_transcript": true,
+    "assessment": "Unrelated sequencing-delivery skill read outside authorized review workspace; deviation retained, not claimed perfect scoped compliance. Its observed contents are general sequencing-review workflow and archive routing, contain no BIT003 producer/private expectations/source/session/scientific results, and no further external reads followed. ROOT judges this nonmaterial to substantive independent G4 correctness verdict; not treated as fresh-source author access or hidden science evidence."
+  },
+  "resource_feasibility_established": false,
+  "benchmark_used": false,
+  "scientific_execution_authorized": false,
+  "numeric_results_unsealed": false
+}

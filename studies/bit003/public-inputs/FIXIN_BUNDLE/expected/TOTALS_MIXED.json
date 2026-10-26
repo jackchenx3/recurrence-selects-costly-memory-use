@@ -1,0 +1,1 @@
+{"id":"TOTALS_MIXED","kind":"TOTALS","status":"OK","value":{"results_text":"BIT003_RESULTS_V1\nstatus=VALID\ntier=fixture-r1\nn_blocks=16\nn_all_f=8\nn_all_m=8\npolicy_signed_sum=0\npolicy_denominator=131072\naccuracy_signed_sum=0\naccuracy_denominator=4194304\ninference=PRODUCTION_ONLY\n"},"version":1}

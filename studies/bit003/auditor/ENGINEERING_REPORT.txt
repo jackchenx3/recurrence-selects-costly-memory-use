@@ -1,0 +1,113 @@
+PHASE3-BIT-SUSTAINED-RETRIEVAL-003 — independent auditor source candidate v1
+Status: source authored; no compilation, import, PyCompile, program execution,
+RNG/operator/history evaluation, fixture run, benchmark or scientific outcome.
+No SOURCEGO, G4a, correctness, resource or execution acceptance is claimed.
+Prompt requests native CLI gpt-6.1-sol/high; canonical returned provider/model
+identity is unavailable in this session. No other models/subagents contacted.
+
+Authority/input boundary
+Consumed only authorized inputs/ and INPUT_MANIFEST.json; only own auditor
+baseline was consulted. Original paths in provenance/acceptance files were data,
+never followed. No producer source, outputs, private expectations, combined map,
+reviewer/session transcripts, credential/config/skill files, broader study tree,
+network, SSH or scheduler access. Public expected files were never opened.
+Full public inventory/core index were read as engineering metadata, not answers.
+All96 literal INPUT documents were statically parsed/hashed; no expected output
+lookup/derivation dispatch or case-ID scientific answer table exists in source.
+The accepted V2 count96 supersedes the brief's historical95. No public-input
+scientific contradiction was identified by this author; independent review still
+must assess the exact implementation. No scientific definition was changed.
+
+Static actions performed
+Read accepted protocol, engineering contract including V2 projections, fixture
+specification, KEYS/KAT, inventory/core index, certificate, POST_G4 requirements,
+readiness brief and relevant reference/operator/state sections. Reused own
+base.hpp/operator.hpp only at unchanged primitive scope. Static SHA/size checks
+against INPUT_MANIFEST covered11 directly consumed key source/contract files;
+all96 literal input JSON identities matched accepted inventory/input index.
+Source hashes/diff/inventory are static file operations, not execution evidence.
+Input files were not modified. No logs were written outside candidate tree.
+
+Reuse and replacement
+base.hpp retains own byte/hex/decimal helpers, bounded regular-file reader and
+SHA256 implementation; old study identity and overwrite-capable output writer
+were removed. science.hpp preserves own Philox round/extraction and integer
+PL/donor/inheritance logic, rewritten for exactly9 purposes, absoluteu1..512,
+fixed parity starts, full256 history then sustained paired branches. No old
+checkpoint selection, focal purpose, six arms, old keys/inference,42kcohort,
+64history sampling or old main enters build. The old source runtime is replaced,
+not compiled alongside the new entry points. Python fixture/math/parsers and
+C++ JSON/view/data/report implementations are new independent role source.
+Random123 license, normative protocol/reference and official KAT copies accompany
+candidate source; normative runtime views remain exact expected-free projections.
+
+Computation/interface coverage
+brs3_audit implements exact finite CLI, thread1..32, authenticated SCIENCE_VIEW,
+27-key rederivation, strict integer canonical JSON, all200 production chunks,
+ascending/cohort/parity/length/header/hash/state validation. Every full replay
+starts from independently generated S0; all512 targets includeu-2 recurrence
+across checkpoint; common indexed tapes drive all branches; each branch feeds
+its own pre-state/eligibility onward. Four proposals,128 integer weights/queries,
+exact128-bit Lemire products, retries0..255 and cap256, survivor-slot mutation,
+M cache=producing PRE-parent genotype (also in A/F->M) remain explicit.
+Record byte comparison covers EVERY target,769states,768retries,four sums and
+record hash. Independent totals are taken from own regenerated records after
+agreement; all blocks/zeros contribute. Signed64 endpoint aggregation uses
+8192 and262144 per block; no floating classification occurs anywhere.
+Successful production report count=15380000 states/15360000 turnovers, exact
+canonical14 lines, no endpoint payload beyond fixed11 results lines. Actual
+executing binary hash uses Linux /proc/self/exe; frozen source identity arrives
+only via BUILD-time generated metadata. No scientific metadata override flags.
+
+brs3_fixture covers all16 public kinds with kind/payload computation, strict
+outer/payload grammar and deterministic error priority. It authenticates exactly
+FIXTURE_VIEW107files against compiled core/inventory anchors, reads no absent
+metadata/expected file, and permits only authenticated case inputpaths. Integer
+Philox KAT, all27 new keys plus126legacy rederivation/disjointness, state LE,
+injected tape operators/chains, targets/addresses, exact totals, full certificate
+fractions/positive gaps/grid ceilings, rational decisions and binary/CLI/schema
+cases are implemented. Literal synthetic records use structural/endpoint checks
+only and never enter scientific replay. Error exits derive from actual semantics.
+Fixture arm-order errors choose earliestu then C,A then draw, independent of
+requested execution order. Python3.6 uses exact int/Fraction, no float inference.
+
+Own fixture_stage is fixture-only: all16 full histories/branches; CA/AC and
+forward/reverse block completion; coherent S256.x0 forgery and recomputed
+branches/sums/hashes. Self-check source creates own FIXOUT/full fixture records,
+actual receipts and optional all1..32 invariance with independently recomputed
+stored-state sums. Opaque200chunk order packing uses existing authenticated
+blobs and explicitly non-scientific inventories. post_g4 implements all16 exact
+corruption recipes/repair scopes, fresh pristine copies, actual auditor exit/code
+and final-output-absence checks. No observations are manufactured here.
+
+Failure/publication/independence
+Input/CLI failure precedes scientific work; metadata precedes hashes; hashes
+precede state/target/retry/endpoint checks and full replay. Data streaming keeps
+bounded one chunk plus worker records, never full cohort RAM. Parallel errors
+are collected by category/ascending block, not completion order. Results/report
+are published only after full success; actual child exit0 is essential. Atomic
+RENAME_NOREPLACE prevents overwrite races; temporary bytes are retained on
+ordinary failures. Parent path checks/no-symlink/readonly core/view closure are
+explicit. The two final audit files cannot be a single filesystem transaction:
+late second-publication failure removes first report; actual nonzero exit and
+uncommitted artifacts must always be retained/rejected by coordinator.
+Source/binary/own full FIXOUT must genuinely freeze G4a before producer access.
+Own helper/auditor code shares own primitives; this is not an independent second
+implementation claim. External producer/auditor agreement remains mandatory.
+
+Untested issues and remaining gates
+All new source is UNCOMPILED and UNEXECUTED. Compiler diagnostics, Python/site
+compatibility, serialization/error-byte conformance, full96 literal comparison,
+full fixture invariance/corruption outcomes, actual deployment isolation and
+input/path/race tests remain independently unverified. Dependencies include
+GCC8 filesystem linkage, uint128 and Linux/proc; kernel/filesystem renameat2 and
+Python ctypes libc renameat2 symbol must be verified/frozen on Slurm. Dynamic
+library/std-library closure cannot be reported as observed before actual build.
+No benchmark speed/power/result or production outcome is predicted. One64block
+complete workflow benchmark <=23.04seconds remains binding, full audit included.
+No64GB cap, reduced replay, alternate N, outcome-conditioned endpoint, benchmark
+rerun or timing tuning was introduced. Actual resource/job/allsteps accounting,
+exact dependency/CPU/filesystem freeze, hash-only analyzer agreement, sealing,
+EA before unseal, and source/correctness/performance gates are ROOT/reviewer work.
+The source tools supply exact byte/hash interfaces; they do not replace Slurm
+or cgroup/allsteps accounting and do not create new submissions/controllers.

@@ -1,0 +1,150 @@
+BIT003 PRODUCER SOURCE REPAIR V2 — SOURCE ONLY; NEW INDEPENDENT REVIEW REQUIRED
+
+No compilation, candidate import/execution, scientific function evaluation,
+fixture, RNG/operator/history/survival/selfcheck, benchmark or simulation was
+performed. This is authored engineering evidence, not SOURCE GO, runtime PASS,
+independent acceptance or scientific authority.
+
+Evidence/scope
+All344 INPUT_MANIFEST entries authenticated by size/SHA256 and exact closure.
+The full authenticated nonauthor FIX review hash is
+b5c077ebe1f726fd5dc1a581e4ecfe6c6b2a27626042c814ee7737b31006f770;
+V1 inventory identity is
+c6a10cdecda91a631ddc0d873051b35b204549ddd9a499356dac8262b9fc1efa.
+Copied exact own V1 before repair. Only inputs/ and INPUT_MANIFEST.json supplied
+data; only candidate-source-v2/ was written. Original paths and old reviewer
+/tmp references are data only; none were followed. Own baseline is consulted
+only for exact baseline diff bytes. All original evidence remains unchanged.
+ENGINEERING_REPORT.txt remains byte-exact historical V1, including assertions
+invalidated by FIX. Full review/authentication/freeze retained in docs/V1_*.
+
+All five findings addressed together
+1. src/rational.hpp:153,169,180,183: ceilings are std::string values assigned
+from validated grid.str() after exact endpoint fractions and strict minimal-grid
+inequalities succeed. J(std::string) emits rational strings, not integer grid
+numerators. Public expectation read only for static type/value reasoning:
+19778834661/1000000000000 and 23018074131/1000000000000. No expected lookup.
+Log series/tail/scientific interval predicates remain unchanged.
+
+2. src/main.cpp:10-17: drycli still validates lexical grammar for every argument;
+filesystem pathcheck skips --case. Inputs authenticates FIXTURE_VIEW before case
+membership. An absent/unlisted/outside-view case fails INPUT/2 without probing
+its path. Authenticated cached bytes are parsed. Listed-file readability and
+symlink checks stay in Inputs. Fresh output collision checks remain before IO.
+
+3. src/dataset.hpp:21,39,72,331,400: record_metadata checks structure only.
+record_retries(r,true) keeps standalone RECORD RANGE/2 before SHA. The science
+call record_retries(r,false) emits MISMATCH/3 only after hashes and state legality.
+Global priority is FORMAT, HASH, STATE, MISMATCH; RANGE is absent from analyzer
+ranking. Unrepaired corrupt retry bytes encounter HASH/3 first. Hash-repaired
+out-of-bound retries encounter MISMATCH/3, with STATE/3 taking priority if also
+illegal. Stored retry values within range require full independent replay; the
+analyzer still does not simulate histories or claim to reject coherent forgery.
+
+4. src/io.hpp:98-120: after successful exclusive rename, guard directory sync.
+On directory open/fsync/close failure, retain original exception; rename final
+back to .partial, then try .uncommitted.<name>.<pid> if needed. If both renames
+fail, try evidence hardlinks before unlinking final. Best-effort rollback sync
+cannot mask the original IO/5. Successful rollback leaves no final VALID result
+and retains explicitly uncommitted original bytes. Pre-rename failures retain
+.partial through the original path. Applies to analyzer/helper publication;
+this package authors no auditor/report publisher. Persistent OS failure of
+all rename/link/unlink attempts cannot be overcome by source logic. Cleanup
+success/evidence durability is untested; preserve native failure and surviving
+artifacts without interpreting any incomplete publication as VALID.
+
+5. src/dataset.hpp:281-329 and src/support.cpp:99-137,207-217: shared ChunkEmission
+is the actual producer path, including assemble_chunk, real atomic chunk files,
+indexed manifest entries, canonical manifest/seal IO and readonly completion.
+Real produce calls complete/finish; existing science/parallel loops unchanged.
+Separate --mode packing authenticates FIXTURE_VIEW, supplies the unmodified
+normative record as opaque completions at all200 chunk indices, forward to one
+actual emitter and reverse to another. It interprets no states/targets and calls
+no RNG/scientific function. No second stream/map is copied from forward outputs
+or commitments. Both actual emitted trees are independently read and checked
+for exact filename closure and byte equality, including manifests/seals; sorted
+inventories are independently constructed and compared. Actual inventory/source/
+binary/opaque hashes enter the helper report only after success. The same opaque
+blob occupies every record slot; distinct real chunk headers make cross-chunk
+permutation observable. Within-chunk reverse checks still call assemble_chunk;
+scientific completion order requires the unchanged16-block own invariance and
+later external full-data comparison. These trees are fixture evidence only,
+not scientific DATA or a synthetic substitute for producer publication. Retain
+output.packing-evidence/{forward,reverse}, approximately8.33GB. No timing or
+additional scientific benchmark. This packing mode is separate from invariance
+and its science loops, so it runs once, not at each thread count.
+
+Preservation/provenance
+science.hpp, base.hpp, json.hpp, fixture.hpp and both vendor headers remain exact
+V1 bytes. Both endpoints, every block including zeros, and adverse/null/bounded/
+unresolved classifications remain. No operator/design/key/N/cohort/endpoint/
+inference or scientific CLI changes, speed tuning or reduced audit. All16 own
+corruption constructors unchanged. Public bundle210files/96cases unchanged;
+SCIENCE_VIEW5files and FIXTURE_VIEW107files contain no expected files. No id,
+expected_exit/hash or case-specific answer dispatch was added.
+build.sh:16-46 authors an explicit /usr/bin/python3>=3.6 standard-library-only
+verifier before compilation: supplied source identity equals SHA256 of canonical
+SOURCE_INVENTORY.json bytes; verify every listed file size/hash and exact closure.
+Embed that same identity as BRS_SOURCE_SHA. Receipt records inventory/interpreter/
+compiler/final-binary hashes and versions/ldd. The verifier was AST-parsed only,
+never run. No Python scientific/runtime dependency, installer or fallback.
+Build the full frozen tree; deploy answer-free runtime subset after build.
+
+Exact diff/inventory rules
+BASELINE_TO_CANDIDATE_DIFF.patch compares the entire supplied own_baseline/
+producer_analyzer tree to V2; baseline-only paths are explicit deletions.
+V1_TO_V2_DIFF.patch compares exact supplied source-v1 to V2. Both exclude exactly
+SOURCE_INVENTORY.json, BASELINE_TO_CANDIDATE_DIFF.patch and V1_TO_V2_DIFF.patch
+from each side to avoid generated-artifact self-reference. All other files are
+in scope. Separate old/new headers and standard missing-final-newline markers
+are required; static text reconstruction verifies every in-scope change.
+SOURCE_INVENTORY.json: sorted-key compact ASCII JSON, final LF, files sorted by
+relative path. Includes every file except itself, including both diffs, report
+and historical evidence. Own identity is SHA256 of exact inventory bytes,
+externally supplied at build time. Inventory itself is hashed externally, never
+embedded in its own payload. No source identity self-hash cycle.
+
+Static checks/failures/untested assumptions
+Input hash/closure, unchanged science/vendor/public primitive/report byte checks,
+source text comparisons, JSON and build-verifier AST parse only. No C++ build
+or runtime correctness/performance claim. Two native text writes failed on copied
+readonly modes (first source write, then creation of this report); neither wrote
+bytes. Only copied candidate file/directory modes were made writable. Preserve
+these actual command failures; do not claim all commands exited zero. Actual
+commands remain in terminal/transcript for authentication after terminal; native
+workspace write does not imply per-command security isolation.
+No network/SSH/scheduler/config/credentials/AGENTS/skills/sessions/outside data,
+other-role evidence, subagents/models or installs. Genuine CLI gpt-6.1-sol/high
+was requested; canonical returned provider/model metadata is unavailable.
+
+New exact nonauthor SOURCE GO after freeze is required before any FRCE Slurm
+build/fixture/science. GCC8.5/Boost/Linux syscall/fsync/link/unlink behavior,
+linkage, source-verifier deployment, all96 external byte/exit comparisons,
+membership and late-IO fault injection, all32 thread variants, actual opaque
+emission comparison remain unexecuted. Mandatory G4a, full independent replay
+of EVERY history/BOTH continuing branches, all16 corruptions including coherent
+S256 forgery, independent readiness and science authority remain.
+Exactly one complete64-block full-workflow benchmark <=23.04sec625x bound later,
+including full independent audit/IO/hash/seal; no rerun/tuning/reduced audit.
+Exactly one scientific job only after all gates: FRCE32CPU/one node/8h, initial
+96G request, outer ceiling700000000000 decimal bytes, no64GB hardcap. Original
+job/all-step/resource acceptance before unseal; both endpoints and limitations
+required. Candidate offered for independent review; no self-acceptance.
+
+Exact symbol starts (V2 local paths):
+src/rational.hpp:153 std::array<std::string,2>
+src/rational.hpp:169 ceilings[a]=grid.str()
+src/main.cpp:10 auto opt=drycli
+src/main.cpp:16 need(in.cases.count(rel)
+src/dataset.hpp:21 inline Tier record_metadata
+src/dataset.hpp:39 inline void record_retries
+src/dataset.hpp:72 inline J record_value
+src/dataset.hpp:281 struct ChunkEmission
+src/dataset.hpp:316 inline void produce(
+src/dataset.hpp:331 inline std::string analyze
+src/dataset.hpp:400 record_states(r);record_retries(r,false)
+src/io.hpp:98 inline void publish
+src/io.hpp:107 auto original=std::current_exception()
+src/support.cpp:99 inline std::string packing_check
+src/support.cpp:207 else if(mode=="packing")
+build.sh:16 /usr/bin/python3 - 

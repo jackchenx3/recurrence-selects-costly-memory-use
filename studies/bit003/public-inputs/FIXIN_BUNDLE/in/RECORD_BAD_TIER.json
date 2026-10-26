@@ -1,0 +1,1 @@
+{"id":"RECORD_BAD_TIER","kind":"RECORD","payload":{"append_hex":"","base":"FIXIN_BUNDLE/literals/SYNTHETIC_RECORD.bin","patches":[{"hex":"03","offset":10}],"rehash":false,"truncate":208216},"version":1}

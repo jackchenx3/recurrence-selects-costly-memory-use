@@ -1,0 +1,40 @@
+{
+  "ROOT_native_authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g9-claims-publication-review-v1/ROOT_AUTHENTICATION.json",
+    "sha256": "ad2a1da0de6fe38d28419fb220a77b73b4ec94297663bfbc8f11859cc04b872a"
+  },
+  "accepted_PDF": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/publication-v1.4.0-20261026/output/pdf/BIT003-sustained-retrieval-v1.4.0.pdf",
+    "sha256": "e004b535a0bde53f9c7453ce30cdba757e64e49ab01d1c23736fe52118fc4973"
+  },
+  "accepted_compact_payload_inventory": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/publication-v1.4.0-20261026/REPRODUCIBILITY_PAYLOAD_INVENTORY.json",
+    "sha256": "228d23bbcf81cfa9f330dace0f1267c9565a3abb83af3a0ccd65b469cca72888"
+  },
+  "accepted_exact_analysis": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/accepted-analysis/EXACT_ANALYSIS.json",
+    "sha256": "7d9bf16928da33319a60e414e43408cc14d5ba6d4138f97496f05a534477fca3"
+  },
+  "accepted_paper": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/publication-v1.4.0-20261026/candidate/paper/BIT003_SUSTAINED_RETRIEVAL.md",
+    "sha256": "a9239ca9971960432221820f0e0f9f8d98002779b761e93953d87498c7cbc9f9"
+  },
+  "at_utc": "2026-10-26T08:00:12.544280+00:00",
+  "author": "Jack Chen",
+  "both_frozen_endpoints_and_all_unresolved_implications_accepted": true,
+  "final_publication_assets_and_metadata_reconciliation_required_before_publish": true,
+  "gate": "G9",
+  "independent_review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g9-claims-publication-review-v1/REVIEW.txt",
+    "sha256": "d7cd5f2a12cec15c13418f2bbc2d02d36a84f61595da9ee3e7b633a71db229bc"
+  },
+  "internal_computational_review_not_external_peer_review": true,
+  "no_scientific_definition_or_program_rerun": true,
+  "original_archive_and_compact_export_mechanical_conditions_completed": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/publication-v1.4.0-20261026/ORIGINAL_ARCHIVE_AND_REPRO_COPY_VERIFIED.json",
+    "sha256": "0fc8f0e31e983ede93a885f32e3ea1c934d6bd43b53633075db5a30a57bf8e2f"
+  },
+  "verdict": "GO",
+  "work_email": null,
+  "workplace_affiliation": null
+}

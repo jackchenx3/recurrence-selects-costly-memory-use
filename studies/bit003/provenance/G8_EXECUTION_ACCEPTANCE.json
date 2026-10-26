@@ -1,0 +1,48 @@
+{
+  "G7": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G7_EXACT_SCIENTIFIC_AUTHORITY.json",
+    "sha256": "f78e9f20fd9ac340e4c50faeaa3c9406317ba7b433729ddfe85b9c3733cc1be6"
+  },
+  "G9_both_endpoints_all_findings_claims_publication_review_required": true,
+  "ROOT_original_execution_metrics": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g7-production-r1/ROOT_EXECUTION_METRICS.json",
+    "sha256": "825bc8e7efc33a79e7a212d82e8a41a4c6f380b1e202393f93d3bccf11c4a0ca"
+  },
+  "ROOT_review_authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g8-independent-execution-review-v2/ROOT_AUTHENTICATION.json",
+    "sha256": "1098a4259a4e675e8a2ce3903ebfb51133544e683da712eca59d6008ee7bf9eb"
+  },
+  "all_original_job_and_steps_completed_0_0": true,
+  "at_utc": "2026-10-26T07:26:53.719271+00:00",
+  "authorizes_original_results_numeric_unseal_after_ROOT_authentication": true,
+  "benchmark_submission_count": 1,
+  "full20000_history_and_both_branch_independent_replay_valid": true,
+  "gate": "G8",
+  "independent_review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g8-independent-execution-review-v2/REVIEW.txt",
+    "sha256": "88b621e9a6ddd464e361c989309b62122789cd2aacbd478b488c08e6261819f4"
+  },
+  "job_peak_bytes": 8375296000,
+  "native_allstep_MaxRSS_bytes": 8373706752,
+  "no_postproduction_producer_analyzer_auditor_rerun": true,
+  "original_archive_evidence": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g7-production-r1/ARCHIVE_EVIDENCE_NATIVE.json",
+    "sha256": "ceb1ac1cc4270667e24643a27a84e9f090bd833081fb8b2a92c88d6e8a6a85a7"
+  },
+  "original_archive_marker_sha256": "63a8366fd16a0cde0a3873e0aa8447c2a7da691bfaf295756719c132d9c74839",
+  "original_hash_only_results_agree": true,
+  "original_job_id": "54339475",
+  "original_native_job_and_all_steps": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g7-production-r1/TERMINAL_OBSERVATION_20261026T0625.json",
+    "sha256": "21243e82af5a89a223c1415805d16e428b4e8bcbb155ea09b46bd037607068a1"
+  },
+  "original_resource_samples": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g7-production-r1/RESOURCE_SAMPLES_ORIGINAL.jsonl",
+    "sha256": "f7afbfe62d4c39d5c34157d11a217a078d0eafcd692aba3314aa20f7a011c5c1"
+  },
+  "resources_and_whole_output_accepted": true,
+  "scientific_results_numeric_text_accessed_before_G8": false,
+  "scientific_submission_count": 1,
+  "verdict": "GO",
+  "whole_output_bytes": 8330494918
+}

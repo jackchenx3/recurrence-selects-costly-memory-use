@@ -1,0 +1,42 @@
+{
+  "at_utc": "2026-10-25T23:53:39.119527+00:00",
+  "state": "GENUINE_NONAUTHOR_SOURCE_FIX_AUTHENTICATED",
+  "review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-review-v1/REVIEW.txt",
+    "sha256": "b5c077ebe1f726fd5dc1a581e4ecfe6c6b2a27626042c814ee7737b31006f770"
+  },
+  "terminal": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-review-v1/PROCESS_TERMINAL.json",
+    "sha256": "eddaf4292323e51a5a0390ce269bf0427c763d169cdf6907db80c94c26785566"
+  },
+  "transcript": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-review-v1/native_stdout.jsonl",
+    "sha256": "7e6f0475894d6f4b700981f9fb4585c69a88c5b4bb2ba8fcf03ce5bb4be7d34a"
+  },
+  "input_manifest": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-review-v1/INPUT_MANIFEST.json",
+    "sha256": "7cd12015e646ff720c8df33f59734754de653a1b1c32c3dfe4c9c9c84894e431"
+  },
+  "inputs_all_exact_unchanged": true,
+  "actual_commands": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-review-v1/ROOT_NATIVE_COMMANDS.json",
+    "sha256": "48f2d1ef0cf5541f7d3b6cdb860d981f68c30a55764991500cae0baa2636454d"
+  },
+  "command_count": 23,
+  "all_exits_zero": true,
+  "scope_inspected": "ROOT inspected actual shell commands and all Python -c source as static text: only named public and own candidate/baseline/engineering files; hash/JSON/AST parse/literal unpack/scalar Fraction/key-SHA derivations; no candidate import/compiler/Philox/operator/history/fixture execution, network, scheduler, source write or other actor.",
+  "model_identity": "Genuine explicit native CLI gpt-6.1-sol/high request; canonical returned provider/model unavailable in native JSONL",
+  "candidate": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/PRODUCER_SOURCE_FROZEN_V1.json",
+    "sha256": "23a34be23a86c617054c3213fe99f92495f37b66812d6f26e766b536855574ea"
+  },
+  "design_contradiction_or_independence_breach_identified": false,
+  "source_build_or_scientific_authority": false,
+  "material_corrections": [
+    "CERTIFICATE rational-string result representation",
+    "Fixture view authentication/membership before filesystem probing",
+    "Scientific analyzer retry vocabulary and hash/state validation order separate from RECORD primitive",
+    "Post-rename IO failure rolls final result back to uncommitted evidence",
+    "Actual shared producer cross-chunk completion/manifest emission coverage"
+  ]
+}

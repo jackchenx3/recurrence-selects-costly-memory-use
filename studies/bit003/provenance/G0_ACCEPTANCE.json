@@ -1,0 +1,32 @@
+{
+  "at_utc": "2026-10-25T21:17:44.219666+00:00",
+  "state": "ACCEPTED_SCIENTIFIC_DESIGN_ONLY",
+  "protocol": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/PROTOCOL_V0_1_ACCEPTED.txt",
+    "sha256": "30754cf9de941f09b8086e8ffb27a2b4af42882c6bfcca484928efa926ae6b98"
+  },
+  "review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g0-independent-review-v0.1/REVIEW.txt",
+    "sha256": "9502455583249e2eec6735968999d6a310488a83be9b6ed1d054a41ccdc09b3f"
+  },
+  "ROOT_authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g0-independent-review-v0.1/ROOT_AUTHENTICATION.json",
+    "sha256": "10852533bffba1e776d910aa0d29cddb20237086327ceb502ad8a6dc45abd85c"
+  },
+  "producer_source_or_scientific_execution_authorized": false,
+  "remaining_gates": [
+    "G1F",
+    "G1",
+    "G2-G4",
+    "G5_one_benchmark",
+    "G6",
+    "G7",
+    "G8_before_unseal",
+    "G9"
+  ],
+  "new_independent_blocks": 20000,
+  "primary": "timeaveragedMpolicyfrequency_CminusA",
+  "secondary": "timeaveragednormalizedsurvivoraccuracy_CminusA",
+  "fullindependentnewhistoryreplay_required": true,
+  "benchmark_wholeworkflow_max_seconds": "23.04 (binding625xprojection; practicalfeasibilitynotyetestablished)"
+}

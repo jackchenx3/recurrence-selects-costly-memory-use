@@ -1,0 +1,90 @@
+{
+  "at_utc": "2026-10-26T07:30:32.314176+00:00",
+  "study": "PHASE3-BIT-SUSTAINED-RETRIEVAL-003",
+  "original_job_id": "54339475",
+  "G8_sha256": "9f0581e8079cc59b5c00cdd4063667f68ece886e92b9e7a26fe7d7a95a7b63cc",
+  "unseal_authority_sha256": "66d7811ae6be6688ba391dc7a8c6ad6608376ea7bdd634266f779916aadd0cf4",
+  "original_results_sha256": "59f6d9fd6d7ed1c6ddfe508d7ce1e88d8f6b9e75810a94cf03954b6baeef1822",
+  "original_results_bytes": 236,
+  "n_blocks": 20000,
+  "all_f_blocks": 10000,
+  "all_m_blocks": 10000,
+  "estimand": "CACHE-minus-fresh-substitution total sustained intervention effect over256turnovers with ownbranchstatefeedback; equalALL_F/ALL_Mmixture",
+  "coverage": "Two fixed simultaneousHoeffding intervals joint>=95% conditionalonidealindependentindexedRNG; alphafamily0.04+0.01",
+  "endpoint_definition_and_inference_changed_after_unseal": false,
+  "postproduction_scientific_program_invocations": 0,
+  "endpoints": {
+    "primary_policy_frequency": {
+      "signed_sum": 48037735,
+      "denominator": 163840000,
+      "estimate_exact": {
+        "numerator": 9607547,
+        "denominator": 32768000
+      },
+      "estimate_decimal_nearest_12": "0.293199066162",
+      "fixed_halfwidth_exact": {
+        "numerator": 19778834661,
+        "denominator": 1000000000000
+      },
+      "alpha": "0.04",
+      "interval_lower_exact": {
+        "numerator": 17498894816071,
+        "denominator": 64000000000000
+      },
+      "interval_upper_exact": {
+        "numerator": 20030585652679,
+        "denominator": 64000000000000
+      },
+      "interval_lower_decimal_outward_12": "0.273420231501",
+      "interval_upper_decimal_outward_12": "0.312977900824",
+      "classification_from_exact_rationals_before_rounding": "MATERIAL_POSITIVE",
+      "estimate_percentage_points_nearest_6": "29.319907",
+      "interval_lower_percentage_points_outward_6": "27.342023",
+      "interval_upper_percentage_points_outward_6": "31.297791",
+      "meaningful_threshold_exact": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "equivalence_margin_exact": {
+        "numerator": 1,
+        "denominator": 32
+      }
+    },
+    "secondary_survivor_accuracy": {
+      "signed_sum": 49343283,
+      "denominator": 5242880000,
+      "estimate_exact": {
+        "numerator": 49343283,
+        "denominator": 5242880000
+      },
+      "estimate_decimal_nearest_12": "0.009411484337",
+      "fixed_halfwidth_exact": {
+        "numerator": 23018074131,
+        "denominator": 1000000000000
+      },
+      "alpha": "0.01",
+      "interval_lower_exact": {
+        "numerator": -27866295898413,
+        "denominator": 2048000000000000
+      },
+      "interval_upper_exact": {
+        "numerator": 66415735742163,
+        "denominator": 2048000000000000
+      },
+      "interval_lower_decimal_outward_12": "-0.013606589795",
+      "interval_upper_decimal_outward_12": "0.032429558468",
+      "classification_from_exact_rationals_before_rounding": "UNRESOLVED",
+      "estimate_percentage_points_nearest_6": "0.941148",
+      "interval_lower_percentage_points_outward_6": "-1.360659",
+      "interval_upper_percentage_points_outward_6": "3.242956",
+      "meaningful_threshold_exact": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "equivalence_margin_exact": {
+        "numerator": 1,
+        "denominator": 32
+      }
+    }
+  }
+}

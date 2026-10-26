@@ -1,0 +1,1 @@
+{"id":"CLI_ANALYZE","kind":"CLI","status":"OK","value":{"command":"brs3_analyze","options":{"--data":"/NEW/data","--inputs":"/PUBLIC","--results":"/NEW/result","--threads":"32","--tier":"fixture-r1"}},"version":1}

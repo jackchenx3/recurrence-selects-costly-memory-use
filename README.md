@@ -1,36 +1,22 @@
-# Environmental recurrence selects a costly memory-use policy: long-run population effects and immediate retrieval effects
+# Sustained retrieval intervention: BIT003 / v1.4.0
 
-Research preprint, version **1.3.0**, October 25, 2026. Not externally peer reviewed.
+This release adds the prospective sustained-intervention study PHASE3-BIT-SUSTAINED-RETRIEVAL-003. Earlier scientific studies, original outputs, and public release v1.3.0 remain separately identified and unchanged.
 
-**Author:** Jack Chen
+- [New focused paper](paper/BIT003_SUSTAINED_RETRIEVAL.md) and accompanying three-page PDF release asset.
+- [Original integer totals](data/bit003/RESULTS_A.txt), independent matching totals, and exact rational analysis in data/bit003/.
+- Protocol, all accepted public keys/96 fixtures, producer/analyzer source, independent-auditor source, scientific Linux binaries, runtime freeze, and accepted gate evidence in studies/bit003/.
+- The separate BIT003-original-scientific-archive-v1.4.0.tar.gz asset contains the original complete scientific archive, including all 200 original trajectory chunks. Release only after its every member size/hash matches the accepted original archive inventory. That packaging condition is separate from already accepted scientific execution.
 
-## Read the paper
+## Both prespecified findings
 
-- [Manuscript PDF](paper/MANUSCRIPT.pdf) and [editable source](paper/MANUSCRIPT.md).
-- [Supplement PDF](paper/SUPPLEMENT.pdf) and [editable source](paper/SUPPLEMENT.md).
-- [Versioned release and checksummed assets](https://github.com/jackchenx3/recurrence-selects-costly-memory-use/releases/tag/v1.3.0).
-- [Remaining scientific questions](docs/BIT002_REMAINING_SCIENTIFIC_GAPS.txt).
+CACHE minus repeated fresh substitution increased time-averaged M-policy frequency by 29.319907 percentage points; simultaneous interval [27.342023, 31.297791], MATERIAL_POSITIVE. Normalized survivor accuracy changed by +0.941148 points; interval [-1.360659, 3.242956], UNRESOLVED. An accuracy improvement and within-margin equivalence are not established. Joint coverage is at least95% conditional on the ideal independent indexed-RNG assumption. These are total sustained intervention effects in the specified model, not natural mediation, pure selection coefficients, isolated retention benefits, or biological conclusions.
 
-## What this revision reports
+## Evidence and reproduction
 
-Studies 001-003 retain their accepted long-run results: recurrence enriched the costly memory-use policy, directional cache information amplified selection in the first bundle, and the selection/performance separation recurred in one independently implemented alternative bundle. Population-performance contrasts remained bounded below the declared positive scale or unresolved; adverse descriptive findings remain reported.
+Exactly20,000new paired blocks:10,000ALL_F/10,000ALL_M,256-turnover commonhistory and256-turnover sustained follow-up perbranch with ownstatefeedback. Full independent replay covers15,380,000states/15,360,000turnovers and every new history and bothbranches. OriginalFRCEjob54339475/allsteps completed0:0; independentG8executionacceptance preceded numericalunseal. Exactlyone benchmark andone scientificsubmission were used; no postproduction producer/analyzer/auditor rerun.
 
-BIT002 adds a separately frozen identical-state, paired-tape, one-turnover retrieval experiment with 42,000 new BIT/PL histories. At recurrent targets, lineage share and a hashed focal family's unconditional population contribution were materially positive. Immediate normalized accuracy was positive with unresolved magnitude. All three innovation effects were bounded within their prespecified margins, with negative point estimates and intervals containing zero; this does not establish absence. The manuscript reports all six effects, all prespecified transforms, full eligibility histograms and provenance limits.
+Original accepted source/scientific-output bytes and their original hashes are retained. Native receipts can identify original deployment/workspace paths; these are historical provenance, not author affiliation or current instructions. Runtime scripts pin original paths/class/libraries and cannot be treated as portable commands or new automated execution authority. A separately authorized human reproduction requires a new output namespace and explicit resource/runtime qualification; never overwrite frozen original namespaces. Exact rational presentation alone can be recomputed from the stored integer totals with scripts/present_bit003_results.py; it performs no population simulation.
 
-The long-run and immediate estimands differ. No long-run mediation, effect of changing recurrence, cross-bundle immediate retrieval replication, per-carrier value, general mechanism, biological memory or completion of the original broader Phase 3 protocol is established. Statistical families and cohorts are separate and not pooled. Internal computational reviews are not journal peer review.
+For document rendering only: python scripts/build_bit003_pdf.py --source-root . --output-dir paper. The earlier paper/MANUSCRIPT and SUPPLEMENT and prior release DOI10.5281/zenodo.23649496 remain the frozen earlier studies. The broader original protocol remains incomplete.
 
-## Reproducibility
-
-The original Studies 001-003 code, configurations and compact data remain in code/, design/, data/ and their provenance directories. Earlier complete archives remain available from [release v1.2.0](https://github.com/jackchenx3/recurrence-selects-costly-memory-use/releases/tag/v1.2.0) and [its Zenodo record](https://doi.org/10.5281/zenodo.23085659); that DOI does not identify this revision.
-
-New BIT002 material is in studies/bit002/: protocol, exact accepted result tables, all accepted producer/analyzer and independent-auditor sources, 33 keys/public fixtures, runtime package, Linux binary identities and original execution/audit/gate evidence. The separate BIT002 complete reproducibility ZIP release asset additionally contains all 45 accepted original data files. Its exact SHA-256 is 1616258c046aa94eb00b8589a94896e93d87f608724c3e6ed5fc562752556003. No program was rerun to prepare this revision.
-
-The accepted scientific execution was FRCE Slurm job 54269109. Earlier failed R1 job 54254461 remains invalid, and its partial outputs were not combined with the accepted run. Frozen definitions, endpoints and original results are unchanged. Historical local receipts may identify their original workspaces and earlier draft status; those records are provenance, not instructions or new execution authority.
-
-Rebuild only the PDFs with `python scripts/build_pdfs.py --source-root . --figures-dir figures --output-dir paper` in a ReportLab environment. Archived scientific commands do not authorize overwriting frozen namespaces or another automatic scientific attempt.
-
-## Publication and licenses
-
-This revision has separate independent internal manuscript-content review and final export checks. The author's name is retained without workplace affiliation or work contact in this release. Existing older public tags/records are historical versions and are not rewritten. New current-file checksums are in SHA256SUMS; author-metadata export transformations are separately recorded without changing scientific outputs.
-
-Manuscript, figures and data: CC BY 4.0. Original code: MIT. See LICENSE-CONTENT.md and LICENSE-CODE. AI assistance is disclosed in the manuscript. No external peer-review acceptance or journal-submission status is asserted.
+Author:JackChen; no workplace affiliation or workcontact is supplied. Internal independent AI-assisted reviews are not external journalpeerreview. Manuscript/data CC BY4.0; original code MIT. Public release requires G9claims/publicationGO and final packaging/hash checks.

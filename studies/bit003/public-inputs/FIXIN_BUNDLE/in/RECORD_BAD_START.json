@@ -1,0 +1,1 @@
+{"id":"RECORD_BAD_START","kind":"RECORD","payload":{"append_hex":"","base":"FIXIN_BUNDLE/literals/SYNTHETIC_RECORD.bin","patches":[{"hex":"01","offset":11}],"rehash":false,"truncate":208216},"version":1}

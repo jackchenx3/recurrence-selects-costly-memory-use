@@ -1,0 +1,89 @@
+{
+  "G7": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G7_EXACT_SCIENTIFIC_AUTHORITY.json",
+    "sha256": "f78e9f20fd9ac340e4c50faeaa3c9406317ba7b433729ddfe85b9c3733cc1be6"
+  },
+  "ROOT_postterminal_authenticated": true,
+  "actual_job_memory_hard_bytes": 268005957632,
+  "actual_job_memory_soft_bytes": 103079215104,
+  "all_archive_file_hashes_match_original_marker": true,
+  "all_f_blocks": 10000,
+  "all_job_and_steps_completed_0_0": true,
+  "all_m_blocks": 10000,
+  "all_memory_failcnt_and_oom_zero": true,
+  "archive_evidence": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g7-production-r1/ARCHIVE_EVIDENCE_NATIVE.json",
+    "sha256": "ceb1ac1cc4270667e24643a27a84e9f090bd833081fb8b2a92c88d6e8a6a85a7"
+  },
+  "archive_file_count": 284,
+  "at_utc": "2026-10-26T06:27:57.426496+00:00",
+  "authority": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g7-production-r1/RUN_AUTHORITY.json",
+    "sha256": "5d5881c644b41eb4d1b8050db55a4169f976fa9d1fd5c43d2a6eb7acc8a7eb69"
+  },
+  "chunks": 200,
+  "conservative_active_job_seconds_charged": 169,
+  "fixed_blocks": 20000,
+  "full_audit_valid": true,
+  "full_history_both_branch_replay": true,
+  "hash_only_results_agree": true,
+  "in_job_full_workflow_us": 166876750,
+  "independent_execution_acceptance": "PENDING_FRESH_G8_EA",
+  "independent_execution_acceptance_GO": false,
+  "inventory_sha256": "f1e98a1a19927753d662b30ca7dc80f74895fc38c6daf99c66f77e742f98bec9",
+  "job_id": "54339475",
+  "job_peak_bytes": 8375296000,
+  "mode": "production",
+  "monitor_non_atomic": true,
+  "native_ElapsedRaw_seconds": 168,
+  "native_all_step_MaxRSS_bytes": 8373706752,
+  "native_observation": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g7-production-r1/TERMINAL_OBSERVATION_20261026T0625.json",
+    "sha256": "21243e82af5a89a223c1415805d16e428b4e8bcbb155ea09b46bd037607068a1"
+  },
+  "native_original_job_terminal": true,
+  "native_stderr": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g7-production-r1/original-54339475.err",
+    "sha256": "7e282d7d4bffbb9ffb654507cfe8e837d63ef54c03b0e27f7b364d0f183c2836"
+  },
+  "native_stdout": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g7-production-r1/original-54339475.out",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "numeric_results_opened": false,
+  "operational_limits": [
+    "Original archivedNATIVEcopies0; complete later981byte terminalstderrcaptured externally, original andsnapshotcounted, no fake latecopy insideoriginalsealedarchive.",
+    "squeue Invalidjobid atterminalnotjobfailure; raw originalnativeaccounting confirmscompletedallsteps0.",
+    "OriginalRESOURCE_SAMPLES641589B aboveinitialfetch600ktextlimit; fetched separatelyactualbytes/hashcheckedagainstoriginalmarker/currentarchive withno scientificinvocations."
+  ],
+  "original_archive_marker_sha256": "63a8366fd16a0cde0a3873e0aa8447c2a7da691bfaf295756719c132d9c74839",
+  "original_resource_samples": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g7-production-r1/RESOURCE_SAMPLES_ORIGINAL.jsonl",
+    "sha256": "f7afbfe62d4c39d5c34157d11a217a078d0eafcd692aba3314aa20f7a011c5c1"
+  },
+  "outer_memory_ceiling_bytes": 700000000000,
+  "resource_sample_group_counts": [
+    1411,
+    216,
+    1,
+    1
+  ],
+  "results_sealed": true,
+  "runtime_freeze_sha256": "662928a1a23d29f729511dc28cae0008dd743fbd2d939d85aca4f3ec90a017d0",
+  "states_checked": 15380000,
+  "submission": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g7-production-r1/SUBMISSION_NATIVE.json",
+    "sha256": "eeafdf959fd48d1e422ea1bcaecbae48bba417e4233337d867a7fa4449d6b3a7"
+  },
+  "submission_count": 1,
+  "total_output_bytes": 8330494918,
+  "turnovers_checked": 15360000,
+  "whole_output_components": {
+    "additional_retained_terminal_log_snapshot_bytes": 981,
+    "original_node_local_work_equal_verified_archive_bytes": 4165246478,
+    "original_terminal_native_logs_bytes": 981,
+    "shared_archive_bytes": 4165246478
+  },
+  "whole_output_includes_all_copies": true,
+  "whole_output_scope": "Every original localwork/sharedARCHIVE/nativeoriginal log + retained original terminal log snapshot. External ROOT acceptance metadata receipts/hashread provenance are separate; no DATA or RESULTS additionalpayloadcopy."
+}

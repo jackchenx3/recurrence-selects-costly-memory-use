@@ -1,21 +1,10 @@
 cff-version: 1.2.0
-message: "Please cite the research preprint and versioned evidence package."
-type: software
-title: "Environmental recurrence selects a costly memory-use policy: long-run population effects and immediate retrieval effects: research artifacts"
+message: "Cite the focused BIT003 addendum and identify earlier studies separately."
+title: "Sustained cache access changes policy composition; survivor-accuracy benefit remains unresolved"
 authors:
   - family-names: Chen
     given-names: Jack
-version: 1.3.0
-date-released: '2026-10-25'
-repository-code: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use"
-license: MIT
-preferred-citation:
-  type: unpublished
-  title: "Environmental recurrence selects a costly memory-use policy: long-run population effects and immediate retrieval effects"
-  authors:
-    - family-names: Chen
-      given-names: Jack
-  year: 2026
-  version: 1.3.0
-  url: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/blob/v1.3.0/paper/MANUSCRIPT.md"
-  notes: "Research preprint; not externally peer reviewed. Manuscript and data CC BY 4.0."
+version: 1.4.0
+date-released: 2026-10-26
+url: "https://github.com/jackchenx3/recurrence-selects-costly-memory-use/releases/tag/v1.4.0"
+license: CC-BY-4.0

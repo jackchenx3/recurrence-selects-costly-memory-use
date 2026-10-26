@@ -1,0 +1,123 @@
+{
+  "at_utc": "2026-10-25T23:23:24.535480+00:00",
+  "role": "producer",
+  "directory": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-candidate-v1",
+  "file_count": 21,
+  "source_identity": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-candidate-v1/SOURCE_INVENTORY.json",
+    "sha256": "c6a10cdecda91a631ddc0d873051b35b204549ddd9a499356dac8262b9fc1efa"
+  },
+  "files": [
+    {
+      "relative_path": "BASELINE_TO_CANDIDATE_DIFF.patch",
+      "bytes": 154963,
+      "sha256": "e9d333fb6d47668e6f833227800b469c846575dbd93eb8d52b45f6ac8b4a7aba"
+    },
+    {
+      "relative_path": "DEPENDENCIES.txt",
+      "bytes": 1550,
+      "sha256": "20b9966ef1077b6b2a9870f6089dc43003295e2ffa616e14a5535a3ef97cd59b"
+    },
+    {
+      "relative_path": "ENGINEERING_REPORT.txt",
+      "bytes": 8826,
+      "sha256": "498e0e76070a5f5846a2e0f2502d413997ce00e971753faa459c76c4e7b5bbd2"
+    },
+    {
+      "relative_path": "LICENSE-CODE",
+      "bytes": 1066,
+      "sha256": "de379da7a02965b9a9d1313bf743eed6c3b5bfdd366bfd8735dee9285307321d"
+    },
+    {
+      "relative_path": "README.md",
+      "bytes": 6320,
+      "sha256": "1bf3010ba66b8addbf4302c8e56c21689fc2f26b66e3ac00faf40848c41d3a8a"
+    },
+    {
+      "relative_path": "SOURCE_INVENTORY.json",
+      "bytes": 2486,
+      "sha256": "c6a10cdecda91a631ddc0d873051b35b204549ddd9a499356dac8262b9fc1efa"
+    },
+    {
+      "relative_path": "build.sh",
+      "bytes": 1876,
+      "sha256": "bbbbb7a7825e2217abca527a2128e477f811882a32823a9e8897f0a9971c56bc"
+    },
+    {
+      "relative_path": "docs/LATER_VALIDATION.txt",
+      "bytes": 2519,
+      "sha256": "a6a685dd80c3b908c303a37b69d74025004580fb49485f1eb15a538746a86a64"
+    },
+    {
+      "relative_path": "docs/Random123_LICENSE.txt",
+      "bytes": 1520,
+      "sha256": "5fd0885ab205878bd90c19144677286252eb9b988c1545a3a910edfe1e27b6df"
+    },
+    {
+      "relative_path": "private_expectations/README.txt",
+      "bytes": 559,
+      "sha256": "fc5ac7c20b3500fc525c88b99ed1342f49723ae11b8d19fc442beb482573b54d"
+    },
+    {
+      "relative_path": "src/base.hpp",
+      "bytes": 4252,
+      "sha256": "c7192db5a7d9f54afc8f07feb6c23bfc196a05e743592ff3ff50494f94dcb7a2"
+    },
+    {
+      "relative_path": "src/dataset.hpp",
+      "bytes": 11304,
+      "sha256": "1b45e055351bae2b527e339bf547a904267ba080bfe47611cbb1ddd2c9bd1b95"
+    },
+    {
+      "relative_path": "src/fixture.hpp",
+      "bytes": 18438,
+      "sha256": "38a26a7c7a168140576e6c3b8dd811b2830a82dfe8c1a791f9d12e1d4d881172"
+    },
+    {
+      "relative_path": "src/io.hpp",
+      "bytes": 9448,
+      "sha256": "80d5e1140cd8d256d2ce824a596630291f9d68bd8d95d6b7af7959b68b076ec7"
+    },
+    {
+      "relative_path": "src/json.hpp",
+      "bytes": 6401,
+      "sha256": "93c2be9a0fa2e847bce2315f5de0d30b0f7d48ac4a812a5617c27023c9f1eed5"
+    },
+    {
+      "relative_path": "src/main.cpp",
+      "bytes": 1542,
+      "sha256": "f063453ccf24a38da2966a32d11d326028867bf91d30647c88b6f6dbbc1e7e10"
+    },
+    {
+      "relative_path": "src/rational.hpp",
+      "bytes": 5125,
+      "sha256": "39c0cf0f9230771bb59cc05a63e7947d63572b9c30b18d7f3d40956bee3cccd2"
+    },
+    {
+      "relative_path": "src/science.hpp",
+      "bytes": 7581,
+      "sha256": "dd25d3f4f4e4e0589092928b568dcf98d253363f9eac66e34b0bfdc474366a24"
+    },
+    {
+      "relative_path": "src/support.cpp",
+      "bytes": 7788,
+      "sha256": "4ca891bc1aeb36e79e2faa8878ebca98439fe5f7d5fbedcec6b300eb6251515e"
+    },
+    {
+      "relative_path": "src/vendor/philox.hpp",
+      "bytes": 1862,
+      "sha256": "d1040b170000a260a69be64fb3e6df57b351bd69ca942e7f1637b5cac7a903bd"
+    },
+    {
+      "relative_path": "src/vendor/sha256.hpp",
+      "bytes": 5590,
+      "sha256": "d89435386cccb1e877401f210be6a3ace799a0c2287e51613b9bdd630aa4b38b"
+    }
+  ],
+  "state": "SOURCE_ONLY_UNCOMPILED_UNEXECUTED_NOT_YET_REVIEWED",
+  "original_workspace": "/tmp/bit003-producer-source-v1-20261025/candidate-source-v1",
+  "author_transcript": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-author-v1/native_stdout.jsonl",
+    "sha256": "e15829321122a5217a98007d0620e3b368b0c0aa3a6d689ffed3040da04219f2"
+  }
+}

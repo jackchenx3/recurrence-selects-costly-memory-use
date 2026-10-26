@@ -1,0 +1,1 @@
+{"id":"CLI_DOTDOT","kind":"CLI","payload":{"argv":["brs3_produce","--inputs","/PUBLIC/../X","--tier","fixture-r1","--output","/NEW/data","--threads","1"]},"version":1}

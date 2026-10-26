@@ -1,3 +1,18 @@
+# v1.4.0: sustained retrieval intervention
+
+Sustained cached retrieval changes M-policy composition; accuracy benefit remains unresolved.
+
+BIT003 adds a new prospective sustained-intervention study: 20,000 independent paired blocks, common 256-turnover history, then 256 turnovers per branch with own-state feedback and common indexed tapes. Full independent replay covers every history and both branches. Both simultaneous intervals and all unresolved findings are reported.
+
+Primary time-averaged M-policy frequency: +29.319907 percentage points, interval [27.342023, 31.297791], MATERIAL_POSITIVE. Secondary normalized survivor accuracy: +0.941148 points, interval [-1.360659, 3.242956], UNRESOLVED; neither an accuracy benefit nor within-margin equivalence is established.
+
+These are total sustained retrieval-intervention effects in the specified model, not natural mediation, pure selection coefficients, isolated retention benefits, or biological conclusions. The original scientific job54339475 and all steps completed0:0; independent execution acceptance preceded numeric unseal. No scientific program was rerun for publication.
+
+Earlier studies and releasev1.3.0 are unchanged and remain separately identified. The broader original protocol remains incomplete. Internal computational reviews are not external journal peer review. Author: Jack Chen, without workplace affiliation or work email. Independent internal G9 claims/publication acceptance is complete; exact release assets are hash verified.
+
+
+## Frozen earlier release notes
+
 # Version 1.3.0 — immediate BIT/PL retrieval effects
 
 Integrated the accepted BIT002 experiment into the full Studies001-003 manuscript. All six BIT002 results and limits are retained; immediate effects are distinct from long-run arm contrasts. Added exact results, sources, runtime and reproducibility assets; retained failed/adverse/bounded/unresolved findings. The author is listed by name only. No new scientific run, pooled cohort or external peer-review acceptance.

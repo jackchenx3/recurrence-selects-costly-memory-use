@@ -1,0 +1,1 @@
+{"id":"CLI_SELF_TEST","kind":"CLI","payload":{"argv":["brs3_produce","--self-test"]},"version":1}

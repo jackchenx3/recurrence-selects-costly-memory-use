@@ -1,0 +1,22 @@
+SOURCE ONLY; dependencies have not been probed or executed by this author.
+Build: FRCE Linux x86_64 /usr/bin/g++ 8.5.0, C++17, GNU __uint128_t,
+GNU __builtin_popcount, libstdc++ including experimental filesystem link archive
+-lstdc++fs required by GCC8, pthreads, glibc/Linux headers, bash, mkdir, dirname,
+pwd, printf, sha256sum, ldd. No -march=native, fastmath, network or installs.
+Header dependency: Boost.Multiprecision cpp_int.hpp (header-only), inherited
+from own baseline's exact rational implementation. This is NOT boost/json.
+Availability/version/content must be frozen at FRCE build; absent headers STOP
+build. No fallback implementation or interpreter is selected silently.
+Runtime: Linux kernel with renameat2(RENAME_NOREPLACE), regular filesystem with
+file+directory fsync, /proc/self/exe, glibc, libstdc++, libgcc_s, libm, libpthread
+and loader as actually linked. ROOT must freeze actual ldd-resolved files/hash
+and CPU/filesystem identity, not infer them from these intended dependencies.
+SHA256 and Philox: role-owned baseline vendor C++ source, no external library.
+No Python scientific/runtime dependency. Explicit /usr/bin/python3 >=3.6 is a
+build-time standard-library-only JSON/hash verifier; its binary/version must be
+frozen in BUILD_RECEIPT.txt. No interpreter fallback or package is needed. No OpenSSL runtime dependency. No GPU/model.
+C++ exceptions and std::thread are required. Every caller uses absolute paths.
+Build SHA is externally supplied frozen source-package identity at BUILD time;
+scientific runtime CLI has no provenance or scientific override flags.
+There is no auditor executable in this package. Independent auditor hash must
+be measured from its actual final binary by its author/ROOT, never invented here.

@@ -1,0 +1,1 @@
+{"id":"CLI_UNKNOWN","kind":"CLI","payload":{"argv":["brs3_produce","--inputs","/PUBLIC","--tier","fixture-r1","--output","/NEW/data","--threads","1","--seed","1"]},"version":1}

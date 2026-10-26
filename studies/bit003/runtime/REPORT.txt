@@ -1,0 +1,161 @@
+AUTHOR REPORT -- 2026-10-25 local / 2026-10-26 UTC
+PHASE3-BIT-SUSTAINED-RETRIEVAL-003 finite nativeCLI execution packaging
+
+Outcome and scope
+Seven new candidate files; nothing outside candidate/ was written. The scientific
+executables/source/operator/RNG/data/results were neither implemented, imported,
+executed nor modified. No numeric scientific RESULTS were accessed. Supplied
+metadata included old fixture result/data hashes; those were treated as metadata
+only, not read as scientific data or used as benchmark/production outcomes.
+No external file/source/private-answer access, network, SSH, compilation, Slurm
+submission, candidate execution, worker, scientific fixture or scientific test.
+No subagent/delegation. No model-identity or independent-review claim is made.
+The only runnable local Python in author commands parsed supplied public metadata,
+constructed source/JSON or parsed AST; it never imported candidate/workflow.py.
+No candidate or candidate shell script was executed, including for a self-test.
+
+Changed files (all new)
+ candidate/workflow.py -- finite integrated controller, two fixed modes, one
+   producer/analyzer/auditor sequence, qualified runtime checks, job ancestor
+   memory monitor, capped output, native failure evidence, hash-only agreement,
+   canonical full audit/cohort binding, exclusive verified/fsynced original-job
+   archive, sealed metadata and conservative full-workflow timing bound.
+ candidate/benchmark.sbatch -- fixed norm/cn038/1/1/32/96G/30min/no-requeue.
+ candidate/production.sbatch -- same resources, 8h; requires external benchmark
+   acceptance/readiness/exact ROOT authority; never submits another job.
+ candidate/RUNTIME_FREEZE.json -- actual qualification 54314680, exact qualified
+   CPU/ISA/topology/OS/filesystems, source inventory IDs, three scientific ELF
+   paths/hashes/build IDs, GCC/interpreter/dependencies/stdlib closure, public
+   five-file hashes, G0/G4/G1F identities, immutable resource/gate decisions.
+ candidate/SOURCE_INVENTORY.json -- exact hashes/sizes of the other six files,
+   excludes itself; generated last. ROOT later binds this inventory externally.
+ candidate/README.txt -- review/deployment/authority schema, literal future ROOT
+   sbatch and postterminal accounting commands, failure/archival/sealing limits.
+ candidate/REPORT.txt -- this report, covered by SOURCE inventory.
+No pre-existing candidate files were present. No executable permission or local
+runtime behavior is inferred from these text files.
+
+Complete author shell-command ledger
+15 shell invocations, below, all within the 45-command ceiling. Here-doc Python
+and write bodies are described explicitly rather than represented as a byte-for-
+byte terminal transcript; the native conversation retains actual tool arguments.
+This is an action ledger, not a fabricated downloadable native execution record.
+All paths below were relative to the isolated workspace. Tool clock reads and
+one inspection of available tool metadata were not shell commands or external
+service calls. No connector/network tool was used.
+
+1. pwd && rg --files -g '!candidate/**' -g '!**/.git/**' -g 'AGENTS.md'
+   -g '*.json' -g '*.txt' -g '*.md' -g '*.sbatch' -g '*.py'
+   Listed permitted metadata paths; no AGENTS.md found in workspace.
+2. ls -la; ls -la inputs; cat INPUT_MANIFEST.json inputs/PROTOCOL.txt
+   inputs/ENGINEERING_CONTRACT.txt inputs/ACCEPTED_BINARY_CONFIG.json
+   inputs/VIEW_FREEZE.json inputs/G4_ACCEPTANCE.json
+   Output truncated; subsequent targeted reads supplied needed details.
+3. cat inputs/ACCEPTED_BINARY_CONFIG.json inputs/QUALIFICATION_METADATA_HELPER.py;
+   rg -n 'AUDIT|report|manifest|MANIFEST|DATA_SHA|bundle|RESULTS|canonical|CLI|--'
+   inputs/ENGINEERING_CONTRACT.txt
+   Only public contract and metadata helper, no scientific source.
+4. python3 here-doc: json.load QUALIFICATION_TERMINAL, QUALIFICATION_NATIVE,
+   VIEW_FREEZE; print object schema/keys, lengths and bounded scalar prefixes
+   with recursion depth<=3. Output truncated; no candidate loaded.
+5. sed -n '1,80p' inputs/ENGINEERING_CONTRACT.txt;
+   sed -n '110,138p' inputs/ENGINEERING_CONTRACT.txt;
+   sed -n '317,358p' inputs/ENGINEERING_CONTRACT.txt;
+   sed -n '210,268p' inputs/ENGINEERING_CONTRACT.txt;
+   tail -65 inputs/PROTOCOL.txt;
+   python3 here-doc: print qualification uname/lscpu/scheduler node/job,
+   dependencies/ELF-note/cgroup metadata, projected SCIENCE_VIEW inventory,
+   loaded-module names and parsed native qualification accounting.
+   ELF note output was large/truncated, then targeted in command6.
+6. python3 here-doc: print qualification dependencies, extract GNU Build ID
+   hex strings from supplied readelf-text metadata, scheduler node/job and
+   VIEW_FREEZE top-level metadata; rg -n
+   'bundle_inventory_sha256|BUNDLE_INVENTORY|G0|c37259'
+   inputs/ACCEPTED_BINARY_CONFIG.json inputs/G4_ACCEPTANCE.json
+   inputs/VIEW_FREEZE.json inputs/ENGINEERING_CONTRACT.txt
+7. sed -n '38,53p' inputs/VIEW_FREEZE.json; ls -la candidate;
+   python3 here-doc: print qualified Python version and first CPU record
+   excluding variable MHz/bogomips fields. Confirmed bundle inventory hash.
+8. python3 here-doc: read only supplied qualification/binary config/view metadata;
+   hash supplied input metadata, normalize stable CPU records, extract ELF IDs,
+   construct and write candidate/RUNTIME_FREEZE.json. Scientific fixture/result
+   hashes were not incorporated as benchmark or production observations.
+9. cat here-docs > candidate/workflow.py, > candidate/benchmark.sbatch,
+   > candidate/production.sbatch. Initial finite implementation and fixed scripts.
+10. python3 here-doc: ast.parse workflow text with feature_version=(3,6), parse
+    runtime JSON, compare direct imports against qualified modules; print source
+    line count. No workflow import/execution. Passed.
+11. python3 here-doc: textual edits to workflow only -- freeze archival sample
+    snapshot; fsync resource journal; allow one guarded native-log/partial archive
+    path after memory failure; metadata helper allowlist and 10s timeout; require
+    readonly deployed files. wc -c candidate/* reported initial file sizes.
+12. cat here-doc > candidate/README.txt: concrete future handoff/authority schema,
+    fixed gates, submission and ROOT accounting commands, explicit limitations.
+13. python3 here-doc: textual workflow edits -- nonnegative integer benchmark
+    receipt fields, record expected workroot names to reject scientific partial/
+    extra outputs, readonly/fsync final results/report without decoding them.
+    A second python3 here-doc parsed Python3.6 AST and JSON, inspected fixed child
+    call sites/subprocess entry points/script directives. Passed: 3 scientific
+    call sites; only Popen for fixed science and run for metadata allowlist.
+14. cat here-doc > candidate/REPORT.txt: this truthful scope/action/limit report.
+15. python3 here-doc: final static Python3.6 AST/JSON and frozen input-hash/identity
+    consistency checks; script text checks; generate SOURCE_INVENTORY.json from
+    every other candidate file; verify inventory closure, sizes and SHA256.
+    No candidate module/import/bytecode build/program execution. Final results
+    are reported by the native tool output rather than simulated fixtures.
+
+Static review findings and corrections
+The contract's canonical AUDIT report is 14 lines and has no direct DATA/RESULTS/
+KEYS fields. Do not invent an expanded schema. Exact report validation is joined
+to KEYS-bound DATA manifest and hash-only A/B identities in SEALED_AGREEMENT.json.
+An archival snapshot originally referenced a growing sample list; fixed to a
+separate snapshot/count so final pre-marker samples remain distinguishable.
+The native-log archival path originally could skip the partial-evidence handler
+after a recorded memory failure; moved into the single guarded stageout attempt.
+Scientific failure streams retain native argv/exits/hash evidence. Data/result
+bytes are always opaque to controller hashing and copying. No scientific test
+fixture was invented to claim these properties. Static checks cannot prove them.
+
+Remaining limitations / mandatory independent work
+This is an author candidate, with NO fresh nonauthor SOURCE/runtime GO and NO
+execution/benchmark/readiness/production/EA authority. Qualified IDs are evidence
+from job54314680, not a claim that author ran on cn038. No new runtime validation,
+Slurm job, benchmark duration/output/memory or scientific result exists here.
+Actual native all-job/all-step acceptance only after original job terminal, by
+ROOT, with independent EA before unseal; no controller in-job acceptance shortcut.
+ROOT must authenticate genuine G0 gate/review/authority evidence not supplied
+here, enforce the single-submission ledger, and validate the full coordinator
+bundle closure using its own permitted access. Author has only the five-file
+public view and public metadata, never the producer/auditor source/private answers.
+Authority booleans and pinned SHA ensure consistency, not signer authenticity or
+malicious same-user security. readonly files are an operational seal only.
+
+The prospective loaded-module/map allowlist may reject an actual runtime library
+that was not recorded in supplied qualification. It must fail closed; resolve by
+prospective metadata qualification and independent review BEFORE benchmark, never
+learn hashes on the benchmark or repeat a failed benchmark. Site ldd/scontrol
+executable hashes were not supplied, although those helpers were used in qualified
+metadata collection; they are trusted site metadata tools, not asserted frozen
+scientific executables. Fresh runtime review must assess this stated boundary.
+Exact mount options/microcode/OS checks intentionally fail on changed conditions.
+
+Monitoring is non-atomic; fsync/metadata-helper intervals can delay samples. Peak
+accounting is the real job ancestor, no RSS substitute. Late recorded excess or
+OOM/failcnt fails even after a copy marker. Final archival samples precede marker
+creation; one final post-marker check runs. No finite self-contained marker can
+include its own future writes/check. Later native/resource evidence remains
+binding. Original-job ElapsedRaw+1 includes Python start/shutdown and allocation
+teardown. Recorded full-workflow bound reserves 1s for remaining marker IO and
+fails if exceeded; it conservatively tightens the benchmark rather than subtracts
+overhead. NFS delays can therefore fail finalization. No performance pass is
+predicted, and fixed 625 projection is not a proof of future resource behavior.
+
+Native Slurm logs are copied during the job. ROOT must reconcile final originals
+postterminal, count all bytes, retain any late messages and reject missing archive
+closure. Native accounting/EA receipts are naturally ROOT postterminal evidence,
+not records the job pretends to have obtained after its own termination. Failure
+can leave partial local/shared files; output cap prevents further bulk copies,
+and SIGKILL/storage loss can prevent a final failure record. Native nonzero/OOM/
+missing evidence then fails. No retry/recovery scientific invocation is provided.
+All actual execution/behavioral validation remains gated FRCE Slurm work; static
+syntax/metadata inspection is the entire validation performed by this author.

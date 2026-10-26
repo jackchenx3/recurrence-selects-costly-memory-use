@@ -1,0 +1,873 @@
+--- /dev/null
++++ b/CORRECTION_V2_REPORT.txt
+@@ -0,0 +1,150 @@
++BIT003 PRODUCER SOURCE REPAIR V2 — SOURCE ONLY; NEW INDEPENDENT REVIEW REQUIRED
++
++No compilation, candidate import/execution, scientific function evaluation,
++fixture, RNG/operator/history/survival/selfcheck, benchmark or simulation was
++performed. This is authored engineering evidence, not SOURCE GO, runtime PASS,
++independent acceptance or scientific authority.
++
++Evidence/scope
++All344 INPUT_MANIFEST entries authenticated by size/SHA256 and exact closure.
++The full authenticated nonauthor FIX review hash is
++b5c077ebe1f726fd5dc1a581e4ecfe6c6b2a27626042c814ee7737b31006f770;
++V1 inventory identity is
++c6a10cdecda91a631ddc0d873051b35b204549ddd9a499356dac8262b9fc1efa.
++Copied exact own V1 before repair. Only inputs/ and INPUT_MANIFEST.json supplied
++data; only candidate-source-v2/ was written. Original paths and old reviewer
++/tmp references are data only; none were followed. Own baseline is consulted
++only for exact baseline diff bytes. All original evidence remains unchanged.
++ENGINEERING_REPORT.txt remains byte-exact historical V1, including assertions
++invalidated by FIX. Full review/authentication/freeze retained in docs/V1_*.
++
++All five findings addressed together
++1. src/rational.hpp:153,169,180,183: ceilings are std::string values assigned
++from validated grid.str() after exact endpoint fractions and strict minimal-grid
++inequalities succeed. J(std::string) emits rational strings, not integer grid
++numerators. Public expectation read only for static type/value reasoning:
++19778834661/1000000000000 and 23018074131/1000000000000. No expected lookup.
++Log series/tail/scientific interval predicates remain unchanged.
++
++2. src/main.cpp:10-17: drycli still validates lexical grammar for every argument;
++filesystem pathcheck skips --case. Inputs authenticates FIXTURE_VIEW before case
++membership. An absent/unlisted/outside-view case fails INPUT/2 without probing
++its path. Authenticated cached bytes are parsed. Listed-file readability and
++symlink checks stay in Inputs. Fresh output collision checks remain before IO.
++
++3. src/dataset.hpp:21,39,72,331,400: record_metadata checks structure only.
++record_retries(r,true) keeps standalone RECORD RANGE/2 before SHA. The science
++call record_retries(r,false) emits MISMATCH/3 only after hashes and state legality.
++Global priority is FORMAT, HASH, STATE, MISMATCH; RANGE is absent from analyzer
++ranking. Unrepaired corrupt retry bytes encounter HASH/3 first. Hash-repaired
++out-of-bound retries encounter MISMATCH/3, with STATE/3 taking priority if also
++illegal. Stored retry values within range require full independent replay; the
++analyzer still does not simulate histories or claim to reject coherent forgery.
++
++4. src/io.hpp:98-120: after successful exclusive rename, guard directory sync.
++On directory open/fsync/close failure, retain original exception; rename final
++back to .partial, then try .uncommitted.<name>.<pid> if needed. If both renames
++fail, try evidence hardlinks before unlinking final. Best-effort rollback sync
++cannot mask the original IO/5. Successful rollback leaves no final VALID result
++and retains explicitly uncommitted original bytes. Pre-rename failures retain
++.partial through the original path. Applies to analyzer/helper publication;
++this package authors no auditor/report publisher. Persistent OS failure of
++all rename/link/unlink attempts cannot be overcome by source logic. Cleanup
++success/evidence durability is untested; preserve native failure and surviving
++artifacts without interpreting any incomplete publication as VALID.
++
++5. src/dataset.hpp:281-329 and src/support.cpp:99-137,207-217: shared ChunkEmission
++is the actual producer path, including assemble_chunk, real atomic chunk files,
++indexed manifest entries, canonical manifest/seal IO and readonly completion.
++Real produce calls complete/finish; existing science/parallel loops unchanged.
++Separate --mode packing authenticates FIXTURE_VIEW, supplies the unmodified
++normative record as opaque completions at all200 chunk indices, forward to one
++actual emitter and reverse to another. It interprets no states/targets and calls
++no RNG/scientific function. No second stream/map is copied from forward outputs
++or commitments. Both actual emitted trees are independently read and checked
++for exact filename closure and byte equality, including manifests/seals; sorted
++inventories are independently constructed and compared. Actual inventory/source/
++binary/opaque hashes enter the helper report only after success. The same opaque
++blob occupies every record slot; distinct real chunk headers make cross-chunk
++permutation observable. Within-chunk reverse checks still call assemble_chunk;
++scientific completion order requires the unchanged16-block own invariance and
++later external full-data comparison. These trees are fixture evidence only,
++not scientific DATA or a synthetic substitute for producer publication. Retain
++output.packing-evidence/{forward,reverse}, approximately8.33GB. No timing or
++additional scientific benchmark. This packing mode is separate from invariance
++and its science loops, so it runs once, not at each thread count.
++
++Preservation/provenance
++science.hpp, base.hpp, json.hpp, fixture.hpp and both vendor headers remain exact
++V1 bytes. Both endpoints, every block including zeros, and adverse/null/bounded/
++unresolved classifications remain. No operator/design/key/N/cohort/endpoint/
++inference or scientific CLI changes, speed tuning or reduced audit. All16 own
++corruption constructors unchanged. Public bundle210files/96cases unchanged;
++SCIENCE_VIEW5files and FIXTURE_VIEW107files contain no expected files. No id,
++expected_exit/hash or case-specific answer dispatch was added.
++build.sh:16-46 authors an explicit /usr/bin/python3>=3.6 standard-library-only
++verifier before compilation: supplied source identity equals SHA256 of canonical
++SOURCE_INVENTORY.json bytes; verify every listed file size/hash and exact closure.
++Embed that same identity as BRS_SOURCE_SHA. Receipt records inventory/interpreter/
++compiler/final-binary hashes and versions/ldd. The verifier was AST-parsed only,
++never run. No Python scientific/runtime dependency, installer or fallback.
++Build the full frozen tree; deploy answer-free runtime subset after build.
++
++Exact diff/inventory rules
++BASELINE_TO_CANDIDATE_DIFF.patch compares the entire supplied own_baseline/
++producer_analyzer tree to V2; baseline-only paths are explicit deletions.
++V1_TO_V2_DIFF.patch compares exact supplied source-v1 to V2. Both exclude exactly
++SOURCE_INVENTORY.json, BASELINE_TO_CANDIDATE_DIFF.patch and V1_TO_V2_DIFF.patch
++from each side to avoid generated-artifact self-reference. All other files are
++in scope. Separate old/new headers and standard missing-final-newline markers
++are required; static text reconstruction verifies every in-scope change.
++SOURCE_INVENTORY.json: sorted-key compact ASCII JSON, final LF, files sorted by
++relative path. Includes every file except itself, including both diffs, report
++and historical evidence. Own identity is SHA256 of exact inventory bytes,
++externally supplied at build time. Inventory itself is hashed externally, never
++embedded in its own payload. No source identity self-hash cycle.
++
++Static checks/failures/untested assumptions
++Input hash/closure, unchanged science/vendor/public primitive/report byte checks,
++source text comparisons, JSON and build-verifier AST parse only. No C++ build
++or runtime correctness/performance claim. Two native text writes failed on copied
++readonly modes (first source write, then creation of this report); neither wrote
++bytes. Only copied candidate file/directory modes were made writable. Preserve
++these actual command failures; do not claim all commands exited zero. Actual
++commands remain in terminal/transcript for authentication after terminal; native
++workspace write does not imply per-command security isolation.
++No network/SSH/scheduler/config/credentials/AGENTS/skills/sessions/outside data,
++other-role evidence, subagents/models or installs. Genuine CLI gpt-6.1-sol/high
++was requested; canonical returned provider/model metadata is unavailable.
++
++New exact nonauthor SOURCE GO after freeze is required before any FRCE Slurm
++build/fixture/science. GCC8.5/Boost/Linux syscall/fsync/link/unlink behavior,
++linkage, source-verifier deployment, all96 external byte/exit comparisons,
++membership and late-IO fault injection, all32 thread variants, actual opaque
++emission comparison remain unexecuted. Mandatory G4a, full independent replay
++of EVERY history/BOTH continuing branches, all16 corruptions including coherent
++S256 forgery, independent readiness and science authority remain.
++Exactly one complete64-block full-workflow benchmark <=23.04sec625x bound later,
++including full independent audit/IO/hash/seal; no rerun/tuning/reduced audit.
++Exactly one scientific job only after all gates: FRCE32CPU/one node/8h, initial
++96G request, outer ceiling700000000000 decimal bytes, no64GB hardcap. Original
++job/all-step/resource acceptance before unseal; both endpoints and limitations
++required. Candidate offered for independent review; no self-acceptance.
++
++Exact symbol starts (V2 local paths):
++src/rational.hpp:153 std::array<std::string,2>
++src/rational.hpp:169 ceilings[a]=grid.str()
++src/main.cpp:10 auto opt=drycli
++src/main.cpp:16 need(in.cases.count(rel)
++src/dataset.hpp:21 inline Tier record_metadata
++src/dataset.hpp:39 inline void record_retries
++src/dataset.hpp:72 inline J record_value
++src/dataset.hpp:281 struct ChunkEmission
++src/dataset.hpp:316 inline void produce(
++src/dataset.hpp:331 inline std::string analyze
++src/dataset.hpp:400 record_states(r);record_retries(r,false)
++src/io.hpp:98 inline void publish
++src/io.hpp:107 auto original=std::current_exception()
++src/support.cpp:99 inline std::string packing_check
++src/support.cpp:207 else if(mode=="packing")
++build.sh:16 /usr/bin/python3 - 
+--- a/DEPENDENCIES.txt
++++ b/DEPENDENCIES.txt
+@@ -12,7 +12,9 @@
+ and loader as actually linked. ROOT must freeze actual ldd-resolved files/hash
+ and CPU/filesystem identity, not infer them from these intended dependencies.
+ SHA256 and Philox: role-owned baseline vendor C++ source, no external library.
+-No Python runtime dependency. No OpenSSL runtime dependency. No GPU/model.
++No Python scientific/runtime dependency. Explicit /usr/bin/python3 >=3.6 is a
++build-time standard-library-only JSON/hash verifier; its binary/version must be
++frozen in BUILD_RECEIPT.txt. No interpreter fallback or package is needed. No OpenSSL runtime dependency. No GPU/model.
+ C++ exceptions and std::thread are required. Every caller uses absolute paths.
+ Build SHA is externally supplied frozen source-package identity at BUILD time;
+ scientific runtime CLI has no provenance or scientific override flags.
+--- a/README.md
++++ b/README.md
+@@ -1,4 +1,4 @@
+-BIT003 producer/analyzer candidate v1 — SOURCE ONLY
++BIT003 producer/analyzer candidate v2 — SOURCE ONLY
+ 
+ This package authors brs3_produce, brs3_analyze, brs3_fixture and the role-owned
+ brs3_fixture_support. It authors no independent auditor. No source acceptance,
+@@ -8,12 +8,15 @@
+ 
+ Intended build inside the authorized FRCE allocation, using absolute paths:
+ 
+-    bash /ABS/candidate-source-v1/build.sh /ABS/NEW_BUILD FROZEN_SOURCE_PACKAGE_SHA256
++    bash /ABS/candidate-source-v2/build.sh /ABS/NEW_BUILD FROZEN_SOURCE_PACKAGE_SHA256
+ 
+-The second argument is supplied by ROOT's external source freeze, not computed
+-from a source constant or runtime environment. SOURCE_INVENTORY.json excludes
+-itself and includes the baseline diff. ROOT hashes the complete frozen package
+-externally. build.sh compiles the new main with a distinct fixed command macro;
++The second argument is SHA256 of the exact canonical SOURCE_INVENTORY.json bytes.
++The inventory excludes only itself and lists every other file, including both
++diffs. build.sh verifies that identity, canonical JSON, all listed bytes/hashes
++and exact file closure before compiling. Its explicit /usr/bin/python3 build-time
++verifier uses standard library only; it never imports candidate code. Build from
++the complete frozen package on an isolated review/build staging path; deploy
++only the answer-free runtime subset after building. build.sh compiles the new main with a distinct fixed command macro;
+ no old main or old executable is selected. It does not execute project programs.
+ Record build exit/stderr and the exact compiler, Boost headers, libraries,
+ loader, CPU class and filesystem. See DEPENDENCIES.txt. A missing dependency
+@@ -63,8 +66,25 @@
+ using fresh output files. Compare fixture_records_sha256 across all reports;
+ the thread field deliberately records the invocation. Each run computes all16
+ fixture records in forward and reversed arm/completion order. No production
+-keys or outcomes enter this check. It also exercises opaque packing and exact
+-classification equality. These are producer-owned self-checks, not independence.
++keys or outcomes enter this check. It also exercises exact classification
++equality. These are producer-owned self-checks, not independence.
++
++Run the separate opaque emission fixture once after exact SOURCE GO, on FRCE:
++
++    /ABS/NEW_BUILD/brs3_fixture_support --mode packing --inputs /ABS/FIXTURE_VIEW --output /ABS/NEW_PACKING_REPORT.json
++
++This mode does no science or RNG computation. It supplies unmodified authenticated
++SYNTHETIC_RECORD.bin bytes as opaque completions at every production chunk index,
++in forward and reversed chunk order. Both use ChunkEmission from the actual
++producer, including chunk bytes, actual atomic file publication and manifest/seal
++publication. Exact closure, each filename and every emitted byte are compared;
++independently read inventories and their SHA256 must agree. The blob is opaque,
++so these trees are fixture evidence, never scientific DATA. The helper retains
++NEW_PACKING_REPORT.json.packing-evidence/{forward,reverse}; approximately
++8,328,665,600 chunk bytes plus manifests require reserved fixture storage.
++It records no timing and supplies no scientific benchmark. Its report has actual
++source/binary and emitted-inventory hashes, emitted only upon success.
++
+ Freeze own full fixture DATA, analyzer results, all96 FIXOUTs, sources and final
+ binaries before permitted cross-access. Keep private expectations in this role.
+ 
+@@ -95,3 +115,14 @@
+ apply. No resume/retry/replacement or postproduction program rerun. Partial
+ output stays preserved, without a complete inventory seal. Numerical result
+ files remain quarantined until independent execution acceptance.
++
++V2 review repairs and historical evidence
++CORRECTION_V2_REPORT.txt is the current source-only correction account.
++ENGINEERING_REPORT.txt is retained byte-for-byte as the historical V1 author
++report; its implementation assertions predate the independent FIX findings.
++docs/V1_SOURCE_REVIEW.txt preserves that full authenticated FIX review, including
++location references that are data only. All five material findings are addressed
++in V2 source, subject to new independent review and later runtime verification.
++Both diffs exclude generated diff files and SOURCE_INVENTORY.json to break
++self-reference; their complete comparison scopes are documented in the report.
++This package grants no SOURCE GO or runtime/science acceptance.
+--- a/build.sh
++++ b/build.sh
+@@ -10,6 +10,37 @@
+ [ "${#source_sha}" -eq 64 ]
+ [ ! -e "$build_dir" ]
+ source_dir=$(cd -- "$(dirname -- "$0")" && pwd -P)
++# Identity is SHA256 of canonical inventory bytes; verify the entire frozen tree
++# before compiling. This build-time verifier only reads bytes/JSON, never imports
++# candidate modules or executes a generated program.
++/usr/bin/python3 - "$source_dir" "$source_sha" <<'PY_VERIFY'
++import hashlib, json, pathlib, sys
++root = pathlib.Path(sys.argv[1])
++raw = (root / "SOURCE_INVENTORY.json").read_bytes()
++if hashlib.sha256(raw).hexdigest() != sys.argv[2]:
++    raise SystemExit("source inventory identity mismatch")
++inv = json.loads(raw.decode("ascii"))
++canonical = (json.dumps(inv, sort_keys=True, separators=(",", ":"), ensure_ascii=True) + "\n").encode("ascii")
++if raw != canonical:
++    raise SystemExit("noncanonical source inventory")
++listed = set()
++for entry in inv["files"]:
++    name = entry["path"]
++    if name in listed or name == "SOURCE_INVENTORY.json" or not name or any(x in ("", ".", "..") for x in name.split("/")) or name.startswith("/"):
++        raise SystemExit("invalid source inventory path")
++    listed.add(name)
++    data = (root / name).read_bytes()
++    if len(data) != entry["bytes"] or hashlib.sha256(data).hexdigest() != entry["sha256"]:
++        raise SystemExit("source bytes mismatch: " + name)
++actual = set()
++for path in root.rglob("*"):
++    if path.is_symlink() or not (path.is_file() or path.is_dir()):
++        raise SystemExit("nonregular source entry")
++    if path.is_file():
++        actual.add(path.relative_to(root).as_posix())
++if actual != listed | {"SOURCE_INVENTORY.json"}:
++    raise SystemExit("source tree closure mismatch")
++PY_VERIFY
+ mkdir -- "$build_dir"
+ printf '#pragma once\n#define BRS_SOURCE_SHA "%s"\n' "$source_sha" > "$build_dir/build_metadata.hpp"
+ flags=(-std=c++17 -O3 -DNDEBUG -Wall -Wextra -Wpedantic -pthread -I"$source_dir/src" -I"$build_dir")
+@@ -18,12 +49,13 @@
+ done
+ /usr/bin/g++ "${flags[@]}" "$source_dir/src/support.cpp" -o "$build_dir/brs3_fixture_support" -lstdc++fs
+ {
+- printf 'BIT003_PRODUCER_BUILD_V1\nsource_sha256=%s\n' "$source_sha"
++ printf 'BIT003_PRODUCER_BUILD_V2\nsource_sha256=%s\n' "$source_sha"
+  printf 'public_input_index_sha256=e60b367dbab81dc1388f06f9d7be6da90b927e8302b4d7001be544976abe8889\n'
+  printf 'bundle_inventory_sha256=4cc9b10958a04c458aeba5ab3788dd54153b1ce18fc2cb83fe3847e012599bd6\n'
+  printf 'compiler=/usr/bin/g++\nflags=-std=c++17 -O3 -DNDEBUG -Wall -Wextra -Wpedantic -pthread -lstdc++fs\n'
++ /usr/bin/python3 --version
+  /usr/bin/g++ --version
+- sha256sum /usr/bin/g++ "$build_dir"/brs3_produce "$build_dir"/brs3_analyze "$build_dir"/brs3_fixture "$build_dir"/brs3_fixture_support
++ sha256sum "$source_dir/SOURCE_INVENTORY.json" /usr/bin/python3 /usr/bin/g++ "$build_dir"/brs3_produce "$build_dir"/brs3_analyze "$build_dir"/brs3_fixture "$build_dir"/brs3_fixture_support
+  for command in brs3_produce brs3_analyze brs3_fixture brs3_fixture_support; do ldd "$build_dir/$command"; done
+ } > "$build_dir/BUILD_RECEIPT.txt"
+ # Build records identities only. No generated program, fixture or test is run.
+--- a/docs/LATER_VALIDATION.txt
++++ b/docs/LATER_VALIDATION.txt
+@@ -13,15 +13,24 @@
+ 5. All32 thread counts, normal/reverse arms/completion and actual committed
+    data/manifests/results hashes; injected no-M equality only one step; all-M,
+    invalid-M initialization, survivor-slot mutation and PRE-parent cache tests.
+-   support.cpp has own fixture-only work and a shared-emitter opaque packing
+-   check at all200 production chunk indices; those opaque bytes never enter DATA.
++   support.cpp has own fixture-only work. Separately run its --mode packing
++   once with FIXTURE_VIEW: actual shared ChunkEmission publishes all200 opaque
++   chunks in each order, then exact file/manifests/inventories are compared.
++   Reserve approximately8.33GB for retained fixture evidence. No timing/RNG or
++   scientific benchmark is part of that mode; opaque bytes never enter DATA.
+ 6. All16 POST_G4 corruption recipes from pristine agreed fixture DATA, including
+    self-consistent S256 forgery with both branches, sums and hashes repaired.
+    Record independent auditor's actual exit/code and absence of valid outputs.
+    Construction by support.cpp is not an auditor verdict.
+ 7. Fresh-output collisions, malformed strict CLI, symlink/path substitution,
+    short reads, IO failures, interrupted chunk/manifest publication. Preserve
+-   .partial files and actual failure evidence outside DATA. Never resume DATA.
++   .partial files and actual failure evidence outside DATA. Exercise directory
++   open/fsync/close failure after rename: final results absent, .partial evidence
++   retained, original IO/5 preserved even if rollback sync also fails. Also test
++   retry>8160 with unrepaired hashes (HASH/3), repaired hashes (MISMATCH/3),
++   simultaneous invalid state (STATE/3), and standalone RECORD (RANGE/2).
++   Authenticate missing/unlisted case failures as INPUT/2 before case probing.
++   Never resume DATA.
+ 8. Exactly one64-block full-workflow benchmark including full independent
+    replay, IO/hashing, comparison/seal and accounting; whole<=23.04s. No repeat,
+    tuning, reduced audit or endpoint display. Failure stops Design1.
+--- /dev/null
++++ b/docs/V1_REVIEW_AUTHENTICATION.json
+@@ -0,0 +1,42 @@
++{
++  "at_utc": "2026-10-25T23:53:39.119527+00:00",
++  "state": "GENUINE_NONAUTHOR_SOURCE_FIX_AUTHENTICATED",
++  "review": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-review-v1/REVIEW.txt",
++    "sha256": "b5c077ebe1f726fd5dc1a581e4ecfe6c6b2a27626042c814ee7737b31006f770"
++  },
++  "terminal": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-review-v1/PROCESS_TERMINAL.json",
++    "sha256": "eddaf4292323e51a5a0390ce269bf0427c763d169cdf6907db80c94c26785566"
++  },
++  "transcript": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-review-v1/native_stdout.jsonl",
++    "sha256": "7e6f0475894d6f4b700981f9fb4585c69a88c5b4bb2ba8fcf03ce5bb4be7d34a"
++  },
++  "input_manifest": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-review-v1/INPUT_MANIFEST.json",
++    "sha256": "7cd12015e646ff720c8df33f59734754de653a1b1c32c3dfe4c9c9c84894e431"
++  },
++  "inputs_all_exact_unchanged": true,
++  "actual_commands": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-review-v1/ROOT_NATIVE_COMMANDS.json",
++    "sha256": "48f2d1ef0cf5541f7d3b6cdb860d981f68c30a55764991500cae0baa2636454d"
++  },
++  "command_count": 23,
++  "all_exits_zero": true,
++  "scope_inspected": "ROOT inspected actual shell commands and all Python -c source as static text: only named public and own candidate/baseline/engineering files; hash/JSON/AST parse/literal unpack/scalar Fraction/key-SHA derivations; no candidate import/compiler/Philox/operator/history/fixture execution, network, scheduler, source write or other actor.",
++  "model_identity": "Genuine explicit native CLI gpt-6.1-sol/high request; canonical returned provider/model unavailable in native JSONL",
++  "candidate": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/PRODUCER_SOURCE_FROZEN_V1.json",
++    "sha256": "23a34be23a86c617054c3213fe99f92495f37b66812d6f26e766b536855574ea"
++  },
++  "design_contradiction_or_independence_breach_identified": false,
++  "source_build_or_scientific_authority": false,
++  "material_corrections": [
++    "CERTIFICATE rational-string result representation",
++    "Fixture view authentication/membership before filesystem probing",
++    "Scientific analyzer retry vocabulary and hash/state validation order separate from RECORD primitive",
++    "Post-rename IO failure rolls final result back to uncommitted evidence",
++    "Actual shared producer cross-chunk completion/manifest emission coverage"
++  ]
++}
+--- /dev/null
++++ b/docs/V1_SOURCE_FREEZE.json
+@@ -0,0 +1,123 @@
++{
++  "at_utc": "2026-10-25T23:23:24.535480+00:00",
++  "role": "producer",
++  "directory": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-candidate-v1",
++  "file_count": 21,
++  "source_identity": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-candidate-v1/SOURCE_INVENTORY.json",
++    "sha256": "c6a10cdecda91a631ddc0d873051b35b204549ddd9a499356dac8262b9fc1efa"
++  },
++  "files": [
++    {
++      "relative_path": "BASELINE_TO_CANDIDATE_DIFF.patch",
++      "bytes": 154963,
++      "sha256": "e9d333fb6d47668e6f833227800b469c846575dbd93eb8d52b45f6ac8b4a7aba"
++    },
++    {
++      "relative_path": "DEPENDENCIES.txt",
++      "bytes": 1550,
++      "sha256": "20b9966ef1077b6b2a9870f6089dc43003295e2ffa616e14a5535a3ef97cd59b"
++    },
++    {
++      "relative_path": "ENGINEERING_REPORT.txt",
++      "bytes": 8826,
++      "sha256": "498e0e76070a5f5846a2e0f2502d413997ce00e971753faa459c76c4e7b5bbd2"
++    },
++    {
++      "relative_path": "LICENSE-CODE",
++      "bytes": 1066,
++      "sha256": "de379da7a02965b9a9d1313bf743eed6c3b5bfdd366bfd8735dee9285307321d"
++    },
++    {
++      "relative_path": "README.md",
++      "bytes": 6320,
++      "sha256": "1bf3010ba66b8addbf4302c8e56c21689fc2f26b66e3ac00faf40848c41d3a8a"
++    },
++    {
++      "relative_path": "SOURCE_INVENTORY.json",
++      "bytes": 2486,
++      "sha256": "c6a10cdecda91a631ddc0d873051b35b204549ddd9a499356dac8262b9fc1efa"
++    },
++    {
++      "relative_path": "build.sh",
++      "bytes": 1876,
++      "sha256": "bbbbb7a7825e2217abca527a2128e477f811882a32823a9e8897f0a9971c56bc"
++    },
++    {
++      "relative_path": "docs/LATER_VALIDATION.txt",
++      "bytes": 2519,
++      "sha256": "a6a685dd80c3b908c303a37b69d74025004580fb49485f1eb15a538746a86a64"
++    },
++    {
++      "relative_path": "docs/Random123_LICENSE.txt",
++      "bytes": 1520,
++      "sha256": "5fd0885ab205878bd90c19144677286252eb9b988c1545a3a910edfe1e27b6df"
++    },
++    {
++      "relative_path": "private_expectations/README.txt",
++      "bytes": 559,
++      "sha256": "fc5ac7c20b3500fc525c88b99ed1342f49723ae11b8d19fc442beb482573b54d"
++    },
++    {
++      "relative_path": "src/base.hpp",
++      "bytes": 4252,
++      "sha256": "c7192db5a7d9f54afc8f07feb6c23bfc196a05e743592ff3ff50494f94dcb7a2"
++    },
++    {
++      "relative_path": "src/dataset.hpp",
++      "bytes": 11304,
++      "sha256": "1b45e055351bae2b527e339bf547a904267ba080bfe47611cbb1ddd2c9bd1b95"
++    },
++    {
++      "relative_path": "src/fixture.hpp",
++      "bytes": 18438,
++      "sha256": "38a26a7c7a168140576e6c3b8dd811b2830a82dfe8c1a791f9d12e1d4d881172"
++    },
++    {
++      "relative_path": "src/io.hpp",
++      "bytes": 9448,
++      "sha256": "80d5e1140cd8d256d2ce824a596630291f9d68bd8d95d6b7af7959b68b076ec7"
++    },
++    {
++      "relative_path": "src/json.hpp",
++      "bytes": 6401,
++      "sha256": "93c2be9a0fa2e847bce2315f5de0d30b0f7d48ac4a812a5617c27023c9f1eed5"
++    },
++    {
++      "relative_path": "src/main.cpp",
++      "bytes": 1542,
++      "sha256": "f063453ccf24a38da2966a32d11d326028867bf91d30647c88b6f6dbbc1e7e10"
++    },
++    {
++      "relative_path": "src/rational.hpp",
++      "bytes": 5125,
++      "sha256": "39c0cf0f9230771bb59cc05a63e7947d63572b9c30b18d7f3d40956bee3cccd2"
++    },
++    {
++      "relative_path": "src/science.hpp",
++      "bytes": 7581,
++      "sha256": "dd25d3f4f4e4e0589092928b568dcf98d253363f9eac66e34b0bfdc474366a24"
++    },
++    {
++      "relative_path": "src/support.cpp",
++      "bytes": 7788,
++      "sha256": "4ca891bc1aeb36e79e2faa8878ebca98439fe5f7d5fbedcec6b300eb6251515e"
++    },
++    {
++      "relative_path": "src/vendor/philox.hpp",
++      "bytes": 1862,
++      "sha256": "d1040b170000a260a69be64fb3e6df57b351bd69ca942e7f1637b5cac7a903bd"
++    },
++    {
++      "relative_path": "src/vendor/sha256.hpp",
++      "bytes": 5590,
++      "sha256": "d89435386cccb1e877401f210be6a3ace799a0c2287e51613b9bdd630aa4b38b"
++    }
++  ],
++  "state": "SOURCE_ONLY_UNCOMPILED_UNEXECUTED_NOT_YET_REVIEWED",
++  "original_workspace": "/tmp/bit003-producer-source-v1-20261025/candidate-source-v1",
++  "author_transcript": {
++    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/producer-source-author-v1/native_stdout.jsonl",
++    "sha256": "e15829321122a5217a98007d0620e3b368b0c0aa3a6d689ffed3040da04219f2"
++  }
++}
+--- /dev/null
++++ b/docs/V1_SOURCE_REVIEW.txt
+@@ -0,0 +1,37 @@
++VERDICT: FIX — SOURCE_FROZEN_V1 SHA256 23a34be23a86c617054c3213fe99f92495f37b66812d6f26e766b536855574ea
++
++The candidate needs five engineering corrections before compilation. I found no scientific contradiction or independence breach warranting STOP.
++
++Authenticated identity and scope: all 343 supplied files matched INPUT_MANIFEST.json, including a final unchanged-byte check. The tree has exact file/directory closure, with no symlinks or nonregular entries. The frozen candidate contains 21 files; its canonical SOURCE_INVENTORY.json identity is `c6a10cdecda91a631ddc0d873051b35b204549ddd9a499356dac8262b9fc1efa`.
++
++The public bundle authenticates as 210 files and 96 literal pairs. The derived SCIENCE_VIEW and FIXTURE_VIEW allowlists contain exactly 5 and 107 files. Both embedded anchors match:
++
++- Core index: `e60b367dbab81dc1388f06f9d7be6da90b927e8302b4d7001be544976abe8889`
++- Full inventory: `4cc9b10958a04c458aeba5ab3788dd54153b1ce18fc2cb83fe3847e012599bd6`
++
++ROOT authentication was treated as provenance and scope evidence, not correctness acceptance. The old preparation brief’s 95-case count is superseded by accepted V2’s 96.
++
++1. **CERTIFICATE produces the wrong literal values and JSON types.**  
++   [rational.hpp:153](/tmp/bit003-producer-source-review-v1-20261025/inputs/candidate/src/rational.hpp:153) stores grid numerators in `std::array<u64,2>`. Lines 180 and 183 consequently emit JSON integers `19778834661` and `23018074131`. The frozen [CERTIFICATE expectation](/tmp/bit003-producer-source-review-v1-20261025/inputs/public/FIXIN_BUNDLE/expected/CERTIFICATE.json:1) requires strings `"19778834661/1000000000000"` and `"23018074131/1000000000000"`. This is a definite byte-comparison failure, independently of runtime assumptions. Return each validated grid’s reduced `Rat::str()` value.
++
++2. **Fixture case validation occurs before authentication and membership validation.**  
++   [main.cpp:11](/tmp/bit003-producer-source-review-v1-20261025/inputs/candidate/src/main.cpp:11) filesystem-checks `--case` before constructing `Inputs`. For an otherwise valid invocation naming an absent, unlisted case under the existing view directory, this throws `CLI`, exit 2. Contract 9.1.1 requires input authentication followed by case membership rejection as `INPUT`, exit 2. Keep lexical argument validation first; authenticate FIXTURE_VIEW, establish membership, and use its authenticated case bytes without first probing an unlisted case path.
++
++3. **The analyzer inherits fixture-only retry errors and validation order.**  
++   [dataset.hpp:35](/tmp/bit003-producer-source-review-v1-20261025/inputs/candidate/src/dataset.hpp:35) throws `RANGE`, exit 2, for a stored retry total above 8160. The scientific analyzer invokes this through `record_metadata` at line 357, before hashes and state checks. Scientific contract 9.2 excludes `RANGE` from its error vocabulary and places target/retry/endpoint checks after hashes and state legality. Separate these contexts: preserve `RANGE`/2 and the specified ordering for the standalone RECORD primitive; validate scientific retry totals in the scientific phase with `MISMATCH`/3. An unrepaired corrupt record must encounter its hash failure first.
++
++4. **Failed publication can leave a final VALID result.**  
++   [io.hpp:98](/tmp/bit003-producer-source-review-v1-20261025/inputs/candidate/src/io.hpp:98) renames the partial file to its final destination, then calls `syncdir`. If directory opening, fsync, or close fails after that rename, the exception reaches main and returns failure while the final analyzer result still contains `status=VALID`. Contract 9.2 requires absent final result/report destinations on failure. Add post-rename failure rollback to an explicitly uncommitted artifact where possible, preserving the original IO failure and evidence. This finding identifies an implemented failure path; it does not assert that FRCE fsync will fail.
++
++5. **The cross-chunk completion check does not exercise producer emission.**  
++   [support.cpp:126](/tmp/bit003-producer-source-review-v1-20261025/inputs/candidate/src/support.cpp:126) constructs the reverse map by copying already-computed forward commitments. Both maps then iterate in sorted order. This checks map ordering, but never supplies reversed chunk completions to the producer’s chunk/manifest publication path at [dataset.hpp:278](/tmp/bit003-producer-source-review-v1-20261025/inputs/candidate/src/dataset.hpp:278). The within-chunk reversed-record check does exercise `assemble_chunk`; the cross-chunk claim remains unsupported. Drive shared producer emission/manifest assembly with authenticated opaque completions in both chunk orders and compare emitted names, bytes and inventories, as POST_G4 requires.
++
++Beyond those findings, static inspection supports the intended scientific implementation: 20,000 parity-balanced blocks; 256 factual history updates; independently continuing C/A states and A eligibility; absolute indexed tapes; recurrence across the checkpoint; donor tie order; separate candidate identities; integer PL selection; survivor-slot mutations; and PRE-parent cache retention. Record offsets, state/target/retry counts, four sums, chunk dimensions, signed aggregation and endpoint denominators align with the contract.
++
++I independently checked the 27 new and 126 legacy key derivations and disjointness using SHA arithmetic. Exact Fraction calculations verified the certificate’s 48 terms, exponent-97 tail, stored arithmetic gaps and both minimal grid ceilings. All 96 literal input/expectation pairs were inspected against source semantics; this is not an execution PASS.
++
++All 16 corruption constructors are present. The coherent S256 recipe changes the checkpoint and recomputes both branches, retries, sums and hashes while preserving earlier history and targets. Its rejection remains a later independent EVERY-history replay obligation. No auditor is required inside this producer candidate.
++
++No candidate code, compiler, build, import, fixture, Philox, operator, survival or history path was executed. No source was written. GCC 8.5/C++17 build plausibility was reviewed statically; actual Boost availability, linking, final executable identities, runtime correctness and practical speed remain unverified. Canonical returned provider/model metadata is unavailable.
++
++FIX grants no build authority. Corrections require a new exact freeze and nonauthor SOURCE review. All later gates remain mandatory, including G4a isolation, external byte/exit comparison, full independent replay, the single outcome-blind complete-workflow benchmark at ≤23.04 seconds, and the single authorized scientific submission under the stated resource and original-job constraints.
+\ No newline at end of file
+--- a/src/dataset.hpp
++++ b/src/dataset.hpp
+@@ -32,12 +32,16 @@
+     field(get(r.data()+18,2)==256,"followup_horizon");
+     field(get(r.data()+20,4)==RECORD_BYTES,"record_bytes");
+     for(u32 i=24;i<32;++i)field(r[i]==0,"reserved");
++    return t;
++  }
++  // RECORD primitive checks retries before hashes with RANGE/2. Science checks
++  // them only after hashes and state legality, with its own MISMATCH/3 code.
++  inline void record_retries(const Bytes&r,bool primitive){
+     for(u32 j=0;j<768;++j)if(get(r.data()+RETRY_BASE+4*j,4)>8160){
+-      Error e(2,"RANGE","retry");
++      Error e(primitive?2:3,primitive?"RANGE":"MISMATCH","retry");
+       e.index=j;
+       throw e;
+     }
+-    return t;
+   }
+   inline void record_hash(const Bytes&r){
+     field(sha(r.data(),RECORD_HASH)==mm::to_hex(r.data()+RECORD_HASH,32),"record_sha256",3,"HASH");
+@@ -67,6 +71,7 @@
+   }
+   inline J record_value(const Bytes&r){
+     auto t=record_metadata(r);
++    record_retries(r,true);
+     record_hash(r);
+     record_states(r);
+     auto s=record_sums(r);
+@@ -270,11 +275,46 @@
+   inline std::string results(const Tier&t,i64 m,i64 a){
+     return "BIT003_RESULTS_V1\nstatus=VALID\ntier="+t.name+"\nn_blocks="+std::to_string(t.n)+"\nn_all_f="+std::to_string(t.n/2)+"\nn_all_m="+std::to_string(t.n/2)+"\npolicy_signed_sum="+std::to_string(m)+"\npolicy_denominator="+std::to_string(u64(t.n)*8192)+"\naccuracy_signed_sum="+std::to_string(a)+"\naccuracy_denominator="+std::to_string(u64(t.n)*262144)+"\ninference=PRODUCTION_ONLY\n";
+   }
++  // Actual producer publication path. Completed chunks may arrive in any order;
++  // the manifest is always assembled by chunk index. No scientific computation
++  // occurs here, so fixture tools can supply authenticated opaque records.
++  struct ChunkEmission {
++    fs::path out;
++    Tier t;
++    std::vector<J> entries;
++    std::vector<bool> seen;
++    ChunkEmission(const fs::path&path,const Tier&which):out(path),t(which),
++      entries(t.chunks()),seen(t.chunks(),false){
++      pathcheck(out,true);
++      need(::mkdir(out.c_str(),0700)==0,5,"IO");
++      syncdir(out.parent_path());
++    }
++    void complete(u32 k,const std::vector<Bytes>&records){
++      need(k<t.chunks()&&!seen[k]);
++      auto chunk=assemble_chunk(t,k,records);
++      auto name=chunkname(k);
++      atomicfile(out/name,chunk);
++      entries[k]=J::obj({
++        {"name",name},{"bytes",u64(chunk.size())},{"sha256",sha(chunk)}
++      });
++      seen[k]=true;
++    }
++    void finish(){
++      J m=manifest_base(t);
++      for(u32 k=0;k<t.chunks();++k){
++        need(seen[k]);
++        m["files"].push(entries[k]);
++      }
++      auto ms=json(m);
++      atomictext(out/"MANIFEST.json",ms);
++      atomictext(out/"MANIFEST.sha256",sha(ms)+"  MANIFEST.json\n");
++      syncdir(out);
++      need(::chmod(out.c_str(),0555)==0,5,"IO");
++      syncdir(out.parent_path());
++    }
++  };
+   inline void produce(const fs::path&out,const Tier&t,u32 threads,bool reverse=false,bool descending=false){
+-    pathcheck(out,true);
+-    need(::mkdir(out.c_str(),0700)==0,5,"IO");
+-    syncdir(out.parent_path());
+-    J m=manifest_base(t);
++    ChunkEmission emission(out,t);
+     for(u32 k=0;k<t.chunks();++k){
+       u32 n=t.count(k);
+       std::vector<Bytes>r(n);
+@@ -282,28 +322,9 @@
+         u32 i=descending?n-1-j:j;r[i]=produce_record(t,100*k+i,reverse);
+       }
+       );
+-      Bytes chunk=assemble_chunk(t,k,r);
+-      auto name=chunkname(k);
+-      atomicfile(out/name,chunk);
+-      m["files"].push(J::obj({
+-        {
+-          "name",name
+-        }
+-        ,{
+-          "bytes",u64(chunk.size())
+-        }
+-        ,{
+-          "sha256",sha(chunk)
+-        }
+-      }
+-      ));
+-    }
+-    auto ms=json(m);
+-    atomictext(out/"MANIFEST.json",ms);
+-    atomictext(out/"MANIFEST.sha256",sha(ms)+"  MANIFEST.json\n");
+-    syncdir(out);
+-    need(::chmod(out.c_str(),0555)==0,5,"IO");
+-    syncdir(out.parent_path());
++      emission.complete(k,r);
++    }
++    emission.finish();
+   }
+   // Analyzer does not replay a turnover. It derives all targets and initialization,
+   // validates every stored state, then derives endpoint sums from stored follow-up.
+@@ -327,7 +348,7 @@
+     std::exception_ptr best;
+     int best_rank=99;
+     auto retain=[&](const Error&e){
+-      int rank=e.code=="FORMAT"||e.code=="RANGE"?0:e.code=="HASH"?1:e.code=="STATE"?2:3;
++      int rank=e.code=="FORMAT"?0:e.code=="HASH"?1:e.code=="STATE"?2:3;
+       if(rank<best_rank){
+         best_rank=rank;
+         best=std::make_exception_ptr(e);
+@@ -376,7 +397,7 @@
+       std::vector<std::exception_ptr>errs(rs.size());
+       parallel(u32(rs.size()),threads,[&](u32 i){
+         try{
+-          auto&r=rs[i];record_states(r);Rng rng(t,100*k+i);auto targets=rng.targets();for(u32 u=1;u<=512;++u)field(get(r.data()+32+4*(u-1),4)==targets[u-1],"target",3,"MISMATCH");Bytes initial(264);encode(initial.data(),rng.initial());field(std::equal(initial.begin(),initial.end(),r.begin()+STATE_BASE),"initial_state",3,"MISMATCH");sums[i]=record_sums(r);
++          auto&r=rs[i];record_states(r);record_retries(r,false);Rng rng(t,100*k+i);auto targets=rng.targets();for(u32 u=1;u<=512;++u)field(get(r.data()+32+4*(u-1),4)==targets[u-1],"target",3,"MISMATCH");Bytes initial(264);encode(initial.data(),rng.initial());field(std::equal(initial.begin(),initial.end(),r.begin()+STATE_BASE),"initial_state",3,"MISMATCH");sums[i]=record_sums(r);
+         }
+         catch(...){
+           errs[i]=std::current_exception();
+--- a/src/io.hpp
++++ b/src/io.hpp
+@@ -97,7 +97,27 @@
+   }
+   inline void publish(const fs::path&tmp,const fs::path&dest){
+     need(::syscall(SYS_renameat2,AT_FDCWD,tmp.c_str(),AT_FDCWD,dest.c_str(),1)==0,5,"IO");
+-    syncdir(dest.parent_path());
++    try{
++      syncdir(dest.parent_path());
++    }
++    catch(...){
++      // Restore the exclusive .partial name after a late directory IO failure.
++      // Cleanup must never replace the original exception. If rename fails,
++      // preserve an evidence hardlink where possible before unlinking final.
++      auto original=std::current_exception();
++      if(::syscall(SYS_renameat2,AT_FDCWD,dest.c_str(),AT_FDCWD,tmp.c_str(),1)!=0){
++        auto evidence=dest.parent_path()/(".uncommitted."+dest.filename().string()+
++          "."+std::to_string(::getpid()));
++        // A second exclusive evidence name handles an occupied partial name.
++        if(::syscall(SYS_renameat2,AT_FDCWD,dest.c_str(),AT_FDCWD,evidence.c_str(),1)!=0){
++          if(::link(dest.c_str(),tmp.c_str())!=0)
++            ::link(dest.c_str(),evidence.c_str());
++          ::unlink(dest.c_str());
++        }
++      }
++      try{syncdir(dest.parent_path());}catch(...){}
++      std::rethrow_exception(original);
++    }
+   }
+   inline void writeall(int f,const void*p,size_t n){
+     auto b=static_cast<const u8*>(p);
+--- a/src/main.cpp
++++ b/src/main.cpp
+@@ -8,7 +8,7 @@
+     a.push_back(command);
+     for(int i=1;i<argc;++i)a.push_back(argv[i]);
+     auto opt=drycli(a);
+-    for(auto&v:opt)if(v.first!="--tier"&&v.first!="--threads")pathcheck(v.second,v.first=="--output"||v.first=="--results");
++    for(auto&v:opt)if(v.first!="--tier"&&v.first!="--threads"&&v.first!="--case")pathcheck(v.second,v.first=="--output"||v.first=="--results");
+     Inputs in(opt.at("--inputs"),command=="brs3_fixture");
+     if(command=="brs3_fixture"){
+       fs::path p=opt.at("--case");
+--- a/src/rational.hpp
++++ b/src/rational.hpp
+@@ -150,14 +150,13 @@
+     check(j.at("series_bounds").at("ln25_over16").a.at(0),l25.first);
+     check(j.at("series_bounds").at("ln25_over16").a.at(1),l25.second);
+     need(j.at("schema").num()==1&&j.at("n_blocks").num()==20000&&j.at("n_terms").num()==48&&j.at("range_length").num()==2,3,"MISMATCH","certificate");
+-    std::array<u64,2> ceilings{
++    std::array<std::string,2> ceilings{
+     }
+     ;
+     for(u32 a=0;a<2;++a){
+       auto&v=j.at("endpoints").at(a?"accuracy":"policy");
+       Rat alpha=a?Rat(1,100):Rat(1,25),grid(a?23018074131ULL:19778834661ULL,Big("1000000000000")),prev=grid-Rat(1,Big("1000000000000"));
+       Rat lo=Rat(a?7:5)*l2.first+l25.first,hi=Rat(a?7:5)*l2.second+l25.second;
+-      ceilings[a]=(grid.p*Big("1000000000000")/grid.q).convert_to<u64>();
+       check(v.at("alpha"),alpha);
+       check(v.at("h_grid"),grid);
+       check(v.at("previous_grid"),prev);
+@@ -167,6 +166,7 @@
+       check(v.at("grid_squared_minus_upper"),d1);
+       check(v.at("lower_minus_previous_squared"),d2);
+       need(d1>Rat()&&d2>Rat()&&v.at("log_argument").num()==u64(a?200:50),3,"MISMATCH","certificate");
++      ceilings[a]=grid.str();
+     }
+     check(j.at("family_alpha"),Rat(1,25)+Rat(1,100));
+     return J::obj({
+--- a/src/support.cpp
++++ b/src/support.cpp
+@@ -94,42 +94,47 @@
+     for(bool b:seen)need(b);
+     return assemble_chunk(t,k,ordered);
+   }
+-  inline void packing_check(){
++  // The input is supplied by authenticated FIXTURE_VIEW, never synthesized as
++  // a replacement for the producer path. Interpret no state/target/RNG fields.
++  inline std::string packing_check(const Bytes&opaque,const fs::path&work){
++    need(opaque.size()==RECORD_BYTES,2,"INPUT");
+     auto t=tier("production-r1");
+-    std::map<u32,J>forward,reverse;
+-    for(u32 k=0;k<200;++k){
+-      std::vector<std::pair<u32,Bytes>>blobs;
+-      for(u32 j=0;j<100;++j){
+-        u32 b=100*k+j;
+-        Bytes opaque(RECORD_BYTES,u8(b));
+-        put(opaque.data(),b,4);
+-        blobs.emplace_back(b,std::move(opaque));
+-      }
+-      auto a=pack_chunk(t,k,blobs);
+-      auto hash=sha(a);
+-      std::reverse(blobs.begin(),blobs.end());
+-      auto other=pack_chunk(t,k,blobs);
+-      need(a==other,3,"MISMATCH");
+-      forward[k]=J::obj({
+-        {
+-          "name",chunkname(k)
+-        }
+-        ,{
+-          "bytes",u64(a.size())
+-        }
+-        ,{
+-          "sha256",hash
+-        }
+-      }
+-      );
+-    }
+-    // Inject reverse chunk completion using only opaque commitments, then sort by
+-    // the same fixed chunk index before canonical manifest publication.
+-    for(u32 k=200;k-->0;)reverse.emplace(k,forward.at(k));
+-    J fm=manifest_base(t),rm=manifest_base(t);
+-    for(auto&v:forward)fm["files"].push(v.second);
+-    for(auto&v:reverse)rm["files"].push(v.second);
+-    need(json(fm)==json(rm),3,"MISMATCH");
++    pathcheck(work,true);
++    need(::mkdir(work.c_str(),0700)==0,5,"IO");
++    syncdir(work.parent_path());
++    // Preserve both actual emitted trees as fixture evidence, including failure.
++    ChunkEmission forward(work/"forward",t),reverse(work/"reverse",t);
++    for(u32 ordinal=0;ordinal<t.chunks();++ordinal){
++      // Same supplied unmodified authenticated blob for each opaque slot. Chunk
++      // identity resides in the real producer header, not in interpreted records.
++      for(u32 pass=0;pass<2;++pass){
++        u32 k=pass?t.chunks()-1-ordinal:ordinal;
++        std::vector<std::pair<u32,Bytes>>completed;
++        for(u32 j=0;j<t.count(k);++j)completed.emplace_back(100*k+j,opaque);
++        auto packed=pack_chunk(t,k,completed);
++        std::reverse(completed.begin(),completed.end());
++        need(packed==pack_chunk(t,k,completed),3,"MISMATCH");
++        std::vector<Bytes>records(t.count(k));
++        for(auto&v:completed)records[v.first-100*k]=std::move(v.second);
++        // These calls perform actual chunk IO, then the shared real manifest IO.
++        (pass?reverse:forward).complete(k,records);
++      }
++    }
++    forward.finish();
++    reverse.finish();
++    std::set<std::string>names={"MANIFEST.json","MANIFEST.sha256"};
++    for(u32 k=0;k<t.chunks();++k)names.insert(chunkname(k));
++    closure(work/"forward",names,"FORMAT");
++    closure(work/"reverse",names,"FORMAT");
++    J fi=J::arr(),ri=J::arr();
++    for(auto&name:names){
++      auto a=readfile(work/"forward"/name),b=readfile(work/"reverse"/name);
++      need(a==b,3,"MISMATCH");
++      fi.push(J::obj({{"name",name},{"bytes",u64(a.size())},{"sha256",sha(a)}}));
++      ri.push(J::obj({{"name",name},{"bytes",u64(b.size())},{"sha256",sha(b)}}));
++    }
++    need(json(fi)==json(ri),3,"MISMATCH");
++    return sha(json(fi));
+   }
+   inline J rolechecks(u32 threads){
+     auto t=tier("fixture-r1");
+@@ -145,7 +150,6 @@
+     for(u32 b=0;b<16;++b)need(base[b]==variant[b],3,"MISMATCH");
+     mm::Sha256 h;
+     for(auto&r:base)h.update(r.data(),r.size());
+-    packing_check();
+     need(sha(std::string("abc"))=="ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",3,"MISMATCH");
+     // Direct arithmetic invariants, not production observations.
+     need(classify(Rat(-1,32),Rat(1,32))=="BOUNDED_WITHIN_MARGIN"&&classify(Rat(1,32),Rat(1,16))=="POSITIVE_MAGNITUDE_UNRESOLVED",3,"MISMATCH");
+@@ -164,9 +168,6 @@
+       }
+       ,{
+         "reverse_arm_and_completion_equal",true
+-      }
+-      ,{
+-        "opaque_packing_equal",true
+       }
+       ,{
+         "source_sha256",BRS_SOURCE_SHA
+@@ -188,21 +189,31 @@
+     }
+     need(opt.count("--mode")&&opt.count("--inputs")&&opt.count("--output"),2,"CLI");
+     std::string mode=opt.at("--mode");
+-    need(mode=="corrupt"||mode=="invariance",2,"CLI");
++    need(mode=="corrupt"||mode=="invariance"||mode=="packing",2,"CLI");
+     std::set<std::string>want=mode=="corrupt"?std::set<std::string>{
+       "--mode","--inputs","--output","--data","--recipe"
+     }
+-    :std::set<std::string>{
++    :mode=="invariance"?std::set<std::string>{
+       "--mode","--inputs","--output","--threads"
+-    }
++    }:std::set<std::string>{"--mode","--inputs","--output"}
+     ;
+     need(opt.size()==want.size(),2,"CLI");
+     for(auto&k:want)need(opt.count(k),2,"CLI");
+     pathcheck(opt.at("--inputs"));
+     pathcheck(opt.at("--output"),true);
+     if(mode=="corrupt")pathcheck(opt.at("--data"));
+-    Inputs in(opt.at("--inputs"),false);
++    Inputs in(opt.at("--inputs"),mode=="packing");
+     if(mode=="corrupt")corrupt(opt.at("--data"),opt.at("--output"),opt.at("--recipe"));
++    else if(mode=="packing"){
++      auto inventory=packing_check(in.at("FIXIN_BUNDLE/literals/SYNTHETIC_RECORD.bin"),
++        fs::path(opt.at("--output")+".packing-evidence"));
++      atomictext(opt.at("--output"),json(J::obj({
++        {"schema",1},{"scope","OWN_OPAQUE_PRODUCER_EMISSION_FIXTURE_ONLY"},
++        {"opaque_source_sha256",sha(in.at("FIXIN_BUNDLE/literals/SYNTHETIC_RECORD.bin"))},
++        {"emitted_inventory_sha256",inventory},{"forward_reverse_equal",true},
++        {"source_sha256",BRS_SOURCE_SHA},{"binary_sha256",binary_sha()}
++      })));
++    }
+     else{
+       u32 n=decimal(opt.at("--threads"),32);
+       need(n>=1,2,"CLI");

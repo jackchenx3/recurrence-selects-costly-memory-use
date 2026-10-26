@@ -1,0 +1,88 @@
+{
+  "ROOT_postterminal_authenticated": true,
+  "all_job_and_steps_completed_0_0": true,
+  "all_native_steps": [
+    "54338181",
+    "54338181.batch",
+    "54338181.extern"
+  ],
+  "archive_evidence": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g5-benchmark-r1/ARCHIVE_EVIDENCE_NATIVE_R2.json",
+    "sha256": "542917842ebedfc182161a240a18368764720847a38d91366b3891cace637eef"
+  },
+  "archive_file_count": 85,
+  "archive_marker_sha256": "e73bd8be9b7d93fa5550cfd4f908412197d204fc691a49462a90408f4f4ac576",
+  "at_utc": "2026-10-26T05:56:42.850277+00:00",
+  "authority": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g5-benchmark-r1/RUN_AUTHORITY.json",
+    "sha256": "591c824e691870d639fc326dadd7598cce0fd5e64ad6869e8677112c0f4f8be2"
+  },
+  "binding_elapsed_seconds": 5,
+  "current_archive_all_file_hashes_verified": true,
+  "full_audit_valid": true,
+  "hash_only_results_agree": true,
+  "in_job_full_workflow_us": 2609961,
+  "independent_execution_acceptance": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g5-ea-g6-readiness-review-v1/REVIEW.txt",
+    "sha256": "180c9c5dc713d325fb8e543c68fdb798161104cdebaf5b341c0200dfd92d237a"
+  },
+  "independent_execution_acceptance_GO": true,
+  "independent_execution_authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g5-ea-g6-readiness-review-v1/ROOT_AUTHENTICATION.json",
+    "sha256": "194e55c106e5add6fffb09c17b0ab65de6ca7ba027b03658f943aca4dd792b0c"
+  },
+  "inventory_sha256": "f1e98a1a19927753d662b30ca7dc80f74895fc38c6daf99c66f77e742f98bec9",
+  "job_id": "54338181",
+  "job_peak_bytes": 61542400,
+  "metadata_only_fetch_limitations": [
+    "First observation looked for marker at runroot rather than ARCHIVE; initial runroot exists false from headnode transient visibility, later terminal evidence retrieval succeeds. No failure/retry of scientificprogram/job.",
+    "First metadata evidence fetch rejected DATA/MANIFEST.json by overstrict non-DATA metadata guard before emitting output; corrected guard excludes all DATA contents from text fetch, hashes only allDATA and allRESULTS. Original failedfetch retained.",
+    "Preparation static lexical scope guard matched .sbatch filename in cat rather than command execution; corrected before anypreparationwrite/remoteaction. No scientificscopeissue."
+  ],
+  "mode": "benchmark",
+  "native_ElapsedRaw_seconds": 4,
+  "native_all_step_MaxRSS_bytes": 60243968,
+  "native_observation": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g5-benchmark-r1/FIRST_KNOWN_JOB_OBSERVATION.json",
+    "sha256": "9c8acfa31d1c718d605e6e17fa8dfebd5c052e1780cb20637f0d9e2403e9a43f"
+  },
+  "native_original_job_terminal": true,
+  "native_stderr": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g5-benchmark-r1/original-54338181.err",
+    "sha256": "1d544fda54a3d8419fd9b627332a98d84c5f9ff572d4dc489f04550e00a46999"
+  },
+  "native_stdout": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g5-benchmark-r1/original-54338181.out",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "numeric_results_opened": false,
+  "original_archive_marker_sha256": "e73bd8be9b7d93fa5550cfd4f908412197d204fc691a49462a90408f4f4ac576",
+  "original_archived_native_log_copies": "Both0bytes at stageout, retained exactly in original archive; terminal stderr964bytes appears only later and is fully captured externally with native raw record/SHA. No invented archived latecopy.",
+  "projected_output_bytes": 16793003750,
+  "projected_science_seconds": 3125,
+  "raw_native_accounting": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g5-benchmark-r1/FIRST_KNOWN_JOB_OBSERVATION.json",
+    "sha256": "9c8acfa31d1c718d605e6e17fa8dfebd5c052e1780cb20637f0d9e2403e9a43f"
+  },
+  "resource_request_vs_limit": "96G request; actual hierarchical jobhard268005957632/soft103079215104; observed61542400 peak; no memoryfailcnt/OOM. 700decimalGB outer preserved.",
+  "runtime_freeze_sha256": "662928a1a23d29f729511dc28cae0008dd743fbd2d939d85aca4f3ec90a017d0",
+  "source_runtime_GO": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/WORKFLOW_SOURCE_RUNTIME_V5_ACCEPTANCE.json",
+    "sha256": "db2330369946d330456a4869684b857fa5922fe62c38f1af61be4c4c4ad235dd"
+  },
+  "submission": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g5-benchmark-r1/SUBMISSION_NATIVE.json",
+    "sha256": "8a105e217c20e7b380895602f6dfafbfdc020985cc412957bb12dabffbbf2b8e"
+  },
+  "submission_count": 1,
+  "total_output_bytes": 26868806,
+  "verdict": "GO",
+  "whole_output_components": {
+    "original_local_work_equal_verified_archive_bytes": 13433439,
+    "original_terminal_native_logs_bytes": 964,
+    "retained_late_native_log_snapshot_bytes": 964,
+    "shared_archive_bytes": 13433439
+  },
+  "whole_output_includes_all_copies": true,
+  "whole_output_scope": "Every original job local work file + shared ARCHIVE + original terminal scheduler logs + additional retained terminal log snapshot. Coordinator read-only hash/evidence receipts are external acceptance provenance, not measured execution outputs; no new DATA/RESULTS copies."
+}

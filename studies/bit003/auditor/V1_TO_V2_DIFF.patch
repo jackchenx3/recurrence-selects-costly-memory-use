@@ -1,0 +1,662 @@
+diff --git a/BASELINE_TO_CANDIDATE_DIFF.patch b/BASELINE_TO_CANDIDATE_DIFF.patch
+--- a/BASELINE_TO_CANDIDATE_DIFF.patch
++++ b/BASELINE_TO_CANDIDATE_DIFF.patch
+@@ -1,3 +1,148 @@
++diff --git a/CORRECTION_V2_REPORT.txt b/CORRECTION_V2_REPORT.txt
++--- /dev/null
+++++ b/CORRECTION_V2_REPORT.txt
++@@ -0,0 +1,140 @@
+++PHASE3-BIT-SUSTAINED-RETRIEVAL-003
+++Independent AUDITOR candidate V2 correction report
+++Status: static source repair; UNCOMPILED / UNEXECUTED; requires fresh exact
+++independent nonauthor SOURCE GO. No author selfacceptance or runtime PASS.
+++
+++AUTHORITY AND PRESERVED EVIDENCE
+++Only authorized inputs/ and INPUT_MANIFEST.json were accessed. All 264 supplied
+++file byte counts/SHA256s were authenticated. The 210-file public closure and all
+++209 BUNDLE_INVENTORY rows were checked. There remain exactly 96 literal cases,
+++SCIENCE_VIEW 5 files and FIXTURE_VIEW 107 files, both expected-free. Expected
+++files were hashed for authentication only; their answer semantics were unused.
+++Original provenance paths and /tmp/old-reviewer-workspace locations were DATA,
+++never followed. No producer code/private expectations/new outputs, other-role
+++material, shared maps, session history, credentials/config, AGENTS/skills,
+++network/SSH/scheduler, subagents/models or package installation was accessed.
+++Genuine CLI gpt-6.1-sol/high requested; canonical returned provider/model identity
+++unavailable. Actual commands used the native workspace-write environment; no
+++per-command security isolation is claimed. Command authentication after terminal
+++belongs to the external process; this author does not attest that future step.
+++
+++Exact own V1 source was copied byte-for-byte before repairs. inputs/source-v1,
+++its malformed patch, OWN_SOURCE_FROZEN_V1.json, OWN_SOURCE_V1_REVIEW.txt and
+++OWN_REVIEW_AUTHENTICATION.json remain unchanged. ENGINEERING_REPORT.txt is the
+++exact historical V1 report, including its assertions/limitations and no-execution
+++status; this report records current corrections without erasing prior evidence.
+++V1 canonical SOURCE_INVENTORY.json SHA256:
+++5c65de61b5c471199dbec6813169113ba665040b59c670ee3ab1f700c491bda2
+++Genuine full own FIX review SHA256:
+++d75de8ec66930a30ad25308488fd497c25a3d5feb8ac8f010129c6a951a4f047
+++Both material findings in that review are addressed together below.
+++
+++FINDING 1: LEXICAL CLI VERSUS FILESYSTEM ORDER
+++Own old location: inputs/source-v1/src/brs3_fixture.py:675-686, especially
+++678-680 (pathcheck(--case) before authentication and membership).
+++Repaired location: src/brs3_fixture.py:675-688, especially 677-686.
+++cli() at 123-144 still checks flags and lexical path syntax only, through
+++lexical() at 101-104; neither accesses the filesystem. main() first calls the
+++unchanged authenticate() at 160-233 to validate the complete expected-free
+++fixture view: frozen core/inventory/index identities, every input file, readonly
+++regular/no-symlink paths and exact 107-file/directory closure. All 96 inputs are
+++authenticated even if the chosen --case is a nonmember.
+++Membership at 683 is root-prefix plus exact relative membership in that
+++authenticated set. Nonmembers fail INPUT/exit2 and publish no FIXOUT before any
+++case-driven lstat/open/stat. This covers the absent expected subtree, outside
+++paths, absent/existing/symlink nonmembers. Such outcomes are source reasoning,
+++not executed observations. A member uses already authenticated bytes from
+++files[relative_case] at 688; it needs no additional case-path probe/read.
+++Output pathcheck now occurs at 686 after membership and before case parsing or
+++computation. This also prevents an --output alias of a nonmember --case from
+++prematurely probing it. Lexically invalid flags/paths still fail CLI before
+++view authentication. Invalid views fail INPUT before membership and output
+++filesystem checks. Output collisions still fail CLI/exit2 when reached, with
+++no publication. These ordering effects are intentional; payload answers/exits
+++and scientific calculations are unchanged.
+++compute() at 530-673 and every fixture definition except main() remain unchanged.
+++Case id is validated/echoed only; expectedpath, expected_exit, expected hashes
+++and id NEVER choose computed answers/exits. No case-specific answer hack added.
+++
+++FINDING 2: GENUINE BYTE-PRESERVING BASELINE DIFF
+++Own old location: inputs/source-v1/BASELINE_TO_CANDIDATE_DIFF.patch:2238, where
+++the final imported reference content merged with the next old-file header.
+++Repaired artifact: BASELINE_TO_CANDIDATE_DIFF.patch, specifically the addition
+++of reference/BIT002_REFERENCE.txt followed by the separate header pair for
+++reference/ENGINEERING_CONTRACT.txt. Every file has diff --git and independent
+++---/+++ headers. Changed unterminated lines have the standard backslash-space
+++No newline at end of file marker on a separate LF-terminated patch line.
+++Both patches are regenerated from actual old/new bytes; patch record separation
+++does not append a newline to any payload. No imported reference is normalized.
+++reference/BIT002_REFERENCE.txt remains 81247 bytes WITHOUT final LF, SHA256:
+++71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
+++All five reference files remain byte-identical to V1 and the accepted public
+++copies. V1_TO_V2_DIFF.patch uses the same byte-preserving unified-diff rules.
+++Static in-memory reconstruction checks both patch sides, hunk positions/counts,
+++independent file headers and missing-newline markers. No candidate/helper or
+++scientific function is executed, and no patched source tree is run or written.
+++
+++EXPLICIT DIFF SCOPES AND SOURCE IDENTITY
+++Baseline old side is only inputs/own_baseline/independent_auditor/src/, Makefile,
+++audit_keys.py and README.md. Its historical reports/keys/inventories/references
+++are not current runtime source; baseline bytes are used only for exact diff
+++formation/verification, not scientific changes. Baseline new side is all current
+++payload files, excluding SOURCE_INVENTORY.json and both generated patches.
+++It includes build/dependencies/source/tests/references/README/current correction
+++report and the exact historical engineering report.
+++V1_TO_V2_DIFF.patch compares every exact V1/V2 file except itself and
+++SOURCE_INVENTORY.json, and includes the regenerated baseline patch. These scopes
+++avoid cycles: payload -> baseline patch -> V1-to-V2 patch -> inventory.
+++SOURCE_INVENTORY.json hashes EVERY delivered regular file except itself,
+++including both patches. It is canonical ASCII JSON, sorted keys, compact
+++separators, ensure_ascii=True and exactly one final LF. The SHA256 of its final
+++bytes is the sole own-source identity. It is supplied externally at later build
+++time, never embedded in an inventoried file (which would create a hash cycle).
+++Unchanged build.sh must receive this exact final V2 inventory digest for
+++build_metadata.hpp / BRS3_SOURCE_SHA256 and BUILD_RECEIPT.txt. Unchanged auditor
+++report emits that value and hashes the actual executing ELF via /proc/self/exe.
+++Archive digests are separate transport identities, not source identity.
+++README now names V2, documents current repairs/scopes and removes the historical
+++optional archive substitution. Build/dependency contents are otherwise unchanged.
+++
+++STATIC VERIFICATION AND FAILURE EVIDENCE
+++All Python files are AST parsed only, without imports/compilation/execution.
+++Fixture AST outside main() matches exact V1. All other src/ files, both tests,
+++build.sh, DEPENDENCIES.txt, ENGINEERING_REPORT.txt and references match V1 bytes.
+++Complete source inventory and exact input preservation are hash checked.
+++Only runtime source change is fixture main() validation ordering. No scientific
+++design/key/N/cohort/endpoint/inference/operator change, speed tuning or reduced
+++audit. Full independent EVERY-history/both-branch replay remains: S0, 256 common
+++turnovers, both continuing 256-turnover branches using their own states, every
+++target/state/retry/sum/hash compared. Both endpoints, all zeros, null/adverse/
+++bounded/unresolved outcomes and own fixture math/branch replay are preserved.
+++Two static write attempts failed with PermissionError: first the copied readonly
+++fixture file, then adding this report beneath the copied readonly directory.
+++Neither attempt changed file bytes. Only candidate copy file/directory modes
+++were adjusted before successful writes; original input bytes/modes are retained.
+++No failure is represented as successful runtime evidence.
+++
+++UNTESTED ASSUMPTIONS AND REMAINING GATES
+++Neither V1 nor V2 built/imported/executed/PyCompiled. No fixture, selfcheck,
+++Philox/operator/survival/history/kernel/RNG/simulation/benchmark was run.
+++AST/byte/diff/hash checks are static only, not runtime or independent acceptance.
+++GCC 8.5/C++17 linkage, Python 3.6 compatibility, actual dynamic dependencies,
+++Linux /proc, renameat2/glibc/filesystem support remain unverified as declared in
+++unchanged DEPENDENCIES.txt. Its historical V1 title remains; the same intended
+++dependencies apply. No feasibility/speed claim. Initial-process cwd/FD/environment
+++isolation, filesystem race handling and exact byte/error/exit behavior require
+++later authorized deployment tests; member bytes are not reopened by main().
+++Fresh exact independent SOURCE GO for this V2 inventory is required before ANY
+++build/fixture/science. All actual compilation and scientific execution later
+++occur on authorized FRCE Slurm compute only. Changed auditor needs fresh own
+++G4a source/binary/full FIXOUT freeze before producer output access; all 96 exact
+++byte/exit comparisons, full invariance/corruptions/coherent checkpoint forgery
+++and independent correctness gates remain mandatory.
+++Exactly one complete 64-block workflow benchmark must be <=23.04 seconds under
+++the binding 625x projection, including producer/analyzer/full independent audit,
+++IO/hashes/accounting/sealing. No rerun/tuning/reduced audit. Exactly one science
+++job only after ALL gates: 32 CPU, one node, 8h, initial Slurm REQUEST 96G, outer
+++ceiling 700000000000 decimal bytes. No 64GB hard cap. Actual original-job/all-step
+++success and legitimate peaks, independent execution acceptance before unseal,
+++and preservation of all failures remain mandatory. No gate or submission
+++authority, runtime PASS or selfacceptance is claimed here.
++diff --git a/DEPENDENCIES.txt b/DEPENDENCIES.txt
+ --- /dev/null
+ +++ b/DEPENDENCIES.txt
+ @@ -0,0 +1,41 @@
+@@ -42,6 +187,7 @@
+ +anchors. Coordinator alone keeps expected files and authenticates full bundle.
+ +No external executable/hash command is invoked by scientific auditor runtime.
+ +Own helper subprocesses exist only in explicitly separate fixture/test tools.
++diff --git a/ENGINEERING_REPORT.txt b/ENGINEERING_REPORT.txt
+ --- /dev/null
+ +++ b/ENGINEERING_REPORT.txt
+ @@ -0,0 +1,113 @@
+@@ -158,6 +304,7 @@
+ +EA before unseal, and source/correctness/performance gates are ROOT/reviewer work.
+ +The source tools supply exact byte/hash interfaces; they do not replace Slurm
+ +or cgroup/allsteps accounting and do not create new submissions/controllers.
++diff --git a/Makefile b/Makefile
+ --- a/Makefile
+ +++ /dev/null
+ @@ -1,25 +0,0 @@
+@@ -186,11 +333,12 @@
+ -
+ -clean:
+ -	rm -f bin/brc2_audit bin/brc2_fix bin/brc2_fixture_harness
++diff --git a/README.md b/README.md
+ --- a/README.md
+ +++ b/README.md
+-@@ -1,160 +1,52 @@
++@@ -1,160 +1,60 @@
+ -# Independent BRC2 auditor source
+-+This is the independent auditor source candidate for PHASE3-BIT-SUSTAINED-RETRIEVAL-003. It has not been compiled or executed. Genuine nonauthor exact SOURCEGO is required before any build, fixture, import, self-check or scientific execution. Run all such work inside authorized FRCE Slurm compute allocations. This package grants no gate or submission authority.
+++This is the independent auditor source candidate V2 for PHASE3-BIT-SUSTAINED-RETRIEVAL-003. It has not been compiled or executed. Genuine nonauthor exact SOURCEGO is required before any build, fixture, import, self-check or scientific execution. Run all such work inside authorized FRCE Slurm compute allocations. This package grants no gate or submission authority.
+  
+ -This is a source-only package for non-author review against the exact public
+ -v0.4 protocol. No compilation, operator execution, fixture execution, cohort
+@@ -206,7 +354,7 @@
+ +`brs3_fixture` independently computes all 16 declared fixture kinds from actual payload semantics, including the 96 public inputs, exact inference/certificate arithmetic, injected operators and chains. It does not read expected files or use case IDs/INDEX answer metadata to select values or exits. `brs3_fixture_stage` generates only full fixture-r1 records, or a coherent checkpoint forgery, under its own separate fixture-only interface. Its output is engineering data. No production options exist on that helper.
+  
+ -## Files
+-+After SOURCEGO, choose fresh absolute scratch destinations. The following are intended commands, not commands executed by this source author. Substitute actual frozen paths for `/SCRATCH/...` and an externally frozen SHA256 for the placeholder. The build-time source identity is the SHA256 of the final SOURCE_INVENTORY.json bytes, whose rows bind all other delivered files. An external package archive commitment may instead be selected and frozen by ROOT before build; the exact meaning must be recorded in its receipt. Never edit source after review without renewed review/freeze.
+++After SOURCEGO, choose fresh absolute scratch destinations. The following are intended commands, not commands executed by this source author. Substitute actual frozen paths for `/SCRATCH/...` and an externally frozen SHA256 for the placeholder. The build-time source identity is the SHA256 of the final SOURCE_INVENTORY.json bytes, whose rows bind all other delivered files. Pass only that canonical inventory SHA256 to build.sh; an archive digest is a separate transport commitment and must not replace source identity. Never edit source after review without renewed review/freeze.
+  
+ -- `src/base.hpp`: explicit byte operations, independent SHA-256, canonical text
+ -  primitives, regular-file reads and atomic writes, and frozen tier table.
+@@ -236,7 +384,7 @@
+ -make CXX=g++
+ -sha256sum bin/brc2_audit bin/brc2_fix bin/brc2_fixture_harness
+ +```bash
+-+/bin/bash /SCRATCH/candidate-source-v1/build.sh /SCRATCH/auditor-bin FROZEN_64_HEX_SOURCE_PACKAGE_SHA256
+++/bin/bash /SCRATCH/candidate-source-v2/build.sh /SCRATCH/auditor-bin FROZEN_64_HEX_SOURCE_PACKAGE_SHA256
+ +/SCRATCH/auditor-bin/brs3_selfcheck --inputs /SCRATCH/SCIENCE_VIEW --fixture-inputs /SCRATCH/FIXTURE_VIEW --output /SCRATCH/own-before-G4a --mode own
+  ```
+  
+@@ -362,7 +510,8 @@
+ -```
+ -python3 audit_keys.py
+ -```
+--
+++V2 repairs the two findings in the authenticated own V1 review. Fixture CLI parsing first validates flags and lexical syntax without filesystem access. The complete expected-free view is authenticated, then a nonmember case fails INPUT before any case-driven filesystem probe. Member bytes come directly from authentication; only after membership is the output destination checked. Payload computation, case error exits and all scientific code remain unchanged.
++ 
+ -For each of the 11 exact purpose strings in protocol order and each of
+ -`production-r1`, `fixture-r1`, `benchmark-r1`, the ASCII string is
+ -`PHASE3-BIT-RETRIEVAL-CAUSALITY-002|<tier>|<purpose>`, without a terminator.
+@@ -370,7 +519,8 @@
+ -from digest bytes 0:4 and 4:8 read little-endian, and the numeric first-64-bit key
+ -from bytes 0:8 read little-endian. Hex columns are lowercase, fixed-width numeric
+ -representations. The helper checked all 33 keys for pairwise distinctness.
+--
+++ENGINEERING_REPORT.txt is the exact historical V1 report, including its unverified assertions and limitations; CORRECTION_V2_REPORT.txt records the current repairs and static checks. Original V1 source, malformed patch and review remain preserved under the authorized inputs and are not overwritten.
++ 
+ -The other author's independently computed table and the sanitized legacy string
+ -manifest have not been supplied or compared. G1F bundle review/freeze and key
+ -agreement/disjointness remain open. Non-author source review must GO before
+@@ -379,7 +529,12 @@
+ -acceptance and publication all remain unexecuted. These recipes waive no gate
+ -and authorize no submission or post-production rerun. Remaining integrated
+ -corrections: zero.
+-+SOURCE_INVENTORY.json excludes only itself to avoid recursion and includes the source-only baseline diff as an artifact. That patch excludes the inventory itself; its baseline is the own auditor runtime source set (`src/`, Makefile, audit_keys.py, README.md), not historical evidence reports. Nothing refers to original provenance paths as readable locations. All source/runtime/performance acceptance remains for independent reviewers and later FRCE evidence.
+++SOURCE_INVENTORY.json hashes every delivered file except itself, using canonical ASCII JSON with one final LF. Its SHA256 is the sole own-source identity supplied at build time, then embedded in build_metadata.hpp and emitted in the build receipt/audit report. The unchanged build.sh must receive this final V2 inventory digest, never the V1 or archive digest.
+++
+++BASELINE_TO_CANDIDATE_DIFF.patch compares the own baseline runtime source set (`src/`, Makefile, audit_keys.py, README.md) against all current payload files, excluding SOURCE_INVENTORY.json and both generated patch artifacts. V1_TO_V2_DIFF.patch compares the exact V1 and V2 files except itself and SOURCE_INVENTORY.json, including the regenerated baseline patch. These explicit scopes avoid hash cycles: payload -> baseline patch -> V1-to-V2 patch -> inventory. Each unified diff has separate file headers and missing-final-newline markers; imported reference bytes are never normalized. Static byte reconstruction checks both patches without executing source or writing a patched tree.
+++
+++Nothing refers to original provenance paths as readable locations. Fresh independent exact SOURCE GO for this V2 freeze is mandatory before any FRCE Slurm build, fixture or science; no runtime PASS or source acceptance is claimed.
++diff --git a/audit_keys.py b/audit_keys.py
+ --- a/audit_keys.py
+ +++ /dev/null
+ @@ -1,42 +0,0 @@
+@@ -425,6 +580,7 @@
+ -
+ -if __name__ == "__main__":
+ -    main()
++diff --git a/build.sh b/build.sh
+ --- /dev/null
+ +++ b/build.sh
+ @@ -0,0 +1,39 @@
+@@ -467,6 +623,7 @@
+ +  sha256sum "$cxx" "$python" "$out/brs3_audit" "$out/brs3_fixture_stage" "$out/brs3_fixture" "$out/brs3_presentation" "$out/brs3_post_g4" "$out/brs3_selfcheck"
+ +} > "$out/BUILD_RECEIPT.txt"
+ +chmod 0400 "$out/build_metadata.hpp" "$out/BUILD_RECEIPT.txt"
++diff --git a/reference/BIT002_REFERENCE.txt b/reference/BIT002_REFERENCE.txt
+ --- /dev/null
+ +++ b/reference/BIT002_REFERENCE.txt
+ @@ -0,0 +1,1766 @@
+@@ -2235,7 +2392,10 @@
+ +**Publication and completeness**
+ +
+ +18. [ ] Publication scope and exclusions.
+-+19. [ ] No unresolved scientific or interface choice remains; only [PROVENANCE FIELD] items are unset, and each is fixed before any outcome.--- /dev/null
+++19. [ ] No unresolved scientific or interface choice remains; only [PROVENANCE FIELD] items are unset, and each is fixed before any outcome.
++\ No newline at end of file
++diff --git a/reference/ENGINEERING_CONTRACT.txt b/reference/ENGINEERING_CONTRACT.txt
++--- /dev/null
+ +++ b/reference/ENGINEERING_CONTRACT.txt
+ @@ -0,0 +1,412 @@
+ +BIT003 public engineering contract v1 - PUBLIC G1F INPUT CANDIDATE.
+@@ -2650,6 +2810,7 @@
+ +remain binding. A failed benchmark stops the design, not another tuning trial.
+ +No benchmark endpoints displayed. Source and fixture expectations may be reviewed
+ +here, but all scientific builds/fixtures/RNG execution are FRCE Slurm only.
++diff --git a/reference/KAT.txt b/reference/KAT.txt
+ --- /dev/null
+ +++ b/reference/KAT.txt
+ @@ -0,0 +1,83 @@
+@@ -2736,6 +2897,7 @@
+ +threefry4x64 72 0000000000000000 0000000000000000 0000000000000000 0000000000000000 0000000000000000 0000000000000000 0000000000000000 0000000000000000 94eeea8b1f2ada84 adf103313eae6670 952419a1f4b16d53 d83f13e63c9f6b11
+ +threefry4x64 72 ffffffffffffffff ffffffffffffffff ffffffffffffffff ffffffffffffffff ffffffffffffffff ffffffffffffffff ffffffffffffffff ffffffffffffffff 11518c034bc1ff4c 193f10b8bcdcc9f7 d024229cb58f20d8 563ed6e48e05183f
+ +threefry4x64 72 243f6a8885a308d3 13198a2e03707344 a4093822299f31d0 082efa98ec4e6c89 452821e638d01377 be5466cf34e90c6c be5466cf34e90c6c c0ac29b7c97c50dd acf412ccaa3b2270 c9e99bd53f2e9173 43dad469dc825948 fbb19d06c8a2b4dc
++diff --git a/reference/PROTOCOL.txt b/reference/PROTOCOL.txt
+ --- /dev/null
+ +++ b/reference/PROTOCOL.txt
+ @@ -0,0 +1,265 @@
+@@ -3004,6 +3166,7 @@
+ +95%family. Futurepublicwork retains JackChenonlyauthor metadata without work
+ +address/email unless human changes that preference. Publicdeposit/journalsubmission
+ +still requires its applicable scientific/publication gates and actual authority.
++diff --git a/reference/Random123_LICENSE.txt b/reference/Random123_LICENSE.txt
+ --- /dev/null
+ +++ b/reference/Random123_LICENSE.txt
+ @@ -0,0 +1,31 @@
+@@ -3038,6 +3201,7 @@
+ +(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ +OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ +*/
++diff --git a/src/audit.hpp b/src/audit.hpp
+ --- a/src/audit.hpp
+ +++ /dev/null
+ @@ -1,115 +0,0 @@
+@@ -3156,6 +3320,7 @@
+ -// Make hashing observably occur even when timing-only discards rendered bytes.
+ -inline void hash_and_discard(const std::string& s){auto h=sha(s);volatile uint8_t sink=0;for(auto c:h)sink=uint8_t(sink^c);(void)sink;}
+ -} // namespace brc
++diff --git a/src/audit_main.cpp b/src/audit_main.cpp
+ --- a/src/audit_main.cpp
+ +++ b/src/audit_main.cpp
+ @@ -1,12 +1,26 @@
+@@ -3197,6 +3362,7 @@
+ +}return 0;
+ +}catch(...){return failure();
+ +}}
++diff --git a/src/base.hpp b/src/base.hpp
+ --- a/src/base.hpp
+ +++ b/src/base.hpp
+ @@ -28,10 +28,11 @@
+@@ -3235,9 +3401,10 @@
+ -using Clock=std::chrono::steady_clock;
+ -inline double seconds(Clock::time_point a,Clock::time_point b){return std::chrono::duration<double>(b-a).count();}
+  } // namespace brc
++diff --git a/src/brs3_fixture.py b/src/brs3_fixture.py
+ --- /dev/null
+ +++ b/src/brs3_fixture.py
+-@@ -0,0 +1,719 @@
++@@ -0,0 +1,721 @@
+ +#!/usr/bin/python3
+ +# Independent auditor fixture implementation. Python >=3.6 standard library only.
+ +# No case-id dispatch, expected-file reads, scientific CLI overrides or third-party modules.
+@@ -3915,13 +4082,15 @@
+ +def main():
+ +    try:
+ +        parsed = cli(['brs3_fixture']+sys.argv[1:])['options']
+-+        for k in ('--inputs','--case'):
+-+            pathcheck(parsed[k])
+-+        pathcheck(parsed['--output'],True)
+++        # cli() checks flags and lexical path syntax without filesystem probes.
+++        # Authenticate the complete expected-free view before case membership.
+ +        files, members = authenticate(parsed['--inputs'])
+ +        root = parsed['--inputs']+'/'
+ +        case = parsed['--case']
+ +        check(case.startswith(root) and case[len(root):] in members, 'INPUT', 2, 'case')
+++        # Members were already path-checked and read by authenticate(). Never
+++        # probe an arbitrary --case, including a delegated absent expectedpath.
+++        pathcheck(parsed['--output'],True)
+ +        try:
+ +            c = strict_json(files[case[len(root):]])
+ +            exact(c,'version id kind payload')
+@@ -3957,6 +4126,7 @@
+ +
+ +if __name__ == '__main__':
+ +    sys.exit(main())
++diff --git a/src/corruption.hpp b/src/corruption.hpp
+ --- a/src/corruption.hpp
+ +++ /dev/null
+ @@ -1,49 +0,0 @@
+@@ -4009,6 +4179,7 @@
+ - receipt<<"CORRUPTION_SUITE=PASS\n";writefile(scratch/"RECEIPT.txt",receipt.str(),0400);
+ -}
+ -} // namespace brc
++diff --git a/src/data.hpp b/src/data.hpp
+ --- /dev/null
+ +++ b/src/data.hpp
+ @@ -0,0 +1,143 @@
+@@ -4155,6 +4326,7 @@
+ +return total;
+ +}
+ +} // namespace brc
++diff --git a/src/fix_main.cpp b/src/fix_main.cpp
+ --- a/src/fix_main.cpp
+ +++ /dev/null
+ @@ -1,7 +0,0 @@
+@@ -4165,6 +4337,7 @@
+ - // an ERROR form, for which the reader intentionally needs no kind context.
+ - std::unique_ptr<Fixture> f;try{f=std::make_unique<Fixture>(read_fixin(input,id));}catch(const InputFault&){}read_fixout(bytes(output),id,f.get());writefile(a["--out"],output);return 0;
+ - }catch(const std::exception&){std::cerr<<"usage_or_environment_error\n";return 2;}}
++diff --git a/src/fixture.hpp b/src/fixture.hpp
+ --- a/src/fixture.hpp
+ +++ /dev/null
+ @@ -1,148 +0,0 @@
+@@ -4316,6 +4489,7 @@
+ - std::set<std::string> seen;for(auto& e:fs::directory_iterator(dir)){require(regular(e.path()),"bundle type");seen.insert(e.path().filename().string());}require(seen==expected&&!items.empty(),"bundle inventory");return items;
+ -}
+ -} // namespace brc
++diff --git a/src/fixture_stage.cpp b/src/fixture_stage.cpp
+ --- /dev/null
+ +++ b/src/fixture_stage.cpp
+ @@ -0,0 +1,32 @@
+@@ -4351,6 +4525,7 @@
+ +return 0;
+ +}catch(...){return failure();
+ +}}
++diff --git a/src/harness_main.cpp b/src/harness_main.cpp
+ --- a/src/harness_main.cpp
+ +++ /dev/null
+ @@ -1,11 +0,0 @@
+@@ -4365,6 +4540,7 @@
+ - else if(mode=="compare-results"){exact({"--own","--other"});auto own=readfile(a["--own"]),other=readfile(a["--other"]);require(sha(own)==sha(other),"result hash disagreement");std::cout<<"RESULTS_HASH_EQUAL=1\n";}
+ - else throw Error("mode");return 0;
+ - }catch(const std::exception& e){std::cerr<<"fixture_harness_failure";if(public_stage)std::cerr<<" stage="<<public_stage<<" reason="<<e.what();std::cerr<<'\n';return 1;}}
++diff --git a/src/inference.hpp b/src/inference.hpp
+ --- a/src/inference.hpp
+ +++ /dev/null
+ @@ -1,76 +0,0 @@
+@@ -4444,6 +4620,7 @@
+ - o<<"DESC R1_count ALL_F="<<d.R[0]<<" ALL_M="<<d.R[1]<<'\n';for(unsigned s=0;s<2;++s){o<<"DESC startsum "<<(s?"ALL_M":"ALL_F");for(unsigned j=0;j<6;++j)o<<' '<<endpoints()[j]<<'='<<d.sums[s][j];o<<'\n';}o<<"DESC factual_A_sum ALL_F="<<d.factualA[0]<<" ALL_M="<<d.factualA[1]<<"\nEND\n";return o.str();
+ -}
+ -} // namespace brc
++diff --git a/src/json.hpp b/src/json.hpp
+ --- /dev/null
+ +++ b/src/json.hpp
+ @@ -0,0 +1,152 @@
+@@ -4599,6 +4776,7 @@
+ +for(auto k:ks)require(j.o.count(k),"JSON keys");
+ +}
+ +} // namespace brc
++diff --git a/src/operator.hpp b/src/operator.hpp
+ --- a/src/operator.hpp
+ +++ /dev/null
+ @@ -1,99 +0,0 @@
+@@ -4701,6 +4879,7 @@
+ -// Only for the later FORGE_CACHE test: rewrite an existing block, never a cohort producer.
+ -inline void rearm(Bytes& r,const RNG& rng){auto s=prestate(r);unsigned b=unsigned(get(r,8,4)),u=unsigned(get(r,14,2));auto t=tape(rng,b,u);auto c=checkpoint(s,uint32_t(get(r,20,4)),uint32_t(get(r,28,4)),unsigned(get(r,13,1)),t);for(unsigned a=0;a<6;++a)std::copy(c.arms[a].begin(),c.arms[a].end(),r.begin()+360+280*a);setnums(r,c.nums);auto h=sha(slice(r,0,2056));std::copy(h.begin(),h.end(),r.begin()+2056);}
+ -} // namespace brc
++diff --git a/src/presentation.py b/src/presentation.py
+ --- /dev/null
+ +++ b/src/presentation.py
+ @@ -0,0 +1,39 @@
+@@ -4743,6 +4922,7 @@
+ +        return 5
+ +if __name__ == '__main__':
+ +    sys.exit(main())
++diff --git a/src/runtime.hpp b/src/runtime.hpp
+ --- /dev/null
+ +++ b/src/runtime.hpp
+ @@ -0,0 +1,144 @@
+@@ -4890,6 +5070,7 @@
+ +return 5;
+ +}}
+ +} // namespace brc
++diff --git a/src/science.hpp b/src/science.hpp
+ --- /dev/null
+ +++ b/src/science.hpp
+ @@ -0,0 +1,206 @@
+@@ -5099,6 +5280,7 @@
+ +inline std::string results(const Tier& t,int64_t m,int64_t a){return "BIT003_RESULTS_V1\nstatus=VALID\ntier="+t.name+"\nn_blocks="+std::to_string(t.n)+"\nn_all_f="+std::to_string(t.n/2)+"\nn_all_m="+std::to_string(t.n/2)+"\npolicy_signed_sum="+std::to_string(m)+"\npolicy_denominator="+std::to_string(uint64_t(t.n)*8192)+"\naccuracy_signed_sum="+std::to_string(a)+"\naccuracy_denominator="+std::to_string(uint64_t(t.n)*262144)+"\ninference=PRODUCTION_ONLY\n";
+ +}
+ +} // namespace brc
++diff --git a/src/selfcheck.hpp b/src/selfcheck.hpp
+ --- a/src/selfcheck.hpp
+ +++ /dev/null
+ @@ -1,55 +0,0 @@
+@@ -5157,6 +5339,7 @@
+ -// This separate command reads already-frozen outputs and never regenerates them.
+ -inline void compare_bundle(const fs::path& bundle,const fs::path& own,const fs::path& other,const std::string& cond_id){auto items=read_bundle(bundle);bool found=false;for(auto& item:items){std::unique_ptr<Fixture> input;try{input=std::make_unique<Fixture>(read_fixin(item.input,item.id));}catch(const InputFault&){}auto a=readfile(own/("FIXOUT_"+item.id+".txt")),b=readfile(other/("FIXOUT_"+item.id+".txt"));auto x=read_fixout(a,item.id,input.get());read_fixout(b,item.id,input.get());require(a==b,"FIXOUT byte disagreement");if(item.id==cond_id){found=true;require(bool(input)&&cond_forge(*input,x).good(),"conditional comparison");}}require(found,"COND_FORGE absent");}
+ -} // namespace brc
++diff --git a/tests/post_g4.py b/tests/post_g4.py
+ --- /dev/null
+ +++ b/tests/post_g4.py
+ @@ -0,0 +1,145 @@
+@@ -5305,6 +5488,7 @@
+ +        return 5
+ +if __name__ == '__main__':
+ +    sys.exit(main())
++diff --git a/tests/selfcheck.py b/tests/selfcheck.py
+ --- /dev/null
+ +++ b/tests/selfcheck.py
+ @@ -0,0 +1,112 @@
+diff --git a/CORRECTION_V2_REPORT.txt b/CORRECTION_V2_REPORT.txt
+--- /dev/null
++++ b/CORRECTION_V2_REPORT.txt
+@@ -0,0 +1,140 @@
++PHASE3-BIT-SUSTAINED-RETRIEVAL-003
++Independent AUDITOR candidate V2 correction report
++Status: static source repair; UNCOMPILED / UNEXECUTED; requires fresh exact
++independent nonauthor SOURCE GO. No author selfacceptance or runtime PASS.
++
++AUTHORITY AND PRESERVED EVIDENCE
++Only authorized inputs/ and INPUT_MANIFEST.json were accessed. All 264 supplied
++file byte counts/SHA256s were authenticated. The 210-file public closure and all
++209 BUNDLE_INVENTORY rows were checked. There remain exactly 96 literal cases,
++SCIENCE_VIEW 5 files and FIXTURE_VIEW 107 files, both expected-free. Expected
++files were hashed for authentication only; their answer semantics were unused.
++Original provenance paths and /tmp/old-reviewer-workspace locations were DATA,
++never followed. No producer code/private expectations/new outputs, other-role
++material, shared maps, session history, credentials/config, AGENTS/skills,
++network/SSH/scheduler, subagents/models or package installation was accessed.
++Genuine CLI gpt-6.1-sol/high requested; canonical returned provider/model identity
++unavailable. Actual commands used the native workspace-write environment; no
++per-command security isolation is claimed. Command authentication after terminal
++belongs to the external process; this author does not attest that future step.
++
++Exact own V1 source was copied byte-for-byte before repairs. inputs/source-v1,
++its malformed patch, OWN_SOURCE_FROZEN_V1.json, OWN_SOURCE_V1_REVIEW.txt and
++OWN_REVIEW_AUTHENTICATION.json remain unchanged. ENGINEERING_REPORT.txt is the
++exact historical V1 report, including its assertions/limitations and no-execution
++status; this report records current corrections without erasing prior evidence.
++V1 canonical SOURCE_INVENTORY.json SHA256:
++5c65de61b5c471199dbec6813169113ba665040b59c670ee3ab1f700c491bda2
++Genuine full own FIX review SHA256:
++d75de8ec66930a30ad25308488fd497c25a3d5feb8ac8f010129c6a951a4f047
++Both material findings in that review are addressed together below.
++
++FINDING 1: LEXICAL CLI VERSUS FILESYSTEM ORDER
++Own old location: inputs/source-v1/src/brs3_fixture.py:675-686, especially
++678-680 (pathcheck(--case) before authentication and membership).
++Repaired location: src/brs3_fixture.py:675-688, especially 677-686.
++cli() at 123-144 still checks flags and lexical path syntax only, through
++lexical() at 101-104; neither accesses the filesystem. main() first calls the
++unchanged authenticate() at 160-233 to validate the complete expected-free
++fixture view: frozen core/inventory/index identities, every input file, readonly
++regular/no-symlink paths and exact 107-file/directory closure. All 96 inputs are
++authenticated even if the chosen --case is a nonmember.
++Membership at 683 is root-prefix plus exact relative membership in that
++authenticated set. Nonmembers fail INPUT/exit2 and publish no FIXOUT before any
++case-driven lstat/open/stat. This covers the absent expected subtree, outside
++paths, absent/existing/symlink nonmembers. Such outcomes are source reasoning,
++not executed observations. A member uses already authenticated bytes from
++files[relative_case] at 688; it needs no additional case-path probe/read.
++Output pathcheck now occurs at 686 after membership and before case parsing or
++computation. This also prevents an --output alias of a nonmember --case from
++prematurely probing it. Lexically invalid flags/paths still fail CLI before
++view authentication. Invalid views fail INPUT before membership and output
++filesystem checks. Output collisions still fail CLI/exit2 when reached, with
++no publication. These ordering effects are intentional; payload answers/exits
++and scientific calculations are unchanged.
++compute() at 530-673 and every fixture definition except main() remain unchanged.
++Case id is validated/echoed only; expectedpath, expected_exit, expected hashes
++and id NEVER choose computed answers/exits. No case-specific answer hack added.
++
++FINDING 2: GENUINE BYTE-PRESERVING BASELINE DIFF
++Own old location: inputs/source-v1/BASELINE_TO_CANDIDATE_DIFF.patch:2238, where
++the final imported reference content merged with the next old-file header.
++Repaired artifact: BASELINE_TO_CANDIDATE_DIFF.patch, specifically the addition
++of reference/BIT002_REFERENCE.txt followed by the separate header pair for
++reference/ENGINEERING_CONTRACT.txt. Every file has diff --git and independent
++---/+++ headers. Changed unterminated lines have the standard backslash-space
++No newline at end of file marker on a separate LF-terminated patch line.
++Both patches are regenerated from actual old/new bytes; patch record separation
++does not append a newline to any payload. No imported reference is normalized.
++reference/BIT002_REFERENCE.txt remains 81247 bytes WITHOUT final LF, SHA256:
++71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa
++All five reference files remain byte-identical to V1 and the accepted public
++copies. V1_TO_V2_DIFF.patch uses the same byte-preserving unified-diff rules.
++Static in-memory reconstruction checks both patch sides, hunk positions/counts,
++independent file headers and missing-newline markers. No candidate/helper or
++scientific function is executed, and no patched source tree is run or written.
++
++EXPLICIT DIFF SCOPES AND SOURCE IDENTITY
++Baseline old side is only inputs/own_baseline/independent_auditor/src/, Makefile,
++audit_keys.py and README.md. Its historical reports/keys/inventories/references
++are not current runtime source; baseline bytes are used only for exact diff
++formation/verification, not scientific changes. Baseline new side is all current
++payload files, excluding SOURCE_INVENTORY.json and both generated patches.
++It includes build/dependencies/source/tests/references/README/current correction
++report and the exact historical engineering report.
++V1_TO_V2_DIFF.patch compares every exact V1/V2 file except itself and
++SOURCE_INVENTORY.json, and includes the regenerated baseline patch. These scopes
++avoid cycles: payload -> baseline patch -> V1-to-V2 patch -> inventory.
++SOURCE_INVENTORY.json hashes EVERY delivered regular file except itself,
++including both patches. It is canonical ASCII JSON, sorted keys, compact
++separators, ensure_ascii=True and exactly one final LF. The SHA256 of its final
++bytes is the sole own-source identity. It is supplied externally at later build
++time, never embedded in an inventoried file (which would create a hash cycle).
++Unchanged build.sh must receive this exact final V2 inventory digest for
++build_metadata.hpp / BRS3_SOURCE_SHA256 and BUILD_RECEIPT.txt. Unchanged auditor
++report emits that value and hashes the actual executing ELF via /proc/self/exe.
++Archive digests are separate transport identities, not source identity.
++README now names V2, documents current repairs/scopes and removes the historical
++optional archive substitution. Build/dependency contents are otherwise unchanged.
++
++STATIC VERIFICATION AND FAILURE EVIDENCE
++All Python files are AST parsed only, without imports/compilation/execution.
++Fixture AST outside main() matches exact V1. All other src/ files, both tests,
++build.sh, DEPENDENCIES.txt, ENGINEERING_REPORT.txt and references match V1 bytes.
++Complete source inventory and exact input preservation are hash checked.
++Only runtime source change is fixture main() validation ordering. No scientific
++design/key/N/cohort/endpoint/inference/operator change, speed tuning or reduced
++audit. Full independent EVERY-history/both-branch replay remains: S0, 256 common
++turnovers, both continuing 256-turnover branches using their own states, every
++target/state/retry/sum/hash compared. Both endpoints, all zeros, null/adverse/
++bounded/unresolved outcomes and own fixture math/branch replay are preserved.
++Two static write attempts failed with PermissionError: first the copied readonly
++fixture file, then adding this report beneath the copied readonly directory.
++Neither attempt changed file bytes. Only candidate copy file/directory modes
++were adjusted before successful writes; original input bytes/modes are retained.
++No failure is represented as successful runtime evidence.
++
++UNTESTED ASSUMPTIONS AND REMAINING GATES
++Neither V1 nor V2 built/imported/executed/PyCompiled. No fixture, selfcheck,
++Philox/operator/survival/history/kernel/RNG/simulation/benchmark was run.
++AST/byte/diff/hash checks are static only, not runtime or independent acceptance.
++GCC 8.5/C++17 linkage, Python 3.6 compatibility, actual dynamic dependencies,
++Linux /proc, renameat2/glibc/filesystem support remain unverified as declared in
++unchanged DEPENDENCIES.txt. Its historical V1 title remains; the same intended
++dependencies apply. No feasibility/speed claim. Initial-process cwd/FD/environment
++isolation, filesystem race handling and exact byte/error/exit behavior require
++later authorized deployment tests; member bytes are not reopened by main().
++Fresh exact independent SOURCE GO for this V2 inventory is required before ANY
++build/fixture/science. All actual compilation and scientific execution later
++occur on authorized FRCE Slurm compute only. Changed auditor needs fresh own
++G4a source/binary/full FIXOUT freeze before producer output access; all 96 exact
++byte/exit comparisons, full invariance/corruptions/coherent checkpoint forgery
++and independent correctness gates remain mandatory.
++Exactly one complete 64-block workflow benchmark must be <=23.04 seconds under
++the binding 625x projection, including producer/analyzer/full independent audit,
++IO/hashes/accounting/sealing. No rerun/tuning/reduced audit. Exactly one science
++job only after ALL gates: 32 CPU, one node, 8h, initial Slurm REQUEST 96G, outer
++ceiling 700000000000 decimal bytes. No 64GB hard cap. Actual original-job/all-step
++success and legitimate peaks, independent execution acceptance before unseal,
++and preservation of all failures remain mandatory. No gate or submission
++authority, runtime PASS or selfacceptance is claimed here.
+diff --git a/README.md b/README.md
+--- a/README.md
++++ b/README.md
+@@ -1,13 +1,13 @@
+-This is the independent auditor source candidate for PHASE3-BIT-SUSTAINED-RETRIEVAL-003. It has not been compiled or executed. Genuine nonauthor exact SOURCEGO is required before any build, fixture, import, self-check or scientific execution. Run all such work inside authorized FRCE Slurm compute allocations. This package grants no gate or submission authority.
++This is the independent auditor source candidate V2 for PHASE3-BIT-SUSTAINED-RETRIEVAL-003. It has not been compiled or executed. Genuine nonauthor exact SOURCEGO is required before any build, fixture, import, self-check or scientific execution. Run all such work inside authorized FRCE Slurm compute allocations. This package grants no gate or submission authority.
+ 
+ The scientific entry point is `brs3_audit`. It regenerates all targets, S0, the 256 common CACHE history turnovers, then both continuing 256-turnover branches, using nine new purposes and each branch's own state. It compares complete 208216-byte records, checks all file/record hashes and independently emits the fixed results and full audit report. Parallelism is by whole block, 1–32 threads; one bounded chunk is retained. The source includes no producer or analyzer executable and no historical wrong-main entry point.
+ 
+ `brs3_fixture` independently computes all 16 declared fixture kinds from actual payload semantics, including the 96 public inputs, exact inference/certificate arithmetic, injected operators and chains. It does not read expected files or use case IDs/INDEX answer metadata to select values or exits. `brs3_fixture_stage` generates only full fixture-r1 records, or a coherent checkpoint forgery, under its own separate fixture-only interface. Its output is engineering data. No production options exist on that helper.
+ 
+-After SOURCEGO, choose fresh absolute scratch destinations. The following are intended commands, not commands executed by this source author. Substitute actual frozen paths for `/SCRATCH/...` and an externally frozen SHA256 for the placeholder. The build-time source identity is the SHA256 of the final SOURCE_INVENTORY.json bytes, whose rows bind all other delivered files. An external package archive commitment may instead be selected and frozen by ROOT before build; the exact meaning must be recorded in its receipt. Never edit source after review without renewed review/freeze.
++After SOURCEGO, choose fresh absolute scratch destinations. The following are intended commands, not commands executed by this source author. Substitute actual frozen paths for `/SCRATCH/...` and an externally frozen SHA256 for the placeholder. The build-time source identity is the SHA256 of the final SOURCE_INVENTORY.json bytes, whose rows bind all other delivered files. Pass only that canonical inventory SHA256 to build.sh; an archive digest is a separate transport commitment and must not replace source identity. Never edit source after review without renewed review/freeze.
+ 
+ ```bash
+-/bin/bash /SCRATCH/candidate-source-v1/build.sh /SCRATCH/auditor-bin FROZEN_64_HEX_SOURCE_PACKAGE_SHA256
++/bin/bash /SCRATCH/candidate-source-v2/build.sh /SCRATCH/auditor-bin FROZEN_64_HEX_SOURCE_PACKAGE_SHA256
+ /SCRATCH/auditor-bin/brs3_selfcheck --inputs /SCRATCH/SCIENCE_VIEW --fixture-inputs /SCRATCH/FIXTURE_VIEW --output /SCRATCH/own-before-G4a --mode own
+ ```
+ 
+@@ -49,4 +49,12 @@
+ 
+ Only after independent G8 original-job execution acceptance and unseal may `/SCRATCH/auditor-bin/brs3_presentation --results /SCRATCH/ACCEPTED_RESULTS.txt --output /SCRATCH/PRESENTATION.json` derive both exact intervals, outward12-place bounds and ordered classifications. It accepts production results only, changes no halfwidth and performs no scientific replay. It is not part of a postproduction scientific rerun.
+ 
+-SOURCE_INVENTORY.json excludes only itself to avoid recursion and includes the source-only baseline diff as an artifact. That patch excludes the inventory itself; its baseline is the own auditor runtime source set (`src/`, Makefile, audit_keys.py, README.md), not historical evidence reports. Nothing refers to original provenance paths as readable locations. All source/runtime/performance acceptance remains for independent reviewers and later FRCE evidence.
++V2 repairs the two findings in the authenticated own V1 review. Fixture CLI parsing first validates flags and lexical syntax without filesystem access. The complete expected-free view is authenticated, then a nonmember case fails INPUT before any case-driven filesystem probe. Member bytes come directly from authentication; only after membership is the output destination checked. Payload computation, case error exits and all scientific code remain unchanged.
++
++ENGINEERING_REPORT.txt is the exact historical V1 report, including its unverified assertions and limitations; CORRECTION_V2_REPORT.txt records the current repairs and static checks. Original V1 source, malformed patch and review remain preserved under the authorized inputs and are not overwritten.
++
++SOURCE_INVENTORY.json hashes every delivered file except itself, using canonical ASCII JSON with one final LF. Its SHA256 is the sole own-source identity supplied at build time, then embedded in build_metadata.hpp and emitted in the build receipt/audit report. The unchanged build.sh must receive this final V2 inventory digest, never the V1 or archive digest.
++
++BASELINE_TO_CANDIDATE_DIFF.patch compares the own baseline runtime source set (`src/`, Makefile, audit_keys.py, README.md) against all current payload files, excluding SOURCE_INVENTORY.json and both generated patch artifacts. V1_TO_V2_DIFF.patch compares the exact V1 and V2 files except itself and SOURCE_INVENTORY.json, including the regenerated baseline patch. These explicit scopes avoid hash cycles: payload -> baseline patch -> V1-to-V2 patch -> inventory. Each unified diff has separate file headers and missing-final-newline markers; imported reference bytes are never normalized. Static byte reconstruction checks both patches without executing source or writing a patched tree.
++
++Nothing refers to original provenance paths as readable locations. Fresh independent exact SOURCE GO for this V2 freeze is mandatory before any FRCE Slurm build, fixture or science; no runtime PASS or source acceptance is claimed.
+diff --git a/src/brs3_fixture.py b/src/brs3_fixture.py
+--- a/src/brs3_fixture.py
++++ b/src/brs3_fixture.py
+@@ -675,13 +675,15 @@
+ def main():
+     try:
+         parsed = cli(['brs3_fixture']+sys.argv[1:])['options']
+-        for k in ('--inputs','--case'):
+-            pathcheck(parsed[k])
+-        pathcheck(parsed['--output'],True)
++        # cli() checks flags and lexical path syntax without filesystem probes.
++        # Authenticate the complete expected-free view before case membership.
+         files, members = authenticate(parsed['--inputs'])
+         root = parsed['--inputs']+'/'
+         case = parsed['--case']
+         check(case.startswith(root) and case[len(root):] in members, 'INPUT', 2, 'case')
++        # Members were already path-checked and read by authenticate(). Never
++        # probe an arbitrary --case, including a delegated absent expectedpath.
++        pathcheck(parsed['--output'],True)
+         try:
+             c = strict_json(files[case[len(root):]])
+             exact(c,'version id kind payload')

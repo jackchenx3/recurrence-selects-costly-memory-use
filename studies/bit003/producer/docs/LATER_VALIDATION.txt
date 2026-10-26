@@ -1,0 +1,43 @@
+All items below are REQUIRED LATER, NOT EXECUTED.
+
+1. Exact nonauthor source review, then FRCE Slurm build with frozen compiler,
+   headers/libs/source receipt. Preserve compiler errors; no silent fallback.
+2. Root's full210-file authentication and exact5/107-file readonly staging;
+   verify no expected source/FD/env/cwd reaches child. Test absent/delegated files,
+   in-view missing/unreadable/extra files and symlinks separately.
+3. Every96 public case exact output bytes and exit/stderr comparison against
+   coordinator expectations. No expected metadata influences runtime behavior.
+4. Own full16-block DATA/analyzer/FIXOUT/source/binary freeze, including exact
+   block/query/state counts and all zero-contrast blocks. Independent auditor
+   performs its own freeze before producer output/source cross-access.
+5. All32 thread counts, normal/reverse arms/completion and actual committed
+   data/manifests/results hashes; injected no-M equality only one step; all-M,
+   invalid-M initialization, survivor-slot mutation and PRE-parent cache tests.
+   support.cpp has own fixture-only work. Separately run its --mode packing
+   once with FIXTURE_VIEW: actual shared ChunkEmission publishes all200 opaque
+   chunks in each order, then exact file/manifests/inventories are compared.
+   Reserve approximately8.33GB for retained fixture evidence. No timing/RNG or
+   scientific benchmark is part of that mode; opaque bytes never enter DATA.
+6. All16 POST_G4 corruption recipes from pristine agreed fixture DATA, including
+   self-consistent S256 forgery with both branches, sums and hashes repaired.
+   Record independent auditor's actual exit/code and absence of valid outputs.
+   Construction by support.cpp is not an auditor verdict.
+7. Fresh-output collisions, malformed strict CLI, symlink/path substitution,
+   short reads, IO failures, interrupted chunk/manifest publication. Preserve
+   .partial files and actual failure evidence outside DATA. Exercise directory
+   open/fsync/close failure after rename: final results absent, .partial evidence
+   retained, original IO/5 preserved even if rollback sync also fails. Also test
+   retry>8160 with unrepaired hashes (HASH/3), repaired hashes (MISMATCH/3),
+   simultaneous invalid state (STATE/3), and standalone RECORD (RANGE/2).
+   Authenticate missing/unlisted case failures as INPUT/2 before case probing.
+   Never resume DATA.
+8. Exactly one64-block full-workflow benchmark including full independent
+   replay, IO/hashing, comparison/seal and accounting; whole<=23.04s. No repeat,
+   tuning, reduced audit or endpoint display. Failure stops Design1.
+9. Independent readiness then exact ROOT scientific authority; single original
+   production allocation. No postproduction program rerun. All-step exit0:0,
+   real native/job-cgroup memory and hard/soft ceilings, full cohort/data/source/
+   binary hashes and independent replay/hash-only agreement before unseal.
+10. Both endpoints' exact inference and limitations after execution acceptance.
+    Raw canonical results contain no rounded statistics; rational.hpp supplies
+    exact inference/presentation arithmetic. No favorable endpoint substitution.

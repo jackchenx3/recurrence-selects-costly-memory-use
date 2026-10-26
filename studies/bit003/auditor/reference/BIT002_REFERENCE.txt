@@ -1,0 +1,1766 @@
+# PHASE3-BIT-RETRIEVAL-CAUSALITY-002 — Prospective Protocol
+
+**Version:** v0.4
+**Status:** CANDIDATE_NOT_YET_INDEPENDENTLY_ACCEPTED
+
+**Authority.** None. This file is a design candidate. It does not authorize:
+
+- source construction;
+- fixture-input authoring;
+- builds or fixtures;
+- benchmarks or allocations;
+- scientific execution;
+- publication.
+
+Each of these requires its exact-hash gate (§19).
+
+**Correction status.** v0.3 is the single integrated correction that answers the independent FIX on v0.2. That FIX is integrated correction 1 of 2 for this route. The only review that may follow v0.3 is one independent confirmation on its exact hash, and it may return only GO or STOP.
+
+**Namespace.** This is a new study only. PHASE3-SELECTION-PERFORMANCE-MECHANISM-001 and Studies 001–003 remain frozen and unchanged, with their recorded incomplete or closed status. This study does not complete or replace them.
+
+**Model scope.** BIT/PL only. There is no TORUS component.
+
+**Bound documents.** The G0 freeze manifest records the SHA-256 of each document.
+
+| Document | SHA-256 | Role |
+|---|---|---|
+| PHASE2-MUTABLE-MEMORY-001-REV1.md | `c17a3a1e9ac9cf2260f6743eaf08e4c2808080a767af16d2f9e9d2b9ad3e821d` | Operator source. §2 restates it completely and governs where the two differ. REV1's namespace (its §7) is superseded by §5. |
+| PHASE3-SELECTION-PERFORMANCE-MECHANISM-001-REV1.md | `f036d9112fd627c8318cfc190ca7acfe642acdd14178d1e8570cc73faee97cba` | Structural reference only |
+| REVISED_DIRECTION_ARITHMETIC.json | `f8535869f3bc47130d4ec0dd2a02ae26d5c59c658b0035f1ccb8f1259328ba4d` | Arithmetic receipt |
+| V0_2_REVISION_BRIEF.json | `f06d24376b0bbcf0671343ec64ba78d259f5d8b80dc929e1d73a0df41fa20212` | Root brief |
+| REVIEW_RESPONSE_AND_REVISED_DIRECTION.json | `1858efe09e05633737bcca35e5e544be3a48542d9be0172edd3720347a0c6573` | Root decision |
+| v0.2 candidate | `7aca23a73e0e385bc2ca6856382adf3646c47a4293980ce8fc41b30d58ac6545` | Superseded by this file |
+| v0.2 independent review (FIX) | `4543d4530bb669ac4b8576ff54417acd2f69d43740500ce9c41719e77ab9c4cb` | The eight items answered here |
+
+**Provenance fields.** Some identities can only be filled by a later accepted artifact. They are marked **[PROVENANCE FIELD]**. Examples are build IDs, node class, toolchain, the official KAT-file hash and the legacy key lists.
+
+- None of them is a scientific or interface choice.
+- Each must be recorded at the gate named for it.
+- None may be set or changed after any scientific outcome exists.
+
+---
+
+## 1. Scientific question and claim boundary
+
+### 1.1 Question
+
+In BIT/PL late HALF-law history states, how do the effects of cached versus paired-fresh retrieval differ between recurrent and innovation checkpoint targets? The effects of interest are on:
+
+- all-carrier lineage share;
+- survivor-population performance;
+- a focal eligible family.
+
+### 1.2 Unit and population
+
+The unit is one independent block. A block consists of:
+
+- one factual history from a balanced fixed initial policy start;
+- a checkpoint t, drawn uniformly from 193–256 before the history is generated (production tier);
+- six one-turnover evaluations at t, all from the same cloned pre-target state.
+
+### 1.3 What a result may claim
+
+The intended inference concerns:
+
+- one-turnover, identical-state effects;
+- under the frozen operator;
+- averaged over the endogenous late-window state distribution;
+- under the fixed equal mixture of ALL_F and ALL_M starts.
+
+The focal endpoint has one further qualification. It is defined under the frozen **hashed focal-selection rule** (§4.2), not under an idealized exactly uniform choice.
+
+### 1.4 What a result may not claim
+
+- per-carrier or allele effects;
+- long-run mediation of the published enrichment;
+- an effect of intervening on recurrence;
+- effects at SHAM or ZERO-law states;
+- TORUS or general-model results;
+- displacement as an established mechanism;
+- biological memory;
+- equilibrium, invasion or evolutionary stability;
+- novelty or priority.
+
+### 1.5 Interference
+
+Finite-population selection creates interference among parents.
+
+- **L and P** are total effects of the treatment vector "every eligible parent retrieves" versus "no eligible parent retrieves".
+- **F** is the marginal effect on one hashed-selected eligible family in an all-CACHE background.
+- L and F are never converted into each other.
+- Neither L nor F is divided by e or H.
+- Neither is called a per-carrier effect.
+
+### 1.6 Contrast direction
+
+Every endpoint is **CACHE minus FRESH**. A positive value means that cached retrieval, rather than paired-fresh retrieval, produced the larger value (§9.6).
+
+---
+
+## 2. Frozen BIT/PL operator
+
+### 2.1 State
+
+- The population has 32 slots, numbered 0–31.
+- Slot i holds:
+  - genotype `x_i`, a uint32;
+  - policy `pol_i` ∈ {F, M}, encoded M = 1 and F = 0;
+  - cache `c_i`, a uint32;
+  - cache-valid flag `v_i` ∈ {0, 1}.
+- An invalid cache is stored as `c_i = 0` with `v_i = 0`.
+- Bit b of a genotype means the value `1<<b`.
+- Mismatch to a target T is `h(x, T) = popcount(x XOR T)`, in 0..32.
+- There are no lineage identifiers. Ancestry is recorded only through the producing-parent slot.
+
+### 2.2 Initialization (update 0)
+
+- `x_i` = the INITIAL_GENOTYPE word for slot i.
+- Every cache is invalid: `c_i = 0`, `v_i = 0`.
+- Start labels:
+  - even block_id → ALL_F (every `pol_i = F`);
+  - odd block_id → ALL_M (every `pol_i = M`).
+
+### 2.3 HALF target law
+
+- For every update u ≥ 1, the innovation `I_u` and copy bit `R_u` are defined.
+- `T_1 = I_1` and `T_2 = I_2`. `R_1` and `R_2` are unused.
+- For u ≥ 3: `T_u = T_(u−2)` if `R_u = 1`, else `T_u = I_u`.
+
+### 2.4 One turnover at update u with target T* and switched set Q
+
+In the factual history, `T* = T_u` and `Q = ∅`. For each parent slot i, build four candidates.
+
+- **Family 0, parent.** `g = x_i`.
+- **Family 1, policy probe.**
+  - If `pol_i = M`, `v_i = 1` and i ∉ Q, then `g = c_i` (cached probe).
+  - Otherwise `g = x_i XOR FRESH_MASK(u,i)` (fresh probe).
+- **Family 2, global scout.** `g = x_i XOR SCOUT_MASK(u,i)`.
+- **Family 3, local child.**
+  - The donor is the family 0–2 candidate of parent i with the lowest mismatch to T*.
+  - Ties are broken by the lower uint64 `DONOR_KEY(u, 3i+f)`, then by the lower f.
+  - `g = donor XOR LM(u,i)`. Bit b of `LM` is set iff `LOCAL_BIT(u,i,b)` satisfies `word0 & 31 == 0`.
+
+**Candidate indexing.**
+
+- Candidate index `j = 32·family + slot` (family-major), for j in 0..127.
+- Candidate identity persists across branches.
+- No deduplication is performed.
+- Each candidate is evaluated once: `h_j = h(g_j, T*)`. These are the update's 128 queries.
+- The donor choice reuses the family 0–2 mismatches and is not an extra query.
+
+**Survival: exact integer Plackett–Luce without replacement.**
+
+- Weight `w_j = 2^(32−h_j)`, a uint64.
+- For each draw d = 0..31:
+  1. Let `W_d` be the uint64 sum of the remaining (unselected) weights, taken in ascending j.
+  2. For retry r = 0, 1, …: take `x = SURVIVAL_UNIFORM(u,d,r)` and form `m = x·W_d`, a full 128-bit product.
+  3. Set `threshold = ((0 − W_d) mod 2^64) mod W_d`.
+  4. If `low64(m) < threshold`, reject and continue with r+1. Otherwise `Z = high64(m)`.
+  5. Select the first remaining candidate (ascending j) whose cumulative remaining weight exceeds Z. It becomes survivor slot s = d.
+- Floating point is forbidden.
+- If any draw would need retry index 256, the producer aborts and the run is INVALID.
+
+**Inheritance, mutation and cache transition.**
+
+- Survivor s, produced by candidate j, has producing parent `p = j mod 32`. Its genotype is `g_j`.
+- It inherits `pol_p`. The policy then flips iff `POLICY_MUTATION(u,s)` satisfies `word0 & 31 == 0`.
+- After mutation:
+  - an M survivor gets `c = x_p` (the parent's pre-update genotype) with `v = 1`;
+  - an F survivor gets `c = 0` with `v = 0`.
+- Consequences:
+  - From update 2 onward, every M carrier has a valid cache.
+  - An F→M mutant first uses its cache at the next update.
+  - An M→F→M history carries no older record.
+
+---
+
+## 3. Tiers, cohort and factual history
+
+### 3.1 Tier contract (frozen)
+
+The tier literal fixes everything in this table. No command-line option, environment variable or file can alter any entry.
+
+| Property | production-r1 | benchmark-r1 | fixture-r1 |
+|---|---|---|---|
+| tier_code (u32) | 1 | 3 | 2 |
+| Blocks | 0..41,999 (n = 42,000) | 0..1,023 (n = 1,024) | 0..15 (n = 16, exactly) |
+| Checkpoint rule | t = 193 + (w & 63) | t = 256 (forced) | t = 193 + (w & 63) |
+| Stored CHECKPOINT_TIME word (offset 16) | actual Philox word0 | actual Philox word0 | actual Philox word0 |
+| Chunks k = ⌈n/1000⌉ | 42 | 2 | 1 |
+| Records per chunk | 1,000 each | 1,000, then 24 | 16 |
+| Trace blocks (n_blocks) | 0..63 (64) | 0..63 (64) | 0..15 (16) |
+| total_queries | Σ_b 128(t_b+5), computed | 1,024 × 261 × 128 = 34,209,792 | Σ_b 128(t_b+5) over 16 blocks, computed |
+| Analyzer/auditor history-replay set | blocks 0..63 | blocks 0..63 | blocks 0..15 |
+
+Here w = CHECKPOINT_TIME word0 under the tier's own key.
+
+**Producer interface.**
+
+- The producer CLI is exactly `brc2_produce --tier <literal> --out <dir> --threads <1..32>`.
+- Any other argument, a repeated argument, or an unknown tier literal causes exit code 2 before any file is written.
+- There is no checkpoint-override option in any tier.
+- The forced t = 256 exists only as the benchmark-r1 row of the compiled tier table. Production therefore cannot receive an override by any path.
+
+### 3.2 Factual history
+
+- The checkpoint t is computed from block_id and tier before any history draw is used. There is no reroll.
+- Initialize as in §2.2.
+- Run factual turnovers u = 1..t−1 with `T* = T_u` and `Q = ∅`.
+- The result is the pre-target state `S = S_(t−1)`. It includes `T_(t−2)` and `T_(t−1)`.
+- Nothing after update t is simulated. No branch output feeds back into any later state.
+
+### 3.3 Production cohort
+
+- B = 42,000 blocks, 21,000 per start.
+- The exact minimum B for an L/P half-width below 1/64 is 41,911.
+
+---
+
+## 4. Checkpoint intervention
+
+### 4.1 Targets
+
+- rec target: `T_rec = T_(t−2)`.
+- inn target: `T_inn = I_t`.
+- The factual target is `T_t = R_t ? T_rec : T_inn`.
+
+### 4.2 Eligible set and hashed focal parent (pre-treatment)
+
+- Eligible set: `E = {i : pol_i = M and v_i = 1}` in S.
+- `e = |E|` and `H = [e > 0]`.
+- Keys `κ_i = FOCAL_PARENT(t, i)` are uint64 values defined for all 32 slots.
+- If H = 1, the focal slot is f* = the i ∈ E minimizing the pair (κ_i, i) lexicographically. That is: the smallest key wins, and an exact key tie goes to the lower slot.
+- If H = 0, f* is the sentinel 0xFF and the stored focal key is 0xFFFFFFFFFFFFFFFF.
+- E and f* are fixed before any update-t candidate exists. They are the same for both targets.
+
+**Distribution of f*.**
+
+- Under the §5.5 idealization, the keys are i.i.d. uniform on 64-bit values.
+- Conditional on no tie among E's keys, f* is uniform on E.
+- The probability of any tie among 32 keys is at most C(32,2)/2^64 = 496/2^64 ≈ 2.689×10⁻¹⁷. This is small but nonzero.
+- F is defined under exactly this rule, called the hashed focal-selection distribution. No exact-uniformity claim is made.
+
+### 4.3 The six evaluations
+
+Each evaluation is the full §2.4 turnover at update t, using the single shared update-t tape (§5.6).
+
+| arm | target_code | retrieval_code | Q (switched_mask) |
+|---|---|---|---|
+| 0 | 0 rec | 0 CACHE (C) | ∅ |
+| 1 | 0 rec | 1 ALL_FRESH (AF) | E |
+| 2 | 0 rec | 2 FOCAL_FRESH (FF) | {f*}, or ∅ if H = 0 |
+| 3 | 1 inn | 0 C | ∅ |
+| 4 | 1 inn | 1 AF | E |
+| 5 | 1 inn | 2 FF | {f*}, or ∅ if H = 0 |
+
+So target_code = ⌊a/3⌋ and retrieval_code = a mod 3.
+
+**Factual mapping.**
+
+- `factual_target_code = 1 − R_t`.
+- is_factual = 1 exactly for arm 0 if R_t = 1, and exactly for arm 3 if R_t = 0.
+- The factual arm equals the factual turnover at update t.
+- The other five arms are shadows. They are recorded and then discarded.
+
+**Execution.**
+
+- All six arms are executed in full, with 128 queries each, even when their scientific payloads coincide.
+- Payloads coincide in two cases:
+  - H = 0: within each target;
+  - e = 1: AF = FF within each target.
+- The producer must not shortcut, copy or deduplicate arms.
+
+---
+
+## 5. Random-number contract
+
+### 5.1 Generator
+
+The generator is canonical Random123 Philox4x32-10.
+
+- Counter words are (c0, c1, c2, c3); key words are (k0, k1).
+- Each round is:
+  - `(hi0, lo0) = mulhilo32(0xD2511F53, c0)`;
+  - `(hi1, lo1) = mulhilo32(0xCD9E8D57, c2)`;
+  - `(c0, c1, c2, c3) ← (hi1^c1^k0, lo1, hi0^c3^k1, lo0)`.
+- After rounds 1–9 the key is bumped: `k0 += 0x9E3779B9`, `k1 += 0xBB67AE85` (mod 2^32).
+
+**Known answers.** The official Random123 philox4x32_10 KAT file is binding; its SHA-256 is a [PROVENANCE FIELD] frozen at G1F. These transcribed values are for orientation, and the official file prevails if they differ:
+
+- counter 0⁴, key 0² → `6627e8d5 e169c58d bc57ac4c 9b00dbd8`;
+- all-ones counter and key → `408f276d 41c83b0e a20bc7c6 6d5451fd`;
+- counter `243f6a88 85a308d3 13198a2e 03707344`, key `a4093822 299f31d0` → `d16cfe09 94fdcceb 5001e420 24126ea1`.
+
+### 5.2 Keys
+
+- For tier τ ∈ {`production-r1`, `fixture-r1`, `benchmark-r1`} and purpose P, the key string is the ASCII text `PHASE3-BIT-RETRIEVAL-CAUSALITY-002|<τ>|<P>`, with no terminator.
+- digest = SHA-256(string).
+- `k0` = digest bytes 0–3, read as a little-endian uint32.
+- `k1` = digest bytes 4–7, read as a little-endian uint32.
+
+### 5.3 Coordinates and extraction
+
+- The counter is (block, update, entity, subindex).
+- A uint64 value is `word0 | (word1 << 32)`.
+- Unused words are ignored.
+
+| Purpose | Counter, defined range | Extraction |
+|---|---|---|
+| INITIAL_GENOTYPE | (b, 0, i, 0), i 0..31 | word0 = `x_i` |
+| CHECKPOINT_TIME | (b, 0, 0, 0) | w = word0; t by tier rule |
+| TARGET_INNOVATION | (b, u, 0, 0), u 1..256 | word0 = `I_u` |
+| TARGET_COPY | (b, u, 0, 0), u 1..256 | `R_u` = word0 & 1 |
+| FRESH_MASK | (b, u, i, 0), u 1..256 | word0 |
+| SCOUT_MASK | (b, u, i, 0), u 1..256 | word0 |
+| LOCAL_BIT | (b, u, i, bit), bit 0..31 | flip iff (word0 & 31) == 0 |
+| DONOR_KEY | (b, u, 3i+f, 0), f 0..2 | uint64; lower wins |
+| SURVIVAL_UNIFORM | (b, u, d, r), d 0..31, r 0..255 | uint64 x |
+| POLICY_MUTATION | (b, u, s, 0), s 0..31 | flip iff (word0 & 31) == 0 |
+| FOCAL_PARENT | (b, u, i, 0), u = t only, i 0..31 | uint64 key κ_i |
+
+**Block ranges.**
+
+- b ranges over the tier's block set.
+- Constructed fixtures (§16) may name only fixture-r1 blocks 0..15.
+
+**Reuse of accepted semantics.**
+
+- The nine REV1 purposes keep REV1's coordinate semantics and extraction.
+- Only the key strings and the block range are new.
+- CHECKPOINT_TIME and FOCAL_PARENT are the only added purposes.
+
+**Other rules.**
+
+- Out-of-range coordinates abort the run.
+- The masks `&63` and `&31` need no rejection.
+- Record integers are little-endian. Digests are stored as 32 raw bytes.
+- Weights are uint64, and the Lemire product is a 64×64→128-bit multiply.
+
+### 5.4 Namespace disjointness
+
+Before any source is compiled, the 33 key pairs (11 purposes × 3 tiers) are computed twice with standard tools: once by the producer author and once by the auditor author. The two computations must agree. The 64-bit keys must be pairwise distinct. They must also be distinct from:
+
+- every `PHASE2-MUTABLE-MEMORY-001|production-r1|<P>` key;
+- every `PHASE3-SELECTION-PERFORMANCE-MECHANISM-001|BIT|{production-r1,fixture-r1}|<P>` key;
+- every Study 001–003 purpose key [PROVENANCE FIELD: list and source hashes].
+
+The key table itself is a [PROVENANCE FIELD], produced only by this rule and frozen at G1F.
+
+### 5.5 Literal facts and working idealization
+
+**Literal facts.**
+
+- Distinct tape variables have distinct (key, counter) addresses.
+- For a fixed key, Philox is a bijection on counters.
+- The six arms of a block deliberately read the same update-t addresses. This sharing is the intended pairing. It is not a collision.
+
+**Fixed full arrays.**
+
+- For every block, the tape is the fixed full array of every address in the §5.3 ranges, for u = 0..256, whether or not it is read.
+- Its size does not depend on t. Only the subset read depends on t.
+
+**Idealization.**
+
+- Outputs at distinct addresses are treated as independent uniform words.
+- Every independence statement in this protocol is conditional on this idealization.
+- It is supported by published statistical testing of Philox.
+- It is not a mathematical or cryptographic proof, and none is claimed.
+
+### 5.6 Label independence
+
+**Address inputs.** Every address is a function only of:
+
+- purpose and tier;
+- block, update and slot;
+- family 0–2, bit, draw d, slot s and retry r.
+
+None of these depends on target code, retrieval code, arm order, thread, policy, cache, score or outcome.
+
+**Retries.**
+
+- Retry consumption may differ by arm.
+- The address (d, r) is still the same array element in every arm, and draw d+1 always starts at (d+1, 0).
+
+**Conclusion.** Each arm is a deterministic function `g_(τ,b)(S, T_τ, W_t)`, where W_t is the update-t operator tape (the FRESH, SCOUT, LOCAL, DONOR, SURVIVAL, POLICY and FOCAL_PARENT addresses at u = t). The labels choose which function is applied, never which values are read.
+
+---
+
+## 6. Causal estimands and identification
+
+### 6.1 Draw groups
+
+For checkpoint value τ, partition the fixed full array of block b into:
+
+- **K** = the CHECKPOINT_TIME address;
+- **U_h(τ)** = INITIAL_GENOTYPE plus every address with update 1..τ−1;
+- **V_τ** = the TARGET_INNOVATION and TARGET_COPY addresses at update τ;
+- **W_τ** = the operator addresses at update τ;
+- the unused remainder.
+
+For each fixed τ, these are disjoint fixed address sets. Under §5.5 they are therefore mutually independent and independent of K, and `I_τ` is independent of `R_τ`.
+
+In the production tier, t = κ(K). So conditional on t = τ, the groups U_h(τ), V_τ and W_τ remain mutually independent with their unconditional distributions.
+
+### 6.2 Dependence
+
+- S is a function of (start, U_h(t), t). It does not depend on V_t or W_t.
+- For outcome functional Y and retrieval b ∈ {C, AF, FF}: `Y_(τ,b) = Y(g_b(S, T_τ, W_t))`.
+- The contrasts have these arguments:
+  - `Δ_rec = Y_(rec,C) − Y_(rec,AF)` is a function of (S, W_t);
+  - `Δ_inn = Y_(inn,C) − Y_(inn,AF)` is a function of (S, I_t, W_t);
+  - the focal contrasts are the same with FF in place of AF.
+
+### 6.3 Estimands
+
+Each endpoint is a block variable. Its estimand is the mean over production blocks of the block's expectation, which is the fixed equal mixture
+
+> θ = ½E_ALL_F[·] + ½E_ALL_M[·].
+
+### 6.4 Conditional equivalence
+
+Within each start and conditional on t = τ:
+
+- **Recurrent:** (S, W_τ) is independent of R_τ, so E[factual C-vs-AF contrast | R_τ = 1] = E[Δ_rec | R_τ = 1] = E[Δ_rec].
+- **Innovation:** (S, I_τ, W_τ) is independent of R_τ, so E[factual contrast | R_τ = 0] = E[Δ_inn].
+
+Averaging over τ and over starts gives the mixture identities.
+
+**What this establishes.** Each paired endpoint estimates the conditional mean of the immediate retrieval contrast at factual recurrent (respectively innovation) checkpoint updates. Every block contributes to both strata, so no Horvitz–Thompson weighting is needed.
+
+**What this does not establish.**
+
+- It is not an intervention on recurrence.
+- A between-stratum difference is effect heterogeneity across target type at the same states.
+
+### 6.5 Pseudoreplication
+
+- The block is the inferential unit.
+- The two targets within a block are paired, correlated evaluations. They do not double the sample.
+- Survivors, candidates and arms are never replicates.
+- Each endpoint has exactly one vector of 42,000 block values.
+
+---
+
+## 7. Endpoints
+
+### 7.1 Per-arm counts
+
+All counts use the 32 survivors of an arm. Each survivor has candidate j, producing parent p = j mod 32 and mismatch m against that arm's own target.
+
+- `D_E(a)` = #{survivors with p ∈ E}, in 0..32.
+- `d_f(a)` = #{survivors with p = f*}, in 0..4; it is 0 if H = 0.
+- `A(a)` = Σ(32 − m), in 0..1024.
+
+### 7.2 Numerators
+
+| Endpoint | Numerator | Static range | Value |
+|---|---|---|---|
+| L_rec | NL_rec = D_E(0) − D_E(1) | [−32, 32] | /32 |
+| L_inn | NL_inn = D_E(3) − D_E(4) | [−32, 32] | /32 |
+| P_rec | NP_rec = A(0) − A(1) | [−1024, 1024] | /1024 |
+| P_inn | NP_inn = A(3) − A(4) | [−1024, 1024] | /1024 |
+| F_rec | NF_rec = d_f(0) − d_f(2) | [−4, 4] | /32 |
+| F_inn | NF_inn = d_f(3) − d_f(5) | [−4, 4] | /32 |
+
+### 7.3 Structural bounds
+
+**Lineage bound.**
+
+- Each parent supplies 4 of the 128 candidates, and survival is without replacement.
+- So in every arm, descendants of E number between max(0, 4e − 96) and min(32, 4e).
+- Hence |NL| ≤ min(32, 4e, 128 − 4e), that is, |L| ≤ min(1, e/8, (32 − e)/8).
+- L = 0 when e = 0 or e = 32.
+- This bounds a total effect. It is not a per-carrier bound.
+
+**Focal bound.**
+
+- d_f ∈ [0, 4] in every arm, so F ∈ [−1/8, 1/8], a range of 1/4.
+- F = 0 when H = 0.
+
+**H = 0.**
+
+- Q = ∅ in all arms.
+- Arms 0, 1 and 2 have equal scientific payloads, and so do arms 3, 4 and 5 (payload as defined in §12.3).
+- All numerators are 0.
+
+**e = 1.** Arms 1 and 2 have equal payloads, and so do arms 4 and 5.
+
+**F is unconditional.**
+
+- E[F] = P(H = 1)·E[(d_f(C) − d_f(FF))/32 | H = 1], with f* drawn by the hashed rule of §4.2.
+- F is never divided by H, by its mean or by e.
+- H and e are reported descriptively only.
+
+### 7.4 Lineage versus focal interventions
+
+- In the L contrast, all of E switches to fresh probes.
+- In the F contrast, only f* switches.
+- In general F·e ≠ L.
+- No per-carrier effect is reported.
+
+---
+
+## 8. Inference
+
+### 8.1 Family and half-widths
+
+- The family is exactly six base intervals, with total α = 0.05:
+  - L_rec, L_inn, P_rec, P_inn: α = 0.012 each, range R = 2;
+  - F_rec, F_inn: α = 0.001 each, range R = 1/4.
+- The half-width is h = R·√(ln(2/α)/(2B)), with B = 42,000.
+- Frozen upward-rounded constants:
+  - **h_LP = 0.015608294208001326**, below 1/64;
+  - **h_F = 0.002378115509733596**, below 1/256.
+- Each h is used as the exact rational value of its decimal string, in every tier.
+
+### 8.2 Exact computation
+
+**Sums and means.**
+
+- ΣNL, ΣNP and ΣNF are exact integers over the tier's n blocks.
+- mean = Σ/den, with den = 32n for L and F and 1024n for P.
+- For production these are 1,344,000 and 43,008,000.
+
+**Clipped intervals.**
+
+- L and P: lo = max(−1, mean − h) and hi = min(1, mean + h).
+- F: lo = max(−1/8, mean − h) and hi = min(1/8, mean + h).
+
+All arithmetic and comparisons are on exact rationals. Results are rendered as reduced fractions (§15). No decimals appear in any results file.
+
+### 8.3 Derived intervals (not new tests)
+
+For each quantity Q ∈ {L, P, F}:
+
+- average: avg_lo = (lo_rec + lo_inn)/2 and avg_hi = (hi_rec + hi_inn)/2;
+- difference (rec − inn): diff_lo = lo_rec − hi_inn and diff_hi = hi_rec − lo_inn;
+- `resolved_difference` = 1 iff diff_lo > 0 or diff_hi < 0.
+
+### 8.4 Coverage
+
+- The block variables are independent and bounded, though not identically distributed. Hoeffding's inequality gives each base interval coverage of at least 1 − α. Upward rounding of h only increases coverage.
+- By Bonferroni, all six intervals cover simultaneously with probability at least 0.95.
+- Clipping intersects each interval with a fixed range that contains θ, so it preserves coverage.
+- The derived intervals are monotone endpoint maps.
+- Every §9 label is a deterministic consequence of the intervals, so all labels hold jointly on the same event.
+- No further primary inference exists.
+
+### 8.5 Precision, not power
+
+- The half-widths are guaranteed worst-case precision.
+- Detection of a material effect depends on the unknown true means.
+- No power is claimed, and no result is promised.
+
+---
+
+## 9. Classification and reporting
+
+### 9.1 Thresholds
+
+| Quantity | Material δ | Margin ε = 2δ |
+|---|---|---|
+| L, P | 1/64 | 1/32 |
+| F | 1/256 | 1/128 |
+
+**Meaning of the thresholds.**
+
+- For L, 1/32 is one expected survivor of 32.
+- For P, 1/32 is one correct bit of survivor-mean accuracy.
+- For F, 1/128 is a quarter of an expected focal descendant per checkpoint. This is the H-weighted scale, chosen deliberately because F is unconditional.
+
+**Consequences.**
+
+- The first-match ordering in §9.3 assigns exactly one label. For these frozen widths, 2h > δ; an unclipped interval with lo > δ therefore has hi > ε, and the analogous statement holds for a negative material interval. Clipping near ±1 (or ±1/8 for F) cannot make those intervals lie within ±ε. Thus the material and within-margin predicates do not overlap at the frozen widths.
+- Every zero-containing interval lies within ±ε.
+
+**Meaning of NEGLIGIBLE.** It means "magnitude bounded below ε". It never means null.
+
+### 9.2 Validity
+
+The run is INVALID if any of the following holds:
+
+- the analyzer or auditor emits the INVALID result form (§15.3);
+- the two results files are not byte-identical;
+- the data-committed state (§13.1) fails;
+- the execution-accepted state (§13.2) fails at G8.
+
+INVALID estimates are never interpreted.
+
+### 9.3 Per-endpoint labels
+
+Rules are applied in order; the first match wins.
+
+| # | Label literal | Rule |
+|---|---|---|
+| 1 | MATERIAL_POSITIVE | lo > δ |
+| 2 | MATERIAL_NEGATIVE | hi < −δ |
+| 3 | NEGLIGIBLE_WITHIN_MARGIN | lo > −ε and hi < ε |
+| 4 | POSITIVE_MAGNITUDE_UNRESOLVED | lo > 0 |
+| 5 | NEGATIVE_MAGNITUDE_UNRESOLVED | hi < 0 |
+| 6 | Fallthrough | Unreachable when hi − lo ≤ 2h < ε. Reaching it means failed check L, the INVALID form. |
+
+### 9.4 Target pattern for Q ∈ {L, P, F}
+
+Rules apply to the pair (rec, inn) in order; the first match wins. Material means rule 1 or 2 above; sign-only means rule 4 or 5.
+
+1. `OFFSETTING_MATERIAL`: one MATERIAL_POSITIVE and one MATERIAL_NEGATIVE.
+2. `CONCORDANT_MATERIAL_POSITIVE`: both MATERIAL_POSITIVE.
+3. `CONCORDANT_MATERIAL_NEGATIVE`: both MATERIAL_NEGATIVE.
+4. `RECURRENT_ONLY_MATERIAL_POSITIVE` or `RECURRENT_ONLY_MATERIAL_NEGATIVE`: rec is material and inn is NEGLIGIBLE. The suffix is the sign of rec.
+5. `INNOVATION_ONLY_MATERIAL_POSITIVE` or `INNOVATION_ONLY_MATERIAL_NEGATIVE`: the mirror of rule 4.
+6. `ONE_MATERIAL_OTHER_SIGN_ONLY_SAME` or `ONE_MATERIAL_OTHER_SIGN_ONLY_OPPOSING`: one is material and the other is sign-only.
+   - SAME covers MATERIAL_POSITIVE with POSITIVE_MAGNITUDE_UNRESOLVED, and MATERIAL_NEGATIVE with NEGATIVE_MAGNITUDE_UNRESOLVED.
+   - Every other combination is OPPOSING.
+7. `BOTH_NEGLIGIBLE`.
+8. `OPPOSING_SIGNS_NONMATERIAL`: one sign-only positive and one sign-only negative.
+9. `NONMATERIAL_OTHER`: the remaining pairs, namely NG with a sign-only label, and two sign-only labels of the same sign.
+
+These are 12 literals, and they cover all 25 label pairs.
+
+### 9.5 Study summary
+
+Rules are applied in order; the first match wins.
+
+| Token | Rule | Names emitted (§15) |
+|---|---|---|
+| S0_INVALID | invalid | — |
+| S1_MATERIAL_TARGET_OFFSETTING | some Q has OFFSETTING_MATERIAL | quantities with that pattern |
+| S2_MATERIAL_ADVERSE_PRESENT | some endpoint is MATERIAL_NEGATIVE | every such endpoint |
+| S3_MATERIAL_POSITIVE_ONLY | some endpoint is MATERIAL_POSITIVE | every such endpoint |
+| S4_ALL_NEGLIGIBLE_WITHIN_MARGIN | all six NEGLIGIBLE | — |
+| S5_NONMATERIAL_SIGN_RESOLVED | otherwise (no material, some sign-only) | every sign-only endpoint |
+
+The list is exhaustive. No favourable mechanism label exists.
+
+### 9.6 Mandatory reporting templates
+
+Every endpoint is CACHE minus FRESH. Each template uses one of two intervention phrases:
+
+- "all eligible carriers' cached rather than paired-fresh retrieval" (L, P);
+- "the focal eligible parent's cached rather than paired-fresh retrieval" (F).
+
+**Templates.**
+
+- **MATERIAL_POSITIVE** or **MATERIAL_NEGATIVE:** "At [recurrent | innovation] checkpoint targets, [intervention phrase] for one turnover [increased (positive) | decreased (negative)] [quantity] by more than [δ] relative to paired-fresh retrieval (simultaneous 95% interval [lo, hi] for CACHE minus FRESH)."
+- **NEGLIGIBLE_WITHIN_MARGIN:** "… changed [quantity] by less than [ε] in magnitude. This bounds, and does not establish absence of, an effect."
+- **POSITIVE_MAGNITUDE_UNRESOLVED** or **NEGATIVE_MAGNITUDE_UNRESOLVED:** "… [increased | decreased] [quantity], with magnitude relative to [δ] and [ε] unresolved."
+
+**Direction.**
+
+- A positive endpoint is never described as "switching to fresh increased [quantity]". Switching from cache to fresh changes the outcome by the negative of the reported contrast.
+- Negative L: cached retrieval reduced eligible-lineage share.
+- Negative P: cached retrieval lowered survivor accuracy.
+- Negative F: cached retrieval disadvantaged the focal family.
+
+Adverse results are reported with the same prominence as favourable ones.
+
+**Rules.**
+
+- **Offsetting (S1 or pattern 1):** the average interval is described as an average of opposing effects. It is never evidence of a small or absent effect.
+- **Near-monomorphism:** an L label of NEGLIGIBLE carries the caveat that L is capped by min(1, e/8, (32 − e)/8), and is reported with the e distribution.
+- **Lineage versus focal:** L and F are never merged into one statement.
+- **Recurrence:** no between-stratum difference is called an effect of recurrence.
+
+---
+
+## 10. Prospective directional notes (no hypotheses, no tests, no interpretive privilege)
+
+**Operator fact.** At a checkpoint, an eligible parent's cache equals the genotype of its producing parent at update t−1. That genotype was a survivor of selection at update t−2 against `T_(t−2) = T_rec`. This is a fact about selection history only.
+
+**What it does not establish.** It does not establish the sign of any endpoint. The following all bear on the outcomes, and no monotonicity result is supplied:
+
+- the relative quality of the cached versus fresh probe;
+- local-child donor changes;
+- within-population competition and interference;
+- selected endogenous states;
+- eligibility prevalence.
+
+**Experimental questions.** The signs of every endpoint are experimental questions:
+
+- L_rec, L_inn, P_rec, P_inn, F_rec, F_inn;
+- any offsetting between the strata;
+- the size of F relative to its bound.
+
+**Unproved intuition.** An intuition that recurrent-target cached retrieval may favour eligible lineages is recorded only as unproved intuition. It has no privilege: no outcome is "expected", "surprising" or "implied" on that basis.
+
+The e distribution at late checkpoints is unknown.
+
+---
+
+## 11. Counts
+
+**Per block:**
+
+- (t−1) history turnovers plus 6 checkpoint turnovers;
+- queries = 128(t+5), between 25,344 and 33,408.
+
+**Production:**
+
+- expected queries = 1,233,792,000;
+- maximum queries = 1,403,136,000. The maximum is binding.
+- Necessary compute-only rates, excluding I/O: 48,720 queries/s (8 h) and 194,880 queries/s (2× rule, 4 h). Rate alone never establishes feasibility.
+
+**Benchmark:** 34,209,792 queries.
+
+---
+
+## 12. Record, file and directory formats
+
+All integers are little-endian. Hex in text files is lowercase.
+
+### 12.1 Canonical state S_u (264 bytes)
+
+| Off | Bytes | Field |
+|---|---|---|
+| 0 | 128 | genotypes[32], u32 |
+| 128 | 128 | caches[32], u32; 0 where invalid |
+| 256 | 4 | policy_mask (bit i = 1 iff slot i is M) |
+| 260 | 4 | cache_valid_mask |
+
+### 12.2 History digest chain
+
+- `D_0` = SHA-256 of the ASCII string `BRC2-HIST-V2` (12 bytes), then u32 block_id, then S_0.
+- For u = 1..t−1, `D_u` = SHA-256 of a 306-byte message:
+  - `D_(u−1)` (32 bytes);
+  - u16 u;
+  - u32 T_u;
+  - u32 retries_u (total survival rejections at update u);
+  - S_u.
+- The record stores `D_(t−1)`.
+
+### 12.3 Block record (2,088 bytes)
+
+**Header (offsets 0–103)**
+
+| Off | Bytes | Type | Field and constraint |
+|---|---|---|---|
+| 0 | 4 | ASCII | `BRC2` |
+| 4 | 2 | u16 | layout_version = 2 |
+| 6 | 2 | u16 | record_length = 2088 |
+| 8 | 4 | u32 | block_id |
+| 12 | 1 | u8 | start_code = block_id & 1 (0 = ALL_F) |
+| 13 | 1 | u8 | R_t |
+| 14 | 2 | u16 | checkpoint t (as used; 256 in benchmark-r1) |
+| 16 | 4 | u32 | CHECKPOINT_TIME word0, the actual Philox value |
+| 20 | 4 | u32 | T_(t−2) |
+| 24 | 4 | u32 | T_(t−1) |
+| 28 | 4 | u32 | I_t |
+| 32 | 4 | u32 | T_t |
+| 36 | 4 | u32 | eligible_mask E |
+| 40 | 1 | u8 | e |
+| 41 | 1 | u8 | H |
+| 42 | 1 | u8 | focal_slot (0xFF if H = 0) |
+| 43 | 1 | u8 | factual_target_code = 1 − R_t |
+| 44 | 8 | u64 | focal_key = κ_f* if H = 1; 0xFFFFFFFFFFFFFFFF if H = 0 |
+| 52 | 4 | u32 | pre-target policy_mask |
+| 56 | 4 | u32 | pre-target cache_valid_mask |
+| 60 | 4 | u32 | history_queries = 128(t−1) |
+| 64 | 4 | u32 | checkpoint_queries = 768 |
+| 68 | 4 | u32 | history_survival_retries |
+| 72 | 32 | bytes | history_digest D_(t−1) |
+
+**State and arm sections**
+
+| Off | Bytes | Field |
+|---|---|---|
+| 104 | 128 | pre-target genotypes[32] |
+| 232 | 128 | pre-target caches[32] (0 where invalid) |
+| 360 | 1680 | arms 0..5; arm a at 360 + 280a |
+
+**Arm section (280 bytes)**
+
+The section has two parts.
+
+- **Arm metadata, bytes [0, 8):** validated against §4.3; never part of payload equality.
+- **Scientific payload, bytes [8, 280):** compared for equality.
+
+| Off | Bytes | Field | Part |
+|---|---|---|---|
+| 0 | 1 | u8 arm_code a | metadata |
+| 1 | 1 | u8 target_code | metadata |
+| 2 | 1 | u8 retrieval_code | metadata |
+| 3 | 1 | u8 is_factual | metadata |
+| 4 | 4 | u32 switched_mask Q | metadata |
+| 8 | 2 | u16 queries = 128 | payload |
+| 10 | 2 | u16 survival_retries | payload |
+| 12 | 1 | u8 D_E | payload |
+| 13 | 1 | u8 d_f | payload |
+| 14 | 2 | u16 A | payload |
+| 16 | 4 | u32 post_policy_mask | payload |
+| 20 | 4 | u32 candidate_mismatch_sum (0..4096) | payload |
+| 24 | 256 | survivors[32] × 8 bytes, slot order | payload |
+
+**Survivor entry (8 bytes)**
+
+| Off | Bytes | Field |
+|---|---|---|
+| 0 | 1 | u8 j |
+| 1 | 1 | u8 m |
+| 2 | 1 | u8 post_policy |
+| 3 | 1 | u8 draw_retries |
+| 4 | 4 | u32 genotype |
+
+**Payload equality.** "Arms a and a′ are payload-equal" means record bytes [360+280a+8, 360+280a+280) equal bytes [360+280a′+8, 360+280a′+280).
+
+**Numerator and integrity section**
+
+| Off | Bytes | Field |
+|---|---|---|
+| 2040 | 1 | i8 NL_rec |
+| 2041 | 1 | i8 NL_inn |
+| 2042 | 2 | i16 NP_rec |
+| 2044 | 2 | i16 NP_inn |
+| 2046 | 1 | i8 NF_rec |
+| 2047 | 1 | i8 NF_inn |
+| 2048 | 4 | u32 total_queries = 128(t+5) |
+| 2052 | 4 | u32 block_status = 0 |
+| 2056 | 32 | SHA-256 of record bytes [0, 2056) |
+
+### 12.4 Chunk files
+
+**Layout.**
+
+- Files are `chunk_KK.bin`, with KK a two-digit decimal from 00 to k−1.
+- Chunk K holds blocks 1000K up to min(1000K+999, n−1), ascending.
+
+**Chunk header (64 bytes)**
+
+| Off | Bytes | Field |
+|---|---|---|
+| 0 | 8 | ASCII `BRC2CHNK` |
+| 8 | 2 | u16 layout_version = 2 |
+| 10 | 2 | u16 chunk_index |
+| 12 | 4 | u32 first_block |
+| 16 | 4 | u32 block_count |
+| 20 | 4 | u32 record_length = 2088 |
+| 24 | 4 | u32 tier_code |
+| 28 | 4 | u32 reserved = 0 |
+| 32 | 32 | producer build ID (raw) |
+
+**Chunk sizes.**
+
+| Tier | Chunk sizes | All chunk bytes |
+|---|---|---|
+| production-r1 | 42 × 2,088,064 | 87,698,688 |
+| benchmark-r1 | 2,088,064 + 50,176 | 2,138,240 |
+| fixture-r1 | 33,472 | 33,472 |
+
+### 12.5 Trace file `trace_audit_blocks.bin`
+
+**Header (32 bytes):**
+
+- ASCII `BRC2TRCE`;
+- u16 version = 2;
+- u16 n_blocks (from the tier table);
+- u32 tier_code;
+- 16 zero bytes.
+
+**Body.** For each trace block in ascending order: u32 block_id, u16 t, u16 n = t, then n × 32 bytes holding D_0..D_(t−1).
+
+**Size** = 32 + Σ(8 + 32t_b).
+
+| Tier | Trace size |
+|---|---|
+| production-r1 | 395,808 to 524,832 bytes |
+| benchmark-r1 | exactly 524,832 bytes |
+| fixture-r1 | 98,976 to 131,232 bytes |
+
+Readers compute the exact expected size.
+
+### 12.6 Manifest
+
+`MANIFEST.txt` is ASCII with LF endings and no trailing spaces, ending with exactly one LF. Its lines, in order:
+
+```
+BRC2-MANIFEST-V2
+study=PHASE3-BIT-RETRIEVAL-CAUSALITY-002
+protocol_sha256=<64 lowercase hex: SHA-256 of this v0.4 file>
+tier=<production-r1|benchmark-r1|fixture-r1>
+producer_build_id=<64 lowercase hex>
+blocks=<n>
+chunk_blocks=1000
+chunks=<k>
+record_length=2088
+file chunk_00.bin <bytes> <64 lowercase hex>
+...                         (one line per chunk, ascending)
+file trace_audit_blocks.bin <bytes> <64 lowercase hex>
+total_queries=<decimal>
+complete=1
+```
+
+**Number format.** Decimals have no sign and no leading zeros (zero is `0`).
+
+**MANIFEST.sha256** contains exactly `<64 lowercase hex>␠␠MANIFEST.txt\n`, the `sha256sum` format.
+
+### 12.7 Run directory layout
+
+For run root `<RUN>`, the paths are:
+
+| Path | Writer | Contents |
+|---|---|---|
+| `<RUN>/data/` | producer only | Data inventory (§13.1) |
+| `<RUN>/results/RESULTS_ANALYZER.txt` | analyzer | Results |
+| `<RUN>/audit/RESULTS_AUDITOR.txt`, `<RUN>/audit/AUDIT_REPORT.txt` | auditor | Results and audit report |
+| `<RUN>/agreement/AGREEMENT.txt` | job script | Agreement record |
+| `<RUN>/logs/` | job script | stdout, stderr, per-step timing and exit codes |
+
+**Rules.**
+
+- The producer refuses to start (exit 2) unless `<RUN>/data/` is absent or empty.
+- During writing, temporary files are named `.tmp.<final name>` inside `data/`.
+- Results files are written with mode 0400.
+
+### 12.8 Output budget
+
+**Production.**
+
+| Item | Size |
+|---|---|
+| Chunks | 87,698,688 bytes |
+| Trace | ≤ 524,832 bytes |
+| Manifests | < 8 KiB |
+| Results, report and agreement | < 1 MiB |
+| Logs (capped by the job script) | ≤ 16 MiB |
+| **Total** | **< 110 MB** |
+
+The total is within the 1 GiB readiness limit and the 2 GiB hard cap. The producer refuses to write beyond 1 GiB.
+
+---
+
+## 13. Commit, data-committed and execution-accepted states
+
+### 13.1 Data-committed (DC) state, checkable inside the job
+
+**Atomic commits.** Each file is written to `.tmp.<name>`, fsync'd, renamed, and then the directory is fsync'd. The commit order is:
+
+1. chunks and trace;
+2. `MANIFEST.txt`;
+3. `MANIFEST.sha256`.
+
+**`<RUN>/data/` is in DC state iff all of the following hold:**
+
+1. The producer process exited with code 0.
+2. The directory contains exactly k + 3 regular files: `chunk_00.bin`..`chunk_(k−1).bin`, `trace_audit_blocks.bin`, `MANIFEST.txt` and `MANIFEST.sha256`. There are no other entries, subdirectories, symlinks or `.tmp.*` files.
+3. `MANIFEST.txt` matches §12.6 for the expected tier. `MANIFEST.txt` and `MANIFEST.sha256` are bookkeeping files: they are not listed in the manifest's file lines, and they are permitted.
+4. `MANIFEST.sha256` verifies `MANIFEST.txt`.
+5. Every listed file exists with exactly its listed size and hash.
+
+**Effects of DC.**
+
+- After verifying DC (step P3), the job script makes `data/` read-only (`chmod -R a-w`).
+- The analyzer and auditor verify DC themselves as check A. They never require, read or wait for scheduler state.
+- Their results files reflect only checks A–L on DC data.
+
+### 13.2 Execution-accepted (EA) state, checkable only after the job exits (G8)
+
+An independent G8 post-check, by a non-author of producer, analyzer and auditor, confirms all of the following before unsealing:
+
+1. **Scheduler accounting** (`sacct` for the job and all steps): State = COMPLETED and ExitCode 0:0.
+2. **Resources:** elapsed ≤ 28,800 s; MaxRSS and cgroup memory.peak ≤ 64 GiB; CPUs ≤ 32 on one node; total `<RUN>` bytes ≤ 2 GiB.
+3. **DC re-verified independently:** inventory check and `sha256sum -c` in `data/`.
+4. **AGREEMENT:** `<RUN>/agreement/AGREEMENT.txt` from the single original scientific job shows `results_sha256_equal=1`, `analyzer_exit=0`, `auditor_exit=0` and `auditor_status=PASS`. The checker recomputes both results-file hashes and confirms they are equal. No replacement agreement or post-job rerun is permitted (§18.4).
+5. **Validity line:** line 2 of the analyzer results file is `status=VALID`. The checker reads only this line and computes hashes. No estimate is read before acceptance.
+
+If EA holds, the results are unsealed. Otherwise the run is INVALID and the results stay sealed and uninterpreted.
+
+---
+
+## 14. Analyzer, auditor and sanitized interface
+
+### 14.1 Roles
+
+**Analyzer.**
+
+- Written by the producer author and frozen with the producer at G1.
+- Implements every check A–L of §14.3.
+
+**Auditor.**
+
+- Written independently by a different author under §14.2.
+- Implements every check A–L.
+
+**Common behaviour.**
+
+- Both take `--tier <literal> --data <dir> --out <file> [--timing-only]`.
+- Both emit results in the §15 grammar.
+- Agreement means byte-identical files, checked by SHA-256 equality.
+
+**Exit codes.**
+
+| Code | Meaning |
+|---|---|
+| 0 | completed, VALID form |
+| 1 | completed, INVALID form |
+| 2 | usage or environment error, no results |
+| other, or a signal | crash |
+
+### 14.2 Auditor input interface
+
+**Permitted at any time after G0:**
+
+- this protocol (exact bytes);
+- REV1;
+- the official Random123 specification and KAT file;
+- the SHA-256 standard and standard tools;
+- the §5 constants.
+
+**Permitted after G1F:** the frozen FIXIN bundle (§16.1). It contains public typed inputs only, with no expected outputs.
+
+**Permitted only after the auditor source hash is frozen (G4a):**
+
+- the raw fixture-tier and benchmark-tier data directories from the frozen producer;
+- the producer's FIXOUT files, for mechanical byte comparison.
+
+**Permitted at production:**
+
+- the production data directory;
+- the producer build-ID string;
+- Slurm records.
+
+**Prohibited:**
+
+- producer source, design notes, internal fixture expectations or hand traces;
+- analyzer outputs or any aggregate;
+- reference endpoint values;
+- reviewer commentary on producer code;
+- producer-session transcripts.
+
+### 14.3 Checks
+
+Checks are evaluated in stages, so that the set of failed checks is deterministic:
+
+1. **Stage 1** = A. If A fails, stop.
+2. **Stage 2** = B on every record. If any fails, stop.
+3. **Stage 3** = C–K on every applicable block. Every failing check letter is collected.
+4. **Stage 4** = L, only if stages 1–3 all passed.
+
+**A. Files**
+
+- DC conditions 2–5 of §13.1 for the expected tier.
+- Chunk headers: magic, version, index, first_block, block_count, length 2088, tier_code and build ID equal to the manifest's.
+- Block IDs ascending, complete and non-duplicated over the tier's set.
+- Trace header and exact size.
+
+**B. Record integrity**
+
+- Each record's SHA-256 at offset 2056.
+- Magic, version and length.
+
+**C. Ranges and metadata**
+
+- start_code = block_id & 1.
+- R_t ∈ {0, 1}; factual_target_code = 1 − R_t.
+- t obeys the tier rule.
+- e = popcount(E) and H = [e > 0].
+- H = 1 → focal_slot ∈ E. H = 0 → focal_slot = 0xFF and focal_key = 0xFFFFFFFFFFFFFFFF.
+- history_queries = 128(t−1), checkpoint_queries = 768, total_queries = 128(t+5), block_status = 0.
+- Pre-target caches[i] = 0 for every i with cache_valid bit 0.
+- Per arm:
+  - arm_code = a, target_code = ⌊a/3⌋, retrieval_code = a mod 3;
+  - is_factual per §4.3;
+  - switched_mask per §4.3;
+  - queries = 128;
+  - survivor j < 128 and unique; m ≤ 32; post_policy ∈ {0, 1};
+  - post_policy_mask equals the survivors' post_policy bits;
+  - D_E ≤ 32, d_f ≤ 4, A ≤ 1024, candidate_mismatch_sum ≤ 4096.
+- Numerators within their static ranges.
+
+**D. Key-derived recomputation**
+
+- Stored CHECKPOINT_TIME word equals Philox word0.
+- t equals the tier rule (forced 256 only in benchmark-r1).
+- R_t, I_t and T_t = (R_t ? T_(t−2) : I_t).
+- All 32 κ_i are regenerated, and focal_slot equals the lexicographic argmin over E.
+- Stored focal_key equals κ_focal_slot (H = 1) or the sentinel (H = 0).
+
+**E. Pre-target invariants**
+
+- cache_valid_mask = policy_mask.
+- E = policy_mask & cache_valid_mask.
+
+**F. Conditional checkpoint replay**
+
+- Regenerate W_t.
+- Recompute all six arms from the stored pre-target genotypes, caches, masks, T_(t−2) and I_t.
+- Every arm section, metadata and payload, must be bit-equal.
+
+**G. Numerators from survivors**
+
+- Recompute D_E, d_f, A and the six numerators from the stored survivor entries.
+- They must equal both the stored values and the replay values.
+
+**H. Bounds**
+
+- |NL| ≤ min(32, 4e, 128 − 4e); |NF| ≤ 4; |NP| ≤ 1024.
+
+**I. Identities, over payload only**
+
+- H = 0: arms 0, 1, 2 payload-equal; arms 3, 4, 5 payload-equal; all numerators 0.
+- e = 1: arm 1 payload-equals arm 2, and arm 4 payload-equals arm 5.
+
+**J. Query accounting**
+
+- Per arm, per block and the cohort total, which must equal the manifest `total_queries` and the tier contract.
+
+**K. History-provenance replay (tier replay set)**
+
+- Full replay from update 0.
+- Must match: S_(t−1), T_(t−2), T_(t−1), history retries, every trace D_u, and history_digest.
+
+**L. Arithmetic, classification and rendering**
+
+- §8 and §9 arithmetic and classification.
+- A fallthrough fails L.
+
+**AUDIT_REPORT.txt** (auditor only; never byte-compared):
+
+- ASCII, one line per check: `CHECK <A..L> status=<PASS|FAIL|NOT_EVALUATED> failing_blocks=<int> first_ids=<up to 64 comma-separated block IDs, or NONE>`;
+- then `AUDITOR_RESULT=<PASS|FAIL>`.
+- It contains no sums or estimates.
+
+### 14.4 Known limit
+
+For production blocks 64..41,999, history provenance is not replayed. It is supported only by:
+
+- fixtures;
+- the 64-block replay;
+- check E.
+
+A forged but self-consistent pre-target state with consistently recomputed arms passes checks C–J by design. Conditional-replay acceptance (F) establishes that the arms follow from the stored state. It does not establish that the state is a valid history outcome. The constructed demonstration COND_FORGE (§16.4) makes this explicit, and the publication states it.
+
+---
+
+## 15. Canonical results grammar
+
+### 15.1 Lexical rules
+
+**File format.**
+
+- Printable ASCII, no CR.
+- Single spaces separate tokens; no leading or trailing spaces; no blank lines.
+- Every line ends with LF, and the file ends with `END\n`.
+
+**Values.**
+
+- `<int>`: `0`, or an optional `-` followed by a nonzero digit and further digits. `-0` and `+` are forbidden.
+- `<frac>`: `<int>/<pos>`, where `<pos>` is a positive integer without leading zeros, and gcd(|p|, q) = 1. Zero is `0/1`; an integer v is `v/1`.
+- `<hex64>`: 64 lowercase hex characters.
+- `<tier>`: `production-r1`, `benchmark-r1` or `fixture-r1`. This is the tier the program was invoked with.
+- `<X>` is in the canonical endpoint order `L_rec, L_inn, P_rec, P_inn, F_rec, F_inn`.
+- `<Q>` is in the order `L, P, F`.
+- Lists are comma-separated, without spaces, in canonical order.
+
+### 15.2 VALID form (exactly 26 lines)
+
+```
+BRC2-RESULTS-V3
+status=VALID
+tier=<tier>
+manifest_sha256=<hex64>
+blocks=<n>
+ENDPOINT L_rec sum=<int> den=<32n> mean=<frac> lo=<frac> hi=<frac> label=<LABEL>
+ENDPOINT L_inn sum=<int> den=<32n> mean=<frac> lo=<frac> hi=<frac> label=<LABEL>
+ENDPOINT P_rec sum=<int> den=<1024n> mean=<frac> lo=<frac> hi=<frac> label=<LABEL>
+ENDPOINT P_inn sum=<int> den=<1024n> mean=<frac> lo=<frac> hi=<frac> label=<LABEL>
+ENDPOINT F_rec sum=<int> den=<32n> mean=<frac> lo=<frac> hi=<frac> label=<LABEL>
+ENDPOINT F_inn sum=<int> den=<32n> mean=<frac> lo=<frac> hi=<frac> label=<LABEL>
+DERIVED L avg_lo=<frac> avg_hi=<frac> diff_lo=<frac> diff_hi=<frac> resolved_difference=<0|1>
+PATTERN L <PATTERN>
+DERIVED P avg_lo=<frac> avg_hi=<frac> diff_lo=<frac> diff_hi=<frac> resolved_difference=<0|1>
+PATTERN P <PATTERN>
+DERIVED F avg_lo=<frac> avg_hi=<frac> diff_lo=<frac> diff_hi=<frac> resolved_difference=<0|1>
+PATTERN F <PATTERN>
+SUMMARY <SUMMARY_BODY>
+DESC H_count ALL_F=<int> ALL_M=<int>
+DESC E_hist ALL_F=<33 ints, e=0..32>
+DESC E_hist ALL_M=<33 ints, e=0..32>
+DESC R1_count ALL_F=<int> ALL_M=<int>
+DESC startsum ALL_F L_rec=<int> L_inn=<int> P_rec=<int> P_inn=<int> F_rec=<int> F_inn=<int>
+DESC startsum ALL_M L_rec=<int> L_inn=<int> P_rec=<int> P_inn=<int> F_rec=<int> F_inn=<int>
+DESC factual_A_sum ALL_F=<int> ALL_M=<int>
+END
+```
+
+**Field definitions.**
+
+- `manifest_sha256` is the SHA-256 of the `MANIFEST.txt` bytes.
+- `sum` is Σ numerator.
+- `mean`, `lo` and `hi` are the exact §8.2 values; `<LABEL>` is a §9.3 literal.
+- `<PATTERN>` is one of the 12 §9.4 literals.
+
+**`<SUMMARY_BODY>`** is exactly one of:
+
+- `S1_MATERIAL_TARGET_OFFSETTING quantities=<list of Q>`;
+- `S2_MATERIAL_ADVERSE_PRESENT endpoints=<list of X labelled MATERIAL_NEGATIVE>`;
+- `S3_MATERIAL_POSITIVE_ONLY endpoints=<list of X labelled MATERIAL_POSITIVE>`;
+- `S4_ALL_NEGLIGIBLE_WITHIN_MARGIN`;
+- `S5_NONMATERIAL_SIGN_RESOLVED endpoints=<list of X with a sign-only label>`.
+
+**DESC definitions** (counted per start):
+
+- `H_count`: blocks with H = 1.
+- `E_hist`: block counts by e.
+- `R1_count`: blocks with R_t = 1.
+- `startsum`: Σ of each numerator.
+- `factual_A_sum`: Σ A(factual arm).
+
+The DESC rows are descriptive only.
+
+**Non-production tiers** use the same grammar with their n and the same h constants. They are engineering artifacts, compared by hash only and never read or summarized.
+
+### 15.3 INVALID form (exactly 7 lines)
+
+```
+BRC2-RESULTS-V3
+status=INVALID
+tier=<tier>
+manifest_sha256=<hex64|NONE>
+failed_checks=<comma list of letters A..L, ascending>
+SUMMARY S0_INVALID
+END
+```
+
+**Field rules.**
+
+- `manifest_sha256` is `NONE` iff `MANIFEST.txt` is absent or unreadable.
+- `failed_checks` follows the §14.3 staging exactly:
+  - `A`;
+  - or `B`;
+  - or the nonempty subset of C–K that failed;
+  - or `L`.
+
+The INVALID form contains no sums, means, intervals, labels or patterns. None is fabricated.
+
+### 15.4 Classifier and arithmetic tests
+
+- **Attainable-cohort arithmetic** is tested with NUMVEC fixtures (§16.1). These are numerator vectors that respect every static range.
+- **Boundary cases** are tested by direct injection of rational intervals (CLASSIFIER fixtures), never as claimed 42,000-block vectors. Boundary cases are exact equality at δ or ε, and the fallthrough.
+
+---
+
+## 16. Fixtures
+
+### 16.1 Public fixture-input contract (FIXIN)
+
+**Bundle.**
+
+- The bundle is `FIXIN_BUNDLE/`.
+- It holds files `FIXIN_<id>.txt`, where `<id>` matches `[A-Z0-9_]{1,32}`.
+- It also holds `INDEX.txt`, with lines `<id> <hex64 of file>` in ascending ASCII order.
+- The bundle hash is SHA-256(INDEX.txt).
+
+**Lexical rules.**
+
+- ASCII, LF, final LF, no blank lines.
+- Lines `key=value`, with keys exactly in the order listed for the kind, and no extras.
+- u32 values are written as 8 hex characters and u64 values as 16, both lowercase.
+- Lists are comma-separated, without spaces, and of exact length.
+- Decimals have no leading zeros.
+
+**Common header:** `BRC2-FIXIN-V1`, `fixture_id=<id>`, `kind=<KIND>`.
+
+**Kinds**
+
+**LEMIRE.**
+
+- Fields: `w=<u64, 1..2^39>`, then `x=<1..16 u64>`.
+- Semantics: one survival draw over the x sequence.
+
+**CHECKPOINT.**
+
+- Fields, in order:
+  1. `draws=INJECTED` or `draws=PHILOX`.
+  2. If PHILOX: `tier=fixture-r1`, then `block=<0..15>`.
+  3. `u=<1..256>`.
+  4. If INJECTED: `r_t=<0|1>`. If PHILOX this key is forbidden, and R_t is derived as TARGET_COPY(tier, block, u, 0, 0) word0 & 1 under §5.
+  5. `genotypes=<32 u32>`, `caches=<32 u32>`.
+  6. `policy_mask=<u32>`, `cache_valid_mask=<u32>`.
+  7. `t_rec=<u32>`, `t_inn=<u32>`.
+  8. If INJECTED: `fresh=<32 u32>`, `scout=<32 u32>`, `local=<32 u32>`, `donor=<96 u64>`, `survival_00=` … `survival_31=` (each a list of 1..256 u64), `policy_flip=<u32>`, `focal=<32 u64>`.
+- Meaning of the injected fields:
+  - `local` gives LM masks directly, with bit b meaning "flip b";
+  - `donor` is indexed by 3i+f;
+  - in `survival_dd`, element r is the x for retry r;
+  - in `policy_flip`, bit s means "flip survivor s".
+- Semantics: §4 at update u with T_rec = t_rec and T_inn = t_inn, on the stated state and tape. The explicit INJECTED r_t (or PHILOX-derived R_t) determines the factual metadata: arm 0 alone has is_factual=1 when R_t=1, and arm 3 alone when R_t=0; all other factual flags are zero. A constructed CHECKPOINT is not a cohort record or a claim that its state/target pair is reachable. At early injected updates its factual flag is the supplied synthetic target-choice tag, not a claim that the HALF law used recurrence at updates 1 or 2.
+
+**HISTORY.**
+
+- Fields: `draws=INJECTED`, `block_id=<decimal>`, `start=<ALL_F|ALL_M>`, `updates=<1..3>`, `genotypes0=<32 u32>`.
+- Then, for each k = 1..updates: `u<k>.innov=<u32>`, `u<k>.copy=<0|1>`, followed in order by the CHECKPOINT tape fields fresh, scout, local, donor, survival_00 through survival_31, policy_flip and focal, each prefixed `u<k>.`. The CHECKPOINT header, state, target and r_t keys are not repeated here. The recurrence coin is supplied only by u<k>.copy; updates 1 and 2 ignore it in the HALF target law. No extra fields are accepted.
+- Semantics: factual turnovers under HALF, starting from §2.2 with the given genotypes.
+
+**NUMVEC.**
+
+- Fields: `blocks=<1..42000>`, `constant=<6 ints, canonical endpoint order>`, `override=<NONE | ';'-separated items block:six-ints, ascending block>`.
+- Semantics: §8–§9 on block numerators. Even blocks are ALL_F; the DESC rows are not produced.
+
+**CLASSIFIER.**
+
+- Field: `iv=<12 fracs: lo,hi for each endpoint in canonical order>`.
+- Semantics: §9 directly on the injected intervals.
+
+**Reader validation.** All of the following are mandatory and identical in both implementations:
+
+- exact header and key order;
+- lengths and hex widths;
+- ranges;
+- caches[i] = 0 wherever valid bit i = 0;
+- `cache_valid_mask & ~policy_mask = 0`;
+- u = 1 requires `cache_valid_mask = 0`;
+- NUMVEC numerators within static ranges;
+- CLASSIFIER requires lo ≤ hi.
+
+Readers reject any violation with the codes below.
+
+**FIXOUT output grammar.**
+
+- Header `BRC2-FIXOUT-V1`, then `fixture_id=<id>`, then a status line: `status=OK` or `status=ERROR <INPUT_SYNTAX|INPUT_RANGE|DRAW_EXHAUSTED|RETRY_CAP>`.
+- On OK, the kind body follows. On ERROR, nothing follows.
+- The file ends with `END`.
+
+| Kind | Body on OK |
+|---|---|
+| LEMIRE | `result=<r>,<Z as u64 hex>` |
+| CHECKPOINT | `eligible_mask=<u32>`, `e=<int>`, `H=<0\|1>`, `focal_slot=<2 hex; ff = none>`, `focal_key=<u64>`, `arm0=` … `arm5=` (each 560 hex characters: the full 280-byte section), `numerators=<6 ints>` |
+| HISTORY | `D_u0=<hex64>`, then for each k: `T_u<k>=<u32>`, `retries_u<k>=<int>`, `S_u<k>=<528 hex>`, `D_u<k>=<hex64>` |
+| NUMVEC | lines 6–18 of §15.2, with den = 32·blocks and 1024·blocks |
+| CLASSIFIER | `LABEL <X> <label>` × 6; then either the three DERIVED/PATTERN pairs and the SUMMARY line, or, if any label is `FALLTHROUGH`, only `SUMMARY S0_INVALID` |
+
+### 16.2 Required FIXIN coverage
+
+**Authorship and freeze.**
+
+- The producer author writes the bundle.
+- A non-author reviews it for sanitization (inputs only, no expected outputs or internals) and for coverage.
+- It is frozen at G1F, before any source acceptance and before any implementation output exists.
+
+**Required coverage**, at least one input each:
+
+1. LEMIRE:
+   - W = 3, x = 0 (reject), then a following accept;
+   - W = 3, x = 2^63;
+   - W = 2^39;
+   - a sequence of 16 rejections leading to exhaustion (DRAW_EXHAUSTED).
+2. CHECKPOINT hand trace covering:
+   - all four families;
+   - a donor mismatch tie broken by key, and one broken by family;
+   - local bits;
+   - survivor order;
+   - mutation.
+3. HISTORY over 2–3 updates covering:
+   - F→M, M→F and M→F→M cache transitions;
+   - update 1 with ALL_M and invalid caches;
+   - T_1, T_2 with R_1, R_2 ignored;
+   - update-3 copy and innovation.
+4. CHECKPOINT recurrent memory-better case (cache mismatch 0, fresh 16) and innovation memory-worse case (cache 28, fresh 4).
+5. Duplicate candidate: cache equals parent genotype.
+6. H = 0, e = 1, e = 32, and e ∈ {8, 24, 31}.
+7. Focal key tie, with injected equal keys.
+8. Branch-divergent rejection: draw d rejects in one arm only.
+9. PHILOX-sourced CHECKPOINT on fixture block 3 with an arbitrary state.
+10. NUMVEC:
+    - all NL = +32;
+    - all zero;
+    - mixed positive and negative;
+    - a vector that yields offsetting.
+11. CLASSIFIER:
+    - lo = δ exactly (not MATERIAL_POSITIVE);
+    - hi = −δ exactly;
+    - lo = −ε exactly;
+    - every pattern rule and every summary token S1–S5;
+    - a fallthrough interval of width greater than ε.
+12. COND_FORGE: an INJECTED CHECKPOINT at u=193, with an explicit r_t and an arbitrary state satisfying check-E invariants (cache_valid_mask = policy_mask), but not claimed to be reachable from any history. It is tested only under the conditional applicability rules in §16.4; it does not carry a cohort header, Philox-derived tape or history evidence.
+13. Three malformed inputs (key order, hex width, invalid nonzero cache). Their ERROR results are fixed by this protocol.
+
+### 16.3 Producer fixtures (G3), run by the frozen producer's harness
+
+| Item | Content |
+|---|---|
+| F1 | Philox KATs; the 33-key table; disjointness |
+| F2 | Each counter form at its range endpoints; out-of-range abort |
+| F3 | Every FIXIN item, with the producer's own hand-derived expectations for items 1–8 kept internal |
+| F4 | Checkpoint mapping: w & 63 = 0 → 193 and 63 → 256 in the production rule; the benchmark tier forces 256; label invariance |
+| F5 | Six-arm address sharing: no label in any address |
+| F6 | Serialization round-trip at every offset; endian check; manifest generation |
+| F7 | Atomic commit after a kill mid-write: no `.tmp.*` in any manifest, and DC fails |
+| F8 | CLI: an unknown argument or any override attempt exits 2 without writing |
+| F9 | Fixture-tier dataset (blocks 0..15) produced; byte identity across 1 versus 32 threads, separate processes, and reversed block computation order (harness option) |
+| F10 | Analyzer full run on the fixture-tier dataset; results hash recorded, file quarantined and not read |
+
+### 16.4 Auditor fixtures (G4)
+
+**Own fixtures.**
+
+- The auditor's own versions of F1–F5, built from §14.2 inputs.
+- Its own FIXOUT for every FIXIN item, frozen with the auditor source (G4a).
+
+**Cross-implementation agreement (after G4a).**
+
+- Byte equality of auditor versus producer FIXOUT, for every FIXIN item.
+- Byte equality of results files on the fixture-tier dataset, by hash only.
+- Check K passes on blocks 0..15.
+
+**Raw corruptions** of the fixture-tier dataset, each detected by A or B:
+
+- a byte flip in every record region;
+- truncation;
+- a duplicate or swapped record;
+- a wrong record length;
+- a missing chunk;
+- an extra file;
+- a leftover `.tmp.*` file;
+- manifest tampering.
+
+**Forged corruptions.** The record, chunk and manifest hashes are recomputed so that A and B pass, and each forgery is detected by the named semantic check:
+
+| Forgery | Detected by |
+|---|---|
+| Survivor mismatch | F, G |
+| Survivor genotype | F |
+| Candidate index | C or F |
+| Numerator | G |
+| Focal slot | D |
+| Focal key, including a nonzero key with H = 0 | C, D |
+| Nonzero cache at an invalid slot | C |
+| Checkpoint word or t | D |
+| Start code | C |
+| R_t | D |
+| Switched mask | C |
+| Swapped arm sections | C |
+| Query count | C, J |
+
+**FORGE_CACHE, the history-detection test.**
+
+- In fixture block 3, replace the cache of one eligible M slot with a different value. Valid bits stay unchanged, so check E still holds.
+- Recompute all six arm sections from the forged state using the auditor's own conditional-replay implementation, then recompute the numerators, record hash, chunk and manifest.
+- history_digest and the trace are left unchanged.
+- The result is internally consistent except for its history relation.
+- Required outcome: checks A–J pass and K fails.
+
+**COND_FORGE, the conditional-acceptance demonstration.**
+
+- This is an injected FIXIN/FIXOUT test, not a cohort audit. Both implementations first apply the complete §16.1 CHECKPOINT input validator, including explicit r_t, u=193, cache zeros, and the exact key/tape lengths and ranges.
+- Its conditional output checks are exactly:
+  - C_PAYLOAD: validate every FIXOUT count and field range, eligible/focal sentinels, arm metadata (including factual flags from supplied r_t), switched masks, survivor identities and uniqueness, mismatch range, policy bits and query counts. No cohort-header or tier field is inferred.
+  - E: compute the pre-target eligibility/validity relations from the supplied state; cache_valid_mask = policy_mask holds here.
+  - F_INJECTED: regenerate all six sections from the supplied state, targets, r_t and injected tape, using §2 and §4; compare the complete sections. Supplied fresh/scout/local/donor/survival/policy/focal values replace Philox lookups only for this test.
+  - G: independently recompute the six integer numerators from the FIXOUT survivor ancestry and mismatches; compare to FIXOUT numerators and the conditional replay.
+  - H: check the unchanged lineage, focal and performance bounds.
+  - I: check the unchanged scientific-payload identities when H=0 or e=1.
+- Cohort checks A and B (files and record hashes), D (Philox key-derived fields), J (history/cohort accounting), K (history provenance) and L (cohort inference) are NOT_APPLICABLE to this constructed demonstration. C_PAYLOAD and F_INJECTED are explicitly fixture-specific subsets/substitutions, not claims that the full cohort C/F checks ran.
+- The fixture harness records pass/fail for these conditional checks and cross-implementation FIXOUT byte equality. It must not emit a production-style A–L PASS or a valid-cohort acceptance for COND_FORGE. Missing fixture inputs or a conditional-check failure fail the fixture.
+- The demonstration establishes only that both implementations apply the checkpoint operator consistently to the supplied state. It says nothing about the state's history. Actual production/benchmark/fixture-tier cohort data still require every applicable A–L check without substitutions; FORGE_CACHE remains the separate internally consistent full-history detection test.
+- No random history outside fixture blocks 0..15 is generated for this purpose.
+
+---
+
+## 17. Benchmark and binding feasibility rule
+
+### 17.1 Prior evidence
+
+Accepted Study 001 BIT receipts are cited as context only [PROVENANCE FIELD]. They do not replace this benchmark.
+
+### 17.2 Node and toolchain freeze
+
+Before submission, `NODE_TOOLCHAIN_FREEZE.txt` records the representative production node class: partition/feature, CPU model, filesystem path, compiler, flags and build IDs [PROVENANCE FIELD]. Production must use the same class and the same binaries.
+
+### 17.3 The single benchmark submission
+
+**Allocation:** one sbatch with time limit 00:10:00, 32 CPUs, 64 GiB and 1 GiB of output, on the frozen class.
+
+**Scope:**
+
+- tier benchmark-r1 only;
+- the production key is never derived;
+- no production-namespace data is read or created.
+
+All steps are timed with a monotonic clock. Each wall interval is assigned to exactly one term.
+
+| Step | Action | Term |
+|---|---|---|
+| B1 | `brc2_produce --tier benchmark-r1 --out <BENCH>/data --threads 32`. Whole process wall, covering all compute, Philox, history hashing and serialization, trace construction, record hashing, chunk writes, fsync, renames and manifest. | T_prod |
+| B2 | Full-volume I/O copy into `<BENCH>/iovol/`, outside every data inventory: 42 copies `io_00.bin`..`io_41.bin` of a 2,088,064-byte chunk image, plus one 524,832-byte trace copy. Each written as temp, fsync, rename, directory fsync, sha256. | T_ioS |
+| B3 | `sha256sum` re-hash of `iovol/` | T_hashS |
+| B4 | DC verification of `<BENCH>/data` (inventory plus `sha256sum -c`) | T_P3 |
+| B5 | Analyzer `--timing-only`: complete checks A–L, exact inference, classification, rendering of the full results byte string in memory, and its SHA-256. The bytes and aggregates are discarded; only timings and VALID/INVALID are printed. Check K time is reported separately. | T_an (total), T_an_K |
+| B6 | Auditor `--timing-only`, identical in scope, plus construction of the audit report in memory | T_aud, T_aud_K |
+
+**Blindness.**
+
+- Benchmark data is quarantined and read only by B4–B6.
+- No numerator, mean or estimate is printed or stored outside the records.
+
+### 17.4 Projection
+
+Let s = 42000/1024 = 41.015625. Linear and fixed terms are separated as follows:
+
+- **Linear:** per-block work in the producer, verification and checks A–J and L.
+- **Fixed:** check K replays 64 blocks in both production and benchmark, and production t ≤ 256 is never above the benchmark t.
+
+The terms are:
+
+- **C** = s·T_prod. This conservatively overcounts fixed startup and also includes producer I/O.
+- **IO** = T_ioS. This deliberately double-counts I/O already inside C.
+- **V** = T_hashS + s·T_P3 + s·(T_an − T_an_K) + s·(T_aud − T_aud_K) + T_an_K + T_aud_K + 120 s.
+  - T_hashS and s·T_P3 deliberately double-count verification hashing.
+  - The 120 s allowance conservatively covers untimed job-script operations: P1 hash checks, directory creation, chmod and the P6 hash comparison.
+
+**Feasibility passes iff all of the following hold:**
+
+1. 2(C + IO + V) ≤ 14,400 s.
+2. Peak memory, the larger of cgroup memory.peak and Slurm MaxRSS, is ≤ 32 GiB.
+3. Projected production output (§12.8) is ≤ 1 GiB, and the benchmark's own output is ≤ 1 GiB.
+4. B5 and B6 both report VALID.
+5. The job completes within its limits.
+
+**Receipt.** `BENCH_RECEIPT.txt` records every T term with its definition, s, C, IO, V, the total, memory, outputs, node identity and the decision.
+
+**Status of the projection.** It is a measured estimate with a binding safety margin. It is not a runtime guarantee.
+
+**Failure.** A benchmark timeout or any failed criterion fails qualification and closes this route by policy (§19.5). It does not logically prove that production is infeasible.
+
+---
+
+## 18. Execution, resources and failure policy
+
+### 18.1 Production limits
+
+- 8 h wall (28,800 s), 32 CPUs, 64 GiB, 2 GiB output.
+- One node and one task under Slurm, with cgroups enforced.
+- Output is bit-deterministic regardless of threads or node.
+
+### 18.2 The single scientific submission
+
+**The job script** is a plain shell script reviewed at G6.
+
+| Step | Action |
+|---|---|
+| P1 | Verify the binary hashes and the protocol hash; create `<RUN>` with an empty `data/`. |
+| P2 | Run the producer: production-r1, 32 threads. |
+| P3 | Verify DC (inventory plus `sha256sum -c`); `chmod -R a-w data/`. |
+| P4 | Run the analyzer and write `results/RESULTS_ANALYZER.txt`. |
+| P5 | Run the auditor and write the `audit/` files. P4 and P5 run with failures captured, not fatal. |
+| P6 | Write `agreement/AGREEMENT.txt` (format below). |
+
+**AGREEMENT.txt format:**
+
+```
+BRC2-AGREEMENT-V3
+data_committed=<0|1>
+analyzer_exit=<int>
+auditor_exit=<int>
+results_sha256_equal=<0|1>
+auditor_status=<PASS|FAIL|CRASH>
+```
+
+- `auditor_status` is PASS iff the auditor exited 0. It is CRASH for a signal, an exit code of 3 or more, or missing outputs. It is FAIL otherwise.
+
+**Script exit status.**
+
+- The script exits 0 iff P1–P3 succeed, the analyzer and auditor both exit 0, their results hashes agree, and P6 successfully writes its agreement with auditor_status=PASS. P4/P5 failures are captured so P6 can preserve evidence, but the final script exit is nonzero for any such failure or disagreement.
+- If P2 or P3 fails, the script stops and exits nonzero.
+
+**Logs.**
+
+- stdout and stderr carry only progress counts, timings and exit codes, and never results content.
+- Logs are capped at 16 MiB.
+
+### 18.3 Submissions
+
+- Exactly one benchmark submission and exactly one scientific submission.
+- No arrays, no automatic retry and no resume.
+- **Uncertain state:** if sbatch errors or the job's state is uncertain, inspect squeue and sacct. Never resubmit. If the state remains unresolved, STOP.
+- **Production or post-processing failure:** if DC fails, the original scientific job or any required step is not COMPLETED/0:0, the producer aborts, either analyzer/auditor fails or crashes, or results disagree:
+  - preserve everything;
+  - write a failure report with no aggregation of partial blocks;
+  - the route closes.
+
+### 18.4 No post-production reruns or repairs
+
+- No auditor-only invocation, replacement agreement, post-job analyzer invocation, post-job auditor invocation or corrected-source reanalysis is permitted for this route.
+- The single original scientific job and all required steps must finish successfully and satisfy §13.2. An OOM, node failure, signal, audit failure or disagreement is not waived by committed producer data.
+- A failure preserves every data file, sealed result, log and accounting receipt, closes the route, and yields a failure/feasibility report without interpretation of rejected or partial results.
+- No producer, analyzer or auditor retry, resume, new blocks or new scientific submission follows automatically. This removes the earlier optional recovery convenience and does not authorize any additional execution.
+
+### 18.5 H200
+
+The existing H200 allocation 54206245 may optionally host agent work, compilation or fixtures. It is not a prerequisite for anything scientific. The benchmark and production run on the frozen CPU class.
+
+---
+
+## 19. Gates, roles, effort and disposition
+
+### 19.1 Gates
+
+Ordinary files and standard hashes are used. There is no approval controller.
+
+| Gate | Artifacts | Accepted when |
+|---|---|---|
+| G0 Design | This v0.4 file and its SHA-256 | Independent confirmation returns GO on the exact hash. Implementation of any kind starts only after G0. |
+| G1F Fixture inputs | FIXIN bundle, INDEX hash, KAT-file hash, 33-key table with two agreeing computations, legacy key comparison | Non-author review GO for sanitization and coverage. Frozen before any source acceptance or implementation output, and released to the auditor author. |
+| G1 Producer source | Producer and analyzer source with inventory hashes; list of old BIT sources consulted [PROVENANCE FIELD]; copied fragments declared | Non-author source review GO. This is a source-only review and is not a runtime pass. Accepted old source is reference for the new source. Old conditional-route engineering barriers do not apply to this study. A discrepancy with §2 is a design issue, never silently adopted. |
+| G2 Build | Compiler, flags (no fast-math, no floating point in the operator), command; binary SHA-256 = build ID; node/toolchain freeze | Recorded |
+| G3 Producer fixtures | F1–F10 receipt, FIXOUT files, fixture-tier dataset | All pass |
+| G4a Auditor freeze | Auditor source and binary hashes, own FIXOUT, sanitized-input log | Recorded before any producer output is accessed |
+| G4 Auditor acceptance | §16.4 suites and cross-implementation agreement | Non-author review GO |
+| G5 Benchmark | Single submission; BENCH_RECEIPT | §17.4 passes |
+| G6 Readiness | All receipts, job script, ledger | Independent GO; caps met |
+| G7 Execution | Root exact-hash authority record | One submission |
+| G8 Result acceptance | §13.2 independent post-check | EA holds; then unseal |
+| G9 Publication | Draft update | Independent review |
+
+### 19.2 Roles
+
+- Every reviewer is a genuine non-author of the artifact under review.
+- The auditor author is not the producer author and works only from §14.2 inputs.
+- No reviewer passes producer internals to the auditor author.
+- Fresh sessions are used. Suggested split: Codex CLI authors the producer and Claude CLI the auditor, or the reverse, with cross-review by fresh sessions.
+
+### 19.3 Active-time ledger
+
+- The ledger is `ACTIVE_TIME_LEDGER.tsv`, append-only, with columns start_utc, end_utc, actor, kind (model_generation | root_session | human | wait), gate, purpose.
+- Active time is the sum of non-wait rows. Concurrent rows are summed rather than merged (conservative).
+- All model generation, including any output continuation, is counted.
+
+### 19.4 Limits
+
+- Design milestone through G0 includes v0.2, v0.3, their reviews, and this explicitly authorized reopening v0.4: ≤ 4.0 active hours in total. The reopening repair plus its one independent GO/STOP review also has a separate ≤60 additional active-minute cap; no prior time is reset.
+- Cumulative through G6: ≤ 16.0 active hours.
+- At most 2 integrated corrections across the route. An integrated correction is any FIX at any gate or any change to this protocol.
+- The v0.2 FIX is correction 1. The user explicitly authorized the proposed reopening after the v0.3 STOP; this v0.4 repair is correction 2 of 2. None remains. A need for another integrated correction closes this route; no automatic further FIX loop is permitted.
+
+### 19.5 Disposition
+
+The route closes with a feasibility disposition on any of:
+
+- STOP;
+- an exceeded cap;
+- a third correction need;
+- an irreparable fixture or bit-identity failure;
+- benchmark qualification failure;
+- production failure.
+
+There is no auxiliary repair chain. The earlier v0.3 STOP and all evidence remain preserved. The human reply "Yes, reopen this attempt" authorized only the concrete REOPENING_PROPOSAL and one fresh independent GO/STOP decision on this repaired exact file. It did not retrospectively accept v0.3, authorize execution of a rejected candidate, change the scientific design, or reset any cap.
+
+**Scheduling.** The user later explicitly authorized a scheduled 30-minute continuation check. The heartbeat `bit002-research-continuation` is active. That scheduling is coordination only. It does not alter, extend or waive any gate, cap, correction count or authority. The user's GO authorizes useful advancement through these gates and waives none of them.
+
+---
+
+## 20. Publication
+
+**Form.** A focused update to the existing paper and repository.
+
+**Required content:**
+
+- all six estimates with intervals, labels, derived intervals, patterns and summary;
+- direction stated as CACHE minus FRESH using the §9.6 templates;
+- the e and H distributions;
+- every adverse, negligible, sign-only and offsetting finding, stated literally;
+- the §14.4 provenance limit and the near-monomorphism caveat;
+- the hashed focal-selection definition;
+- the §10 notes, as unprivileged;
+- full reproducibility material: protocol, keys, build IDs, manifests, audit report, benchmark receipt and ledger totals;
+- the legacy failure history.
+
+**Exclusions:**
+
+- no mediation, allele, biology, universal-mechanism or TORUS claims;
+- INVALID estimates are never interpreted;
+- a failed route yields only a feasibility report, never a scientific negative.
+
+---
+
+## Correction disposition (v0.2 FIX, accepted as one integrated correction)
+
+1. **Tier-specific schema.**
+   - §3.1 freezes the tier table: production 42,000 blocks, benchmark 1,024 with forced t = 256, fixture exactly blocks 0..15.
+   - The table fixes ⌈n/1000⌉ chunks with final counts 1,000/24/16, traces 64/64/16, tier literals and codes, and query totals. Fixture totals are computed from the actual checkpoints.
+   - The stored CHECKPOINT_TIME is always the actual Philox word. Forced t comes only from the tier, and no override path exists (enforced by the CLI, fixture F8).
+   - Checks C and D are tier-aware.
+   - Constructed fixtures use the public FIXIN/FIXOUT contracts (§16.1), separate from cohort records, with frozen reader and writer validation.
+2. **Completion states.**
+   - The DC state (§13.1) is checked in the job by P3 and by check A. The EA state (§13.2) is checked only by the independent G8 post-check after exit.
+   - The exact data inventory includes the manifest bookkeeping files. Results, audit and agreement files sit in separate paths (§12.7).
+   - The reopened v0.4 removes the optional auditor-only invocation (§18.4). The original single scientific job and all required steps must succeed; no replacement agreement or post-job recovery is allowed.
+3. **Payload identity.**
+   - Equality is over arm bytes [8, 280) (§12.3, §7.3, check I, fixtures). Metadata is validated separately by check C.
+   - Checks C and D validate the focal key, its H = 0 sentinel and zero invalid caches.
+   - All six arms are still executed in full.
+4. **Results grammar.**
+   - §15 gives exact lexical rules, the 26-line VALID form and the 7-line INVALID form, which has staged failed checks and no fabricated values.
+   - All label, pattern and summary literals and name lists are fixed, as are the interleaving of derived and pattern lines and the startsum format.
+   - NUMVEC (attainable arithmetic) is separated from CLASSIFIER (boundary and fallthrough injection).
+5. **Reporting direction.** §1.6 and §9.6 use CACHE minus FRESH: "cached rather than paired-fresh retrieval increased/decreased".
+6. **Focal selection and claim scope.**
+   - The hashed focal-selection distribution has nonzero tie probability ≤ 496/2^64 (§4.2, §7.3).
+   - Independence is stated conditional on t over fixed full arrays; shared reads are intentional (§5.5, §6.1).
+   - Operator-implied sign claims are removed and §10 is reduced to an unprivileged note.
+7. **Benchmark cost.**
+   - Every production operation is assigned to exactly one measured term or explicit overcount, with linear and fixed terms separated (§17.3–17.4).
+   - Timing-only modes render and discard output internally.
+   - Full-volume I/O is copied outside the data inventory.
+   - The node and toolchain are frozen beforehand.
+   - A timeout fails qualification but proves nothing about production feasibility.
+8. **Fixture contract.**
+   - FIXIN is authored, sanitized and frozen at G1F, then released to the auditor author. It contains no producer expectations (§14.2, §16).
+   - COND_FORGE is a constructed conditional-replay demonstration, not an extra history.
+   - FORGE_CACHE is internally consistent except for its history relation, so only check K detects it.
+   - Auditor independence is preserved through G4a.
+
+**Also:** the missing table pipe is fixed (§12.1), and the scheduling wording is updated (§19.5).
+
+## Reopening disposition (correction 2 of 2)
+
+- The user authorized this single bounded reopening after the preserved v0.3 terminal STOP.
+- INJECTED CHECKPOINT now requires r_t; PHILOX CHECKPOINT derives R_t from its fixed tier/block/update. Full arm factual flags are determined. HISTORY's existing copy key remains its only recurrence input.
+- COND_FORGE now has an explicit typed-input validator and conditional check applicability. It does not claim cohort-header/key/history validation; actual cohort A–L requirements are unchanged.
+- The optional auditor-only recovery is removed. Successful original-job accounting and successful analyzer/auditor agreement are both required; failure evidence is retained without rerunning or interpreting invalid results.
+- The manifest-size estimate and classifier-width explanation are corrected, without changing record formats, endpoints, thresholds or algorithms.
+- Sections 1–8, the cohort sizes, random namespaces and operator, six contrasts, inference, resource/scientific-submission limits and claim boundaries are unchanged. No scientific outcome informed these edits.
+- One non-author independent review must return GO on this exact v0.4 hash before implementation. STOP closes the reopened route. No further correction allowance is created.
+
+## Acceptance checklist (confirmation review: GO or STOP only)
+
+**Scope**
+
+1. [ ] Version v0.3, candidate status, new namespace, old studies frozen, BIT only.
+
+**Design and randomness**
+
+2. [ ] Operator restated in full (§2); fixed values preserved: B = 42,000, parity starts, checkpoint 193..256, HALF law, the six arms and their codes, the factual mapping and the shared tape.
+3. [ ] Tier table complete; no override path; actual checkpoint word stored.
+4. [ ] Keys, KATs, coordinates and disjointness; idealization stated; fixed full arrays; conditional independence; intentional sharing.
+
+**Identification and endpoints**
+
+5. [ ] Conditional-equivalence proof; hashed focal estimand with the 496/2^64 bound; no exact-uniformity claim.
+6. [ ] Six endpoints, bounds, denominators and payload-equality identities unchanged in substance.
+
+**Inference and classification**
+
+7. [ ] Alpha allocation, frozen half-widths, exact rationals, derived intervals and coverage.
+8. [ ] Labels, 12 pattern literals and summary tokens exhaustive; reporting direction is CACHE minus FRESH.
+
+**Records and audit**
+
+9. [ ] 2,088-byte layout unchanged; payload [8, 280); chunk, trace and manifest per tier.
+10. [ ] DC versus EA states; exact data inventory; separate result paths; G8 post-check.
+11. [ ] Checks A–L staged; focal key, sentinel and invalid-cache checks; provenance limit stated.
+12. [ ] Results grammar byte-complete, including the INVALID form.
+
+**Fixtures**
+
+13. [ ] FIXIN/FIXOUT contracts; G1F freeze timing; coverage list; FORGE_CACHE and COND_FORGE semantics.
+
+**Feasibility and execution**
+
+14. [ ] Benchmark cost partition, projection, limits, frozen node, and no-proof-from-timeout wording.
+15. [ ] One benchmark submission and one scientific submission; no post-production producer/analyzer/auditor rerun, replacement agreement or recovery waiver.
+16. [ ] Gates G0–G9 including G1F and G4a; non-author roles; source review is not a runtime pass; H200 optional.
+17. [ ] 4 h / 16 h caps, correction 1 of 2 used, scheduling wording confined to coordination.
+
+**Publication and completeness**
+
+18. [ ] Publication scope and exclusions.
+19. [ ] No unresolved scientific or interface choice remains; only [PROVENANCE FIELD] items are unset, and each is fixed before any outcome.

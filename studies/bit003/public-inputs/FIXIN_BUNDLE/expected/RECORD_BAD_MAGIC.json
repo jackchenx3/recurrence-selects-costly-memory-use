@@ -1,0 +1,1 @@
+{"code":"FORMAT","id":"RECORD_BAD_MAGIC","kind":"RECORD","status":"ERROR","version":1,"where":{"field":"magic"}}

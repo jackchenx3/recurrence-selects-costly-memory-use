@@ -1,0 +1,33 @@
+{
+  "at_utc": "2026-10-26T01:29:19.375878+00:00",
+  "gate": "POST_G4A_CROSS_IMPLEMENTATION_FIXTURE_HASH_AGREEMENT",
+  "verdict": "EXACT_COMPLETE16_FIXTURE_DATA_AND_CANONICAL_RESULTS_HASHES_AGREE",
+  "prior_auditor_G4a_freeze": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G4A_AUDITOR_V2_OWN_FREEZE.json",
+    "sha256": "4600b000dffd727be09db304348692ca28b774dfc88a77e23e5332cd3e3bd23f"
+  },
+  "entire16_fixture_DATA_files": [
+    {
+      "file": "chunk_000.bin",
+      "bytes": 3331520,
+      "sha256": "a5a7b7268c8cd1b22cf1d2f3bcc9fb6b91b5fa08fc103809153d1318f7b0b33a"
+    },
+    {
+      "file": "MANIFEST.json",
+      "bytes": 599,
+      "sha256": "1fcd3ce5c960ef66fb2fa1bfd260af6a05649059738108a850f93ee5074c3150"
+    },
+    {
+      "file": "MANIFEST.sha256",
+      "bytes": 80,
+      "sha256": "ab6eef67f6c066193a1dcb5fa62bb05f51369521b70135f1874e568622dff3cd"
+    }
+  ],
+  "results_sha256": "1832de3a239aba79c584b2179bc62dfb00f01c749097e5b026188c03701e3888",
+  "coordinator_only_hash_comparison_after_freeze": true,
+  "numerical_result_contents_not_read": true,
+  "producer_fixture_original_job": "54309377",
+  "auditor_fixture_original_job": "54309378",
+  "auditor_program_may_now_consume_frozen_producer_fixture_only_for_gated_cross_checks": true,
+  "G4_complete_or_science_authority": false
+}

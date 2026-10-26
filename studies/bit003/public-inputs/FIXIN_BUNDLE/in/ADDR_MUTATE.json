@@ -1,0 +1,1 @@
+{"id":"ADDR_MUTATE","kind":"ADDRESS","payload":{"b":15,"entity":31,"purpose":"POLICY_MUTATION","subindex":0,"tier":"fixture-r1","u":512,"words":["00000001","00000000","00000000","00000000"]},"version":1}

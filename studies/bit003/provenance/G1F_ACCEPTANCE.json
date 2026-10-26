@@ -1,0 +1,35 @@
+{
+  "at_utc": "2026-10-25T22:55:43.759572+00:00",
+  "gate": "G1F",
+  "verdict": "GO",
+  "candidate_manifest": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/G1F_FROZEN_CANDIDATE_V2.json",
+    "sha256": "c37259ff21e8bb2b090f206728c25ab4a4215035a47858504ce8ac6e4816b04d"
+  },
+  "file_count": 210,
+  "literal_case_count": 96,
+  "G0": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/gates/G0_ACCEPTANCE.json",
+    "sha256": "ef7b028aa9a5230621100188610d26da0f9e0e056538f796e55a8859f888a7d9"
+  },
+  "independent_review": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g1f-independent-review-v2/REVIEW.txt",
+    "sha256": "76c0d5ea5d3fb3088b72c19fe4e9e040c9a05395262a4fac5df629e199eeed7f"
+  },
+  "authentication": {
+    "path": "/Users/chenx3/Documents/Codex/2026-09-20/review-the-scientific-conclusions-in-mnt/outputs/phase3-bit-sustained-retrieval-003-20261025/g1f-independent-review-v2/ROOT_AUTHENTICATION.json",
+    "sha256": "d2c4b4cc8141c7fbd2a2f1131392e9583d8937137ac4cdf178e6609c211df4c6"
+  },
+  "accepted_scope": "Complete frozen public engineering contract, input closure, 27 keys plus 126 legacy keys, directed interval certificate, official KAT and 96 literal cases. V1 FIX findings cleared; all prior failures/candidates preserved.",
+  "runtime_correctness_or_performance_claim": false,
+  "source_compilation_or_science_authority": false,
+  "remaining_gates": [
+    "exact nonauthor SOURCE GO for each candidate",
+    "G2-G4 FRCE Slurm builds/fixtures, G4a auditor own freeze before producer access and independent correctness",
+    "G5 exactly one full 64-block benchmark <=23.04 seconds",
+    "G6 independent readiness",
+    "G7 exact ROOT science authority",
+    "G8 independent original-job execution acceptance before unseal",
+    "G9 claims/publication review"
+  ]
+}

@@ -1,0 +1,1 @@
+{"id":"RECORD_ILLEGAL_CACHE_REHASH","kind":"RECORD","payload":{"append_hex":"","base":"FIXIN_BUNDLE/literals/SYNTHETIC_RECORD.bin","patches":[{"hex":"01000000","offset":2208}],"rehash":true,"truncate":208216},"version":1}

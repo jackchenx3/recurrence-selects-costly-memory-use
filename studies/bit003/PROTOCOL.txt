@@ -1,0 +1,265 @@
+PHASE3-BIT-SUSTAINED-RETRIEVAL-003 — prospective protocol v0.1
+25 October 2026. DRAFT FOR INDEPENDENT SCIENTIFIC REVIEW; NOT EXECUTION AUTHORITY.
+
+1. Question, authority and boundaries
+Does sustained availability of cached proposals, rather than fresh substitutions,
+change subsequent memory-policy enrichment in the supplied BIT/PL model?
+Human authority: USER_AUTHORITY.json. This is separate new work, not a rerun,
+extension, top-up, pooled analysis or replacement of BIT002 or Studies001–003.
+The original incomplete broader Phase3 remains incomplete. Published v1.3.0
+and all earlier evidence remain immutable. No scientific job is authorized by
+this candidate. No parameter sweep or revival of the original large protocol.
+
+The intervention identifies a total downstream effect of a specified sustained
+proposal rule, including state, competition and policy-frequency feedback. It
+does not identify natural mediation, a fraction of earlier enrichment mediated
+by retrieval, evolution of a new memory architecture, retention versus retrieval
+selection, per-carrier fitness, invasion or equilibrium. No biological inference,
+recurrence-law intervention or cross-operator generality follows. "Enrichment"
+here means policy frequency over a fixed follow-up under continuing mutation,
+not a pure selection coefficient or absence of mutation effects.
+
+2. Binding model reference and exact intervention
+Normative reference is BIT002 PROTOCOL_V0_4_ACCEPTED.txt SHA256
+71ccc1d065fa4868c30f96588ec34312bdc435e1047214c60b1f5643846c7daa,
+sections2.1–2.4 ONLY for state, initialization, HALF target law and full turnover;
+section5.1 for Philox4x32-10 algorithm; section12.1 for state serialization.
+A byte-identical copy must accompany this candidate and every implementation.
+Other BIT002 checkpoints, keys, endpoints, inference, submission counts and
+resource rules are NOT imported. The present document explicitly overrides
+update ranges, key strings, initialization mixture and switched-set scheduling.
+
+32slots, uint32 genotypes/caches, policies F/M. Exactly four candidates/parent:
+parent; cached-or-fresh policy probe; global scout; donor-mutated local child.
+128evaluations/turnover. Integer Plackett–Luce without replacement32survivors,
+the reference tie rules, local/policy mutations1/32 and survivor cache transition
+apply unchanged. Reference survival rejection index256 invalidates the run.
+An M survivor retains its producing parent's pre-update genotype as its cache;
+an F survivor has invalid zero cache. This applies in BOTH branches even when
+retrieval is disabled. No cache deletion, altered mutation, clamped policy,
+extra proposal, extra query or change in retention/inheritance is permitted.
+
+Each block starts at update0 with random genotypes and invalid caches; even
+block IDs ALL_F, odd ALL_M. Generate a common factual CACHE history updates
+1..256 using Q=empty. Checkpoint is the complete post-update256 state S256;
+it is fixed in advance, not selected for frequency, eligibility or performance.
+Copy S256 exactly into branches C and A. Follow both through updates257..512:
+ C: Q=empty at every update, cached probes available under reference eligibility.
+ A: Q={i: pol_i=M and v_i=1 in THAT BRANCH'S current pre-update state}.
+Thus A always substitutes the already-defined fresh policy probe at its current
+eligible slots; C and A recompute eligibility independently after diverging.
+Both branches feed their OWN survivors, genotypes, policies and caches into the
+next turnover. No shadow is discarded after a single step. No forcing states,
+lineages or eligibility to remain matched. Both face the SAME target T_u at
+each absolute update, including recurrence across the checkpoint boundary.
+
+The intervention deliberately changes cached information to a fresh search
+proposal, and through donor choice may also change the local child. Equal
+candidate/query budgets do not establish equal informational value or a pure
+retrieval operation stripped of its search opportunity tradeoff. No separate
+storage/energy charge is invented. Report this composite proposal contrast.
+
+3. Population, independence and random-number coupling
+Production: exactly20,000new independent blocks b=0..19999;10,000ALL_F and
+10,000ALL_M. Unit is a full paired block. Survivors, generations, two branches
+and the two start groups are not independent replicates. Estimand is the equal
+mixture of the two initial-start distributions; no favorable subgroup selection.
+
+Use reference Philox and extraction, with exactly9purposes:
+INITIAL_GENOTYPE, TARGET_INNOVATION, TARGET_COPY, FRESH_MASK, SCOUT_MASK,
+LOCAL_BIT, DONOR_KEY, SURVIVAL_UNIFORM, POLICY_MUTATION.
+For tier tau in {production-r1,fixture-r1,benchmark-r1}, key input is literal
+ASCII PHASE3-BIT-SUSTAINED-RETRIEVAL-003|<tau>|<PURPOSE>, no terminator.
+SHA256 digest bytes0..3 and4..7 are little-endian k0,k1. Counter=(b,u,entity,
+subindex), and extraction/entity/subindex semantics are reference5.3 restricted
+to these9purposes. INITIAL_GENOTYPE only u=0,slot0..31. Other purposes use
+u=1..512. FOCAL_PARENT and CHECKPOINT_TIME do not exist in this study.
+Targets: innovations from word0, copy from word0&1; T1=I1,T2=I2 and foru>=3
+T_u=T_(u-2) if copybit1, else I_u. Candidate identities, masks, donor keys,
+mutation slots and survival draw/retry addresses match the reference.
+
+All target innovations/copy bits through512 are common to history and branches.
+All six turnover-purpose arrays are shared between C and A at the same
+(b,u,slot/bit/draw/retry), NEVER keyed by arm, policy, realized score or worker.
+These six are FRESH_MASK,SCOUT_MASK,LOCAL_BIT,DONOR_KEY,SURVIVAL_UNIFORM,
+POLICY_MUTATION; INITIAL is separate, giving9total with the two target purposes.
+No extra RNG purpose is allowed.
+Each draw starts retry0 even if another arm consumed more retries. Arm order
+and thread scheduling never change addresses. Coupling reduces noise but does
+not keep evolved states or families identical. Each branch has its intended
+marginal law under the independent-uniform-address working idealization.
+Distinct purpose key pairs must be independently computed twice, pairwise
+distinct across27newkeys and disjoint from all previously registered project
+purpose keys, including BIT002. Freeze authenticated complete registry/G1F
+before compilation. No generation to search for keys with favorable outcomes.
+Philox is deterministic; distinct addresses do not prove independence. The
+following inferential coverage is conditional on that working idealization.
+
+4. Exactly one primary and one secondary endpoint
+Let m_bzu = number of M policies in post-update state for armz at updateu.
+Let a_bzu = sum over its32post-update survivor genotypes of
+(32-popcount(genotype XOR T_u)); range0..1024. These are realized surviving
+population accuracy scores, not all-candidate scores and not ancestral scores.
+For z in {C,A}, define integer sums over u=257..512:
+ M_bz=sum m_bzu, range0..8192;
+ A_bz=sum a_bzu, range0..262144.
+Primary block contrast X_b=(M_bC-M_bA)/8192 in[-1,1].
+Secondary block contrast Y_b=(A_bC-A_bA)/262144 in[-1,1].
+Primary theta_M=(E_ALL_F X+E_ALL_M X)/2; secondary theta_A analogously.
+Both estimates are arithmetic means of all20,000block contrasts, computed
+from exact signed integer totals. No conditioning on caches, H/e, final policy,
+survival, recurrence events or response. Zero contrasts remain in the cohort.
+No further confirmatory endpoints, time-window search, terminal-frequency test,
+per-carrier ratio, post hoc subgroup, mediation decomposition or effect curve.
+Checkpoint start-group counts and validity/accounting checks are descriptive
+engineering evidence only; not extra scientific hypothesis tests.
+
+5. Inference and fixed decision rules
+Two simultaneous two-sided Hoeffding intervals, no outcome-based variance fit:
+alpha_M=.04, alpha_A=.01, family sum=.05. For independent, not necessarily
+identically distributed, paired block contrasts with range length2,
+h=sqrt(2*ln(2/alpha)/20000). Fixed outward conservative rational halfwidths:
+h_M=19778834661/10^12=.019778834661;
+h_A=23018074131/10^12=.023018074131.
+Independent G1F arithmetic must certify each rational >= its mathematical
+halfwidth using a directed interval calculation, not agreement of two floats.
+Intervals are [max(-1,estimate-h),min(1,estimate+h)]. Exact rational arithmetic
+controls classification; decimal endpoints are rounded outward for presentation.
+Coverage is joint at least95% conditional on the RNG idealization, for these
+two new endpoints only, not all past/future manuscripts. Mean and interval are
+reported for BOTH even if primary is adverse, bounded or unresolved.
+
+For BOTH endpoints, meaningful threshold delta=1/32=.03125 and equivalence
+margin epsilon=1/32, in the normalized endpoint's own units. Classification:
+ MATERIAL_POSITIVE iff lower>delta; MATERIAL_NEGATIVE iff upper<-delta;
+ BOUNDED_WITHIN_MARGIN iff lower>=-epsilon and upper<=epsilon;
+ POSITIVE_MAGNITUDE_UNRESOLVED iff lower>0 otherwise;
+ NEGATIVE_MAGNITUDE_UNRESOLVED iff upper<0 otherwise;
+ UNRESOLVED otherwise. Apply this order. Equality atdelta is not material.
+For theta_M these are3.125percentage points of time-averaged policy frequency;
+for theta_A3.125percentage points of normalized survivor accuracy (one bit).
+Within-margin does not mean exact zero or absence. Negative estimates, bounds,
+all intervals and unresolved classifications must remain visible. No increase
+in N, revised margin, extra horizon, optional stopping or new seed after results.
+This is guaranteed precision under an assumption, not guaranteed power or a
+promise of significance. At zero, fixed intervals fit the chosen margin.
+
+6. Tiers and query/work counts
+Fixture tier: randomblocks0..15, full256history+256pairedfollow-up. Public
+constructed states/corner cases and expected public results are separately
+frozen G1F inputs; they may not use production keys or outcomes.
+Benchmark tier: blocks0..63 at the full scientific horizon;32ofeach start.
+Benchmark is timing/resource-only, not a scientific diagnostic. Numeric endpoint
+totals must not be displayed, interpreted or used to change design. No benchmark
+effect estimate is an observation supporting the paper.
+Production has20,000*(256+2*256)=15,360,000turnovers and1,966,080,000candidate
+queries by the producer. Full independent replay entails the same additional
+turnovers/query work; no assertion that this audit cost is negligible. Analyzer
+can recompute sums from stored states and targets without a third scientific
+simulation. Include analysis,audit,IO,hashing and sealing in qualification.
+
+7. Stored data and independent full-history assurance
+Every block stores its exact S0, all256historypost-states, then256Cpost-states
+and256Apost-states. States use the reference264byte little-endian layout. Store
+all512targets, selected per-update retry totals (768u32), four integer endpoint
+sums, metadata/block/start flags, and checksummed file inventories. A complete
+new record-format/CLI contract is a PREBUILD G1F deliverable, not an unreviewed
+producer discretion. It may supply byte offsets/magic/headers and chunking only,
+and may not change the state sequences, computations or scientific definitions.
+Freeze that public engineering contract and independently check it before any
+changed source is compiled. Files/bytes/magic exactness is part of fixtures.
+Expected state payload alone20,000*769*264=4,060,320,000bytes. Full run including
+data,logs,receipts,audit artifacts <=16GiB. Stream bounded chunks; do not require
+all histories in RAM. Every productionblock must be independently regenerated
+from its new key/initialization through historyANDbothsustainedbranches; compare
+EVERY serialized state/target/retry total and all four sums. Sampling64histories
+or only checking a hash/conditional state is insufficient for this new protocol.
+
+Producer and auditor must be genuinely independently authored with scoped
+inputs. Auditor receives only frozen public protocol/operator/KAT/fixtures and
+its own code/evidence until own source,binaries,expectedfixtureoutputs are
+frozen (G4a). Never send producerinternals/privateanswers/sessiontranscripts to
+auditorauthor. Reuse old accepted publicoperator/math/KAT and source only at
+their actual scope; changedsource needs fresh nonauthor SOURCEGO before build.
+BeforeG4a no produceroutputaccess by auditoractor. AfterG4a crossimplementation
+fixture agreement, branchorder/threadinvariance, completecorruptiontests and
+rejectionofselfconsistentforgedcheckpoint+recomputedbranches are required.
+The latter must fail because auditor independently replays original history.
+An auditorverdictGO is not executionevidence. All builds,fixtures and scientific
+programs execute on FRCE Slurm, never on this Mac or the headnode.
+
+8. Resource contract and one-pass scientific execution
+Science is CPU on FRCE Slurm, one node,one task,at most32CPUs,8hours. User's
+outer memory ceiling is700GB=700,000,000,000bytes; no64GB ceiling is imported.
+Initial science memory REQUEST is96G to Slurm (96GiB=103,079,215,104bytes),
+an allocation request, NOT the user's maximum or a guarantee of a kernel limit.
+Both nativeSlurm all-stepMaxRSS (units converted honestly) and legitimate
+job-wide cgroup memory high-water must be available; scientific acceptance
+requires both <=700,000,000,000bytes and successfuloriginaljob/allsteps. Record
+actual cgroup hard/soft ceilings; no requirement for either to equal requested
+memory or700GB. Missing job-scope accounting,OOM or exceededlimits fails.
+No privileged siteconfiguration change. Use unprivileged job-scoped monitoring
+and disclose its non-atomic nature; a later recorded peakexcess fails acceptance.
+
+Freeze representativeCPUclass,nodeconstraint,compiler/flags,libs,source/binary
+buildIDs and filesystem before the one benchmark. Pin or verify same class for
+production. H200 job54294741 is optionalLOCALMODEL support (requested96h);
+GPU resource/support model output is never new experimental evidence. No extra
+allocation if currentreplacement is pending/live/uncertain. Do not relabel its
+96GrequestedRAM as the user's700GB maximum. Never consume/reset credits.
+
+ExactlyONE outcome-blind benchmark job (64blocks,32CPU96G,30minutes) after
+independent correctness/runtime/source gates. It times the WHOLEproducer plus
+analyzer plus completeindependentreplay plusIO/hash/sealing. Project scientific
+elapsed conservatively as 2*(20000/64)*actualbenchmarkwholejobelapsed. GO only
+if <=4hours (half8hproductionlimit), nativepeak<=350,000,000,000bytes, and
+projected wholeoutput <=16GiB; no dropping full audit to fit. Report timings
+whetherpass/fail. Fixedoverhead scaling is intentionally conservative, not
+claimed an upper bound on unknownfuturemachinebehavior. Actual8h/resource
+acceptance remains binding. Fail stops the proposed design before science;
+no automatic larger request,sample reduction,secondbenchmark or tuning.
+
+ExactlyONE scientific submission after independent readinessGO and exact-hash
+ROOT scientific authority. No arrays,requeue,retry,resume,replacement production,
+postproduction producer/analyzer/auditor rerun or merge of partial cohorts.
+One original allocation executes producer,analyzer,independentauditor,agreement,
+resourcecapture and sealing. Data commit via exact inventories/fsync/atomic
+publication, with required report of no partial/extra files. Before any numeric
+scientific results are read, independent execution acceptance must verify
+originalschedulerjob+ALLsteps success0:0, full20000blockcohort, datahashes,
+unchangedsource/binaryIDs, resources,completefullreplayPASS and exacthashonly
+agreement of analyzer/auditorresults. Keep numericresults sealed untilaccepted.
+No successfulpartial job or ROOTreplacementacceptance is allowed.
+
+9. Gates and bounded work
+G0: independent exact scientific-designGO. G1F: independent publicengineering
+contract/fixtures/keys/KAT/arithmeticGO before build. G1: nonauthorSOURCEGO.
+G2–G4: FRCEbuilds/ownfixtures/G4afreeze/fullcorruptionandcrossagreement then
+independentcorrectnessGO. G5: ONEbindingbenchmark. G6: independentreadinessGO.
+G7: ROOTexactscientificauthority. G8: independentexecutionacceptance BEFORE
+unseal. G9: completeclaims/results/reproducibilitypublicationreview afterward.
+Keep all failed/rejected/partial/null/adverse/bounded/unresolved evidence.
+Ordinary reversible implementation fixes consistentwithacceptednewprotocol
+can be batched through independentexactsource review within remainingbudget.
+Any scientificdefinition change afterG0 requires an explicitversionedprospective
+amendment and independentreview before anyaffected execution; no tuningusing
+benchmark or scientificoutcomes. Unresolvedindependentreview failure, resource
+gatefailure or cumulativebudgetexhaustion stops this boundedphase.
+
+All oldactive accounting remains: prior29,920.434660seconds, totalcap57,600sec
+(16h). NewROOT/modelgeneration/engineeringexecution sum conservatively,
+includingparallel time; waitingexcluded; priorclosedG2–G4allowance isNOTreset.
+Stop NEWCodexwork at<=5percentremainingusage. One freshfiniteCodexCLI review
+is appropriate; sparingClaude and optionalusefulH200tasks. Do not create an
+auxiliary controller programme or duplicate pending/uncertain workers. No
+journalacceptance/noveltypriority promise; original study completion unchanged.
+
+10. Reporting
+Report both newmeancontrasts,exactintervals/decisions,fullcohortcounts,actual
+resourceusage,completehistoryaudit scope and allfailureevidence. Keep distinction
+between suppliedarchitecture,statedproposalintervention and biologicalmemory.
+The primary result cannot be replaced by favorable accuracy or selectedtimepoints.
+Do not pool these estimates with BIT002's six intervals or claim a new unified
+95%family. Futurepublicwork retains JackChenonlyauthor metadata without work
+address/email unless human changes that preference. Publicdeposit/journalsubmission
+still requires its applicable scientific/publication gates and actual authority.

@@ -1,0 +1,91 @@
+BIT003 V2 ROOT ENGINEERING CORRECTION ADDENDUM
+Fresh independent v1 G1F review returned FIX with two engineering corrections.
+Both are addressed prospectively without changing G0 or running a kernel:
+(1) exact authoritative/science/fixture view allowlists, compiled identity anchors,
+missing/unreadable/extra rules, harness delegation and expected-free deployment;
+(2) new literal F_TO_M_ACQUIRE_AND_USE two-step case and hand-derived expectations.
+New public package has210files/96cases; all95priorcase meanings retained.
+Affected contract-bound MANIFEST literals, indices and inventory are rehashed.
+The old ambiguous production-key prohibition is clarified within input-view
+responsibilities: public SHA key derivation/tables allowed, production-derived
+histories/states/outcomes remain outside model tasks before execution gates.
+No scientific definition, key value, cohort, endpoint, interval or runtime limit
+changed. ROOT authored these corrections; no independent acceptance or runtime
+PASS is claimed. Fresh nonauthor review required before source/build progression.
+
+ORIGINAL V1 AUTHOR REPORT (historical208file/95case delivery):
+BIT003 PUBLIC ENGINEERING INPUT AUTHOR REPORT
+Status: finite public G1F input candidate completed; no independent acceptance.
+Role: public contract/fixture-input author only. No producer, analyzer, auditor
+source or nonauthor review authored. No execution authority is granted.
+
+Created 208 public files, with paths authenticated in BUNDLE_INVENTORY.json:
+PROTOCOL.txt - exact accepted17976-byte G0 copy, SHA256
+30754cf9de941f09b8086e8ffb27a2b4af42882c6bfcca484928efa926ae6b98.
+ENGINEERING_CONTRACT.txt - finalized byte layout, manifests, 11-line result
+format, strict CLI/errors, input authentication, external fixture interface,
+64-bit totals, full replay and one-benchmark resource obligations.
+KEYS.tsv -27 new G0 literal-namespace SHA256 keys, ASCII full-string sorted.
+LEGACY_KEYS.tsv -126-row exact deduplicated old/BIT002 union, original columns.
+LEGACY_KEY_PROVENANCE.json and KEY_COMPUTATION_RECIPE.txt - row membership,
+source hashes, reproduction and required independent recomputations.
+KAT.txt and Random123_LICENSE.txt - exact supplied accepted copies, all rows.
+BIT002_REFERENCE.txt - exact81247-byte G0-bound public reference copy, limited
+normative scope as G0 specifies; no old science, keys or decisions imported.
+INTERVAL_CERTIFICATE.json - full exact fractions, 48-term logarithm-series proof
+and both strict grid-ceiling certificates, with family alpha1/20.
+FIXTURE_SPEC.txt - complete finite literal case/output grammars.
+FIXIN_BUNDLE/INDEX.json -95 case pairs, exact paths/SHA256/exit/coverage.
+FIXIN_BUNDLE/in and expected -95 each, canonical literal JSON.
+FIXIN_BUNDLE/literals/SYNTHETIC_RECORD.bin -208216-byte format-only literal,
+not a simulated or RNG-derived scientific trajectory.
+POST_G4_REQUIREMENTS.json - exact later full-fixture/invariance/corruption recipes,
+including16 mutations and coherent S256+branch forgery; none executed here.
+PUBLIC_INPUT_INDEX.json - canonical four-file byte/SHA256 core map.
+INPUT_PROVENANCE.json - exact21 supplied public input sizes/hashes and notes.
+AUTHOR_REPORT.txt and BUNDLE_INVENTORY.json - this account and complete closure.
+
+Static checks actually performed
+All21 supplied input byte counts and SHA256s match the user manifest.
+Protocol/reference/KAT/license copies compare byte-for-byte to supplied inputs.
+All27 new key pairs distinct and disjoint from126 legacy keys; all new AND old
+SHA256 and little-endian numeric columns independently re-evaluated by this same
+public author, not claimed independent actor evidence. No Philox output generated.
+State/record/chunk arithmetic agrees with draft, so no layout fix was made:
+264-byte state;769 states=203016-byte payload;record208216;chunk header64;
+production200 chunks,total4164332800 bytes. Full state payload4060320000 bytes.
+Primary denominator163840000;secondary5242880000 requires64-bit cohort arithmetic.
+Full production audit checks15380000 states and15360000 turnovers.
+Exact Fraction calculations prove previous-grid^2 < ln_lower/10000 and
+ln_upper/10000 < prescribed-grid^2 for BOTH endpoints. Positive exact gaps are
+stored. No float logarithm, simulation or fitted precision was used.
+Each literal case input/expected hash, canonical JSON serialization, id/kind,
+expected exit/status and a-k coverage mapping checked. Binary synthetic record
+length and embedded SHA verified by packing/hash arithmetic only.
+Ten supplied old checkpoint tapes were transformed proportionately into new
+single-target C/A injected cases, without focal/six-endpoint/L/F/key semantics.
+Two old target tapes and two old Lemire tapes were reused at primitive scope.
+New two-step branch expectations and all operator survivor sequences are hand
+derivations. Scalar rank, bit, mask, integer and rational arithmetic only;
+no operator/model/history/RNG implementation or simulation loop was run.
+
+Scientific invariance and remaining limitations
+G0 bytes unchanged: fixed20000 independent blocks,256 history/256 sustained
+followup, paired C/A own-state feedback, target recurrence and common tapes,
+primary policy frequency, secondary accuracy, exact G0 inference and all limits.
+Dedicated brs3_fixture is fixture-only and cannot override production. Producer
+AND full independent auditor support threads1..32 and bounded streaming.
+Whole64-block workflow benchmark must be<=23.04s including analysis/full replay,
+IO/hashing/accounting/sealing; no full-audit reduction, repeat or tuning trial.
+No source, build, self-test, RNG/KAT computation, scientific program, allocation,
+benchmark, production, analysis, replay or corruption test executed here. No
+runtime PASS, resource qualification or observed result is claimed.
+Full16-block fixture-r1 trajectories are intentionally not literal manufactured
+answers: independent authors must compute/freeze their own full outputs on FRCE
+Slurm after SOURCEGO, before cross-access; full invariance/corruption requirements
+are frozen but require actual later evidence. Certificate/key calculations here
+are one actor's static work and still require fresh independent G1F checking.
+No material unresolved public grammar or literal-answer item is knowingly left.
+All independent review/source/runtime/scientific gates remain unsatisfied by this
+input-author task itself. No new endpoints, horizons, arms or tuning introduced.
+Public metadata contains no workplace affiliation or work email.

@@ -1,0 +1,412 @@
+BIT003 public engineering contract v1 - PUBLIC G1F INPUT CANDIDATE.
+Subordinate to unchanged accepted scientific G0; no execution or gate authority.
+This is an author candidate for fresh nonauthor review, not independent acceptance.
+All scientific builds, self-tests, fixture tools and model/RNG programs run only
+on FRCE Slurm after their gates. No model execution on Mac or headnode.
+BIT002_REFERENCE.txt is a byte copy of the G0-bound reference; ONLY G0's cited
+operator, Philox, extraction and state sections are imported. Old science,
+keys, six-arm design, endpoint decisions, resource rules and record format do not
+apply. The present contract fixes engineering semantics without changing G0.
+
+1. Data types and binding identities
+All integers unsigned little-endian unless explicitly signed. SHA256 fields are
+32raw bytes, display lowercase64hex. ASCII files use LF, finalLF, no BOM/NUL.
+Canonical state is264bytes:32u32genotypes,32u32caches,u32policy_mask,
+u32cache_valid_mask. Invalid cache word MUSTzero. Maskslot bit i corresponds i.
+No padding, native struct serialization, floats, compressed scientific records,
+optionalextra fields or unlisted datafiles. The complete frozen G0 scientific
+protocol and this G1Fcontract have separate SHA256s bound in input/output
+manifests. A source/binary claiming only one of these is not fully identified.
+Producer and auditor each implement their own parsers/serializers/RNG/operator;
+no producerhelpers or shared scientific library imported by auditorauthor.
+
+2. Fixed record (208216bytes)
+Offset0:8bytes ASCII BRS3R001.
+8:u16schema=1. 10:u8tier (fixture=0,benchmark=1,production=2).
+11:u8start_code=b&1. 12:u32block_id.
+16:u16history_horizon=256.18:u16followup_horizon=256.
+20:u32record_bytes=208216.24:8reservedzero bytes.
+32:512u32targetsT1..T512 (2048bytes).
+2080:769states in exact sequence:
+ S0,S1,...,S256 [257states],
+ Cpost257,...,Cpost512 [256states],
+ Apost257,...,Apost512 [256states].
+State payload203016bytes; ends at205096.
+205096:768u32survival_rejection_totals in order
+ historyu1..256,Cu257..512,Au257..512 (3072bytes).
+208168:u32M_C.208172:u32M_A.208176:u32A_C.208180:u32A_A.
+208184:SHA256 of bytes0..208183 (32bytes).
+Record ends208216 (all offset intervals are half-open unless stated otherwise). No endpoint floatingpointvalues or extra material appended.
+Bounds: each Msum<=8192, Asum<=262144; per-turn retrytotal<=32*255=8160.
+Blockrecordsordered ascendingb; start code fixes parity, never inferred from
+realizedstate. Cached/freshbranches share storedhistoryS256 but each stores
+everyOWNsubsequentstate. No duplicateS256 states betweenbranches inpayload.
+
+3. Chunk (64byteheader then contiguous fixedrecords)
+MagicASCII BRS3CH01 at0..7.8:u16schema1.10:u8tier.11:u8reserved0.
+12:u32chunk_index.16:u32first_block_id.20:u32record_count.
+24:u32record_bytes208216.28:u16history256.30:u16followup256.
+32:32rawbytes scientificprotocolSHA256. Headerends64.
+File chunk_000.bin,chunk_001.bin,... in ascendingorder. Production200chunks,
+exactly100records each,firstblock=100*chunkindex,IDs0..19999.
+Fixturetier onechunkchunk_000.bin with16records0..15.
+Benchmarktier onechunkchunk_000.bin with64records0..63.
+No scientificCLIoption to change blockcount/horizon/keys/startmixture.
+Expectedproductiondatachunkbytes=200*(64+100*208216)=4,164,332,800.
+
+4. Manifest/data commit
+DATA directory has exactly its expectedchunks plus MANIFEST.json and
+MANIFEST.sha256, no others. Rejectsymlinks/nonregularfiles. Manifest canonical
+JSON: ASCII,sortkeys=True,separators(',',':'),ensure_ascii=True,finalLF.
+Exactlytop-level keys:
+ schema:1; study:"PHASE3-BIT-SUSTAINED-RETRIEVAL-003";
+ tier:"fixture-r1"/"benchmark-r1"/"production-r1";
+ protocol_sha256:64lowerhex; contract_sha256:64lowerhex;
+ keys_sha256:SHA256ofacceptedcanonicalKEYS.tsv;
+ block_count:16/64/20000; history_horizon:256; followup_horizon:256;
+ record_bytes:208216; chunk_record_limit:100;
+ all_f_blocks:8/32/10000; all_m_blocks:8/32/10000;
+ files:[{"name":"chunk_000.bin","bytes":integer,"sha256":64lowerhex},...].
+Fileentries orderedchunkindex. No duplicate keys/floats/extraJSONproperties;
+rejectnoncanonical serialization and inferredalternative names. Different
+implementations need identicaldatahashes under sametier andbindinginputs.
+MANIFEST.sha256 exactly "<64lowerhex>  MANIFEST.json\n".
+Producerwrites a newemptyworkdirectory that is absent before invocation; writes
+chunks via localpartialnames/fsync/atomicrename, thenmanifest,thenmanifesthash.
+Fsync containingdirectory. Sealregularfilesreadonly aftersuccessfulcommit.
+Do not markpartialruncomplete. Runtimecapturesoriginalproducerexitcode0 before
+callinganalyzer/auditor. No overwrite/resume/retry of existingDATA directory.
+
+5. Exact results and independent auditor output
+Canonicalresults ASCII LF exactly:
+ line1: BIT003_RESULTS_V1
+ line2: status=VALID
+ line3: tier=<tier>
+ line4: n_blocks=<16|64|20000>
+ line5: n_all_f=<8|32|10000>
+ line6: n_all_m=<8|32|10000>
+ line7: policy_signed_sum=<signeddecimal sum_b(M_C-M_A)>
+ line8: policy_denominator=<n_blocks*8192>
+ line9: accuracy_signed_sum=<signeddecimal sum_b(A_C-A_A)>
+ line10: accuracy_denominator=<n_blocks*262144>
+ line11: inference=PRODUCTION_ONLY
+All signeddecimals canonical:no plus,no leadingzeros,no negativezero. These
+rawtotalsaretheonlyscientificnumericalpayload. Use signed64-bit or wider exact
+accumulators for all cohort sums/denominators (secondary absolute bound
+5,242,880,000 exceeds signed32-bit). Forfixture/benchmarkthey remain
+sealedengineeringoutputs,not scientificevidence. On production only, separate
+presentation derives EXACTG0rationalintervals/classifications. Do not insert
+benchmark-sizedhalfwidths, subgroupresults or extra scientificoutcomes.
+
+Analyzer must structurally validatecompleteDATA,targets fromacceptednewkeys,
+state legality/cacheinvariants,recordandfilehashes,metadataandcounts and compute
+fourendpoint sums from allstoredfollowupgenotypes/policies and theirtargetsu.
+It verifiesrecordstoredsums agree, then producesexactcanonicalresults.
+Analyzer is partofproducerauthorship, notindependentaudit.
+Auditor independentlyreconstructsinitialization,targetlaw,allhistoryturnovers,
+bothongoingbranchturnovers from independentlyimplementedPhilox/operator,
+comparesEVERYstate/target/retrytotal/hash/endpointcount and independentlywrites
+samecanonicalresults. No inputresultfile/producerprivateexpectationsforauditor.
+Its separate AUDIT_REPORT.txt contains only status,blocks/states/turnovers
+checked,scientificsource/inputhashes,firstmismatchlocation/error; no extra
+scientificanalysis. Successfulproductionauditorchecks exactly15,380,000states
+(769*20000) and15,360,000turnovers. Stateschecks includeS0,notextraqueries.
+An INVALIDproducer/analyzer/auditor may reporterror but MUSTNOT emitVALID;
+reject beforeanyresultinterpretation. Freshoutputpaths,nonzeroexitonfailure.
+
+6. Scientific executable interface (exact finite invocations)
+Acceptednames brs3_produce,brs3_analyze,brs3_audit.
+Commoninput --inputs ABSOLUTE_INPUTDIR selects the SCIENCE_VIEW in9.1.1.
+It contains EXACTLY readonly PROTOCOL.txt,ENGINEERING_CONTRACT.txt,KEYS.tsv,
+KAT.txt and PUBLIC_INPUT_INDEX.json, no other files or directories.
+PUBLIC_INPUT_INDEX.json iscanonicalJSONmappingthose4names tobytes+SHA256;
+its SHA256is independentlyfrozeninG1F andsource/binary buildreceipt.
+Produce: brs3_produce --inputs DIR --tier T --output NEW_DATA_DIR --threads N
+N integer1..32. No statefulsequentialRNG,branchorder-dependentkeys or scheduler
+dependentrecords. Stableascendingblock/chunkorder regardlessworkercompletion.
+Analyze: brs3_analyze --inputs DIR --tier T --data DATA_DIR --results NEW_FILE
+ --threads N
+Audit: brs3_audit --inputs DIR --tier T --data DATA_DIR --results NEW_FILE
+ --report NEW_REPORT --threads N
+Allthreeprograms accept N=1..32; analyzerauditor may parallelize complete
+independentblockwork with deterministic sortedaggregation, neverpartialreplay.
+No unknown/repeatedflags,relativepaths,symlinkinputdirs or extratokens. Expected
+tier mustmatchrecordsmanifest. Source may use standardlibrary forIO/hashing,
+independentRNG/operator. LogsnotadditionaldatafileinsideDATA. Permission/input
+errors nonzero; runtimeabort stopschildgroup and recordsactualerror/exit.
+No postproductioninvocation ofanythreeprogram,even torepairreporting.
+
+Source authors may add own fixture tools, never scientific endpoints or keys.
+The required external fixture interface and all case/output grammars are in
+section 9 and FIXTURE_SPEC.txt. --self-test alone does not produce public FIXOUT.
+These exact public inputs require independent G1F review before source build. Producerandanalyzercanbesameauthor; auditornewfresh
+actor getsNOproducerinternals. Auditor'sownFIXOUT/binaries/sourcefreeze before
+post-G4acrossimplementationfixtures/produceroutputs. Public key-table derivation
+is permitted in scoped model/source tasks; no production RNG-derived histories,
+states or numerical outcomes may be supplied before applicable execution gates.
+
+7. Public fixture coverage (declarative expectations, no runtime PASS)
+Freeze declarativetestinputs and literalexpectedoutputs for:
+ a) officialPhilox4x32-10KAT; all27keys independentdoublecomputation and prior
+ registrydisjointness, exactcounterranges/extraction, boundaryu256/257/512;
+ b) stateLEroundtrip,invalidcachezero,ALL_F/ALL_M,policy-maskbits;
+ c) one-stepcached/freshdonorchange,duplicatecandidateidentities,tiebreaks,
+ survivaldrawrejection/abortandpolicyflipandbothcachetransitions;
+ d) cache retention inA evenwhenretrievaldisabled, branch-specificeligibility,
+ ownstatefeedingacrossatleasttwofollowupsteps,noresettoS256/commonstate;
+ e) HALF recurrencecrossescheckpoint,identicaltargetsequencebothbranches;
+ f) noMone-stepbranchesidentical,butNOTclaimallfuturebranchesmustmatch after
+ mutations; fullMstateandsaturatedcachelegalityremainincluded;
+ g) reversearmexecution,thread1vs32 andchunkcompletionorderinvariance;
+ h) exactM/accuracyintegerdenominators,mixedstartcount,zerocontrastincluded;
+ i) exactrationalclassboundaries,bothdirections,equalitydelta/epsilon,unresolved;
+ j) independentintervalcertificatecertifyingG0outwardhalfwidths andfamilyalpha;
+ k) record/chunk/manifestlengths/order/checksums/strictCLI/schema/malformedfields.
+Fixtureformat/answers may be ordinary engineeringdevelopment beforecompile,
+but mustbe independentlyauthenticatedpublicG1F,withno productionoutcomes.
+No rootgeneratedsimulationanswer is presentedasindependent referenceevidence.
+
+Post-G4acorruption suite must includebitflip/missing/extra/truncated/reordered
+record,wrongtier/key/protocol/contracthash,duplicateblocks,illegalcache,altered
+endpointtotals/retries/target/state,and reconstructedrecord/filehashes. In the
+strongcheckpointforgerycase,modifyS256,regeneratebothbranchesandallsums/hashes
+coherentlyonfixturekeys: auditorMUSTrejectindependenthistorymismatch. Report
+actualcasecount/failures,notsourceinspectionasruntimePASS. Completeformat
+validity does not substitute for actualreplay. No fabricationofcorruptionresults.
+
+8. Runtime package and release boundaries
+Source/binaries/libs/compilerflags/CPUclass/pathstoFRCEscratch andcomplete
+jobscript get frozenbeforebenchmark; runtime may add robustlogging/accounting,
+but no hiddenoutcomebasedparameters/fallbacks. Job uses --no-requeue, noarray,
+exactoneSBATCHperstage andatomicsubmissionintent/lock, originalallstepstatus.
+Userreceivesactualscript andstderr ifanyjobfails. Producer/analyzer/auditor
+runinsideoriginalSlurmallocation;ROOTorchestrationonMacmaySSHbutnosimulation.
+Use samefrozenCPUclass/flags/binariesforwhole64blockbenchmarkandscience;
+noGPUsinexperiment. Fullindependentaudit includedinbenchmarkprojection.
+Resultssealedinquarantine; runtimehashonlyagreement includesbothprogram
+exitcodes/auditorstatus. IndependentEAchecksalloriginaljobsteps/resourcepeaks,
+fullcohortdata/source/binaryhashes andagreement beforeunseal. PublicationG9
+requiresboth scientificendpoints andalllimitations/failures withoutfavorable
+selection. This contract changes no scientific definition and asserts no gate GO.
+
+9. Binding clarifications and strict interface
+No arithmetic correction to the draft layout was needed. State offsets are
+x[i]=4*i, c[i]=128+4*i, policy=256, valid=260. State index k starts at
+2080+264*k. k=0..256 is S_k; C_u uses k=u (257..512); A_u uses k=u+256
+(513..768). Target u starts at 32+4*(u-1). Retry index j=0..255 is history
+u=j+1; j=256..511 is C u=j+1; j=512..767 is A u=j-255.
+A retry total counts REJECTED words, not accepted draws or largest retry index.
+Per draw allowed retry indices are 0..255; needing 256 is RETRY_CAP, never wrap.
+All 32 draw addresses start at retry 0 independently in every branch.
+State payload 769*264=203016; end=205096; retries end=208168; four sums end
+208184; SHA ends208216. Production state payload=4060320000. Chunk header is
+64 bytes, NOT 64 blocks. Production chunk=20821664 bytes, 200 chunks; total
+4164332800. Fixture chunk=3331520; benchmark chunk=13325888 bytes.
+All cohort numerators, arm sums, query counters, products and denominators use
+signed/unsigned 64-bit or wider as appropriate. Production denominators are
+163840000 and 5242880000. Never use signed32 for cohort secondary totals.
+State legality: v subset of policy; invalid cache words zero; S0 cache masks
+zero and policy all F/M by parity; every post-turnover valid_mask=policy_mask.
+A constructed primitive state may have invalid M caches, as at initialization;
+production post-turnover states may not. F valid caches are always illegal.
+Targets and complete history must be reconstructed by auditor even when all
+record/file hashes and regenerated followup states are self-consistent.
+
+9.1 Inputs, inventories, identities
+PUBLIC_INPUT_INDEX.json is exactly a canonical JSON object with four filename
+keys PROTOCOL.txt,ENGINEERING_CONTRACT.txt,KEYS.tsv,KAT.txt. Each maps to an
+object with exactly bytes (nonnegative integer) and sha256 (64 lowercase hex).
+BUNDLE_INVENTORY.json maps EVERY other and core public regular file's relative
+POSIX path to the same bytes/sha256 shape; it excludes only itself. No self-hash
+recursion. Both index and inventory digests must be frozen externally by G1F
+and included in source/build receipts. This full-inventory closure is checked by ROOT harness on AUTHORITATIVE_BUNDLE,
+not by requiring absent entries in a projected runtime view. Section9.1.1 fixes
+every view and delegated check. Exact frozen names are not renamed. Each reader
+authenticates every file in its allowlist before use, against frozen identities.
+The inventory authenticates the license, reference, legacy registry, certificate,
+fixture spec, fixture index, literal inputs/outputs, provenance and author report.
+Canonical JSON for ALL authored JSON: ASCII, sorted object keys, compact comma
+and colon separators, ensure_ascii=true, exactly one final LF; integer tokens
+only, true/false only where explicitly allowed, no null unless explicitly allowed,
+no duplicate keys, NaN, Infinity, float or negative zero. Canonical comparison is
+against reserialized bytes after duplicate-aware parsing. Imported byte copies
+retain their exact original encoding, including all official KAT rows/format.
+No alternative UTF-8 spellings, CRLF, BOM, extra whitespace or trailing bytes.
+The full key registry is independently checked for disjointness; no old key is
+usable by a scientific executable. Build receipts identify both core/inventory
+hashes, reference, source, binaries, compiler/flags/libs and CPU/filesystem.
+
+9.1.1 Exact executable input views and delegated authentication
+AUTHORITATIVE_BUNDLE is the complete G1F frozen file set, with exactly all
+BUNDLE_INVENTORY.json entries plus that inventory file itself; no extras,
+symlinks, unreadable entries or omitted files. ROOT harness authenticates its
+external G1F manifest/inventory digest, every inventory entry byte count/hash,
+core-index consistency and every fixture input/expected pair before staging.
+The harness is the ONLY consumer of expected files and comparison metadata.
+This check is mandatory even though runtime executables receive smaller views.
+Missing or unreadable expected/metadata files in AUTHORITATIVE_BUNDLE fail the
+harness. A missing/unreadable runtime allowlist file fails that executable.
+
+SCIENCE_VIEW, used by brs3_produce/brs3_analyze/brs3_audit, has EXACTLY these
+five regular readonly files at its root and NO subdirectories:
+PROTOCOL.txt; ENGINEERING_CONTRACT.txt; KEYS.tsv; KAT.txt;
+PUBLIC_INPUT_INDEX.json.
+Each source implementation embeds, before SOURCE GO, the G1F frozen SHA256 of
+PUBLIC_INPUT_INDEX.json and BUNDLE_INVENTORY.json as constants, bound in its
+source/build receipts. Those values are obtained from external G1F acceptance,
+never from runtime CLI/environment overrides. This avoids a hash self-cycle.
+The executable checks PUBLIC_INPUT_INDEX bytes against its embedded digest,
+canonical four-row schema, and all four core file sizes/hashes. It also checks
+SCIENCE_VIEW exact file/directory closure, regular/no-symlink/readability and
+normal path rules. It does NOT require, open or stat BUNDLE_INVENTORY.json,
+fixture/certificate/legacy/expected/provenance/license files, which are absent
+by design. Their full-bundle authentication is delegated to ROOT harness.
+The audit report's bundle_inventory_sha256 is the embedded frozen full-bundle
+identity, not a claim that the auditor read an absent runtime inventory file.
+
+FIXTURE_VIEW, used ONLY by brs3_fixture, contains EXACTLY:
+- the five SCIENCE_VIEW files;
+- BUNDLE_INVENTORY.json, FIXTURE_SPEC.txt, LEGACY_KEYS.tsv,
+  INTERVAL_CERTIFICATE.json at root;
+- FIXIN_BUNDLE/INDEX.json;
+- every inputpath listed by that exact INDEX.json;
+- FIXIN_BUNDLE/literals/SYNTHETIC_RECORD.bin.
+No other regular file or directory is permitted except the exact parent
+directories of those listed files. Thus FIXIN_BUNDLE/expected and every
+expectedpath file are REQUIRED TO BE ABSENT, not merely optional/unreadable.
+All allowlist files must be readable regular readonly files without symlinks.
+The fixture executable first authenticates the core as above, then inventory
+bytes against its embedded frozen inventory digest, then the file sizes/hashes
+of ALL present allowlist files using that inventory. It authenticates INDEX
+and every inputpath before using INDEX to form its projected allowlist. Any
+unexpected or missing/unreadable allowlist entry fails INPUT exit2, no FIXOUT.
+Inventory entries outside this fixed projection are deliberately absent: the
+executable MUST NOT require, open or stat them. It MUST NOT load expectedpath
+or expected output bytes; expected_exit/expectedhashes in INDEX are comparator
+metadata and must NOT choose its computed output or exit. The --case file must
+be one authenticated inputpath inside this view; reject another case as INPUT
+before fixture computation. Lexical CLI dry-parse fixtures test argument syntax
+only; this runtime membership check follows input authentication.
+
+Staging and comparison: full AUTHORITATIVE_BUNDLE/expected files remain on the
+ROOT coordinator, and are NOT transferred into the FRCE execution package or
+into any scientific/fixture input view. Deploy only the defined expected-free
+views to the compute invocation; no duplicate expected tree, answer-bearing
+file descriptors/environment/cwd or cached expected bytes in the child. ROOT
+records full-bundle/view hashes and exact transfer inventories, closes answer
+handles before invocation, runs the frozen implementation on FRCE, retrieves
+its own computed outputs, then compares exact bytes/exits to coordinator-held
+expected files. The implementation receives no path to the coordinator bundle
+and cannot resolve the coordinator's local Mac paths on FRCE. No new controller
+or security boundary is claimed against malicious same-user code: SOURCE GO
+must verify outputs are actually computed, not hard-coded by id or obtained
+from public expected data. This is explicit test-answer separation, not a
+claim that public fixture answers are secret. No fixture process may read the
+full original bundle as a shortcut to satisfying input authentication.
+
+Validation order: CLI lexical/path grammar; frozen identity/required file
+readability; exact projected view closure; canonical schemas; all relevant
+hashes; case membership; then data/case semantics and original checks. All
+input-view failures are exit2 with BRS3_ERROR INPUT and no final outputs.
+Scientific DATA inventory validation still occurs after input authentication
+and retains its documented data errors. Standalone primitive MANIFEST/CLI
+fixtures keep their deliberately isolated structural/dry-parse meanings.
+This section replaces any interpretation of9.1/9.2/9.3 that requires all
+AUTHORITATIVE_BUNDLE entries to be present in a runtime view.
+
+9.2 CLI parsing, failures and output publication
+Scientific commands are exactly those of section 6; flags may appear in any
+order, each exactly once with exactly one argument. T is one of fixture-r1,
+benchmark-r1,production-r1; N is canonical unsigned decimal 1..32, no leading
+zero. Mandatory paths must be absolute, no dot/dotdot components or symlink
+components. Reject missing/repeated/unknown flags, --flag=value, abbreviations,
+implicit environment overrides, positional arguments, empty paths and response
+files. No science command accepts --self-test, injected data, keys, block count,
+horizon, arm order or checkpoint overrides. Accepted options are exhaustive.
+All output destinations must be absent; parents must already be regular
+non-symlink directories. Reject overwrites before scientific work or any output.
+Authenticate inputs and validate all arguments before creating output paths.
+Scientific stdout is empty; logs to stderr contain no numeric endpoint totals.
+Success exit0; errors exit2 CLI/grammar/path/schema/input identity, exit3 invalid
+scientific data/hash/replay mismatch, exit4 RETRY_CAP, exit5 IO/resource/internal
+failure. Stderr begins exactly BRS3_ERROR <CODE>\n, followed optionally by
+engineering diagnostic lines without endpoint totals. Codes: CLI, INPUT,
+FORMAT, HASH, STATE, MISMATCH, RETRY_CAP, IO, RESOURCE, INTERNAL. First failure
+wins in validation order: CLI; section9.1.1 input-view checks; DATA inventory/file set/length; schema
+and metadata; hashes; state legality; target/retry/endpoint checks; replay.
+No valid results on failure; absent final result/report destinations on failure.
+Temporary partial artifacts, if any, remain explicitly uncommitted with actual
+exit evidence retained outside DATA. Never reinterpret a partial file as VALID.
+Results/report publish only after full success, via exclusive new files, fsync,
+atomic rename and directory fsync; no resumed or replacement invocation.
+
+Successful AUDIT_REPORT.txt has these exact ordered ASCII LF lines:
+BIT003_AUDIT_V1
+status=VALID
+scope=FULL_INDEPENDENT_REPLAY
+tier=<tier>
+blocks_checked=<n>
+states_checked=<769*n>
+turnovers_checked=<768*n>
+protocol_sha256=<hash>
+contract_sha256=<hash>
+public_input_index_sha256=<hash>
+bundle_inventory_sha256=<hash>
+source_sha256=<auditor frozen source-package hash>
+binary_sha256=<auditor frozen binary hash>
+first_mismatch=NONE
+No output-location-dependent text in canonical results. Analyzer and auditor
+result bytes must agree exactly including final LF; hash-only agreement occurs
+inside original allocation and remains sealed until independent execution GO.
+
+9.3 External public fixture tool
+Each author independently implements:
+brs3_fixture --inputs DIR --case FILE --output NEW_FILE
+All three paths absolute and strict as above. This tool is fixture-only, never
+called by scientific CLI as a parameter override. Parsed public cases have an
+externally fixed result even if that result is ERROR; the tool writes canonical
+FIXOUT JSON and exits with INDEX.json's expected_exit. Such expected error
+FIXOUT is an engineering artifact, never a VALID science result. Invalid outer
+case syntax, unknown case kind, unauthenticated files or output collision returns
+exit2 with BRS3_ERROR INPUT/FORMAT/CLI and no FIXOUT. Internal failures exit5.
+For well-formed cases testing an error, output schema is fixed by FIXTURE_SPEC;
+stderr first line is BRS3_ERROR <case error code>, even if code is fixture-only.
+Public fixture execution reads ONLY authenticated FIXTURE_VIEW bytes under
+9.1.1, NEVER expectedpath/expected output bytes. INDEX supplies input membership,
+not an output lookup. Expected files remain solely on the ROOT coordinator;
+full authentication precedes expected-free FRCE staging and byte comparison
+follows actual computed output retrieval. The executable validates its projected
+view rather than reopening the full bundle to authenticate absent answers.
+Own --self-test cannot satisfy this public-input comparison. No literal full
+fixture-r1 RNG/history answers are asserted here; each independent author must
+compute all 16 full trajectories only on FRCE after SOURCEGO, freeze own FIXOUT
+and binaries before cross-access, then compare after G4a. POST_G4_REQUIREMENTS.json
+fixes these later tests and their failure meaning; it is not a controller or
+assertion that they have passed. All a-k public primitives and manual cases have
+literal answers; random full-trajectory and corruption outcomes require execution.
+
+9.4 Inference/presentation
+The 11 canonical result lines in section 5 are exhaustive and contain no rounded
+statistics. For production define e_M=policy_signed_sum/163840000 and
+e_A=accuracy_signed_sum/5242880000. Use h_M=19778834661/1000000000000 and
+h_A=23018074131/1000000000000, clip e+-h to [-1,1], then apply G0's ordered
+strict/non-strict predicates exactly. Never classify rounded endpoints. Reduced
+rationals use num/den with positive denominator, gcd1, canonical signed numerator.
+Separate post-acceptance presentation: mean is exact reduced fraction; interval
+is exact reduced fraction pair; displayed lower floor(10^12*lower)/10^12 and
+upper ceil(10^12*upper)/10^12, printed fixed12 decimals (no negative zero).
+No recomputed halfwidth for fixture or benchmark. Certificate uses n=48 terms
+k=0..47, tail starts exponent97 and denominator97; both grid ceilings proven.
+Family alpha is 1/25+1/100=1/20. No old L/F classification or key imports.
+
+9.5 Runtime completion requirements
+Parallel producer AND independent full auditor must support --threads 1..32;
+full blocks can be scheduled independently and emitted in ascending order with
+bounded streaming. No entire 4.16GB data RAM requirement, no reduced audit.
+The one whole-workflow 64-block benchmark includes producer, analyzer, FULL
+independent audit, comparison, IO, hashing, accounting and sealing. Its actual
+whole elapsed must be <=23.04 seconds since 2*(20000/64)*23.04=14400 seconds.
+The G0 memory, 16GiB output, 8h original-allocation and all-step constraints
+remain binding. A failed benchmark stops the design, not another tuning trial.
+No benchmark endpoints displayed. Source and fixture expectations may be reviewed
+here, but all scientific builds/fixtures/RNG execution are FRCE Slurm only.

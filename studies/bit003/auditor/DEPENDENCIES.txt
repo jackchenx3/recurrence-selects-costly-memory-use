@@ -1,0 +1,41 @@
+BIT003 independent auditor candidate v1 — intended dependencies, NOT verified here
+
+Scientific compiler: /usr/bin/g++, GNU GCC 8.5.0, C++17, Linux x86_64.
+Public preparation brief compiler SHA256 (must be reverified on Slurm compute):
+300a40555cfe820333187a6ed41b732af4905b011fd485bcaf9d9cc7a4facfdb.
+Flags: -std=c++17 -O3 -DNDEBUG -pthread -Wall -Wextra -Wpedantic;
+link -lstdc++fs for GCC8 filesystem. GCC builtins __builtin_popcount and
+__uint128_t are required. No -march=native, fastmath, OpenMP, GPU or JSON headers.
+
+C++ runtime: Linux POSIX file APIs and /proc/self/exe; kernel renameat2 syscall
+with RENAME_NOREPLACE on the scratch filesystem; pthreads; matching libstdc++,
+libgcc_s and glibc/libpthread/libm as resolved by the frozen GCC link/runtime.
+SHA256, byte packing, JSON parser, Philox, operator and record validation are
+own source; no OpenSSL C++ linkage, Boost, Random123 runtime or nlohmann needed.
+The copied Random123 license accompanies algorithm provenance, not vendor code.
+
+Fixture/test/presentation interpreter: exactly /usr/bin/python3, intended site
+version3.6.8. All authored Python syntax and APIs target >=3.6, no packages.
+Build uses no alternate interpreter and does not run Python. Freeze actual
+interpreter bytes/version and standard-library/extension dependencies on compute
+before fixtures. No assumption of3.11; historical miniconda path is unused.
+Python standard modules: os, sys, stat, re, json, hashlib, struct, fractions,
+ctypes, importlib.machinery, importlib.util, subprocess and their standard
+transitive imports. Standard extensions include _hashlib/_sha256, _struct,
+_ctypes, math/_decimal and _posixsubprocess as selected by that interpreter.
+ctypes calls the process libc renameat2 symbol; glibc>=2.28 (or equivalent
+backport exposing that symbol), kernel/filesystem support are required.
+Hashlib's actual OpenSSL dependencies and ctypes' libffi must be resolved/frozen
+with this site interpreter; no runtime network/install or fallback is provided.
+
+Build script: /bin/bash; standard mkdir/cp/chmod/sha256sum/printf, POSIX filesystem.
+Build has no invocation of any authored program, self-test, import or PyCompile.
+Build receipt hashes compiler, interpreter and final executable/script bytes;
+ROOT must additionally freeze compiler toolchain components, DT_NEEDED closure,
+Python stdlib/extensions, CPU class, kernel/filesystem and source package.
+A dynamic dependency list cannot be honestly claimed observed before compilation.
+
+Input views: exactly contract9.1.1; source embeds accepted core and full inventory
+anchors. Coordinator alone keeps expected files and authenticates full bundle.
+No external executable/hash command is invoked by scientific auditor runtime.
+Own helper subprocesses exist only in explicitly separate fixture/test tools.

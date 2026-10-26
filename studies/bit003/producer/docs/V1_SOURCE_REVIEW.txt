@@ -1,0 +1,37 @@
+VERDICT: FIX — SOURCE_FROZEN_V1 SHA256 23a34be23a86c617054c3213fe99f92495f37b66812d6f26e766b536855574ea
+
+The candidate needs five engineering corrections before compilation. I found no scientific contradiction or independence breach warranting STOP.
+
+Authenticated identity and scope: all 343 supplied files matched INPUT_MANIFEST.json, including a final unchanged-byte check. The tree has exact file/directory closure, with no symlinks or nonregular entries. The frozen candidate contains 21 files; its canonical SOURCE_INVENTORY.json identity is `c6a10cdecda91a631ddc0d873051b35b204549ddd9a499356dac8262b9fc1efa`.
+
+The public bundle authenticates as 210 files and 96 literal pairs. The derived SCIENCE_VIEW and FIXTURE_VIEW allowlists contain exactly 5 and 107 files. Both embedded anchors match:
+
+- Core index: `e60b367dbab81dc1388f06f9d7be6da90b927e8302b4d7001be544976abe8889`
+- Full inventory: `4cc9b10958a04c458aeba5ab3788dd54153b1ce18fc2cb83fe3847e012599bd6`
+
+ROOT authentication was treated as provenance and scope evidence, not correctness acceptance. The old preparation brief’s 95-case count is superseded by accepted V2’s 96.
+
+1. **CERTIFICATE produces the wrong literal values and JSON types.**  
+   [rational.hpp:153](/tmp/bit003-producer-source-review-v1-20261025/inputs/candidate/src/rational.hpp:153) stores grid numerators in `std::array<u64,2>`. Lines 180 and 183 consequently emit JSON integers `19778834661` and `23018074131`. The frozen [CERTIFICATE expectation](/tmp/bit003-producer-source-review-v1-20261025/inputs/public/FIXIN_BUNDLE/expected/CERTIFICATE.json:1) requires strings `"19778834661/1000000000000"` and `"23018074131/1000000000000"`. This is a definite byte-comparison failure, independently of runtime assumptions. Return each validated grid’s reduced `Rat::str()` value.
+
+2. **Fixture case validation occurs before authentication and membership validation.**  
+   [main.cpp:11](/tmp/bit003-producer-source-review-v1-20261025/inputs/candidate/src/main.cpp:11) filesystem-checks `--case` before constructing `Inputs`. For an otherwise valid invocation naming an absent, unlisted case under the existing view directory, this throws `CLI`, exit 2. Contract 9.1.1 requires input authentication followed by case membership rejection as `INPUT`, exit 2. Keep lexical argument validation first; authenticate FIXTURE_VIEW, establish membership, and use its authenticated case bytes without first probing an unlisted case path.
+
+3. **The analyzer inherits fixture-only retry errors and validation order.**  
+   [dataset.hpp:35](/tmp/bit003-producer-source-review-v1-20261025/inputs/candidate/src/dataset.hpp:35) throws `RANGE`, exit 2, for a stored retry total above 8160. The scientific analyzer invokes this through `record_metadata` at line 357, before hashes and state checks. Scientific contract 9.2 excludes `RANGE` from its error vocabulary and places target/retry/endpoint checks after hashes and state legality. Separate these contexts: preserve `RANGE`/2 and the specified ordering for the standalone RECORD primitive; validate scientific retry totals in the scientific phase with `MISMATCH`/3. An unrepaired corrupt record must encounter its hash failure first.
+
+4. **Failed publication can leave a final VALID result.**  
+   [io.hpp:98](/tmp/bit003-producer-source-review-v1-20261025/inputs/candidate/src/io.hpp:98) renames the partial file to its final destination, then calls `syncdir`. If directory opening, fsync, or close fails after that rename, the exception reaches main and returns failure while the final analyzer result still contains `status=VALID`. Contract 9.2 requires absent final result/report destinations on failure. Add post-rename failure rollback to an explicitly uncommitted artifact where possible, preserving the original IO failure and evidence. This finding identifies an implemented failure path; it does not assert that FRCE fsync will fail.
+
+5. **The cross-chunk completion check does not exercise producer emission.**  
+   [support.cpp:126](/tmp/bit003-producer-source-review-v1-20261025/inputs/candidate/src/support.cpp:126) constructs the reverse map by copying already-computed forward commitments. Both maps then iterate in sorted order. This checks map ordering, but never supplies reversed chunk completions to the producer’s chunk/manifest publication path at [dataset.hpp:278](/tmp/bit003-producer-source-review-v1-20261025/inputs/candidate/src/dataset.hpp:278). The within-chunk reversed-record check does exercise `assemble_chunk`; the cross-chunk claim remains unsupported. Drive shared producer emission/manifest assembly with authenticated opaque completions in both chunk orders and compare emitted names, bytes and inventories, as POST_G4 requires.
+
+Beyond those findings, static inspection supports the intended scientific implementation: 20,000 parity-balanced blocks; 256 factual history updates; independently continuing C/A states and A eligibility; absolute indexed tapes; recurrence across the checkpoint; donor tie order; separate candidate identities; integer PL selection; survivor-slot mutations; and PRE-parent cache retention. Record offsets, state/target/retry counts, four sums, chunk dimensions, signed aggregation and endpoint denominators align with the contract.
+
+I independently checked the 27 new and 126 legacy key derivations and disjointness using SHA arithmetic. Exact Fraction calculations verified the certificate’s 48 terms, exponent-97 tail, stored arithmetic gaps and both minimal grid ceilings. All 96 literal input/expectation pairs were inspected against source semantics; this is not an execution PASS.
+
+All 16 corruption constructors are present. The coherent S256 recipe changes the checkpoint and recomputes both branches, retries, sums and hashes while preserving earlier history and targets. Its rejection remains a later independent EVERY-history replay obligation. No auditor is required inside this producer candidate.
+
+No candidate code, compiler, build, import, fixture, Philox, operator, survival or history path was executed. No source was written. GCC 8.5/C++17 build plausibility was reviewed statically; actual Boost availability, linking, final executable identities, runtime correctness and practical speed remain unverified. Canonical returned provider/model metadata is unavailable.
+
+FIX grants no build authority. Corrections require a new exact freeze and nonauthor SOURCE review. All later gates remain mandatory, including G4a isolation, external byte/exit comparison, full independent replay, the single outcome-blind complete-workflow benchmark at ≤23.04 seconds, and the single authorized scientific submission under the stated resource and original-job constraints.
